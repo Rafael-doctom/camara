@@ -1,5 +1,231 @@
 {
  "cidade": "Itapetininga",
- "votacoes": [],
- "politicos": []
+ "votacoes": [
+  {
+   "id": "1463-112455",
+   "cidade": "itapetininga",
+   "eixo": "economia",
+   "favor": "b",
+   "nota": "Autoriza o município a ceder a empresas ou fundos de investimento privados o direito de receber créditos tributários e da dívida ativa (securitização).",
+   "m": "Projeto de Lei Nº 111/2025 - Executivo",
+   "d": "2025-09-22",
+   "r": "Aprovado",
+   "n": {
+    "contra": 3,
+    "favor": 13
+   }
+  }
+ ],
+ "politicos": [
+  {
+   "chave": "CATARINA APARECIDA NANINI MOTTA",
+   "nome": "Catarina Aparecida Nanini Motta",
+   "partido": "REPUBLICAN",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/6251.jpg",
+   "perfil": "itapetininga/index.html#vereador/CATARINA%20APARECIDA%20NANINI%20MOTTA",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "CHRISTIANE APARECIDA GOMES DE SIQUEIRA ALMEIDA",
+   "nome": "Christiane Aparecida Gomes de Siqueira Almeida",
+   "partido": "REPUBLICAN",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/7214.jpg",
+   "perfil": "itapetininga/index.html#vereador/CHRISTIANE%20APARECIDA%20GOMES%20DE%20SIQUEIRA%20ALMEIDA",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "CRISTIANE DE FATIMA CARDENA",
+   "nome": "Cristiane de Fátima Cardena",
+   "partido": "PSD",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/6253.jpg",
+   "perfil": "itapetininga/index.html#vereador/CRISTIANE%20DE%20FATIMA%20CARDENA",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "DENISE FRANCI MARTINS DE CASTRO",
+   "nome": "Denise Franci Martins de Castro",
+   "partido": "SDD",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/5817.jpg",
+   "perfil": "itapetininga/index.html#vereador/DENISE%20FRANCI%20MARTINS%20DE%20CASTRO",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "EDUARDO VINICIUS VENTURELLI DE ALMEIDA PRANDO",
+   "nome": "Eduardo Vinícius Venturelli de Almeida Prando",
+   "partido": "PL",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/5818.jpg",
+   "perfil": "itapetininga/index.html#vereador/EDUARDO%20VINICIUS%20VENTURELLI%20DE%20ALMEIDA%20PRANDO",
+   "eixos": {
+    "economia": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "GUILHERME LUIS MORELLI",
+   "nome": "Guilherme Luís Morelli",
+   "partido": "PP",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/7471.jpg",
+   "perfil": "itapetininga/index.html#vereador/GUILHERME%20LUIS%20MORELLI",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "ITAMAR JOSE MARTINS",
+   "nome": "Itamar José Martins",
+   "partido": "PL",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/213.jpg",
+   "perfil": "itapetininga/index.html#vereador/ITAMAR%20JOSE%20MARTINS",
+   "eixos": {
+    "economia": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "JEFERSON MACHADO CRUZ",
+   "nome": "Jeferson Machado Cruz",
+   "partido": "PSD",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/7469.jpg",
+   "perfil": "itapetininga/index.html#vereador/JEFERSON%20MACHADO%20CRUZ",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "JOSE CARLOS FELIPE DE ALMEIDA",
+   "nome": "José Carlos Felipe de Almeida",
+   "partido": "REPUBLICAN",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/5822.jpg",
+   "perfil": "itapetininga/index.html#vereador/JOSE%20CARLOS%20FELIPE%20DE%20ALMEIDA",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "JULIA NUNES MACHADO",
+   "nome": "Júlia Nunes Machado",
+   "partido": "PSD",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/7468.jpg",
+   "perfil": "itapetininga/index.html#vereador/JULIA%20NUNES%20MACHADO",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "LUIZ HILARIO DA MOTA CONCEICAO",
+   "nome": "Luíz Hilário da Mota Conceição",
+   "partido": "PP",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/7472.jpg",
+   "perfil": "itapetininga/index.html#vereador/LUIZ%20HILARIO%20DA%20MOTA%20CONCEICAO",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "MARINA NALESSO MARIANO",
+   "nome": "Marina Nalesso Mariano",
+   "partido": "PL",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/5896.jpg",
+   "perfil": "itapetininga/index.html#vereador/MARINA%20NALESSO%20MARIANO",
+   "eixos": {
+    "economia": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "MATHEUS RIBEIRO DE ALMEIDA SANTOS",
+   "nome": "Matheus Ribeiro de Almeida Santos",
+   "partido": "S/P",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/6257.jpg",
+   "perfil": "itapetininga/index.html#vereador/MATHEUS%20RIBEIRO%20DE%20ALMEIDA%20SANTOS",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "MIGUEL ARCANJO MAXIMO DE JESUS",
+   "nome": "Miguel Arcanjo Máximo de Jesus",
+   "partido": "NOVO",
+   "cargo": "Vereador(a) de Itapetininga",
+   "cidade": "itapetininga",
+   "foto": "itapetininga/fotos/209.jpg",
+   "perfil": "itapetininga/index.html#vereador/MIGUEL%20ARCANJO%20MAXIMO%20DE%20JESUS",
+   "eixos": {
+    "economia": [
+     1,
+     1
+    ]
+   }
+  }
+ ]
 }

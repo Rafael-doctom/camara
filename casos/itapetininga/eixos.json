@@ -1,0 +1,6 @@
+{
+ "_leia": "Votações que posicionam os vereadores nos eixos do Painel ideológico. Mesmo formato de casos/tatui/eixos.json. As demais votações divididas de 2025-2026 (créditos, previdência, plano plurianual) não indicam posição clara em nenhum eixo e ficaram de fora.",
+ "votacoes": [
+  {"votacao": "1463-112455", "eixo": "economia", "favor": "b", "nota": "Autoriza o município a ceder a empresas ou fundos de investimento privados o direito de receber créditos tributários e da dívida ativa (securitização)."}
+ ]
+}
