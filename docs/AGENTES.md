@@ -124,3 +124,17 @@ Passo a passo manual:
 5. Confira no log o número de vereadores em exercício e os avisos de "nomes sem perfil" (resolva com apelidos). A página da cidade fica em `site/<slug>/index.html`, e a entrada `site/index.html` ganha o cartão dela.
 
 Sem `--cidade`, o orquestrador roda todas as cidades com configuração, na ordem de `_site.json`. A entrada só lista cidades que já têm dados processados.
+
+
+## Atualização automática (GitHub Actions)
+
+`.github/workflows/atualizar.yml` roda todo dia às 09:17 UTC (06:17 em Brasília) e também pelo botão **Run workflow** na aba Actions:
+
+1. Restaura o cache de `dados/*/brutos` (páginas e arquivos já baixados), para não baixar tudo de novo.
+2. Roda `python agentes/orquestrador.py`, que executa, nesta ordem: deputados e senadores, TCE-SP (gastos e receitas), emendas (CGU), as Câmaras de cada cidade com SisCam e os analistas, e por fim os alertas. Com a opção "eleicoes" marcada, inclui o TSE.
+3. Se algo mudou em `dados/`, `casos/` ou `site/`, faz commit na `main` ("Atualização automática dos dados").
+4. Publica `site/` no GitHub Pages.
+
+Uma fonte fora do ar (a API da Câmara dos Deputados devolve 504 com frequência) não derruba o resto: cada coletor tenta de novo e, se falhar, mantém o último arquivo bom. O resultado de cada execução fica na aba Actions.
+
+O agendamento no Windows (seção acima) continua valendo para quem quiser rodar também no computador.

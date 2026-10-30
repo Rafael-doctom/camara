@@ -1,6 +1,26 @@
-# Olho na Câmara de Tatuí
+# Olho na Câmara
 
-Observatório independente da Câmara Municipal da Estância Turística de Tatuí (SP). Ele mostra o que cada vereador propõe, como vota, quanto comparece às sessões e os casos relevantes documentados. Tudo vem de dados públicos oficiais, coletados por agentes automáticos.
+Observatório independente das Câmaras Municipais de Tatuí, Itapetininga, Cerquilho, Iperó e Cesário Lange (SP). Mostra o que cada vereador propõe, como vota e quanto comparece; gastos e receitas das Câmaras e Prefeituras; emendas parlamentares recebidas; eleições de 2024 e 2026 com mapa por local de votação; deputados e senadores de SP; um teste político que compara o visitante com votos reais; e alertas da semana. Tudo vem de dados públicos oficiais, coletados por agentes automáticos.
+
+## Atualização automática
+
+O GitHub atualiza tudo sozinho todo dia às 6h17 (Brasília), pelo workflow `.github/workflows/atualizar.yml`: roda `agentes/orquestrador.py`, grava os dados novos na `main` e publica `site/` no GitHub Pages. Não depende de nenhum computador ligado.
+
+- Ativar a publicação (uma vez): Settings > Pages > Build and deployment > Source: **GitHub Actions**.
+- Rodar na hora: aba **Actions** > "Atualizar dados e publicar" > **Run workflow** (marque "eleicoes" para baixar de novo os dados do TSE).
+- Endereço: https://rafael-doctom.github.io/camara/ (para usar outro domínio, configure em Settings > Pages e troque `OLHO_URL_SITE` no workflow).
+
+## Fontes e coletores
+
+| Coletor | Fonte | Como |
+|---|---|---|
+| `coletor_vereadores.py`, `coletor_proposituras.py`, `coletor_sessoes.py` | SisCam de cada Câmara | páginas e CSV oficiais (o SisCam não tem API) |
+| `coletor_deputados.py` | Câmara dos Deputados e Senado | API de dados abertos (deputados, votos, senadores, CEAPS) e arquivo anual da cota parlamentar |
+| `coletor_tce.py` | TCE-SP | API de transparência municipal (despesas e receitas) |
+| `coletor_emendas.py` | Portal da Transparência (CGU) | arquivo aberto de emendas parlamentares (sem chave) |
+| `coletor_tse.py`, `coletor_tse_geral.py` | TSE | arquivos do Portal de Dados Abertos (o TSE não tem API de resultados); só com `--eleicoes` |
+| `alertas.py` | os dados acima | o que mudou na semana |
+| `descobrir_cidade.py` | SisCam | configura uma cidade nova automaticamente |
 
 ## Como usar
 
@@ -15,11 +35,11 @@ Observatório independente da Câmara Municipal da Estância Turística de Tatu�
    ```
    python agentes/orquestrador.py --so-site
    ```
-   As legislaturas encerradas (2017-2020 e 2021-2024) são coletadas uma vez só, quando o arquivo delas em `dados/processados/` não existe; para coletar de novo, use `--historico`.
+   As legislaturas encerradas (2017-2020 e 2021-2024) são coletadas uma vez só, quando o arquivo delas em `dados/<cidade>/processados/` não existe; para coletar de novo, use `--historico`. `--eleicoes` inclui os dados do TSE e `--sem-extras` roda só as Câmaras.
    Código de saída: 0 ok; 1 falha de coleta; 2 checagem de sanidade (total caiu mais de 5% ou não há 17 vereadores em exercício). Nos casos 1 e 2 os dados anteriores ficam intactos e o site é gerado com eles. Se a queda for real, rode com `--forcar`.
 3. Ao publicar, defina a variável de ambiente `OLHO_URL_SITE` (ex.: `https://exemplo.org`) antes de gerar o site, para o Open Graph das páginas de vereador usar URLs absolutas.
 
-Requisitos: Python 3.10 ou mais novo. Usa só a biblioteca padrão; não há `pip install`.
+Requisitos: Python 3.10 ou mais novo. Usa só a biblioteca padrão; `pip install pillow` é opcional (reduz as fotos fora do Windows).
 
 ## O que o site mostra
 

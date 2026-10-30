@@ -1,0 +1,82 @@
+# Atualização automática: todo dia o GitHub roda os coletores, grava os dados novos na main e
+# publica a pasta site/ no GitHub Pages. Não depende de nenhum computador ligado.
+# Rodar na hora: aba Actions > "Atualizar dados e publicar" > Run workflow.
+# Primeira vez: Settings > Pages > Build and deployment > Source: "GitHub Actions".
+name: Atualizar dados e publicar
+
+on:
+  schedule:
+    - cron: "17 9 * * *"  # 06:17 em Brasília (09:17 UTC)
+  workflow_dispatch:
+    inputs:
+      eleicoes:
+        description: "Baixar de novo os dados do TSE (arquivos grandes; só muda a cada eleição)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: atualizar
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
+    env:
+      # Endereço público usado nas páginas de vereador (Open Graph). Troque pelo seu domínio quando apontá-lo para o Pages.
+      OLHO_URL_SITE: https://rafael-doctom.github.io/camara
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pillow (reduz as fotos dos vereadores)
+        run: pip install pillow
+
+      # Páginas e arquivos já baixados (SisCam, TCE-SP, cota parlamentar, TSE): evitam baixar tudo de novo.
+      - uses: actions/cache@v4
+        with:
+          path: |
+            dados/*/brutos
+            dados/_federal/brutos
+            dados/_tse/brutos
+          key: brutos-${{ github.run_id }}
+          restore-keys: brutos-
+
+      - name: Coletar e gerar o site
+        # Uma fonte fora do ar não impede o resto: cada coletor mantém o último arquivo bom.
+        continue-on-error: true
+        run: python agentes/orquestrador.py ${{ inputs.eleicoes && '--eleicoes' || '' }}
+
+      - name: Gravar os dados novos na main
+        run: |
+          git config user.name "olho-na-camara[bot]"
+          git config user.email "olho-na-camara@users.noreply.github.com"
+          git add -A dados casos site
+          if git diff --cached --quiet; then
+            echo "Nada mudou."
+          else
+            git commit -m "Atualização automática dos dados ($(date -u +%Y-%m-%d))"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: publicar
+        uses: actions/deploy-pages@v4

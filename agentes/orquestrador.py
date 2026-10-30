@@ -5,6 +5,13 @@ Uso:
     python agentes/orquestrador.py --cidade itapetininga   # só uma cidade (combina com as opções abaixo)
     python agentes/orquestrador.py --so-site    # só recalcula indicadores com os dados já baixados
     python agentes/orquestrador.py --historico  # coleta de novo as legislaturas encerradas
+    python agentes/orquestrador.py --eleicoes   # inclui os dados do TSE (arquivos grandes, mudam só a cada eleição)
+    python agentes/orquestrador.py --sem-extras # só as Câmaras (sem deputados, TCE-SP e emendas)
+
+Sem --cidade e sem --so-site, antes das Câmaras rodam as fontes que valem para todas as cidades:
+deputados e senadores (API da Câmara e do Senado), gastos e receitas (API do TCE-SP) e emendas
+(arquivo da CGU). No fim, os alertas da semana. É o que o robô do GitHub (.github/workflows/
+atualizar.yml) roda todo dia.
 
 Legislaturas encerradas (2017-2020, 2021-2024) não mudam: os coletores delas só rodam quando o
 arquivo processado (ex.: dados/processados/sessoes_2021.json) não existe, ou com --historico.
@@ -22,6 +29,10 @@ from comum import RAIZ, carregar_cidade, ler_slug_cidade, listar_cidades, log
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 COLETORES = ["coletor_vereadores.py", "coletor_proposituras.py", "coletor_sessoes.py"]
+# Fontes que valem para todas as cidades. Rodam antes dos analistas, que juntam dados/_politicos/
+# no Painel ideológico. TSE só com --eleicoes: arquivos de centenas de MB que só mudam a cada eleição.
+EXTRAS = ["coletor_deputados.py", "coletor_tce.py", "coletor_emendas.py"]
+ELEICOES = [("coletor_tse.py", ["--ano", "2024"]), ("coletor_tse_geral.py", ["--ano", "2026"])]
 
 
 def etapas_historico(cidade, forcar):
@@ -42,6 +53,10 @@ def main():
     # Sem --cidade: todas as configuradas. A entrada (site/index.html) é refeita a cada cidade.
     slugs = [ler_slug_cidade(sys.argv)] if "--cidade" in sys.argv else listar_cidades()
     etapas = []
+    if "--cidade" not in sys.argv and "--so-site" not in sys.argv and "--sem-extras" not in sys.argv:
+        etapas += [(e, []) for e in EXTRAS]
+        if "--eleicoes" in sys.argv:
+            etapas += ELEICOES
     for s in slugs:
         cidade = carregar_cidade(s)
         if not cidade.get("siscam"):  # Câmara sem SisCam (ex.: Cesário Lange): só dados do TSE
@@ -61,7 +76,8 @@ def main():
         for script, args in etapas:
             etapa = " ".join([script, *args])
             log("orquestrador", f"rodando {etapa}")
-            r = subprocess.run([sys.executable, os.path.join(AQUI, script), *args, *extras], cwd=AQUI,
+            passa = extras if script in COLETORES or script == "analista.py" else []  # --forcar é só das Câmaras
+            r = subprocess.run([sys.executable, os.path.join(AQUI, script), *args, *passa], cwd=AQUI,
                                stdout=saida, stderr=subprocess.STDOUT,
                                env={**os.environ, "PYTHONIOENCODING": "utf-8"})
             if r.returncode != 0:
