@@ -165,10 +165,10 @@ def main():
 
     com_dados = sum(1 for s in sessoes if s["chamadas"] or s["votacoes"])
     if sessoes and com_dados < len(sessoes) / 2:
-        if leg is None:
-            abortar(AGENTE, f"só {com_dados} de {len(sessoes)} sessões com chamadas ou votações: layout mudou?")
-        # Legislatura encerrada: alguns SisCam não registraram chamada e votos nos anos antigos
-        # (Cerquilho, 2017-2024). A legislatura atual já confirma que o layout é lido; grava o que há.
+        # Nenhuma sessão com dados na legislatura atual: layout mudou. Algumas, mas poucas: o SisCam
+        # da cidade registra pouco (Iperó; Cerquilho nos anos antigos) e grava-se o que existe.
+        if leg is None and com_dados == 0:
+            abortar(AGENTE, f"nenhuma de {len(sessoes)} sessões com chamadas ou votações: layout mudou?")
         log(AGENTE, f"AVISO: só {com_dados} de {len(sessoes)} sessões com chamadas ou votações; "
                     "registro incompleto no SisCam, gravando assim mesmo")
     fora = [s["id"] for s in sessoes if not (inicio.isoformat() <= s["data"] <= fim.isoformat())]

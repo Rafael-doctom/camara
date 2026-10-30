@@ -1,0 +1,404 @@
+{
+ "data": "2026-10-30",
+ "gerado_em": "2026-10-30T09:27+00:00",
+ "geral": {
+  "total_proposituras": 1653,
+  "por_tipo": {
+   "Indicação": 1160,
+   "Projeto de Lei": 149,
+   "Moção": 148,
+   "Requerimento": 95,
+   "Projeto de Decreto Legislativo": 34,
+   "Projeto de Lei Complementar": 32,
+   "Projeto de Resolução": 19,
+   "Emendas Impositivas": 13,
+   "Projeto de Emenda à Lei Orgânica": 3
+  },
+  "total_sessoes": 81,
+  "total_votacoes": 208,
+  "votacoes_divididas": 13
+ },
+ "vereadores": {
+  "ALYSSON ALESSANDRO DE BARROS": {
+   "nome": "Alysson Alessandro de Barros",
+   "em_exercicio": true,
+   "proposituras": 39,
+   "por_tipo": {
+    "Indicação": 6,
+    "Projeto de Lei": 5,
+    "Moção": 10,
+    "Projeto de Decreto Legislativo": 8,
+    "Projeto de Resolução": 8,
+    "Emendas Impositivas": 1,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 34,
+    "ausente": 4,
+    "pct": 89.5
+   },
+   "pl_total": 5,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 12,
+    "ausente": 2
+   },
+   "alinhamento_maioria": null,
+   "divididas_total": 0
+  },
+  "ANDERSON FERNANDO MARQUES DE ALMEIDA": {
+   "nome": "Anderson Fernando Marques de Almeida",
+   "em_exercicio": true,
+   "proposituras": 85,
+   "por_tipo": {
+    "Indicação": 58,
+    "Moção": 9,
+    "Projeto de Lei": 3,
+    "Projeto de Decreto Legislativo": 3,
+    "Emendas Impositivas": 1,
+    "Projeto de Resolução": 7,
+    "Requerimento": 1,
+    "Projeto de Lei Complementar": 1,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 38,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 3,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 202,
+    "contra": 2
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 13
+  },
+  "ANGELO VALARIO SOBRINHO": {
+   "nome": "Angelo Valario Sobrinho",
+   "em_exercicio": true,
+   "proposituras": 154,
+   "por_tipo": {
+    "Indicação": 60,
+    "Projeto de Lei": 15,
+    "Moção": 15,
+    "Requerimento": 60,
+    "Projeto de Decreto Legislativo": 2,
+    "Emendas Impositivas": 1,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 37,
+    "ausente": 1,
+    "pct": 97.4
+   },
+   "pl_total": 15,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 189,
+    "contra": 9,
+    "abstencao": 1
+   },
+   "alinhamento_maioria": 15.4,
+   "divididas_total": 13
+  },
+  "CLEYTON DOS SANTOS BATISTA DE JESUS": {
+   "nome": "Cleyton dos Santos Batista de Jesus",
+   "em_exercicio": true,
+   "proposituras": 153,
+   "por_tipo": {
+    "Indicação": 117,
+    "Moção": 15,
+    "Projeto de Lei": 14,
+    "Projeto de Decreto Legislativo": 3,
+    "Emendas Impositivas": 1,
+    "Requerimento": 1,
+    "Projeto de Emenda à Lei Orgânica": 1,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 36,
+    "ausente": 2,
+    "pct": 94.7
+   },
+   "pl_total": 14,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 197,
+    "abstencao": 1,
+    "contra": 2
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 13
+  },
+  "JOSIMAR APARECIDO FERREIRA": {
+   "nome": "Josimar Aparecido Ferreira",
+   "em_exercicio": true,
+   "proposituras": 100,
+   "por_tipo": {
+    "Indicação": 80,
+    "Moção": 10,
+    "Projeto de Lei": 4,
+    "Projeto de Decreto Legislativo": 3,
+    "Emendas Impositivas": 1,
+    "Requerimento": 1,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 36,
+    "ausente": 2,
+    "pct": 94.7
+   },
+   "pl_total": 4,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 198,
+    "contra": 2
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 13
+  },
+  "LUIS RODRIGUES MOREIRA": {
+   "nome": "Luis Rodrigues Moreira",
+   "em_exercicio": true,
+   "proposituras": 219,
+   "por_tipo": {
+    "Projeto de Lei": 13,
+    "Indicação": 169,
+    "Moção": 26,
+    "Emendas Impositivas": 1,
+    "Projeto de Decreto Legislativo": 3,
+    "Projeto de Resolução": 6,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 33,
+    "ausente": 5,
+    "pct": 86.8
+   },
+   "pl_total": 13,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 170,
+    "contra": 2,
+    "ausente": 2
+   },
+   "alinhamento_maioria": 91.7,
+   "divididas_total": 12
+  },
+  "MARIA GORETI GOMES": {
+   "nome": "Maria Goreti Gomes",
+   "em_exercicio": true,
+   "proposituras": 143,
+   "por_tipo": {
+    "Indicação": 105,
+    "Moção": 21,
+    "Projeto de Lei": 10,
+    "Requerimento": 1,
+    "Emendas Impositivas": 1,
+    "Projeto de Resolução": 1,
+    "Projeto de Decreto Legislativo": 3,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 37,
+    "ausente": 1,
+    "pct": 97.4
+   },
+   "pl_total": 10,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 196,
+    "contra": 4
+   },
+   "alinhamento_maioria": 84.6,
+   "divididas_total": 13
+  },
+  "SEBASTIAO FRANCISCO CORREIA": {
+   "nome": "Sebastião Francisco Correia",
+   "em_exercicio": true,
+   "proposituras": 5,
+   "por_tipo": {
+    "Indicação": 2,
+    "Moção": 3
+   },
+   "presenca": {
+    "presente": 13,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 0,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 45
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 5
+  },
+  "SERGIO POLI SIMON": {
+   "nome": "Sérgio Poli Simon",
+   "em_exercicio": true,
+   "proposituras": 176,
+   "por_tipo": {
+    "Indicação": 152,
+    "Projeto de Lei": 4,
+    "Requerimento": 1,
+    "Moção": 14,
+    "Emendas Impositivas": 1,
+    "Projeto de Decreto Legislativo": 3,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 38,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 4,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 196,
+    "contra": 2
+   },
+   "alinhamento_maioria": 84.6,
+   "divididas_total": 13
+  },
+  "VALTER RODRIGUES VIEIRA": {
+   "nome": "Valter Rodrigues Vieira",
+   "em_exercicio": true,
+   "proposituras": 126,
+   "por_tipo": {
+    "Indicação": 104,
+    "Moção": 13,
+    "Requerimento": 3,
+    "Emendas Impositivas": 1,
+    "Projeto de Decreto Legislativo": 3,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 38,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 0,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 198,
+    "contra": 3
+   },
+   "alinhamento_maioria": 76.9,
+   "divididas_total": 13
+  },
+  "VALERIA REGINA MATHEUS DE SOUZA": {
+   "nome": "Valéria Regina Matheus de Souza",
+   "em_exercicio": true,
+   "proposituras": 63,
+   "por_tipo": {
+    "Moção": 14,
+    "Indicação": 38,
+    "Projeto de Lei": 4,
+    "Projeto de Decreto Legislativo": 3,
+    "Emendas Impositivas": 1,
+    "Requerimento": 1,
+    "Projeto de Resolução": 2
+   },
+   "presenca": {
+    "presente": 34,
+    "ausente": 4,
+    "pct": 89.5
+   },
+   "pl_total": 4,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 172,
+    "contra": 2
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 12
+  },
+  "VINICIUS ANTONIO DE PAULA MORAGA RAMOS": {
+   "nome": "Vinicius Antonio de Paula Moraga Ramos",
+   "em_exercicio": true,
+   "proposituras": 302,
+   "por_tipo": {
+    "Indicação": 210,
+    "Moção": 14,
+    "Projeto de Lei": 36,
+    "Requerimento": 26,
+    "Projeto de Resolução": 9,
+    "Emendas Impositivas": 1,
+    "Projeto de Decreto Legislativo": 3,
+    "Projeto de Emenda à Lei Orgânica": 2,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 36,
+    "ausente": 2,
+    "pct": 94.7
+   },
+   "pl_total": 36,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 193,
+    "contra": 3
+   },
+   "alinhamento_maioria": 92.3,
+   "divididas_total": 13
+  },
+  "WALDIR LUIZ PAULA LEITE": {
+   "nome": "Waldir Luiz Paula Leite",
+   "em_exercicio": true,
+   "proposituras": 29,
+   "por_tipo": {
+    "Indicação": 17,
+    "Moção": 7,
+    "Projeto de Lei": 1,
+    "Emendas Impositivas": 1,
+    "Projeto de Decreto Legislativo": 3
+   },
+   "presenca": {
+    "presente": 35,
+    "ausente": 3,
+    "pct": 92.1
+   },
+   "pl_total": 1,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 177,
+    "contra": 4,
+    "ausente": 1
+   },
+   "alinhamento_maioria": 66.7,
+   "divididas_total": 12
+  },
+  "WILLIANS FAGUNDES": {
+   "nome": "Willians Fagundes",
+   "em_exercicio": false,
+   "proposituras": 135,
+   "por_tipo": {
+    "Indicação": 81,
+    "Moção": 23,
+    "Projeto de Lei": 17,
+    "Projeto de Decreto Legislativo": 4,
+    "Emendas Impositivas": 1,
+    "Requerimento": 1,
+    "Projeto de Resolução": 6,
+    "Projeto de Lei Complementar": 1,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 23,
+    "ausente": 2,
+    "pct": 92.0
+   },
+   "pl_total": 17,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 147,
+    "contra": 2
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 8
+  }
+ }
+}

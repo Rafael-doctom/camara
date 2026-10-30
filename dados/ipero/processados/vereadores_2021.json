@@ -1,0 +1,146 @@
+{
+ "legislatura": [
+  {
+   "id": 12,
+   "nome": "Alysson Alessandro de Barros",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 13,
+   "nome": "Anderson Fernando Marques de Almeida",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 31,
+   "nome": "Angelo Valario Sobrinho",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 79,
+   "nome": "Aurilio Reginaldo dos Santos",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 87,
+   "nome": "Ivania Aparecida Ricezi Calixto",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 91,
+   "nome": "José Alberto Lima",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 15,
+   "nome": "Josimar Aparecido Ferreira",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 95,
+   "nome": "Luis Fernando Paula Leite",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 16,
+   "nome": "Luis Rodrigues Moreira",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 97,
+   "nome": "Mônica Aparecida Domingues",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 20,
+   "nome": "Valéria Regina Matheus de Souza",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 21,
+   "nome": "Valter Rodrigues Vieira",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 22,
+   "nome": "Vinicius Antonio de Paula Moraga Ramos",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  }
+ ],
+ "anteriores": {
+  "77": "Adriano Balbino Evaristo",
+  "79": "Aurilio Reginaldo dos Santos",
+  "80": "Benildo Santos Ribeiro",
+  "81": "Edvani de Fátima Azevedo",
+  "82": "Eli Teles Junior",
+  "83": "Eliana Souza da Silva",
+  "84": "Fabiano Cardoso Boa Sorte",
+  "85": "Fabio Augusto de Campos",
+  "86": "Francisco Antônio Coutinho",
+  "87": "Ivania Aparecida Ricezi Calixto",
+  "88": "Ivo Paulo Leite",
+  "89": "João Antonio Domingues dos Santos",
+  "90": "Joel Francisco de Almeida",
+  "91": "José Alberto Lima",
+  "92": "José Amilton de Camargo",
+  "93": "Leonardo Roberto Folim",
+  "94": "Lucio Gonçalves da Silva Filho",
+  "95": "Luis Fernando Paula Leite",
+  "96": "Luiz Alberto Antunes Popst",
+  "97": "Mônica Aparecida Domingues",
+  "98": "Sérgio Antônio Nery",
+  "99": "Valdo Manoel Gomes",
+  "24": "Willians Fagundes"
+ }
+}

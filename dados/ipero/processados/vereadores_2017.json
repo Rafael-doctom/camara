@@ -1,0 +1,137 @@
+{
+ "legislatura": [
+  {
+   "id": 12,
+   "nome": "Alysson Alessandro de Barros",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 31,
+   "nome": "Angelo Valario Sobrinho",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 80,
+   "nome": "Benildo Santos Ribeiro",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 81,
+   "nome": "Edvani de Fátima Azevedo",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 83,
+   "nome": "Eliana Souza da Silva",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 85,
+   "nome": "Fabio Augusto de Campos",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 90,
+   "nome": "Joel Francisco de Almeida",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 94,
+   "nome": "Lucio Gonçalves da Silva Filho",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 95,
+   "nome": "Luis Fernando Paula Leite",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 18,
+   "nome": "Sebastião Francisco Correia",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 19,
+   "nome": "Sérgio Poli Simon",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 21,
+   "nome": "Valter Rodrigues Vieira",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31",
+   "partido": "",
+   "votos": null,
+   "cargo": "Titular"
+  }
+ ],
+ "anteriores": {
+  "77": "Adriano Balbino Evaristo",
+  "79": "Aurilio Reginaldo dos Santos",
+  "80": "Benildo Santos Ribeiro",
+  "81": "Edvani de Fátima Azevedo",
+  "82": "Eli Teles Junior",
+  "83": "Eliana Souza da Silva",
+  "84": "Fabiano Cardoso Boa Sorte",
+  "85": "Fabio Augusto de Campos",
+  "86": "Francisco Antônio Coutinho",
+  "87": "Ivania Aparecida Ricezi Calixto",
+  "88": "Ivo Paulo Leite",
+  "89": "João Antonio Domingues dos Santos",
+  "90": "Joel Francisco de Almeida",
+  "91": "José Alberto Lima",
+  "92": "José Amilton de Camargo",
+  "93": "Leonardo Roberto Folim",
+  "94": "Lucio Gonçalves da Silva Filho",
+  "95": "Luis Fernando Paula Leite",
+  "96": "Luiz Alberto Antunes Popst",
+  "97": "Mônica Aparecida Domingues",
+  "98": "Sérgio Antônio Nery",
+  "99": "Valdo Manoel Gomes",
+  "24": "Willians Fagundes"
+ }
+}

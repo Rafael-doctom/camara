@@ -182,9 +182,11 @@ def main_fechada(leg):
     info = LEGISLATURAS_FECHADAS[leg]
     membros = legislatura(info["id"], os.path.join(BRUTOS, f"legislatura_{info['id']}.html"), None)
     antigos = anteriores()
-    if len(membros) < VEREADORES_EM_EXERCICIO:
+    # Mínimos baixos de propósito: o número de cadeiras muda entre legislaturas (Iperó tinha 12 em
+    # 2017) e SisCam de cidade pequena lista poucos ex-vereadores. 9 é o mínimo da Constituição.
+    if len(membros) < 9:
         abortar(AGENTE, f"página da legislatura {leg} com {len(membros)} nomes: layout mudou?")
-    if len(antigos) < 2 * VEREADORES_EM_EXERCICIO:
+    if len(antigos) < VEREADORES_EM_EXERCICIO:
         abortar(AGENTE, f"/Vereadores/Anteriores com só {len(antigos)} nomes: layout mudou?")
     nome = f"vereadores_{leg}.json"
     dados = {"legislatura": membros, "anteriores": antigos}
