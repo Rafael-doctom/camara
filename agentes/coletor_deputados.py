@@ -161,7 +161,7 @@ def senado(senadores, anos, uf):
             v = float(l["valorReembolsado"] or 0)
             x["total"] += v
             x["notas"] += 1
-            x["categorias"][l["tipoDespesa"].strip().capitalize()] += v
+            x["categorias"][(l["tipoDespesa"] or "Não informado").strip().capitalize()] += v
             x["meses"][l["mes"]] += v
             doc = "".join(ch for ch in (l["cpfCnpj"] or "") if ch.isdigit())
             nome = re.sub(r"\s*\b\d{3}\.?\d{3}\.?\d{3}-?\d{2}\b", "", l["fornecedor"] or "").strip()

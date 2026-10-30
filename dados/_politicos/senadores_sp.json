@@ -1,0 +1,115 @@
+{
+ "votacoes": [
+  {
+   "id": "6756",
+   "fonte": "Senado Federal",
+   "eixo": "ambiente",
+   "favor": "b",
+   "nota": "Texto principal do marco temporal no Senado (2023).",
+   "m": "PL 2903/2023 (marco temporal das terras indígenas)",
+   "d": "2023-09-27",
+   "r": "Aprovado",
+   "n": {},
+   "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/157888"
+  },
+  {
+   "id": "7032",
+   "fonte": "Senado Federal",
+   "eixo": "ambiente",
+   "favor": "b",
+   "nota": "1º turno da PEC que põe o marco temporal na Constituição (2025).",
+   "m": "PEC 48/2023 (marco temporal na Constituição)",
+   "d": "2025-12-09",
+   "r": "Aprovado",
+   "n": {},
+   "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/160148"
+  },
+  {
+   "id": "6935",
+   "fonte": "Senado Federal",
+   "eixo": "ambiente",
+   "favor": "b",
+   "nota": "Texto da lei geral do licenciamento ambiental aprovado no Senado (2025).",
+   "m": "PL 2159/2021 (licenciamento ambiental)",
+   "d": "2025-05-21",
+   "r": "Aprovado",
+   "n": {},
+   "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/148785"
+  },
+  {
+   "id": "6818",
+   "fonte": "Senado Federal",
+   "eixo": "seguranca",
+   "favor": "b",
+   "nota": "Texto principal que restringe a saída temporária de presos (2024).",
+   "m": "PL 2253/2022 (fim da saída temporária de presos)",
+   "d": "2024-02-20",
+   "r": "Aprovado",
+   "n": {},
+   "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/154451"
+  },
+  {
+   "id": "6824",
+   "fonte": "Senado Federal",
+   "eixo": "costumes",
+   "favor": "b",
+   "nota": "1º turno da PEC que torna crime a posse e o porte de qualquer quantidade de droga (2024).",
+   "m": "PEC 45/2023 (criminalização do porte de drogas)",
+   "d": "2024-04-16",
+   "r": "Aprovado",
+   "n": {},
+   "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/160011"
+  }
+ ],
+ "politicos": [
+  {
+   "chave": "sen-6009",
+   "nome": "Astronauta Marcos Pontes",
+   "partido": "PL",
+   "cargo": "Senador(a) (SP)",
+   "cidade": "",
+   "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6009.jpg",
+   "perfil": "deputados.html#sen-6009",
+   "eixos": {
+    "seguranca": [
+     1,
+     1
+    ],
+    "ambiente": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "chave": "sen-6008",
+   "nome": "Giordano",
+   "partido": "PODE",
+   "cargo": "Senador(a) (SP)",
+   "cidade": "",
+   "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6008.jpg",
+   "perfil": "deputados.html#sen-6008",
+   "eixos": {
+    "seguranca": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "sen-5376",
+   "nome": "Mara Gabrilli",
+   "partido": "PSD",
+   "cargo": "Senador(a) (SP)",
+   "cidade": "",
+   "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5376.jpg",
+   "perfil": "deputados.html#sen-5376",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ]
+   }
+  }
+ ]
+}

@@ -148,6 +148,8 @@
       <p class="suave">Atualizado em ${dataBR(D.gerado_em)}. Fonte: Câmara dos Deputados.</p>`;
   }
 
+  const VOTO_SEN = { MIS: "Em missão oficial", AP: "Em atividade parlamentar", LS: "Licença de saúde", LP: "Licença particular",
+    NCom: "Não compareceu", "P-NRV": "Presente, não votou", Abst: "Abstenção", Obs: "Obstrução", Votou: "Votou (voto secreto)" };
   function perfilSenador(id) {
     const d = (D.senadores || []).find((x) => String(x.id) === id);
     if (!d) return lista();
@@ -165,7 +167,7 @@
       <div class="duas">${blocoAno(anoAnt, g[anoAnt])}${blocoAno(anoAtual, g[anoAtual])}</div>
       <h2>Votos nos temas do Painel ideológico</h2>
       ${vs.length ? `<ol class="dep-votos">${vs.map(({ v, voto }) => `<li><b>${esc(v.m)}</b> · ${v.d ? dataBR(v.d) : ""} · ${esc(EIXO[v.eixo] || v.eixo)}
-        <br><span class="etq ${voto === "Sim" ? "etq-favor" : voto === "Não" ? "etq-contra" : ""}">${esc(voto)}</span> ${esc(v.nota)} <a href="${esc(v.url)}" rel="noopener">matéria ↗</a></li>`).join("")}</ol>
+        <br><span class="etq ${voto === "Sim" ? "etq-favor" : voto === "Não" ? "etq-contra" : ""}">${esc(VOTO_SEN[voto] || voto)}</span> ${esc(v.nota)} <a href="${esc(v.url)}" rel="noopener">matéria ↗</a></li>`).join("")}</ol>
         <p><a class="botao botao-pr" href="espectro.html#comecar" target="_self">Faça o teste e compare-se com ${esc(d.nome)} →</a></p>`
         : `<p class="suave">Sem voto registrado nas votações classificadas (ausente, licenciado ou não era senador na época).</p>`}
       <p class="suave">Fonte: Senado Federal (dados abertos legislativos e administrativos).</p>`;
