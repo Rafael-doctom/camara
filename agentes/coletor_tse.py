@@ -14,10 +14,12 @@ Saídas por cidade:
 
 Os arquivos do TSE trazem CPF, título de eleitor e data de nascimento dos candidatos: nenhum desses
 campos é gravado. Do candidato ficam nome, nome de urna, número, partido, resultado, gênero, idade
-na data da eleição, grau de instrução e ocupação declarada.
+na data da eleição, grau de instrução e ocupação declarada. Nomes de doadores e fornecedores entram
+(são públicos); números de CPF nunca.
 """
 import csv
 import io
+import re
 import json
 import os
 import sys
@@ -141,6 +143,48 @@ def main():
         p["nominais"] += inteiro(r["QT_VOTOS_NOMINAIS_VALIDOS"])
         p["legenda"] += inteiro(r["QT_TOTAL_VOTOS_LEG_VALIDOS"])
         p["partidos"].add(r["SG_PARTIDO"])
+
+    # ---- dinheiro da campanha (prestação de contas), se o arquivo já foi baixado. Nomes de doadores e
+    # fornecedores são públicos e entram; números de CPF nunca são gravados.
+    contas_zip = os.path.join(BRUTOS, f"prestacao_de_contas_eleitorais_candidatos_{ano}.zip")
+    if os.path.exists(contas_zip):
+        valor = lambda v: float((v or "0").replace(".", "").replace(",", ".")) if v else 0.0
+        conta = lambda: {"total": 0.0, "categorias": Counter(), "nomes": Counter()}
+        # Nome de MEI costuma terminar com o CPF do dono: tira qualquer sequência de 11 dígitos.
+        sem_cpf = lambda n: re.sub(r"\s*\b\d{3}\.?\d{3}\.?\d{3}-?\d{2}\b", "", n).strip().title()
+        for s in cand:
+            for c in cand[s].values():
+                c["receitas"], c["despesas"] = conta(), conta()
+        for r in linhas(contas_zip, f"despesas_contratadas_candidatos_{ano}_{uf}.csv"):
+            s = por_nome.get(norm(r["NM_UE"]))
+            c = cand[s].get(r["SQ_CANDIDATO"]) if s else None
+            if not c:
+                continue
+            v = valor(r["VR_DESPESA_CONTRATADA"])
+            d = c["despesas"]
+            d["total"] += v
+            d["categorias"][r["DS_ORIGEM_DESPESA"]] += v
+            pj = len("".join(ch for ch in r["NR_CPF_CNPJ_FORNECEDOR"] if ch.isdigit())) == 14
+            d["nomes"][sem_cpf(r["NM_FORNECEDOR"]) + ("" if pj else " (pessoa física)")] += v
+        for r in linhas(contas_zip, f"receitas_candidatos_{ano}_{uf}.csv"):
+            s = por_nome.get(norm(r["NM_UE"]))
+            c = cand[s].get(r["SQ_CANDIDATO"]) if s else None
+            if not c:
+                continue
+            v = valor(r["VR_RECEITA"])
+            d = c["receitas"]
+            d["total"] += v
+            d["categorias"][r["DS_ORIGEM_RECEITA"].capitalize()] += v
+            pj = len("".join(ch for ch in r["NR_CPF_CNPJ_DOADOR"] if ch.isdigit())) == 14
+            d["nomes"][sem_cpf(r["NM_DOADOR"]) + ("" if pj else " (pessoa física)")] += v
+        for s in cand:
+            for c in cand[s].values():
+                for k in ("receitas", "despesas"):
+                    d = c[k]
+                    c[k] = {"total": round(d["total"], 2),
+                            "categorias": {a: round(b, 2) for a, b in d["categorias"].most_common() if b > 0},
+                            "principais": [[a, round(b, 2)] for a, b in d["nomes"].most_common(8) if b > 0]}
+        log("prestação de contas lida")
 
     # ---- comparecimento, brancos e nulos (se o arquivo já foi baixado)
     detalhe = defaultdict(lambda: defaultdict(Counter))

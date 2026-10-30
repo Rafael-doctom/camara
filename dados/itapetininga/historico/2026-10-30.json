@@ -1,0 +1,576 @@
+{
+ "data": "2026-10-30",
+ "gerado_em": "2026-10-30T09:07+00:00",
+ "geral": {
+  "total_proposituras": 3506,
+  "por_tipo": {
+   "Requerimento": 1545,
+   "Indicação": 1082,
+   "Moção": 428,
+   "Projeto de Lei": 293,
+   "Projeto de Decreto Legislativo": 89,
+   "Projeto de Lei Complementar": 34,
+   "Projeto de Resolução": 33,
+   "Projeto de Emenda à Lei Orgânica": 2
+  },
+  "total_sessoes": 225,
+  "total_votacoes": 2174,
+  "votacoes_divididas": 17
+ },
+ "vereadores": {
+  "BISPO ANDRE": {
+   "nome": "Bispo André",
+   "em_exercicio": true,
+   "proposituras": 159,
+   "por_tipo": {
+    "Requerimento": 49,
+    "Indicação": 65,
+    "Moção": 27,
+    "Projeto de Lei": 10,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Resolução": 3,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 134,
+    "ausente": 2,
+    "pct": 98.5
+   },
+   "pl_total": 10,
+   "pl_aprovados": 9,
+   "votos": {
+    "favor": 111
+   },
+   "alinhamento_maioria": null,
+   "divididas_total": 0
+  },
+  "CATARINA APARECIDA NANINI MOTTA": {
+   "nome": "Catarina Aparecida Nanini Motta",
+   "em_exercicio": true,
+   "proposituras": 287,
+   "por_tipo": {
+    "Requerimento": 152,
+    "Indicação": 34,
+    "Moção": 55,
+    "Projeto de Lei": 28,
+    "Projeto de Decreto Legislativo": 13,
+    "Projeto de Resolução": 3,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 138,
+    "ausente": 1,
+    "pct": 99.3
+   },
+   "pl_total": 28,
+   "pl_aprovados": 21,
+   "votos": {
+    "favor": 1754,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 17
+  },
+  "CHRISTIANE APARECIDA GOMES DE SIQUEIRA ALMEIDA": {
+   "nome": "Christiane Aparecida Gomes de Siqueira Almeida",
+   "em_exercicio": true,
+   "proposituras": 122,
+   "por_tipo": {
+    "Requerimento": 60,
+    "Indicação": 15,
+    "Moção": 24,
+    "Projeto de Lei": 12,
+    "Projeto de Decreto Legislativo": 9,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 138,
+    "ausente": 3,
+    "pct": 97.9
+   },
+   "pl_total": 12,
+   "pl_aprovados": 11,
+   "votos": {
+    "favor": 2043,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 17
+  },
+  "CRISTIANE DE FATIMA CARDENA": {
+   "nome": "Cristiane de Fátima Cardena",
+   "em_exercicio": true,
+   "proposituras": 79,
+   "por_tipo": {
+    "Requerimento": 34,
+    "Indicação": 25,
+    "Moção": 9,
+    "Projeto de Decreto Legislativo": 6,
+    "Projeto de Lei": 4,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 128,
+    "ausente": 7,
+    "pct": 94.8
+   },
+   "pl_total": 4,
+   "pl_aprovados": 1,
+   "votos": {
+    "favor": 804,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 12
+  },
+  "DENISE FRANCI MARTINS DE CASTRO": {
+   "nome": "Denise Franci Martins de Castro",
+   "em_exercicio": true,
+   "proposituras": 172,
+   "por_tipo": {
+    "Requerimento": 84,
+    "Indicação": 54,
+    "Moção": 19,
+    "Projeto de Lei": 6,
+    "Projeto de Decreto Legislativo": 6,
+    "Projeto de Emenda à Lei Orgânica": 2,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 136,
+    "ausente": 6,
+    "pct": 95.8
+   },
+   "pl_total": 6,
+   "pl_aprovados": 5,
+   "votos": {
+    "favor": 1844,
+    "abstencao": 2,
+    "contra": 6
+   },
+   "alinhamento_maioria": 70.6,
+   "divididas_total": 17
+  },
+  "EDUARDO VINICIUS VENTURELLI DE ALMEIDA PRANDO": {
+   "nome": "Eduardo Vinícius Venturelli de Almeida Prando",
+   "em_exercicio": true,
+   "proposituras": 125,
+   "por_tipo": {
+    "Requerimento": 81,
+    "Indicação": 14,
+    "Moção": 19,
+    "Projeto de Lei": 5,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Resolução": 1,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 125,
+    "ausente": 3,
+    "pct": 97.7
+   },
+   "pl_total": 5,
+   "pl_aprovados": 4,
+   "votos": {
+    "favor": 1776,
+    "abstencao": 9,
+    "contra": 17
+   },
+   "alinhamento_maioria": 5.9,
+   "divididas_total": 17
+  },
+  "FRANCISCO ROBERTO FERREIRA": {
+   "nome": "Francisco Roberto Ferreira",
+   "em_exercicio": true,
+   "proposituras": 57,
+   "por_tipo": {
+    "Requerimento": 17,
+    "Indicação": 20,
+    "Moção": 11,
+    "Projeto de Lei": 5,
+    "Projeto de Decreto Legislativo": 2,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 54,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 5,
+   "pl_aprovados": 1,
+   "votos": {
+    "favor": 655
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 4
+  },
+  "GEORGE FELIPE OLIVEIRA DE ARAUJO": {
+   "nome": "George Felipe Oliveira de Araújo",
+   "em_exercicio": true,
+   "proposituras": 188,
+   "por_tipo": {
+    "Requerimento": 59,
+    "Indicação": 30,
+    "Moção": 71,
+    "Projeto de Lei": 18,
+    "Projeto de Decreto Legislativo": 7,
+    "Projeto de Resolução": 1,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 141,
+    "ausente": 2,
+    "pct": 98.6
+   },
+   "pl_total": 18,
+   "pl_aprovados": 13,
+   "votos": {
+    "favor": 1442,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 8
+  },
+  "GUILHERME LUIS MORELLI": {
+   "nome": "Guilherme Luís Morelli",
+   "em_exercicio": true,
+   "proposituras": 168,
+   "por_tipo": {
+    "Requerimento": 84,
+    "Indicação": 13,
+    "Moção": 40,
+    "Projeto de Lei": 18,
+    "Projeto de Decreto Legislativo": 9,
+    "Projeto de Resolução": 2,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 138,
+    "ausente": 2,
+    "pct": 98.6
+   },
+   "pl_total": 18,
+   "pl_aprovados": 10,
+   "votos": {
+    "favor": 1768,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 16
+  },
+  "ITAMAR JOSE MARTINS": {
+   "nome": "Itamar José Martins",
+   "em_exercicio": true,
+   "proposituras": 58,
+   "por_tipo": {
+    "Requerimento": 26,
+    "Projeto de Lei": 6,
+    "Moção": 8,
+    "Projeto de Decreto Legislativo": 4,
+    "Indicação": 9,
+    "Projeto de Lei Complementar": 1,
+    "Projeto de Resolução": 2,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 142,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 6,
+   "pl_aprovados": 3,
+   "votos": {
+    "favor": 1905,
+    "abstencao": 2,
+    "contra": 14
+   },
+   "alinhamento_maioria": 23.5,
+   "divididas_total": 17
+  },
+  "JEFERSON MACHADO CRUZ": {
+   "nome": "Jeferson Machado Cruz",
+   "em_exercicio": true,
+   "proposituras": 153,
+   "por_tipo": {
+    "Requerimento": 47,
+    "Indicação": 83,
+    "Moção": 15,
+    "Projeto de Lei": 2,
+    "Projeto de Decreto Legislativo": 5,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 143,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 2,
+   "pl_aprovados": 1,
+   "votos": {
+    "favor": 2118,
+    "abstencao": 1,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 16
+  },
+  "JOSE CARLOS FELIPE DE ALMEIDA": {
+   "nome": "José Carlos Felipe de Almeida",
+   "em_exercicio": true,
+   "proposituras": 163,
+   "por_tipo": {
+    "Requerimento": 78,
+    "Indicação": 50,
+    "Moção": 16,
+    "Projeto de Lei": 12,
+    "Projeto de Decreto Legislativo": 5,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 135,
+    "ausente": 1,
+    "pct": 99.3
+   },
+   "pl_total": 12,
+   "pl_aprovados": 10,
+   "votos": {
+    "favor": 1401,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 17
+  },
+  "JULIA NUNES MACHADO": {
+   "nome": "Júlia Nunes Machado",
+   "em_exercicio": true,
+   "proposituras": 332,
+   "por_tipo": {
+    "Requerimento": 118,
+    "Indicação": 119,
+    "Moção": 54,
+    "Projeto de Lei": 33,
+    "Projeto de Decreto Legislativo": 8
+   },
+   "presenca": {
+    "presente": 122,
+    "ausente": 8,
+    "pct": 93.8
+   },
+   "pl_total": 33,
+   "pl_aprovados": 14,
+   "votos": {
+    "favor": 1737,
+    "abstencao": 4
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 16
+  },
+  "LUIZ HILARIO DA MOTA CONCEICAO": {
+   "nome": "Luíz Hilário da Mota Conceição",
+   "em_exercicio": true,
+   "proposituras": 94,
+   "por_tipo": {
+    "Requerimento": 55,
+    "Moção": 12,
+    "Indicação": 5,
+    "Projeto de Lei": 16,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 143,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 16,
+   "pl_aprovados": 9,
+   "votos": {
+    "favor": 1907,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 17
+  },
+  "MARINA NALESSO MARIANO": {
+   "nome": "Marina Nalesso Mariano",
+   "em_exercicio": true,
+   "proposituras": 427,
+   "por_tipo": {
+    "Requerimento": 200,
+    "Indicação": 168,
+    "Moção": 44,
+    "Projeto de Lei": 10,
+    "Projeto de Decreto Legislativo": 3,
+    "Projeto de Resolução": 1,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 138,
+    "ausente": 4,
+    "pct": 97.2
+   },
+   "pl_total": 10,
+   "pl_aprovados": 6,
+   "votos": {
+    "favor": 1966,
+    "abstencao": 3,
+    "contra": 15
+   },
+   "alinhamento_maioria": 12.5,
+   "divididas_total": 16
+  },
+  "MARIO CARNEIRO NETO": {
+   "nome": "Mario Carneiro Neto",
+   "em_exercicio": true,
+   "proposituras": 138,
+   "por_tipo": {
+    "Requerimento": 58,
+    "Indicação": 21,
+    "Moção": 37,
+    "Projeto de Lei": 7,
+    "Projeto de Decreto Legislativo": 13,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 137,
+    "ausente": 1,
+    "pct": 99.3
+   },
+   "pl_total": 7,
+   "pl_aprovados": 4,
+   "votos": {
+    "favor": 1939,
+    "abstencao": 1,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 12
+  },
+  "MATHEUS RIBEIRO DE ALMEIDA SANTOS": {
+   "nome": "Matheus Ribeiro de Almeida Santos",
+   "em_exercicio": true,
+   "proposituras": 239,
+   "por_tipo": {
+    "Requerimento": 99,
+    "Indicação": 91,
+    "Moção": 21,
+    "Projeto de Lei": 16,
+    "Projeto de Decreto Legislativo": 10,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 134,
+    "ausente": 4,
+    "pct": 97.1
+   },
+   "pl_total": 16,
+   "pl_aprovados": 10,
+   "votos": {
+    "favor": 1508,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 15
+  },
+  "MIGUEL ARCANJO MAXIMO DE JESUS": {
+   "nome": "Miguel Arcanjo Máximo de Jesus",
+   "em_exercicio": true,
+   "proposituras": 383,
+   "por_tipo": {
+    "Requerimento": 196,
+    "Indicação": 168,
+    "Projeto de Lei": 9,
+    "Moção": 6,
+    "Projeto de Decreto Legislativo": 2,
+    "Projeto de Emenda à Lei Orgânica": 2
+   },
+   "presenca": {
+    "presente": 142,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 9,
+   "pl_aprovados": 9,
+   "votos": {
+    "favor": 1981,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 17
+  },
+  "RICARDO CONEGUNDES": {
+   "nome": "Ricardo Conegundes",
+   "em_exercicio": true,
+   "proposituras": 47,
+   "por_tipo": {
+    "Requerimento": 24,
+    "Indicação": 16,
+    "Moção": 4,
+    "Projeto de Decreto Legislativo": 3
+   },
+   "presenca": {
+    "presente": 15,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 0,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 216
+   },
+   "alinhamento_maioria": null,
+   "divididas_total": 0
+  },
+  "JULIA MARTINS NERY": {
+   "nome": "Júlia Martins Nery",
+   "em_exercicio": false,
+   "proposituras": 131,
+   "por_tipo": {
+    "Requerimento": 40,
+    "Indicação": 31,
+    "Moção": 33,
+    "Projeto de Lei": 16,
+    "Projeto de Decreto Legislativo": 9,
+    "Projeto de Resolução": 2
+   },
+   "presenca": {
+    "presente": 115,
+    "ausente": 5,
+    "pct": 95.8
+   },
+   "pl_total": 16,
+   "pl_aprovados": 7,
+   "votos": {
+    "favor": 1641,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 16
+  },
+  "UANDERSON CLAYTON DE OLIVEIRA MOREIRA": {
+   "nome": "Uanderson Clayton de Oliveira Moreira",
+   "em_exercicio": false,
+   "proposituras": 152,
+   "por_tipo": {
+    "Requerimento": 67,
+    "Indicação": 51,
+    "Moção": 14,
+    "Projeto de Lei": 17,
+    "Projeto de Decreto Legislativo": 3
+   },
+   "presenca": {
+    "presente": 89,
+    "ausente": 1,
+    "pct": 98.9
+   },
+   "pl_total": 17,
+   "pl_aprovados": 14,
+   "votos": {
+    "favor": 1391,
+    "contra": 1
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 13
+  }
+ }
+}

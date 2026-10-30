@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="../style.css?v=5b340d8d27">
 <link rel="stylesheet" href="../tema.css?v=66c0d87b27">
 <link rel="stylesheet" href="../controles.css?v=406c58ceef">
-<link rel="stylesheet" href="../rodape.css?v=3706f10af4">
+<link rel="stylesheet" href="../rodape.css?v=90429d9b55">
 <script>/* modo escuro antes de desenhar, para não piscar */try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
 </head>
 <body>
@@ -38,6 +38,7 @@
       <a href="#votacoes" target="_self">Votações</a>
       <a href="#casos" target="_self">Casos</a>
       <a href="#quiz" target="_self">Quiz</a>
+      <a href="../index.html" target="_self">Cidades</a>
       <div class="mais">
         <button type="button" class="mais-btn" aria-expanded="false" aria-controls="mais-lista">Mais <span class="mais-seta" aria-hidden="true">▾</span></button>
         <div class="mais-lista" id="mais-lista" hidden>
@@ -105,7 +106,8 @@
 
 <!-- Os ?v= são gravados pelo agentes/analista.py. Os demais arquivos de dados (votacoes.js,
      proposituras.js, historico.js) são carregados sob demanda pelo app.js. Ver docs/FORMATO-DADOS.md. -->
-<script src="dados-base.js?v=0b176467ae"></script>
+<script src="dados-base.js?v=05bf4e67f9"></script>
 <script src="../app.js?v=4cd3ef4e3a"></script>
+<script src="../topo.js"></script>
 </body>
 </html>

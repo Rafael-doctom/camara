@@ -1,0 +1,113 @@
+<!doctype html>
+<!-- Modelo do index.html de cada cidade. O agentes/analista.py preenche os {{campos}} e grava
+     site/<cidade>/index.html. Não edite os index.html das cidades: edite este arquivo. -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olho na Câmara de Itapetininga</title>
+<base target="_blank">
+<meta name="description" content="Observatório independente da Câmara Municipal de Itapetininga: proposituras, votações, presença e casos documentados, com dados públicos oficiais.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Olho na Câmara de Itapetininga">
+<meta property="og:title" content="Olho na Câmara de Itapetininga">
+<meta property="og:description" content="O que cada vereador de Itapetininga propõe, como vota e quanto comparece às sessões. Dados públicos oficiais da Câmara.">
+<link rel="canonical" href="https://rafaelpintodasilva.com/camara/itapetininga/">
+<meta property="og:url" content="https://rafaelpintodasilva.com/camara/itapetininga/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=5b340d8d27">
+<link rel="stylesheet" href="../tema.css?v=66c0d87b27">
+<link rel="stylesheet" href="../controles.css?v=406c58ceef">
+<link rel="stylesheet" href="../rodape.css?v=90429d9b55">
+<script>/* modo escuro antes de desenhar, para não piscar */try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
+</head>
+<body>
+<a class="pular" href="#app" target="_self">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="#inicio" target="_self"><span class="marca-olho">●</span> Olho na Câmara <small>Itapetininga</small></a>
+    <div class="topo-acoes">
+      <button type="button" class="tema-btn" aria-label="Ativar modo escuro" aria-pressed="false"><span class="tema-ico" aria-hidden="true"></span></button>
+      <button type="button" class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+    </div>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#inicio" target="_self">Início</a>
+      <a href="#vereadores" target="_self">Vereadores</a>
+      <a href="#votacoes" target="_self">Votações</a>
+      <a href="#casos" target="_self">Casos</a>
+      <a href="#quiz" target="_self">Quiz</a>
+      <a href="../index.html" target="_self">Cidades</a>
+      <div class="mais">
+        <button type="button" class="mais-btn" aria-expanded="false" aria-controls="mais-lista">Mais <span class="mais-seta" aria-hidden="true">▾</span></button>
+        <div class="mais-lista" id="mais-lista" hidden>
+          <span class="mais-rot" aria-hidden="true">Mais páginas</span>
+          <a href="#rankings" target="_self">Rankings</a>
+          <a href="#temas" target="_self">Temas</a>
+          <a href="#aliancas" target="_self">Alianças</a>
+          <a href="#semana" target="_self">A última sessão</a>
+          <a href="#proposituras" target="_self">Proposituras</a>
+          <a href="#legislaturas" target="_self">Legislaturas</a>
+          <a href="#guia" target="_self">Guia do eleitor</a>
+          <a href="#sobre" target="_self">Como funciona</a>
+          <a href="../eleicao.html#itapetininga" target="_self">Eleição 2024</a>
+          <a href="../deputados.html" target="_self">Deputados federais</a>
+          <a href="../espectro.html" target="_self">Painel ideológico</a>
+          <a href="../index.html" target="_self">Outras cidades</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="app" class="conteudo"><p class="carregando">Carregando dados da Câmara…</p></main>
+
+<footer class="rodape ft2" id="rodape">
+ <div class="ft-top">
+  <h2 class="ft-h">Quem vota por você<br>precisa ser visto.</h2>
+  <div class="ft-col"><p class="ft-t">O site</p><ul>
+   <li><a href="#vereadores">Vereadores</a></li><li><a href="#votacoes">Votações</a></li><li><a href="#casos">Casos</a></li>
+   <li><a href="#quiz">Quiz</a></li><li><a href="#rankings">Rankings</a></li><li><a href="#temas">Temas</a></li></ul></div>
+  <div class="ft-col"><p class="ft-t">Mais</p><ul>
+   <li><a href="#aliancas">Quem vota com quem</a></li><li><a href="#semana">A última sessão</a></li><li><a href="#proposituras">Proposituras</a></li>
+   <li><a href="#legislaturas">Legislaturas</a></li><li><a href="#guia">Guia do eleitor</a></li><li><a href="#sobre">Como funciona</a></li><li><a href="../index.html" target="_self">Outras cidades</a></li></ul></div>
+  <div class="ft-col"><p class="ft-t">Compartilhe</p>
+   <div class="share" aria-label="Compartilhar este site">
+    <a class="sh" data-sh="wa" href="https://wa.me/?text=Veja%20como%20vota%20cada%20vereador%20de%20Itapetininga%3A" data-texto="Veja como vota cada vereador de Itapetininga:" rel="noopener">WhatsApp</a>
+    <a class="sh" data-sh="fb" href="https://www.facebook.com/sharer/sharer.php" rel="noopener">Facebook</a>
+    <button type="button" class="sh" data-sh="copy">Copiar link</button>
+    <span class="sh-ok" role="status" aria-live="polite"></span></div>
+   <p class="ft-t ft-t2">Criado por</p>
+   <p><a class="ft-mail" href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></p></div>
+ </div>
+ <div class="ft-faixa" aria-hidden="true"><div class="ft-trilho"><span>Fiscalizar</span><i aria-hidden="true">✱</i><span>Votar</span><i aria-hidden="true">✱</i><span>Presença</span><i aria-hidden="true">✱</i><span>Projetos de lei</span><i aria-hidden="true">✱</i><span>Moções</span><i aria-hidden="true">✱</i><span>Requerimentos</span><i aria-hidden="true">✱</i><span>Transparência</span><i aria-hidden="true">✱</i><span>Itapetininga</span><i aria-hidden="true">✱</i><span>Fiscalizar</span><i aria-hidden="true">✱</i><span>Votar</span><i aria-hidden="true">✱</i><span>Presença</span><i aria-hidden="true">✱</i><span>Projetos de lei</span><i aria-hidden="true">✱</i><span>Moções</span><i aria-hidden="true">✱</i><span>Requerimentos</span><i aria-hidden="true">✱</i><span>Transparência</span><i aria-hidden="true">✱</i><span>Itapetininga</span><i aria-hidden="true">✱</i></div></div>
+ <div class="ft-cite"><strong>Fonte dos dados:</strong> sistema SisCam da <a href="https://itapetininga.siscam.com.br" rel="noopener">Câmara Municipal de Itapetininga ↗</a>, coletados automaticamente. Projeto independente, sem vínculo com partidos ou com a Câmara.</div>
+ <div class="ft-bot"><span>© 2026 Olho na Câmara · criado por <a href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></span><span id="atualizado"></span></div>
+</footer>
+<script>
+/* Rodapé: links de compartilhar com o endereço atual e botão "Copiar link". */
+(function () {
+  var r = document.getElementById("rodape"); if (!r) return;
+  var aqui = function () { return location.href.split("#")[0]; };
+  r.querySelector('[data-sh="wa"]').addEventListener("click", function () {
+    this.href = "https://wa.me/?text=" + encodeURIComponent(this.getAttribute("data-texto") + " " + aqui());
+  });
+  r.querySelector('[data-sh="fb"]').addEventListener("click", function () {
+    this.href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(aqui());
+  });
+  r.querySelector('[data-sh="copy"]').addEventListener("click", function () {
+    var ok = r.querySelector(".sh-ok");
+    (navigator.clipboard ? navigator.clipboard.writeText(location.href) : Promise.reject())
+      .then(function () { ok.textContent = "Link copiado."; }, function () { ok.textContent = "Copie da barra de endereço."; });
+  });
+})();
+</script>
+
+<!-- Os ?v= são gravados pelo agentes/analista.py. Os demais arquivos de dados (votacoes.js,
+     proposituras.js, historico.js) são carregados sob demanda pelo app.js. Ver docs/FORMATO-DADOS.md. -->
+<script src="dados-base.js?v=c0c339b407"></script>
+<script src="../app.js?v=4cd3ef4e3a"></script>
+<script src="../topo.js"></script>
+</body>
+</html>

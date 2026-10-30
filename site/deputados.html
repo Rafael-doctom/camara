@@ -117,7 +117,7 @@
       <div class="dep-meses" aria-label="Gasto por mês">${MESES.map((m, i) => `<span title="${m}: ${real(g.meses[i + 1])}" style="height:${(100 * (g.meses[i + 1] || 0)) / max}%"></span>`).join("")}</div>
       <div class="dep-meses-rot">${MESES.map((m) => `<span>${m}</span>`).join("")}</div>
       <h4>Por tipo de despesa</h4>${barras(g.categorias)}
-      ${g.fornecedores.length ? `<h4>Empresas que mais receberam</h4><table class="dep-forn">${g.fornecedores.map((f) => `<tr><td>${esc(f.nome)}<br><small>${cnpj(f.cnpj)}</small></td><td>${real(f.valor)}</td></tr>`).join("")}</table>` : ""}
+      ${g.fornecedores.length ? `<h4>Quem mais recebeu</h4><table class="dep-forn">${g.fornecedores.map((f) => `<tr><td>${esc(f.nome)}<br><small>${f.cnpj ? cnpj(f.cnpj) : "pessoa física"}</small></td><td>${real(f.valor)}</td></tr>`).join("")}</table>` : ""}
     </div>`;
   }
 
@@ -134,7 +134,7 @@
         <div class="cartao kpi"><div class="valor">${real(total(d, anoAtual))}</div><div class="rotulo">Cota parlamentar em ${anoAtual}</div><div class="kpi-exp">até o último mês publicado</div></div>
       </div>
       <h2>Gastos da cota parlamentar</h2>
-      <p class="suave">Valores líquidos reembolsados pela Câmara. Fornecedores pessoa física não são listados.</p>
+      <p class="suave">Valores líquidos reembolsados pela Câmara.</p>
       <div class="duas">${blocoAno(anoAnt, d.gastos[anoAnt])}${blocoAno(anoAtual, d.gastos[anoAtual])}</div>
       <h2>Votos nos temas do Painel ideológico</h2>
       ${vots.length ? `<ol class="dep-votos">${vots.map(({ v, voto }) => `<li><b>${esc(v.m)}</b> · ${dataBR(v.d)} · ${esc(EIXO[v.eixo] || v.eixo)}
@@ -155,5 +155,6 @@
   rota();
 })();
 </script>
+<script src="topo.js"></script>
 </body>
 </html>

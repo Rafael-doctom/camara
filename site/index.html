@@ -8,12 +8,12 @@
 if (location.hash.length > 1) location.replace("tatui/index.html" + location.hash);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Olho na Câmara</title>
-<meta name="description" content="Observatório independente das Câmaras Municipais de Tatuí: proposituras, votações, presença e casos documentados, com dados públicos oficiais.">
+<meta name="description" content="Observatório independente das Câmaras Municipais de Tatuí, Itapetininga, Cerquilho e Iperó: proposituras, votações, presença e casos documentados, com dados públicos oficiais.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Olho na Câmara">
 <meta property="og:title" content="Olho na Câmara: como vota cada vereador">
-<meta property="og:description" content="Observatório independente das Câmaras Municipais de Tatuí: proposituras, votações, presença e casos documentados, com dados públicos oficiais.">
+<meta property="og:description" content="Observatório independente das Câmaras Municipais de Tatuí, Itapetininga, Cerquilho e Iperó: proposituras, votações, presença e casos documentados, com dados públicos oficiais.">
 <link rel="canonical" href="https://rafaelpintodasilva.com/camara/">
 <meta property="og:url" content="https://rafaelpintodasilva.com/camara/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@ if (location.hash.length > 1) location.replace("tatui/index.html" + location.has
 <link rel="stylesheet" href="style.css?v=5b340d8d27">
 <link rel="stylesheet" href="tema.css?v=66c0d87b27">
 <link rel="stylesheet" href="controles.css?v=406c58ceef">
-<link rel="stylesheet" href="rodape.css?v=3706f10af4">
+<link rel="stylesheet" href="rodape.css?v=90429d9b55">
 <script>/* modo escuro antes de desenhar, para não piscar */try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
 <style>
   .cidades { margin-top: clamp(8px, 2vw, 20px); }
@@ -35,7 +35,7 @@ if (location.hash.length > 1) location.replace("tatui/index.html" + location.has
 <a class="pular" href="#app" target="_self">Pular para o conteúdo</a>
 <header class="topo">
   <div class="topo-in">
-    <a class="marca" href="index.html"><span class="marca-olho">●</span> Olho na Câmara <small>1 cidade</small></a>
+    <a class="marca" href="index.html"><span class="marca-olho">●</span> Olho na Câmara <small>4 cidades</small></a>
     <div class="topo-acoes">
       <button type="button" class="tema-btn" aria-label="Ativar modo escuro" aria-pressed="false"><span class="tema-ico" aria-hidden="true"></span></button>
     </div>
@@ -51,6 +51,9 @@ if (location.hash.length > 1) location.replace("tatui/index.html" + location.has
     <h2 id="t-cidades" class="sr">Cidades</h2>
     <div class="grade-explore">
       <a class="explore cidade" href="tatui/index.html"><span class="rotulo">Câmara Municipal de Tatuí</span><span class="explore-t">Tatuí</span><span class="cidade-nums"><span><b>17</b> vereadores</span><span><b>10.689</b> votações</span><span><b>10.588</b> proposituras</span></span><span class="caso-ler" aria-hidden="true">Ver a Câmara →</span></a>
+      <a class="explore cidade" href="itapetininga/index.html"><span class="rotulo">Câmara Municipal de Itapetininga</span><span class="explore-t">Itapetininga</span><span class="cidade-nums"><span><b>19</b> vereadores</span><span><b>2.174</b> votações</span><span><b>3.506</b> proposituras</span></span><span class="caso-ler" aria-hidden="true">Ver a Câmara →</span></a>
+      <a class="explore cidade" href="eleicao.html#cerquilho"><span class="rotulo">Câmara Municipal de Cerquilho</span><span class="explore-t">Cerquilho</span><span class="cidade-nums"><span><b>13</b> vereadores</span><span>Prefeito: <b>Du Pilon</b></span></span><span class="explore-d">Votações e presença da Câmara em preparação. Já disponível: eleição de 2024.</span><span class="caso-ler" aria-hidden="true">Ver a eleição →</span></a>
+      <a class="explore cidade" href="eleicao.html#ipero"><span class="rotulo">Câmara Municipal de Iperó</span><span class="explore-t">Iperó</span><span class="cidade-nums"><span><b>13</b> vereadores</span><span>Prefeito: <b>Léo Folim</b></span></span><span class="explore-d">Votações e presença da Câmara em preparação. Já disponível: eleição de 2024.</span><span class="caso-ler" aria-hidden="true">Ver a eleição →</span></a>
     </div>
   </section>
   <section aria-labelledby="t-mais" class="entrada-extra">
@@ -68,6 +71,9 @@ if (location.hash.length > 1) location.replace("tatui/index.html" + location.has
   <h2 class="ft-h">Quem vota por você<br>precisa ser visto.</h2>
   <div class="ft-col"><p class="ft-t">Cidades</p><ul>
    <li><a href="tatui/index.html">Tatuí</a></li>
+   <li><a href="itapetininga/index.html">Itapetininga</a></li>
+   <li><a href="eleicao.html#cerquilho">Cerquilho</a></li>
+   <li><a href="eleicao.html#ipero">Iperó</a></li>
   </ul></div>
   <div class="ft-col"><p class="ft-t">Mais</p><ul>
    <li><a href="espectro.html">Painel ideológico</a></li><li><a href="deputados.html">Deputados federais</a></li><li><a href="eleicao.html">Eleição 2024</a></li></ul></div>
@@ -80,7 +86,7 @@ if (location.hash.length > 1) location.replace("tatui/index.html" + location.has
    <p class="ft-t ft-t2">Criado por</p>
    <p><a class="ft-mail" href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></p></div>
  </div>
- <div class="ft-faixa" aria-hidden="true"><div class="ft-trilho"><span>Tatuí</span><i aria-hidden="true">✱</i><span>Tatuí</span><i aria-hidden="true">✱</i><span>Tatuí</span><i aria-hidden="true">✱</i><span>Tatuí</span><i aria-hidden="true">✱</i></div></div>
+ <div class="ft-faixa" aria-hidden="true"><div class="ft-trilho"><span>Tatuí</span><i aria-hidden="true">✱</i><span>Itapetininga</span><i aria-hidden="true">✱</i><span>Cerquilho</span><i aria-hidden="true">✱</i><span>Iperó</span><i aria-hidden="true">✱</i><span>Tatuí</span><i aria-hidden="true">✱</i><span>Itapetininga</span><i aria-hidden="true">✱</i><span>Cerquilho</span><i aria-hidden="true">✱</i><span>Iperó</span><i aria-hidden="true">✱</i><span>Tatuí</span><i aria-hidden="true">✱</i><span>Itapetininga</span><i aria-hidden="true">✱</i><span>Cerquilho</span><i aria-hidden="true">✱</i><span>Iperó</span><i aria-hidden="true">✱</i><span>Tatuí</span><i aria-hidden="true">✱</i><span>Itapetininga</span><i aria-hidden="true">✱</i><span>Cerquilho</span><i aria-hidden="true">✱</i><span>Iperó</span><i aria-hidden="true">✱</i></div></div>
  <div class="ft-cite"><strong>Fonte dos dados:</strong> sistema SisCam de cada Câmara Municipal, coletados automaticamente. Projeto independente, sem vínculo com partidos ou com as Câmaras.</div>
  <div class="ft-bot"><span>© 2026 Olho na Câmara · criado por <a href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></span><span>Atualizado em 30/10/2026.</span></div>
 </footer>
@@ -116,5 +122,6 @@ if (location.hash.length > 1) location.replace("tatui/index.html" + location.has
   });
 })();
 </script>
+<script src="topo.js"></script>
 </body>
 </html>

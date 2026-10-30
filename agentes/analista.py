@@ -229,7 +229,21 @@ def gravar_entrada(estaticos):
         cfg = ler_arquivo_json(os.path.join(RAIZ, "cidades", f"{slug_c}.json"))
         ind = ler_arquivo_json(os.path.join(RAIZ, "dados", slug_c, "processados", "indicadores.json"), {})
         if not ind or not os.path.exists(os.path.join(SITE_RAIZ, slug_c, "index.html")):
-            continue  # cidade configurada mas ainda sem coleta
+            # Câmara ainda sem coleta: o cartão leva aos dados da eleição, se já existirem.
+            el = ler_arquivo_json(os.path.join(RAIZ, "dados", slug_c, "processados", "eleicao_2024.json"), {})
+            if not el:
+                continue
+            pref = next((c for c in el["prefeito"] if c["situacao"].startswith("Eleito")), None)
+            cartoes.append(
+                f'      <a class="explore cidade" href="eleicao.html#{e(slug_c)}"><span class="rotulo">{e(cfg["camara"])}</span>'
+                f'<span class="explore-t">{e(cfg["nome"])}</span><span class="cidade-nums">'
+                f'<span><b>{el["quociente"]["cadeiras"]}</b> vereadores</span>'
+                + (f'<span>Prefeito: <b>{e(pref["urna"].title())}</b></span>' if pref else "")
+                + '</span><span class="explore-d">Votações e presença da Câmara em preparação. Já disponível: eleição de 2024.</span>'
+                f'<span class="caso-ler" aria-hidden="true">Ver a eleição →</span></a>')
+            itens.append(f'   <li><a href="eleicao.html#{e(slug_c)}">{e(cfg["nome"])}</a></li>')
+            nomes.append(cfg["nome"])
+            continue
         g = ind["geral"]
         em_ex = sum(v["em_exercicio"] for v in ind["vereadores"])
         atualizado = max(atualizado, g["gerado_em"][:10])
@@ -741,6 +755,26 @@ def main():
         alvo = chave(caso.get("materia", ""))
         caso["votacoes"] = sorted((v for v in vot_hist + lista_vot if casa_materia(alvo, v["m"])),
                                   key=lambda v: (v["d"], v["id"]))
+
+    # --- quem está de fato na cadeira: alguns SisCam listam em exercício também titulares afastados
+    # (ex.: secretário municipal) junto com o suplente que assumiu. Se a lista passa do número de
+    # cadeiras, vale a chamada da sessão mais recente.
+    listados = [k for k, p in perfis.items() if p.get("em_exercicio")]
+    if len(listados) > VEREADORES_EM_EXERCICIO:
+        com_chamada = sorted((x for x in sessoes if x.get("chamadas")), key=lambda x: x["data"])
+        if com_chamada:
+            na_chamada = {apelidos.get(chave(n), chave(n)) for ch in com_chamada[-1]["chamadas"]
+                          for nomes in ch.get("grupos", {}).values() for n in nomes}
+            fora = [k for k in listados if k not in na_chamada]
+            if len(listados) - len(fora) == VEREADORES_EM_EXERCICIO:
+                for k in fora:
+                    perfis[k]["em_exercicio"] = False
+                    perfis[k]["afastado"] = True
+                log(AGENTE, f"afastados (na lista do SisCam, fora da chamada de {com_chamada[-1]['data']}): "
+                            f"{[perfis[k]['nome'] for k in fora]}")
+            else:
+                log(AGENTE, f"AVISO: a chamada de {com_chamada[-1]['data']} não resolve quem está na cadeira "
+                            f"({len(listados) - len(fora)} de {len(listados)} listados)")
 
     # --- monta perfis finais
     saida_ver = []

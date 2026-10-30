@@ -6,7 +6,13 @@
 .esp-nav .botao { min-height: 40px; padding: 6px 16px; margin-left: 6px; }
 .esp-voltar { font-size: .82rem !important; color: var(--suave) !important; }
 @media (max-width: 760px) { .esp-nav a:not(.botao):not(.esp-voltar) { display: none; } }
-@media (max-width: 480px) { .esp-nav a.esp-voltar, .topo .marca small { display: none; } .esp-nav .botao { margin-left: 0; white-space: nowrap; } }
+@media (max-width: 480px) {
+  .topo .marca small { display: none; }
+  .topo-in:has(.esp-nav) { flex-wrap: wrap; row-gap: 6px; }
+  .esp-nav { flex-wrap: wrap; justify-content: flex-end; margin-left: auto; }
+  .esp-nav a.esp-voltar { padding: 6px 8px; min-height: 40px; }
+  .esp-nav .botao { margin-left: 0; white-space: nowrap; padding: 6px 12px; }
+}
 
 .esp-rot { font-family: var(--f-mono); font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--acento); margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
 .esp-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--cor, var(--acento-2)); margin-right: 8px; vertical-align: middle; }

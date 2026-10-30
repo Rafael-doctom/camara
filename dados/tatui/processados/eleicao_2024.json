@@ -3,7 +3,7 @@
  "turno": 1,
  "cidade": "Tatuí",
  "tse_municipio": "71811",
- "gerado_em": "2026-10-30T08:49+00:00",
+ "gerado_em": "2026-10-30T09:01+00:00",
  "fonte": "TSE, Portal de Dados Abertos",
  "comparecimento": {
   "prefeito": {
@@ -43,6 +43,101 @@
    "anulados": false,
    "zonas": {
     "140": 24554
+   },
+   "receitas": {
+    "total": 209970.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 167270.0,
+     "Recursos próprios": 38100.0,
+     "Recursos de partido político": 4600.0
+    },
+    "principais": [
+     [
+      "Rubens Ometto Silveira Mello (pessoa física)",
+      100000.0
+     ],
+     [
+      "Antonio Marcos De Abreu (pessoa física)",
+      22100.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior (pessoa física)",
+      16000.0
+     ],
+     [
+      "Regiane De Oliveira Rosa Cardoso (pessoa física)",
+      9180.0
+     ],
+     [
+      "Fabiana De Cassia Grechi De Carli (pessoa física)",
+      8000.0
+     ],
+     [
+      "Anderson Dos Santos Vieira (pessoa física)",
+      5100.0
+     ],
+     [
+      "Maria Suzana De Oliveira Paes (pessoa física)",
+      5100.0
+     ],
+     [
+      "Luis Donizetti Vaz Junior (pessoa física)",
+      5000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 158719.38,
+    "categorias": {
+     "Publicidade por materiais impressos": 34560.0,
+     "Serviços contábeis": 30000.0,
+     "Serviços advocatícios": 25000.0,
+     "Publicidade por jornais e revistas": 22500.0,
+     "Publicidade por adesivos": 18182.5,
+     "Despesas com pessoal": 13400.0,
+     "Despesa com Impulsionamento de Conteúdos": 5700.0,
+     "Combustíveis e lubrificantes": 3645.03,
+     "Diversas a especificar": 2396.0,
+     "Produção de jingles, vinhetas e slogans": 1500.0,
+     "Água": 960.0,
+     "Produção de programas de rádio, televisão ou vídeo": 750.0,
+     "Criação e inclusão de páginas na internet": 73.5,
+     "Encargos financeiros, taxas bancárias e/ou op. cartão de crédito": 52.35
+    },
+    "principais": [
+     [
+      "Ccm Letreiros E Decoração Ltda",
+      52325.0
+     ],
+     [
+      "Evandro Emersom Camargo (pessoa física)",
+      30000.0
+     ],
+     [
+      "Renato Camargo Sociedade  Indivudual De Advocacia",
+      25000.0
+     ],
+     [
+      "Pedro Dos Santos Oliveira",
+      11290.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      8252.5
+     ],
+     [
+      "Dlocal Brasil I De Pagamentos",
+      5000.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      3735.0
+     ],
+     [
+      "Auto Posto Avenida Tatui Ltda",
+      3645.03
+     ]
+    ]
    }
   },
   {
@@ -64,6 +159,96 @@
    "anulados": false,
    "zonas": {
     "140": 24106
+   },
+   "receitas": {
+    "total": 608750.0,
+    "categorias": {
+     "Recursos de partido político": 500000.0,
+     "Recursos de pessoas físicas": 77150.0,
+     "Recursos próprios": 31600.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      500000.0
+     ],
+     [
+      "Juliana Maria Vieira De Camargo Passerani (pessoa física)",
+      40150.0
+     ],
+     [
+      "Edgard Karnick Nahas (pessoa física)",
+      35000.0
+     ],
+     [
+      "Alessandra Vieira De Camargo Teles (pessoa física)",
+      30600.0
+     ],
+     [
+      "Joao Victor Vieira De Camargo Teles (pessoa física)",
+      2000.0
+     ],
+     [
+      "Fabio Jose Menezes Bueno (pessoa física)",
+      1000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 603240.17,
+    "categorias": {
+     "Despesas com pessoal": 281148.0,
+     "Publicidade por materiais impressos": 102398.0,
+     "Criação e inclusão de páginas na internet": 37000.0,
+     "Despesa com Impulsionamento de Conteúdos": 31500.0,
+     "Alimentação": 31210.68,
+     "Cessão ou locação de veículos": 28969.0,
+     "Publicidade por adesivos": 28824.0,
+     "Combustíveis e lubrificantes": 25653.53,
+     "Serviços advocatícios": 10000.0,
+     "Materiais de expediente": 7015.9,
+     "Produção de programas de rádio, televisão ou vídeo": 6000.0,
+     "Publicidade por jornais e revistas": 4360.0,
+     "Produção de jingles, vinhetas e slogans": 3500.0,
+     "Água": 3452.08,
+     "Locação/cessão de bens imóveis": 1500.0,
+     "Energia elétrica": 412.48,
+     "Encargos financeiros, taxas bancárias e/ou op. cartão de crédito": 296.5
+    },
+    "principais": [
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      59950.0
+     ],
+     [
+      "Elithe Industria Grafica Ltda",
+      40248.0
+     ],
+     [
+      "Orn Midia Comunicação Eireli",
+      30000.0
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      27500.0
+     ],
+     [
+      "Auto Posto Quatrocentão Ltda",
+      25653.53
+     ],
+     [
+      "Gilberto Alves Rocha (pessoa física)",
+      16150.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      14730.0
+     ],
+     [
+      "Matheus Queiroz Antunes Machado (pessoa física)",
+      11900.0
+     ]
+    ]
    }
   },
   {
@@ -85,6 +270,106 @@
    "anulados": false,
    "zonas": {
     "140": 9348
+   },
+   "receitas": {
+    "total": 322535.98,
+    "categorias": {
+     "Recursos de partido político": 254207.8,
+     "Recursos de pessoas físicas": 62015.0,
+     "Recursos de financiamento coletivo": 5713.18,
+     "Recursos próprios": 600.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      254207.8
+     ],
+     [
+      "Rubens Ometto (pessoa física)",
+      50000.0
+     ],
+     [
+      "Elegis Gestao Estrategica",
+      5713.18
+     ],
+     [
+      "Henrique De Oliveira Gimenes (pessoa física)",
+      5000.0
+     ],
+     [
+      "Lineu Dade Sallum (pessoa física)",
+      5000.0
+     ],
+     [
+      "Magali Simeia Camargo Sallum (pessoa física)",
+      1500.0
+     ],
+     [
+      "Eduardo Dade Sallum (pessoa física)",
+      600.0
+     ],
+     [
+      "Luiz Silvestre Vaz De Campos (pessoa física)",
+      400.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 317053.25,
+    "categorias": {
+     "Publicidade por materiais impressos": 76950.0,
+     "Serviços contábeis": 61000.0,
+     "Publicidade por carros de som": 33540.0,
+     "Despesas com pessoal": 33414.25,
+     "Serviços prestados por terceiros": 33000.0,
+     "Serviços advocatícios": 16600.0,
+     "Serviços próprios prestados por terceiros": 15000.0,
+     "Diversas a especificar": 13520.0,
+     "Despesa com Impulsionamento de Conteúdos": 11200.0,
+     "Publicidade por adesivos": 7650.0,
+     "Produção de programas de rádio, televisão ou vídeo": 6000.0,
+     "Publicidade por jornais e revistas": 3997.0,
+     "Produção de jingles, vinhetas e slogans": 2300.0,
+     "Locação/cessão de bens imóveis": 2000.0,
+     "Alimentação": 451.92,
+     "Pré-instalação física de comitê de campanha": 220.0,
+     "Água": 155.58,
+     "Taxa de Administração de Financiamento Coletivo": 54.5
+    },
+    "principais": [
+     [
+      "50.471.967 Anair Angela Pasztetnik Oliveira",
+      76150.0
+     ],
+     [
+      "João Luis De Sousa (pessoa física)",
+      61000.0
+     ],
+     [
+      "Megaprime Producao Tv Business Ltda",
+      30540.0
+     ],
+     [
+      "Bomtempo Marketing Ltda",
+      20000.0
+     ],
+     [
+      "Qi Comunicacao E Tecnologia Ltda",
+      16820.0
+     ],
+     [
+      "Bruna Maéli Antunes Da Silva Godoi (pessoa física)",
+      16600.0
+     ],
+     [
+      "Luana Ribeiro Faustino (pessoa física)",
+      15000.0
+     ],
+     [
+      "Facebook Servicos Online Brasil",
+      11200.0
+     ]
+    ]
    }
   },
   {
@@ -106,6 +391,16 @@
    "anulados": false,
    "zonas": {
     "140": 656
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   }
  ],
@@ -127,7 +422,17 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250001909175",
@@ -146,7 +451,17 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002104238",
@@ -165,7 +480,17 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002137705",
@@ -184,7 +509,17 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   }
  ],
  "vereador": [
@@ -207,6 +542,68 @@
    "anulados": false,
    "zonas": {
     "140": 2025
+   },
+   "receitas": {
+    "total": 15750.0,
+    "categorias": {
+     "Recursos próprios": 15000.0,
+     "Recursos de pessoas físicas": 750.0
+    },
+    "principais": [
+     [
+      "Joao Eder Alves Miguel (pessoa física)",
+      15000.0
+     ],
+     [
+      "Maria Olinda Alves De Castro Miguel (pessoa física)",
+      750.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 14750.0,
+    "categorias": {
+     "Despesas com pessoal": 5340.0,
+     "Publicidade por materiais impressos": 4920.0,
+     "Criação e inclusão de páginas na internet": 2750.0,
+     "Despesa com Impulsionamento de Conteúdos": 1282.0,
+     "Despesa com geradores de energia": 247.5,
+     "Publicidade por adesivos": 210.5
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafico Me",
+      4480.0
+     ],
+     [
+      "Domingos Savio Felix Junior",
+      2750.0
+     ],
+     [
+      "Nathan Luna Cabral (pessoa física)",
+      1800.0
+     ],
+     [
+      "Paulo Vitor De Oliveira (pessoa física)",
+      1800.0
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      1529.5
+     ],
+     [
+      "Amanda De Fatima Miranda Silva (pessoa física)",
+      720.0
+     ],
+     [
+      "Ana Julia Franco Miranda (pessoa física)",
+      660.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      650.5
+     ]
+    ]
    }
   },
   {
@@ -228,6 +625,76 @@
    "anulados": false,
    "zonas": {
     "140": 1841
+   },
+   "receitas": {
+    "total": 26810.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 17485.0,
+     "Recursos próprios": 9325.0
+    },
+    "principais": [
+     [
+      "Cintia Yamamoto Soares (pessoa física)",
+      9325.0
+     ],
+     [
+      "Antonio Luis Soares (pessoa física)",
+      9185.0
+     ],
+     [
+      "Rogerio Yamamoto Soares (pessoa física)",
+      7800.0
+     ],
+     [
+      "Erica Trevisan Diniz (pessoa física)",
+      500.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 26310.0,
+    "categorias": {
+     "Despesas com pessoal": 11400.0,
+     "Publicidade por materiais impressos": 7865.0,
+     "Publicidade por adesivos": 2545.0,
+     "Despesa com Impulsionamento de Conteúdos": 2000.0,
+     "Criação e inclusão de páginas na internet": 1500.0,
+     "Cessão ou locação de veículos": 1000.0
+    },
+    "principais": [
+     [
+      "Ivan Pinto De Oliveira (pessoa física)",
+      9000.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      6990.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      2375.0
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      2000.0
+     ],
+     [
+      "R Amorim Marketing Ltda",
+      1500.0
+     ],
+     [
+      "Karina Cristiane Modos (pessoa física)",
+      1050.0
+     ],
+     [
+      "Magaprime Producao Tv Business Ltda",
+      1000.0
+     ],
+     [
+      "Alessandra Gonçalves Da Silva (pessoa física)",
+      750.0
+     ]
+    ]
    }
   },
   {
@@ -249,6 +716,59 @@
    "anulados": false,
    "zonas": {
     "140": 1740
+   },
+   "receitas": {
+    "total": 11530.0,
+    "categorias": {
+     "Recursos próprios": 10000.0,
+     "Recursos de pessoas físicas": 1500.0,
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Renan Cortez (pessoa física)",
+      10000.0
+     ],
+     [
+      "Daniela Fogaça De Almeida Cortez (pessoa física)",
+      1500.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 10000.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 5800.0,
+     "Despesa com Impulsionamento de Conteúdos": 1840.0,
+     "Publicidade por adesivos": 1560.0,
+     "Criação e inclusão de páginas na internet": 800.0
+    },
+    "principais": [
+     [
+      "Anair Angela Pasztetnik Oliveira",
+      5800.0
+     ],
+     [
+      "Dlocal A Serviço De Facebook",
+      1640.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      1560.0
+     ],
+     [
+      "Bianca Gallego Fonseca Pinto",
+      800.0
+     ],
+     [
+      "Facebook",
+      200.0
+     ]
+    ]
    }
   },
   {
@@ -270,6 +790,78 @@
    "anulados": false,
    "zonas": {
     "140": 1453
+   },
+   "receitas": {
+    "total": 26413.59,
+    "categorias": {
+     "Recursos de partido político": 22876.92,
+     "Recursos de financiamento coletivo": 2035.0,
+     "Recursos de outros candidatos": 1501.67
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      22876.92
+     ],
+     [
+      "Elegis Gestao Estrategica",
+      2035.0
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1501.67
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 24840.77,
+    "categorias": {
+     "Despesas com pessoal": 16200.0,
+     "Despesa com Impulsionamento de Conteúdos": 2500.0,
+     "Serviços próprios prestados por terceiros": 2000.0,
+     "Serviços prestados por terceiros": 1200.0,
+     "Diversas a especificar": 1077.8,
+     "Publicidade por materiais impressos": 700.0,
+     "Produção de jingles, vinhetas e slogans": 550.0,
+     "Alimentação": 420.41,
+     "Água": 107.1,
+     "Materiais de expediente": 56.03,
+     "Taxa de Administração de Financiamento Coletivo": 29.43
+    },
+    "principais": [
+     [
+      "Inara De Toledo Santana (pessoa física)",
+      3000.0
+     ],
+     [
+      "Luana Ribeiro Faustino (pessoa física)",
+      2000.0
+     ],
+     [
+      "Juliana Do Prado Camargo (pessoa física)",
+      2000.0
+     ],
+     [
+      "Pedro Gabriel Bueno Caresia (pessoa física)",
+      2000.0
+     ],
+     [
+      "Luciana Barbosa De Araujo Guerra (pessoa física)",
+      1750.0
+     ],
+     [
+      "Maiara Alves (pessoa física)",
+      1750.0
+     ],
+     [
+      "Maysa G C Nascimento (pessoa física)",
+      1650.0
+     ],
+     [
+      "Facebook Servicos Online Do Brasil Ltda",
+      1500.0
+     ]
+    ]
    }
   },
   {
@@ -291,6 +883,43 @@
    "anulados": false,
    "zonas": {
     "140": 1386
+   },
+   "receitas": {
+    "total": 4568.42,
+    "categorias": {
+     "Recursos próprios": 4568.42
+    },
+    "principais": [
+     [
+      "Mauricio Couto (pessoa física)",
+      4568.42
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4568.42,
+    "categorias": {
+     "Publicidade por materiais impressos": 4020.0,
+     "Despesa com Impulsionamento de Conteúdos": 548.42
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      2500.0
+     ],
+     [
+      "Fabio Henrique Grando",
+      800.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      720.0
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      548.42
+     ]
+    ]
    }
   },
   {
@@ -312,6 +941,94 @@
    "anulados": false,
    "zonas": {
     "140": 1345
+   },
+   "receitas": {
+    "total": 56680.31,
+    "categorias": {
+     "Recursos de pessoas físicas": 45870.31,
+     "Recursos próprios": 10400.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Rosana Nochele Pontes Pereira (pessoa física)",
+      10400.0
+     ],
+     [
+      "Fabrício Galvão De Almeida Ribeiro (pessoa física)",
+      7400.0
+     ],
+     [
+      "Milton Soares Pereira (pessoa física)",
+      5900.0
+     ],
+     [
+      "Renan Francisco Rodrigues (pessoa física)",
+      5900.0
+     ],
+     [
+      "Josemeire Leme Coelho (pessoa física)",
+      5110.0
+     ],
+     [
+      "Evandro Nochele (pessoa física)",
+      3000.0
+     ],
+     [
+      "Matias Fernando Padilha (pessoa física)",
+      3000.0
+     ],
+     [
+      "Fabio Marcelo Vieira (pessoa física)",
+      3000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 41270.31,
+    "categorias": {
+     "Despesas com pessoal": 14950.0,
+     "Publicidade por materiais impressos": 13380.0,
+     "Publicidade por adesivos": 9597.5,
+     "Despesa com Impulsionamento de Conteúdos": 1740.0,
+     "Combustíveis e lubrificantes": 1478.21,
+     "Produção de jingles, vinhetas e slogans": 100.0,
+     "Encargos financeiros, taxas bancárias e/ou op. cartão de crédito": 24.6
+    },
+    "principais": [
+     [
+      "Pedro Dos Santos Oliveira",
+      10780.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      9597.5
+     ],
+     [
+      "Alessandro Fidencio Maria",
+      2600.0
+     ],
+     [
+      "Paulo Henrique De Moura Rocha (pessoa física)",
+      2500.0
+     ],
+     [
+      "Andre Luis De Proença (pessoa física)",
+      1800.0
+     ],
+     [
+      "Carla Caroline Gonçalves Pontes (pessoa física)",
+      1800.0
+     ],
+     [
+      "Angelica Godoy Magri (pessoa física)",
+      1800.0
+     ],
+     [
+      "Adyen Br Ltda",
+      1740.0
+     ]
+    ]
    }
   },
   {
@@ -333,6 +1050,78 @@
    "anulados": false,
    "zonas": {
     "140": 1326
+   },
+   "receitas": {
+    "total": 150810.0,
+    "categorias": {
+     "Recursos de partido político": 150000.0,
+     "Recursos de outros candidatos": 410.0,
+     "Recursos de pessoas físicas": 400.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      150000.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Daniele Aparecida Da Cunha Soares (pessoa física)",
+      400.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 149926.63,
+    "categorias": {
+     "Despesas com pessoal": 49000.0,
+     "Diversas a especificar": 38200.0,
+     "Publicidade por materiais impressos": 24400.0,
+     "Publicidade por jornais e revistas": 23000.0,
+     "Despesa com Impulsionamento de Conteúdos": 6200.0,
+     "Produção de jingles, vinhetas e slogans": 4550.0,
+     "Publicidade por adesivos": 1960.0,
+     "Combustíveis e lubrificantes": 1645.83,
+     "Locação/cessão de bens imóveis": 600.0,
+     "Produção de programas de rádio, televisão ou vídeo": 350.0,
+     "Encargos financeiros, taxas bancárias e/ou op. cartão de crédito": 20.8
+    },
+    "principais": [
+     [
+      "Editi Print Ltda",
+      59800.0
+     ],
+     [
+      "Rmm Mendes Digital",
+      12500.0
+     ],
+     [
+      "Paulo Edson De Oliveira",
+      5600.0
+     ],
+     [
+      "Dlocal Brasil I Pagamentos",
+      5300.0
+     ],
+     [
+      "Dw Medica Comunicação E Tecnologia Ltda",
+      5100.0
+     ],
+     [
+      "Everson Alessandro Marcelino (pessoa física)",
+      5000.0
+     ],
+     [
+      "Gustavo Henrique Barrinovo",
+      4500.0
+     ],
+     [
+      "Anair Angela Pasztetnik Oliveira",
+      2600.0
+     ]
+    ]
    }
   },
   {
@@ -354,6 +1143,54 @@
    "anulados": false,
    "zonas": {
     "140": 1222
+   },
+   "receitas": {
+    "total": 7491.0,
+    "categorias": {
+     "Recursos próprios": 7081.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Paulo Sergio De Almeida Martins (pessoa física)",
+      7081.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7031.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 5080.0,
+     "Publicidade por adesivos": 1050.0,
+     "Despesa com Impulsionamento de Conteúdos": 601.0,
+     "Produção de jingles, vinhetas e slogans": 300.0
+    },
+    "principais": [
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      3250.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica - Me",
+      2880.0
+     ],
+     [
+      "Facebook",
+      401.0
+     ],
+     [
+      "Studio Hudson Produções Ltda",
+      300.0
+     ],
+     [
+      "Dlocal Brasil I De Pagamentos",
+      200.0
+     ]
+    ]
    }
   },
   {
@@ -375,6 +1212,50 @@
    "anulados": false,
    "zonas": {
     "140": 1213
+   },
+   "receitas": {
+    "total": 9410.0,
+    "categorias": {
+     "Recursos próprios": 9000.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Hiago Daros Alves (pessoa física)",
+      9000.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 9000.0,
+    "categorias": {
+     "Despesa com Impulsionamento de Conteúdos": 5993.04,
+     "Publicidade por materiais impressos": 1500.0,
+     "Publicidade por adesivos": 1400.0,
+     "Criação e inclusão de páginas na internet": 106.96
+    },
+    "principais": [
+     [
+      "Facebook Serviços Online Do Brasil",
+      5993.04
+     ],
+     [
+      "Pedro Dos Santos Oliveira",
+      1500.0
+     ],
+     [
+      "D A Veiculos Especiais Ltda",
+      1400.0
+     ],
+     [
+      "Ebanx Ltda",
+      106.96
+     ]
+    ]
    }
   },
   {
@@ -396,6 +1277,60 @@
    "anulados": false,
    "zonas": {
     "140": 1183
+   },
+   "receitas": {
+    "total": 11630.0,
+    "categorias": {
+     "Recursos próprios": 11220.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Fabio Antonio Villa Nova (pessoa física)",
+      11220.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 11220.0,
+    "categorias": {
+     "Despesa com Impulsionamento de Conteúdos": 4500.0,
+     "Publicidade por materiais impressos": 3000.0,
+     "Publicidade por jornais e revistas": 1780.0,
+     "Produção de programas de rádio, televisão ou vídeo": 1500.0,
+     "Produção de jingles, vinhetas e slogans": 300.0,
+     "Publicidade por adesivos": 140.0
+    },
+    "principais": [
+     [
+      "Facebook Serviços On Line",
+      4500.0
+     ],
+     [
+      "Anair Angela Pasztetnik Oliveira",
+      3000.0
+     ],
+     [
+      "Empresa Jornalistica O Progresso De Tatui Ltda",
+      1780.0
+     ],
+     [
+      "First Folder Publicidade Digital Ltda",
+      1500.0
+     ],
+     [
+      "Alisson Henrique Carlos Pinto",
+      300.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      140.0
+     ]
+    ]
    }
   },
   {
@@ -417,6 +1352,58 @@
    "anulados": false,
    "zonas": {
     "140": 1152
+   },
+   "receitas": {
+    "total": 2931.5,
+    "categorias": {
+     "Recursos próprios": 2094.0,
+     "Recursos de outros candidatos": 437.5,
+     "Recursos de pessoas físicas": 400.0
+    },
+    "principais": [
+     [
+      "Vade Manoel Ferreira (pessoa física)",
+      2094.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      437.5
+     ],
+     [
+      "Patrick C B Ferreira (pessoa física)",
+      400.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 2494.0,
+    "categorias": {
+     "Despesa com Impulsionamento de Conteúdos": 1058.0,
+     "Publicidade por materiais impressos": 1036.0,
+     "Produção de programas de rádio, televisão ou vídeo": 400.0
+    },
+    "principais": [
+     [
+      "Dlocal Brasil I De Pagamentos",
+      1058.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      500.0
+     ],
+     [
+      "Bruno Augusto Silveira",
+      436.0
+     ],
+     [
+      "Sinval Lopes De Oliveira Junior",
+      400.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -438,6 +1425,41 @@
    "anulados": false,
    "zonas": {
     "140": 1023
+   },
+   "receitas": {
+    "total": 4610.0,
+    "categorias": {
+     "Recursos próprios": 4000.0,
+     "Recursos de outros candidatos": 410.0,
+     "Recursos de pessoas físicas": 200.0
+    },
+    "principais": [
+     [
+      "Gabriela Xavier Mendes Couto (pessoa física)",
+      4000.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Israel Pires (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3939.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 3439.0,
+     "Publicidade por adesivos": 500.0
+    },
+    "principais": [
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      3939.0
+     ]
+    ]
    }
   },
   {
@@ -459,6 +1481,59 @@
    "anulados": false,
    "zonas": {
     "140": 930
+   },
+   "receitas": {
+    "total": 9449.0,
+    "categorias": {
+     "Recursos próprios": 6919.0,
+     "Recursos de pessoas físicas": 2500.0,
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Leandro De Camargo Barros (pessoa física)",
+      6919.0
+     ],
+     [
+      "Jocelim Miranda De Siqueira (pessoa física)",
+      2500.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 6919.0,
+    "categorias": {
+     "Publicidade por adesivos": 4559.0,
+     "Publicidade por materiais impressos": 2000.0,
+     "Despesas com pessoal": 210.0,
+     "Despesa com Impulsionamento de Conteúdos": 150.0
+    },
+    "principais": [
+     [
+      "Augusto Cesar Vieira Me",
+      2820.0
+     ],
+     [
+      "Pedro Dos Santos Oliveira",
+      2000.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      1739.0
+     ],
+     [
+      "Karina Campos Rodrigues (pessoa física)",
+      210.0
+     ],
+     [
+      "Facebook Serviços On Line Do Brasil Ltda",
+      150.0
+     ]
+    ]
    }
   },
   {
@@ -480,6 +1555,85 @@
    "anulados": false,
    "zonas": {
     "140": 908
+   },
+   "receitas": {
+    "total": 22689.15,
+    "categorias": {
+     "Recursos próprios": 15000.0,
+     "Recursos de pessoas físicas": 7689.15
+    },
+    "principais": [
+     [
+      "Marcio Antonio De Camargo (pessoa física)",
+      15000.0
+     ],
+     [
+      "Cristiano De Oliveira Esquitini (pessoa física)",
+      2900.0
+     ],
+     [
+      "Jessica Vitoria Carneiro (pessoa física)",
+      2289.15
+     ],
+     [
+      "Orlando Leite Dos Santos (pessoa física)",
+      900.0
+     ],
+     [
+      "Welerson Antonio Teixeira De Camargo (pessoa física)",
+      900.0
+     ],
+     [
+      "Reginaldo Reuter Correa (pessoa física)",
+      700.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 17789.15,
+    "categorias": {
+     "Despesas com pessoal": 14900.0,
+     "Publicidade por materiais impressos": 1200.0,
+     "Alimentação": 719.15,
+     "Materiais de expediente": 350.0,
+     "Despesa com Impulsionamento de Conteúdos": 250.0,
+     "Produção de jingles, vinhetas e slogans": 200.0,
+     "Água": 170.0
+    },
+    "principais": [
+     [
+      "Rosane De Jesus Guimaraes (pessoa física)",
+      1800.0
+     ],
+     [
+      "Patricia Da Silva Rodrigues (pessoa física)",
+      1800.0
+     ],
+     [
+      "Rejane Batista Ribeiro Da Silva (pessoa física)",
+      1800.0
+     ],
+     [
+      "Fabiana Cristina Cubas Campos (pessoa física)",
+      1800.0
+     ],
+     [
+      "Anderson Nascimento Lopes (pessoa física)",
+      1800.0
+     ],
+     [
+      "Rosemary De Camargo Leite De Almeida (pessoa física)",
+      1500.0
+     ],
+     [
+      "Angela Marcia Silvia (pessoa física)",
+      1500.0
+     ],
+     [
+      "Reginaldo Reuter Correa (pessoa física)",
+      1400.0
+     ]
+    ]
    }
   },
   {
@@ -501,6 +1655,39 @@
    "anulados": false,
    "zonas": {
     "140": 874
+   },
+   "receitas": {
+    "total": 3050.0,
+    "categorias": {
+     "Recursos próprios": 2640.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Joao Francisco De Lima Filho (pessoa física)",
+      2640.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 2640.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 2640.0
+    },
+    "principais": [
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      1990.0
+     ],
+     [
+      "Pedro Dos Santos Oliveira",
+      650.0
+     ]
+    ]
    }
   },
   {
@@ -522,6 +1709,73 @@
    "anulados": false,
    "zonas": {
     "140": 858
+   },
+   "receitas": {
+    "total": 42200.0,
+    "categorias": {
+     "Recursos de partido político": 40000.0,
+     "Recursos próprios": 2200.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      40000.0
+     ],
+     [
+      "Alexandre De Jesus Bossolan (pessoa física)",
+      2200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 40000.0,
+    "categorias": {
+     "Despesas com pessoal": 12315.41,
+     "Publicidade por materiais impressos": 6813.0,
+     "Publicidade por adesivos": 5230.0,
+     "Criação e inclusão de páginas na internet": 5000.0,
+     "Produção de programas de rádio, televisão ou vídeo": 5000.0,
+     "Serviços advocatícios": 3000.0,
+     "Combustíveis e lubrificantes": 1400.59,
+     "Produção de jingles, vinhetas e slogans": 800.0,
+     "Materiais de expediente": 310.0,
+     "Alimentação": 129.5,
+     "Encargos financeiros, taxas bancárias e/ou op. cartão de crédito": 1.5
+    },
+    "principais": [
+     [
+      "Orn Midia Comunicação Eireli",
+      5000.0
+     ],
+     [
+      "Clayton Martins (pessoa física)",
+      5000.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      4940.0
+     ],
+     [
+      "Daniela Ferrareze (pessoa física)",
+      3000.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      2905.0
+     ],
+     [
+      "Maria Cristina De Arruda Nogueira (pessoa física)",
+      2334.0
+     ],
+     [
+      "Ariane Bassi Da Silva Grando (pessoa física)",
+      2333.0
+     ],
+     [
+      "Maria Eduarda Barrieli Morais (pessoa física)",
+      2333.0
+     ]
+    ]
    }
   },
   {
@@ -543,6 +1797,54 @@
    "anulados": false,
    "zonas": {
     "140": 852
+   },
+   "receitas": {
+    "total": 9450.0,
+    "categorias": {
+     "Recursos próprios": 9450.0
+    },
+    "principais": [
+     [
+      "Alex Leite Mota (pessoa física)",
+      9450.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 9450.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 5450.0,
+     "Criação e inclusão de páginas na internet": 2000.0,
+     "Despesa com Impulsionamento de Conteúdos": 1000.0,
+     "Publicidade por adesivos": 800.0,
+     "Produção de jingles, vinhetas e slogans": 200.0
+    },
+    "principais": [
+     [
+      "Eric Magri Erdoeg Me",
+      3950.0
+     ],
+     [
+      "Duo Comunicação De Marketing Ltda",
+      2000.0
+     ],
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      1500.0
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      1000.0
+     ],
+     [
+      "D A Veículos Especiais Ltda",
+      800.0
+     ],
+     [
+      "Carlos Eduardo De Lima",
+      200.0
+     ]
+    ]
    }
   },
   {
@@ -564,6 +1866,73 @@
    "anulados": false,
    "zonas": {
     "140": 852
+   },
+   "receitas": {
+    "total": 136794.8,
+    "categorias": {
+     "Recursos de partido político": 136705.1,
+     "Recursos próprios": 89.7
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      136705.1
+     ],
+     [
+      "Elaine Leite De Camargo Miranda (pessoa física)",
+      89.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 136794.8,
+    "categorias": {
+     "Publicidade por materiais impressos": 69250.0,
+     "Despesas com pessoal": 30100.0,
+     "Criação e inclusão de páginas na internet": 13000.0,
+     "Produção de programas de rádio, televisão ou vídeo": 7200.0,
+     "Serviços advocatícios": 5000.0,
+     "Publicidade por jornais e revistas": 3488.0,
+     "Produção de jingles, vinhetas e slogans": 2500.0,
+     "Publicidade por adesivos": 2440.0,
+     "Cessão ou locação de veículos": 1900.0,
+     "Combustíveis e lubrificantes": 1725.3,
+     "Encargos financeiros, taxas bancárias e/ou op. cartão de crédito": 191.5
+    },
+    "principais": [
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      71090.0
+     ],
+     [
+      "Gledson Freitas Felix",
+      9000.0
+     ],
+     [
+      "Orn Midia Comunicação Eireli",
+      9000.0
+     ],
+     [
+      "Luiz Carlos Carduci (pessoa física)",
+      5000.0
+     ],
+     [
+      "Daniela Ferrareze (pessoa física)",
+      5000.0
+     ],
+     [
+      "Patricia Mariane Da Silva (pessoa física)",
+      3000.0
+     ],
+     [
+      "Valdenice Paes Proença Hessel (pessoa física)",
+      2700.0
+     ],
+     [
+      "Clayton Martim (pessoa física)",
+      2700.0
+     ]
+    ]
    }
   },
   {
@@ -585,6 +1954,57 @@
    "anulados": false,
    "zonas": {
     "140": 801
+   },
+   "receitas": {
+    "total": 10410.0,
+    "categorias": {
+     "Recursos de partido político": 10000.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      10000.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 10000.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 4845.0,
+     "Despesas com pessoal": 4150.0,
+     "Publicidade por adesivos": 1005.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      3600.0
+     ],
+     [
+      "Nilza De Olveira Arruda (pessoa física)",
+      1600.0
+     ],
+     [
+      "Rute Fatima Ramos Teles (pessoa física)",
+      1600.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      1245.0
+     ],
+     [
+      "Erik Anthony Do Nascimento Do Nascimento",
+      1005.0
+     ],
+     [
+      "Fhelipe Augusto Soares Silva (pessoa física)",
+      950.0
+     ]
+    ]
    }
   },
   {
@@ -606,6 +2026,53 @@
    "anulados": false,
    "zonas": {
     "140": 801
+   },
+   "receitas": {
+    "total": 4775.0,
+    "categorias": {
+     "Recursos próprios": 4265.0,
+     "Recursos de outros candidatos": 410.0,
+     "Recursos de pessoas físicas": 100.0
+    },
+    "principais": [
+     [
+      "Carlos Eduardo De Alvarenga Viana (pessoa física)",
+      4265.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Luiz Carlos Oliveira Da Silva (pessoa física)",
+      100.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4265.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 3710.0,
+     "Publicidade por adesivos": 555.0
+    },
+    "principais": [
+     [
+      "Pedro Dos Santos Oliveira",
+      2000.0
+     ],
+     [
+      "Ccm Letreiros E Decoração Ltda",
+      1350.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      755.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      160.0
+     ]
+    ]
    }
   },
   {
@@ -627,6 +2094,69 @@
    "anulados": false,
    "zonas": {
     "140": 797
+   },
+   "receitas": {
+    "total": 12603.02,
+    "categorias": {
+     "Recursos próprios": 12193.02,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Amanda Simões De Abreu (pessoa física)",
+      12193.02
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 12193.02,
+    "categorias": {
+     "Publicidade por materiais impressos": 5723.02,
+     "Despesa com Impulsionamento de Conteúdos": 2600.0,
+     "Despesas com pessoal": 2300.0,
+     "Publicidade por adesivos": 545.0,
+     "Locação/cessão de bens imóveis": 500.0,
+     "Produção de jingles, vinhetas e slogans": 450.0,
+     "Diversas a especificar": 75.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica",
+      2300.0
+     ],
+     [
+      "Dlocal Brasil I De Pagamentos",
+      1600.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      1500.0
+     ],
+     [
+      "G3 Comunicação Visual Ltda",
+      1045.0
+     ],
+     [
+      "Wbl Grafica E Editora Ltda",
+      1023.02
+     ],
+     [
+      "Facebook",
+      1000.0
+     ],
+     [
+      "Gisele Aparecida Da Silva (pessoa física)",
+      600.0
+     ],
+     [
+      "Miriã Henrique Costa (pessoa física)",
+      600.0
+     ]
+    ]
    }
   },
   {
@@ -648,6 +2178,77 @@
    "anulados": false,
    "zonas": {
     "140": 662
+   },
+   "receitas": {
+    "total": 19964.5,
+    "categorias": {
+     "Recursos próprios": 13954.5,
+     "Recursos de pessoas físicas": 5600.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Valdir De Proença (pessoa física)",
+      13954.5
+     ],
+     [
+      "Valdeci Antonio Proença (pessoa física)",
+      5400.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Israel Pires (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 17354.5,
+    "categorias": {
+     "Publicidade por materiais impressos": 8975.0,
+     "Publicidade por jornais e revistas": 4900.0,
+     "Publicidade por adesivos": 1499.5,
+     "Despesas com pessoal": 1200.0,
+     "Despesa com Impulsionamento de Conteúdos": 500.0,
+     "Combustíveis e lubrificantes": 280.0
+    },
+    "principais": [
+     [
+      "Pedro Dos Santos Oliveira",
+      6000.0
+     ],
+     [
+      "Ccm Letreiros E Decoração Ltda",
+      4900.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      2975.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      1499.5
+     ],
+     [
+      "Suelen Cristina Da Silva Ferreira (pessoa física)",
+      600.0
+     ],
+     [
+      "Regivanea Vasconcelos Do Nascimento (pessoa física)",
+      600.0
+     ],
+     [
+      "Dlocal Brasil I De Pagamentos",
+      500.0
+     ],
+     [
+      "Auto Posto Avenida Tatui Ltda",
+      280.0
+     ]
+    ]
    }
   },
   {
@@ -669,6 +2270,59 @@
    "anulados": false,
    "zonas": {
     "140": 617
+   },
+   "receitas": {
+    "total": 25000.0,
+    "categorias": {
+     "Recursos de partido político": 25000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      25000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 25000.0,
+    "categorias": {
+     "Despesas com pessoal": 24300.0,
+     "Publicidade por materiais impressos": 700.0
+    },
+    "principais": [
+     [
+      "Valmir Rodrigues Camargo (pessoa física)",
+      3800.0
+     ],
+     [
+      "Jose Batista Da Cruz (pessoa física)",
+      3300.0
+     ],
+     [
+      "Vanessa Nogueira Momberg (pessoa física)",
+      3000.0
+     ],
+     [
+      "Maria Pereira Da Silva (pessoa física)",
+      1850.0
+     ],
+     [
+      "Francislene Olivia Floriano Pereira (pessoa física)",
+      1550.0
+     ],
+     [
+      "Marcia Soares (pessoa física)",
+      1500.0
+     ],
+     [
+      "Fabiano Aparecido Soares (pessoa física)",
+      1500.0
+     ],
+     [
+      "Marcelo Rogerio Paula De Oliveira (pessoa física)",
+      1500.0
+     ]
+    ]
    }
   },
   {
@@ -690,6 +2344,91 @@
    "anulados": false,
    "zonas": {
     "140": 598
+   },
+   "receitas": {
+    "total": 14850.0,
+    "categorias": {
+     "Recursos de partido político": 9000.0,
+     "Recursos de pessoas físicas": 5300.0,
+     "Recursos próprios": 550.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      9000.0
+     ],
+     [
+      "Ivan Cristiano Garcia (pessoa física)",
+      1200.0
+     ],
+     [
+      "Carolina Sperandio De Almeida (pessoa física)",
+      1200.0
+     ],
+     [
+      "Igor Gomes De Almeida (pessoa física)",
+      1200.0
+     ],
+     [
+      "Jose Celso De Paula (pessoa física)",
+      1200.0
+     ],
+     [
+      "Kaue Moraes De Oliveira (pessoa física)",
+      550.0
+     ],
+     [
+      "Ivone Moraes De Oliveira (pessoa física)",
+      500.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 9050.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 4935.0,
+     "Materiais de expediente": 1715.0,
+     "Produção de jingles, vinhetas e slogans": 800.0,
+     "Publicidade por adesivos": 680.0,
+     "Produção de programas de rádio, televisão ou vídeo": 600.0,
+     "Combustíveis e lubrificantes": 199.99,
+     "Despesas com pessoal": 70.01,
+     "Despesa com Impulsionamento de Conteúdos": 50.0
+    },
+    "principais": [
+     [
+      "Tatui Uniformes Ltda",
+      2515.0
+     ],
+     [
+      "Rodrigo Barros De Menezes",
+      2475.0
+     ],
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      1460.0
+     ],
+     [
+      "Israel Pires (pessoa física)",
+      800.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      680.0
+     ],
+     [
+      "Gabriel Gregorio Vanin (pessoa física)",
+      600.0
+     ],
+     [
+      "Jaci Crislaine Fernandes Beca Souza",
+      200.0
+     ],
+     [
+      "Auto Posto Avenida Tatui Ltda",
+      199.99
+     ]
+    ]
    }
   },
   {
@@ -711,6 +2450,23 @@
    "anulados": false,
    "zonas": {
     "140": 554
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes De Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -732,6 +2488,79 @@
    "anulados": false,
    "zonas": {
     "140": 544
+   },
+   "receitas": {
+    "total": 43000.0,
+    "categorias": {
+     "Recursos de partido político": 40000.0,
+     "Recursos de pessoas físicas": 3000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      40000.0
+     ],
+     [
+      "Marco Aurelio Naves De Camargo (pessoa física)",
+      1000.0
+     ],
+     [
+      "Jose Maria Bueno De Camargo (pessoa física)",
+      1000.0
+     ],
+     [
+      "Leticia Rocha (pessoa física)",
+      1000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 41000.0,
+    "categorias": {
+     "Despesas com pessoal": 12800.0,
+     "Publicidade por materiais impressos": 8500.0,
+     "Criação e inclusão de páginas na internet": 7000.0,
+     "Produção de programas de rádio, televisão ou vídeo": 6250.0,
+     "Despesa com Impulsionamento de Conteúdos": 3235.0,
+     "Serviços advocatícios": 3000.0,
+     "Combustíveis e lubrificantes": 200.0,
+     "Encargos financeiros, taxas bancárias e/ou op. cartão de crédito": 12.3,
+     "Materiais de expediente": 2.7
+    },
+    "principais": [
+     [
+      "Anair Angela Pasztetnik Oliveira",
+      8500.0
+     ],
+     [
+      "Orn Midia Comunicacao Eireli",
+      7000.0
+     ],
+     [
+      "Marco Aurelio Naves De Camargo (pessoa física)",
+      7000.0
+     ],
+     [
+      "Clayton Martim (pessoa física)",
+      6000.0
+     ],
+     [
+      "Facebook Servicos Online Do Brasil Ltda",
+      3100.0
+     ],
+     [
+      "Daniela Ferrareze (pessoa física)",
+      3000.0
+     ],
+     [
+      "Danilo Campos Rother (pessoa física)",
+      2350.0
+     ],
+     [
+      "Mariane Lopes Correa (pessoa física)",
+      600.0
+     ]
+    ]
    }
   },
   {
@@ -753,6 +2582,61 @@
    "anulados": false,
    "zonas": {
     "140": 531
+   },
+   "receitas": {
+    "total": 5610.5,
+    "categorias": {
+     "Recursos de pessoas físicas": 4355.0,
+     "Recursos de partido político": 845.5,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Mayara Jannyfer Brandao Trevisano (pessoa física)",
+      2655.0
+     ],
+     [
+      "Ariane Sabrina (pessoa física)",
+      1200.0
+     ],
+     [
+      "Direção Nacional",
+      845.5
+     ],
+     [
+      "Debora Raquel Rocha De Sousa (pessoa física)",
+      500.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4355.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 2340.0,
+     "Publicidade por adesivos": 2015.0
+    },
+    "principais": [
+     [
+      "Augusto Cesar Vieira Me",
+      2015.0
+     ],
+     [
+      "Pedro Dos Santos Oliveira",
+      1050.0
+     ],
+     [
+      "Ccm Letreiros E Decoração Ltda",
+      1050.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      240.0
+     ]
+    ]
    }
   },
   {
@@ -774,6 +2658,40 @@
    "anulados": false,
    "zonas": {
     "140": 506
+   },
+   "receitas": {
+    "total": 348.4,
+    "categorias": {
+     "Recursos próprios": 248.4,
+     "Recursos de pessoas físicas": 100.0
+    },
+    "principais": [
+     [
+      "Leiliane Pereira Da Silva (pessoa física)",
+      248.4
+     ],
+     [
+      "Jose Carlos Dos Santos Sousa (pessoa física)",
+      100.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 248.4,
+    "categorias": {
+     "Combustíveis e lubrificantes": 128.4,
+     "Publicidade por adesivos": 120.0
+    },
+    "principais": [
+     [
+      "Auto Posto Comendador - Mercado Ltda",
+      128.4
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      120.0
+     ]
+    ]
    }
   },
   {
@@ -795,6 +2713,54 @@
    "anulados": false,
    "zonas": {
     "140": 491
+   },
+   "receitas": {
+    "total": 7695.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 7665.0,
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Carmem Leda Avallone Bueno (pessoa física)",
+      3000.0
+     ],
+     [
+      "Iramaia Avalone Bueno Orsi (pessoa física)",
+      2665.0
+     ],
+     [
+      "Luciano Avallone Bueno (pessoa física)",
+      2000.0
+     ],
+     [
+      "Miguel Lopes Cardoso",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 5163.5,
+    "categorias": {
+     "Publicidade por materiais impressos": 2514.0,
+     "Despesas com pessoal": 1800.0,
+     "Publicidade por adesivos": 700.0,
+     "Diversas a especificar": 149.5
+    },
+    "principais": [
+     [
+      "Aliança Artes Gráficas Ltda",
+      3363.5
+     ],
+     [
+      "Silvia Cristiane De Oliveira (pessoa física)",
+      900.0
+     ],
+     [
+      "Elvis Pinto Lima (pessoa física)",
+      900.0
+     ]
+    ]
    }
   },
   {
@@ -816,6 +2782,48 @@
    "anulados": false,
    "zonas": {
     "140": 483
+   },
+   "receitas": {
+    "total": 1600.0,
+    "categorias": {
+     "Recursos próprios": 1600.0
+    },
+    "principais": [
+     [
+      "Jose Helio De Oliveira Junior (pessoa física)",
+      1600.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1600.0,
+    "categorias": {
+     "Despesas com pessoal": 800.0,
+     "Materiais de expediente": 600.0,
+     "Publicidade por materiais impressos": 200.0
+    },
+    "principais": [
+     [
+      "Griffe Correa De Tatui Ltda",
+      600.0
+     ],
+     [
+      "Leticia Bianca Peixoto (pessoa física)",
+      300.0
+     ],
+     [
+      "Victoria Meira Do Nascimento Rossi (pessoa física)",
+      300.0
+     ],
+     [
+      "49.479.980 Emerson Dos Santos Oliveira",
+      200.0
+     ],
+     [
+      "Guilherme Machado Casceiro (pessoa física)",
+      200.0
+     ]
+    ]
    }
   },
   {
@@ -837,6 +2845,85 @@
    "anulados": false,
    "zonas": {
     "140": 460
+   },
+   "receitas": {
+    "total": 34500.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 19000.0,
+     "Recursos próprios": 15000.0,
+     "Recursos de partido político": 500.0
+    },
+    "principais": [
+     [
+      "Wagner Rodrigues (pessoa física)",
+      15000.0
+     ],
+     [
+      "Elisabete Cristina Klososki (pessoa física)",
+      8000.0
+     ],
+     [
+      "Guilherme Rodrigues (pessoa física)",
+      6000.0
+     ],
+     [
+      "Maria L Dos S Rodrigues (pessoa física)",
+      5000.0
+     ],
+     [
+      "Direção Nacional",
+      500.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 34000.0,
+    "categorias": {
+     "Criação e inclusão de páginas na internet": 12000.0,
+     "Correspondências e despesas postais": 7152.75,
+     "Publicidade por materiais impressos": 3650.0,
+     "Produção de jingles, vinhetas e slogans": 3000.0,
+     "Cessão ou locação de veículos": 2500.0,
+     "Atividades de militância e mobilização de rua": 2160.0,
+     "Despesa com Impulsionamento de Conteúdos": 1500.0,
+     "Serviços contábeis": 839.3,
+     "Combustíveis e lubrificantes": 822.95,
+     "Diversas a especificar": 375.0
+    },
+    "principais": [
+     [
+      "Facebook Serviços Online Do Brasil",
+      10500.0
+     ],
+     [
+      "Ect - Emp. Bras. De Correios E Telegrafos",
+      7152.75
+     ],
+     [
+      "Pedro Dos Santos Oliveira",
+      3650.0
+     ],
+     [
+      "D2B Produçoes Audiovisuais Ltda",
+      3000.0
+     ],
+     [
+      "Felipe Aparecido Andrade Silva",
+      3000.0
+     ],
+     [
+      "Ion José Leme Iannaconi",
+      2500.0
+     ],
+     [
+      "Nicole Abrami (pessoa física)",
+      1680.0
+     ],
+     [
+      "Edivaldo Rogerio De Oliveira (pessoa física)",
+      839.3
+     ]
+    ]
    }
   },
   {
@@ -858,6 +2945,45 @@
    "anulados": false,
    "zonas": {
     "140": 452
+   },
+   "receitas": {
+    "total": 2410.0,
+    "categorias": {
+     "Recursos próprios": 1500.0,
+     "Recursos de pessoas físicas": 500.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Jose Celso Cornoló Junior (pessoa física)",
+      1500.0
+     ],
+     [
+      "Marcelo Rodrig (pessoa física)",
+      500.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 2000.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1700.0,
+     "Produção de jingles, vinhetas e slogans": 300.0
+    },
+    "principais": [
+     [
+      "Augusto Cesar Vieira Me",
+      1700.0
+     ],
+     [
+      "Ivan De Almeida Moraes",
+      300.0
+     ]
+    ]
    }
   },
   {
@@ -879,6 +3005,49 @@
    "anulados": false,
    "zonas": {
     "140": 428
+   },
+   "receitas": {
+    "total": 3068.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 2000.0,
+     "Recursos próprios": 1038.0,
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Caroline Aparecida Da Silva Cruz (pessoa física)",
+      1500.0
+     ],
+     [
+      "Emerson Claudio Da Cruz (pessoa física)",
+      1038.0
+     ],
+     [
+      "Carlos Eduardo Lima (pessoa física)",
+      500.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1038.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 540.0,
+     "Diversas a especificar": 498.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      540.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      498.0
+     ]
+    ]
    }
   },
   {
@@ -900,6 +3069,50 @@
    "anulados": false,
    "zonas": {
     "140": 427
+   },
+   "receitas": {
+    "total": 5319.35,
+    "categorias": {
+     "Recursos de pessoas físicas": 5319.35
+    },
+    "principais": [
+     [
+      "Valter Aparecido Domingues (pessoa física)",
+      5319.35
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 2819.35,
+    "categorias": {
+     "Publicidade por materiais impressos": 1590.0,
+     "Combustíveis e lubrificantes": 404.35,
+     "Publicidade por adesivos": 400.0,
+     "Produção de jingles, vinhetas e slogans": 300.0,
+     "Materiais de expediente": 125.0
+    },
+    "principais": [
+     [
+      "Amanda Emanuele Freitas Franco De Moraes",
+      1290.0
+     ],
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      700.0
+     ],
+     [
+      "Auto Posto Lupercio De Almeida Ltda",
+      404.35
+     ],
+     [
+      "Israel Pires (pessoa física)",
+      300.0
+     ],
+     [
+      "Comercial Invicta De Tatui Ltda",
+      125.0
+     ]
+    ]
    }
   },
   {
@@ -921,6 +3134,94 @@
    "anulados": false,
    "zonas": {
     "140": 418
+   },
+   "receitas": {
+    "total": 23200.0,
+    "categorias": {
+     "Recursos de partido político": 15000.0,
+     "Recursos de pessoas físicas": 5700.0,
+     "Recursos próprios": 2500.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      15000.0
+     ],
+     [
+      "Francisco Antonio De Souza Fernandes (pessoa física)",
+      2500.0
+     ],
+     [
+      "Manoel Marques Rodrigues (pessoa física)",
+      1000.0
+     ],
+     [
+      "Daniele Rodrigues Fernandes (pessoa física)",
+      1000.0
+     ],
+     [
+      "Carlos Henrique Amorim Da Cruz (pessoa física)",
+      1000.0
+     ],
+     [
+      "Adalberto De Souza Netto (pessoa física)",
+      1000.0
+     ],
+     [
+      "Fernanda Rodrigues Fernandes (pessoa física)",
+      1000.0
+     ],
+     [
+      "Rosana Conceição Rodrigues Fernandes (pessoa física)",
+      700.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 17000.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 9166.0,
+     "Cessão ou locação de veículos": 3200.0,
+     "Despesas com pessoal": 2800.0,
+     "Atividades de militância e mobilização de rua": 1219.48,
+     "Combustíveis e lubrificantes": 384.52,
+     "Despesa com Impulsionamento de Conteúdos": 150.0,
+     "Materiais de expediente": 80.0
+    },
+    "principais": [
+     [
+      "Renato Antonio Martins Helou",
+      9080.0
+     ],
+     [
+      "Rafael Brito Del Nero (pessoa física)",
+      3200.0
+     ],
+     [
+      "Eric Henrique Silva Diniz (pessoa física)",
+      1219.48
+     ],
+     [
+      "Roberta Cristina Ancelmo (pessoa física)",
+      1000.0
+     ],
+     [
+      "Maria Cristiane Pinto (pessoa física)",
+      1000.0
+     ],
+     [
+      "Carlos Eduardo Mendes Da Costa (pessoa física)",
+      800.0
+     ],
+     [
+      "Auto Posto Santa Cruz De Tatui Ltda",
+      384.52
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      150.0
+     ]
+    ]
    }
   },
   {
@@ -942,6 +3243,40 @@
    "anulados": false,
    "zonas": {
     "140": 396
+   },
+   "receitas": {
+    "total": 4860.96,
+    "categorias": {
+     "Recursos próprios": 3500.0,
+     "Recursos de outros candidatos": 1360.96
+    },
+    "principais": [
+     [
+      "Mariana Oliveira Rosa Balduino (pessoa física)",
+      3500.0
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1360.96
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3500.0,
+    "categorias": {
+     "Diversas a especificar": 3000.0,
+     "Publicidade por materiais impressos": 500.0
+    },
+    "principais": [
+     [
+      "Qi Comunicacao E Tecnologia Ltda",
+      3000.0
+     ],
+     [
+      "Grafica Boituva Ltda - Me",
+      500.0
+     ]
+    ]
    }
   },
   {
@@ -963,6 +3298,35 @@
    "anulados": false,
    "zonas": {
     "140": 382
+   },
+   "receitas": {
+    "total": 972.5,
+    "categorias": {
+     "Recursos de outros candidatos": 672.5,
+     "Recursos próprios": 300.0
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      672.5
+     ],
+     [
+      "Antonio Cubes De Moraes (pessoa física)",
+      300.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 300.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 300.0
+    },
+    "principais": [
+     [
+      "Anair Angela Pasztetnik Oliveira",
+      300.0
+     ]
+    ]
    }
   },
   {
@@ -984,6 +3348,35 @@
    "anulados": false,
    "zonas": {
     "140": 380
+   },
+   "receitas": {
+    "total": 2120.0,
+    "categorias": {
+     "Recursos próprios": 1710.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Rogerio Aparecido Da Costa (pessoa física)",
+      1710.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1710.0,
+    "categorias": {
+     "Publicidade por adesivos": 1710.0
+    },
+    "principais": [
+     [
+      "Augusto Cesar Vieira Me",
+      1710.0
+     ]
+    ]
    }
   },
   {
@@ -1005,6 +3398,31 @@
    "anulados": false,
    "zonas": {
     "140": 378
+   },
+   "receitas": {
+    "total": 199.99,
+    "categorias": {
+     "Recursos próprios": 199.99
+    },
+    "principais": [
+     [
+      "Luzia Aparecida Fermino (pessoa física)",
+      199.99
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 199.99,
+    "categorias": {
+     "Publicidade por materiais impressos": 129.99,
+     "Publicidade por adesivos": 70.0
+    },
+    "principais": [
+     [
+      "Wbl Grafica E Editora Ltda",
+      199.99
+     ]
+    ]
    }
   },
   {
@@ -1026,6 +3444,35 @@
    "anulados": false,
    "zonas": {
     "140": 377
+   },
+   "receitas": {
+    "total": 620.0,
+    "categorias": {
+     "Recursos próprios": 620.0
+    },
+    "principais": [
+     [
+      "Gilson Jose Ferreira (pessoa física)",
+      620.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 620.0,
+    "categorias": {
+     "Produção de jingles, vinhetas e slogans": 400.0,
+     "Publicidade por materiais impressos": 220.0
+    },
+    "principais": [
+     [
+      "Carlos Eduardo De Lima",
+      400.0
+     ],
+     [
+      "Deise Cristina Dos Santos Silveira",
+      220.0
+     ]
+    ]
    }
   },
   {
@@ -1047,6 +3494,35 @@
    "anulados": false,
    "zonas": {
     "140": 373
+   },
+   "receitas": {
+    "total": 3920.0,
+    "categorias": {
+     "Recursos próprios": 3920.0
+    },
+    "principais": [
+     [
+      "Maria Aparecida De Camargo Modena (pessoa física)",
+      3920.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3920.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 3470.0,
+     "Publicidade por adesivos": 450.0
+    },
+    "principais": [
+     [
+      "Peter Alex Leme",
+      3270.0
+     ],
+     [
+      "Marcelo Da Solva Soares Grafica Me",
+      650.0
+     ]
+    ]
    }
   },
   {
@@ -1068,6 +3544,54 @@
    "anulados": false,
    "zonas": {
     "140": 331
+   },
+   "receitas": {
+    "total": 3585.0,
+    "categorias": {
+     "Recursos próprios": 3175.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Rosendo Luiz Pereira (pessoa física)",
+      3175.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3068.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1400.0,
+     "Diversas a especificar": 875.0,
+     "Publicidade por adesivos": 450.0,
+     "Produção de jingles, vinhetas e slogans": 343.0
+    },
+    "principais": [
+     [
+      "Oscar Martinho Dos Santos",
+      875.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      800.0
+     ],
+     [
+      "Sandra Regina Schiavi Morillo",
+      600.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      450.0
+     ],
+     [
+      "Ldr Pires Molero",
+      343.0
+     ]
+    ]
    }
   },
   {
@@ -1089,6 +3613,39 @@
    "anulados": false,
    "zonas": {
     "140": 330
+   },
+   "receitas": {
+    "total": 2720.0,
+    "categorias": {
+     "Recursos próprios": 2720.0
+    },
+    "principais": [
+     [
+      "Tatiane Ribeiro De Menezes (pessoa física)",
+      2720.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 2720.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 2645.0,
+     "Publicidade por adesivos": 75.0
+    },
+    "principais": [
+     [
+      "Renato Antonio Martins Helou",
+      1985.0
+     ],
+     [
+      "Ldr Pires Molero",
+      660.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      75.0
+     ]
+    ]
    }
   },
   {
@@ -1110,6 +3667,89 @@
    "anulados": false,
    "zonas": {
     "140": 309
+   },
+   "receitas": {
+    "total": 53197.59,
+    "categorias": {
+     "Recursos de partido político": 47350.92,
+     "Recursos de pessoas físicas": 4050.0,
+     "Recursos de outros candidatos": 1501.67,
+     "Recursos próprios": 295.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      47350.92
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1501.67
+     ],
+     [
+      "Glauber Renan Do Amaral (pessoa física)",
+      1350.0
+     ],
+     [
+      "Genessi Do Amaral (pessoa física)",
+      1350.0
+     ],
+     [
+      "Carla Franciele De Moura (pessoa física)",
+      1350.0
+     ],
+     [
+      "Glaucia Alessandra Amaral Camargo De Moura (pessoa física)",
+      295.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 47645.67,
+    "categorias": {
+     "Despesas com pessoal": 36471.0,
+     "Diversas a especificar": 3383.89,
+     "Publicidade por materiais impressos": 2225.0,
+     "Alimentação": 2104.28,
+     "Combustíveis e lubrificantes": 1834.72,
+     "Serviços prestados por terceiros": 750.0,
+     "Despesa com Impulsionamento de Conteúdos": 700.0,
+     "Água": 106.8,
+     "Criação e inclusão de páginas na internet": 69.98
+    },
+    "principais": [
+     [
+      "Gabriel Pereira Da Silva (pessoa física)",
+      6000.0
+     ],
+     [
+      "Luis Rodolfo Martini (pessoa física)",
+      5500.0
+     ],
+     [
+      "Éder Ferreira De Macedo (pessoa física)",
+      5500.0
+     ],
+     [
+      "Valquiria Bruno De Oliveira (pessoa física)",
+      3000.0
+     ],
+     [
+      "Aline Danieli Vieira (pessoa física)",
+      3000.0
+     ],
+     [
+      "Jose Rodrigues Do Nascimento (pessoa física)",
+      2896.0
+     ],
+     [
+      "Danielle Soares Munhoz Silva",
+      2760.0
+     ],
+     [
+      "Anair Angela",
+      2000.0
+     ]
+    ]
    }
   },
   {
@@ -1131,6 +3771,23 @@
    "anulados": false,
    "zonas": {
     "140": 297
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1152,6 +3809,39 @@
    "anulados": false,
    "zonas": {
     "140": 294
+   },
+   "receitas": {
+    "total": 710.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 300.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Elizabeth Miranda Voss Campos (pessoa física)",
+      300.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 300.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 300.0
+    },
+    "principais": [
+     [
+      "Pedro Dos Santos Oliveira",
+      200.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -1173,6 +3863,16 @@
    "anulados": false,
    "zonas": {
     "140": 292
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1194,6 +3894,30 @@
    "anulados": false,
    "zonas": {
     "140": 290
+   },
+   "receitas": {
+    "total": 325.0,
+    "categorias": {
+     "Recursos próprios": 325.0
+    },
+    "principais": [
+     [
+      "Eliane Paes Leite (pessoa física)",
+      325.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 325.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 325.0
+    },
+    "principais": [
+     [
+      "Wiliam Braz Rodrigues",
+      325.0
+     ]
+    ]
    }
   },
   {
@@ -1215,6 +3939,81 @@
    "anulados": false,
    "zonas": {
     "140": 288
+   },
+   "receitas": {
+    "total": 15357.09,
+    "categorias": {
+     "Recursos de partido político": 12655.42,
+     "Recursos de outros candidatos": 1501.67,
+     "Recursos de pessoas físicas": 1200.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      12655.42
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1501.67
+     ],
+     [
+      "Danilo De Oliveira Coelho (pessoa física)",
+      400.0
+     ],
+     [
+      "Diego De Oliveira Mathias (pessoa física)",
+      400.0
+     ],
+     [
+      "Dacio Vieira De Camargo Neto (pessoa física)",
+      400.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 12607.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 3750.0,
+     "Diversas a especificar": 3657.0,
+     "Despesas com pessoal": 3350.0,
+     "Produção de jingles, vinhetas e slogans": 750.0,
+     "Publicidade por carros de som": 600.0,
+     "Despesa com Impulsionamento de Conteúdos": 500.0
+    },
+    "principais": [
+     [
+      "Anair Angela Pasztetnik Oliveira",
+      3750.0
+     ],
+     [
+      "Licinio Roberto Cardenas Jr (pessoa física)",
+      2600.0
+     ],
+     [
+      "Wiliam Braz Rodrigues",
+      2363.0
+     ],
+     [
+      "Qi Comunicacao E Tecnologia Ltda",
+      1294.0
+     ],
+     [
+      "Weslei Salomao Soares",
+      750.0
+     ],
+     [
+      "Megaprime Producao Tv Business Ltda",
+      600.0
+     ],
+     [
+      "Dlocal Brasil I De Pagamentos",
+      500.0
+     ],
+     [
+      "Publio Ari Gaspar (pessoa física)",
+      400.0
+     ]
+    ]
    }
   },
   {
@@ -1236,6 +4035,43 @@
    "anulados": false,
    "zonas": {
     "140": 287
+   },
+   "receitas": {
+    "total": 3640.0,
+    "categorias": {
+     "Recursos próprios": 3640.0
+    },
+    "principais": [
+     [
+      "Luis Do Carmo Soares Vieira (pessoa física)",
+      3640.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3640.0,
+    "categorias": {
+     "Despesas com pessoal": 2450.0,
+     "Publicidade por materiais impressos": 1190.0
+    },
+    "principais": [
+     [
+      "Ana Rita Da Costa Rocha (pessoa física)",
+      1250.0
+     ],
+     [
+      "Vitoria Gabriele Da Costa Rocha (pessoa física)",
+      1200.0
+     ],
+     [
+      "Peter Alex Leme",
+      840.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      350.0
+     ]
+    ]
    }
   },
   {
@@ -1257,6 +4093,34 @@
    "anulados": false,
    "zonas": {
     "140": 285
+   },
+   "receitas": {
+    "total": 4000.0,
+    "categorias": {
+     "Recursos de partido político": 4000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      4000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4000.0,
+    "categorias": {
+     "Despesas com pessoal": 4000.0
+    },
+    "principais": [
+     [
+      "Carmem Tatiane Romero Da Costa (pessoa física)",
+      2500.0
+     ],
+     [
+      "Elya Monique Da Costa Galdino (pessoa física)",
+      1500.0
+     ]
+    ]
    }
   },
   {
@@ -1278,6 +4142,59 @@
    "anulados": false,
    "zonas": {
     "140": 283
+   },
+   "receitas": {
+    "total": 10000.0,
+    "categorias": {
+     "Recursos de partido político": 10000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      10000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 10000.0,
+    "categorias": {
+     "Despesas com pessoal": 8000.0,
+     "Publicidade por materiais impressos": 2000.0
+    },
+    "principais": [
+     [
+      "Marcelo Aparecido De Souza (pessoa física)",
+      1000.0
+     ],
+     [
+      "Iara Pereira De Carvalho Silva (pessoa física)",
+      1000.0
+     ],
+     [
+      "50.471.967 Anair Angela Pasztetnik Oliveira",
+      1000.0
+     ],
+     [
+      "Tatiane Regina Coelho (pessoa física)",
+      1000.0
+     ],
+     [
+      "Larissa Sotério Martins Carriel De Lima (pessoa física)",
+      1000.0
+     ],
+     [
+      "Paulo Roberto Martins (pessoa física)",
+      1000.0
+     ],
+     [
+      "Aline Aparecida Mistieri (pessoa física)",
+      1000.0
+     ],
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      1000.0
+     ]
+    ]
    }
   },
   {
@@ -1299,6 +4216,23 @@
    "anulados": false,
    "zonas": {
     "140": 279
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1320,6 +4254,40 @@
    "anulados": false,
    "zonas": {
     "140": 273
+   },
+   "receitas": {
+    "total": 2269.0,
+    "categorias": {
+     "Recursos próprios": 1859.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Fernando Matheus Pereira (pessoa física)",
+      1859.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1699.0,
+    "categorias": {
+     "Publicidade por adesivos": 1159.0,
+     "Publicidade por materiais impressos": 540.0
+    },
+    "principais": [
+     [
+      "Qi Comunicação E Teconologia Ltda",
+      1159.0
+     ],
+     [
+      "Marcelo Da Silvasoares Grafica Me",
+      540.0
+     ]
+    ]
    }
   },
   {
@@ -1341,6 +4309,76 @@
    "anulados": false,
    "zonas": {
     "140": 267
+   },
+   "receitas": {
+    "total": 12901.67,
+    "categorias": {
+     "Recursos de partido político": 7500.0,
+     "Recursos próprios": 3000.0,
+     "Recursos de outros candidatos": 1501.67,
+     "Recursos de pessoas físicas": 900.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      7500.0
+     ],
+     [
+      "Terezinha Antunes Quevedo Jamoul (pessoa física)",
+      3000.0
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1501.67
+     ],
+     [
+      "Suleima Muhamed Jamoul (pessoa física)",
+      900.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 10499.1,
+    "categorias": {
+     "Despesas com pessoal": 6000.0,
+     "Diversas a especificar": 3205.0,
+     "Alimentação": 662.0,
+     "Combustíveis e lubrificantes": 632.1
+    },
+    "principais": [
+     [
+      "Bruno Augusto Silveira",
+      3205.0
+     ],
+     [
+      "Suleima Muhamed Jamoul (pessoa física)",
+      1500.0
+     ],
+     [
+      "Yousra Muhamed Avila (pessoa física)",
+      1500.0
+     ],
+     [
+      "Samira Muhamed Jamoul (pessoa física)",
+      900.0
+     ],
+     [
+      "Jessica Tatiane Camargo Cardoso (pessoa física)",
+      700.0
+     ],
+     [
+      "Isadora De Campos Pamplona (pessoa física)",
+      700.0
+     ],
+     [
+      "Patricia Da Silva Simões Prado (pessoa física)",
+      700.0
+     ],
+     [
+      "O Casarão Marmitaria E Restaurante",
+      662.0
+     ]
+    ]
    }
   },
   {
@@ -1362,6 +4400,74 @@
    "anulados": false,
    "zonas": {
     "140": 262
+   },
+   "receitas": {
+    "total": 35000.59,
+    "categorias": {
+     "Recursos de partido político": 32698.92,
+     "Recursos de outros candidatos": 1501.67,
+     "Recursos de pessoas físicas": 800.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      32698.92
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1501.67
+     ],
+     [
+      "Maria Eunice Rodrigues Dos Santos Silva (pessoa física)",
+      800.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 32581.38,
+    "categorias": {
+     "Diversas a especificar": 16250.82,
+     "Despesas com pessoal": 7100.0,
+     "Publicidade por materiais impressos": 2980.0,
+     "Despesas com transporte ou deslocamento": 2250.0,
+     "Despesa com Impulsionamento de Conteúdos": 1450.0,
+     "Alimentação": 1350.56,
+     "Serviços prestados por terceiros": 1200.0
+    },
+    "principais": [
+     [
+      "Genes Gomes Ribeiro (pessoa física)",
+      14000.0
+     ],
+     [
+      "Lz Presentes E Personalizados",
+      6285.0
+     ],
+     [
+      "Dlocal Brasil Instituicao De Pagamento S.A.",
+      1450.0
+     ],
+     [
+      "Vitor Pablo Felipe Da Silva (pessoa física)",
+      1400.0
+     ],
+     [
+      "Paulo Edson De Oliveira (pessoa física)",
+      1200.0
+     ],
+     [
+      "Jessica Calicia Antunes Paes Dias (pessoa física)",
+      1200.0
+     ],
+     [
+      "Leandro Paques Peixoto (pessoa física)",
+      1200.0
+     ],
+     [
+      "Leandro Camargo Soares (pessoa física)",
+      1200.0
+     ]
+    ]
    }
   },
   {
@@ -1383,6 +4489,40 @@
    "anulados": false,
    "zonas": {
     "140": 261
+   },
+   "receitas": {
+    "total": 3573.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 3500.0,
+     "Recursos próprios": 73.0
+    },
+    "principais": [
+     [
+      "Rachel Jacob Hessel (pessoa física)",
+      3500.0
+     ],
+     [
+      "Daniara Almeida De Morais (pessoa física)",
+      73.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3573.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 3500.87,
+     "Despesa com Impulsionamento de Conteúdos": 72.13
+    },
+    "principais": [
+     [
+      "Grazielle Ribeiro De Oliveira",
+      3500.87
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      72.13
+     ]
+    ]
    }
   },
   {
@@ -1404,6 +4544,44 @@
    "anulados": false,
    "zonas": {
     "140": 252
+   },
+   "receitas": {
+    "total": 710.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 300.0
+    },
+    "principais": [
+     [
+      "Miugle Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Andre Machado Dias (pessoa física)",
+      300.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 300.0,
+    "categorias": {
+     "Despesa com Impulsionamento de Conteúdos": 200.0,
+     "Publicidade por materiais impressos": 100.0
+    },
+    "principais": [
+     [
+      "Facebook",
+      100.0
+     ],
+     [
+      "Dlocal Brasil I De Pagamentos",
+      100.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -1425,6 +4603,81 @@
    "anulados": false,
    "zonas": {
     "140": 248
+   },
+   "receitas": {
+    "total": 13250.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 7600.0,
+     "Recursos próprios": 5650.0
+    },
+    "principais": [
+     [
+      "Paulo Rogerio De Sena (pessoa física)",
+      5650.0
+     ],
+     [
+      "Luiz Roberto De Sena (pessoa física)",
+      2350.0
+     ],
+     [
+      "Cirineu Silveira (pessoa física)",
+      1500.0
+     ],
+     [
+      "Marcio Vieira (pessoa física)",
+      1250.0
+     ],
+     [
+      "Paulo Cesar De Camargo (pessoa física)",
+      1250.0
+     ],
+     [
+      "Jessica Aparecida Paciência Davila Pinto (pessoa física)",
+      1250.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 6750.0,
+    "categorias": {
+     "Despesas com pessoal": 4950.0,
+     "Publicidade por materiais impressos": 1650.0,
+     "Combustíveis e lubrificantes": 150.0
+    },
+    "principais": [
+     [
+      "Anair Angela Pasztetnik Oliveira",
+      1650.0
+     ],
+     [
+      "Cirineu Silveira (pessoa física)",
+      1250.0
+     ],
+     [
+      "Marcio Vieira (pessoa física)",
+      1250.0
+     ],
+     [
+      "Mariane De Oliveira (pessoa física)",
+      1200.0
+     ],
+     [
+      "Joao Marcos Amadeu (pessoa física)",
+      800.0
+     ],
+     [
+      "Marcelo Amadeu Pinto (pessoa física)",
+      250.0
+     ],
+     [
+      "Thiago Martins De Souza (pessoa física)",
+      200.0
+     ],
+     [
+      "Auto Posto Brasil De Tatui Ltda",
+      150.0
+     ]
+    ]
    }
   },
   {
@@ -1446,6 +4699,73 @@
    "anulados": false,
    "zonas": {
     "140": 239
+   },
+   "receitas": {
+    "total": 11703.19,
+    "categorias": {
+     "Recursos de pessoas físicas": 7988.19,
+     "Recursos próprios": 3715.0
+    },
+    "principais": [
+     [
+      "Laercio Cesar Silva Afonso (pessoa física)",
+      4988.19
+     ],
+     [
+      "Lucas Andrade De Oliveira (pessoa física)",
+      3715.0
+     ],
+     [
+      "Jose Levi Gardenal Camargo (pessoa física)",
+      3000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 21591.53,
+    "categorias": {
+     "Publicidade por materiais impressos": 18529.0,
+     "Despesas com pessoal": 2045.32,
+     "Publicidade por adesivos": 480.0,
+     "Materiais de expediente": 350.0,
+     "Água": 141.25,
+     "Alimentação": 35.0,
+     "Despesas com transporte ou deslocamento": 10.96
+    },
+    "principais": [
+     [
+      "Mazer Industria Grafica E Editora Eireli",
+      10000.0
+     ],
+     [
+      "Midias Inteligentes Comercial Ltda",
+      8159.0
+     ],
+     [
+      "Erik Anthony Do Nascimento",
+      1200.0
+     ],
+     [
+      "Eduarda Rosa Miranda (pessoa física)",
+      445.32
+     ],
+     [
+      "Rubens Diego De Souza Oliveira (pessoa física)",
+      300.0
+     ],
+     [
+      "Simeire Rosa (pessoa física)",
+      300.0
+     ],
+     [
+      "Thaynara Soares Ribeiro (pessoa física)",
+      250.0
+     ],
+     [
+      "Sara Bueno De Camargo Vieira (pessoa física)",
+      250.0
+     ]
+    ]
    }
   },
   {
@@ -1467,6 +4787,46 @@
    "anulados": false,
    "zonas": {
     "140": 239
+   },
+   "receitas": {
+    "total": 5400.0,
+    "categorias": {
+     "Recursos de partido político": 5400.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      5400.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 5400.0,
+    "categorias": {
+     "Despesas com pessoal": 5400.0
+    },
+    "principais": [
+     [
+      "Adriano Henrique Amaro (pessoa física)",
+      1200.0
+     ],
+     [
+      "Antonio Roberto Dos Santos (pessoa física)",
+      1200.0
+     ],
+     [
+      "Euclydes Ferreira Junior (pessoa física)",
+      1000.0
+     ],
+     [
+      "Eli Ezer Santos Guimares (pessoa física)",
+      1000.0
+     ],
+     [
+      "Camila Rocha De Almeida (pessoa física)",
+      1000.0
+     ]
+    ]
    }
   },
   {
@@ -1488,6 +4848,35 @@
    "anulados": false,
    "zonas": {
     "140": 233
+   },
+   "receitas": {
+    "total": 1410.0,
+    "categorias": {
+     "Recursos próprios": 1000.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Francisco Eduardo Miranda (pessoa física)",
+      1000.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1000.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1000.0
+    },
+    "principais": [
+     [
+      "Alessandro Fidencio Miranda",
+      1000.0
+     ]
+    ]
    }
   },
   {
@@ -1509,6 +4898,40 @@
    "anulados": false,
    "zonas": {
     "140": 231
+   },
+   "receitas": {
+    "total": 1850.0,
+    "categorias": {
+     "Recursos próprios": 900.0,
+     "Recursos de pessoas físicas": 540.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Jucilene Franco Leandro (pessoa física)",
+      900.0
+     ],
+     [
+      "Adao Aguiar (pessoa física)",
+      540.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1440.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1440.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      1440.0
+     ]
+    ]
    }
   },
   {
@@ -1530,6 +4953,35 @@
    "anulados": false,
    "zonas": {
     "140": 229
+   },
+   "receitas": {
+    "total": 1035.0,
+    "categorias": {
+     "Recursos de outros candidatos": 835.0,
+     "Recursos próprios": 200.0
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      835.0
+     ],
+     [
+      "Andre Dos Santos Vieira (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 198.0,
+    "categorias": {
+     "Despesa com Impulsionamento de Conteúdos": 198.0
+    },
+    "principais": [
+     [
+      "Adyen Br Ltda",
+      198.0
+     ]
+    ]
    }
   },
   {
@@ -1551,6 +5003,16 @@
    "anulados": false,
    "zonas": {
     "140": 220
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1572,6 +5034,23 @@
    "anulados": false,
    "zonas": {
     "140": 211
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1593,6 +5072,67 @@
    "anulados": false,
    "zonas": {
     "140": 207
+   },
+   "receitas": {
+    "total": 7371.5,
+    "categorias": {
+     "Recursos de partido político": 7000.0,
+     "Recursos de pessoas físicas": 371.5
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      7000.0
+     ],
+     [
+      "Adriana Leme Martins Carvalho (pessoa física)",
+      371.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7371.5,
+    "categorias": {
+     "Despesas com pessoal": 3600.0,
+     "Publicidade por materiais impressos": 1860.0,
+     "Materiais de expediente": 1091.5,
+     "Despesa com Impulsionamento de Conteúdos": 410.0,
+     "Publicidade por adesivos": 410.0
+    },
+    "principais": [
+     [
+      "Grazielle Ribeiro De Oliveira",
+      3140.0
+     ],
+     [
+      "Nilsa Lara De Almeida (pessoa física)",
+      1200.0
+     ],
+     [
+      "Jucilaine Gomes De Paula (pessoa física)",
+      1200.0
+     ],
+     [
+      "Jucileia Ferreira Gomes (pessoa física)",
+      1200.0
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      340.02
+     ],
+     [
+      "Peter Alex Leme",
+      150.0
+     ],
+     [
+      "Comercial Invicta De Tatui Ltda",
+      71.5
+     ],
+     [
+      "Dlocal Brasil Ip Sa",
+      69.98
+     ]
+    ]
    }
   },
   {
@@ -1614,6 +5154,63 @@
    "anulados": false,
    "zonas": {
     "140": 201
+   },
+   "receitas": {
+    "total": 35000.0,
+    "categorias": {
+     "Recursos de partido político": 35000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      35000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 35000.0,
+    "categorias": {
+     "Despesas com pessoal": 15840.0,
+     "Criação e inclusão de páginas na internet": 6000.0,
+     "Produção de programas de rádio, televisão ou vídeo": 5000.0,
+     "Serviços advocatícios": 3000.0,
+     "Publicidade por materiais impressos": 2760.0,
+     "Cessão ou locação de veículos": 2400.0
+    },
+    "principais": [
+     [
+      "Orn Midia Comunicacao Eireli",
+      6000.0
+     ],
+     [
+      "Clayton Martim (pessoa física)",
+      5000.0
+     ],
+     [
+      "Daniela Ferrareze (pessoa física)",
+      3000.0
+     ],
+     [
+      "Maria Silvia Franco (pessoa física)",
+      2700.0
+     ],
+     [
+      "Gabriela Catarina Machado Dos Santos (pessoa física)",
+      2500.0
+     ],
+     [
+      "Mega Prime Producao Tv Business Ltda",
+      2400.0
+     ],
+     [
+      "Aline Francine Da Silva Machado (pessoa física)",
+      2000.0
+     ],
+     [
+      "Marcello Luiz Alves (pessoa física)",
+      1800.0
+     ]
+    ]
    }
   },
   {
@@ -1635,6 +5232,35 @@
    "anulados": false,
    "zonas": {
     "140": 196
+   },
+   "receitas": {
+    "total": 1060.0,
+    "categorias": {
+     "Recursos próprios": 650.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Rita Corradi De Azevedo (pessoa física)",
+      650.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 650.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 650.0
+    },
+    "principais": [
+     [
+      "Pedro Dos Santos Oliveira",
+      650.0
+     ]
+    ]
    }
   },
   {
@@ -1656,6 +5282,16 @@
    "anulados": false,
    "zonas": {
     "140": 190
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1677,6 +5313,48 @@
    "anulados": false,
    "zonas": {
     "140": 190
+   },
+   "receitas": {
+    "total": 6000.0,
+    "categorias": {
+     "Recursos de partido político": 6000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      6000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 6000.0,
+    "categorias": {
+     "Despesas com pessoal": 3000.0,
+     "Publicidade por materiais impressos": 2800.0,
+     "Produção de jingles, vinhetas e slogans": 200.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica - Me",
+      1750.0
+     ],
+     [
+      "Mirian Bueno De Campos Antunes (pessoa física)",
+      1500.0
+     ],
+     [
+      "Marilena Aparecida Franco Cardoso Ramos (pessoa física)",
+      1500.0
+     ],
+     [
+      "Peter Alex Leme",
+      1050.0
+     ],
+     [
+      "55.699.461 Carlos Eduardo De Lima",
+      200.0
+     ]
+    ]
    }
   },
   {
@@ -1698,6 +5376,57 @@
    "anulados": false,
    "zonas": {
     "140": 189
+   },
+   "receitas": {
+    "total": 2445.0,
+    "categorias": {
+     "Recursos próprios": 2035.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Aline Da Rosa Silva (pessoa física)",
+      2035.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 2035.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1227.0,
+     "Despesa com Impulsionamento de Conteúdos": 508.0,
+     "Publicidade por adesivos": 300.0
+    },
+    "principais": [
+     [
+      "Wiliam Braz Rodrigues",
+      597.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      500.0
+     ],
+     [
+      "Facebook Serviços Online Brasil",
+      400.0
+     ],
+     [
+      "G3 Comunicação Visual Ltda",
+      300.0
+     ],
+     [
+      "Graziele Ribeiro De Oliveira",
+      130.0
+     ],
+     [
+      "Dlocal Brasil I De Pagamentos",
+      108.0
+     ]
+    ]
    }
   },
   {
@@ -1719,6 +5448,55 @@
    "anulados": false,
    "zonas": {
     "140": 184
+   },
+   "receitas": {
+    "total": 2880.0,
+    "categorias": {
+     "Recursos próprios": 2350.0,
+     "Recursos de partido político": 500.0,
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Victor Cirera Crespo (pessoa física)",
+      2350.0
+     ],
+     [
+      "Direção Nacional",
+      500.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3350.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1300.0,
+     "Criação e inclusão de páginas na internet": 900.0,
+     "Despesa com Impulsionamento de Conteúdos": 890.0,
+     "Publicidade por adesivos": 260.0
+    },
+    "principais": [
+     [
+      "Pedro Dos Santos Oliveira",
+      1000.0
+     ],
+     [
+      "Jonatas De Campos Moraes",
+      900.0
+     ],
+     [
+      "Facebook Serviços Online Do Brasil",
+      890.0
+     ],
+     [
+      "Afonso Pantojo Silva",
+      560.0
+     ]
+    ]
    }
   },
   {
@@ -1740,6 +5518,44 @@
    "anulados": false,
    "zonas": {
     "140": 180
+   },
+   "receitas": {
+    "total": 1500.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 1000.0,
+     "Recursos próprios": 500.0
+    },
+    "principais": [
+     [
+      "Nilza De Almeida Camargo (pessoa física)",
+      1000.0
+     ],
+     [
+      "Nivaldo Jose Paes De Camargo (pessoa física)",
+      500.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1495.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 845.0,
+     "Despesa com Impulsionamento de Conteúdos": 650.0
+    },
+    "principais": [
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      650.0
+     ],
+     [
+      "Erik Anthony Do Nascimento",
+      550.0
+     ],
+     [
+      "Eliana Aparecida Lima Vendramini Epp",
+      295.0
+     ]
+    ]
    }
   },
   {
@@ -1761,6 +5577,35 @@
    "anulados": false,
    "zonas": {
     "140": 179
+   },
+   "receitas": {
+    "total": 1960.0,
+    "categorias": {
+     "Recursos próprios": 1550.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Rafael Aparecido Santos Oliveira (pessoa física)",
+      1550.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1550.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1550.0
+    },
+    "principais": [
+     [
+      "Ccm Letreiros E Decoração Ltda",
+      1550.0
+     ]
+    ]
    }
   },
   {
@@ -1782,6 +5627,49 @@
    "anulados": false,
    "zonas": {
     "140": 176
+   },
+   "receitas": {
+    "total": 7550.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 7140.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Carlos Eduardo Rauscher (pessoa física)",
+      6700.0
+     ],
+     [
+      "Maximo Machado Lourenço (pessoa física)",
+      440.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7132.0,
+    "categorias": {
+     "Publicidade por adesivos": 3140.0,
+     "Publicidade por jornais e revistas": 2492.0,
+     "Publicidade por materiais impressos": 1500.0
+    },
+    "principais": [
+     [
+      "Augusto Cesar Vieira Me",
+      3140.0
+     ],
+     [
+      "Empresa Jornalistica O Progresso De Tatui Ltda",
+      2492.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      1500.0
+     ]
+    ]
    }
   },
   {
@@ -1803,6 +5691,16 @@
    "anulados": false,
    "zonas": {
     "140": 176
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1824,6 +5722,23 @@
    "anulados": false,
    "zonas": {
     "140": 173
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1845,6 +5760,35 @@
    "anulados": false,
    "zonas": {
     "140": 169
+   },
+   "receitas": {
+    "total": 1266.7,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5,
+     "Recursos próprios": 444.2
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ],
+     [
+      "Claudio Roberto Teles (pessoa física)",
+      444.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 444.2,
+    "categorias": {
+     "Publicidade por adesivos": 444.2
+    },
+    "principais": [
+     [
+      "Amanda Emanuele Freitas Franco De Moraes",
+      444.2
+     ]
+    ]
    }
   },
   {
@@ -1866,6 +5810,35 @@
    "anulados": false,
    "zonas": {
     "140": 166
+   },
+   "receitas": {
+    "total": 1010.0,
+    "categorias": {
+     "Recursos próprios": 600.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Elisangela De Sousa Oliveira De Arruda (pessoa física)",
+      600.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 597.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 597.0
+    },
+    "principais": [
+     [
+      "William Braz Rodrigues",
+      597.0
+     ]
+    ]
    }
   },
   {
@@ -1887,6 +5860,39 @@
    "anulados": false,
    "zonas": {
     "140": 166
+   },
+   "receitas": {
+    "total": 3400.0,
+    "categorias": {
+     "Recursos próprios": 2990.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Jenifer Oliveira Assumpção (pessoa física)",
+      2990.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 2990.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 2990.0
+    },
+    "principais": [
+     [
+      "Wiliam Braz Rodrigues",
+      1990.0
+     ],
+     [
+      "Ccm Letreiros E Decoração Ltda",
+      1000.0
+     ]
+    ]
    }
   },
   {
@@ -1908,6 +5914,23 @@
    "anulados": false,
    "zonas": {
     "140": 166
+   },
+   "receitas": {
+    "total": 350.0,
+    "categorias": {
+     "Recursos de outros candidatos": 350.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      350.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1929,6 +5952,35 @@
    "anulados": false,
    "zonas": {
     "140": 163
+   },
+   "receitas": {
+    "total": 1210.0,
+    "categorias": {
+     "Recursos próprios": 800.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Jardel Ribeiro De Barros (pessoa física)",
+      800.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 800.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 800.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica - Me",
+      800.0
+     ]
+    ]
    }
   },
   {
@@ -1950,6 +6002,35 @@
    "anulados": false,
    "zonas": {
     "140": 157
+   },
+   "receitas": {
+    "total": 1400.0,
+    "categorias": {
+     "Recursos próprios": 1064.0,
+     "Recursos de pessoas físicas": 336.0
+    },
+    "principais": [
+     [
+      "Aline Tochinski De Camargo (pessoa física)",
+      1064.0
+     ],
+     [
+      "Ana Paula De Medeiros Campos (pessoa física)",
+      336.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1390.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1390.0
+    },
+    "principais": [
+     [
+      "Renato Antonio Martins Helou",
+      1390.0
+     ]
+    ]
    }
   },
   {
@@ -1971,6 +6052,28 @@
    "anulados": false,
    "zonas": {
     "140": 157
+   },
+   "receitas": {
+    "total": 530.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 500.0,
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Nelma Lilian Da Silva Mendes (pessoa física)",
+      500.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1992,6 +6095,40 @@
    "anulados": false,
    "zonas": {
     "140": 156
+   },
+   "receitas": {
+    "total": 1850.0,
+    "categorias": {
+     "Recursos próprios": 1400.0,
+     "Recursos de outros candidatos": 350.0,
+     "Recursos de pessoas físicas": 100.0
+    },
+    "principais": [
+     [
+      "Marcos Vieira (pessoa física)",
+      1400.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      350.0
+     ],
+     [
+      "Maylon Henrique Pires De Andrade (pessoa física)",
+      100.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1500.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1500.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      1500.0
+     ]
+    ]
    }
   },
   {
@@ -2013,6 +6150,35 @@
    "anulados": false,
    "zonas": {
     "140": 154
+   },
+   "receitas": {
+    "total": 1600.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 1600.0
+    },
+    "principais": [
+     [
+      "Elissandra Aparecida Leite Silveira (pessoa física)",
+      1600.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1600.0,
+    "categorias": {
+     "Produção de programas de rádio, televisão ou vídeo": 1100.0,
+     "Despesa com Impulsionamento de Conteúdos": 500.0
+    },
+    "principais": [
+     [
+      "Vagner Zil (pessoa física)",
+      1100.0
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      500.0
+     ]
+    ]
    }
   },
   {
@@ -2034,6 +6200,16 @@
    "anulados": false,
    "zonas": {
     "140": 147
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2055,6 +6231,57 @@
    "anulados": false,
    "zonas": {
     "140": 147
+   },
+   "receitas": {
+    "total": 6800.0,
+    "categorias": {
+     "Recursos de partido político": 6000.0,
+     "Recursos próprios": 800.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      6000.0
+     ],
+     [
+      "Priscilla Collalto Fonseca Pavanelli (pessoa física)",
+      800.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 6800.0,
+    "categorias": {
+     "Despesas com pessoal": 5300.0,
+     "Criação e inclusão de páginas na internet": 1000.0,
+     "Publicidade por materiais impressos": 500.0
+    },
+    "principais": [
+     [
+      "Elidia Maria De Campos (pessoa física)",
+      3000.0
+     ],
+     [
+      "Vinicius Augusto Bimbati De Moraes (pessoa física)",
+      1000.0
+     ],
+     [
+      "Evanir Galtaroza Guiraldes (pessoa física)",
+      1000.0
+     ],
+     [
+      "Roberta Oliveira Machado (pessoa física)",
+      800.0
+     ],
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      500.0
+     ],
+     [
+      "Carlos Alberto De Campos (pessoa física)",
+      500.0
+     ]
+    ]
    }
   },
   {
@@ -2076,6 +6303,40 @@
    "anulados": false,
    "zonas": {
     "140": 147
+   },
+   "receitas": {
+    "total": 1213.9,
+    "categorias": {
+     "Recursos próprios": 803.9,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miriam Rodrigues Da Mota Pereira (pessoa física)",
+      803.9
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 803.9,
+    "categorias": {
+     "Publicidade por materiais impressos": 800.0,
+     "Encargos financeiros, taxas bancárias e/ou op. cartão de crédito": 3.9
+    },
+    "principais": [
+     [
+      "Pedro Dos Santos Oliveira",
+      800.0
+     ],
+     [
+      "#Nulo (pessoa física)",
+      3.9
+     ]
+    ]
    }
   },
   {
@@ -2097,6 +6358,16 @@
    "anulados": false,
    "zonas": {
     "140": 146
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2118,6 +6389,47 @@
    "anulados": false,
    "zonas": {
     "140": 145
+   },
+   "receitas": {
+    "total": 7000.0,
+    "categorias": {
+     "Recursos de partido político": 7000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      7000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7000.0,
+    "categorias": {
+     "Despesas com pessoal": 4270.0,
+     "Publicidade por materiais impressos": 2730.0
+    },
+    "principais": [
+     [
+      "Peter Alex Leme",
+      2730.0
+     ],
+     [
+      "Silvio Antonio Martins (pessoa física)",
+      1570.0
+     ],
+     [
+      "Vinicius Santiago Martins (pessoa física)",
+      1500.0
+     ],
+     [
+      "Catia De Jesus De Andrade (pessoa física)",
+      900.0
+     ],
+     [
+      "Simone Aparecida Alves Rodrigues (pessoa física)",
+      300.0
+     ]
+    ]
    }
   },
   {
@@ -2139,6 +6451,74 @@
    "anulados": false,
    "zonas": {
     "140": 144
+   },
+   "receitas": {
+    "total": 13100.0,
+    "categorias": {
+     "Recursos de partido político": 12000.0,
+     "Recursos de pessoas físicas": 1100.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      12000.0
+     ],
+     [
+      "Tatiana Machado Dos Santos (pessoa física)",
+      600.0
+     ],
+     [
+      "Denise De Almeida Pereira Barbosa (pessoa física)",
+      500.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 12000.0,
+    "categorias": {
+     "Despesas com pessoal": 6575.34,
+     "Criação e inclusão de páginas na internet": 3000.0,
+     "Produção de jingles, vinhetas e slogans": 1000.0,
+     "Publicidade por materiais impressos": 498.0,
+     "Alimentação": 356.7,
+     "Materiais de expediente": 319.96,
+     "Publicidade por adesivos": 150.0,
+     "Combustíveis e lubrificantes": 100.0
+    },
+    "principais": [
+     [
+      "Cristian Muller Barbosa (pessoa física)",
+      4000.0
+     ],
+     [
+      "Celeno Emerson Barbosa (pessoa física)",
+      3275.34
+     ],
+     [
+      "Aline Castejon Hessel Gardenal Camargo (pessoa física)",
+      1800.0
+     ],
+     [
+      "Denise De Almeida Pereira Barbosa (pessoa física)",
+      1500.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      648.0
+     ],
+     [
+      "Camilo Restaurante Ltda",
+      356.7
+     ],
+     [
+      "R.A. Comercial De Vestuario Ltda",
+      319.96
+     ],
+     [
+      "Auto Posto Avenida Tatui Ltda",
+      50.0
+     ]
+    ]
    }
   },
   {
@@ -2160,6 +6540,16 @@
    "anulados": false,
    "zonas": {
     "140": 144
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2181,6 +6571,52 @@
    "anulados": false,
    "zonas": {
     "140": 143
+   },
+   "receitas": {
+    "total": 8350.0,
+    "categorias": {
+     "Recursos próprios": 6850.0,
+     "Recursos de pessoas físicas": 1500.0
+    },
+    "principais": [
+     [
+      "Luiza Barbosa Vieira (pessoa física)",
+      6850.0
+     ],
+     [
+      "Cesar Trajano Vieira (pessoa física)",
+      1500.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7350.0,
+    "categorias": {
+     "Despesas com pessoal": 5150.0,
+     "Publicidade por materiais impressos": 2200.0
+    },
+    "principais": [
+     [
+      "Camila Aparecida Cardoso Jaco (pessoa física)",
+      4150.0
+     ],
+     [
+      "Fabio Henrique Grando",
+      1200.0
+     ],
+     [
+      "Eric Magri Erdoeg - Me",
+      1000.0
+     ],
+     [
+      "Roseli Oliveira Pais (pessoa física)",
+      600.0
+     ],
+     [
+      "Angela Maria De Oliveira Santos (pessoa física)",
+      400.0
+     ]
+    ]
    }
   },
   {
@@ -2202,6 +6638,50 @@
    "anulados": false,
    "zonas": {
     "140": 142
+   },
+   "receitas": {
+    "total": 4060.0,
+    "categorias": {
+     "Recursos próprios": 4060.0
+    },
+    "principais": [
+     [
+      "Eric Proost (pessoa física)",
+      4060.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4060.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1810.0,
+     "Produção de programas de rádio, televisão ou vídeo": 1044.0,
+     "Locação/cessão de bens imóveis": 500.0,
+     "Publicidade por adesivos": 400.0,
+     "Despesas com pessoal": 306.0
+    },
+    "principais": [
+     [
+      "Elithe Industria Grafica Ltda",
+      1560.0
+     ],
+     [
+      "Rogerio Ferreira Da Silva",
+      1044.0
+     ],
+     [
+      "Augusto Cesar Vieira Me",
+      650.0
+     ],
+     [
+      "Jonas Caetano Filho (pessoa física)",
+      500.0
+     ],
+     [
+      "Edson Aparecido Medeiros (pessoa física)",
+      306.0
+     ]
+    ]
    }
   },
   {
@@ -2223,6 +6703,16 @@
    "anulados": false,
    "zonas": {
     "140": 139
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2244,6 +6734,40 @@
    "anulados": false,
    "zonas": {
     "140": 134
+   },
+   "receitas": {
+    "total": 800.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 600.0,
+     "Recursos próprios": 200.0
+    },
+    "principais": [
+     [
+      "Kauane Victoria Da Cruz (pessoa física)",
+      600.0
+     ],
+     [
+      "Eliane Cabral De Lima Claudino (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 800.0,
+    "categorias": {
+     "Despesa com Impulsionamento de Conteúdos": 400.0,
+     "Publicidade por adesivos": 400.0
+    },
+    "principais": [
+     [
+      "Facebook Serviços Oline Do Brasil Ltda",
+      400.0
+     ],
+     [
+      "Emiade Nicolosi De Oliveira Ltda",
+      400.0
+     ]
+    ]
    }
   },
   {
@@ -2265,6 +6789,70 @@
    "anulados": false,
    "zonas": {
     "140": 134
+   },
+   "receitas": {
+    "total": 5630.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 5220.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Sergio Candido Pedreschi (pessoa física)",
+      1300.0
+     ],
+     [
+      "Eledir Rodrigues Simões (pessoa física)",
+      1000.0
+     ],
+     [
+      "Rivelino Donato Carriel (pessoa física)",
+      1000.0
+     ],
+     [
+      "Eli De Camargo (pessoa física)",
+      1000.0
+     ],
+     [
+      "Wilken Ferr (pessoa física)",
+      550.0
+     ],
+     [
+      "Miguel Lopes De Cardoso Junior",
+      410.0
+     ],
+     [
+      "Juliana Marcela Paques Pires (pessoa física)",
+      370.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 5212.0,
+    "categorias": {
+     "Produção de programas de rádio, televisão ou vídeo": 2490.0,
+     "Publicidade por materiais impressos": 1462.0,
+     "Diversas a especificar": 660.0,
+     "Produção de jingles, vinhetas e slogans": 600.0
+    },
+    "principais": [
+     [
+      "Felipe Da Silva Morais",
+      2490.0
+     ],
+     [
+      "Qi Comunicação E Teconologia Ltda",
+      1462.0
+     ],
+     [
+      "Griffe Correa De Tatui Eirelli",
+      660.0
+     ],
+     [
+      "G Dal Mas Produçoes",
+      600.0
+     ]
+    ]
    }
   },
   {
@@ -2286,6 +6874,23 @@
    "anulados": false,
    "zonas": {
     "140": 132
+   },
+   "receitas": {
+    "total": 835.0,
+    "categorias": {
+     "Recursos de outros candidatos": 835.0
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      835.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2307,6 +6912,23 @@
    "anulados": false,
    "zonas": {
     "140": 130
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2328,6 +6950,42 @@
    "anulados": false,
    "zonas": {
     "140": 130
+   },
+   "receitas": {
+    "total": 8000.0,
+    "categorias": {
+     "Recursos de partido político": 8000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      8000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 8000.0,
+    "categorias": {
+     "Despesas com pessoal": 8000.0
+    },
+    "principais": [
+     [
+      "Andrea Cristina Dos Reis (pessoa física)",
+      3200.0
+     ],
+     [
+      "Carla Fernanda Garcia (pessoa física)",
+      2000.0
+     ],
+     [
+      "Angelo Bogones Neto (pessoa física)",
+      1400.0
+     ],
+     [
+      "Marcel Aparecido Oliveira (pessoa física)",
+      1400.0
+     ]
+    ]
    }
   },
   {
@@ -2349,6 +7007,45 @@
    "anulados": false,
    "zonas": {
     "140": 129
+   },
+   "receitas": {
+    "total": 2739.47,
+    "categorias": {
+     "Recursos próprios": 1916.97,
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Ivanilda Mina Alves Garcia (pessoa física)",
+      1916.97
+     ],
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1916.97,
+    "categorias": {
+     "Serviços prestados por terceiros": 1250.0,
+     "Produção de jingles, vinhetas e slogans": 600.0,
+     "Despesa com Impulsionamento de Conteúdos": 66.97
+    },
+    "principais": [
+     [
+      "Antonio Martins De Oliveira",
+      1250.0
+     ],
+     [
+      "55.699.461 Carlos Eduardo De Lima",
+      600.0
+     ],
+     [
+      "Facebook Servicos Online Do Brasil Ltda",
+      66.97
+     ]
+    ]
    }
   },
   {
@@ -2370,6 +7067,57 @@
    "anulados": false,
    "zonas": {
     "140": 128
+   },
+   "receitas": {
+    "total": 21000.0,
+    "categorias": {
+     "Recursos de partido político": 15000.0,
+     "Recursos de pessoas físicas": 6000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      15000.0
+     ],
+     [
+      "Eder Jose Stocco Junior (pessoa física)",
+      3000.0
+     ],
+     [
+      "Valdenis Claudia Da Cruz Rodrigues (pessoa física)",
+      3000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 14981.77,
+    "categorias": {
+     "Despesas com pessoal": 13000.0,
+     "Combustíveis e lubrificantes": 1531.77,
+     "Publicidade por materiais impressos": 450.0
+    },
+    "principais": [
+     [
+      "Fabiana Borges Ferreira Pinto (pessoa física)",
+      4370.0
+     ],
+     [
+      "Natalia Da Cruz Rodrigues (pessoa física)",
+      4350.0
+     ],
+     [
+      "Eder Jose Stocco Junior (pessoa física)",
+      4280.0
+     ],
+     [
+      "Auto Posto Santa Cruz De Tatui Ltda",
+      1531.77
+     ],
+     [
+      "Eliana Aparecida Lima Vendramini Epp",
+      450.0
+     ]
+    ]
    }
   },
   {
@@ -2391,6 +7139,34 @@
    "anulados": false,
    "zonas": {
     "140": 127
+   },
+   "receitas": {
+    "total": 500.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 500.0
+    },
+    "principais": [
+     [
+      "Giselle Barreto Santiago (pessoa física)",
+      500.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 500.0,
+    "categorias": {
+     "Despesa com Impulsionamento de Conteúdos": 500.0
+    },
+    "principais": [
+     [
+      "Facebook Servicos Online Do Brasil Ltda.Av",
+      340.0
+     ],
+     [
+      "Adyen Do Brasil Intituicao De Pagamentos Ltda",
+      160.0
+     ]
+    ]
    }
   },
   {
@@ -2412,6 +7188,30 @@
    "anulados": false,
    "zonas": {
     "140": 127
+   },
+   "receitas": {
+    "total": 180.0,
+    "categorias": {
+     "Recursos próprios": 180.0
+    },
+    "principais": [
+     [
+      "Tatiane Aparecida Prestes (pessoa física)",
+      180.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 180.0,
+    "categorias": {
+     "Publicidade por adesivos": 180.0
+    },
+    "principais": [
+     [
+      "Francisco Moraes Netto",
+      180.0
+     ]
+    ]
    }
   },
   {
@@ -2433,6 +7233,16 @@
    "anulados": false,
    "zonas": {
     "140": 126
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2454,6 +7264,33 @@
    "anulados": false,
    "zonas": {
     "140": 124
+   },
+   "receitas": {
+    "total": 1230.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 700.0,
+     "Recursos de partido político": 500.0,
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Alan Francisco Capretti Junior (pessoa física)",
+      700.0
+     ],
+     [
+      "Direção Nacional",
+      500.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2475,6 +7312,49 @@
    "anulados": false,
    "zonas": {
     "140": 124
+   },
+   "receitas": {
+    "total": 2115.21,
+    "categorias": {
+     "Recursos de outros candidatos": 1360.96,
+     "Recursos próprios": 654.25,
+     "Recursos de pessoas físicas": 100.0
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      1360.96
+     ],
+     [
+      "Mário Edson Moreira (pessoa física)",
+      654.25
+     ],
+     [
+      "Daniele Moreira Rodrigues (pessoa física)",
+      100.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 754.25,
+    "categorias": {
+     "Diversas a especificar": 726.5,
+     "Despesa com Impulsionamento de Conteúdos": 27.75
+    },
+    "principais": [
+     [
+      "Graziele Ribeiro De Oliveira",
+      460.0
+     ],
+     [
+      "Erik Anthony Do Nascimento",
+      266.5
+     ],
+     [
+      "Facebook Servicos Online Brasil Ltda",
+      27.75
+     ]
+    ]
    }
   },
   {
@@ -2496,6 +7376,35 @@
    "anulados": false,
    "zonas": {
     "140": 121
+   },
+   "receitas": {
+    "total": 510.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 100.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Jose Valdeci Da Costa (pessoa física)",
+      100.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 100.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 100.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Moraes Grafica Me",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -2517,6 +7426,74 @@
    "anulados": false,
    "zonas": {
     "140": 121
+   },
+   "receitas": {
+    "total": 5600.0,
+    "categorias": {
+     "Recursos de partido político": 4500.0,
+     "Recursos de pessoas físicas": 900.0,
+     "Recursos próprios": 200.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      4500.0
+     ],
+     [
+      "Clarice Tambelli Mendes (pessoa física)",
+      900.0
+     ],
+     [
+      "Carlos Orlando Mendes Filho (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4700.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1790.0,
+     "Despesa com Impulsionamento de Conteúdos": 1402.0,
+     "Publicidade por jornais e revistas": 872.0,
+     "Produção de jingles, vinhetas e slogans": 300.0,
+     "Despesas com pessoal": 189.22,
+     "Criação e inclusão de páginas na internet": 100.0,
+     "Materiais de expediente": 46.78
+    },
+    "principais": [
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      1402.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      1340.0
+     ],
+     [
+      "Empresa Jornalistica O Progresso De Tatui Ltda",
+      482.0
+     ],
+     [
+      "Integração O Jornal Do Povo Ltda Me",
+      390.0
+     ],
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      350.0
+     ],
+     [
+      "Israel Pires (pessoa física)",
+      300.0
+     ],
+     [
+      "Andreia Cristiane Franco (pessoa física)",
+      189.22
+     ],
+     [
+      "Peter Alex Leme",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -2538,6 +7515,40 @@
    "anulados": false,
    "zonas": {
     "140": 117
+   },
+   "receitas": {
+    "total": 3997.0,
+    "categorias": {
+     "Recursos próprios": 3997.0
+    },
+    "principais": [
+     [
+      "Marcelo De Oliveira Florentino (pessoa física)",
+      3997.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3997.0,
+    "categorias": {
+     "Despesa com Impulsionamento de Conteúdos": 2900.0,
+     "Publicidade por materiais impressos": 597.0,
+     "Locação/cessão de bens imóveis": 500.0
+    },
+    "principais": [
+     [
+      "Facebook Servicos Online Do Brasil Ltda",
+      2900.0
+     ],
+     [
+      "49.171.680 Wiliam Braz Rodrigues",
+      597.0
+     ],
+     [
+      "Jonas Caetano Filho (pessoa física)",
+      500.0
+     ]
+    ]
    }
   },
   {
@@ -2559,6 +7570,16 @@
    "anulados": false,
    "zonas": {
     "140": 114
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2580,6 +7601,61 @@
    "anulados": false,
    "zonas": {
     "140": 114
+   },
+   "receitas": {
+    "total": 5100.0,
+    "categorias": {
+     "Recursos de partido político": 5000.0,
+     "Recursos de pessoas físicas": 100.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      5000.0
+     ],
+     [
+      "Luara Castro De Moraes (pessoa física)",
+      100.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 5100.0,
+    "categorias": {
+     "Despesas com pessoal": 3083.0,
+     "Publicidade por materiais impressos": 1917.0,
+     "Despesa com Impulsionamento de Conteúdos": 100.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      1320.0
+     ],
+     [
+      "Luara Castro De Moraes (pessoa física)",
+      1200.0
+     ],
+     [
+      "Julia Xavier Albino (pessoa física)",
+      1200.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      597.0
+     ],
+     [
+      "Silviele Vitoria Antunes Teixeira (pessoa física)",
+      383.0
+     ],
+     [
+      "Valdineia Pereira Neris (pessoa física)",
+      300.0
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -2601,6 +7677,23 @@
    "anulados": false,
    "zonas": {
     "140": 113
+   },
+   "receitas": {
+    "total": 822.5,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2622,6 +7715,28 @@
    "anulados": false,
    "zonas": {
     "140": 113
+   },
+   "receitas": {
+    "total": 530.0,
+    "categorias": {
+     "Recursos de partido político": 500.0,
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      500.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2643,6 +7758,64 @@
    "anulados": false,
    "zonas": {
     "140": 113
+   },
+   "receitas": {
+    "total": 14000.0,
+    "categorias": {
+     "Recursos de partido político": 14000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      14000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 14000.0,
+    "categorias": {
+     "Despesas com pessoal": 9900.0,
+     "Alimentação": 1018.97,
+     "Publicidade por adesivos": 1000.0,
+     "Publicidade por materiais impressos": 730.0,
+     "Materiais de expediente": 700.0,
+     "Produção de jingles, vinhetas e slogans": 600.0,
+     "Água": 51.03
+    },
+    "principais": [
+     [
+      "Carla Priscila De Oliveira (pessoa física)",
+      2200.0
+     ],
+     [
+      "Erika Fernanda Baião (pessoa física)",
+      2200.0
+     ],
+     [
+      "Ana Paula Garcia (pessoa física)",
+      2100.0
+     ],
+     [
+      "Priscila Raphael De Almeida",
+      1565.0
+     ],
+     [
+      "Elidamares Garcia (pessoa física)",
+      1500.0
+     ],
+     [
+      "Bruna Costa Santos (pessoa física)",
+      1450.0
+     ],
+     [
+      "Rogerio P. Gomes",
+      700.0
+     ],
+     [
+      "23.571.015 Robson Fernando Camargo",
+      600.0
+     ]
+    ]
    }
   },
   {
@@ -2664,6 +7837,35 @@
    "anulados": false,
    "zonas": {
     "140": 113
+   },
+   "receitas": {
+    "total": 1110.0,
+    "categorias": {
+     "Recursos próprios": 700.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Agnaldo Siqueira Reguin (pessoa física)",
+      700.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 700.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 700.0
+    },
+    "principais": [
+     [
+      "Renato Antonio Martins Helou",
+      700.0
+     ]
+    ]
    }
   },
   {
@@ -2685,6 +7887,45 @@
    "anulados": false,
    "zonas": {
     "140": 110
+   },
+   "receitas": {
+    "total": 380.0,
+    "categorias": {
+     "Recursos próprios": 350.0,
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Levi Pinto Soares (pessoa física)",
+      350.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 750.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 400.0,
+     "Produção de jingles, vinhetas e slogans": 250.0,
+     "Despesa com Impulsionamento de Conteúdos": 100.0
+    },
+    "principais": [
+     [
+      "Pedro Dos Santos Oliveira",
+      400.0
+     ],
+     [
+      "Israel Pires (pessoa física)",
+      250.0
+     ],
+     [
+      "Facebook Serviços Online Do Brasil Ltda",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -2706,6 +7947,39 @@
    "anulados": false,
    "zonas": {
     "140": 109
+   },
+   "receitas": {
+    "total": 950.0,
+    "categorias": {
+     "Recursos próprios": 720.0,
+     "Recursos de outros candidatos": 230.0
+    },
+    "principais": [
+     [
+      "Selma Regina Pineda Vicente (pessoa física)",
+      720.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      230.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 700.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 700.0
+    },
+    "principais": [
+     [
+      "Grafica Morangoni Ltda",
+      550.0
+     ],
+     [
+      "Grazielle Ribeiro De Oliveira",
+      150.0
+     ]
+    ]
    }
   },
   {
@@ -2727,6 +8001,52 @@
    "anulados": false,
    "zonas": {
     "140": 108
+   },
+   "receitas": {
+    "total": 7400.0,
+    "categorias": {
+     "Recursos de partido político": 7000.0,
+     "Recursos de pessoas físicas": 400.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      7000.0
+     ],
+     [
+      "Valquiria Silveira Franco (pessoa física)",
+      400.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7000.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 5274.0,
+     "Despesas com pessoal": 1726.0
+    },
+    "principais": [
+     [
+      "Bruno Augusto Silveira",
+      3290.0
+     ],
+     [
+      "Augusto Cesar Veira Me",
+      1200.0
+     ],
+     [
+      "Jefferson Aparecido Da Silva (pessoa física)",
+      900.0
+     ],
+     [
+      "Alessandro Aparecido Dos Santos (pessoa física)",
+      826.0
+     ],
+     [
+      "49.968.856 Diego Massahiro Fukuoka",
+      784.0
+     ]
+    ]
    }
   },
   {
@@ -2748,6 +8068,34 @@
    "anulados": false,
    "zonas": {
     "140": 104
+   },
+   "receitas": {
+    "total": 340.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 340.0
+    },
+    "principais": [
+     [
+      "Hugo Tadina De Campos (pessoa física)",
+      340.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 340.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 340.0
+    },
+    "principais": [
+     [
+      "Aline Oliveira Leite",
+      190.0
+     ],
+     [
+      "Francisco Moraes Netto",
+      150.0
+     ]
+    ]
    }
   },
   {
@@ -2769,6 +8117,35 @@
    "anulados": false,
    "zonas": {
     "140": 103
+   },
+   "receitas": {
+    "total": 600.0,
+    "categorias": {
+     "Recursos de outros candidatos": 350.0,
+     "Recursos próprios": 250.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      350.0
+     ],
+     [
+      "Matheus Xavier Lima (pessoa física)",
+      250.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 250.0,
+    "categorias": {
+     "Produção de jingles, vinhetas e slogans": 250.0
+    },
+    "principais": [
+     [
+      "Carlos Eduardo De Lima",
+      250.0
+     ]
+    ]
    }
   },
   {
@@ -2790,6 +8167,23 @@
    "anulados": false,
    "zonas": {
     "140": 101
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2811,6 +8205,35 @@
    "anulados": false,
    "zonas": {
     "140": 100
+   },
+   "receitas": {
+    "total": 750.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 750.0
+    },
+    "principais": [
+     [
+      "Eliana De Arruda (pessoa física)",
+      750.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 750.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 650.0,
+     "Despesas com pessoal": 100.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      650.0
+     ],
+     [
+      "Eliana De Arruda (pessoa física)",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -2832,6 +8255,23 @@
    "anulados": false,
    "zonas": {
     "140": 95
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2853,6 +8293,23 @@
    "anulados": false,
    "zonas": {
     "140": 95
+   },
+   "receitas": {
+    "total": 672.5,
+    "categorias": {
+     "Recursos de outros candidatos": 672.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      672.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2874,6 +8331,51 @@
    "anulados": false,
    "zonas": {
     "140": 95
+   },
+   "receitas": {
+    "total": 6000.0,
+    "categorias": {
+     "Recursos de partido político": 6000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      6000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 6000.0,
+    "categorias": {
+     "Despesas com pessoal": 5500.0,
+     "Publicidade por materiais impressos": 500.0
+    },
+    "principais": [
+     [
+      "Vitor Hugo Pires (pessoa física)",
+      1200.0
+     ],
+     [
+      "Ana Cristina Rodrigues (pessoa física)",
+      1200.0
+     ],
+     [
+      "Maria Eduarda De Melo Lino (pessoa física)",
+      1200.0
+     ],
+     [
+      "Fernanda Bueno De Miranda Bastos (pessoa física)",
+      1200.0
+     ],
+     [
+      "Vanda Nogueira (pessoa física)",
+      700.0
+     ],
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      500.0
+     ]
+    ]
    }
   },
   {
@@ -2895,6 +8397,16 @@
    "anulados": false,
    "zonas": {
     "140": 95
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2916,6 +8428,16 @@
    "anulados": false,
    "zonas": {
     "140": 95
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -2937,6 +8459,47 @@
    "anulados": false,
    "zonas": {
     "140": 94
+   },
+   "receitas": {
+    "total": 6000.0,
+    "categorias": {
+     "Recursos de partido político": 6000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      6000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 6000.0,
+    "categorias": {
+     "Despesas com pessoal": 5760.0,
+     "Publicidade por materiais impressos": 240.0
+    },
+    "principais": [
+     [
+      "Eleonor De Fatima Carregosa Andrade (pessoa física)",
+      1780.0
+     ],
+     [
+      "Ana Julia Carregosa De Andrade (pessoa física)",
+      1580.0
+     ],
+     [
+      "Franciele Mariana De Queiroz (pessoa física)",
+      1200.0
+     ],
+     [
+      "Lucineia Chegan Proença (pessoa física)",
+      1200.0
+     ],
+     [
+      "Peter Alex Leme",
+      240.0
+     ]
+    ]
    }
   },
   {
@@ -2958,6 +8521,35 @@
    "anulados": false,
    "zonas": {
     "140": 94
+   },
+   "receitas": {
+    "total": 888.5,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5,
+     "Recursos próprios": 66.0
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ],
+     [
+      "Ana Flavia Machado (pessoa física)",
+      66.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 66.0,
+    "categorias": {
+     "Despesa com Impulsionamento de Conteúdos": 66.0
+    },
+    "principais": [
+     [
+      "Dlocal A Serviço De Facebook",
+      66.0
+     ]
+    ]
    }
   },
   {
@@ -2979,6 +8571,35 @@
    "anulados": false,
    "zonas": {
     "140": 94
+   },
+   "receitas": {
+    "total": 2891.45,
+    "categorias": {
+     "Recursos de partido político": 1539.78,
+     "Recursos de outros candidatos": 1351.67
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      1539.78
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1351.67
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1539.78,
+    "categorias": {
+     "Despesas com pessoal": 1539.78
+    },
+    "principais": [
+     [
+      "Eduardo Zampronho (pessoa física)",
+      1539.78
+     ]
+    ]
    }
   },
   {
@@ -3000,6 +8621,69 @@
    "anulados": false,
    "zonas": {
     "140": 94
+   },
+   "receitas": {
+    "total": 7500.0,
+    "categorias": {
+     "Recursos de partido político": 7000.0,
+     "Recursos próprios": 500.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      7000.0
+     ],
+     [
+      "Noemia Ferreira Do Carmo (pessoa física)",
+      500.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7000.0,
+    "categorias": {
+     "Despesas com pessoal": 5430.0,
+     "Publicidade por materiais impressos": 730.0,
+     "Criação e inclusão de páginas na internet": 500.0,
+     "Alimentação": 125.0,
+     "Despesa com Impulsionamento de Conteúdos": 102.0,
+     "Materiais de expediente": 63.0,
+     "Produção de jingles, vinhetas e slogans": 50.0
+    },
+    "principais": [
+     [
+      "Atner Victor Ramos (pessoa física)",
+      1600.0
+     ],
+     [
+      "Reinaldo Struciatti (pessoa física)",
+      1450.0
+     ],
+     [
+      "Elivaldo Balbino Santos (pessoa física)",
+      800.0
+     ],
+     [
+      "Jaqueline Lopes Correa (pessoa física)",
+      750.0
+     ],
+     [
+      "Mariane Lopes Correa (pessoa física)",
+      730.0
+     ],
+     [
+      "Felipe Ribeiro Rodrigues De Souza (pessoa física)",
+      600.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      540.0
+     ],
+     [
+      "Bruno Augusto Silveira36989394870",
+      190.0
+     ]
+    ]
    }
   },
   {
@@ -3021,6 +8705,16 @@
    "anulados": false,
    "zonas": {
     "140": 94
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3042,6 +8736,35 @@
    "anulados": false,
    "zonas": {
     "140": 93
+   },
+   "receitas": {
+    "total": 610.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 200.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Joao Abilio Candido (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 200.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 200.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Me",
+      200.0
+     ]
+    ]
    }
   },
   {
@@ -3063,6 +8786,16 @@
    "anulados": false,
    "zonas": {
     "140": 93
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3084,6 +8817,47 @@
    "anulados": false,
    "zonas": {
     "140": 93
+   },
+   "receitas": {
+    "total": 5880.45,
+    "categorias": {
+     "Recursos de partido político": 4528.78,
+     "Recursos de outros candidatos": 1351.67
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      4528.78
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1351.67
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4528.0,
+    "categorias": {
+     "Despesas com pessoal": 4528.0
+    },
+    "principais": [
+     [
+      "Priscila Rodrigues Camargo Freitas (pessoa física)",
+      1132.0
+     ],
+     [
+      "Isaias Nunes Benfica Júnior (pessoa física)",
+      1132.0
+     ],
+     [
+      "Paulo Ricardo Aparecido Batista (pessoa física)",
+      1132.0
+     ],
+     [
+      "Renata Machado (pessoa física)",
+      1132.0
+     ]
+    ]
    }
   },
   {
@@ -3105,6 +8879,39 @@
    "anulados": false,
    "zonas": {
     "140": 91
+   },
+   "receitas": {
+    "total": 910.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 500.0,
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Marcelo Lucio De Meira (pessoa física)",
+      500.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 500.0,
+    "categorias": {
+     "Despesas com pessoal": 500.0
+    },
+    "principais": [
+     [
+      "Luciano Aparecido Da Rosa Cardoso (pessoa física)",
+      250.0
+     ],
+     [
+      "Valquiria Germano Cordeiro (pessoa física)",
+      250.0
+     ]
+    ]
    }
   },
   {
@@ -3126,6 +8933,16 @@
    "anulados": false,
    "zonas": {
     "140": 90
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3147,6 +8964,23 @@
    "anulados": false,
    "zonas": {
     "140": 88
+   },
+   "receitas": {
+    "total": 1210.96,
+    "categorias": {
+     "Recursos de outros candidatos": 1210.96
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      1210.96
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3168,6 +9002,16 @@
    "anulados": false,
    "zonas": {
     "140": 85
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3189,6 +9033,30 @@
    "anulados": false,
    "zonas": {
     "140": 85
+   },
+   "receitas": {
+    "total": 300.0,
+    "categorias": {
+     "Recursos próprios": 300.0
+    },
+    "principais": [
+     [
+      "Lia Gabriel D Abronzo (pessoa física)",
+      300.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 300.0,
+    "categorias": {
+     "Produção de jingles, vinhetas e slogans": 300.0
+    },
+    "principais": [
+     [
+      "Ldr Pires Molero",
+      300.0
+     ]
+    ]
    }
   },
   {
@@ -3210,6 +9078,35 @@
    "anulados": false,
    "zonas": {
     "140": 83
+   },
+   "receitas": {
+    "total": 510.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 100.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Rafael Ferreira Da Silva (pessoa física)",
+      100.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 100.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 100.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -3231,6 +9128,53 @@
    "anulados": false,
    "zonas": {
     "140": 83
+   },
+   "receitas": {
+    "total": 6850.0,
+    "categorias": {
+     "Recursos de partido político": 6000.0,
+     "Recursos próprios": 850.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      6000.0
+     ],
+     [
+      "Charles Roberto Paes (pessoa física)",
+      850.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 6350.0,
+    "categorias": {
+     "Despesas com pessoal": 5761.5,
+     "Publicidade por materiais impressos": 350.0,
+     "Combustíveis e lubrificantes": 238.5
+    },
+    "principais": [
+     [
+      "Camila Silva Correia De Moraes (pessoa física)",
+      3361.5
+     ],
+     [
+      "Luciana Gabriel De Campos (pessoa física)",
+      2000.0
+     ],
+     [
+      "Erika Soares Bernardes De Campos (pessoa física)",
+      400.0
+     ],
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      350.0
+     ],
+     [
+      "Auto Posto Avenida Tatui Ltda",
+      238.5
+     ]
+    ]
    }
   },
   {
@@ -3252,6 +9196,55 @@
    "anulados": false,
    "zonas": {
     "140": 82
+   },
+   "receitas": {
+    "total": 7000.0,
+    "categorias": {
+     "Recursos de partido político": 7000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      7000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7000.0,
+    "categorias": {
+     "Despesas com pessoal": 5750.0,
+     "Produção de programas de rádio, televisão ou vídeo": 1250.0
+    },
+    "principais": [
+     [
+      "Thais Paulino De Almeida Lobo (pessoa física)",
+      2500.0
+     ],
+     [
+      "Adriana Mota Lima (pessoa física)",
+      1250.0
+     ],
+     [
+      "Jose Juscelino De Oliveira (pessoa física)",
+      1087.5
+     ],
+     [
+      "Raquel Cristina Dutra (pessoa física)",
+      900.0
+     ],
+     [
+      "Claudia Regina Nascimento Oliveira (pessoa física)",
+      600.0
+     ],
+     [
+      "Aline Luis (pessoa física)",
+      362.5
+     ],
+     [
+      "Gabriel Henrique Dutra (pessoa física)",
+      300.0
+     ]
+    ]
    }
   },
   {
@@ -3273,6 +9266,28 @@
    "anulados": false,
    "zonas": {
     "140": 81
+   },
+   "receitas": {
+    "total": 1030.0,
+    "categorias": {
+     "Recursos próprios": 1000.0,
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Edneia Cristina Vieira Da Rocha (pessoa física)",
+      1000.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3294,6 +9309,23 @@
    "anulados": false,
    "zonas": {
     "140": 81
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3315,6 +9347,16 @@
    "anulados": false,
    "zonas": {
     "140": 79
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3336,6 +9378,35 @@
    "anulados": false,
    "zonas": {
     "140": 78
+   },
+   "receitas": {
+    "total": 2873.95,
+    "categorias": {
+     "Recursos de partido político": 1539.78,
+     "Recursos de outros candidatos": 1334.17
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      1539.78
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1334.17
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1539.78,
+    "categorias": {
+     "Diversas a especificar": 1539.78
+    },
+    "principais": [
+     [
+      "Qi Comunicacao E Tecnologia Ltda",
+      1539.78
+     ]
+    ]
    }
   },
   {
@@ -3357,6 +9428,43 @@
    "anulados": false,
    "zonas": {
     "140": 77
+   },
+   "receitas": {
+    "total": 5000.0,
+    "categorias": {
+     "Recursos de partido político": 5000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      5000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 5000.0,
+    "categorias": {
+     "Despesas com pessoal": 3725.0,
+     "Publicidade por materiais impressos": 1275.0
+    },
+    "principais": [
+     [
+      "Marcos Luiz Miranda Cleto (pessoa física)",
+      2225.0
+     ],
+     [
+      "Luana De Farias Medeiros (pessoa física)",
+      1500.0
+     ],
+     [
+      "Leandro Ribeiro Stopa",
+      925.0
+     ],
+     [
+      "Rotram Tecnologia E Soluções Ltda",
+      350.0
+     ]
+    ]
    }
   },
   {
@@ -3378,6 +9486,23 @@
    "anulados": false,
    "zonas": {
     "140": 76
+   },
+   "receitas": {
+    "total": 477.5,
+    "categorias": {
+     "Recursos de outros candidatos": 477.5
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      477.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3399,6 +9524,79 @@
    "anulados": false,
    "zonas": {
     "140": 72
+   },
+   "receitas": {
+    "total": 24525.95,
+    "categorias": {
+     "Recursos de partido político": 14485.28,
+     "Recursos de pessoas físicas": 5000.0,
+     "Recursos próprios": 3689.0,
+     "Recursos de outros candidatos": 1351.67
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      14485.28
+     ],
+     [
+      "Sueli Leite Mariano Da Silva (pessoa física)",
+      5000.0
+     ],
+     [
+      "Joaquim Rogerio Dos Santos (pessoa física)",
+      3689.0
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1351.67
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 17980.7,
+    "categorias": {
+     "Despesas com pessoal": 7155.0,
+     "Diversas a especificar": 4676.3,
+     "Publicidade por materiais impressos": 4354.6,
+     "Despesa com Impulsionamento de Conteúdos": 864.0,
+     "Produção de jingles, vinhetas e slogans": 390.0,
+     "Combustíveis e lubrificantes": 350.0,
+     "Criação e inclusão de páginas na internet": 190.8
+    },
+    "principais": [
+     [
+      "Busca Online Serviços De Impressoes Ltda",
+      5765.3
+     ],
+     [
+      "Juliana Dos Anjos Leite Mariano (pessoa física)",
+      1655.0
+     ],
+     [
+      "Japan Midia Publicidade E Marketing Ltda",
+      1500.0
+     ],
+     [
+      "Sueli Leite Mariano Da Silva (pessoa física)",
+      1500.0
+     ],
+     [
+      "Priscila Leite Mariano Da Silva (pessoa física)",
+      1375.0
+     ],
+     [
+      "Karen De Oliveira Monteiro (pessoa física)",
+      900.0
+     ],
+     [
+      "Maria Eduarda Rodrigues A. De Oliveira (pessoa física)",
+      900.0
+     ],
+     [
+      "Facebook Services Online Do Brasil",
+      864.0
+     ]
+    ]
    }
   },
   {
@@ -3420,6 +9618,23 @@
    "anulados": false,
    "zonas": {
     "140": 71
+   },
+   "receitas": {
+    "total": 822.5,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3441,6 +9656,23 @@
    "anulados": false,
    "zonas": {
     "140": 71
+   },
+   "receitas": {
+    "total": 30.0,
+    "categorias": {
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3462,6 +9694,16 @@
    "anulados": false,
    "zonas": {
     "140": 67
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3483,6 +9725,16 @@
    "anulados": false,
    "zonas": {
     "140": 66
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3504,6 +9756,16 @@
    "anulados": false,
    "zonas": {
     "140": 65
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3525,6 +9787,39 @@
    "anulados": false,
    "zonas": {
     "140": 64
+   },
+   "receitas": {
+    "total": 1822.5,
+    "categorias": {
+     "Recursos de partido político": 1000.0,
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Direção Estadual/Distrital",
+      1000.0
+     ],
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1000.0,
+    "categorias": {
+     "Despesas com pessoal": 1000.0
+    },
+    "principais": [
+     [
+      "Gleison Augusto Ribeiro Machado (pessoa física)",
+      500.0
+     ],
+     [
+      "Evandro Saturnino De Assis (pessoa física)",
+      500.0
+     ]
+    ]
    }
   },
   {
@@ -3546,6 +9841,16 @@
    "anulados": false,
    "zonas": {
     "140": 64
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3567,6 +9872,23 @@
    "anulados": false,
    "zonas": {
     "140": 63
+   },
+   "receitas": {
+    "total": 230.0,
+    "categorias": {
+     "Recursos de outros candidatos": 230.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      230.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3588,6 +9910,16 @@
    "anulados": false,
    "zonas": {
     "140": 63
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3609,6 +9941,40 @@
    "anulados": false,
    "zonas": {
     "140": 62
+   },
+   "receitas": {
+    "total": 555.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos de pessoas físicas": 145.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Angelica Firmino Lopes Da Silva (pessoa física)",
+      145.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 145.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 100.0,
+     "Publicidade por adesivos": 45.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      100.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      45.0
+     ]
+    ]
    }
   },
   {
@@ -3630,6 +9996,16 @@
    "anulados": false,
    "zonas": {
     "140": 61
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3651,6 +10027,65 @@
    "anulados": false,
    "zonas": {
     "140": 60
+   },
+   "receitas": {
+    "total": 8335.0,
+    "categorias": {
+     "Recursos de partido político": 7500.0,
+     "Recursos de outros candidatos": 835.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      7500.0
+     ],
+     [
+      "Eduardo Dade Sallum",
+      835.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7500.0,
+    "categorias": {
+     "Publicidade por carros de som": 3600.0,
+     "Despesas com pessoal": 3060.0,
+     "Diversas a especificar": 840.0
+    },
+    "principais": [
+     [
+      "Megaprime Produção Tv Business Ltda",
+      3600.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      840.0
+     ],
+     [
+      "Luciano Felipe Soares (pessoa física)",
+      800.0
+     ],
+     [
+      "Sara Do Prado Camargo Da C (pessoa física)",
+      610.0
+     ],
+     [
+      "Kelly Cristina De Proença (pessoa física)",
+      450.0
+     ],
+     [
+      "Marcelo Aparecido Dos Santos Rodrigues (pessoa física)",
+      300.0
+     ],
+     [
+      "Araceli Aparecida De Almeida (pessoa física)",
+      300.0
+     ],
+     [
+      "Isac Da Col (pessoa física)",
+      300.0
+     ]
+    ]
    }
   },
   {
@@ -3672,6 +10107,35 @@
    "anulados": false,
    "zonas": {
     "140": 60
+   },
+   "receitas": {
+    "total": 610.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos de pessoas físicas": 200.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Michel Leme Werneck (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 250.0,
+    "categorias": {
+     "Produção de jingles, vinhetas e slogans": 250.0
+    },
+    "principais": [
+     [
+      "Ldr Pires Molero",
+      250.0
+     ]
+    ]
    }
   },
   {
@@ -3693,6 +10157,16 @@
    "anulados": false,
    "zonas": {
     "140": 58
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3714,6 +10188,35 @@
    "anulados": false,
    "zonas": {
     "140": 58
+   },
+   "receitas": {
+    "total": 760.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 350.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Welinton Vagner Dias (pessoa física)",
+      350.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 350.0,
+    "categorias": {
+     "Diversas a especificar": 350.0
+    },
+    "principais": [
+     [
+      "Tco Comercio E Serviços Ltda Me",
+      350.0
+     ]
+    ]
    }
   },
   {
@@ -3735,6 +10238,35 @@
    "anulados": false,
    "zonas": {
     "140": 57
+   },
+   "receitas": {
+    "total": 660.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 250.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Antonio Carlos Miranda Junior (pessoa física)",
+      250.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 250.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 250.0
+    },
+    "principais": [
+     [
+      "Francisco Moraes Netto",
+      250.0
+     ]
+    ]
    }
   },
   {
@@ -3756,6 +10288,43 @@
    "anulados": false,
    "zonas": {
     "140": 56
+   },
+   "receitas": {
+    "total": 4500.0,
+    "categorias": {
+     "Recursos de partido político": 4000.0,
+     "Recursos próprios": 500.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      4000.0
+     ],
+     [
+      "Sandra Maria De Oliveira (pessoa física)",
+      500.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4000.0,
+    "categorias": {
+     "Despesas com pessoal": 4000.0
+    },
+    "principais": [
+     [
+      "Marli Aparecida Seabra Paes (pessoa física)",
+      1500.0
+     ],
+     [
+      "Valeria Correia Ierichi (pessoa física)",
+      1500.0
+     ],
+     [
+      "Daiane Aparecida Paes De Campos (pessoa física)",
+      1000.0
+     ]
+    ]
    }
   },
   {
@@ -3777,6 +10346,16 @@
    "anulados": false,
    "zonas": {
     "140": 56
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3798,6 +10377,42 @@
    "anulados": false,
    "zonas": {
     "140": 55
+   },
+   "receitas": {
+    "total": 2700.0,
+    "categorias": {
+     "Recursos de partido político": 2700.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      2700.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 2700.0,
+    "categorias": {
+     "Despesas com pessoal": 2700.0
+    },
+    "principais": [
+     [
+      "Leandro Aparecido Caresia (pessoa física)",
+      900.0
+     ],
+     [
+      "Micheli Stefani De Souza (pessoa física)",
+      600.0
+     ],
+     [
+      "Karina De Lima Silva (pessoa física)",
+      600.0
+     ],
+     [
+      "Ingrid Naiara Gonçalves Luiz (pessoa física)",
+      600.0
+     ]
+    ]
    }
   },
   {
@@ -3819,6 +10434,23 @@
    "anulados": false,
    "zonas": {
     "140": 54
+   },
+   "receitas": {
+    "total": 1351.67,
+    "categorias": {
+     "Recursos de outros candidatos": 1351.67
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      1351.67
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3840,6 +10472,28 @@
    "anulados": false,
    "zonas": {
     "140": 54
+   },
+   "receitas": {
+    "total": 4405.0,
+    "categorias": {
+     "Recursos de partido político": 3950.0,
+     "Recursos de outros candidatos": 455.0
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      3950.0
+     ],
+     [
+      "Eduardo Dade Sallum",
+      455.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3861,6 +10515,45 @@
    "anulados": false,
    "zonas": {
     "140": 51
+   },
+   "receitas": {
+    "total": 2370.0,
+    "categorias": {
+     "Recursos de partido político": 1000.0,
+     "Recursos de outros candidatos": 822.5,
+     "Recursos próprios": 547.5
+    },
+    "principais": [
+     [
+      "Direção Estadual/Distrital",
+      1000.0
+     ],
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ],
+     [
+      "Nilson Dos Santos Ribeiro (pessoa física)",
+      547.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1395.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1095.0,
+     "Despesas com pessoal": 300.0
+    },
+    "principais": [
+     [
+      "Bruno Augusto Silveira",
+      1095.0
+     ],
+     [
+      "Fernanda Pereira Da Silva (pessoa física)",
+      300.0
+     ]
+    ]
    }
   },
   {
@@ -3882,6 +10575,50 @@
    "anulados": false,
    "zonas": {
     "140": 49
+   },
+   "receitas": {
+    "total": 1358.0,
+    "categorias": {
+     "Recursos próprios": 708.0,
+     "Recursos de outros candidatos": 410.0,
+     "Recursos de pessoas físicas": 240.0
+    },
+    "principais": [
+     [
+      "Andre Henrique Alves De Oliveira (pessoa física)",
+      708.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Gean Lucas Men (pessoa física)",
+      240.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 948.0,
+    "categorias": {
+     "Publicidade por adesivos": 630.0,
+     "Despesa com Impulsionamento de Conteúdos": 218.0,
+     "Publicidade por materiais impressos": 100.0
+    },
+    "principais": [
+     [
+      "Augusto Cesar Vieira Me",
+      630.0
+     ],
+     [
+      "Facebook Serviços On Line",
+      218.0
+     ],
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -3903,6 +10640,23 @@
    "anulados": false,
    "zonas": {
     "140": 49
+   },
+   "receitas": {
+    "total": 822.5,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3924,6 +10678,16 @@
    "anulados": false,
    "zonas": {
     "140": 48
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -3945,6 +10709,62 @@
    "anulados": false,
    "zonas": {
     "140": 47
+   },
+   "receitas": {
+    "total": 7000.0,
+    "categorias": {
+     "Recursos de partido político": 7000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      7000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 6876.91,
+    "categorias": {
+     "Despesas com pessoal": 3183.0,
+     "Publicidade por materiais impressos": 2512.69,
+     "Cessão ou locação de veículos": 500.0,
+     "Alimentação": 381.22,
+     "Criação e inclusão de páginas na internet": 300.0
+    },
+    "principais": [
+     [
+      "Andre Luis De Moura (pessoa física)",
+      3300.0
+     ],
+     [
+      "Wbl Grafica E Editora Ltda",
+      2112.69
+     ],
+     [
+      "Jessica Karoline Berlofa",
+      450.0
+     ],
+     [
+      "Renato R Dos Santos Alimentos Ltda",
+      381.22
+     ],
+     [
+      "Izabel Tarciana De Souza E Souza",
+      250.0
+     ],
+     [
+      "Leoneide Aparecida Coelho Proença (pessoa física)",
+      180.0
+     ],
+     [
+      "Larissa De Moura Quevedo (pessoa física)",
+      123.0
+     ],
+     [
+      "Antonio O Araujo (pessoa física)",
+      80.0
+     ]
+    ]
    }
   },
   {
@@ -3966,6 +10786,42 @@
    "anulados": false,
    "zonas": {
     "140": 45
+   },
+   "receitas": {
+    "total": 4000.0,
+    "categorias": {
+     "Recursos de partido político": 4000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      4000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4000.0,
+    "categorias": {
+     "Despesas com pessoal": 4000.0
+    },
+    "principais": [
+     [
+      "Mariana De Fatima Luiz (pessoa física)",
+      1200.0
+     ],
+     [
+      "Maira Regina Paes Da Silva (pessoa física)",
+      1200.0
+     ],
+     [
+      "Fernanda Da Silva Paes (pessoa física)",
+      900.0
+     ],
+     [
+      "Gustavo De Hungria Costa Pereira (pessoa física)",
+      700.0
+     ]
+    ]
    }
   },
   {
@@ -3987,6 +10843,23 @@
    "anulados": false,
    "zonas": {
     "140": 44
+   },
+   "receitas": {
+    "total": 1351.67,
+    "categorias": {
+     "Recursos de outros candidatos": 1351.67
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      1351.67
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4008,6 +10881,16 @@
    "anulados": false,
    "zonas": {
     "140": 44
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4029,6 +10912,23 @@
    "anulados": false,
    "zonas": {
     "140": 44
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4050,6 +10950,39 @@
    "anulados": false,
    "zonas": {
     "140": 43
+   },
+   "receitas": {
+    "total": 2891.45,
+    "categorias": {
+     "Recursos de partido político": 1539.78,
+     "Recursos de outros candidatos": 1351.67
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      1539.78
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1351.67
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1539.78,
+    "categorias": {
+     "Despesas com pessoal": 1539.78
+    },
+    "principais": [
+     [
+      "Gabriela Camargo Rodrigues (pessoa física)",
+      939.78
+     ],
+     [
+      "Josana De Fatima Roche (pessoa física)",
+      600.0
+     ]
+    ]
    }
   },
   {
@@ -4071,6 +11004,49 @@
    "anulados": false,
    "zonas": {
     "140": 42
+   },
+   "receitas": {
+    "total": 2452.5,
+    "categorias": {
+     "Recursos de partido político": 1500.0,
+     "Recursos de outros candidatos": 822.5,
+     "Recursos próprios": 130.0
+    },
+    "principais": [
+     [
+      "Direção Estadual/Distrital",
+      1500.0
+     ],
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ],
+     [
+      "Cecilia Ceciliato (pessoa física)",
+      130.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1630.0,
+    "categorias": {
+     "Despesas com pessoal": 1500.0,
+     "Despesa com Impulsionamento de Conteúdos": 130.0
+    },
+    "principais": [
+     [
+      "Paloma Gomes Dos Santos (pessoa física)",
+      1250.0
+     ],
+     [
+      "Rosangela Aparecida Bueno De Goes (pessoa física)",
+      250.0
+     ],
+     [
+      "Dlocal A Serviço De Facebook",
+      130.0
+     ]
+    ]
    }
   },
   {
@@ -4092,6 +11068,30 @@
    "anulados": false,
    "zonas": {
     "140": 42
+   },
+   "receitas": {
+    "total": 295.0,
+    "categorias": {
+     "Recursos próprios": 295.0
+    },
+    "principais": [
+     [
+      "Eliseu Lima Junior (pessoa física)",
+      295.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 295.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 295.0
+    },
+    "principais": [
+     [
+      "Janaina Teixeira De Paiva",
+      295.0
+     ]
+    ]
    }
   },
   {
@@ -4113,6 +11113,48 @@
    "anulados": false,
    "zonas": {
     "140": 41
+   },
+   "receitas": {
+    "total": 7000.0,
+    "categorias": {
+     "Recursos de partido político": 7000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      7000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7000.0,
+    "categorias": {
+     "Despesas com pessoal": 6250.0,
+     "Alimentação": 600.0,
+     "Publicidade por adesivos": 150.0
+    },
+    "principais": [
+     [
+      "Rodrigo Francisco De Oliveira (pessoa física)",
+      2090.0
+     ],
+     [
+      "Irai Maciel De Gois Junior (pessoa física)",
+      2080.0
+     ],
+     [
+      "Jaqueline Chaves De Almeida (pessoa física)",
+      2080.0
+     ],
+     [
+      "54.323.327 Vanessa Araujo Luiz De Campos",
+      600.0
+     ],
+     [
+      "Peter Alex Leme",
+      150.0
+     ]
+    ]
    }
   },
   {
@@ -4134,6 +11176,57 @@
    "anulados": false,
    "zonas": {
     "140": 39
+   },
+   "receitas": {
+    "total": 4000.0,
+    "categorias": {
+     "Recursos de partido político": 4000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      4000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3983.22,
+    "categorias": {
+     "Despesas com pessoal": 3000.0,
+     "Publicidade por materiais impressos": 693.0,
+     "Publicidade por adesivos": 200.0,
+     "Materiais de expediente": 90.22
+    },
+    "principais": [
+     [
+      "Guilherme Da Silva Rodrigues (pessoa física)",
+      1200.0
+     ],
+     [
+      "Luana De Assis (pessoa física)",
+      900.0
+     ],
+     [
+      "Qi Comunicacao Visual E Tecnologia Ltda",
+      693.0
+     ],
+     [
+      "Vanessa De Barros (pessoa física)",
+      600.0
+     ],
+     [
+      "Elisangela Lourdes Da Silva (pessoa física)",
+      300.0
+     ],
+     [
+      "53.435.546 Izabel Tarciana De Souza E Souza",
+      200.0
+     ],
+     [
+      "Comercial Madereira Cedro Ltda",
+      90.22
+     ]
+    ]
    }
   },
   {
@@ -4155,6 +11248,28 @@
    "anulados": false,
    "zonas": {
     "140": 38
+   },
+   "receitas": {
+    "total": 1005.0,
+    "categorias": {
+     "Recursos de outros candidatos": 805.0,
+     "Recursos de pessoas físicas": 200.0
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      805.0
+     ],
+     [
+      "Yacamara Barbosa Lemos (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4176,6 +11291,23 @@
    "anulados": false,
    "zonas": {
     "140": 37
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4197,6 +11329,35 @@
    "anulados": false,
    "zonas": {
     "140": 35
+   },
+   "receitas": {
+    "total": 710.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 300.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Raimundo Eduardo Bueno (pessoa física)",
+      300.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 300.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 300.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      300.0
+     ]
+    ]
    }
   },
   {
@@ -4218,6 +11379,23 @@
    "anulados": false,
    "zonas": {
     "140": 35
+   },
+   "receitas": {
+    "total": 822.5,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4239,6 +11417,23 @@
    "anulados": false,
    "zonas": {
     "140": 35
+   },
+   "receitas": {
+    "total": 30.0,
+    "categorias": {
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4260,6 +11455,23 @@
    "anulados": false,
    "zonas": {
     "140": 34
+   },
+   "receitas": {
+    "total": 805.0,
+    "categorias": {
+     "Recursos de outros candidatos": 805.0
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      805.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4281,6 +11493,23 @@
    "anulados": false,
    "zonas": {
     "140": 34
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes De Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4302,6 +11531,23 @@
    "anulados": false,
    "zonas": {
     "140": 33
+   },
+   "receitas": {
+    "total": 822.5,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4323,6 +11569,60 @@
    "anulados": false,
    "zonas": {
     "140": 32
+   },
+   "receitas": {
+    "total": 5880.45,
+    "categorias": {
+     "Recursos de partido político": 4528.78,
+     "Recursos de outros candidatos": 1351.67
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      4528.78
+     ],
+     [
+      "Eduardo Dade Sallum",
+      1351.67
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4528.5,
+    "categorias": {
+     "Despesas com pessoal": 4290.0,
+     "Alimentação": 238.5
+    },
+    "principais": [
+     [
+      "Gabriel Augusto Soares De Oliveira (pessoa física)",
+      1430.0
+     ],
+     [
+      "Claudinei Rodrigues De Oliveira (pessoa física)",
+      715.0
+     ],
+     [
+      "Cleide Galvão Franca Rodrigues De Oliveira (pessoa física)",
+      715.0
+     ],
+     [
+      "Namares Da Silva Batista (pessoa física)",
+      715.0
+     ],
+     [
+      "Lucas Guilherme Moura Da Silva (pessoa física)",
+      715.0
+     ],
+     [
+      "Silva E Barbosa Comercio De Alimentos Ltda",
+      155.91
+     ],
+     [
+      "Cooperativa De Consumo Rua Xi De Agosto",
+      82.59
+     ]
+    ]
    }
   },
   {
@@ -4344,6 +11644,23 @@
    "anulados": false,
    "zonas": {
     "140": 32
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4365,6 +11682,23 @@
    "anulados": false,
    "zonas": {
     "140": 31
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4386,6 +11720,23 @@
    "anulados": false,
    "zonas": {
     "140": 31
+   },
+   "receitas": {
+    "total": 822.5,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4407,6 +11758,23 @@
    "anulados": false,
    "zonas": {
     "140": 30
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4428,6 +11796,34 @@
    "anulados": false,
    "zonas": {
     "140": 28
+   },
+   "receitas": {
+    "total": 3000.0,
+    "categorias": {
+     "Recursos de partido político": 3000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      3000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3000.0,
+    "categorias": {
+     "Despesas com pessoal": 3000.0
+    },
+    "principais": [
+     [
+      "Mario Roberto Sampaio (pessoa física)",
+      1500.0
+     ],
+     [
+      "Maria Aparecida Rafael Castilho (pessoa física)",
+      1500.0
+     ]
+    ]
    }
   },
   {
@@ -4449,6 +11845,16 @@
    "anulados": false,
    "zonas": {
     "140": 27
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4470,6 +11876,35 @@
    "anulados": false,
    "zonas": {
     "140": 27
+   },
+   "receitas": {
+    "total": 609.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 199.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Adriano Aparecido Luciano (pessoa física)",
+      199.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 199.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 199.0
+    },
+    "principais": [
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      199.0
+     ]
+    ]
    }
   },
   {
@@ -4491,6 +11926,54 @@
    "anulados": false,
    "zonas": {
     "140": 27
+   },
+   "receitas": {
+    "total": 7000.0,
+    "categorias": {
+     "Recursos de partido político": 7000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      7000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 7000.0,
+    "categorias": {
+     "Despesas com pessoal": 7000.0
+    },
+    "principais": [
+     [
+      "Aline Barbosa De Oliveira (pessoa física)",
+      1900.0
+     ],
+     [
+      "Ana Aparecida Pinto Marin (pessoa física)",
+      1767.0
+     ],
+     [
+      "Valdir Pinto Santiago Junior (pessoa física)",
+      1200.0
+     ],
+     [
+      "Mauro Nogueira Da Silva (pessoa física)",
+      1000.0
+     ],
+     [
+      "Simone Juliani (pessoa física)",
+      550.0
+     ],
+     [
+      "Anderson Barbosa De Moraes (pessoa física)",
+      483.0
+     ],
+     [
+      "Robson De Moraes Carriel (pessoa física)",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -4512,6 +11995,23 @@
    "anulados": false,
    "zonas": {
     "140": 25
+   },
+   "receitas": {
+    "total": 1210.96,
+    "categorias": {
+     "Recursos de outros candidatos": 1210.96
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      1210.96
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4533,6 +12033,16 @@
    "anulados": false,
    "zonas": {
     "140": 25
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4554,6 +12064,30 @@
    "anulados": false,
    "zonas": {
     "140": 25
+   },
+   "receitas": {
+    "total": 100.0,
+    "categorias": {
+     "Recursos próprios": 100.0
+    },
+    "principais": [
+     [
+      "Jose Sergio De Campos (pessoa física)",
+      100.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 100.0,
+    "categorias": {
+     "Materiais de expediente": 100.0
+    },
+    "principais": [
+     [
+      "Maria Roseli De Oliveira Simoes",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -4575,6 +12109,16 @@
    "anulados": false,
    "zonas": {
     "140": 23
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4596,6 +12140,23 @@
    "anulados": false,
    "zonas": {
     "140": 22
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4617,6 +12178,16 @@
    "anulados": false,
    "zonas": {
     "140": 22
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4638,6 +12209,23 @@
    "anulados": false,
    "zonas": {
     "140": 22
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4659,6 +12247,23 @@
    "anulados": false,
    "zonas": {
     "140": 21
+   },
+   "receitas": {
+    "total": 30.0,
+    "categorias": {
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4680,6 +12285,40 @@
    "anulados": false,
    "zonas": {
     "140": 20
+   },
+   "receitas": {
+    "total": 550.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 300.0,
+     "Recursos de outros candidatos": 150.0,
+     "Recursos próprios": 100.0
+    },
+    "principais": [
+     [
+      "Evandro Emersom Camargo (pessoa física)",
+      300.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      150.0
+     ],
+     [
+      "Helio Marcio Oliveira Da Silva (pessoa física)",
+      100.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 100.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 100.0
+    },
+    "principais": [
+     [
+      "Marcelo Da Silva Soares Grafica Me",
+      100.0
+     ]
+    ]
    }
   },
   {
@@ -4701,6 +12340,16 @@
    "anulados": false,
    "zonas": {
     "140": 20
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4722,6 +12371,16 @@
    "anulados": false,
    "zonas": {
     "140": 20
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4743,6 +12402,16 @@
    "anulados": false,
    "zonas": {
     "140": 19
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4764,6 +12433,23 @@
    "anulados": false,
    "zonas": {
     "140": 19
+   },
+   "receitas": {
+    "total": 817.5,
+    "categorias": {
+     "Recursos de outros candidatos": 817.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      817.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4785,6 +12471,23 @@
    "anulados": false,
    "zonas": {
     "140": 18
+   },
+   "receitas": {
+    "total": 822.5,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4806,6 +12509,28 @@
    "anulados": false,
    "zonas": {
     "140": 18
+   },
+   "receitas": {
+    "total": 450.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 300.0,
+     "Recursos de outros candidatos": 150.0
+    },
+    "principais": [
+     [
+      "Evandro Emersom Camargo (pessoa física)",
+      300.0
+     ],
+     [
+      "Miguel Lopes Cardoso Junior",
+      150.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4827,6 +12552,16 @@
    "anulados": false,
    "zonas": {
     "140": 15
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4848,6 +12583,23 @@
    "anulados": false,
    "zonas": {
     "140": 13
+   },
+   "receitas": {
+    "total": 805.0,
+    "categorias": {
+     "Recursos de outros candidatos": 805.0
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      805.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4869,6 +12621,23 @@
    "anulados": false,
    "zonas": {
     "140": 12
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4890,6 +12659,23 @@
    "anulados": false,
    "zonas": {
     "140": 8
+   },
+   "receitas": {
+    "total": 30.0,
+    "categorias": {
+     "Recursos de outros candidatos": 30.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      30.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4911,6 +12697,23 @@
    "anulados": false,
    "zonas": {
     "140": 7
+   },
+   "receitas": {
+    "total": 230.0,
+    "categorias": {
+     "Recursos de outros candidatos": 230.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      230.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4932,6 +12735,23 @@
    "anulados": false,
    "zonas": {
     "140": 6
+   },
+   "receitas": {
+    "total": 822.5,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4953,6 +12773,23 @@
    "anulados": false,
    "zonas": {
     "140": 5
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4974,6 +12811,16 @@
    "anulados": false,
    "zonas": {
     "140": 5
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -4995,6 +12842,23 @@
    "anulados": false,
    "zonas": {
     "140": 5
+   },
+   "receitas": {
+    "total": 822.5,
+    "categorias": {
+     "Recursos de outros candidatos": 822.5
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      822.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5016,6 +12880,16 @@
    "anulados": false,
    "zonas": {
     "140": 4
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5037,6 +12911,23 @@
    "anulados": false,
    "zonas": {
     "140": 4
+   },
+   "receitas": {
+    "total": 1134.17,
+    "categorias": {
+     "Recursos de outros candidatos": 1134.17
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      1134.17
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5058,6 +12949,16 @@
    "anulados": false,
    "zonas": {
     "140": 2
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5079,6 +12980,23 @@
    "anulados": false,
    "zonas": {
     "140": 2
+   },
+   "receitas": {
+    "total": 805.0,
+    "categorias": {
+     "Recursos de outros candidatos": 805.0
+    },
+    "principais": [
+     [
+      "Eduardo Dade Sallum",
+      805.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5100,6 +13018,16 @@
    "anulados": false,
    "zonas": {
     "140": 1
+   },
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5121,6 +13049,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5142,6 +13087,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5161,7 +13123,24 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002351092",
@@ -5182,6 +13161,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5203,6 +13199,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5222,7 +13235,17 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002349877",
@@ -5241,7 +13264,24 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002351091",
@@ -5262,6 +13302,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5283,6 +13340,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5302,7 +13376,17 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002351088",
@@ -5323,6 +13407,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5344,6 +13445,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5365,6 +13483,35 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 506.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 96.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Ana Claudia Rocha Bertoli (pessoa física)",
+      96.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 96.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 96.0
+    },
+    "principais": [
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      96.0
+     ]
+    ]
    }
   },
   {
@@ -5386,6 +13533,35 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 650.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 240.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Wilson Keiiti Hayashida (pessoa física)",
+      240.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 240.0,
+    "categorias": {
+     "Publicidade por adesivos": 240.0
+    },
+    "principais": [
+     [
+      "Erik Anthony Do Nascimento",
+      240.0
+     ]
+    ]
    }
   },
   {
@@ -5407,6 +13583,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5428,6 +13621,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 610.0,
+    "categorias": {
+     "Recursos de outros candidatos": 610.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      610.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5449,6 +13659,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5468,7 +13695,17 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002077447",
@@ -5487,7 +13724,24 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 210.0,
+    "categorias": {
+     "Recursos de outros candidatos": 210.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      210.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002351081",
@@ -5508,6 +13762,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5529,6 +13800,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5550,6 +13838,35 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 810.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0,
+     "Recursos próprios": 400.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ],
+     [
+      "Orlando Roberto Vieira (pessoa física)",
+      400.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 398.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 398.0
+    },
+    "principais": [
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      398.0
+     ]
+    ]
    }
   },
   {
@@ -5571,6 +13888,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -5592,6 +13926,23 @@
    "anulados": true,
    "zonas": {
     "140": 0
+   },
+   "receitas": {
+    "total": 410.0,
+    "categorias": {
+     "Recursos de outros candidatos": 410.0
+    },
+    "principais": [
+     [
+      "Miguel Lopes Cardoso Junior",
+      410.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   }
  ],

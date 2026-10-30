@@ -3,7 +3,7 @@
  "turno": 1,
  "cidade": "Iperó",
  "tse_municipio": "65218",
- "gerado_em": "2026-10-30T08:49+00:00",
+ "gerado_em": "2026-10-30T09:01+00:00",
  "fonte": "TSE, Portal de Dados Abertos",
  "comparecimento": {
   "vereador": {
@@ -43,6 +43,85 @@
    "anulados": false,
    "zonas": {
     "369": 12964
+   },
+   "receitas": {
+    "total": 91475.95,
+    "categorias": {
+     "Recursos de partido político": 88475.95,
+     "Recursos de pessoas físicas": 3000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      70000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      18475.95
+     ],
+     [
+      "Lais Assunção Folim (pessoa física)",
+      1000.0
+     ],
+     [
+      "Jessica Camillo Santos (pessoa física)",
+      1000.0
+     ],
+     [
+      "Fabiana Critina Telles (pessoa física)",
+      1000.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 70000.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 17050.0,
+     "Despesas com pessoal": 10700.0,
+     "Serviços contábeis": 7500.0,
+     "Serviços advocatícios": 7500.0,
+     "Criação e inclusão de páginas na internet": 7000.0,
+     "Serviços prestados por terceiros": 6000.0,
+     "Produção de jingles, vinhetas e slogans": 5000.0,
+     "Produção de programas de rádio, televisão ou vídeo": 5000.0,
+     "Atividades de militância e mobilização de rua": 1750.0,
+     "Publicidade por jornais e revistas": 1500.0,
+     "Locação/cessão de bens móveis (exceto veículos)": 1000.0
+    },
+    "principais": [
+     [
+      "Jornal Cidade De Rio Claro Ltda",
+      12050.0
+     ],
+     [
+      "Vitor Abdala De Jesus",
+      10000.0
+     ],
+     [
+      "Claudete Aparecida Carletti (pessoa física)",
+      7500.0
+     ],
+     [
+      "Arruda E Bonito Socierdade De Advogados",
+      7500.0
+     ],
+     [
+      "Juliana C.C Dos Santos (pessoa física)",
+      6200.0
+     ],
+     [
+      "Fernando Jose Pires",
+      5000.0
+     ],
+     [
+      "L.G. Neto",
+      5000.0
+     ],
+     [
+      "Darci Antonio Carniel",
+      3000.0
+     ]
+    ]
    }
   }
  ],
@@ -64,7 +143,17 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   }
  ],
  "vereador": [
@@ -87,6 +176,92 @@
    "anulados": false,
    "zonas": {
     "369": 1160
+   },
+   "receitas": {
+    "total": 14299.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 13450.0,
+     "Recursos de partido político": 849.7
+    },
+    "principais": [
+     [
+      "Juliana Antunes Poli Simon (pessoa física)",
+      7500.0
+     ],
+     [
+      "Odair Silva De Souza (pessoa física)",
+      2000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      849.7
+     ],
+     [
+      "Angela Maria Pereira Bernadelli (pessoa física)",
+      750.0
+     ],
+     [
+      "Maria Rodrigues Dos Santos (pessoa física)",
+      750.0
+     ],
+     [
+      "Karolaine Soares De Pontes (pessoa física)",
+      750.0
+     ],
+     [
+      "Gilvania Marinho Soares (pessoa física)",
+      750.0
+     ],
+     [
+      "Miriane Oliveira Dos Santos (pessoa física)",
+      750.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 8500.0,
+    "categorias": {
+     "Publicidade por adesivos": 6450.0,
+     "Criação e inclusão de páginas na internet": 900.0,
+     "Publicidade por jornais e revistas": 500.0,
+     "Produção de jingles, vinhetas e slogans": 300.0,
+     "Publicidade por materiais impressos": 200.0,
+     "Serviços prestados por terceiros": 150.0
+    },
+    "principais": [
+     [
+      "Pp Gestão Empresarial Ltda",
+      6450.0
+     ],
+     [
+      "Paula Fabiana Silva Nery",
+      500.0
+     ],
+     [
+      "Ipero Comunicação Ltda Me",
+      500.0
+     ],
+     [
+      "Natanael Dias Boituva",
+      300.0
+     ],
+     [
+      "Rodrigo Bettin De Souza",
+      200.0
+     ],
+     [
+      "Luis Gustavo Regi",
+      200.0
+     ],
+     [
+      "Danielle Thais Camargo Da Silveira",
+      200.0
+     ],
+     [
+      "Ana Clara Macruz",
+      150.0
+     ]
+    ]
    }
   },
   {
@@ -108,6 +283,49 @@
    "anulados": false,
    "zonas": {
     "369": 901
+   },
+   "receitas": {
+    "total": 2381.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 1300.0,
+     "Recursos próprios": 1000.0,
+     "Recursos de partido político": 81.0
+    },
+    "principais": [
+     [
+      "Ayde Moreno Cunha Vieira (pessoa física)",
+      1300.0
+     ],
+     [
+      "Valter Rodrigues Vieira (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      81.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1300.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1000.0,
+     "Produção de jingles, vinhetas e slogans": 300.0
+    },
+    "principais": [
+     [
+      "L.G. Neto",
+      766.0
+     ],
+     [
+      "Valter Rodrigues Vieira",
+      300.0
+     ],
+     [
+      "Marcia Fontes Da Silva Pereira - Me",
+      234.0
+     ]
+    ]
    }
   },
   {
@@ -129,6 +347,28 @@
    "anulados": false,
    "zonas": {
     "369": 700
+   },
+   "receitas": {
+    "total": 873.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 650.0,
+     "Recursos de partido político": 223.7
+    },
+    "principais": [
+     [
+      "Jose Maria Ferreira (pessoa física)",
+      650.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      223.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -150,6 +390,61 @@
    "anulados": false,
    "zonas": {
     "369": 586
+   },
+   "receitas": {
+    "total": 4550.2,
+    "categorias": {
+     "Recursos de pessoas físicas": 2700.0,
+     "Recursos próprios": 1450.0,
+     "Recursos de partido político": 400.2
+    },
+    "principais": [
+     [
+      "Alysson Alessandro De Barros (pessoa física)",
+      1450.0
+     ],
+     [
+      "Fabiana Lourenço Ribeiro (pessoa física)",
+      1000.0
+     ],
+     [
+      "Amanda Do Carmo Neves Alves (pessoa física)",
+      1000.0
+     ],
+     [
+      "Aline Do Nascimento Santos (pessoa física)",
+      500.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      400.2
+     ],
+     [
+      "Rafael Guazzelli (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 2950.0,
+    "categorias": {
+     "Publicidade por jornais e revistas": 2000.0,
+     "Publicidade por materiais impressos": 950.0
+    },
+    "principais": [
+     [
+      "Ipero Comunicação Ltda Me",
+      2000.0
+     ],
+     [
+      "L.G. Neto",
+      500.0
+     ],
+     [
+      "Grafica Boituva Ltda Me",
+      450.0
+     ]
+    ]
    }
   },
   {
@@ -171,6 +466,28 @@
    "anulados": false,
    "zonas": {
     "369": 583
+   },
+   "receitas": {
+    "total": 1134.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 1000.0,
+     "Recursos de partido político": 134.7
+    },
+    "principais": [
+     [
+      "Silvia Regina De Almeida (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      134.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -192,6 +509,66 @@
    "anulados": false,
    "zonas": {
     "369": 568
+   },
+   "receitas": {
+    "total": 7696.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 6117.0,
+     "Recursos próprios": 1000.0,
+     "Recursos de partido político": 579.7
+    },
+    "principais": [
+     [
+      "Luis Augusto Valario (pessoa física)",
+      3745.0
+     ],
+     [
+      "Hugo Nogi Teixeira (pessoa física)",
+      1172.0
+     ],
+     [
+      "Daniel Santos Gomes (pessoa física)",
+      1000.0
+     ],
+     [
+      "Angelo Valario Sobrinho (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      579.7
+     ],
+     [
+      "Reginaldo Rogers Pedroso (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 5917.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 2917.0,
+     "Publicidade por jornais e revistas": 2000.0,
+     "Publicidade por adesivos": 1000.0
+    },
+    "principais": [
+     [
+      "Ipero Comunicação Ltda Me",
+      2000.0
+     ],
+     [
+      "William Braz Rodrigues",
+      1372.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      1345.0
+     ],
+     [
+      "Luiz Carlos Da Cruz Boituva",
+      1200.0
+     ]
+    ]
    }
   },
   {
@@ -213,6 +590,28 @@
    "anulados": false,
    "zonas": {
     "369": 548
+   },
+   "receitas": {
+    "total": 765.2,
+    "categorias": {
+     "Recursos de pessoas físicas": 650.0,
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Claudinei De Oliveira (pessoa física)",
+      650.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -234,6 +633,56 @@
    "anulados": false,
    "zonas": {
     "369": 479
+   },
+   "receitas": {
+    "total": 5388.0,
+    "categorias": {
+     "Recursos de pessoas físicas": 5388.0
+    },
+    "principais": [
+     [
+      "Luiz Gustavo Paula Leite (pessoa física)",
+      1718.0
+     ],
+     [
+      "Luis Fernando Paula Leite (pessoa física)",
+      1550.0
+     ],
+     [
+      "Nelio Ferreira Dos Santos (pessoa física)",
+      1470.0
+     ],
+     [
+      "Roberta De Cassia Sartorelli (pessoa física)",
+      650.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 4738.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 3900.0,
+     "Publicidade por adesivos": 588.0,
+     "Produção de jingles, vinhetas e slogans": 250.0
+    },
+    "principais": [
+     [
+      "Trema Brasil Trading Ltda Epp",
+      2568.0
+     ],
+     [
+      "M Designer City Ltda",
+      1020.0
+     ],
+     [
+      "Luiz Carlos Da Cruz Boituva",
+      900.0
+     ],
+     [
+      "Yellowmoon Produções Artisticas Ltda",
+      250.0
+     ]
+    ]
    }
   },
   {
@@ -255,6 +704,43 @@
    "anulados": false,
    "zonas": {
     "369": 447
+   },
+   "receitas": {
+    "total": 3879.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 3764.5,
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Alessandra Mouro (pessoa física)",
+      3764.5
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3764.5,
+    "categorias": {
+     "Publicidade por materiais impressos": 3764.5
+    },
+    "principais": [
+     [
+      "L.G. Neto",
+      1590.0
+     ],
+     [
+      "Gigante Comunicação Visdual Ltda",
+      1174.5
+     ],
+     [
+      "Grafica Boituva Ltda Me",
+      1000.0
+     ]
+    ]
    }
   },
   {
@@ -276,6 +762,35 @@
    "anulados": false,
    "zonas": {
     "369": 444
+   },
+   "receitas": {
+    "total": 459.7,
+    "categorias": {
+     "Recursos próprios": 325.0,
+     "Recursos de partido político": 134.7
+    },
+    "principais": [
+     [
+      "Valeria Regina Matheus De Souza (pessoa física)",
+      325.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      134.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 325.0,
+    "categorias": {
+     "Publicidade por adesivos": 325.0
+    },
+    "principais": [
+     [
+      "Grafica Boituva Ltda- Me",
+      325.0
+     ]
+    ]
    }
   },
   {
@@ -297,6 +812,55 @@
    "anulados": false,
    "zonas": {
     "369": 420
+   },
+   "receitas": {
+    "total": 1489.2,
+    "categorias": {
+     "Recursos de pessoas físicas": 1374.0,
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Jose Geraldo Pinheiro (pessoa física)",
+      650.0
+     ],
+     [
+      "Kelvin Jonathan Da Silva Santos (pessoa física)",
+      240.0
+     ],
+     [
+      "Caroline Cristine Da Silva Santos (pessoa física)",
+      220.0
+     ],
+     [
+      "Fabiano Aparecido Cipolo Gonçalves (pessoa física)",
+      200.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ],
+     [
+      "Wellington Dos Santos Batista De Jesus (pessoa física)",
+      64.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 524.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 524.0
+    },
+    "principais": [
+     [
+      "Belmira Aparecida Cruz Pereira",
+      460.0
+     ],
+     [
+      "Grafica Almeida Impressos Ltda",
+      64.0
+     ]
+    ]
    }
   },
   {
@@ -318,6 +882,39 @@
    "anulados": false,
    "zonas": {
     "369": 324
+   },
+   "receitas": {
+    "total": 1523.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 1350.0,
+     "Recursos de partido político": 173.7
+    },
+    "principais": [
+     [
+      "Mary Perez (pessoa física)",
+      1000.0
+     ],
+     [
+      "Camila Perez Fagundes (pessoa física)",
+      350.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      173.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 350.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 350.0
+    },
+    "principais": [
+     [
+      "Studio Ab Grafica E Editora Ltda",
+      350.0
+     ]
+    ]
    }
   },
   {
@@ -339,6 +936,48 @@
    "anulados": false,
    "zonas": {
     "369": 311
+   },
+   "receitas": {
+    "total": 1554.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 1170.0,
+     "Recursos próprios": 250.0,
+     "Recursos de partido político": 134.7
+    },
+    "principais": [
+     [
+      "Tainara Albuquerque Bonfim (pessoa física)",
+      650.0
+     ],
+     [
+      "Claudemir Marque Bonfim (pessoa física)",
+      260.0
+     ],
+     [
+      "Roberto Marques Bonfim (pessoa física)",
+      260.0
+     ],
+     [
+      "Divaldo Marques Bonfim (pessoa física)",
+      250.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      134.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 410.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 410.0
+    },
+    "principais": [
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      410.0
+     ]
+    ]
    }
   },
   {
@@ -360,6 +999,23 @@
    "anulados": false,
    "zonas": {
     "369": 289
+   },
+   "receitas": {
+    "total": 134.7,
+    "categorias": {
+     "Recursos de partido político": 134.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      134.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -381,6 +1037,23 @@
    "anulados": false,
    "zonas": {
     "369": 275
+   },
+   "receitas": {
+    "total": 115.2,
+    "categorias": {
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -402,6 +1075,28 @@
    "anulados": false,
    "zonas": {
     "369": 274
+   },
+   "receitas": {
+    "total": 334.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 200.0,
+     "Recursos de partido político": 134.7
+    },
+    "principais": [
+     [
+      "Alyson Nogueira Soares (pessoa física)",
+      200.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      134.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -423,6 +1118,23 @@
    "anulados": false,
    "zonas": {
     "369": 253
+   },
+   "receitas": {
+    "total": 115.2,
+    "categorias": {
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -444,6 +1156,23 @@
    "anulados": false,
    "zonas": {
     "369": 250
+   },
+   "receitas": {
+    "total": 115.2,
+    "categorias": {
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -465,6 +1194,32 @@
    "anulados": false,
    "zonas": {
     "369": 232
+   },
+   "receitas": {
+    "total": 1315.2,
+    "categorias": {
+     "Recursos de pessoas físicas": 1200.0,
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Simone Pedroso Ramos (pessoa física)",
+      1000.0
+     ],
+     [
+      "Jose Gilberto Pedroso Ramos (pessoa física)",
+      200.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -486,6 +1241,23 @@
    "anulados": false,
    "zonas": {
     "369": 230
+   },
+   "receitas": {
+    "total": 293.2,
+    "categorias": {
+     "Recursos de partido político": 293.2
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      293.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -507,6 +1279,28 @@
    "anulados": false,
    "zonas": {
     "369": 229
+   },
+   "receitas": {
+    "total": 315.2,
+    "categorias": {
+     "Recursos de pessoas físicas": 200.0,
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Damaris Viana Alexandre (pessoa física)",
+      200.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -528,6 +1322,23 @@
    "anulados": false,
    "zonas": {
     "369": 219
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -549,6 +1360,28 @@
    "anulados": false,
    "zonas": {
     "369": 207
+   },
+   "receitas": {
+    "total": 534.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 400.0,
+     "Recursos de partido político": 134.7
+    },
+    "principais": [
+     [
+      "Damaris Sandra Viana Alexandre (pessoa física)",
+      400.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      134.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -570,6 +1403,23 @@
    "anulados": false,
    "zonas": {
     "369": 201
+   },
+   "receitas": {
+    "total": 115.2,
+    "categorias": {
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -591,6 +1441,28 @@
    "anulados": false,
    "zonas": {
     "369": 197
+   },
+   "receitas": {
+    "total": 515.2,
+    "categorias": {
+     "Recursos de pessoas físicas": 400.0,
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Jeison De Jesus Modesto (pessoa física)",
+      400.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -612,6 +1484,50 @@
    "anulados": false,
    "zonas": {
     "369": 153
+   },
+   "receitas": {
+    "total": 1462.75,
+    "categorias": {
+     "Recursos de pessoas físicas": 1000.0,
+     "Recursos próprios": 406.05,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Henrique Lopes De Almeida (pessoa física)",
+      1000.0
+     ],
+     [
+      "Jeniffer Aparecida Dos Santos Lopes (pessoa física)",
+      406.05
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 406.05,
+    "categorias": {
+     "Produção de jingles, vinhetas e slogans": 220.0,
+     "Publicidade por materiais impressos": 174.0,
+     "Despesa com Impulsionamento de Conteúdos": 12.05
+    },
+    "principais": [
+     [
+      "Vinicius Amado Costa",
+      220.0
+     ],
+     [
+      "Rodrigo Estevão Petruccelli",
+      174.0
+     ],
+     [
+      "Ebanx",
+      12.05
+     ]
+    ]
    }
   },
   {
@@ -633,6 +1549,45 @@
    "anulados": false,
    "zonas": {
     "369": 145
+   },
+   "receitas": {
+    "total": 1171.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 900.0,
+     "Recursos próprios": 215.0,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Maria Donisete Madeira (pessoa física)",
+      900.0
+     ],
+     [
+      "Daniel Marçal (pessoa física)",
+      215.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1115.0,
+    "categorias": {
+     "Atividades de militância e mobilização de rua": 900.0,
+     "Publicidade por adesivos": 215.0
+    },
+    "principais": [
+     [
+      "Cristian Fernando Pereira Rodrigues (pessoa física)",
+      900.0
+     ],
+     [
+      "Qi Comunicação E Tecnologia Ltda",
+      215.0
+     ]
+    ]
    }
   },
   {
@@ -654,6 +1609,48 @@
    "anulados": false,
    "zonas": {
     "369": 145
+   },
+   "receitas": {
+    "total": 3465.2,
+    "categorias": {
+     "Recursos de pessoas físicas": 1850.0,
+     "Recursos próprios": 1500.0,
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Vera Lucia C Leite (pessoa física)",
+      1850.0
+     ],
+     [
+      "Marcio Antonio Correia Ceciliato (pessoa física)",
+      1500.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 3350.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 2200.0,
+     "Criação e inclusão de páginas na internet": 650.0,
+     "Despesa com Impulsionamento de Conteúdos": 200.0,
+     "Serviços prestados por terceiros": 150.0,
+     "Publicidade por adesivos": 150.0
+    },
+    "principais": [
+     [
+      "Bruno Dos Santos",
+      3150.0
+     ],
+     [
+      "Facebook",
+      200.0
+     ]
+    ]
    }
   },
   {
@@ -675,6 +1672,40 @@
    "anulados": false,
    "zonas": {
     "369": 143
+   },
+   "receitas": {
+    "total": 1295.2,
+    "categorias": {
+     "Recursos próprios": 980.0,
+     "Recursos de pessoas físicas": 200.0,
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Elisangela Ferreira Lima (pessoa física)",
+      980.0
+     ],
+     [
+      "Rodrigo Pereira Da Silva (pessoa física)",
+      200.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 980.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 980.0
+    },
+    "principais": [
+     [
+      "Pp Gestão Empresarial Ltda",
+      980.0
+     ]
+    ]
    }
   },
   {
@@ -696,6 +1727,28 @@
    "anulados": false,
    "zonas": {
     "369": 126
+   },
+   "receitas": {
+    "total": 1056.7,
+    "categorias": {
+     "Recursos próprios": 1000.0,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Ariane Da Silva Pontojo (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -717,6 +1770,28 @@
    "anulados": false,
    "zonas": {
     "369": 119
+   },
+   "receitas": {
+    "total": 1076.2,
+    "categorias": {
+     "Recursos de pessoas físicas": 1000.0,
+     "Recursos de partido político": 76.2
+    },
+    "principais": [
+     [
+      "Maria Das Dores Da Silva Santos (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      76.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -738,6 +1813,28 @@
    "anulados": false,
    "zonas": {
     "369": 116
+   },
+   "receitas": {
+    "total": 1056.7,
+    "categorias": {
+     "Recursos próprios": 1000.0,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Orlando Clei De Abreu (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -759,6 +1856,35 @@
    "anulados": false,
    "zonas": {
     "369": 110
+   },
+   "receitas": {
+    "total": 645.7,
+    "categorias": {
+     "Recursos próprios": 500.0,
+     "Recursos de partido político": 145.7
+    },
+    "principais": [
+     [
+      "Erivan Barreto Dos Santos (pessoa física)",
+      500.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      145.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 500.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 500.0
+    },
+    "principais": [
+     [
+      "L.G. Neto",
+      500.0
+     ]
+    ]
    }
   },
   {
@@ -780,6 +1906,44 @@
    "anulados": false,
    "zonas": {
     "369": 100
+   },
+   "receitas": {
+    "total": 2015.2,
+    "categorias": {
+     "Recursos de pessoas físicas": 1200.0,
+     "Recursos próprios": 700.0,
+     "Recursos de partido político": 115.2
+    },
+    "principais": [
+     [
+      "Maria Aparecida Marques De Almeida Redine (pessoa física)",
+      1000.0
+     ],
+     [
+      "Valdeci Ribeiro Lima (pessoa física)",
+      700.0
+     ],
+     [
+      "Eduardo Marinho Trindade (pessoa física)",
+      200.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      115.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 700.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 700.0
+    },
+    "principais": [
+     [
+      "Pp Gestão Empresarial Ltda",
+      700.0
+     ]
+    ]
    }
   },
   {
@@ -801,6 +1965,23 @@
    "anulados": false,
    "zonas": {
     "369": 96
+   },
+   "receitas": {
+    "total": 134.7,
+    "categorias": {
+     "Recursos de partido político": 134.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      134.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -822,6 +2003,32 @@
    "anulados": false,
    "zonas": {
     "369": 93
+   },
+   "receitas": {
+    "total": 1256.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 1200.0,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Luciana Bagatim (pessoa física)",
+      1000.0
+     ],
+     [
+      "Rodrigo Pereira Da Silva (pessoa física)",
+      200.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -843,6 +2050,23 @@
    "anulados": false,
    "zonas": {
     "369": 91
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -864,6 +2088,35 @@
    "anulados": false,
    "zonas": {
     "369": 88
+   },
+   "receitas": {
+    "total": 1671.75,
+    "categorias": {
+     "Recursos próprios": 1500.0,
+     "Recursos de partido político": 171.75
+    },
+    "principais": [
+     [
+      "Izildinha Domingues Dos Santos Folim (pessoa física)",
+      1500.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      171.75
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 500.0,
+    "categorias": {
+     "Publicidade por jornais e revistas": 500.0
+    },
+    "principais": [
+     [
+      "Ipero Comunicação Ltda Me",
+      500.0
+     ]
+    ]
    }
   },
   {
@@ -885,6 +2138,23 @@
    "anulados": false,
    "zonas": {
     "369": 85
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -906,6 +2176,23 @@
    "anulados": false,
    "zonas": {
     "369": 80
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -927,6 +2214,28 @@
    "anulados": false,
    "zonas": {
     "369": 77
+   },
+   "receitas": {
+    "total": 1152.25,
+    "categorias": {
+     "Recursos próprios": 1000.0,
+     "Recursos de partido político": 152.25
+    },
+    "principais": [
+     [
+      "Carlos Rodrigues De Campos Filho (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      152.25
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -948,6 +2257,40 @@
    "anulados": false,
    "zonas": {
     "369": 71
+   },
+   "receitas": {
+    "total": 656.7,
+    "categorias": {
+     "Recursos próprios": 600.0,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Thais Evelyn Gutierres Pereira (pessoa física)",
+      600.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 600.0,
+    "categorias": {
+     "Publicidade por adesivos": 350.0,
+     "Publicidade por materiais impressos": 250.0
+    },
+    "principais": [
+     [
+      "Pp Gestão Empresaria Ltda",
+      350.0
+     ],
+     [
+      "Grafica Boituva Ltda Me",
+      250.0
+     ]
+    ]
    }
   },
   {
@@ -969,6 +2312,23 @@
    "anulados": false,
    "zonas": {
     "369": 64
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -990,6 +2350,23 @@
    "anulados": false,
    "zonas": {
     "369": 64
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1011,6 +2388,23 @@
    "anulados": false,
    "zonas": {
     "369": 64
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1032,6 +2426,23 @@
    "anulados": false,
    "zonas": {
     "369": 63
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1053,6 +2464,28 @@
    "anulados": false,
    "zonas": {
     "369": 57
+   },
+   "receitas": {
+    "total": 1145.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 1000.0,
+     "Recursos de partido político": 145.7
+    },
+    "principais": [
+     [
+      "Mauro Bertolino (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      145.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1074,6 +2507,23 @@
    "anulados": false,
    "zonas": {
     "369": 52
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1095,6 +2545,23 @@
    "anulados": false,
    "zonas": {
     "369": 40
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1116,6 +2583,23 @@
    "anulados": false,
    "zonas": {
     "369": 38
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1137,6 +2621,23 @@
    "anulados": false,
    "zonas": {
     "369": 35
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1158,6 +2659,33 @@
    "anulados": false,
    "zonas": {
     "369": 34
+   },
+   "receitas": {
+    "total": 1256.7,
+    "categorias": {
+     "Recursos próprios": 1000.0,
+     "Recursos de pessoas físicas": 200.0,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Antonio Alexandre Pereira (pessoa física)",
+      1000.0
+     ],
+     [
+      "Rodrigo Pereira Da Silva (pessoa física)",
+      200.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1179,6 +2707,23 @@
    "anulados": false,
    "zonas": {
     "369": 34
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1200,6 +2745,23 @@
    "anulados": false,
    "zonas": {
     "369": 29
+   },
+   "receitas": {
+    "total": 101.2,
+    "categorias": {
+     "Recursos de partido político": 101.2
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      101.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1221,6 +2783,28 @@
    "anulados": false,
    "zonas": {
     "369": 26
+   },
+   "receitas": {
+    "total": 1056.7,
+    "categorias": {
+     "Recursos próprios": 1000.0,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Neirdo Da Silva Mendes (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1242,6 +2826,23 @@
    "anulados": false,
    "zonas": {
     "369": 24
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1263,6 +2864,23 @@
    "anulados": false,
    "zonas": {
     "369": 21
+   },
+   "receitas": {
+    "total": 102.0,
+    "categorias": {
+     "Recursos de partido político": 102.0
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      102.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1284,6 +2902,23 @@
    "anulados": false,
    "zonas": {
     "369": 19
+   },
+   "receitas": {
+    "total": 101.2,
+    "categorias": {
+     "Recursos de partido político": 101.2
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      101.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1305,6 +2940,23 @@
    "anulados": false,
    "zonas": {
     "369": 18
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1326,6 +2978,23 @@
    "anulados": false,
    "zonas": {
     "369": 17
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1347,6 +3016,28 @@
    "anulados": false,
    "zonas": {
     "369": 16
+   },
+   "receitas": {
+    "total": 256.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 200.0,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Diogo Rafael Mariano (pessoa física)",
+      200.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1368,6 +3059,23 @@
    "anulados": false,
    "zonas": {
     "369": 15
+   },
+   "receitas": {
+    "total": 101.2,
+    "categorias": {
+     "Recursos de partido político": 101.2
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      101.2
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1389,6 +3097,28 @@
    "anulados": false,
    "zonas": {
     "369": 15
+   },
+   "receitas": {
+    "total": 1056.7,
+    "categorias": {
+     "Recursos próprios": 1000.0,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Eli Eric Da Silva Oliveira (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1410,6 +3140,49 @@
    "anulados": false,
    "zonas": {
     "369": 12
+   },
+   "receitas": {
+    "total": 2229.5,
+    "categorias": {
+     "Recursos próprios": 1000.0,
+     "Recursos de pessoas físicas": 1000.0,
+     "Recursos de partido político": 229.5
+    },
+    "principais": [
+     [
+      "Luis Fernando Paula Leite (pessoa física)",
+      1000.0
+     ],
+     [
+      "Luis Gustavo Paula Leite (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      229.5
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1850.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1600.0,
+     "Produção de jingles, vinhetas e slogans": 250.0
+    },
+    "principais": [
+     [
+      "Interfill Industria Grafica Ltda",
+      900.0
+     ],
+     [
+      "Leo Etiquetas E Rotulos Adesivos Ltda",
+      700.0
+     ],
+     [
+      "Yellowmoon Produções Artistica Ltda",
+      250.0
+     ]
+    ]
    }
   },
   {
@@ -1431,6 +3204,28 @@
    "anulados": false,
    "zonas": {
     "369": 11
+   },
+   "receitas": {
+    "total": 1056.7,
+    "categorias": {
+     "Recursos de pessoas físicas": 1000.0,
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Elza Bertelini Medicci (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1452,6 +3247,23 @@
    "anulados": false,
    "zonas": {
     "369": 9
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1473,6 +3285,23 @@
    "anulados": false,
    "zonas": {
     "369": 8
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1494,6 +3323,23 @@
    "anulados": false,
    "zonas": {
     "369": 8
+   },
+   "receitas": {
+    "total": 48.9,
+    "categorias": {
+     "Recursos de partido político": 48.9
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      48.9
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1515,6 +3361,56 @@
    "anulados": true,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 3414.07,
+    "categorias": {
+     "Recursos de pessoas físicas": 2749.95,
+     "Recursos de partido político": 664.12
+    },
+    "principais": [
+     [
+      "Fabiano De Queiroz Rodrigues (pessoa física)",
+      750.0
+     ],
+     [
+      "Vanessa Barros Costa (pessoa física)",
+      750.0
+     ],
+     [
+      "Patricia De Oliveira Costa (pessoa física)",
+      750.0
+     ],
+     [
+      "Direção Nacional",
+      550.72
+     ],
+     [
+      "Simone Santos Porto Boaventura (pessoa física)",
+      499.95
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      113.4
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 534.0,
+    "categorias": {
+     "Publicidade por adesivos": 364.0,
+     "Publicidade por materiais impressos": 170.0
+    },
+    "principais": [
+     [
+      "D Print Comunicação Visual E Sinalização Ltda Epp",
+      364.0
+     ],
+     [
+      "Aba Print Grafica Ltda",
+      170.0
+     ]
+    ]
    }
   },
   {
@@ -1536,6 +3432,80 @@
    "anulados": true,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 13894.12,
+    "categorias": {
+     "Recursos de partido político": 13194.12,
+     "Recursos de pessoas físicas": 400.0,
+     "Recursos próprios": 300.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      12963.72
+     ],
+     [
+      "Sergio Antonio Nery (pessoa física)",
+      300.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      230.4
+     ],
+     [
+      "Juarez Pedreira De Jesus (pessoa física)",
+      200.0
+     ],
+     [
+      "Marcos Jumber Prestes (pessoa física)",
+      200.0
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 13245.06,
+    "categorias": {
+     "Atividades de militância e mobilização de rua": 10500.0,
+     "Produção de programas de rádio, televisão ou vídeo": 1263.72,
+     "Publicidade por materiais impressos": 1200.0,
+     "Produção de jingles, vinhetas e slogans": 200.0,
+     "Combustíveis e lubrificantes": 81.34
+    },
+    "principais": [
+     [
+      "Elisabeth Jacques Eid (pessoa física)",
+      1500.0
+     ],
+     [
+      "William Silva De Almeida (pessoa física)",
+      1500.0
+     ],
+     [
+      "Luis Felipe Santos Dos Passos (pessoa física)",
+      1500.0
+     ],
+     [
+      "Vitor Moraes De Oliveira Pereira (pessoa física)",
+      1500.0
+     ],
+     [
+      "Jose Pereira De Oliveira (pessoa física)",
+      1500.0
+     ],
+     [
+      "Adão Alves Da Silva (pessoa física)",
+      1500.0
+     ],
+     [
+      "Gerolino Nunes De Brito (pessoa física)",
+      1500.0
+     ],
+     [
+      "Marcos Jomberr Prestes",
+      1463.72
+     ]
+    ]
    }
   },
   {
@@ -1555,7 +3525,28 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 664.12,
+    "categorias": {
+     "Recursos de partido político": 664.12
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      550.72
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      113.4
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002133970",
@@ -1576,6 +3567,70 @@
    "anulados": true,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 14240.02,
+    "categorias": {
+     "Recursos de partido político": 13668.02,
+     "Recursos de pessoas físicas": 572.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      13437.62
+     ],
+     [
+      "Lucia Salles F (pessoa física)",
+      572.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      230.4
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 14008.99,
+    "categorias": {
+     "Atividades de militância e mobilização de rua": 8520.0,
+     "Publicidade por materiais impressos": 4369.0,
+     "Despesa com Impulsionamento de Conteúdos": 1079.99,
+     "Criação e inclusão de páginas na internet": 40.0
+    },
+    "principais": [
+     [
+      "Ediberto De Camargo Ipanema",
+      3797.0
+     ],
+     [
+      "Marcelo Martins Ribeiro (pessoa física)",
+      3000.0
+     ],
+     [
+      "Lucia Marinho (pessoa física)",
+      1620.0
+     ],
+     [
+      "Vinicius Rogerio L Da Silva (pessoa física)",
+      1300.0
+     ],
+     [
+      "Rita De Cassia Da Silva (pessoa física)",
+      1300.0
+     ],
+     [
+      "Ruan Matheus Lima Da Silva (pessoa física)",
+      1300.0
+     ],
+     [
+      "Facebook",
+      1079.99
+     ],
+     [
+      "Rav Serviços Graficos Ltda",
+      572.0
+     ]
+    ]
    }
   },
   {
@@ -1595,7 +3650,24 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 48.9,
+    "categorias": {
+     "Recursos de partido político": 48.9
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      48.9
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002133977",
@@ -1616,6 +3688,44 @@
    "anulados": true,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 1114.3,
+    "categorias": {
+     "Recursos de partido político": 664.12,
+     "Recursos próprios": 450.18
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      550.72
+     ],
+     [
+      "Luciana De Carvalho (pessoa física)",
+      450.18
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      113.4
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1000.9,
+    "categorias": {
+     "Atividades de militância e mobilização de rua": 550.72,
+     "Publicidade por materiais impressos": 450.18
+    },
+    "principais": [
+     [
+      "Liandra Barbosa Dos Santos (pessoa física)",
+      550.72
+     ],
+     [
+      "Duartes Grafica Ltda Me",
+      450.18
+     ]
+    ]
    }
   },
   {
@@ -1637,6 +3747,47 @@
    "anulados": true,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 2214.84,
+    "categorias": {
+     "Recursos de partido político": 1214.84,
+     "Recursos de pessoas físicas": 1000.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      1101.44
+     ],
+     [
+      "Aparecido Nonato Nunes (pessoa física)",
+      1000.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      113.4
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1100.0,
+    "categorias": {
+     "Atividades de militância e mobilização de rua": 1100.0
+    },
+    "principais": [
+     [
+      "Maria Rodrigues Dos Santos (pessoa física)",
+      600.0
+     ],
+     [
+      "Erik Alves Carriel (pessoa física)",
+      300.0
+     ],
+     [
+      "Taina Ap Alves Da Silva (pessoa física)",
+      200.0
+     ]
+    ]
    }
   },
   {
@@ -1658,6 +3809,48 @@
    "anulados": true,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 2119.4,
+    "categorias": {
+     "Recursos próprios": 1500.0,
+     "Recursos de pessoas físicas": 350.0,
+     "Recursos de partido político": 269.4
+    },
+    "principais": [
+     [
+      "Francisco Antonio Coutinho (pessoa física)",
+      1500.0
+     ],
+     [
+      "Claudio Henrique Vieira De Oliveira (pessoa física)",
+      350.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      269.4
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1850.0,
+    "categorias": {
+     "Publicidade por materiais impressos": 1850.0
+    },
+    "principais": [
+     [
+      "Pp Gestão Empresarial Ltda",
+      700.0
+     ],
+     [
+      "Grafica Boituva Ltda Me",
+      650.0
+     ],
+     [
+      "L.G. Neto",
+      500.0
+     ]
+    ]
    }
   },
   {
@@ -1677,7 +3870,24 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   },
   {
    "sq": "250002133976",
@@ -1698,6 +3908,53 @@
    "anulados": true,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 1231.12,
+    "categorias": {
+     "Recursos de partido político": 781.12,
+     "Recursos próprios": 450.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      550.72
+     ],
+     [
+      "Lino Leandro De Barros (pessoa física)",
+      450.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      230.4
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 919.99,
+    "categorias": {
+     "Publicidade por materiais impressos": 450.0,
+     "Despesa com Impulsionamento de Conteúdos": 400.0,
+     "Criação e inclusão de páginas na internet": 69.99
+    },
+    "principais": [
+     [
+      "Duartes Grafica Ltda Me",
+      450.0
+     ],
+     [
+      "Facebook Serviços Ltda",
+      400.0
+     ],
+     [
+      "Nic Br",
+      40.0
+     ],
+     [
+      "Hostinger Internacional Ltda",
+      29.99
+     ]
+    ]
    }
   },
   {
@@ -1719,6 +3976,23 @@
    "anulados": true,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 113.4,
+    "categorias": {
+     "Recursos de partido político": 113.4
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      113.4
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1740,6 +4014,44 @@
    "anulados": true,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 1114.12,
+    "categorias": {
+     "Recursos de partido político": 664.12,
+     "Recursos próprios": 450.0
+    },
+    "principais": [
+     [
+      "Direção Nacional",
+      550.72
+     ],
+     [
+      "Carlos Vanderlei De Mello (pessoa física)",
+      450.0
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      113.4
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 504.99,
+    "categorias": {
+     "Publicidade por materiais impressos": 450.0,
+     "Criação e inclusão de páginas na internet": 54.99
+    },
+    "principais": [
+     [
+      "Duarte Grafica Ltda Me",
+      450.0
+     ],
+     [
+      "Nic.Br",
+      54.99
+     ]
+    ]
    }
   },
   {
@@ -1761,6 +4073,53 @@
    "anulados": true,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 1764.12,
+    "categorias": {
+     "Recursos próprios": 1100.0,
+     "Recursos de partido político": 664.12
+    },
+    "principais": [
+     [
+      "Claudinei Norberto Batista (pessoa física)",
+      1100.0
+     ],
+     [
+      "Direção Nacional",
+      550.72
+     ],
+     [
+      "Direção Municipal/Comissão Provisória",
+      113.4
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 1000.72,
+    "categorias": {
+     "Publicidade por materiais impressos": 450.0,
+     "Atividades de militância e mobilização de rua": 400.72,
+     "Serviços prestados por terceiros": 150.0
+    },
+    "principais": [
+     [
+      "Duartes Graficas Ltda Me",
+      450.0
+     ],
+     [
+      "Marcia Aparecida Correa (pessoa física)",
+      250.0
+     ],
+     [
+      "Daniel De Amorim Fortunato (pessoa física)",
+      150.72
+     ],
+     [
+      "Alexandre Ferreira Camandona",
+      150.0
+     ]
+    ]
    }
   },
   {
@@ -1782,6 +4141,23 @@
    "anulados": false,
    "zonas": {
     "369": 0
+   },
+   "receitas": {
+    "total": 56.7,
+    "categorias": {
+     "Recursos de partido político": 56.7
+    },
+    "principais": [
+     [
+      "Direção Municipal/Comissão Provisória",
+      56.7
+     ]
+    ]
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
    }
   },
   {
@@ -1801,7 +4177,17 @@
    "votos": 0,
    "votos_urna": 0,
    "anulados": false,
-   "zonas": {}
+   "zonas": {},
+   "receitas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   },
+   "despesas": {
+    "total": 0.0,
+    "categorias": {},
+    "principais": []
+   }
   }
  ],
  "quociente": {

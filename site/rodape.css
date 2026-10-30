@@ -115,3 +115,14 @@ html[data-tema="escuro"] .rodape.ft2 { background: #0f0e0d; }
 /* o reset de parágrafo acima é mais específico: reaplica os espaçamentos dos títulos das colunas */
 .rodape.ft2 .ft-t { margin: 6px 0 12px; }
 .rodape.ft2 .ft-t2 { margin-top: 22px; }
+
+/* Botão "voltar ao topo" (site/topo.js) */
+.volta-topo { position: fixed; right: 16px; bottom: 16px; z-index: 50; width: 48px; height: 48px; border-radius: 50%;
+  border: 1px solid var(--linha); background: var(--texto); color: var(--fundo); font-size: 1.3rem; font-weight: 700;
+  box-shadow: var(--sombra, 0 4px 14px rgba(0,0,0,.18)); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.volta-topo:hover { transform: translateY(-2px); }
+.volta-topo[hidden] { display: none; }
+@media print { .volta-topo { display: none; } }
+
+/* Celular estreito: o nome ao lado do logo (cidade, seção) some; a página já diz onde se está. */
+@media (max-width: 420px) { .topo .marca small { display: none; } }

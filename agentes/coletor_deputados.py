@@ -13,13 +13,14 @@ Saídas:
 - site/deputados.js                              perfis e gastos para site/deputados.html
 - dados/_federal/brutos/                          cache dos arquivos da cota (fora do git)
 
-A cota tem CPF do deputado e de fornecedores pessoa física: nenhum dos dois vai para o site.
-Fornecedores só aparecem quando são empresas (CNPJ).
+A cota tem CPF do deputado e de fornecedores pessoa física: nenhum número de CPF vai para o site.
+Fornecedores pessoa física aparecem pelo nome (dado público), sem o CPF.
 """
 import csv
 import io
 import json
 import os
+import re
 import sys
 import time
 import urllib.request
@@ -91,16 +92,18 @@ def cota(ano, ids):
             g["categorias"][linha["txtDescricao"].strip().capitalize()] += valor
             g["meses"][int(linha["numMes"] or 0)] += valor
             doc = "".join(c for c in linha["txtCNPJCPF"] if c.isdigit())
-            if len(doc) == 14:  # só empresas; CPF de pessoa física fica de fora
-                g["fornecedores"][doc] += valor
-                g["nomes"].setdefault(doc, linha["txtFornecedor"].strip())
+            # Nome de MEI costuma levar o CPF do dono: tira qualquer sequência de 11 dígitos.
+            nome = re.sub(r"\s*\b\d{3}\.?\d{3}\.?\d{3}-?\d{2}\b", "", linha["txtFornecedor"]).strip()
+            chave = doc if len(doc) == 14 else "pf:" + nome  # pessoa física: pelo nome, sem o CPF
+            g["fornecedores"][chave] += valor
+            g["nomes"].setdefault(chave, nome)
     saida = {}
     for dep, g in gastos.items():
         saida[dep] = {
             "total": round(g["total"], 2), "notas": g["n"],
             "categorias": {k: round(v, 2) for k, v in g["categorias"].most_common()},
             "meses": {str(m): round(v, 2) for m, v in sorted(g["meses"].items()) if m},
-            "fornecedores": [{"nome": g["nomes"][d], "cnpj": d, "valor": round(v, 2)}
+            "fornecedores": [{"nome": g["nomes"][d], "cnpj": "" if d.startswith("pf:") else d, "valor": round(v, 2)}
                              for d, v in g["fornecedores"].most_common(8)],
         }
     return saida
