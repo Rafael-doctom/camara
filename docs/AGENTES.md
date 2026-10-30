@@ -101,3 +101,22 @@ schtasks /Create /TN "OlhoNaCamaraTatui" /SC DAILY /ST 07:00 /TR "\"E:\DOCUMENTO
 - User-Agent identifica o projeto como pesquisa cívica.
 - Cache local evita baixar de novo o que não muda.
 - Para incluir um apelido em `casos/apelidos.json`, confira no SisCam e registre a evidência no próprio arquivo.
+
+## Adicionar uma cidade
+
+Qualquer Câmara que publique no SisCam entra no site sem mudar código. Itapetininga, Cerquilho e Iperó já estão em `cidades/_site.json` (campo `ordem`) e entram assim que tiverem o arquivo de configuração.
+
+1. Crie `cidades/<slug>.json` copiando `cidades/tatui.json`. O slug usa só letras minúsculas, números e hífen (ex.: `itapetininga`).
+2. Preencha os campos conferindo no SisCam da cidade (`https://<cidade>.siscam.com.br`):
+   - `nome`, `camara`, `site_camara`, `siscam` (endereço do SisCam, sem barra no fim) e `cadeiras` (vereadores em exercício).
+   - `modulo_documentos` e `modulo`: abra Documentos > Pesquisa avançada e copie os parâmetros `id=` e `Modulo=` da URL.
+   - `tipos_documento`: o valor de cada opção do campo "Documento" do mesmo formulário (nome igual ao do CSV exportado -> ID).
+   - `legislatura_atual` e `legislaturas_anteriores`: o `{id}` de cada uma em `/Legislaturas`, com início e fim. Sem a página de legislaturas, use `"id": null`.
+   - `coletar_anteriores`: `true` para coletar também as legislaturas encerradas (demora mais na primeira vez).
+   - `folga_lista_exercicio`: quantos nomes a mais a lista `/Vereadores` costuma ter (titulares afastados). Normalmente 0.
+   - `links` (opcional): `[título, URL, descrição]` de portais de transparência e vídeos da Câmara.
+3. Crie `casos/<slug>/` com `casos.json` e `apelidos.json` (podem começar como `[]` e `{"apelidos": {}}`).
+4. Rode só a nova cidade: `python agentes/orquestrador.py --cidade <slug>`.
+5. Confira no log o número de vereadores em exercício e os avisos de "nomes sem perfil" (resolva com apelidos). A página da cidade fica em `site/<slug>/index.html`, e a entrada `site/index.html` ganha o cartão dela.
+
+Sem `--cidade`, o orquestrador roda todas as cidades com configuração, na ordem de `_site.json`. A entrada só lista cidades que já têm dados processados.

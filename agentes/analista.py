@@ -16,12 +16,13 @@ import html
 import json
 import os
 import re
+import urllib.parse
 from collections import Counter, defaultdict
 from datetime import datetime
 
-from comum import (BASE, HISTORICO, LEGISLATURAS_FECHADAS, PROCESSADOS, RAIZ, SITE, TIPOS_DOCUMENTO,
-                   URL_SITE, VEREADORES_EM_EXERCICIO, chave, gravar, juntar_comissoes, ler_json, log,
-                   salvar_json, slug)
+from comum import (BASE, CASOS, CIDADE, HISTORICO, LEGISLATURAS_FECHADAS, PROCESSADOS, RAIZ, SITE, SITE_RAIZ,
+                   SLUG_CIDADE, TIPOS_DOCUMENTO, URL_BASE, URL_SITE, VEREADORES_EM_EXERCICIO, chave, config_site,
+                   gravar, juntar_comissoes, ler_arquivo_json, ler_json, listar_cidades, log, salvar_json, slug)
 
 AGENTE = "analista"
 
@@ -183,16 +184,81 @@ def js(atribuicoes):
     return "window.DADOS=window.DADOS||{};\n" + corpo
 
 
-def versionar_index(arquivos):
-    """Grava ?v=<hash> em index.html para os navegadores não usarem cópia velha do cache."""
-    caminho = os.path.join(SITE, "index.html")
-    with open(caminho, encoding="utf-8") as f:
-        texto = f.read()
-    novo = texto
-    for nome, versao in arquivos.items():
-        novo = re.sub(rf'((?:src|href)="{re.escape(nome)})(\?v=[^"]*)?"', rf'\1?v={versao}"', novo)
-    if novo != texto:
-        gravar(caminho, novo)
+ESTATICOS = ("app.js", "style.css", "tema.css", "controles.css", "rodape.css")  # em site/, de todas as cidades
+
+
+def versoes_estaticos():
+    saida = {}
+    for nome in ESTATICOS:
+        with open(os.path.join(SITE_RAIZ, nome), encoding="utf-8") as f:
+            saida[nome] = hash_curto(f.read())
+    return saida
+
+
+def preencher(modelo, campos, versoes):
+    """Troca {{campo}} e {{v:arquivo}} do modelo. Campos desconhecidos ficam como estão."""
+    texto = re.sub(r"\{\{v:([^}]+)\}\}", lambda m: versoes.get(m.group(1), "0"), modelo)
+    return re.sub(r"\{\{([a-z_]+)\}\}", lambda m: str(campos.get(m.group(1), m.group(0))), texto)
+
+
+def zap(texto):
+    return f"https://wa.me/?text={urllib.parse.quote(texto)}"
+
+
+def gravar_index_cidade(versao_base, estaticos):
+    """site/<cidade>/index.html a partir de site/_cidade.html, com ?v=<hash> contra cache velho."""
+    e = lambda s: html.escape(str(s), quote=True)
+    titulo = f"Olho na Câmara de {CIDADE['nome']}"
+    og = (f'<link rel="canonical" href="{e(URL_SITE)}/">\n<meta property="og:url" content="{e(URL_SITE)}/">'
+          if URL_SITE else "")
+    texto_zap = f"Veja como vota cada vereador de {CIDADE['nome']}:"
+    campos = {"titulo": e(titulo), "cidade": e(CIDADE["nome"]), "camara": e(CIDADE["camara"]),
+              "camara_url": e(CIDADE.get("site_camara") or BASE), "og_extra": og,
+              "zap_href": e(zap(texto_zap)), "zap_texto": e(texto_zap)}
+    versoes = {"dados-base.js": versao_base, **{f"../{k}": v for k, v in estaticos.items()}}
+    with open(os.path.join(SITE_RAIZ, "_cidade.html"), encoding="utf-8") as f:
+        gravar(os.path.join(SITE, "index.html"), preencher(f.read(), campos, versoes))
+
+
+def gravar_entrada(estaticos):
+    """site/index.html (seletor de cidades) a partir de site/_entrada.html, com os números de cada
+    cidade que já tem dados processados. Roda depois de cada cidade, então fica sempre completo."""
+    e = lambda s: html.escape(str(s), quote=True)
+    cartoes, itens, nomes, atualizado = [], [], [], ""
+    for slug_c in listar_cidades():
+        cfg = ler_arquivo_json(os.path.join(RAIZ, "cidades", f"{slug_c}.json"))
+        ind = ler_arquivo_json(os.path.join(RAIZ, "dados", slug_c, "processados", "indicadores.json"), {})
+        if not ind or not os.path.exists(os.path.join(SITE_RAIZ, slug_c, "index.html")):
+            continue  # cidade configurada mas ainda sem coleta
+        g = ind["geral"]
+        em_ex = sum(v["em_exercicio"] for v in ind["vereadores"])
+        atualizado = max(atualizado, g["gerado_em"][:10])
+        num = lambda n: f"{n:,}".replace(",", ".")
+        cartoes.append(
+            f'      <a class="explore cidade" href="{e(slug_c)}/index.html"><span class="rotulo">{e(cfg["camara"])}</span>'
+            f'<span class="explore-t">{e(cfg["nome"])}</span><span class="cidade-nums">'
+            f'<span><b>{em_ex}</b> vereadores</span><span><b>{num(g["total_votacoes"])}</b> votações</span>'
+            f'<span><b>{num(g["total_proposituras"])}</b> proposituras</span></span>'
+            f'<span class="caso-ler" aria-hidden="true">Ver a Câmara →</span></a>')
+        itens.append(f'   <li><a href="{e(slug_c)}/index.html">{e(cfg["nome"])}</a></li>')
+        nomes.append(cfg["nome"])
+    site = config_site()
+    nome_site = site.get("nome", "Olho na Câmara")
+    descricao = ("Observatório independente das Câmaras Municipais de " + ", ".join(nomes[:-1])
+                 + (" e " if len(nomes) > 1 else "") + nomes[-1]
+                 + ": proposituras, votações, presença e casos documentados, com dados públicos oficiais.") if nomes else ""
+    og = (f'<link rel="canonical" href="{e(URL_BASE)}/">\n<meta property="og:url" content="{e(URL_BASE)}/">'
+          if URL_BASE else "")
+    texto_zap = "Veja como vota cada vereador da sua cidade:"
+    faixa = "".join(f'<span>{e(n)}</span><i aria-hidden="true">✱</i>' for n in nomes * 2)
+    dia = atualizado[8:10] + "/" + atualizado[5:7] + "/" + atualizado[:4] if atualizado else ""
+    campos = {"titulo": e(nome_site), "descricao": e(descricao), "og_extra": og, "n_cidades": f"{len(cartoes)} cidade" + ("s" if len(cartoes) != 1 else ""),
+              "cartoes": "\n".join(cartoes), "lista_cidades": "\n".join(itens), "faixa": faixa,
+              "atualizado": dia, "cidade_padrao": e(listar_cidades()[0]),
+              "zap_href": e(zap(texto_zap)), "zap_texto": e(texto_zap)}
+    with open(os.path.join(SITE_RAIZ, "_entrada.html"), encoding="utf-8") as f:
+        gravar(os.path.join(SITE_RAIZ, "index.html"), preencher(f.read(), campos, estaticos))
+    return len(cartoes)
 
 
 def pagina_vereador(v, geral):
@@ -204,9 +270,10 @@ def pagina_vereador(v, geral):
               f"{v['proposituras'].get('Requerimento', 0)} requerimentos",
               f"{v['votos'].get('contra', 0)} votos contra em votações nominais"]
     partido = f" ({v['partido']})" if v.get("partido") else ""
-    descricao = (f"{v['nome']}{partido} na Câmara de Tatuí, legislatura 2025-2028: "
+    leg = CIDADE["legislatura_atual"]
+    descricao = (f"{v['nome']}{partido} na {CIDADE['camara']}, legislatura {leg['inicio'][:4]}-{leg['fim'][:4]}: "
                  + ", ".join(p for p in partes if p) + ". Dados oficiais do SisCam.")
-    titulo = f"{v['nome']} - Olho na Câmara de Tatuí"
+    titulo = f"{v['nome']} - Olho na Câmara de {CIDADE['nome']}"
     destino = f"../index.html#vereador/{v['chave'].replace(' ', '%20')}"
     absoluto = lambda caminho: f"{URL_SITE}/{caminho}" if URL_SITE else f"../{caminho}"
     imagem = f'<meta property="og:image" content="{e(absoluto(v["foto"]))}">\n' if v.get("foto") else ""
@@ -221,7 +288,7 @@ def pagina_vereador(v, geral):
 <meta name="description" content="{e(descricao)}">
 <meta property="og:type" content="profile">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Olho na Câmara de Tatuí">
+<meta property="og:site_name" content="Olho na Câmara de {e(CIDADE['nome'])}">
 <meta property="og:title" content="{e(titulo)}">
 <meta property="og:description" content="{e(descricao)}">
 {imagem}{url}<meta name="twitter:card" content="summary">
@@ -587,10 +654,10 @@ def historico(ver, perfis, casos, curados):
 def main():
     props = ler_json("proposituras.json")
     ver = ler_json("vereadores.json")
-    sessoes = ler_json("sessoes.json") if os.path.exists(os.path.join(RAIZ, "dados", "processados", "sessoes.json")) else []
+    sessoes = ler_json("sessoes.json") if os.path.exists(os.path.join(PROCESSADOS, "sessoes.json")) else []
     ler = lambda caminho, padrao: json.load(open(caminho, encoding="utf-8")) if os.path.exists(caminho) else padrao
-    casos = ler(os.path.join(RAIZ, "casos", "casos.json"), [])
-    arq_apelidos = ler(os.path.join(RAIZ, "casos", "apelidos.json"), {})
+    casos = ler(os.path.join(CASOS, "casos.json"), [])
+    arq_apelidos = ler(os.path.join(CASOS, "apelidos.json"), {})
     curados = arq_apelidos.get("apelidos", {})
 
     perfis, apelidos = montar_perfis(ver, curados)
@@ -663,6 +730,8 @@ def main():
     base = {"geral": geral, "vereadores": saida_ver, "afinidade": afinidade, "casos": casos,
             "apelidos": apelidos, "legislaturas": legislaturas,
             "siscam": {"base": BASE, "tipos": TIPOS_DOCUMENTO},
+            "cidade": {k: CIDADE[k] for k in ("slug", "nome", "camara", "links", "nota_registro") if k in CIDADE}
+                      | {"legislatura": CIDADE["legislatura_atual"]},
             "versoes": {"votacoes": hash_curto(arq_vot), "proposituras": hash_curto(arq_props),
                         "historico": hash_curto(arq_hist)}}
     arq_base = js([(k, v) for k, v in base.items()])
@@ -673,14 +742,12 @@ def main():
     antigo = os.path.join(SITE, "dados.js")  # formato anterior (arquivo único)
     if os.path.exists(antigo):
         os.remove(antigo)
-    estaticos = {}
-    for nome in ("app.js", "style.css"):
-        with open(os.path.join(SITE, nome), encoding="utf-8") as f:
-            estaticos[nome] = hash_curto(f.read())
-    versionar_index({"dados-base.js": hash_curto(arq_base), **estaticos})
+    estaticos = versoes_estaticos()
+    gravar_index_cidade(hash_curto(arq_base), estaticos)
     paginas = gravar_paginas_vereadores(saida_ver, geral)
 
     salvar_json("indicadores.json", {k: base[k] for k in ("geral", "vereadores", "afinidade", "casos", "apelidos")})
+    n_cidades = gravar_entrada(estaticos)
     gravar_historico(saida_ver, geral)
 
     # --- avisos visíveis no log
@@ -693,7 +760,7 @@ def main():
         log(AGENTE, f"AVISO: nomes sem perfil (conferir casos/apelidos.json): {dict(desconhecidos.most_common(15))}")
     log(AGENTE, f"OK: {len(saida_ver)} vereadores ({em_ex} em exercício), {len(lista_props)} proposituras, "
                 f"{total_votacoes} votações ({divididas} divididas, {len(lista_vot)} listadas no site), "
-                f"{paginas} páginas de vereador; historico.js com {len(vot_hist)} votações "
+                f"{paginas} páginas de vereador, entrada com {n_cidades} cidade(s); historico.js com {len(vot_hist)} votações "
                 f"({len(arq_hist.encode('utf-8')) // 1024} KB)")
 
 
