@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gastos públicos · Olho na Câmara</title>
+<title>Gastos e receitas · Olho na Câmara</title>
 <base target="_blank">
 <meta name="description" content="Quanto a Câmara Municipal e a Prefeitura pagaram, mês a mês, e para quem. Dados do Tribunal de Contas do Estado de São Paulo.">
 <meta property="og:title" content="Gastos públicos · Olho na Câmara">
@@ -27,6 +27,7 @@
   .g-tabela td { padding: 7px 6px; border-bottom: 1px solid var(--linha); }
   .g-tabela td.n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .el-cidades .chip[aria-current], .chip[aria-pressed="true"] { background: var(--texto); color: var(--fundo); border-color: var(--texto); }
+  .barra { grid-template-columns: minmax(0, 38%) 1fr auto; }
 </style>
 <script>try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
 </head>
@@ -58,7 +59,7 @@
   const app = document.getElementById("app"), cache = {};
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const real = (v) => (v || 0).toLocaleString("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 });
-  let est = { orgao: "camara", ano: "", q: "", tipo: "" };
+  let est = { orgao: "camara", ano: "", q: "", tipo: "", vista: "despesas" };
 
   function carregar(slug, feito) {
     if (cache[slug]) return feito(cache[slug]);
@@ -70,7 +71,34 @@
     document.head.appendChild(s);
   }
 
+  const abas = (slug, G) => `<div class="chips" role="group" aria-label="Ver">${[["despesas", "Para onde vai (despesas)"], ["receitas", "De onde vem (receitas da Prefeitura)"]]
+    .filter(([v]) => v === "despesas" || G.receitas).map(([v, r]) => `<button type="button" class="chip" data-vista="${v}" aria-pressed="${est.vista === v}">${r}</button>`).join("")}</div>`;
+
+  function receitas(slug, G) {
+    const anos = Object.keys(G.receitas).sort();
+    if (!G.receitas[est.ano]) est.ano = anos[anos.length - 1];
+    const R = G.receitas[est.ano], max = Math.max(1, ...Object.values(R.meses)), maxG = Math.max(1, ...Object.values(R.grupos));
+    app.innerHTML = `<p class="esp-rot">Receitas · ${esc(G.fonte)}</p><h1>${esc(G.cidade)}</h1>
+      <div class="chips el-cidades" role="group" aria-label="Cidade">${CIDADES.map(([s, n]) => `<a class="chip" href="#${s}" target="_self"${s === slug ? ' aria-current="page"' : ""}>${n}</a>`).join("")}</div>
+      <div class="g-filtros">${abas(slug, G)}
+        <div class="chips" role="group" aria-label="Ano">${anos.map((a) => `<button type="button" class="chip" data-ano="${a}" aria-pressed="${a === est.ano}">${a}</button>`).join("")}</div></div>
+      <div class="grade grade-kpi"><div class="cartao kpi"><div class="valor">${real(R.total)}</div><div class="rotulo">arrecadado pela Prefeitura em ${esc(est.ano)}</div></div>
+        ${Object.entries(R.grupos).slice(0, 2).map(([g, v]) => `<div class="cartao kpi"><div class="valor">${(100 * v / R.total).toLocaleString("pt-BR", { maximumFractionDigits: 0 })}%</div><div class="rotulo">${esc(g)}</div></div>`).join("")}</div>
+      <h2>De onde vem o dinheiro</h2>
+      <div class="cartao"><div class="barras">${Object.entries(R.grupos).map(([g, v]) => `<div class="barra"><span class="barra-rot">${esc(g)}</span>
+        <span class="barra-trilho"><span class="barra-cheia" style="width:${(100 * v) / maxG}%"></span></span><span class="n">${real(v)}</span></div>`).join("")}</div></div>
+      <h2>Mês a mês</h2>
+      <div class="cartao"><div class="g-meses">${MESES.map((m, i) => `<span title="${m}: ${real(R.meses[i + 1])}" style="height:${(100 * (R.meses[i + 1] || 0)) / max}%"></span>`).join("")}</div>
+        <div class="g-meses-rot">${MESES.map((m) => `<span>${m}</span>`).join("")}</div></div>
+      <h2>Principais receitas</h2>
+      <div class="tabela-wrap"><table class="g-tabela"><tbody>${R.itens.map(([n, v], i) => `<tr><td>${i + 1}. ${esc(n)}</td><td class="n">${real(v)}</td><td class="n">${(100 * v / R.total).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%</td></tr>`).join("")}</tbody></table></div>
+      <p class="suave">Receita arrecadada pela Prefeitura (sem autarquias e sem as transferências internas entre órgãos do município). IPTU e ISS são impostos do município; ICMS e IPVA chegam pelo Estado; FPM e SUS, pela União.</p>`;
+    app.querySelectorAll("[data-vista]").forEach((b) => b.addEventListener("click", () => { est.vista = b.dataset.vista; pagina(slug, G); }));
+    app.querySelectorAll("[data-ano]").forEach((b) => b.addEventListener("click", () => { est.ano = b.dataset.ano; pagina(slug, G); }));
+  }
+
   function pagina(slug, G) {
+    if (est.vista === "receitas" && G.receitas) return receitas(slug, G);
     const orgs = Object.keys(G.orgaos).sort((a, b) => (a === "camara" ? -1 : b === "camara" ? 1 : a === "prefeitura" ? -1 : b === "prefeitura" ? 1 : a.localeCompare(b)));
     if (!G.orgaos[est.orgao]) est.orgao = orgs[0];
     const O = G.orgaos[est.orgao], anos = Object.keys(O.anos).sort();
@@ -79,6 +107,7 @@
     const ultimo = G.meses_lidos.filter((m) => m.startsWith(est.ano)).slice(-1)[0];
     app.innerHTML = `<p class="esp-rot">Gastos públicos · ${esc(G.fonte)}</p><h1>${esc(G.cidade)}</h1>
       <div class="chips el-cidades" role="group" aria-label="Cidade">${CIDADES.map(([s, n]) => `<a class="chip" href="#${s}" target="_self"${s === slug ? ' aria-current="page"' : ""}>${n}</a>`).join("")}</div>
+      <div class="g-filtros">${abas(slug, G)}</div>
       <div class="g-filtros">
         <div class="chips" role="group" aria-label="Órgão">${orgs.map((o) => `<button type="button" class="chip" data-orgao="${esc(o)}" aria-pressed="${o === est.orgao}">${esc(ROT[o] || G.orgaos[o].nome)}</button>`).join("")}</div>
         <div class="chips" role="group" aria-label="Ano">${anos.map((a) => `<button type="button" class="chip" data-ano="${a}" aria-pressed="${a === est.ano}">${a}</button>`).join("")}</div>
@@ -104,6 +133,7 @@
       app.querySelector("#forn").innerHTML = fs.map(([n, v], i) => `<tr><td>${i + 1}. ${esc(n)}</td><td class="n">${real(v)}</td><td class="n">${(100 * v / A.total).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%</td></tr>`).join("")
         || `<tr><td class="suave">Nenhum fornecedor com esse filtro.</td></tr>`;
     };
+    app.querySelectorAll("[data-vista]").forEach((b) => b.addEventListener("click", () => { est.vista = b.dataset.vista; pagina(slug, G); }));
     app.querySelectorAll("[data-orgao]").forEach((b) => b.addEventListener("click", () => { est.orgao = b.dataset.orgao; pagina(slug, G); }));
     app.querySelectorAll("[data-ano]").forEach((b) => b.addEventListener("click", () => { est.ano = b.dataset.ano; pagina(slug, G); }));
     app.querySelector("#f-q").addEventListener("input", (e) => { est.q = e.target.value; desenhar(); });

@@ -1,4 +1,5 @@
-"""Gastos da Câmara Municipal e da Prefeitura (e demais órgãos municipais) pela API do TCE-SP.
+"""Gastos da Câmara Municipal e da Prefeitura (e demais órgãos municipais) e receitas da Prefeitura
+pela API do TCE-SP (despesas e /receitas).
 
 Fonte: Tribunal de Contas do Estado de São Paulo, transparência municipal
 (https://transparencia.tce.sp.gov.br/api/json/despesas/{municipio}/{ano}/{mes}).
@@ -62,6 +63,46 @@ def mes_despesas(slug, ano, mes, hoje):
     return linhas
 
 
+def mes_receitas(slug, ano, mes, hoje):
+    pasta = os.path.join(RAIZ, "dados", slug, "brutos", "tce")
+    arq = os.path.join(pasta, f"receitas_{ano}_{mes:02d}.json")
+    fechado = (ano, mes) < (hoje.year, hoje.month)
+    if fechado and os.path.exists(arq):
+        return json.load(open(arq, encoding="utf-8"))
+    time.sleep(1.0)
+    linhas = baixar(f"{API}/receitas/{slug}/{ano}/{mes}")
+    if fechado and linhas:
+        os.makedirs(pasta, exist_ok=True)
+        with open(arq + ".tmp", "w", encoding="utf-8") as f:
+            json.dump(linhas, f, ensure_ascii=False)
+        os.replace(arq + ".tmp", arq)
+    return linhas
+
+
+def grupo_receita(alinea):
+    """Grupo pela natureza da receita (código no início da alínea). None = intraorçamentária (fica fora)."""
+    c = alinea.split(" ")[0]
+    if c.startswith("7") or c.startswith("8"):
+        return None  # dinheiro que circula entre órgãos do próprio município
+    if c.startswith("11"):
+        return "Impostos e taxas do município"
+    if c.startswith("171"):
+        return "Repasses da União"
+    if c.startswith("172"):
+        return "Repasses do Estado"
+    if c.startswith("175"):
+        return "FUNDEB"
+    if c.startswith("17"):
+        return "Outros repasses"
+    if c.startswith("12"):
+        return "Contribuições"
+    if c.startswith("13"):
+        return "Rendimentos e aluguéis"
+    if c.startswith("2"):
+        return "Empréstimos, venda de bens e capital"
+    return "Outras receitas"
+
+
 def valor(v):
     return float(v.replace(".", "").replace(",", ".")) if v else 0.0
 
@@ -115,6 +156,23 @@ def main():
                     nome = re.sub(r"\s*\b\d{3}\.?\d{3}\.?\d{3}-?\d{2}\b", "", l["nm_fornecedor"]).strip().title()
                     a["fornecedores"][nome + (" (pessoa física)" if pf else "")] += v
             log(f"{slug} {ano}: lido")
+        receitas = defaultdict(lambda: {"total": 0.0, "grupos": Counter(), "itens": Counter(), "meses": Counter()})
+        for ano in anos:
+            for mes in range(1, 13):
+                if (ano, mes) > (hoje.year, hoje.month):
+                    break
+                for l in mes_receitas(slug, ano, mes, hoje) or []:
+                    if tipo_orgao(l["orgao"]) != "prefeitura":
+                        continue
+                    g = grupo_receita(l["ds_alinea"])
+                    if not g:
+                        continue
+                    v = valor(l["vl_arrecadacao"])
+                    r = receitas[str(ano)]
+                    r["total"] += v
+                    r["grupos"][g] += v
+                    r["meses"][mes] += v
+                    r["itens"][re.sub(r"^\d+ - ", "", l["ds_alinea"]).strip()] += v
         saida = {"cidade": cfg["nome"], "fonte": "TCE-SP, transparência municipal", "anos": [str(a) for a in anos],
                  "gerado_em": datetime.now().astimezone().isoformat(timespec="minutes"),
                  "meses_lidos": meses_lidos, "orgaos": {}}
@@ -124,6 +182,11 @@ def main():
                     "meses": {str(m): round(v, 2) for m, v in sorted(x["meses"].items())},
                     "fornecedores": [[n, round(v, 2)] for n, v in x["fornecedores"].most_common(60)]}
                 for a, x in o["anos"].items()}}
+        saida["receitas"] = {a: {"total": round(r["total"], 2),
+                                 "grupos": {k: round(v, 2) for k, v in r["grupos"].most_common()},
+                                 "meses": {str(m): round(v, 2) for m, v in sorted(r["meses"].items())},
+                                 "itens": [[k, round(v, 2)] for k, v in r["itens"].most_common(30)]}
+                             for a, r in receitas.items()}
         pasta = os.path.join(RAIZ, "dados", slug, "processados")
         with open(os.path.join(pasta, "gastos.json"), "w", encoding="utf-8") as f:
             json.dump(saida, f, ensure_ascii=False, indent=1)

@@ -5,7 +5,7 @@
   "2025",
   "2026"
  ],
- "gerado_em": "2026-10-30T09:33+00:00",
+ "gerado_em": "2026-10-30T09:56+00:00",
  "meses_lidos": [
   "2025-01",
   "2025-02",
@@ -1644,6 +1644,302 @@
      ]
     }
    }
+  }
+ },
+ "receitas": {
+  "2025": {
+   "total": 245972297.29,
+   "grupos": {
+    "Repasses da União": 72602172.91,
+    "Repasses do Estado": 63893867.77,
+    "Impostos e taxas do município": 52257016.85,
+    "FUNDEB": 47805484.88,
+    "Rendimentos e aluguéis": 3973266.04,
+    "Outras receitas": 2627998.31,
+    "Empréstimos, venda de bens e capital": 2046030.79,
+    "Contribuições": 766459.74
+   },
+   "meses": {
+    "1": 22038418.19,
+    "2": 19107711.99,
+    "3": 17784611.28,
+    "4": 25940785.38,
+    "5": 20226670.76,
+    "6": 17978186.87,
+    "7": 21179787.63,
+    "8": 16957121.64,
+    "9": 21406878.12,
+    "10": 18165297.86,
+    "11": 16867438.81,
+    "12": 28319388.76
+   },
+   "itens": [
+    [
+     "Cota-Parte do Fundo de Participação dos Municípios - FPM",
+     53266058.31
+    ],
+    [
+     "Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação - FUNDEB",
+     47805484.88
+    ],
+    [
+     "Cota-Parte do ICMS",
+     45977061.11
+    ],
+    [
+     "Imposto sobre a Propriedade Predial e Territorial Urbana",
+     15828244.1
+    ],
+    [
+     "Impostos sobre Serviços",
+     13021513.74
+    ],
+    [
+     "Cota-Parte do IPVA",
+     12874600.82
+    ],
+    [
+     "Transferências de Recursos do Sistema Único de Saúde - SUS - Repasses Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+     12869813.51
+    ],
+    [
+     "Imposto sobre a Renda - Retido na Fonte",
+     11737620.42
+    ],
+    [
+     "Impostos sobre Transmissão &quot;Inter Vivos&quot; de Bens Imóveis e de Direitos Reais sobre Imóveis",
+     5478246.03
+    ],
+    [
+     "Remuneração de Depósitos Bancários",
+     3869149.89
+    ],
+    [
+     "Taxas pela Prestação de Serviços em Geral",
+     3815876.16
+    ],
+    [
+     "Transferências do Salário-Educação",
+     3658944.07
+    ],
+    [
+     "Transferências de Recursos do Sistema Único de Saúde - SUS",
+     2896206.78
+    ],
+    [
+     "Taxas de Inspeção, Controle e Fiscalização",
+     2375516.4
+    ],
+    [
+     "Outras Receitas",
+     1363143.11
+    ],
+    [
+     "Cota-parte da Compensação Financeira pela Produção de Petróleo",
+     1112022.76
+    ],
+    [
+     "Transferências referentes ao Programa Nacional de Alimentação Escolar - PNAE",
+     1034138.0
+    ],
+    [
+     "Transferências de Convênios dos Estados Destinadas a Programas de Educação",
+     959188.71
+    ],
+    [
+     "Outras Transferências de Convênios dos Estados e DF e de Suas Entidades",
+     891400.02
+    ],
+    [
+     "Outras Transferências de Convênios da União e de Suas Entidades",
+     860306.0
+    ],
+    [
+     "Contribuição para o Custeio do Serviço de Iluminação Pública",
+     766459.74
+    ],
+    [
+     "Outras Transferências De Recursos da União e de suas Entidades",
+     699980.0
+    ],
+    [
+     "Multas Previstas em Legislação Específica",
+     398038.17
+    ],
+    [
+     "Transferências de Recursos do Fundo Nacional de Assistência Social - FNAS",
+     349920.21
+    ],
+    [
+     "Cota-Parte do IPI - Municípios",
+     331738.9
+    ],
+    [
+     "Outros Serviços",
+     266543.02
+    ],
+    [
+     "Serviços de Registro, Certificação e Fiscalização",
+     228203.15
+    ],
+    [
+     "Alienação de Bens Móveis e Semoventes",
+     178642.0
+    ],
+    [
+     "Serviços de Transporte de Passageiros ou Mercadorias",
+     162597.53
+    ],
+    [
+     "Transferência Obrigatória Decorrente da Lei Complementar nº 176-2020",
+     151983.24
+    ]
+   ]
+  },
+  "2026": {
+   "total": 172599648.19,
+   "grupos": {
+    "Repasses da União": 48982256.44,
+    "Repasses do Estado": 45516336.42,
+    "Impostos e taxas do município": 35712316.47,
+    "FUNDEB": 31818966.43,
+    "Empréstimos, venda de bens e capital": 5884978.37,
+    "Rendimentos e aluguéis": 2542625.6,
+    "Outras receitas": 1567423.32,
+    "Contribuições": 574745.14
+   },
+   "meses": {
+    "1": 22639990.8,
+    "2": 18338292.79,
+    "3": 22042403.86,
+    "4": 27509272.54,
+    "5": 20811664.84,
+    "6": 21475735.98,
+    "7": 21434398.04,
+    "8": 18347889.34
+   },
+   "itens": [
+    [
+     "Cota-Parte do Fundo de Participação dos Municípios - FPM",
+     36501145.17
+    ],
+    [
+     "Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação - FUNDEB",
+     31818966.43
+    ],
+    [
+     "Cota-Parte do ICMS",
+     30853328.1
+    ],
+    [
+     "Imposto sobre a Propriedade Predial e Territorial Urbana",
+     13273451.25
+    ],
+    [
+     "Cota-Parte do IPVA",
+     12182382.25
+    ],
+    [
+     "Impostos sobre Serviços",
+     9290080.46
+    ],
+    [
+     "Transferências de Recursos do Sistema Único de Saúde - SUS - Repasses Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+     7092184.83
+    ],
+    [
+     "Imposto sobre a Renda - Retido na Fonte",
+     6672719.29
+    ],
+    [
+     "Taxas pela Prestação de Serviços em Geral",
+     3850453.04
+    ],
+    [
+     "Transferências do Salário-Educação",
+     2723391.58
+    ],
+    [
+     "Remuneração de Depósitos Bancários",
+     2413632.89
+    ],
+    [
+     "Impostos sobre Transmissão &quot;Inter Vivos&quot; de Bens Imóveis e de Direitos Reais sobre Imóveis",
+     2214259.57
+    ],
+    [
+     "Outras Transferências de Convênios da União e de Suas Entidades",
+     2212530.22
+    ],
+    [
+     "Outras Transferências de Convênios dos Estados e DF e de Suas Entidades",
+     1890631.93
+    ],
+    [
+     "Outras Transferências de Recursos dos Estados",
+     1652214.53
+    ],
+    [
+     "Transferências de Recursos do Sistema Único de Saúde - SUS",
+     995866.41
+    ],
+    [
+     "Transferências referentes ao Programa Nacional de Alimentação Escolar - PNAE",
+     933084.75
+    ],
+    [
+     "Cota-parte da Compensação Financeira pela Produção de Petróleo",
+     920862.75
+    ],
+    [
+     "Transferências de Convênios dos Estados Destinadas a Programas de Educação",
+     621148.99
+    ],
+    [
+     "Contribuição para o Custeio do Serviço de Iluminação Pública",
+     574745.14
+    ],
+    [
+     "Outras Receitas",
+     522656.23
+    ],
+    [
+     "Taxas de Inspeção, Controle e Fiscalização",
+     411352.86
+    ],
+    [
+     "Transferências de Recursos do Fundo Nacional de Assistência Social - FNAS",
+     398558.55
+    ],
+    [
+     "Transferências da Política Nacional Aldir Blanc de Fomento à Cultura - Lei nº 14.399-2022",
+     341580.94
+    ],
+    [
+     "Transferências de Recursos do Sistema Único de Saúde - SUS - Fundo a Fundo - Bloco de Estruturação da Rede de Serviços Públicos de Saúde",
+     299959.0
+    ],
+    [
+     "Multas Previstas em Legislação Específica",
+     287209.21
+    ],
+    [
+     "Cota-Parte do IPI - Municípios",
+     245917.48
+    ],
+    [
+     "Outras Restituições",
+     241263.96
+    ],
+    [
+     "Outros Serviços",
+     233207.74
+    ],
+    [
+     "Transferências de Recursos do Sistema Único de Saúde - SUS - Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+     174341.0
+    ]
+   ]
   }
  }
 }

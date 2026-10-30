@@ -1,0 +1,414 @@
+{
+ "cidade": "Iperó",
+ "fonte": "Portal da Transparência (CGU)",
+ "gerado_em": "2026-10-30T09:52+00:00",
+ "emendas": [
+  {
+   "codigo": "202327990015",
+   "ano": "2023",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "autor": "Eli Correa Filho",
+   "numero": "0015",
+   "funcao": "Saúde",
+   "acao": "Incremento temporario ao custeio dos servicos de atencao primaria a saude para cumprimento de metas",
+   "empenhado": 325841.0,
+   "pago": 325841.0
+  },
+  {
+   "codigo": "201925190003",
+   "ano": "2019",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "autor": "Antonio Bulhoes",
+   "numero": "0003",
+   "funcao": "Saúde",
+   "acao": "Incremento temporario ao custeio dos servicos de atencao primaria a saude para cumprimento de metas",
+   "empenhado": 600000.0,
+   "pago": 600000.0
+  },
+  {
+   "codigo": "Sem informação",
+   "ano": "2017",
+   "tipo": "Emenda de Relator",
+   "autor": "Sem Informação",
+   "numero": "S/I",
+   "funcao": "Saúde",
+   "acao": "Apoio a manutencao de unidades de saude",
+   "empenhado": 100000.0,
+   "pago": 100000.0
+  },
+  {
+   "codigo": "Sem informação",
+   "ano": "2014",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "autor": "Sem Informação",
+   "numero": "S/I",
+   "funcao": "Saúde",
+   "acao": "Estruturacao da rede de servicos de atencao primaria a saude",
+   "empenhado": 548378.0,
+   "pago": 548378.0
+  },
+  {
+   "codigo": "Sem informação",
+   "ano": "2014",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "autor": "Sem Informação",
+   "numero": "S/I",
+   "funcao": "Desporto e lazer",
+   "acao": "Apoio a realizacao de eventos de esporte amador, educacional, de lazer e inclusao social",
+   "empenhado": 450000.0,
+   "pago": 450000.0
+  }
+ ],
+ "favorecidos": [
+  {
+   "nome": "Municipio De Ipero",
+   "valor": 13464948.5,
+   "natureza": "Município",
+   "anos": [
+    "2014",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "autores": [
+    [
+     "Vitor Lippi",
+     4332900.0
+    ],
+    [
+     "Samuel Moreira",
+     3667053.4
+    ],
+    [
+     "Marcos Pereira",
+     2774806.0
+    ],
+    [
+     "David Soares",
+     1000000.0
+    ],
+    [
+     "Sem Informação",
+     450000.0
+    ],
+    [
+     "Arnaldo Jardim",
+     396000.0
+    ]
+   ]
+  },
+  {
+   "nome": "Fundo Municipal De Saude",
+   "valor": 6510070.0,
+   "natureza": "Fundo Público da Administração Direta Municipal",
+   "anos": [
+    "2015",
+    "2016",
+    "2017",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "autores": [
+    [
+     "Com. Da Saude",
+     2537000.0
+    ],
+    [
+     "Vitor Lippi",
+     937546.0
+    ],
+    [
+     "Sem Informação",
+     548378.0
+    ],
+    [
+     "Rodrigo Gambale",
+     500000.0
+    ],
+    [
+     "Marcos Pereira",
+     399981.0
+    ],
+    [
+     "Maria Rosas",
+     280000.0
+    ]
+   ]
+  },
+  {
+   "nome": "Fundo Municipal De Assistencia Social",
+   "valor": 100000.0,
+   "natureza": "Fundo Público da Administração Direta Municipal",
+   "anos": [
+    "2026"
+   ],
+   "autores": [
+    [
+     "Com. De Previ., Assis. Soci, Infan., Adol. E Famil",
+     100000.0
+    ]
+   ]
+  },
+  {
+   "nome": "Cooperativa De Produtores Rurais De Ipanema E Regiao - Coprir",
+   "valor": 95897.5,
+   "natureza": "Cooperativa",
+   "anos": [
+    "2023"
+   ],
+   "autores": [
+    [
+     "Paulo Teixeira",
+     95897.5
+    ]
+   ]
+  },
+  {
+   "nome": "Fabiana Bertoncini (pessoa física)",
+   "valor": 30199.02,
+   "natureza": "Sem informação",
+   "anos": [
+    "2020"
+   ],
+   "autores": [
+    [
+     "Relator Geral",
+     30199.02
+    ]
+   ]
+  },
+  {
+   "nome": "Andre Luis Fonseca (pessoa física)",
+   "valor": 7102.65,
+   "natureza": "Sem informação",
+   "anos": [
+    "2020"
+   ],
+   "autores": [
+    [
+     "Relator Geral",
+     7102.65
+    ]
+   ]
+  },
+  {
+   "nome": "Ofelia De Fatima Gil Willmersdorf (pessoa física)",
+   "valor": 631.22,
+   "natureza": "Sem informação",
+   "anos": [
+    "2020"
+   ],
+   "autores": [
+    [
+     "Relator Geral",
+     631.22
+    ]
+   ]
+  },
+  {
+   "nome": "Wika Do Brasil Industria E Comercio Ltda",
+   "valor": 320.0,
+   "natureza": "Sociedade Empresária Limitada",
+   "anos": [
+    "2018"
+   ],
+   "autores": [
+    [
+     "Sem Informação",
+     320.0
+    ]
+   ]
+  },
+  {
+   "nome": "Julio Cesar De Oliveira (pessoa física)",
+   "valor": 67.68,
+   "natureza": "Sem informação",
+   "anos": [
+    "2020"
+   ],
+   "autores": [
+    [
+     "Relator Geral",
+     67.68
+    ]
+   ]
+  }
+ ],
+ "autores": [
+  {
+   "autor": "Vitor Lippi",
+   "total": 5270446.0,
+   "anos": {
+    "2016": 148433.32,
+    "2017": 614427.36,
+    "2018": 421906.21,
+    "2019": 118120.0,
+    "2020": 230013.11,
+    "2023": 1550000.0,
+    "2024": 1500000.0,
+    "2026": 687546.0
+   }
+  },
+  {
+   "autor": "Samuel Moreira",
+   "total": 3667053.4,
+   "anos": {
+    "2016": 127870.0,
+    "2018": 569822.0,
+    "2020": 594133.71,
+    "2023": 1105943.21,
+    "2024": 737295.48,
+    "2025": 531989.0
+   }
+  },
+  {
+   "autor": "Marcos Pereira",
+   "total": 3174787.0,
+   "anos": {
+    "2024": 1000000.0,
+    "2025": 1277306.0,
+    "2026": 897481.0
+   }
+  },
+  {
+   "autor": "Com. Da Saude",
+   "total": 2537000.0,
+   "anos": {
+    "2025": 2337000.0,
+    "2026": 200000.0
+   }
+  },
+  {
+   "autor": "David Soares",
+   "total": 1000000.0,
+   "anos": {
+    "2023": 1000000.0
+   }
+  },
+  {
+   "autor": "Sem Informação",
+   "total": 998698.0,
+   "anos": {
+    "2014": 450000.0,
+    "2015": 150000.0,
+    "2016": 398378.0,
+    "2018": 320.0
+   }
+  },
+  {
+   "autor": "Rodrigo Gambale",
+   "total": 500000.0,
+   "anos": {
+    "2025": 500000.0
+   }
+  },
+  {
+   "autor": "Arnaldo Jardim",
+   "total": 396000.0,
+   "anos": {
+    "2025": 396000.0
+   }
+  },
+  {
+   "autor": "Jonas Donizette",
+   "total": 396000.0,
+   "anos": {
+    "2025": 396000.0
+   }
+  },
+  {
+   "autor": "Gilberto Nascimento",
+   "total": 300000.0,
+   "anos": {
+    "2021": 300000.0
+   }
+  },
+  {
+   "autor": "Maria Rosas",
+   "total": 280000.0,
+   "anos": {
+    "2026": 280000.0
+   }
+  },
+  {
+   "autor": "Herculano Passos",
+   "total": 249970.0,
+   "anos": {
+    "2017": 249970.0
+   }
+  },
+  {
+   "autor": "Renata Abreu",
+   "total": 207227.0,
+   "anos": {
+    "2025": 149955.0,
+    "2026": 57272.0
+   }
+  },
+  {
+   "autor": "Kiko Celeguim",
+   "total": 200000.0,
+   "anos": {
+    "2026": 200000.0
+   }
+  },
+  {
+   "autor": "Vinicius Carvalho",
+   "total": 200000.0,
+   "anos": {
+    "2025": 200000.0
+   }
+  },
+  {
+   "autor": "Capitao Augusto",
+   "total": 200000.0,
+   "anos": {
+    "2025": 200000.0
+   }
+  },
+  {
+   "autor": "Paulo Teixeira",
+   "total": 195897.5,
+   "anos": {
+    "2023": 195897.5
+   }
+  },
+  {
+   "autor": "Celso Russomanno",
+   "total": 150000.0,
+   "anos": {
+    "2025": 150000.0
+   }
+  },
+  {
+   "autor": "Com. De Previ., Assis. Soci, Infan., Adol. E Famil",
+   "total": 100000.0,
+   "anos": {
+    "2026": 100000.0
+   }
+  },
+  {
+   "autor": "Alfredinho",
+   "total": 99968.0,
+   "anos": {
+    "2024": 99968.0
+   }
+  },
+  {
+   "autor": "Relator Geral",
+   "total": 86189.67,
+   "anos": {
+    "2020": 84256.69,
+    "2021": 1932.98
+   }
+  }
+ ]
+}

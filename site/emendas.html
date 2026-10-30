@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emendas parlamentares · Olho na Câmara</title>
+<base target="_blank">
+<meta name="description" content="Quanto cada deputado e senador mandou para a cidade em emendas parlamentares, e quem recebeu o dinheiro. Dados do Portal da Transparência.">
+<meta property="og:title" content="Emendas parlamentares · Olho na Câmara">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tema.css">
+<link rel="stylesheet" href="controles.css">
+<link rel="stylesheet" href="rodape.css">
+<link rel="stylesheet" href="espectro.css">
+<style>
+  .g-filtros { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: end; margin: 12px 0 18px; }
+  .g-filtros label { display: grid; gap: 4px; font-size: .82rem; color: var(--texto-2); }
+  .g-filtros input, .g-filtros select { min-height: 42px; }
+  .chip[aria-current] { background: var(--texto); color: var(--fundo); border-color: var(--texto); }
+  .em-tabela { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  .em-tabela th, .em-tabela td { padding: 7px 6px; border-bottom: 1px solid var(--linha); text-align: left; vertical-align: top; }
+  .em-tabela .n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .em-barra { display: block; height: 8px; border-radius: 4px; background: var(--fundo-2); min-width: 80px; margin-top: 6px; }
+  .em-barra i { display: block; height: 100%; border-radius: 4px; background: var(--acento); }
+</style>
+<script>try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
+</head>
+<body>
+<a class="pular" href="#app" target="_self">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="index.html" target="_self"><span class="marca-olho">●</span> Olho na Câmara <small>Emendas</small></a>
+    <nav class="esp-nav" aria-label="Emendas">
+      <a class="botao botao-pr" href="deputados.html" target="_self">Congresso</a>
+      <a class="esp-voltar" href="index.html" target="_self">Cidades</a>
+    </nav>
+  </div>
+</header>
+
+<main class="conteudo" id="app" tabindex="-1"><p class="carregando">Carregando…</p></main>
+
+<footer class="rodape ft2" id="rodape">
+  <div class="ft-bot"><span>© 2026 Olho na Câmara · criado por <a href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></span><span>Fonte: Portal da Transparência (CGU). Sem vínculo com partidos.</span></div>
+</footer>
+
+<script>
+/* Emendas parlamentares por cidade: #<cidade>. Dados em <cidade>/emendas.js (agentes/coletor_emendas.py). */
+(function () {
+  "use strict";
+  const CIDADES = [["tatui", "Tatuí"], ["itapetininga", "Itapetininga"], ["cerquilho", "Cerquilho"], ["ipero", "Iperó"], ["cesario-lange", "Cesário Lange"]];
+  const app = document.getElementById("app"), cache = {};
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const real = (v) => (v || 0).toLocaleString("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 });
+  let f = { ano: "", q: "" };
+
+  function carregar(slug, feito) {
+    if (cache[slug]) return feito(cache[slug]);
+    window.EMENDAS = null;
+    const s = document.createElement("script");
+    s.src = `${slug}/emendas.js`;
+    s.onload = () => { cache[slug] = window.EMENDAS; feito(cache[slug]); };
+    s.onerror = () => { app.innerHTML = `<h1>Sem dados de emendas</h1>`; };
+    document.head.appendChild(s);
+  }
+
+  function pagina(slug, E) {
+    const anos = [...new Set(E.autores.flatMap((a) => Object.keys(a.anos)))].sort().reverse();
+    app.innerHTML = `<p class="esp-rot">Emendas parlamentares federais</p><h1>${esc(E.cidade)}</h1>
+      <div class="chips" role="group" aria-label="Cidade">${CIDADES.map(([s, n]) => `<a class="chip" href="#${s}" target="_self"${s === slug ? ' aria-current="page"' : ""}>${n}</a>`).join("")}</div>
+      <p class="esp-lead">Emenda parlamentar é a parte do Orçamento da União que deputados, senadores, bancadas e comissões indicam para onde vai. Aqui está quanto chegou a ${esc(E.cidade)}: os pagamentos feitos a prefeitura, fundos municipais e entidades da cidade.</p>
+      <div class="g-filtros">
+        <label>Ano<select id="f-a"><option value="">Todos</option>${anos.map((a) => `<option${a === f.ano ? " selected" : ""}>${a}</option>`).join("")}</select></label>
+        <label>Buscar autor<input type="search" id="f-q" placeholder="Nome do deputado, senador ou bancada" value="${esc(f.q)}"></label>
+      </div>
+      <div class="grade grade-kpi" id="kpis"></div>
+      <h2>Quem mandou dinheiro para ${esc(E.cidade)}</h2>
+      <div class="tabela-wrap"><table class="em-tabela"><tbody id="autores"></tbody></table></div>
+      <h2>Quem recebeu</h2>
+      <div class="tabela-wrap"><table class="em-tabela"><thead><tr><th>Favorecido</th><th>Principais autores</th><th class="n">Total recebido</th></tr></thead><tbody>${E.favorecidos.map((x) => `<tr>
+        <td><b>${esc(x.nome)}</b><br><small class="suave">${esc(x.natureza)} · ${esc(x.anos[0])}–${esc(x.anos[x.anos.length - 1])}</small></td>
+        <td>${x.autores.map(([a, v]) => `${esc(a)} <small class="suave">${real(v)}</small>`).join("<br>")}</td><td class="n">${real(x.valor)}</td></tr>`).join("")}</tbody></table></div>
+      ${E.emendas.length ? `<h2>Emendas com ${esc(E.cidade)} como local de aplicação</h2>
+      <p class="suave">A maioria das emendas é registrada com o estado como local; estas indicam a cidade diretamente.</p>
+      <div class="tabela-wrap"><table class="em-tabela"><thead><tr><th>Ano</th><th>Autor</th><th>Área e ação</th><th class="n">Empenhado</th><th class="n">Pago</th></tr></thead><tbody>${E.emendas.map((e) => `<tr>
+        <td>${esc(e.ano)}</td><td>${esc(e.autor)}</td><td>${esc(e.funcao)}<br><small class="suave">${esc(e.acao)}</small></td><td class="n">${real(e.empenhado)}</td><td class="n">${real(e.pago)}</td></tr>`).join("")}</tbody></table></div>` : ""}
+      <p class="suave">"Com." é comissão, "Bancada" é a bancada do estado e "Relator Geral" são emendas de relator. Fonte: Portal da Transparência, atualizado em ${esc(E.gerado_em.slice(0, 10).split("-").reverse().join("/"))}.</p>`;
+    const desenhar = () => {
+      const q = f.q.toLowerCase();
+      const lin = E.autores.map((a) => ({ ...a, v: f.ano ? a.anos[f.ano] || 0 : a.total })).filter((a) => a.v > 0 && (!q || a.autor.toLowerCase().includes(q))).sort((a, b) => b.v - a.v);
+      const tot = lin.reduce((s, a) => s + a.v, 0), max = lin.length ? lin[0].v : 1;
+      app.querySelector("#kpis").innerHTML = `<div class="cartao kpi"><div class="valor">${real(tot)}</div><div class="rotulo">recebido ${f.ano ? `em ${f.ano}` : "no total"}</div></div>
+        <div class="cartao kpi"><div class="valor">${lin.length}</div><div class="rotulo">autores</div></div>`;
+      app.querySelector("#autores").innerHTML = lin.map((a, i) => `<tr><td>${i + 1}. <b>${esc(a.autor)}</b><span class="em-barra"><i style="width:${(100 * a.v) / max}%"></i></span></td>
+        <td class="suave">${Object.entries(a.anos).map(([an, v]) => `${an}: ${real(v)}`).join(" · ")}</td><td class="n">${real(a.v)}</td></tr>`).join("")
+        || `<tr><td class="suave">Nenhum autor com esse filtro.</td></tr>`;
+    };
+    app.querySelector("#f-a").addEventListener("change", (e) => { f.ano = e.target.value; desenhar(); });
+    app.querySelector("#f-q").addEventListener("input", (e) => { f.q = e.target.value; desenhar(); });
+    desenhar();
+    document.title = `Emendas para ${E.cidade} · Olho na Câmara`;
+  }
+
+  function rota() {
+    const slug = decodeURIComponent(location.hash.slice(1)) || "tatui";
+    const s = CIDADES.some(([c]) => c === slug) ? slug : "tatui";
+    carregar(s, (E) => pagina(s, E));
+  }
+  window.addEventListener("hashchange", rota);
+  rota();
+})();
+</script>
+<script src="topo.js"></script>
+</body>
+</html>

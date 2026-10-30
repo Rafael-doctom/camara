@@ -71,6 +71,34 @@ def main():
                                  ("QT_VOTOS_BRANCOS", "brancos"), ("QT_TOTAL_VOTOS_NULOS", "nulos")):
                 d[chave] += inteiro(r.get(campo))
 
+    # ---- votos por local de votação (mapa), se os arquivos por seção e de locais já foram baixados
+    locais, por_local = defaultdict(dict), defaultdict(lambda: defaultdict(Counter))  # slug -> chave -> local -> votos
+    sec_zip = os.path.join(RAIZ, "dados", "_tse", "brutos", f"votacao_secao_{ano}_{uf}.zip")
+    loc_zip = os.path.join(RAIZ, "dados", "_tse", "brutos", f"eleitorado_local_votacao_{ano}.zip")
+    if os.path.exists(sec_zip) and os.path.exists(loc_zip):
+        for r in linhas(loc_zip, f"_{uf}.csv"):
+            s = por_nome.get(norm(r["NM_MUNICIPIO"]))
+            if not s or r["NR_TURNO"] != "1":
+                continue
+            lid = f"{r['NR_ZONA']}-{r['NR_LOCAL_VOTACAO']}"
+            l = locais[s].setdefault(lid, {"id": lid, "nome": r["NM_LOCAL_VOTACAO"].title(), "bairro": r["NM_BAIRRO"].title(),
+                                           "lat": float((r["NR_LATITUDE"] or "0").replace(",", ".")),
+                                           "lng": float((r["NR_LONGITUDE"] or "0").replace(",", ".")), "eleitores": 0})
+            l["eleitores"] += inteiro(r["QT_ELEITOR_SECAO"])
+        # Presidente fica num arquivo nacional à parte (votacao_secao_<ano>_BR.zip), se existir.
+        sec_br = os.path.join(RAIZ, "dados", "_tse", "brutos", f"votacao_secao_{ano}_BR.zip")
+        fontes = [(sec_zip, f"_{uf}.csv")] + ([(sec_br, "_BR.csv")] if os.path.exists(sec_br) else [])
+        for zip_sec, sufixo in fontes:
+            for r in linhas(zip_sec, sufixo):
+                if r["SG_UF"] != uf:
+                    continue
+                s = por_nome.get(norm(r["NM_MUNICIPIO"]))
+                cargo = CARGOS.get(r["CD_CARGO"])
+                if not s or not cargo or r["SQ_CANDIDATO"] in ("", "-1"):
+                    continue
+                por_local[s][f"{cargo}-{r['NR_TURNO']}-{r['SQ_CANDIDATO']}"][f"{r['NR_ZONA']}-{r['NR_LOCAL_VOTACAO']}"] += inteiro(r["QT_VOTOS"])
+        log("votos por local de votação lidos")
+
     for s, por_cargo in cidade_votos.items():
         disputas = []
         for (cargo, turno), votos in sorted(por_cargo.items(), key=lambda x: (list(CARGOS.values()).index(x[0][0]), x[0][1])):
@@ -90,6 +118,15 @@ def main():
         with open(js + ".tmp", "w", encoding="utf-8") as f:
             f.write("window.ELEICAO_GERAL=" + json.dumps(saida, ensure_ascii=False, separators=(",", ":")) + ";\n")
         os.replace(js + ".tmp", js)
+        if locais.get(s):
+            mapa = {"locais": sorted(locais[s].values(), key=lambda l: l["nome"]),
+                    "votos": {k: dict(v) for k, v in por_local[s].items()}}
+            js = os.path.join(RAIZ, "site", s, f"eleicao{ano}_mapa.js")
+            with open(js + ".tmp", "w", encoding="utf-8") as f:
+                f.write("window.ELEICAO_MAPA=" + json.dumps(mapa, ensure_ascii=False, separators=(",", ":")) + ";\n")
+            os.replace(js + ".tmp", js)
+            soma = sum(sum(v.values()) for k, v in por_local[s].items() if k.startswith("presidente-2-"))
+            log(f"{s}: mapa com {len(locais[s])} locais; votos de presidente 2º turno nos locais: {soma}")
         pres = next((d for d in disputas if d["cargo"] == "presidente" and d["turno"] == max(x["turno"] for x in disputas if x["cargo"] == "presidente")), None)
         log(f"{s}: {len(disputas)} disputas" + (f"; presidente {pres['turno']}º turno: " + ", ".join(
             f"{c['urna']} {c['pct']}%" for c in pres["candidatos"][:2]) if pres else ""))
