@@ -1,0 +1,12 @@
+{
+ "_leia": "Votações nominais que posicionam os vereadores nos eixos do Painel ideológico (site/espectro.js). 'favor' diz para qual polo o voto A FAVOR puxa: 'a' (primeiro polo do eixo) ou 'b' (segundo). Votar contra puxa para o polo oposto; abstenção e ausência não contam. Só entram votações em que o sentido do voto é claro pelo texto da matéria. Ficaram de fora votações cujo resultado é explicado pelo alinhamento partidário e não pelo tema (ex.: Moções 671/2025 e 864/2025, ambas sobre a isenção do IR, com placares opostos porque uma homenageia o Congresso e a outra o presidente).",
+ "votacoes": [
+  {"votacao": "1161-133288", "eixo": "costumes", "favor": "b", "nota": "Repúdio ao uso de \"pessoa que gesta\" no lugar de \"mulher grávida\" na Caderneta da Gestante."},
+  {"votacao": "1092-117341", "eixo": "costumes", "favor": "b", "nota": "Repúdio a decreto federal que tirou menção expressa à proteção da vida durante a gestação."},
+  {"votacao": "1062-110523", "eixo": "costumes", "favor": "b", "nota": "Repúdio a espaços de uso seguro de drogas propostos na Assembleia Legislativa."},
+  {"votacao": "1072-112704", "eixo": "costumes", "favor": "b", "nota": "Repúdio à premiação de cartilha federal de redução de danos para quem usa drogas."},
+  {"votacao": "1191-143382", "eixo": "religiao", "favor": "b", "nota": "Repúdio a falas do presidente da República sobre a doutrina e a organização interna da Igreja Católica."},
+  {"votacao": "1107-117712", "eixo": "impostos", "favor": "a", "nota": "Projeto do Executivo da nota fiscal de serviço, que mudou regras do ISS (caso nfse-iss-2025)."},
+  {"votacao": "1072-112780", "eixo": "participacao", "favor": "a", "nota": "Pedido de audiência pública para explicar à população a reforma do Museu Paulo Setúbal."}
+ ]
+}

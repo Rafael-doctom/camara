@@ -106,3 +106,16 @@ A cada execução, o analista grava `dados/historico/AAAA-MM-DD.json` com os ind
 - Pareceres de comissão também são votados: um mesmo projeto pode gerar três ou quatro votações (pareceres + projeto).
 - Número de proposituras mede volume, não qualidade. Requerimento repetido conta várias vezes.
 - O SisCam pode mudar de layout. Se um número zerar de repente, acione o agente `operador-coleta-tatui`.
+
+## Painel ideológico: posição dos políticos nos eixos
+
+O teste (`site/espectro.html`) compara as respostas do visitante com votos reais. A posição de um político num eixo vem só das votações nominais classificadas à mão em `casos/<cidade>/eixos.json`:
+
+- Cada votação classificada tem um eixo e o polo para onde o voto **a favor** puxa. Voto a favor vale +1 para esse polo; voto contra vale +1 para o polo oposto. Abstenção, ausência e "não vota" não contam.
+- A posição no eixo é a média dos votos (de -1 a +1). Entram só os vereadores em exercício.
+- Só entra votação em que o texto da matéria deixa claro o sentido do voto no tema. Votações explicadas pelo alinhamento partidário ficam de fora (exemplo no próprio arquivo).
+- Semelhança com o visitante: média da distância nos eixos em que os dois têm posição, convertida para 0-100%. O destaque mostra primeiro quem tem pelo menos 3 votos em 2 eixos.
+
+Limites: há poucas votações por eixo, e vários eixos ainda não têm nenhuma. Moções de repúdio ou aplauso medem o que o vereador apoia publicamente, não o que fez como legislador. O resultado é uma pista, não um retrato da atuação.
+
+Arquivos: o analista grava `dados/<cidade>/processados/espectro.json` e junta todas as cidades (e `dados/_politicos/*.json`, se houver) em `site/politicos.js`.

@@ -93,6 +93,11 @@
   const MODOS = { curto: { nome: "Curto", n: 3, min: 4 }, completo: { nome: "Completo", n: 5, min: 7 } };
   const CHAVE = "olho-espectro-v2";
 
+  // Políticos com posição nos eixos, tirada de votos reais (site/politicos.js, gerado pelo
+  // agentes/analista.py a partir de casos/<cidade>/eixos.json). Cada eixo: [soma, n], voto = ±1.
+  const POL = window.POLITICOS || { votacoes: [], politicos: [] };
+  const polVal = (p, id) => (p.eixos[id] && p.eixos[id][1] ? p.eixos[id][0] / p.eixos[id][1] : null);
+
   const app = document.getElementById("app");
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const pct = (v) => Math.round(Math.abs(v) * 100);
@@ -126,6 +131,34 @@
       const dist = n ? Math.sqrt(s / n) : 2;
       return { nome, txt, prox: Math.max(0, Math.round((1 - dist / 2) * 100)) };
     }).sort((a, b) => b.prox - a.prox);
+  }
+
+  // Políticos mais parecidos: só os eixos em que você respondeu e o político tem votos classificados.
+  function parecidos(v) {
+    return POL.politicos.map((p) => {
+      let dist = 0, eixosC = 0, votos = 0;
+      EIXOS.forEach((x) => {
+        const pv = polVal(p, x.id);
+        if (v[x.id] === null || pv === null) return;
+        dist += Math.abs(v[x.id] - pv); eixosC++; votos += p.eixos[x.id][1];
+      });
+      return eixosC ? { p, prox: Math.round((1 - dist / eixosC / 2) * 100), eixosC, votos } : null;
+    }).filter(Boolean).sort((a, b) => b.prox - a.prox || b.votos - a.votos);
+  }
+
+  const iniciais = (nome) => nome.split(" ").filter((w) => w.length > 2).slice(0, 2).map((w) => w[0]).join("");
+  const foto = (p, cls) => p.foto
+    ? `<img class="${cls}" src="${esc(p.foto)}" alt="" loading="lazy">`
+    : `<span class="${cls} esp-sem-foto" aria-hidden="true">${esc(iniciais(p.nome))}</span>`;
+  const nomeP = (n) => n.toLowerCase().replace(/(^|\s)\S/g, (c) => c.toUpperCase()).replace(/ (D[aeo]s?|E) /g, (m) => m.toLowerCase());
+
+  function cartaoPol(r) {
+    const p = r.p;
+    return `<a class="cartao esp-pol" href="${esc(p.perfil)}" target="_self">
+      ${foto(p, "esp-pol-foto")}
+      <span class="esp-pol-txt"><b>${esc(nomeP(p.nome))}</b><span>${esc(p.cargo)}${p.partido ? ` · ${esc(p.partido)}` : ""}</span>
+        <span class="suave">${r.votos} ${r.votos === 1 ? "voto" : "votos"} em ${r.eixosC} ${r.eixosC === 1 ? "eixo" : "eixos"}</span></span>
+      <span class="esp-pol-pct">${r.prox}%</span></a>`;
   }
 
   function lado(x, v) {
@@ -170,7 +203,8 @@
       <h2>Perguntas frequentes</h2>
       <div class="esp-faq">
         ${faq("O que é este teste?", "Um questionário com frases do debate público, várias delas sobre a vida na cidade. Para cada frase você diz se concorda ou discorda, e o resultado mostra onde você fica em 8 eixos e quais ideologias mais se parecem com suas respostas.")}
-        ${faq("Ele diz em quem votar?", "Não. O teste não compara você com vereadores nem com partidos. Para ver como os vereadores de fato votaram, use o quiz de votações reais do site.")}
+        ${faq("Ele mostra com quais políticos eu pareço?", "Sim, com base em votos reais. Algumas votações nominais da Câmara foram classificadas por eixo (por exemplo, uma moção sobre drogas conta em Costumes). Suas respostas são comparadas com esses votos, e o resultado mostra as fotos dos políticos mais parecidos. Ainda são poucas votações por eixo, e nem todo eixo tem votações.")}
+        ${faq("Ele diz em quem votar?", "Não. Ele mostra semelhanças em alguns temas, não a atuação inteira de ninguém. Para ver tudo o que cada vereador fez, abra o perfil dele.")}
         ${faq("Minhas respostas são guardadas?", "Só no seu aparelho, para você poder voltar ao resultado. Nada é enviado para servidor nenhum.")}
         ${faq("O resultado é científico?", "É uma simplificação. As posições das ideologias são aproximações didáticas e dois ou oito eixos não resumem tudo o que uma pessoa pensa. Use como ponto de partida para conversar, não como rótulo.")}
       </div>`;
@@ -214,7 +248,35 @@
         <h2>As cinco frases do eixo ${x.nome}</h2>
         <ol>${x.frases.map(([d, t], i) => `<li><p>${esc(t)}</p><span>Concordar puxa para ${d > 0 ? x.b.toLowerCase() : x.a.toLowerCase()}.${i < 3 ? " Também está no teste curto." : ""}</span></li>`).join("")}</ol>
       </section>
+      ${politicosNoEixo(x, v)}
       <h2>Outros eixos</h2>${gradeEixos()}`;
+  }
+
+  // Régua com a foto de cada político na posição que os votos dele indicam, e as votações usadas.
+  function politicosNoEixo(x, voce) {
+    const vot = POL.votacoes.filter((t) => t.eixo === x.id);
+    const pols = POL.politicos.map((p) => ({ p, v: polVal(p, x.id) })).filter((r) => r.v !== null).sort((a, b) => a.v - b.v);
+    if (!pols.length) return `<section class="cartao esp-pols-eixo"><h2>Políticos neste eixo</h2>
+      <p class="suave">Ainda não há votações classificadas neste eixo. Um político só aparece aqui quando votou em matérias que medem este tema.</p></section>`;
+    const grupos = {};
+    pols.forEach((r) => (grupos[r.v.toFixed(2)] ||= []).push(r));
+    // Até 4 fotos por posição; o resto vira "+N" (a lista abaixo mostra todos). Nas pontas, o grupo
+    // cresce para dentro da régua.
+    const marcas = Object.values(grupos).map((g) => {
+      const v = g[0].v, ponta = v > 0.6 ? " esp-regua-dir" : v < -0.6 ? " esp-regua-esq" : "";
+      return `<span class="esp-regua-grupo${ponta}" style="left:${50 + v * 50}%">
+        ${g.slice(0, 4).map((r) => `<a href="${esc(r.p.perfil)}" target="_self" title="${esc(nomeP(r.p.nome))}: ${esc(lado(x, r.v))}">${foto(r.p, "esp-regua-foto")}</a>`).join("")}${g.length > 4 ? `<span class="esp-regua-foto esp-regua-mais" title="${g.slice(4).map((r) => esc(nomeP(r.p.nome))).join(", ")}">+${g.length - 4}</span>` : ""}</span>`;
+    }).join("");
+    return `<section class="cartao esp-pols-eixo" style="--cor:${x.cor}">
+      <h2>Políticos neste eixo</h2>
+      <p class="suave">Posição de cada vereador pelos votos em ${vot.length} ${vot.length === 1 ? "votação" : "votações"} sobre o tema. Votar a favor ou contra puxa para um dos polos; abstenção e falta não contam.</p>
+      <div class="esp-regua">${marcas}${voce !== null && voce !== undefined ? `<span class="esp-regua-voce" style="left:${50 + voce * 50}%">Você</span>` : ""}</div>
+      <p class="esp-pontas"><span>${x.a}</span><span>${x.b}</span></p>
+      <ul class="esp-pols-lista">${pols.slice().reverse().map((r) => `<li><a href="${esc(r.p.perfil)}" target="_self">${foto(r.p, "esp-mini-foto")}<b>${esc(nomeP(r.p.nome))}</b></a><span>${esc(r.p.partido || "")}</span><span>${esc(lado(x, r.v))}</span><span class="suave">${r.p.eixos[x.id][1]} votos</span></li>`).join("")}</ul>
+      <h3>Votações usadas</h3>
+      <ol class="esp-vots">${vot.map((t) => `<li><a href="${esc(t.cidade)}/index.html#votacao/${esc(t.id)}" target="_self"><b>${esc(t.m)}</b></a> · ${esc(t.d.split("-").reverse().join("/"))} · ${esc(t.r)} (${t.n.favor || 0} a ${t.n.contra || 0})
+        <p>${esc(t.nota)}</p><span class="suave">Votar a favor puxa para ${t.favor === "b" ? esc(x.b.toLowerCase()) : esc(x.a.toLowerCase())}.</span></li>`).join("")}</ol>
+    </section>`;
   }
 
   function ideologias() {
@@ -305,6 +367,7 @@
         <div class="cartao"><h3>Também perto de você</h3><ol class="esp-top">${rk.slice(1, 4).map((r) => `<li><b>${r.nome}</b><span>${r.prox}%</span><p>${r.txt}</p></li>`).join("")}</ol>
           <p><a href="#ideologias" target="_self">Ver todas as ideologias →</a></p></div>
       </div>
+      ${blocoParecidos(v)}
       <h2>Sua posição nos 8 eixos</h2>
       <div class="esp-barras">${EIXOS.map((x) => {
         const val = v[x.id];
@@ -318,8 +381,21 @@
         <a class="botao" href="index.html#quiz" target="_self">Com qual vereador você vota igual? →</a>
         <button type="button" id="esp-refazer">Refazer o teste</button>
       </div>
-      <p class="aviso">Ideologia declarada é diferente de voto registrado. Este resultado não diz em quem votar. Para comparar suas opiniões com o que cada vereador de fato votou, use o quiz de votações reais.</p>`;
+      <p class="aviso">A comparação com políticos usa poucas votações por eixo e não resume a atuação de ninguém. Este resultado não diz em quem votar. Para comparar votação por votação, use o quiz de votações reais.</p>`;
     app.querySelector("#esp-refazer").addEventListener("click", () => { est.resp = {}; salvar(); location.hash = "#comecar"; });
+  }
+
+  function blocoParecidos(v) {
+    // Destaque só para quem tem base mínima (3 votos em 2 eixos); os demais ficam em "Ver todos".
+    const todos = parecidos(v), base = (r) => r.votos >= 3 && r.eixosC >= 2;
+    const rk = [...todos.filter(base), ...todos.filter((r) => !base(r))];
+    if (!rk.length) return "";
+    const eixosComVotos = EIXOS.filter((x) => POL.votacoes.some((t) => t.eixo === x.id)).map((x) => x.nome);
+    return `<h2>Políticos que votaram parecido com você</h2>
+      <p class="suave">Comparação das suas respostas com votos reais, em ${eixosComVotos.join(", ")}. Nos outros eixos ainda não há votações classificadas. Toque num nome para ver o perfil e todos os votos.</p>
+      <div class="esp-pols">${rk.slice(0, 6).map(cartaoPol).join("")}</div>
+      ${rk.length > 6 ? `<details class="esp-mais-pols"><summary>Ver todos (${rk.length})</summary><div class="esp-pols">${rk.slice(6).map(cartaoPol).join("")}</div></details>` : ""}
+      <p class="suave">Poucas votações por eixo: trate a porcentagem como pista, não como veredito. <a href="#eixos" target="_self">Ver as votações de cada eixo →</a></p>`;
   }
 
   // ---------------------------------------------------------------- rotas

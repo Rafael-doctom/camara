@@ -261,6 +261,53 @@ def gravar_entrada(estaticos):
     return len(cartoes)
 
 
+def espectro_cidade(lista_vot, saida_ver):
+    """Posição dos vereadores em exercício nos eixos do Painel ideológico, só a partir das votações
+    curadas em casos/<cidade>/eixos.json. Por eixo: [soma, n], onde cada voto vale +1 (puxa para o
+    polo b) ou -1 (polo a). Grava dados/<cidade>/processados/espectro.json."""
+    curadas = ler_arquivo_json(os.path.join(CASOS, "eixos.json"), {}).get("votacoes", [])
+    por_id = {v["id"]: v for v in lista_vot}
+    votacoes, pos = [], defaultdict(lambda: defaultdict(lambda: [0, 0]))
+    for c in curadas:
+        v = por_id.get(c["votacao"])
+        if not v or not v["v"]:
+            log(AGENTE, f"AVISO: eixos.json cita a votação {c['votacao']}, que não está na lista com nomes")
+            continue
+        sinal = 1 if c["favor"] == "b" else -1
+        for opc, peso in (("favor", sinal), ("contra", -sinal)):
+            for k in v["v"].get(opc, []):
+                pos[k][c["eixo"]][0] += peso
+                pos[k][c["eixo"]][1] += 1
+        votacoes.append({"id": v["id"], "cidade": SLUG_CIDADE, "eixo": c["eixo"], "favor": c["favor"],
+                         "nota": c.get("nota", ""), "m": v["m"], "d": v["d"], "r": v["r"], "n": v["n"]})
+    politicos = []
+    for ver in saida_ver:
+        if not ver["em_exercicio"] or ver["chave"] not in pos:
+            continue
+        politicos.append({"chave": ver["chave"], "nome": ver["nome"], "partido": ver.get("partido", ""),
+                          "cargo": f"Vereador(a) de {CIDADE['nome']}", "cidade": SLUG_CIDADE,
+                          "foto": f"{SLUG_CIDADE}/{ver['foto']}" if ver.get("foto") else "",
+                          "perfil": f"{SLUG_CIDADE}/index.html#vereador/{ver['chave'].replace(' ', '%20')}",
+                          "eixos": {e: sn for e, sn in pos[ver["chave"]].items()}})
+    salvar_json("espectro.json", {"cidade": CIDADE["nome"], "votacoes": votacoes, "politicos": politicos})
+    return len(votacoes), len(politicos)
+
+
+def gravar_politicos():
+    """site/politicos.js: junta o espectro.json de todas as cidades para o Painel ideológico.
+    Outras fontes (ex.: deputados) entram pelo mesmo formato em dados/_politicos/*.json."""
+    votacoes, politicos = [], []
+    arquivos = [os.path.join(RAIZ, "dados", s, "processados", "espectro.json") for s in listar_cidades()]
+    arquivos += sorted(glob.glob(os.path.join(RAIZ, "dados", "_politicos", "*.json")))
+    for arq in arquivos:
+        dados = ler_arquivo_json(arq, {})
+        votacoes += dados.get("votacoes", [])
+        politicos += dados.get("politicos", [])
+    gravar(os.path.join(SITE_RAIZ, "politicos.js"),
+           "window.POLITICOS=" + json.dumps({"votacoes": votacoes, "politicos": politicos},
+                                            ensure_ascii=False, separators=(",", ":")) + ";\n")
+
+
 def pagina_vereador(v, geral):
     """HTML estático com título, descrição e Open Graph próprios; abre o perfil no SPA."""
     e = lambda s: html.escape(str(s), quote=True)
@@ -748,6 +795,8 @@ def main():
 
     salvar_json("indicadores.json", {k: base[k] for k in ("geral", "vereadores", "afinidade", "casos", "apelidos")})
     n_cidades = gravar_entrada(estaticos)
+    n_eixo_vot, n_eixo_pol = espectro_cidade(lista_vot, saida_ver)
+    gravar_politicos()
     gravar_historico(saida_ver, geral)
 
     # --- avisos visíveis no log
@@ -760,7 +809,7 @@ def main():
         log(AGENTE, f"AVISO: nomes sem perfil (conferir casos/apelidos.json): {dict(desconhecidos.most_common(15))}")
     log(AGENTE, f"OK: {len(saida_ver)} vereadores ({em_ex} em exercício), {len(lista_props)} proposituras, "
                 f"{total_votacoes} votações ({divididas} divididas, {len(lista_vot)} listadas no site), "
-                f"{paginas} páginas de vereador, entrada com {n_cidades} cidade(s); historico.js com {len(vot_hist)} votações "
+                f"{paginas} páginas de vereador, entrada com {n_cidades} cidade(s), painel ideológico com {n_eixo_pol} vereadores em {n_eixo_vot} votações; historico.js com {len(vot_hist)} votações "
                 f"({len(arq_hist.encode('utf-8')) // 1024} KB)")
 
 

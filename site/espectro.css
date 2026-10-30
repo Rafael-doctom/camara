@@ -6,6 +6,7 @@
 .esp-nav .botao { min-height: 40px; padding: 6px 16px; margin-left: 6px; }
 .esp-voltar { font-size: .82rem !important; color: var(--suave) !important; }
 @media (max-width: 760px) { .esp-nav a:not(.botao):not(.esp-voltar) { display: none; } }
+@media (max-width: 480px) { .esp-nav a.esp-voltar, .topo .marca small { display: none; } .esp-nav .botao { margin-left: 0; white-space: nowrap; } }
 
 .esp-rot { font-family: var(--f-mono); font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--acento); margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
 .esp-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--cor, var(--acento-2)); margin-right: 8px; vertical-align: middle; }
@@ -129,3 +130,41 @@ html[data-tema="escuro"] .esp-mapa .q3 { fill: #1f2620; } html[data-tema="escuro
 .esp-trilho::after { content: ""; position: absolute; left: 50%; top: -4px; bottom: -4px; width: 1px; background: var(--suave); }
 .esp-marca { position: absolute; top: 50%; width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 50%; background: var(--cor); border: 3px solid var(--cartao); box-shadow: var(--sombra); z-index: 1; }
 .esp-pontas { display: flex; justify-content: space-between; font-size: .76rem; color: var(--suave); margin-top: 6px; }
+
+/* ---- políticos parecidos (resultado) e régua de fotos (página do eixo) ---- */
+.esp-pols { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; margin: 12px 0; }
+.esp-pol { display: flex; align-items: center; gap: 12px; padding: 12px 14px; color: inherit; text-decoration: none; }
+.esp-pol:hover { border-color: var(--texto); }
+.esp-pol-foto { width: 56px; height: 56px; flex: none; border-radius: 50%; object-fit: cover; object-position: top; background: var(--fundo-2); }
+.esp-pol-txt { display: flex; flex-direction: column; gap: 1px; min-width: 0; font-size: .85rem; }
+.esp-pol-txt b { font-size: .98rem; }
+.esp-pol-pct { margin-left: auto; font-family: var(--f-serif); font-size: 1.5rem; font-weight: 600; }
+.esp-sem-foto { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: var(--suave); }
+.esp-mais-pols summary { cursor: pointer; font-weight: 600; margin: 4px 0; }
+
+.esp-pols-eixo { margin: 24px 0; }
+.esp-regua { position: relative; height: 64px; margin: 28px 22px 0; border-radius: 999px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--cor) 22%, var(--fundo-2)), var(--fundo-2) 50%, color-mix(in srgb, var(--cor) 22%, var(--fundo-2))); }
+.esp-regua::after { content: ""; position: absolute; left: 50%; top: 6px; bottom: 6px; width: 1px; background: var(--suave); }
+.esp-regua-grupo { position: absolute; top: 50%; transform: translate(-50%, -50%); display: flex; width: max-content; z-index: 1; }
+.esp-regua-grupo > * + * { margin-left: -14px; }
+.esp-regua-dir { transform: translate(calc(-100% + 20px), -50%); }
+.esp-regua-esq { transform: translate(-20px, -50%); }
+.esp-regua-mais { display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: .78rem; color: var(--texto); background: var(--fundo-2); }
+.esp-regua-grupo a:hover { z-index: 2; position: relative; transform: scale(1.15); }
+.esp-regua-foto { display: block; width: 40px; height: 40px; border-radius: 50%; object-fit: cover; object-position: top; border: 2px solid var(--cartao); background: var(--fundo-2); font-size: .7rem; }
+.esp-regua-voce { position: absolute; top: -26px; transform: translateX(-50%); font-size: .72rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--texto); color: var(--fundo); z-index: 3; }
+.esp-regua-voce::after { content: ""; position: absolute; left: 50%; top: 100%; width: 2px; height: 58px; margin-left: -1px; background: var(--texto); }
+.esp-pols-eixo .esp-pontas { margin: 6px 22px 0; }
+.esp-pols-lista { list-style: none; padding: 0; margin: 18px 0; display: grid; gap: 6px; }
+.esp-pols-lista li { display: grid; grid-template-columns: minmax(0, 2fr) 1fr 1.4fr auto; align-items: center; gap: 10px; font-size: .88rem; padding: 4px 0; border-bottom: 1px solid var(--linha); }
+.esp-pols-lista a { display: flex; align-items: center; gap: 8px; color: inherit; text-decoration: none; min-width: 0; }
+.esp-mini-foto { width: 30px; height: 30px; flex: none; border-radius: 50%; object-fit: cover; object-position: top; font-size: .6rem; background: var(--fundo-2); }
+.esp-vots { padding-left: 20px; display: grid; gap: 10px; font-size: .9rem; }
+.esp-vots p { margin: 2px 0; }
+@media (max-width: 600px) {
+  .esp-pols-lista li { grid-template-columns: minmax(0, 1fr) auto; }
+  .esp-pols-lista li > span:nth-child(2), .esp-pols-lista li > span:nth-child(4) { display: none; }
+  .esp-regua { margin: 28px 16px 0; }
+  .esp-regua-foto { width: 32px; height: 32px; }
+}
