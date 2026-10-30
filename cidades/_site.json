@@ -1,5 +1,11 @@
 {
  "nome": "Olho na Câmara",
  "url_base": "https://rafaelpintodasilva.com/camara",
- "ordem": ["tatui", "itapetininga", "cerquilho", "ipero"]
+ "ordem": [
+  "tatui",
+  "itapetininga",
+  "cerquilho",
+  "ipero",
+  "cesario-lange"
+ ]
 }

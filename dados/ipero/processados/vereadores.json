@@ -1,0 +1,284 @@
+{
+ "em_exercicio": [
+  {
+   "id": 12,
+   "nome": "Alysson Alessandro de Barros",
+   "nome_civil": "Alysson Alessandro de Barros",
+   "partido": "PODEMOS",
+   "email": "ver.alysson@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 13,
+   "nome": "Anderson Fernando Marques de Almeida",
+   "nome_civil": "Anderson Fernando Marques de Almeida",
+   "partido": "MDB",
+   "email": "ver.anderson@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 31,
+   "nome": "Angelo Valario Sobrinho",
+   "nome_civil": "Angelo Valario Sobrinho",
+   "partido": "PODEMOS",
+   "email": "ver.nenaovalario@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 14,
+   "nome": "Cleyton dos Santos Batista de Jesus",
+   "nome_civil": "Cleyton dos Santos Batista de Jesus",
+   "partido": "CIDADANIA",
+   "email": "ver.cleyton@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 15,
+   "nome": "Josimar Aparecido Ferreira",
+   "nome_civil": "Josimar Aparecido Ferreira",
+   "partido": "PSB",
+   "email": "ver.joca@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 16,
+   "nome": "Luis Rodrigues Moreira",
+   "nome_civil": "Luis Rodrigues Moreira",
+   "partido": "PSD",
+   "email": "ver.ninodan@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 17,
+   "nome": "Maria Goreti Gomes",
+   "nome_civil": "Maria Goreti Gomes",
+   "partido": "PSD",
+   "email": "ver.goreti@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 18,
+   "nome": "Sebastião Francisco Correia",
+   "nome_civil": "Sebastião Francisco Correia",
+   "partido": "PODEMOS",
+   "email": "ver.sebastiao@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 19,
+   "nome": "Sérgio Poli Simon",
+   "nome_civil": "Sérgio Poli Simon",
+   "partido": "PSD",
+   "email": "ver.sergiopoli@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 20,
+   "nome": "Valéria Regina Matheus de Souza",
+   "nome_civil": "Valéria Regina Matheus de Souza",
+   "partido": "REPUBLICAN",
+   "email": "ver.valeria@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 21,
+   "nome": "Valter Rodrigues Vieira",
+   "nome_civil": "Valter Rodrigues Vieira",
+   "partido": "PSD",
+   "email": "ver.valtinho@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 22,
+   "nome": "Vinicius Antonio de Paula Moraga Ramos",
+   "nome_civil": "Vinicius Antonio de Paula Moraga Ramos",
+   "partido": "PSB",
+   "email": "ver.bobmoraga@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  },
+  {
+   "id": 23,
+   "nome": "Waldir Luiz Paula Leite",
+   "nome_civil": "Waldir Luiz Paula Leite",
+   "partido": "REPUBLICAN",
+   "email": "ver.waldir@camaraipero.sp.gov.br",
+   "em_exercicio": true
+  }
+ ],
+ "legislatura": [
+  {
+   "id": 12,
+   "nome": "Alysson Alessandro de Barros",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "PODEMOS",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 13,
+   "nome": "Anderson Fernando Marques de Almeida",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "MDB",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 31,
+   "nome": "Angelo Valario Sobrinho",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "PODEMOS",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 14,
+   "nome": "Cleyton dos Santos Batista de Jesus",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "CIDADANIA",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 15,
+   "nome": "Josimar Aparecido Ferreira",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "PSD",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 16,
+   "nome": "Luis Rodrigues Moreira",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "PSD",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 17,
+   "nome": "Maria Goreti Gomes",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "PSD",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 18,
+   "nome": "Sebastião Francisco Correia",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "PODEMOS",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 19,
+   "nome": "Sérgio Poli Simon",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "PSD",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 20,
+   "nome": "Valéria Regina Matheus de Souza",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "REPUBLICAN",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 21,
+   "nome": "Valter Rodrigues Vieira",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "PSD",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 22,
+   "nome": "Vinicius Antonio de Paula Moraga Ramos",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "PSB",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 23,
+   "nome": "Waldir Luiz Paula Leite",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "REPUBLICAN",
+   "votos": null,
+   "cargo": "Titular"
+  },
+  {
+   "id": 24,
+   "nome": "Willians Fagundes",
+   "inicio": "2025-01-01",
+   "fim": "2028-12-31",
+   "partido": "PODEMOS",
+   "votos": null,
+   "cargo": "Titular"
+  }
+ ],
+ "autores": {
+  "ALYSSON ALESSANDRO DE BARROS": 12,
+  "ANDERSON FERNANDO MARQUES DE ALMEIDA": 13,
+  "ANGELO VALARIO SOBRINHO": 31,
+  "CLEYTON DOS SANTOS BATISTA DE JESUS": 14,
+  "JOSIMAR APARECIDO FERREIRA": 15,
+  "LUIS RODRIGUES MOREIRA": 16,
+  "MARIA GORETI GOMES": 17,
+  "SEBASTIAO FRANCISCO CORREIA": 18,
+  "SERGIO POLI SIMON": 19,
+  "VALERIA REGINA MATHEUS DE SOUZA": 20,
+  "VALTER RODRIGUES VIEIRA": 21,
+  "VINICIUS ANTONIO DE PAULA MORAGA RAMOS": 22,
+  "WALDIR LUIZ PAULA LEITE": 23,
+  "ADRIANO BALBINO EVARISTO": 77,
+  "AURILIO REGINALDO DOS SANTOS": 79,
+  "BENILDO SANTOS RIBEIRO": 80,
+  "EDVANI DE FATIMA AZEVEDO": 81,
+  "ELI TELES JUNIOR": 82,
+  "ELIANA SOUZA DA SILVA": 83,
+  "FABIANO CARDOSO BOA SORTE": 84,
+  "FABIO AUGUSTO DE CAMPOS": 85,
+  "FRANCISCO ANTONIO COUTINHO": 86,
+  "IVANIA APARECIDA RICEZI CALIXTO": 87,
+  "IVO PAULO LEITE": 88,
+  "JOAO ANTONIO DOMINGUES DOS SANTOS": 89,
+  "JOEL FRANCISCO DE ALMEIDA": 90,
+  "JOSE ALBERTO LIMA": 91,
+  "JOSE AMILTON DE CAMARGO": 92,
+  "LEONARDO ROBERTO FOLIM": 93,
+  "LUCIO GONCALVES DA SILVA FILHO": 94,
+  "LUIS FERNANDO PAULA LEITE": 95,
+  "LUIZ ALBERTO ANTUNES POPST": 96,
+  "MONICA APARECIDA DOMINGUES": 97,
+  "SERGIO ANTONIO NERY": 98,
+  "VALDO MANOEL GOMES": 99,
+  "WILLIANS FAGUNDES": 24,
+  "COMISSAO DE EDUCACAO, SAUDE, ASSISTENCIA SOCIAL E MEIO AMBIENTE - 2025-2026": 28,
+  "COMISSAO DE FINANCAS E ORCAMENTO - 2025-2026": 27,
+  "COMISSAO DE JUSTICA E REDACAO - 2025-2026": 26,
+  "COMISSAO DE OBRAS E SERVICOS PUBLICOS - 2025-2026": 29,
+  "COMISSAO DE FINANCAS E ORCAMENTO": 1607,
+  "COMISSAO DE JUSTICA E REDACAO": 1608,
+  "COMISSAO DE OBRAS, SERVICOS PUBLICOS E OUTRAS ATIVIDADES": 1609,
+  "COMISSAO EDUCACAO, SAUDE, ASSISTENCIA SOCIAL E MEIO AMBIENTE, ESPORTE, TURISMO E COMUNICACAO": 1610,
+  "MESA DIRETORA": 100,
+  "MESA DIRETORA 2025/2026": 25
+ }
+}

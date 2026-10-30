@@ -44,6 +44,9 @@ def main():
     etapas = []
     for s in slugs:
         cidade = carregar_cidade(s)
+        if not cidade.get("siscam"):  # Câmara sem SisCam (ex.: Cesário Lange): só dados do TSE
+            log("orquestrador", f"{s}: sem SisCam configurado; coleta da Câmara pulada")
+            continue
         if "--so-site" in sys.argv:
             da_cidade = [("analista.py", [])]
         else:

@@ -1,0 +1,397 @@
+{
+ "data": "2026-10-30",
+ "gerado_em": "2026-10-30T09:09+00:00",
+ "geral": {
+  "total_proposituras": 1364,
+  "por_tipo": {
+   "Indicação": 492,
+   "Parecer das Comissões": 153,
+   "Parecer Jurídico": 150,
+   "Resposta": 117,
+   "Projeto de Lei": 116,
+   "Moção": 107,
+   "Requerimento": 87,
+   "Parecer Contábil": 41,
+   "Parecer": 36,
+   "Projeto de Decreto Legislativo": 33,
+   "Projeto de Lei Complementar": 17,
+   "Projeto de Resolução": 13,
+   "Proposta de Emenda à Lei Orgânica": 2
+  },
+  "total_sessoes": 72,
+  "total_votacoes": 677,
+  "votacoes_divididas": 18
+ },
+ "vereadores": {
+  "ANTONIO CARLOS LEITE RIBEIRO": {
+   "nome": "ANTÔNIO CARLOS LEITE RIBEIRO",
+   "em_exercicio": true,
+   "proposituras": 96,
+   "por_tipo": {
+    "Indicação": 30,
+    "Moção": 50,
+    "Requerimento": 7,
+    "Projeto de Lei": 6,
+    "Projeto de Resolução": 1,
+    "Projeto de Lei Complementar": 1,
+    "Resposta": 1
+   },
+   "presenca": {
+    "presente": 63,
+    "ausente": 4,
+    "pct": 94.0
+   },
+   "pl_total": 6,
+   "pl_aprovados": 5,
+   "votos": {
+    "favor": 461,
+    "ausente": 32,
+    "contra": 6,
+    "nao_vota": 24
+   },
+   "alinhamento_maioria": 76.5,
+   "divididas_total": 17
+  },
+  "CLEITON DA LUZ SCUDELER": {
+   "nome": "CLEITON DA LUZ SCUDELER",
+   "em_exercicio": true,
+   "proposituras": 216,
+   "por_tipo": {
+    "Indicação": 96,
+    "Moção": 77,
+    "Requerimento": 18,
+    "Projeto de Lei": 18,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Resolução": 2,
+    "Proposta de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 65,
+    "ausente": 2,
+    "pct": 97.0
+   },
+   "pl_total": 18,
+   "pl_aprovados": 15,
+   "votos": {
+    "favor": 506,
+    "ausente": 12,
+    "contra": 5
+   },
+   "alinhamento_maioria": 94.1,
+   "divididas_total": 17
+  },
+  "CLEUZA DA SILVA BELINO": {
+   "nome": "Cleuza da Silva Belino",
+   "em_exercicio": true,
+   "proposituras": 118,
+   "por_tipo": {
+    "Indicação": 52,
+    "Moção": 51,
+    "Projeto de Lei": 8,
+    "Projeto de Resolução": 2,
+    "Requerimento": 3,
+    "Projeto de Decreto Legislativo": 2
+   },
+   "presenca": {
+    "presente": 66,
+    "ausente": 1,
+    "pct": 98.5
+   },
+   "pl_total": 8,
+   "pl_aprovados": 7,
+   "votos": {
+    "favor": 514,
+    "contra": 5,
+    "ausente": 4
+   },
+   "alinhamento_maioria": 83.3,
+   "divididas_total": 18
+  },
+  "DANILO PERIM TEIXEIRA POSSES": {
+   "nome": "DANILO PERIM TEIXEIRA POSSES",
+   "em_exercicio": true,
+   "proposituras": 145,
+   "por_tipo": {
+    "Indicação": 58,
+    "Moção": 54,
+    "Requerimento": 6,
+    "Projeto de Lei": 21,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Resolução": 1,
+    "Proposta de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 65,
+    "ausente": 2,
+    "pct": 97.0
+   },
+   "pl_total": 21,
+   "pl_aprovados": 18,
+   "votos": {
+    "favor": 500,
+    "ausente": 17,
+    "contra": 6
+   },
+   "alinhamento_maioria": 77.8,
+   "divididas_total": 18
+  },
+  "DE SANTOS/JOSE ARAUJO DOS SANTOS": {
+   "nome": "Dé Santos/JOSÉ ARAÚJO DOS SANTOS",
+   "em_exercicio": true,
+   "proposituras": 104,
+   "por_tipo": {
+    "Indicação": 41,
+    "Moção": 46,
+    "Projeto de Lei": 9,
+    "Projeto de Decreto Legislativo": 1,
+    "Projeto de Resolução": 2,
+    "Requerimento": 4,
+    "Proposta de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 67,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 9,
+   "pl_aprovados": 7,
+   "votos": {
+    "favor": 517,
+    "ausente": 1,
+    "contra": 5
+   },
+   "alinhamento_maioria": 94.4,
+   "divididas_total": 18
+  },
+  "EDILENE BELLUCCI": {
+   "nome": "EDILENE BELLUCCI",
+   "em_exercicio": true,
+   "proposituras": 122,
+   "por_tipo": {
+    "Indicação": 42,
+    "Moção": 50,
+    "Projeto de Lei": 14,
+    "Requerimento": 3,
+    "Projeto de Decreto Legislativo": 2,
+    "Projeto de Resolução": 10,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 66,
+    "ausente": 1,
+    "pct": 98.5
+   },
+   "pl_total": 14,
+   "pl_aprovados": 12,
+   "votos": {
+    "nao_vota": 498,
+    "ausente": 24,
+    "favor": 1
+   },
+   "alinhamento_maioria": null,
+   "divididas_total": 0
+  },
+  "FELIPE CESAR APARECIDO DE PAULA": {
+   "nome": "FELIPE CESAR APARECIDO DE PAULA",
+   "em_exercicio": true,
+   "proposituras": 176,
+   "por_tipo": {
+    "Indicação": 97,
+    "Moção": 56,
+    "Projeto de Lei": 11,
+    "Requerimento": 6,
+    "Projeto de Resolução": 2,
+    "Projeto de Decreto Legislativo": 3,
+    "Proposta de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 67,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 11,
+   "pl_aprovados": 10,
+   "votos": {
+    "favor": 517,
+    "ausente": 1,
+    "contra": 5
+   },
+   "alinhamento_maioria": 83.3,
+   "divididas_total": 18
+  },
+  "MAURO ANDRE FRARE": {
+   "nome": "MAURO ANDRÉ FRARE",
+   "em_exercicio": true,
+   "proposituras": 121,
+   "por_tipo": {
+    "Indicação": 46,
+    "Moção": 49,
+    "Requerimento": 7,
+    "Projeto de Lei": 14,
+    "Projeto de Resolução": 1,
+    "Projeto de Decreto Legislativo": 3,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 63,
+    "ausente": 4,
+    "pct": 94.0
+   },
+   "pl_total": 14,
+   "pl_aprovados": 11,
+   "votos": {
+    "favor": 477,
+    "ausente": 40,
+    "contra": 6
+   },
+   "alinhamento_maioria": 76.5,
+   "divididas_total": 17
+  },
+  "SIMONE FEHER BELLUCCI": {
+   "nome": "SIMONE FEHER BELLUCCI",
+   "em_exercicio": true,
+   "proposituras": 163,
+   "por_tipo": {
+    "Indicação": 72,
+    "Moção": 54,
+    "Projeto de Lei": 15,
+    "Requerimento": 15,
+    "Projeto de Resolução": 1,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Lei Complementar": 1,
+    "Proposta de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 66,
+    "ausente": 1,
+    "pct": 98.5
+   },
+   "pl_total": 15,
+   "pl_aprovados": 14,
+   "votos": {
+    "favor": 508,
+    "ausente": 5,
+    "contra": 9,
+    "abstencao": 1
+   },
+   "alinhamento_maioria": 72.2,
+   "divididas_total": 18
+  },
+  "SILVIO SANTOS MELLO": {
+   "nome": "SÍLVIO SANTOS MELLO",
+   "em_exercicio": true,
+   "proposituras": 136,
+   "por_tipo": {
+    "Indicação": 57,
+    "Moção": 51,
+    "Projeto de Lei": 11,
+    "Projeto de Resolução": 10,
+    "Resposta": 1,
+    "Requerimento": 3,
+    "Projeto de Decreto Legislativo": 1,
+    "Projeto de Lei Complementar": 1,
+    "Proposta de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 67,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 11,
+   "pl_aprovados": 9,
+   "votos": {
+    "favor": 517,
+    "ausente": 1,
+    "contra": 5
+   },
+   "alinhamento_maioria": 94.4,
+   "divididas_total": 18
+  },
+  "THAMIRES ANCHIETA DA SILVA": {
+   "nome": "THAMIRES ANCHIETA DA SILVA",
+   "em_exercicio": true,
+   "proposituras": 174,
+   "por_tipo": {
+    "Indicação": 75,
+    "Moção": 53,
+    "Requerimento": 25,
+    "Projeto de Lei": 15,
+    "Projeto de Resolução": 3,
+    "Projeto de Decreto Legislativo": 2,
+    "Proposta de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 66,
+    "ausente": 1,
+    "pct": 98.5
+   },
+   "pl_total": 15,
+   "pl_aprovados": 12,
+   "votos": {
+    "favor": 506,
+    "ausente": 8,
+    "contra": 9
+   },
+   "alinhamento_maioria": 83.3,
+   "divididas_total": 18
+  },
+  "VITOR AUGUSTO MAZZUCATTO": {
+   "nome": "VITOR AUGUSTO MAZZUCATTO",
+   "em_exercicio": true,
+   "proposituras": 307,
+   "por_tipo": {
+    "Indicação": 160,
+    "Moção": 75,
+    "Requerimento": 30,
+    "Projeto de Lei": 23,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Resolução": 11,
+    "Projeto de Lei Complementar": 2,
+    "Resposta": 1,
+    "Proposta de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 66,
+    "ausente": 1,
+    "pct": 98.5
+   },
+   "pl_total": 23,
+   "pl_aprovados": 19,
+   "votos": {
+    "favor": 508,
+    "ausente": 7,
+    "contra": 8
+   },
+   "alinhamento_maioria": 77.8,
+   "divididas_total": 18
+  },
+  "VINICIOS ALEXANDRE MORAS/PROFESSOR VINICIOS MORAS": {
+   "nome": "Vinícios Alexandre Morás/Professor Vinícios Morás",
+   "em_exercicio": true,
+   "proposituras": 117,
+   "por_tipo": {
+    "Indicação": 41,
+    "Moção": 45,
+    "Projeto de Lei": 16,
+    "Requerimento": 9,
+    "Projeto de Resolução": 1,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 62,
+    "ausente": 5,
+    "pct": 92.5
+   },
+   "pl_total": 16,
+   "pl_aprovados": 12,
+   "votos": {
+    "favor": 477,
+    "ausente": 38,
+    "contra": 8
+   },
+   "alinhamento_maioria": 61.1,
+   "divididas_total": 18
+  }
+ }
+}

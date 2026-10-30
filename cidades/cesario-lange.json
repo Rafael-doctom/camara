@@ -1,0 +1,14 @@
+{
+ "slug": "cesario-lange",
+ "nome": "Cesário Lange",
+ "camara": "Câmara Municipal de Cesário Lange",
+ "site_camara": "",
+ "siscam": null,
+ "_siscam": "Cesário Lange não usa SisCam (cesariolange.siscam.com.br não existe). Sem siscam, o orquestrador pula a coleta da Câmara e a cidade entra só com os dados do TSE (eleição).",
+ "cadeiras": 11,
+ "legislatura_atual": {"id": null, "nome": "", "inicio": "2025-01-01", "fim": "2028-12-31"},
+ "legislaturas_anteriores": [],
+ "coletar_anteriores": false,
+ "tipos_documento": {},
+ "links": []
+}
