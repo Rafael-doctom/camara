@@ -120,7 +120,13 @@ html[data-tema="escuro"] .rodape.ft2 { background: #0f0e0d; }
 .volta-topo { position: fixed; right: 16px; bottom: 16px; z-index: 50; width: 48px; height: 48px; border-radius: 50%;
   border: 1px solid var(--linha); background: var(--texto); color: var(--fundo); font-size: 1.3rem; font-weight: 700;
   box-shadow: var(--sombra, 0 4px 14px rgba(0,0,0,.18)); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
-.volta-topo:hover { transform: translateY(-2px); }
+/* Mesmas cores em todos os estados: o estilo geral de button:hover (e o "hover preso" depois do toque
+   no celular) deixava o botão bege ao clicar. */
+button.volta-topo, button.volta-topo:hover, button.volta-topo:active, button.volta-topo:focus,
+html[data-tema="escuro"] button.volta-topo:hover { background: var(--texto); color: var(--fundo); border-color: var(--linha); }
+@media (hover: hover) { button.volta-topo:hover { transform: translateY(-2px); } }
+button.volta-topo:active { transform: scale(.94); }
+button.volta-topo:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; }
 .volta-topo[hidden] { display: none; }
 @media print { .volta-topo { display: none; } }
 

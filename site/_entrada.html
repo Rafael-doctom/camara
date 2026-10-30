@@ -56,19 +56,31 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
   .ent-secao h2 { margin-top: 4px; }
   .ent-intro { color: var(--texto-2); max-width: 70ch; margin: 0 0 16px; }
   .ent-grupo { margin: 26px 0 10px; font-size: 1.05rem; }
-  /* Esta semana: linha do tempo agrupada por dia */
-  .ent-tl { display: grid; gap: 0; margin: 4px 0 18px; }
-  .ent-tl-dia { display: grid; grid-template-columns: 92px 1fr; gap: 16px; }
-  .ent-tl-data { font-family: var(--f-mono); font-size: .78rem; color: var(--texto-2); padding-top: 14px; text-align: right; }
-  .ent-tl-data b { display: block; font-family: var(--f-serif); font-size: 1.7rem; color: var(--texto); line-height: 1; }
-  .ent-tl-itens { border-left: 2px solid var(--linha); padding: 6px 0 14px 22px; display: grid; gap: 4px; }
-  .ent-alerta { position: relative; display: grid; gap: 3px; padding: 10px 12px; border-radius: var(--raio); color: inherit; text-decoration: none; }
+  /* Esta semana: uma linha contínua; marcador por dia e ícone por item, centrados na linha */
+  .ent-tl { position: relative; padding-left: 52px; margin: 8px 0 18px; }
+  .ent-tl::before { content: ""; position: absolute; left: 19px; top: 10px; bottom: 10px; width: 2px; background: var(--linha); }
+  .ent-tl-dia { position: relative; padding-bottom: 10px; }
+  .ent-tl-data { position: relative; display: flex; align-items: baseline; gap: 8px; padding: 2px 0 8px; font-family: var(--f-mono); font-size: .76rem; color: var(--texto-2); text-transform: lowercase; }
+  .ent-tl-data::before { content: ""; position: absolute; left: -40px; top: 7px; width: 16px; height: 16px; border-radius: 50%; background: var(--texto); box-shadow: 0 0 0 4px var(--fundo); }
+  .ent-tl-data b { font-family: var(--f-serif); font-size: 1.35rem; font-weight: 600; color: var(--texto); text-transform: none; }
+  .ent-tl-itens { display: grid; gap: 2px; }
+  .ent-alerta { position: relative; display: grid; gap: 3px; padding: 10px 12px; margin-left: -12px; border-radius: var(--raio); color: inherit; text-decoration: none; }
   .ent-alerta:hover { background: var(--fundo-2); }
-  .ent-alerta::before { content: attr(data-ico); position: absolute; left: -38px; top: 10px; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-size: .72rem; font-weight: 700; background: var(--fundo); border: 2px solid var(--acento); color: var(--acento); }
+  .ent-ico { position: absolute; left: -35px; top: 10px; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--fundo); border: 2px solid currentColor; }
+  .ent-ico svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .ent-alerta[data-tipo="sessao"] .ent-ico, .ent-alerta[data-tipo="sessao"] .ent-tag { color: var(--texto); }
+  .ent-alerta[data-tipo="votacao"] .ent-ico, .ent-alerta[data-tipo="votacao"] .ent-tag { color: var(--acento); }
+  .ent-alerta[data-tipo="propositura"] .ent-ico, .ent-alerta[data-tipo="propositura"] .ent-tag { color: #3d6b8c; }
+  .ent-alerta[data-tipo="caso"] .ent-ico, .ent-alerta[data-tipo="caso"] .ent-tag { color: #a3332d; }
+  [data-tema="escuro"] .ent-alerta[data-tipo="propositura"] .ent-ico, [data-tema="escuro"] .ent-alerta[data-tipo="propositura"] .ent-tag { color: #8fb8d6; }
+  [data-tema="escuro"] .ent-alerta[data-tipo="caso"] .ent-ico, [data-tema="escuro"] .ent-alerta[data-tipo="caso"] .ent-tag { color: #e58a84; }
   .ent-alerta small { font-family: var(--f-mono); font-size: .72rem; color: var(--suave); }
-  .ent-alerta b { font-size: 1rem; }
+  .ent-tag { font-weight: 600; }
+  .ent-alerta b { font-size: 1rem; line-height: 1.35; }
   .ent-alerta p { margin: 0; font-size: .88rem; color: var(--texto-2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-  @media (max-width: 560px) { .ent-tl-dia { grid-template-columns: 1fr; gap: 0; } .ent-tl-data { text-align: left; padding: 10px 0 4px; } .ent-tl-data b { display: inline; font-size: 1.2rem; margin-right: 6px; } .ent-tl-itens { margin-left: 13px; } }
+  .ent-tl-nota { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; padding: 12px 14px; border: 1px dashed var(--linha); border-radius: var(--raio); font-size: .9rem; color: var(--texto-2); margin: 0 0 14px; }
+  .ent-tl-nota b { color: var(--texto); }
+  @media (max-width: 560px) { .ent-tl { padding-left: 44px; } .ent-tl::before { left: 15px; } .ent-tl-data::before { left: -36px; } .ent-ico { left: -35px; } .ent-alerta { margin-left: -8px; padding: 10px 8px; } }
   .ent-tabela { width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 760px; }
   .ent-tabela th, .ent-tabela td { padding: 9px 8px; border-bottom: 1px solid var(--linha); text-align: left; vertical-align: top; }
   .ent-tabela thead th { font-size: .78rem; color: var(--texto-2); font-weight: 600; }
@@ -261,7 +273,7 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
   <section aria-labelledby="t-semana" class="ent-secao">
     <p class="rotulo">Atualizado a cada coleta</p>
     <h2 id="t-semana">Esta semana</h2>
-    <p class="ent-intro">Votações divididas, projetos novos e pagamentos fora do padrão nas cidades acompanhadas.</p>
+    <p class="ent-intro">As sessões das Câmaras, as votações com voto contra e os projetos protocolados nos últimos 7 dias. Toque para ver o detalhe.</p>
     <div class="ent-tl" id="ent-alertas"><p class="suave">Carregando os alertas…</p></div>
     <p><a class="botao" href="alertas.html">Ver todos os alertas →</a></p>
   </section>
@@ -440,30 +452,55 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
 </script>
 <script src="alertas.js"></script>
 <script>
-/* "Esta semana": os 4 alertas mais recentes, de tipos variados (alertas.js, gerado por agentes/alertas.py). */
+/* "Esta semana": linha do tempo com as sessões da semana e os alertas mais recentes (alertas.js, gerado
+   por agentes/alertas.py). Gastos fora do padrão são do último mês fechado do TCE, não desta semana:
+   ficam numa nota à parte, para não parecer que aconteceram nestes dias. */
 (function () {
   var A = window.ALERTAS, alvo = document.getElementById("ent-alertas");
   if (!alvo) return;
-  if (!A || !A.itens.length) { alvo.innerHTML = '<p class="suave">Sem alertas nesta semana.</p>'; return; }
+  if (!A || !(A.itens.length || (A.sessoes || []).length)) { alvo.innerHTML = '<p class="suave">Sem novidades nesta semana.</p>'; return; }
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
-  var tipos = { votacao: "Votação dividida", propositura: "Projeto ou moção", gasto: "Gasto fora do padrão", caso: "Caso documentado" };
-  var icones = { votacao: "⚖", propositura: "✎", gasto: "R$", caso: "!" };
+  var tipos = { sessao: "Sessão", votacao: "Votação dividida", propositura: "Projeto ou moção", caso: "Caso documentado" };
+  var svg = function (d) { return '<svg viewBox="0 0 24 24" aria-hidden="true">' + d + "</svg>"; };
+  var icones = {
+    sessao: svg('<path d="M3 9l9-5 9 5M5 9v9M9.5 9v9M14.5 9v9M19 9v9M3 20h18"/>'),
+    votacao: svg('<path d="M12 4v16M5 8h14M5 8l-3 6h6zM19 8l-3 6h6zM8 20h8"/>'),
+    propositura: svg('<path d="M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h4"/>'),
+    caso: svg('<path d="M12 4l9 16H3zM12 10v4M12 17h.01"/>')
+  };
   var meses = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
-  var escolhidos = [], vistos = {};
-  A.itens.forEach(function (x) { if (escolhidos.length < 6 && !vistos[x.tipo]) { vistos[x.tipo] = 1; escolhidos.push(x); } });
-  A.itens.forEach(function (x) { if (escolhidos.length < 6 && escolhidos.indexOf(x) < 0) escolhidos.push(x); });
-  // Linha do tempo: agrupa por dia, do mais recente para o mais antigo.
-  escolhidos.sort(function (a, b) { return a.data < b.data ? 1 : -1; });
+  var semana = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+  var nomeCidade = function (c) { return A.resumo[c] ? A.resumo[c].cidade : c; };
+  var lista = (A.sessoes || []).map(function (x) {
+    return { tipo: "sessao", cidade: x.cidade, data: x.data, link: x.link, titulo: x.titulo,
+      detalhe: x.presentes + " presentes" + (x.ausentes ? ", " + x.ausentes + " ausente" + (x.ausentes > 1 ? "s" : "") : "") + " · " +
+        x.votacoes + " votaç" + (x.votacoes === 1 ? "ão" : "ões") + (x.divididas ? ", " + x.divididas + " com voto contra" : ", nenhuma com voto contra") };
+  });
+  // Até 4 alertas da semana, variando o tipo antes de repetir.
+  var outros = A.itens.filter(function (x) { return x.tipo !== "gasto" && x.data >= A.desde; }), escolhidos = [], vistos = {};
+  outros.forEach(function (x) { if (escolhidos.length < 4 && !vistos[x.tipo]) { vistos[x.tipo] = 1; escolhidos.push(x); } });
+  outros.forEach(function (x) { if (escolhidos.length < 4 && escolhidos.indexOf(x) < 0) escolhidos.push(x); });
+  lista = lista.concat(escolhidos).sort(function (a, b) { return a.data < b.data ? 1 : a.data > b.data ? -1 : (a.tipo === "sessao" ? -1 : 1); });
   var dias = [];
-  escolhidos.forEach(function (x) { var d = x.data.slice(0, 10); if (!dias.length || dias[dias.length - 1].d !== d) dias.push({ d: d, itens: [] }); dias[dias.length - 1].itens.push(x); });
-  alvo.innerHTML = dias.map(function (g) {
-    return '<div class="ent-tl-dia revela-filho"><div class="ent-tl-data"><b>' + g.d.slice(8, 10) + "</b>" + meses[+g.d.slice(5, 7) - 1] + " " + g.d.slice(0, 4) +
+  lista.forEach(function (x) { var d = x.data.slice(0, 10); if (!dias.length || dias[dias.length - 1].d !== d) dias.push({ d: d, itens: [] }); dias[dias.length - 1].itens.push(x); });
+  var html = dias.map(function (g) {
+    var dt = new Date(g.d + "T12:00:00");
+    return '<div class="ent-tl-dia revela-filho"><div class="ent-tl-data"><b>' + (+g.d.slice(8, 10)) + " " + meses[+g.d.slice(5, 7) - 1] + "</b>" + semana[dt.getDay()] +
       '</div><div class="ent-tl-itens">' + g.itens.map(function (x) {
-        var cidade = A.resumo[x.cidade] ? A.resumo[x.cidade].cidade : x.cidade;
-        return '<a class="ent-alerta" data-ico="' + esc(icones[x.tipo] || "•") + '" href="' + esc(x.link) + '"><small>' + esc(tipos[x.tipo] || x.tipo) + " · " + esc(cidade) +
-          "</small><b>" + esc(x.titulo) + "</b><p>" + esc(x.detalhe) + "</p></a>";
+        return '<a class="ent-alerta" data-tipo="' + x.tipo + '" href="' + esc(x.link) + '"><span class="ent-ico">' + (icones[x.tipo] || "") + "</span>" +
+          '<small><span class="ent-tag">' + esc(tipos[x.tipo] || x.tipo) + "</span> · " + esc(nomeCidade(x.cidade)) + "</small><b>" + esc(x.titulo) + "</b>" +
+          (x.detalhe ? "<p>" + esc(x.detalhe) + "</p>" : "") + "</a>";
       }).join("") + "</div></div>";
   }).join("");
+  alvo.innerHTML = html || '<p class="suave">Nenhuma sessão ou projeto novo nesta semana.</p>';
+  var gastos = A.itens.filter(function (x) { return x.tipo === "gasto"; });
+  if (gastos.length) {
+    var m = gastos[0].data, nota = document.createElement("p");
+    nota.className = "ent-tl-nota";
+    nota.innerHTML = "<span><b>" + gastos.length + " pagamento" + (gastos.length > 1 ? "s" : "") + " fora do padrão</b> em " + meses[+m.slice(5, 7) - 1] + "/" + m.slice(0, 4) +
+      ", o último mês fechado no Tribunal de Contas.</span><a href=\"alertas.html\">Ver quais →</a>";
+    alvo.parentNode.insertBefore(nota, alvo.nextSibling);
+  }
 })();
 </script>
 <script>window.VEREADORES_REGIAO = {{vereadores_json}};</script>

@@ -31,6 +31,24 @@ def ler_js(caminho, chave):
     return json.loads(m.group(1)) if m else []
 
 
+def caixa(t):
+    """Texto todo em maiúsculas vira frase normal; abertura em maiúsculas ("MOÇÃO DE APLAUSOS E
+    CONGRATULAÇÕES à ...") também."""
+    t = re.sub(r"([A-ZÀ-Ý]{2,})(à|ao|aos|às)\b", r"\1 \2", t)  # "CONGRATULAÇÕESà FAESB" (espaço perdido no SisCam)
+    letras = [c for c in t if c.isalpha()]
+    if letras and sum(c.isupper() for c in letras) / len(letras) > .85:
+        return re.sub(r"(^|[.!?]\s+)(\w)", lambda m: m.group(1) + m.group(2).upper(), t.lower())
+    m = re.match(r"([A-ZÀ-Ý]{2,}(?:\s+[A-ZÀ-Ý]+)+)\b", t)
+    if m and len(m.group(1).split()) >= 3:
+        t = m.group(1).capitalize() + t[m.end(1):]
+    return t
+
+
+def nome(t):
+    return " ".join(p if len(p) <= 3 and p.lower() in ("da", "de", "do", "das", "dos", "e") else p.capitalize()
+                    for p in t.lower().split()) if t.isupper() else t
+
+
 def valor(v):
     return float(v.replace(".", "").replace(",", ".")) if v else 0.0
 
@@ -136,14 +154,14 @@ def main():
                     n = v["n"]
                     itens.append({"tipo": "votacao", "cidade": slug, "data": v["d"],
                                   "titulo": f"{v['m']}: {v['r'].lower()} por {n.get('favor', 0)} a {n.get('contra', 0)}",
-                                  "detalhe": v["a"][:220], "link": f"{slug}/index.html#votacao/{v['id']}"})
+                                  "detalhe": caixa(v["a"])[:220], "link": f"{slug}/index.html#votacao/{v['id']}"})
         for p in ler(os.path.join(RAIZ, "dados", slug, "processados", "proposituras.json"), []):
             if p["data"] >= desde:
                 r["proposituras"] += 1
                 if p["tipo"] in ("Projeto de Lei", "Projeto de Lei Complementar", "Projeto de Emenda à Lei Orgânica", "Moção"):
                     itens.append({"tipo": "propositura", "cidade": slug, "data": p["data"],
-                                  "titulo": f"{p['tipo']} nº {p['numero']}/{p['ano']} · {', '.join(p['autores'][:2])}",
-                                  "detalhe": p["ementa"][:220],
+                                  "titulo": f"{p['tipo']} nº {p['numero']}/{p['ano']} · {', '.join(nome(a) for a in p['autores'][:2])}",
+                                  "detalhe": caixa(p["ementa"])[:220],
                                   "link": f"{slug}/index.html#proposituras/autor={p['autores'][0] if p['autores'] else ''}"})
         for c in ler(os.path.join(RAIZ, "casos", slug, "casos.json"), []):
             if c.get("data", "") >= desde_casos:
