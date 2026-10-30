@@ -4,7 +4,7 @@ Pedidos do dono do projeto e as referências enviadas (Hub Político), com o que
 
 ## Referências enviadas
 
-| Link | O que mostra | Como entra no Olho na Câmara |
+| Link | O que mostra | Como entra no site De olho na Câmara |
 |---|---|---|
 | https://hubpolitico.com.br/inteligencia/teste-politico | Página de entrada do teste político | `site/espectro.html#inicio` (feito) |
 | https://hubpolitico.com.br/inteligencia/teste-politico/comecar | Escolha do tamanho do teste | `#comecar` (feito) |

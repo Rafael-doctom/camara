@@ -403,7 +403,7 @@
     if (!respondidos) { app.innerHTML = `<h1>Ainda sem respostas</h1><p class="esp-lead">Responda o teste para ver seu resultado.</p><div class="acoes"><a class="botao botao-pr" href="#comecar" target="_self">Começar o teste →</a></div>`; return; }
     const rk = ranking(v), top = rk[0];
     const total = perguntas(est.modo).length, feitas = Object.keys(est.resp).length;
-    const texto = `Meu resultado no Painel ideológico do Olho na Câmara: ${top.nome} (${top.prox}% de proximidade). Faça o seu: ${location.href.split("#")[0]}`;
+    const texto = `Meu resultado no Painel ideológico do site De olho na Câmara: ${top.nome} (${top.prox}% de proximidade). Faça o seu: ${location.href.split("#")[0]}`;
     app.innerHTML = `
       <section class="esp-res-capa">
         <p class="esp-rot">Seu resultado</p>
@@ -468,7 +468,7 @@
     const [pag, a, b] = (decodeURIComponent(location.hash.slice(1)) || "inicio").split("/");
     ({ inicio, comecar, eixos, ideologias, resultado, eixo: () => eixo(a), teste: () => teste(a, +b) }[pag] || inicio)();
     const h1 = app.querySelector("h1");
-    document.title = `${pag === "eixo" ? (EIXOS.find((x) => x.id === a) || {}).nome || "Eixo" : (h1 && pag === "resultado" ? h1.textContent : TITULOS[pag] || TITULOS.inicio)} · Painel ideológico · Olho na Câmara`;
+    document.title = `${pag === "eixo" ? (EIXOS.find((x) => x.id === a) || {}).nome || "Eixo" : (h1 && pag === "resultado" ? h1.textContent : TITULOS[pag] || TITULOS.inicio)} · Painel ideológico · De olho na Câmara`;
     document.querySelectorAll(".esp-nav a").forEach((l) => l.toggleAttribute("aria-current", l.getAttribute("href") === `#${pag}`));
     window.scrollTo(0, 0);
     if (pag !== "inicio") app.focus({ preventScroll: true });

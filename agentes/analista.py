@@ -208,7 +208,7 @@ def zap(texto):
 def gravar_index_cidade(versao_base, estaticos):
     """site/<cidade>/index.html a partir de site/_cidade.html, com ?v=<hash> contra cache velho."""
     e = lambda s: html.escape(str(s), quote=True)
-    titulo = f"Olho na Câmara de {CIDADE['nome']}"
+    titulo = f"De olho na Câmara de {CIDADE['nome']}"
     og = (f'<link rel="canonical" href="{e(URL_SITE)}/">\n<meta property="og:url" content="{e(URL_SITE)}/">'
           if URL_SITE else "")
     texto_zap = f"Veja como vota cada vereador de {CIDADE['nome']}:"
@@ -262,7 +262,7 @@ def gravar_entrada(estaticos):
         nomes.append(cfg["nome"])
     numeros, tabela, blocos = resumo_regiao(e)
     site = config_site()
-    nome_site = site.get("nome", "Olho na Câmara")
+    nome_site = site.get("nome", "De olho na Câmara")
     descricao = ("Observatório independente das Câmaras Municipais de " + ", ".join(nomes[:-1])
                  + (" e " if len(nomes) > 1 else "") + nomes[-1]
                  + ": proposituras, votações, presença e casos documentados, com dados públicos oficiais.") if nomes else ""
@@ -482,7 +482,7 @@ def pagina_vereador(v, geral):
     leg = CIDADE["legislatura_atual"]
     descricao = (f"{v['nome']}{partido} na {CIDADE['camara']}, legislatura {leg['inicio'][:4]}-{leg['fim'][:4]}: "
                  + ", ".join(p for p in partes if p) + ". Dados oficiais do SisCam.")
-    titulo = f"{v['nome']} - Olho na Câmara de {CIDADE['nome']}"
+    titulo = f"{v['nome']} - De olho na Câmara de {CIDADE['nome']}"
     destino = f"../index.html#vereador/{v['chave'].replace(' ', '%20')}"
     absoluto = lambda caminho: f"{URL_SITE}/{caminho}" if URL_SITE else f"../{caminho}"
     imagem = f'<meta property="og:image" content="{e(absoluto(v["foto"]))}">\n' if v.get("foto") else ""
@@ -497,7 +497,7 @@ def pagina_vereador(v, geral):
 <meta name="description" content="{e(descricao)}">
 <meta property="og:type" content="profile">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Olho na Câmara de {e(CIDADE['nome'])}">
+<meta property="og:site_name" content="De olho na Câmara de {e(CIDADE['nome'])}">
 <meta property="og:title" content="{e(titulo)}">
 <meta property="og:description" content="{e(descricao)}">
 {imagem}{url}<meta name="twitter:card" content="summary">

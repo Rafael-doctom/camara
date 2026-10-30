@@ -1,4 +1,4 @@
-/* Olho na Câmara — site estático, sem build, o mesmo código para todas as cidades.
+/* De olho na Câmara — site estático, sem build, o mesmo código para todas as cidades.
    Cada cidade tem a pasta site/<slug>/ com o próprio index.html, que carrega este arquivo de ../.
    Dados gerados por agentes/analista.py em window.DADOS (formato em docs/FORMATO-DADOS.md):
    dados-base.js vem no index.html; votacoes.js e proposituras.js são carregados sob demanda.
@@ -18,7 +18,7 @@
 
   // Cidade desta página (D.cidade). Sem o campo (dados antigos), vale Tatuí.
   const C = D.cidade || { slug: "tatui", nome: "Tatuí", camara: "Câmara Municipal de Tatuí", links: [] };
-  const SITE = `Olho na Câmara de ${C.nome}`;
+  const SITE = `De olho na Câmara de ${C.nome}`;
 
   // Índices da lista compacta de proposituras (mesma ordem de lista_props em analista.py).
   // sit = situação normalizada (APROVADA vira APROVADO); sitOrig = texto original do SisCam, "" se igual.

@@ -4,7 +4,7 @@ description: Roda a coleta de dados da Câmara de Tatuí (orquestrador), confere
 tools: Read, Grep, Glob, Bash, Edit
 ---
 
-Você opera os agentes coletores do projeto Olho na Câmara de Tatuí.
+Você opera os agentes coletores do projeto De olho na Câmara de Tatuí.
 
 ## Tarefa
 

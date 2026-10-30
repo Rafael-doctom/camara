@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eleição 2026 · Olho na Câmara</title>
+<title>Eleição 2026 · De olho na Câmara</title>
 <base target="_blank">
 <meta name="description" content="Como cada cidade votou em 2026 para presidente, governador, senador, deputado federal e deputado estadual. Dados oficiais do TSE.">
-<meta property="og:title" content="Eleição 2026 · Olho na Câmara">
+<meta property="og:title" content="Eleição 2026 · De olho na Câmara">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
 <a class="pular" href="#app" target="_self">Pular para o conteúdo</a>
 <header class="topo">
   <div class="topo-in">
-    <a class="marca" href="index.html" target="_self"><span class="marca-olho">●</span> Olho na Câmara <small>Eleição 2026</small></a>
+    <a class="marca" href="index.html" target="_self"><span class="marca-olho">●</span> De olho na Câmara <small>Eleição 2026</small></a>
     <nav class="esp-nav" aria-label="Eleição 2026">
       <a class="botao botao-pr" href="eleicao.html" target="_self">Eleição 2024</a>
       <a class="esp-voltar" href="index.html" target="_self">Cidades</a>
@@ -47,7 +47,7 @@
 <main class="conteudo" id="app" tabindex="-1"><p class="carregando">Carregando…</p></main>
 
 <footer class="rodape ft2" id="rodape">
-  <div class="ft-bot"><span>© 2026 Olho na Câmara · criado por <a href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></span><span>Fonte: TSE, Portal de Dados Abertos. Sem vínculo com partidos.</span></div>
+  <div class="ft-bot"><span>© 2026 De olho na Câmara · criado por <a href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></span><span>Fonte: TSE, Portal de Dados Abertos. Sem vínculo com partidos.</span></div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -126,7 +126,7 @@
       app.querySelector("#f-e").addEventListener("change", (e) => { filtro.eleitos = !!e.target.value; desenhar(); });
     }
     desenhar();
-    document.title = `${E.cidade}: ${CARGO[cargo]} ${ANO} · Olho na Câmara`;
+    document.title = `${E.cidade}: ${CARGO[cargo]} ${ANO} · De olho na Câmara`;
   }
 
   let mapa = null;

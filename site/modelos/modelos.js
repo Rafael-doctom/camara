@@ -149,7 +149,7 @@
   function casca(letra, nome) {
     document.body.insertAdjacentHTML("afterbegin", `<a class="pular" href="#app">Pular para o conteúdo</a>
 <header class="topo"><div class="topo-in">
-  <a class="marca" href="${SITE}#inicio"><span class="marca-olho">●</span> Olho na Câmara <small>Tatuí</small></a>
+  <a class="marca" href="${SITE}#inicio"><span class="marca-olho">●</span> De olho na Câmara <small>Tatuí</small></a>
   <div class="topo-acoes">
     <button type="button" class="tema-btn" aria-label="Ativar modo escuro" aria-pressed="false"><span class="tema-ico" aria-hidden="true"></span></button>
     <button type="button" class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>

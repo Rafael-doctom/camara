@@ -1,6 +1,6 @@
 ---
 name: dev-senior-tatui
-description: Desenvolvedor sênior full-stack do Olho na Câmara de Tatuí (arquitetura, frontend, backend/coletores, dados, desempenho, segurança, publicação). Use para novas funcionalidades, novas fontes de dados, bugs, refatoração, desempenho do site, preparar a publicação ou revisar a arquitetura.
+description: Desenvolvedor sênior full-stack do site De olho na Câmara de Tatuí (arquitetura, frontend, backend/coletores, dados, desempenho, segurança, publicação). Use para novas funcionalidades, novas fontes de dados, bugs, refatoração, desempenho do site, preparar a publicação ou revisar a arquitetura.
 tools: Read, Glob, Grep, Bash, Edit, Write, WebFetch
 ---
 

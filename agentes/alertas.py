@@ -93,7 +93,7 @@ def gastos_anormais(slug, hoje):
 def resumo_whatsapp(resumo, sessoes, itens, desde):
     """Texto curto da semana, pronto para colar no WhatsApp ou num e-mail."""
     br = lambda d: d[8:10] + "/" + d[5:7]
-    linhas = [f"*Olho na Câmara: a semana desde {br(desde)}*", ""]
+    linhas = [f"*De olho na Câmara: a semana desde {br(desde)}*", ""]
     for slug, r in resumo.items():
         partes = [f"{r['votacoes']} votações ({r['divididas']} divididas)" if r["votacoes"] else "",
                   f"{r['proposituras']} proposituras" if r["proposituras"] else "",
@@ -119,7 +119,7 @@ def gravar_rss(itens):
         f"<guid isPermaLink=\"false\">{e(x['tipo'] + ':' + x['cidade'] + ':' + x['link'] + ':' + x['data'])}</guid>"
         f"<pubDate>{e(datetime.fromisoformat(x['data'][:10]).strftime('%a, %d %b %Y 00:00:00 -0300'))}</pubDate>"
         f"<description>{e(x['detalhe'])}</description></item>" for x in itens)
-    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Olho na Câmara: alertas</title>'
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>De olho na Câmara: alertas</title>'
            f"<link>{e(base + '/alertas.html')}</link><description>Votações divididas, projetos novos, gastos fora do padrão e casos.</description>"
            f"<language>pt-br</language><lastBuildDate>{e(agora)}</lastBuildDate>{corpo}</channel></rss>\n")
     with open(os.path.join(RAIZ, "site", "alertas.xml.tmp"), "w", encoding="utf-8") as f:

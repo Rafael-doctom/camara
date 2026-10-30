@@ -1,4 +1,4 @@
-# Olho na Câmara
+# De olho na Câmara
 
 Observatório independente das Câmaras Municipais de Tatuí, Itapetininga, Cerquilho, Iperó e Cesário Lange (SP). Mostra o que cada vereador propõe, como vota e quanto comparece; gastos e receitas das Câmaras e Prefeituras; emendas parlamentares recebidas; eleições de 2024 e 2026 com mapa por local de votação; deputados e senadores de SP; um teste político que compara o visitante com votos reais; e alertas da semana. Tudo vem de dados públicos oficiais, coletados por agentes automáticos.
 

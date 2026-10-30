@@ -26,7 +26,7 @@
     // marca
     ctx.fillStyle = "#14110f"; ctx.beginPath(); ctx.arc(110, 120, 34, 0, 2 * Math.PI); ctx.fill();
     ctx.fillStyle = "#ffd400"; ctx.beginPath(); ctx.arc(110, 120, 11, 0, 2 * Math.PI); ctx.fill();
-    ctx.fillStyle = "#14110f"; ctx.font = "600 44px Georgia, 'Times New Roman', serif"; ctx.fillText("Olho na Câmara", 166, 136);
+    ctx.fillStyle = "#14110f"; ctx.font = "600 44px Georgia, 'Times New Roman', serif"; ctx.fillText("De olho na Câmara", 166, 136);
     let y = 270;
     if (o.rotulo) { ctx.fillStyle = "#b5532d"; ctx.font = "700 30px 'Courier New', monospace"; ctx.fillText(String(o.rotulo).toUpperCase(), 80, y); y += 70; }
     ctx.fillStyle = "#14110f"; ctx.font = "700 84px Georgia, 'Times New Roman', serif";
