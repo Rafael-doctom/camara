@@ -9,6 +9,8 @@ Observatório independente da Câmara Municipal da Estância Turística de Tatu�
    ```
    python agentes/orquestrador.py
    ```
+   Sem opções, roda todas as cidades configuradas em `cidades/`. Para uma cidade só, use `--cidade itapetininga` (vale com as opções abaixo). Para adicionar uma cidade, veja [docs/AGENTES.md](docs/AGENTES.md#adicionar-uma-cidade).
+
    Para só regenerar o site com os dados já baixados:
    ```
    python agentes/orquestrador.py --so-site
