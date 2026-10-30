@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gastos públicos · Olho na Câmara</title>
+<base target="_blank">
+<meta name="description" content="Quanto a Câmara Municipal e a Prefeitura pagaram, mês a mês, e para quem. Dados do Tribunal de Contas do Estado de São Paulo.">
+<meta property="og:title" content="Gastos públicos · Olho na Câmara">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tema.css">
+<link rel="stylesheet" href="controles.css">
+<link rel="stylesheet" href="rodape.css">
+<link rel="stylesheet" href="espectro.css">
+<style>
+  .g-filtros { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: end; margin: 12px 0 18px; }
+  .g-filtros label { display: grid; gap: 4px; font-size: .82rem; color: var(--texto-2); }
+  .g-filtros input, .g-filtros select { min-height: 42px; }
+  .g-meses { display: flex; align-items: end; gap: 6px; height: 160px; margin: 14px 0 2px; }
+  .g-meses span { flex: 1; background: var(--acento); border-radius: 3px 3px 0 0; min-height: 2px; }
+  .g-meses-rot { display: flex; gap: 6px; font-size: .72rem; color: var(--suave); }
+  .g-meses-rot span { flex: 1; text-align: center; }
+  .g-tabela { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  .g-tabela td { padding: 7px 6px; border-bottom: 1px solid var(--linha); }
+  .g-tabela td.n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .el-cidades .chip[aria-current], .chip[aria-pressed="true"] { background: var(--texto); color: var(--fundo); border-color: var(--texto); }
+</style>
+<script>try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
+</head>
+<body>
+<a class="pular" href="#app" target="_self">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="index.html" target="_self"><span class="marca-olho">●</span> Olho na Câmara <small>Gastos públicos</small></a>
+    <nav class="esp-nav" aria-label="Gastos">
+      <a class="botao botao-pr" href="eleicao.html" target="_self">Eleição</a>
+      <a class="esp-voltar" href="index.html" target="_self">Cidades</a>
+    </nav>
+  </div>
+</header>
+
+<main class="conteudo" id="app" tabindex="-1"><p class="carregando">Carregando…</p></main>
+
+<footer class="rodape ft2" id="rodape">
+  <div class="ft-bot"><span>© 2026 Olho na Câmara · criado por <a href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></span><span>Fonte: TCE-SP, transparência municipal. Sem vínculo com partidos.</span></div>
+</footer>
+
+<script>
+/* Gastos públicos por cidade: #<cidade>. Dados em <cidade>/gastos.js (agentes/coletor_tce.py). */
+(function () {
+  "use strict";
+  const CIDADES = [["tatui", "Tatuí"], ["itapetininga", "Itapetininga"], ["cerquilho", "Cerquilho"], ["ipero", "Iperó"], ["cesario-lange", "Cesário Lange"]];
+  const MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+  const ROT = { camara: "Câmara Municipal", prefeitura: "Prefeitura" };
+  const app = document.getElementById("app"), cache = {};
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const real = (v) => (v || 0).toLocaleString("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 });
+  let est = { orgao: "camara", ano: "", q: "", tipo: "" };
+
+  function carregar(slug, feito) {
+    if (cache[slug]) return feito(cache[slug]);
+    window.GASTOS = null;
+    const s = document.createElement("script");
+    s.src = `${slug}/gastos.js`;
+    s.onload = () => { cache[slug] = window.GASTOS; feito(cache[slug]); };
+    s.onerror = () => { app.innerHTML = `<h1>Sem dados de gastos para esta cidade</h1><p><a href="#tatui" target="_self">Ver Tatuí</a></p>`; };
+    document.head.appendChild(s);
+  }
+
+  function pagina(slug, G) {
+    const orgs = Object.keys(G.orgaos).sort((a, b) => (a === "camara" ? -1 : b === "camara" ? 1 : a === "prefeitura" ? -1 : b === "prefeitura" ? 1 : a.localeCompare(b)));
+    if (!G.orgaos[est.orgao]) est.orgao = orgs[0];
+    const O = G.orgaos[est.orgao], anos = Object.keys(O.anos).sort();
+    if (!O.anos[est.ano]) est.ano = anos[0];
+    const A = O.anos[est.ano], max = Math.max(1, ...Object.values(A.meses));
+    const ultimo = G.meses_lidos.filter((m) => m.startsWith(est.ano)).slice(-1)[0];
+    app.innerHTML = `<p class="esp-rot">Gastos públicos · ${esc(G.fonte)}</p><h1>${esc(G.cidade)}</h1>
+      <div class="chips el-cidades" role="group" aria-label="Cidade">${CIDADES.map(([s, n]) => `<a class="chip" href="#${s}" target="_self"${s === slug ? ' aria-current="page"' : ""}>${n}</a>`).join("")}</div>
+      <div class="g-filtros">
+        <div class="chips" role="group" aria-label="Órgão">${orgs.map((o) => `<button type="button" class="chip" data-orgao="${esc(o)}" aria-pressed="${o === est.orgao}">${esc(ROT[o] || G.orgaos[o].nome)}</button>`).join("")}</div>
+        <div class="chips" role="group" aria-label="Ano">${anos.map((a) => `<button type="button" class="chip" data-ano="${a}" aria-pressed="${a === est.ano}">${a}</button>`).join("")}</div>
+      </div>
+      <div class="grade grade-kpi">
+        <div class="cartao kpi"><div class="valor">${real(A.total)}</div><div class="rotulo">pago em ${esc(est.ano)}</div><div class="kpi-exp">${ultimo ? `até ${MESES[+ultimo.slice(5) - 1]}/${est.ano}` : ""}</div></div>
+        <div class="cartao kpi"><div class="valor">${A.pagamentos.toLocaleString("pt-BR")}</div><div class="rotulo">pagamentos</div></div>
+        <div class="cartao kpi"><div class="valor">${real(A.total / Math.max(1, Object.keys(A.meses).length))}</div><div class="rotulo">média por mês</div></div>
+      </div>
+      <h2>Mês a mês</h2>
+      <div class="cartao"><div class="g-meses" aria-label="Pago por mês">${MESES.map((m, i) => `<span title="${m}: ${real(A.meses[i + 1])}" style="height:${(100 * (A.meses[i + 1] || 0)) / max}%"></span>`).join("")}</div>
+        <div class="g-meses-rot">${MESES.map((m) => `<span>${m}</span>`).join("")}</div></div>
+      <h2>Para quem foi o dinheiro</h2>
+      <div class="g-filtros">
+        <label>Buscar fornecedor<input type="search" id="f-q" placeholder="Nome da empresa ou pessoa" value="${esc(est.q)}"></label>
+        <label>Tipo<select id="f-t"><option value="">Todos</option><option value="pj"${est.tipo === "pj" ? " selected" : ""}>Empresas e órgãos</option><option value="pf"${est.tipo === "pf" ? " selected" : ""}>Pessoas físicas</option></select></label>
+      </div>
+      <div class="tabela-wrap"><table class="g-tabela"><tbody id="forn"></tbody></table></div>
+      <p class="suave">Valores efetivamente pagos (evento "Valor Pago" no TCE-SP), incluindo repasses a outros órgãos, como previdência e folha. Lista os 60 maiores recebedores do ano. Atualizado em ${esc(G.gerado_em.slice(0, 10).split("-").reverse().join("/"))}.</p>`;
+    const desenhar = () => {
+      const q = est.q.toLowerCase();
+      const fs = A.fornecedores.filter(([n]) => (!q || n.toLowerCase().includes(q)) && (!est.tipo || (est.tipo === "pf") === n.endsWith("(pessoa física)")));
+      app.querySelector("#forn").innerHTML = fs.map(([n, v], i) => `<tr><td>${i + 1}. ${esc(n)}</td><td class="n">${real(v)}</td><td class="n">${(100 * v / A.total).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%</td></tr>`).join("")
+        || `<tr><td class="suave">Nenhum fornecedor com esse filtro.</td></tr>`;
+    };
+    app.querySelectorAll("[data-orgao]").forEach((b) => b.addEventListener("click", () => { est.orgao = b.dataset.orgao; pagina(slug, G); }));
+    app.querySelectorAll("[data-ano]").forEach((b) => b.addEventListener("click", () => { est.ano = b.dataset.ano; pagina(slug, G); }));
+    app.querySelector("#f-q").addEventListener("input", (e) => { est.q = e.target.value; desenhar(); });
+    app.querySelector("#f-t").addEventListener("change", (e) => { est.tipo = e.target.value; desenhar(); });
+    desenhar();
+  }
+
+  function rota() {
+    const slug = decodeURIComponent(location.hash.slice(1)) || "tatui";
+    const s = CIDADES.some(([c]) => c === slug) ? slug : "tatui";
+    carregar(s, (G) => { pagina(s, G); document.title = `Gastos de ${G.cidade} · Olho na Câmara`; });
+  }
+  window.addEventListener("hashchange", rota);
+  rota();
+})();
+</script>
+<script src="topo.js"></script>
+</body>
+</html>

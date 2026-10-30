@@ -43,7 +43,8 @@
   <div class="topo-in">
     <a class="marca" href="index.html" target="_self"><span class="marca-olho">●</span> Olho na Câmara <small>Eleição 2024</small></a>
     <nav class="esp-nav" aria-label="Eleição">
-      <a class="botao botao-pr" href="espectro.html" target="_self">Painel ideológico</a>
+      <a class="botao botao-pr" href="gastos.html" target="_self">Gastos</a>
+      <a class="esp-voltar" href="eleicao-geral.html" target="_self">2026</a>
       <a class="esp-voltar" href="index.html" target="_self">Cidades</a>
     </nav>
   </div>
@@ -67,7 +68,7 @@
   const fmt = (n) => (n || 0).toLocaleString("pt-BR");
   const pct = (a, b) => (b ? `${(100 * a / b).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%` : "–");
   const titulo = (s) => String(s || "").trim().toLowerCase().replace(/(^|\s)\S/g, (c) => c.toUpperCase()).replace(/ (D[aeo]s?|E) /g, (m) => m.toLowerCase());
-  let mapa = null, filtro = { q: "", partido: "", so: "" };
+  let mapa = null, filtro = { q: "", partido: "", so: "", genero: "", instrucao: "" };
 
   function carregar(slug, feito) {
     if (cache[slug]) return feito(cache[slug]);
@@ -105,6 +106,8 @@
       <div class="el-filtros">
         <label>Buscar<input type="search" id="f-q" placeholder="Nome ou número" value="${esc(filtro.q)}"></label>
         <label>Partido<select id="f-p"><option value="">Todos</option>${partidos.map((p) => `<option${p === filtro.partido ? " selected" : ""}>${esc(p)}</option>`).join("")}</select></label>
+        <label>Gênero<select id="f-g"><option value="">Todos</option>${[...new Set(E.vereador.map((c) => c.genero))].sort().map((g) => `<option${g === filtro.genero ? " selected" : ""}>${esc(g)}</option>`).join("")}</select></label>
+        <label>Instrução<select id="f-i"><option value="">Todas</option>${[...new Set(E.vereador.map((c) => c.instrucao))].sort().map((g) => `<option${g === filtro.instrucao ? " selected" : ""}>${esc(g)}</option>`).join("")}</select></label>
         <label>Mostrar<select id="f-s"><option value="">Todos</option><option value="eleito"${filtro.so === "eleito" ? " selected" : ""}>Só eleitos</option></select></label>
       </div>
       <div class="tabela-wrap"><table class="el-tabela"><thead><tr><th>Candidato</th><th>Partido</th><th class="n">Votos</th><th class="n">Gasto</th><th>Resultado</th></tr></thead><tbody id="lista"></tbody></table></div>
@@ -114,7 +117,8 @@
     const desenhar = () => {
       const q = filtro.q.toLowerCase();
       const cs = E.vereador.filter((c) => (!q || c.urna.toLowerCase().includes(q) || c.nome.toLowerCase().includes(q) || c.numero.includes(q))
-        && (!filtro.partido || c.partido === filtro.partido) && (!filtro.so || c.situacao.startsWith("Eleito")));
+        && (!filtro.partido || c.partido === filtro.partido) && (!filtro.so || c.situacao.startsWith("Eleito"))
+        && (!filtro.genero || c.genero === filtro.genero) && (!filtro.instrucao || c.instrucao === filtro.instrucao));
       const mais = app.querySelector("#mais");
       mais.hidden = cs.length <= limite;
       mais.textContent = `Mostrar mais (${cs.length - limite} restantes)`;
@@ -126,6 +130,8 @@
     app.querySelector("#f-q").addEventListener("input", (e) => { filtro.q = e.target.value; desenhar(); });
     app.querySelector("#f-p").addEventListener("change", (e) => { filtro.partido = e.target.value; desenhar(); });
     app.querySelector("#f-s").addEventListener("change", (e) => { filtro.so = e.target.value; desenhar(); });
+    app.querySelector("#f-g").addEventListener("change", (e) => { filtro.genero = e.target.value; desenhar(); });
+    app.querySelector("#f-i").addEventListener("change", (e) => { filtro.instrucao = e.target.value; desenhar(); });
     desenhar();
   }
 

@@ -1,0 +1,1649 @@
+{
+ "cidade": "Cerquilho",
+ "fonte": "TCE-SP, transparência municipal",
+ "anos": [
+  "2025",
+  "2026"
+ ],
+ "gerado_em": "2026-10-30T09:33+00:00",
+ "meses_lidos": [
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
+ ],
+ "orgaos": {
+  "prefeitura": {
+   "nome": "Prefeitura Municipal De Cerquilho",
+   "anos": {
+    "2025": {
+     "total": 240569257.71,
+     "pagamentos": 11935,
+     "meses": {
+      "1": 16618830.39,
+      "2": 16305047.04,
+      "3": 20922880.84,
+      "4": 18054800.89,
+      "5": 20545883.58,
+      "6": 19810612.94,
+      "7": 19594897.72,
+      "8": 18773713.98,
+      "9": 20051419.2,
+      "10": 19896882.23,
+      "11": 19197981.0,
+      "12": 30796307.9
+     },
+     "fornecedores": [
+      [
+       "Prefeitura Municipal De Cerquilho",
+       101744836.61
+      ],
+      [
+       "Santa Casa De Misericordia De Cerquilho",
+       30004589.57
+      ],
+      [
+       "Fapen - Fundo De Aposentadorias E Pensoes Serv. Pu",
+       16761971.1
+      ],
+      [
+       "Ms Servicos Administrativos Ltda Me",
+       11423653.43
+      ],
+      [
+       "Inss - Instituto Nacional Do Seguro Social",
+       4178872.37
+      ],
+      [
+       "Viacao Calvipe Ltda",
+       4048402.07
+      ],
+      [
+       "Elektro Redes S.A.",
+       3798474.15
+      ],
+      [
+       "Auto Posto L.A Cerquilho Ltda",
+       2780535.67
+      ],
+      [
+       "Ministerio Da Fazenda",
+       2632410.25
+      ],
+      [
+       "Santa Casa De Misericordia De Tiete",
+       2593768.99
+      ],
+      [
+       "Simioni Prestadora De Serviços Eireli",
+       2346095.76
+      ],
+      [
+       "Rd Informatica Ltda",
+       2227641.0
+      ],
+      [
+       "Editora Ftd S.A.",
+       2010373.5
+      ],
+      [
+       "Frigorifico Bella Carne Ltda",
+       1845613.29
+      ],
+      [
+       "Scatena Agencia De Viagens E Turismo Ltda",
+       1498676.0
+      ],
+      [
+       "E.A.S.S. Construtora Ltda",
+       1448292.05
+      ],
+      [
+       "Climep - Clinica Medica Popular Aracoiaba Ltda",
+       1435761.96
+      ],
+      [
+       "Comercial 3 Albe Ltda",
+       1219714.98
+      ],
+      [
+       "Jb Light Brasil Ltda.",
+       1141174.09
+      ],
+      [
+       "Hortifood Alimentos Ltda",
+       1034290.55
+      ],
+      [
+       "Gv Veterinaria Ltda",
+       1003888.8
+      ],
+      [
+       "Gcaspp Consultoria Contabil E Sistemas Ltda Epp",
+       992597.56
+      ],
+      [
+       "Associação Beneficente Dos Amigos Do Recanto Renascer",
+       932968.27
+      ],
+      [
+       "Lar Sao Jose De Cerquilho",
+       850993.0
+      ],
+      [
+       "Centro Clinico Cerquilho Ltda",
+       849991.55
+      ],
+      [
+       "Dnp Terraplenagem E Pavimentadora Foresto Ltda",
+       846139.44
+      ],
+      [
+       "Casa Da Crianca De Cerquilho",
+       784000.0
+      ],
+      [
+       "Renove - Servicos De Limpeza E Conservacao Eireli - Me",
+       782113.42
+      ],
+      [
+       "Faz Educacao E Tecnologia Ltda",
+       625064.76
+      ],
+      [
+       "Lastroseg Segurança Privada",
+       619354.8
+      ],
+      [
+       "Bem Me Quer Inst. De Longa Perm. De Idosos Ltda Me",
+       582414.4
+      ],
+      [
+       "Cilnet Comunicacao E Informatica Ltda",
+       567546.61
+      ],
+      [
+       "Alutech Tecnologia E Locacoes S.A",
+       567372.0
+      ],
+      [
+       "Shm Consultoria, Gestao E Serviços Em Saude Ltda",
+       549065.89
+      ],
+      [
+       "Atmosfera Gases Especiais E Epis Eireli Epp",
+       534872.96
+      ],
+      [
+       "Fmb Distribuidora De Alimentos Ltda",
+       519383.27
+      ],
+      [
+       "Basca Alimentos Eireli",
+       487378.03
+      ],
+      [
+       "Antonio Carlos Grecchi (pessoa física)",
+       457166.7
+      ],
+      [
+       "Seapp Brasil Distribuidora Ltda",
+       439550.03
+      ],
+      [
+       "Centro Medico Sao Jose Cerquilho Ltda",
+       417958.1
+      ],
+      [
+       "Associacao De Pais E Amigos Dos Excepcionais De Cerquilho",
+       415000.0
+      ],
+      [
+       "Clinica Veterinaria Bomge",
+       411529.08
+      ],
+      [
+       "Caixa Economica Federal S/A",
+       397838.88
+      ],
+      [
+       "Telefonica Brasil S.A",
+       395715.18
+      ],
+      [
+       "Marcos Roberto De Souza  Cia Ltda",
+       391626.0
+      ],
+      [
+       "C  M Diagnosticos Medicos Cerquilho Ltda",
+       390517.37
+      ],
+      [
+       "Telo Shows Ltda",
+       370000.0
+      ],
+      [
+       "Maria Ferreira Flor (pessoa física)",
+       348258.3
+      ],
+      [
+       "Clinica Medica Daher E Mansur Ltda",
+       326255.75
+      ],
+      [
+       "Consorcio Interm De Bombeiros Do Med Tiete",
+       320179.07
+      ],
+      [
+       "Plastimax Ltda",
+       316007.7
+      ],
+      [
+       "Moacir Citroni (pessoa física)",
+       303003.38
+      ],
+      [
+       "Nonne Representacoes E Comercio De Materiais Ltda",
+       299999.0
+      ],
+      [
+       "Diagtec Produtos Hospitalar Eireli Epp",
+       285767.53
+      ],
+      [
+       "Franklin Cangussu Sampaio Eireli",
+       273762.5
+      ],
+      [
+       "Oliveira  Franco De Itatiba Ltda",
+       273118.66
+      ],
+      [
+       "Miriam Pires De Alcantara (pessoa física)",
+       270812.05
+      ],
+      [
+       "Biomedka Laboratorio Clinico Limitada",
+       265059.45
+      ],
+      [
+       "Marino Portaria E Limpeza Ltda",
+       264154.24
+      ],
+      [
+       "Bee Industria E Comercio De Calcados Ltda",
+       238229.44
+      ]
+     ]
+    },
+    "2026": {
+     "total": 162992241.69,
+     "pagamentos": 7395,
+     "meses": {
+      "1": 14863118.51,
+      "2": 19492145.16,
+      "3": 21795823.45,
+      "4": 23087984.75,
+      "5": 21857520.22,
+      "6": 20836793.72,
+      "7": 20911466.39,
+      "8": 20147389.49
+     },
+     "fornecedores": [
+      [
+       "Prefeitura Municipal De Cerquilho",
+       66970171.96
+      ],
+      [
+       "Santa Casa De Misericordia De Cerquilho",
+       22002997.22
+      ],
+      [
+       "Fapen - Fundo De Aposentadorias E Pensoes Serv. Pu",
+       14609242.26
+      ],
+      [
+       "Ms Servicos Administrativos Ltda Me",
+       7414438.98
+      ],
+      [
+       "Elektro Redes S.A.",
+       2770019.19
+      ],
+      [
+       "Viacao Calvipe Ltda",
+       2545326.68
+      ],
+      [
+       "Inss - Instituto Nacional Do Seguro Social",
+       2522745.05
+      ],
+      [
+       "Ministerio Da Fazenda",
+       1829237.63
+      ],
+      [
+       "Auto Posto L.A Cerquilho Ltda",
+       1790475.04
+      ],
+      [
+       "Santa Casa De Misericordia De Tiete",
+       1785050.93
+      ],
+      [
+       "Jb Light Brasil Ltda.",
+       1323289.0
+      ],
+      [
+       "Frigorifico Bella Carne Ltda",
+       1160282.84
+      ],
+      [
+       "Dnp Terraplenagem E Pavimentadora Foresto Ltda",
+       1119178.26
+      ],
+      [
+       "Editora Ftd S.A.",
+       1010011.78
+      ],
+      [
+       "Scatena Agencia De Viagens E Turismo Ltda",
+       993017.8
+      ],
+      [
+       "Lar Sao Jose De Cerquilho",
+       821912.64
+      ],
+      [
+       "Casa Da Crianca De Cerquilho",
+       753666.64
+      ],
+      [
+       "Centro Clinico Cerquilho Ltda",
+       717120.55
+      ],
+      [
+       "E.A.S.S. Construtora Ltda",
+       715253.27
+      ],
+      [
+       "Gcaspp Consultoria Contabil E Sistemas Ltda Epp",
+       671836.17
+      ],
+      [
+       "Lastroseg Segurança Privada Ltda",
+       644799.12
+      ],
+      [
+       "Clinica Lumens Saude Integral Ltda",
+       580478.1
+      ],
+      [
+       "Instituto Aquila De Gestao",
+       550000.0
+      ],
+      [
+       "Hortifood Alimentos Ltda",
+       545933.79
+      ],
+      [
+       "Cilnet Comunicacao E Informatica Ltda",
+       534749.1
+      ],
+      [
+       "Renove - Servicos De Limpeza E Conservacao Eireli - Me",
+       531586.45
+      ],
+      [
+       "Solucao Industria E Comercio De Moveis Ltda",
+       502550.0
+      ],
+      [
+       "Simioni Prestadora De Serviços Eireli",
+       487196.81
+      ],
+      [
+       "Gv Veterinaria Ltda",
+       469465.0
+      ],
+      [
+       "Comercial 3 Albe Ltda",
+       466144.86
+      ],
+      [
+       "Faz Educacao E Tecnologia Ltda",
+       416709.84
+      ],
+      [
+       "Associacao De Pais E Amigos Dos Excepcionais De Cerquilho",
+       415000.0
+      ],
+      [
+       "Jose Herminio De Ramos (pessoa física)",
+       400465.0
+      ],
+      [
+       "Celio Marcolino (pessoa física)",
+       392524.83
+      ],
+      [
+       "Fmb Distribuirora De Alimentos Eireli",
+       392002.15
+      ],
+      [
+       "Lass Maquinas E Equipamentos Ltda",
+       376098.68
+      ],
+      [
+       "Bem Me Quer Inst. De Longa Perm. De Idosos Ltda Me",
+       360592.4
+      ],
+      [
+       "Alutech Tecnologia E Locacoes S.A",
+       358373.0
+      ],
+      [
+       "Atmosfera Gases Especiais E Epis Eireli Epp",
+       354679.87
+      ],
+      [
+       "Mercalf Diesel Ltda",
+       351422.13
+      ],
+      [
+       "Basca Alimentos Eireli",
+       319531.6
+      ],
+      [
+       "Centro Medico Sao Jose Cerquilho Ltda",
+       306389.52
+      ],
+      [
+       "Marino Portaria E Limpeza Ltda",
+       303732.28
+      ],
+      [
+       "Vitafourmed Ltda",
+       301047.16
+      ],
+      [
+       "Marcos Roberto De Souza  Cia Ltda",
+       283636.0
+      ],
+      [
+       "C  M Diagnosticos Medicos Cerquilho Ltda",
+       278935.58
+      ],
+      [
+       "Eti Empresa De Tecnologia Da Informação",
+       264000.0
+      ],
+      [
+       "Super Sonic Do Brasil Ltda",
+       250959.0
+      ],
+      [
+       "Puriagua Comercio De Filtros Ltda Me",
+       241806.48
+      ],
+      [
+       "Plastimax Ltda",
+       237151.3
+      ],
+      [
+       "Mario Augusto Silva Pereira",
+       224030.0
+      ],
+      [
+       "Consorcio Interm De Bombeiros Do Med Tiete",
+       221457.2
+      ],
+      [
+       "Geodados Geoprocessamento E Serviços Aéreos Especializados Ltda.",
+       219683.0
+      ],
+      [
+       "Secretaria De Estado Da Educacao",
+       212517.32
+      ],
+      [
+       "Franklin Cangussu Sampaio Eireli",
+       201852.01
+      ],
+      [
+       "Biomedka Laboratorio Clinico Limitada",
+       195766.42
+      ],
+      [
+       "Clinica Veterinaria Bomge",
+       194192.33
+      ],
+      [
+       "Rd Informatica Ltda",
+       191174.0
+      ],
+      [
+       "Panipan Alimentos Ltda",
+       179976.56
+      ],
+      [
+       "Frutti Mais Comercio De Bebidas E Alimentos Eireli",
+       178802.76
+      ]
+     ]
+    }
+   }
+  },
+  "camara": {
+   "nome": "Câmara Municipal De Cerquilho",
+   "anos": {
+    "2025": {
+     "total": 3077356.23,
+     "pagamentos": 792,
+     "meses": {
+      "1": 177718.98,
+      "2": 224379.39,
+      "3": 236614.88,
+      "4": 228209.78,
+      "5": 347779.11,
+      "6": 234037.44,
+      "7": 204461.33,
+      "8": 195228.77,
+      "9": 426531.45,
+      "10": 280278.67,
+      "11": 202052.12,
+      "12": 320064.31
+     },
+     "fornecedores": [
+      [
+       "Camara Municipal De Cerquilho",
+       1636449.55
+      ],
+      [
+       "Inss - Instituto Nacional Do Seguro Social",
+       222312.51
+      ],
+      [
+       "Fapen - Fundo De Aposentadorias E Pensões Serv. Publ. Cerquilho",
+       173986.69
+      ],
+      [
+       "Clean Corp Limpeza E Serviços Ltda Me",
+       150431.4
+      ],
+      [
+       "It Sistemas Eletronicos E Informatizados Eireli Epp",
+       116824.81
+      ],
+      [
+       "Ministerio Da Fazenda",
+       116383.16
+      ],
+      [
+       "Verocheque Refeiçoes Ltda",
+       104669.64
+      ],
+      [
+       "Confiatta Ações Estrategicas Ltda",
+       78000.0
+      ],
+      [
+       "Fundacao Para O Vestibular Da Universidade Estadual Paulista Julio De Mesquita Filho Vunesp",
+       76888.0
+      ],
+      [
+       "Radio Cultura De Cerquilho Fm Ltda",
+       58000.0
+      ],
+      [
+       "Claudio Domingues Vieira (pessoa física)",
+       48507.91
+      ],
+      [
+       "Alutech Tecnologia E Locações S.A.",
+       40441.48
+      ],
+      [
+       "Sino Consultoria E Informatica Ltda-Epp",
+       36000.0
+      ],
+      [
+       "Wesley Nunes Junior",
+       20370.0
+      ],
+      [
+       "Digi Rax Repr. Com. E Serv. Equip. De Inform. Ltda",
+       14447.35
+      ],
+      [
+       "Luis Antonio Fogaça (pessoa física)",
+       13329.1
+      ],
+      [
+       "Visaoi Sistemas De Informatica Ltda - Me",
+       13010.56
+      ],
+      [
+       "Public System Technology Ltda",
+       12261.0
+      ],
+      [
+       "Digicamp Serviços E Processamentos Ltda - Me",
+       11940.0
+      ],
+      [
+       "Bertola  Galvao Arquitetura E Paisagismo Ltda",
+       9600.0
+      ],
+      [
+       "Auto Posto Grande Jamaica Ltda",
+       9246.69
+      ],
+      [
+       "Central Do Cafe Ltda",
+       8672.5
+      ],
+      [
+       "Adevaldo De Souza Ltda",
+       6936.0
+      ],
+      [
+       "Marcos Alberto Giacomazzi Marcon - Me",
+       5394.75
+      ],
+      [
+       "Associação Dos Ag Fiscais De Rendas Estado Sp",
+       5130.0
+      ],
+      [
+       "Coop. Consumo Pop. De Cerquilho",
+       4583.23
+      ],
+      [
+       "Porto Seguro Cia De Seguros Gerais",
+       4414.0
+      ],
+      [
+       "Elektro Eletricidade E Serviços S.A.",
+       4293.8
+      ],
+      [
+       "Emepel Produtos De Higiene Ltda",
+       4115.21
+      ],
+      [
+       "Eyes Sistemas De Segurança Ltda Me",
+       4080.0
+      ],
+      [
+       "Francisco Altair Marcon - Epp",
+       3530.54
+      ],
+      [
+       "Associação Policial De Assistencia A Saude",
+       3529.81
+      ],
+      [
+       "J C Bertola Mercearia Epp",
+       3192.8
+      ],
+      [
+       "Cilnet Comunicacao E Informatica Ltda Epp",
+       3139.5
+      ],
+      [
+       "Sem Parar Instituiçao De Pagamento Ltda",
+       3006.12
+      ],
+      [
+       "Padaria Cerquilhense Ltda Me",
+       2524.19
+      ],
+      [
+       "P P Materiais Eletricos Ltda Me",
+       2337.62
+      ],
+      [
+       "R. M. Modenez E Mateus Ltda - Me",
+       2323.62
+      ],
+      [
+       "Sebastião Valerio Cerquilho Epp",
+       2312.12
+      ],
+      [
+       "Padaria E Confetaria Curitibana Ltda",
+       2303.09
+      ],
+      [
+       "Carolina Querino Martins Fontes De Oliveira (pessoa física)",
+       2293.15
+      ],
+      [
+       "Luiz Carlos Vaz Me",
+       2178.32
+      ],
+      [
+       "Betil - Distr. De Bebidas Tiete Ltda",
+       2136.0
+      ],
+      [
+       "Unimed De Piracicaba Sociedade Cooperativa De Serv Médicos",
+       1977.6
+      ],
+      [
+       "Rafaela M Dos Santos",
+       1954.97
+      ],
+      [
+       "Unimed De Tatui Cooperativa De Trabalho Medico",
+       1823.01
+      ],
+      [
+       "Hdi Seguros Do Brasil Sa",
+       1776.83
+      ],
+      [
+       "Santina S X Da Silva E Cia Ltda Epp",
+       1722.26
+      ],
+      [
+       "Grifon Digital Serviços Ltda",
+       1680.0
+      ],
+      [
+       "Maggi Auto Ltda",
+       1429.11
+      ],
+      [
+       "Certisign Certificadora Digital Sa",
+       1252.2
+      ],
+      [
+       "Yara Rosa Fogaça",
+       1250.0
+      ],
+      [
+       "Pizzaria A Saborosa De Cerquilho Ltda Me",
+       1207.4
+      ],
+      [
+       "Assecont Tecnologia Ltda Epp",
+       1188.0
+      ],
+      [
+       "Maxsuel Pereira Dos Santos",
+       1170.0
+      ],
+      [
+       "Banco Do Brasil S/A",
+       1119.6
+      ],
+      [
+       "Extintores Sao Roque Ltda",
+       1030.0
+      ],
+      [
+       "Minimercado Ki Joia Ltda",
+       924.36
+      ],
+      [
+       "W. Jose Campi - Me",
+       900.0
+      ],
+      [
+       "Neuciane Silva Da Costa",
+       800.0
+      ]
+     ]
+    },
+    "2026": {
+     "total": 2036211.45,
+     "pagamentos": 469,
+     "meses": {
+      "1": 152762.73,
+      "2": 218925.21,
+      "3": 228047.45,
+      "4": 263750.54,
+      "5": 327570.48,
+      "6": 330667.99,
+      "7": 251782.09,
+      "8": 262704.96
+     },
+     "fornecedores": [
+      [
+       "Camara Municipal De Cerquilho",
+       1189636.69
+      ],
+      [
+       "Fapen - Fundo De Aposentadorias E Pensões Serv. Publ. Cerquilho",
+       171263.92
+      ],
+      [
+       "It Sistemas Eletronicos E Informatizados Eireli Epp",
+       93350.0
+      ],
+      [
+       "Ministerio Da Fazenda",
+       88396.65
+      ],
+      [
+       "Clean Corp Limpeza E Serviços Ltda Me",
+       87751.65
+      ],
+      [
+       "Verocheque Refeiçoes Ltda",
+       87369.1
+      ],
+      [
+       "Radio Cultura De Cerquilho Fm Ltda",
+       36000.0
+      ],
+      [
+       "Alutech Tecnologia E Locações S.A.",
+       30610.09
+      ],
+      [
+       "Claudio Domingues Vieira (pessoa física)",
+       29442.59
+      ],
+      [
+       "Confiatta Ações Estratégicas Ltda",
+       27887.1
+      ],
+      [
+       "Sino Consultoria E Informatica Ltda-Epp",
+       21700.0
+      ],
+      [
+       "Digi Rax Repr. Com. E Serv. Equip. De Inform. Ltda",
+       14938.74
+      ],
+      [
+       "W. Jose Campi - Me",
+       12470.0
+      ],
+      [
+       "Visaoi Sistemas De Informatica Ltda - Me",
+       10623.5
+      ],
+      [
+       "Digicamp Serviços E Processamentos Ltda - Me",
+       7315.0
+      ],
+      [
+       "Bertola  Galvao Arquitetura E Paisagismo Ltda",
+       6900.0
+      ],
+      [
+       "Eyes Sistemas De Segurança Ltda Me",
+       5289.85
+      ],
+      [
+       "Ghs Projetos E Pericias Ltda",
+       5100.0
+      ],
+      [
+       "Auto Posto Grande Jamaica Ltda",
+       5083.2
+      ],
+      [
+       "Central Do Cafe Ltda",
+       4989.6
+      ],
+      [
+       "Adevaldo De Souza Ltda",
+       4695.2
+      ],
+      [
+       "Public System Technology Ltda",
+       4614.35
+      ],
+      [
+       "Emepel Produtos De Higiene Ltda",
+       4148.84
+      ],
+      [
+       "União Dos Vereadores Do Estado De São Paulo",
+       4080.0
+      ],
+      [
+       "Luis Antonio Fogaça (pessoa física)",
+       3837.1
+      ],
+      [
+       "Universidade De Direito Publico Ltda - Unidip",
+       3600.0
+      ],
+      [
+       "Santina S X Da Silva E Cia Ltda Epp",
+       3323.9
+      ],
+      [
+       "Associação Dos Ag Fiscais De Rendas Estado Sp",
+       3220.0
+      ],
+      [
+       "Calviptur - Agencia De Viagens Ltda",
+       3170.79
+      ],
+      [
+       "Sinalplaca Comercio De Placas E Sinalizacao Ltda",
+       3040.0
+      ],
+      [
+       "Francisco Altair Marcon - Epp",
+       3032.08
+      ],
+      [
+       "Elektro Eletricidade E Serviços S.A.",
+       2938.67
+      ],
+      [
+       "Associação Policial De Assistencia A Saude",
+       2786.38
+      ],
+      [
+       "Porto Seguro Cia De Seguros Gerais",
+       2783.11
+      ],
+      [
+       "Cilnet Comunicacao E Informatica Ltda Epp",
+       2616.25
+      ],
+      [
+       "Milena Campos Fiuza De Lima (pessoa física)",
+       2516.15
+      ],
+      [
+       "J C Bertola Mercearia Epp",
+       2504.31
+      ],
+      [
+       "R. M. Modenez E Mateus Ltda - Me",
+       2331.23
+      ],
+      [
+       "Alianca Do Brasil Seguros S/A.",
+       2145.5
+      ],
+      [
+       "Minimercado Ki Joia Ltda",
+       2090.7
+      ],
+      [
+       "Alvarez E Bravin Pousada Ltda",
+       1980.0
+      ],
+      [
+       "Adega E Conveniencia Betil Ltda",
+       1923.93
+      ],
+      [
+       "Grafica Vidotto Ltda",
+       1840.0
+      ],
+      [
+       "Clinica Medica De Saude Ocupacional Tavares Ltda",
+       1812.08
+      ],
+      [
+       "Carolina Querino Martins Fontes De Oliveira (pessoa física)",
+       1742.45
+      ],
+      [
+       "Padaria Cerquilhense Ltda Me",
+       1712.24
+      ],
+      [
+       "Lucas Jacao Ltda",
+       1665.0
+      ],
+      [
+       "P P Materiais Eletricos Ltda Me",
+       1599.9
+      ],
+      [
+       "Sem Parar Instituiçao De Pagamento Ltda",
+       1522.78
+      ],
+      [
+       "Padaria E Confetaria Curitibana Ltda",
+       1497.76
+      ],
+      [
+       "Hdi Seguros Do Brasil Sa",
+       1448.45
+      ],
+      [
+       "Rafaela M Dos Santos",
+       1367.7
+      ],
+      [
+       "Unimed De Tatui Cooperativa De Trabalho Medico",
+       1301.89
+      ],
+      [
+       "Flora Santiago Limitada",
+       1000.0
+      ],
+      [
+       "Coop. Consumo Pop. De Cerquilho",
+       959.5
+      ],
+      [
+       "Container Confeitaria Ltda",
+       946.0
+      ],
+      [
+       "Quase Tudo Atacado De Embalagens E Descartaveis Ltda.",
+       928.77
+      ],
+      [
+       "Certisign Certificadora Digital Sa",
+       824.8
+      ],
+      [
+       "Settha Seguranca E Saude No Trabalho Ltda",
+       800.0
+      ],
+      [
+       "Assecont Tecnologia Ltda Epp",
+       792.0
+      ]
+     ]
+    }
+   }
+  },
+  "SERVIÇO AUTÔNOMO DE ÁGUA E ESGOTO DE CERQUILHO": {
+   "nome": "Serviço Autônomo De Água E Esgoto De Cerquilho",
+   "anos": {
+    "2025": {
+     "total": 16210122.85,
+     "pagamentos": 1972,
+     "meses": {
+      "1": 958572.85,
+      "2": 1108976.32,
+      "3": 1086368.74,
+      "4": 1077669.69,
+      "5": 1116761.15,
+      "6": 1044492.67,
+      "7": 1164830.04,
+      "8": 1165099.94,
+      "9": 1327878.96,
+      "10": 1528860.65,
+      "11": 2214168.75,
+      "12": 2416443.09
+     },
+     "fornecedores": [
+      [
+       "Saaec",
+       5644041.22
+      ],
+      [
+       "Elektro Redes S.A.",
+       3743571.95
+      ],
+      [
+       "Fapen - Fundo De Apos Dos Serv. Publ De Cerquilho",
+       1367691.61
+      ],
+      [
+       "Fehidro - Fundo Estadual De Recursos Hidricos",
+       468802.26
+      ],
+      [
+       "Agua Forte Saneamento Ambiental Ltda",
+       421186.06
+      ],
+      [
+       "Mercalf Diesel Ltda.",
+       359900.0
+      ],
+      [
+       "Pasep - Ministerio Da Fazenda",
+       217356.86
+      ],
+      [
+       "Fundaçao Ag Da Bacia Hidrografica Rio Sorocaba",
+       190890.83
+      ],
+      [
+       "Caldas Comercio De Produtos Quimicos Ltda - Epp",
+       161100.0
+      ],
+      [
+       "Blue Metering Equipamentos De Medicao Ltda",
+       160000.0
+      ],
+      [
+       "Vitta Quimica Industria E Comercio Ltda",
+       158685.6
+      ],
+      [
+       "Link Card Administradora De Benefícios Ltda",
+       142204.78
+      ],
+      [
+       "Renova Comercio De Produtos Quimicos E Asfaltico Ltda",
+       132800.0
+      ],
+      [
+       "Bsr Servicos Terceirizados E Especializados Ltda",
+       125884.89
+      ],
+      [
+       "Bpf Instituição De Pagamentos Ltda",
+       116500.0
+      ],
+      [
+       "Caixa Economica Federal S/A",
+       109745.06
+      ],
+      [
+       "Tribunal Regional Do Trabalho Da 15A Regiao",
+       97358.37
+      ],
+      [
+       "Hidro-Sane Rental, Comercio E Serviços Ltda",
+       93300.0
+      ],
+      [
+       "I N S S -",
+       92149.5
+      ],
+      [
+       "Banco Itau S.A..",
+       89905.84
+      ],
+      [
+       "Nd Bombas Comercio E Servicos Ltda",
+       63716.0
+      ],
+      [
+       "Caçambas 3 Luiz Ltda - Me",
+       61950.0
+      ],
+      [
+       "Saiph Serviços De Desenvolvimento De Softwares E Circuitos Eletrônicos Ltda",
+       61714.67
+      ],
+      [
+       "Asperbras Tubos E Conexoes Ltda",
+       58628.0
+      ],
+      [
+       "A2N Engenharia E Solucoes Sustentaveis Ltda",
+       58200.0
+      ],
+      [
+       "Tro Pavimentacoes Ltda",
+       51479.4
+      ],
+      [
+       "J-Tech Solucoes Em Informatica Ltda.",
+       46134.96
+      ],
+      [
+       "Banco Do Brasil S/A",
+       43802.5
+      ],
+      [
+       "Hidrogeron Tratamento De Agua E Esgoto Ltda",
+       43127.2
+      ],
+      [
+       "Berto  Franguelli Pecas E Oficina Mecanica Ltda",
+       41524.13
+      ],
+      [
+       "Arespcj - Agencia Reguladora Serv.Saneamento",
+       41061.9
+      ],
+      [
+       "Sanson Pavimento E Obras Ltda.",
+       35648.0
+      ],
+      [
+       "Polierg Ind. E Com. Ltda",
+       32828.61
+      ],
+      [
+       "Rodoara Implementos Ltda",
+       32800.0
+      ],
+      [
+       "Airflow Roots Equipamentos Peças E Serviços Ltda Me",
+       32446.04
+      ],
+      [
+       "Rodrigo David",
+       32120.0
+      ],
+      [
+       "Vitoria  Vitoria Construções Ltda",
+       31979.9
+      ],
+      [
+       "Serralheria Corsan Ltda Me",
+       30230.0
+      ],
+      [
+       "Weliton Christensen De Melo",
+       28294.0
+      ],
+      [
+       "Leenia Metalurgica E Soluçoes Inteligentes Eireli",
+       26100.0
+      ],
+      [
+       "E-Driver Automoção E Sistemas Ltda",
+       24450.0
+      ],
+      [
+       "Porto Seguro Companhia De Seguros Gerais",
+       22664.47
+      ],
+      [
+       "Coutinho  Zambotto Advogados Associados",
+       21000.0
+      ],
+      [
+       "Cml Comercio De Materiais Para Construcao Eireli",
+       20678.86
+      ],
+      [
+       "Suprema Tecnologia Analítica Ltda",
+       20573.37
+      ],
+      [
+       "Puriagua Comercio De Filtros Ltda Me",
+       19505.04
+      ],
+      [
+       "Vagner Aparecido Panserini - Me",
+       19376.11
+      ],
+      [
+       "Vitoria Comercio E Servicos Ltda",
+       19252.26
+      ],
+      [
+       "Crv Facilities E Servicos Ltda",
+       19158.32
+      ],
+      [
+       "M. R. Pereira E Bergamin Ltda. - Me",
+       19022.5
+      ],
+      [
+       "Tigre Materiais E Soluções Para Construção Ltda",
+       18349.49
+      ],
+      [
+       "Luciana Pinheiro (pessoa física)",
+       18216.0
+      ],
+      [
+       "Simone Pires De Assis Da Silva (pessoa física)",
+       17659.4
+      ],
+      [
+       "Braulio Teixeira Filho",
+       17650.0
+      ],
+      [
+       "Claudio Service Mecanica Diesel Ltda.",
+       17590.65
+      ],
+      [
+       "Joao Luiz Machado Gregorio (pessoa física)",
+       17500.36
+      ],
+      [
+       "Resilie Tasty Food Restaurante Ltda",
+       16895.0
+      ],
+      [
+       "Cerquilho Enrolamento De Motores Ltda Me",
+       16886.0
+      ],
+      [
+       "Italy Valvulas  Metais Eireli",
+       16657.9
+      ],
+      [
+       "Regispel Industria E Comercio De Bobinas S/A",
+       15508.65
+      ]
+     ]
+    },
+    "2026": {
+     "total": 10307686.06,
+     "pagamentos": 1232,
+     "meses": {
+      "1": 1152752.28,
+      "2": 1125682.2,
+      "3": 1145617.86,
+      "4": 1241760.03,
+      "5": 1333275.54,
+      "6": 1241724.28,
+      "7": 1643201.57,
+      "8": 1423672.3
+     },
+     "fornecedores": [
+      [
+       "Saaec",
+       3927221.08
+      ],
+      [
+       "Elektro Redes S.A.",
+       2717375.05
+      ],
+      [
+       "Fapen - Fundo De Apos Dos Serv. Publ De Cerquilho",
+       1252712.15
+      ],
+      [
+       "Tro Pavimentacoes Ltda",
+       172088.06
+      ],
+      [
+       "Pasep - Ministerio Da Fazenda",
+       153281.82
+      ],
+      [
+       "Ganesha Veiculos E Inovacoes Ltda",
+       124900.0
+      ],
+      [
+       "Nonne Representacoes E Comercio De Materiais",
+       121600.0
+      ],
+      [
+       "Fundaçao Ag Da Bacia Hidrografica Rio Sorocaba",
+       114534.83
+      ],
+      [
+       "Total Comercio E Servicos De Veiculos Ltda.",
+       112700.0
+      ],
+      [
+       "Bsr Servicos Terceirizados E Especializados Ltda",
+       85588.13
+      ],
+      [
+       "Caixa Economica Federal S/A",
+       69368.83
+      ],
+      [
+       "Banco Itau S.A..",
+       59165.38
+      ],
+      [
+       "Link Card Administradora De Benefícios Ltda",
+       58450.91
+      ],
+      [
+       "E-Driver Automoção E Sistemas Ltda",
+       56570.0
+      ],
+      [
+       "I N S S -",
+       52681.26
+      ],
+      [
+       "Matryx Industria E Comercio De Insumos Para Tratamento De Aguas Ltda",
+       51650.82
+      ],
+      [
+       "Fehidro - Fundo Estadual De Recursos Hidricos",
+       43463.73
+      ],
+      [
+       "Vitta Quimica Industria E Comercio Ltda",
+       43290.0
+      ],
+      [
+       "Banco Do Brasil S/A",
+       35878.56
+      ],
+      [
+       "Carlos Eduardo Daros (pessoa física)",
+       35493.53
+      ],
+      [
+       "Arespcj - Agencia Reguladora Serv.Saneamento",
+       31690.26
+      ],
+      [
+       "Porto Seguro Companhia De Seguros Gerais",
+       28960.69
+      ],
+      [
+       "Tribunal Regional Do Trabalho Da 15A Regiao",
+       25424.09
+      ],
+      [
+       "Berto  Franguelli Pecas E Oficina Mecanica Ltda",
+       23371.26
+      ],
+      [
+       "Comercial Nochelli Ltda Epp",
+       20078.19
+      ],
+      [
+       "Ecocic Solucoes Ambientais Ltda Me",
+       19120.0
+      ],
+      [
+       "Nivetec Instrumentação E Controle Ltda",
+       18884.18
+      ],
+      [
+       "Cml Comercio De Materiais Para Construcao Eireli",
+       17934.4
+      ],
+      [
+       "Nd Bombas Comercio E Servicos Ltda",
+       17808.0
+      ],
+      [
+       "Serralheria Corsan Ltda Me",
+       17350.0
+      ],
+      [
+       "Braulio Teixeira Filho",
+       16700.0
+      ],
+      [
+       "Vitoria Bombas Diesel Com. Peças Veiculos Ltda Epp",
+       15691.0
+      ],
+      [
+       "Ed Carlos Nunes De Siqueira Campos",
+       15175.0
+      ],
+      [
+       "Madeireira Stefani  Stefani Ltda Me",
+       15095.83
+      ],
+      [
+       "Cerquilho Enrolamento De Motores Ltda Me",
+       14815.0
+      ],
+      [
+       "Pedreira Sanson Ltda",
+       14446.32
+      ],
+      [
+       "Regispel Industria E Comercio De Bobinas S/A",
+       14299.04
+      ],
+      [
+       "Krotrec Rental Service Ltda",
+       14000.0
+      ],
+      [
+       "Edilson Pereira Santos Ataide (pessoa física)",
+       13887.2
+      ],
+      [
+       "Vitoria Comercio E Servicos Ltda",
+       13814.56
+      ],
+      [
+       "Weliton Christensen De Melo",
+       13810.0
+      ],
+      [
+       "Cilla Seg Solucoes Em Seguranca Do Trabalho Ltda",
+       13200.0
+      ],
+      [
+       "Puriagua Comercio De Filtros Ltda Me",
+       12842.26
+      ],
+      [
+       "Netzsch Do Brasil Industria E Comercio Ltda",
+       12139.41
+      ],
+      [
+       "Angelo Luiz Ferreira De Albuquerque",
+       12020.0
+      ],
+      [
+       "Aeron Ferramentaria E Comercio De Ferramentas Ltda",
+       11700.0
+      ],
+      [
+       "Adevaldo De Souza Ltda",
+       11287.5
+      ],
+      [
+       "66.144.060 Joyce Cristina Genesini Teixeira",
+       10180.0
+      ],
+      [
+       "A2N Engenharia E Solucoes Sustentaveis Ltda",
+       10158.32
+      ],
+      [
+       "Banco Brasileiro De Descontos S.A..",
+       9869.93
+      ],
+      [
+       "Tcs Brasil Servicos Ltda",
+       9690.0
+      ],
+      [
+       "Vagner Aparecido Panserini - Me",
+       9583.17
+      ],
+      [
+       "Resilie Tasty Food Restaurante Ltda",
+       9566.0
+      ],
+      [
+       "Polierg Ind. E Com. Ltda",
+       9492.0
+      ],
+      [
+       "C. M. Desentupidora E Locadora Ltda Epp.",
+       9440.0
+      ],
+      [
+       "Maico Fernando Bolognesi",
+       9391.0
+      ],
+      [
+       "Danilo Pereira Martins Boituva Me",
+       9281.2
+      ],
+      [
+       "Magnolia Alves Lucchetta (pessoa física)",
+       9077.6
+      ],
+      [
+       "R C Da S Correa Ltda",
+       8654.0
+      ],
+      [
+       "Emanuele Stefanini Rodrigues Modolo",
+       8639.0
+      ]
+     ]
+    }
+   }
+  },
+  "FUNDO DE APOSENTADORIA E PENSOES - CERQUILHO": {
+   "nome": "Fundo De Aposentadoria E Pensoes - Cerquilho",
+   "anos": {
+    "2025": {
+     "total": 37791239.01,
+     "pagamentos": 64,
+     "meses": {
+      "1": 2789575.61,
+      "2": 2811454.62,
+      "3": 2838494.99,
+      "4": 2834287.97,
+      "5": 2873679.61,
+      "6": 2916818.12,
+      "7": 2954448.76,
+      "8": 2979375.03,
+      "9": 2992976.11,
+      "10": 2985921.03,
+      "11": 2980558.38,
+      "12": 5833648.78
+     },
+     "fornecedores": [
+      [
+       "Prefeitura Municipal De Cerquilho",
+       37791239.01
+      ]
+     ]
+    },
+    "2026": {
+     "total": 25335983.16,
+     "pagamentos": 62,
+     "meses": {
+      "1": 3120913.2,
+      "2": 3129114.61,
+      "3": 3146077.91,
+      "4": 3183824.36,
+      "5": 3166151.06,
+      "6": 3187550.32,
+      "7": 3176927.71,
+      "8": 3225423.99
+     },
+     "fornecedores": [
+      [
+       "Prefeitura Municipal De Cerquilho",
+       25297138.48
+      ],
+      [
+       "Fundo Do Regime Geral De Previdencia Social",
+       38844.68
+      ]
+     ]
+    }
+   }
+  }
+ }
+}

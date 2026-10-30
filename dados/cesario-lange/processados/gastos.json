@@ -1,0 +1,1035 @@
+{
+ "cidade": "Cesário Lange",
+ "fonte": "TCE-SP, transparência municipal",
+ "anos": [
+  "2025",
+  "2026"
+ ],
+ "gerado_em": "2026-10-30T09:35+00:00",
+ "meses_lidos": [
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
+ ],
+ "orgaos": {
+  "prefeitura": {
+   "nome": "Prefeitura Municipal De Cesário Lange",
+   "anos": {
+    "2025": {
+     "total": 114110576.19,
+     "pagamentos": 10749,
+     "meses": {
+      "1": 4401846.39,
+      "2": 8497909.12,
+      "3": 8280254.24,
+      "4": 9663080.84,
+      "5": 10094163.2,
+      "6": 9207916.04,
+      "7": 9261283.24,
+      "8": 9327085.37,
+      "9": 9702465.43,
+      "10": 9892913.18,
+      "11": 9268662.36,
+      "12": 16512996.78
+     },
+     "fornecedores": [
+      [
+       "Município De Cesário Lange",
+       43332930.88
+      ],
+      [
+       "Beneficencia Hospitalar De C. Lange",
+       14138772.16
+      ],
+      [
+       "Inss-Inst. Nacional Do Seguro Social",
+       6172917.43
+      ],
+      [
+       "Alelo Instituição De Pagamento S.A.",
+       5104133.09
+      ],
+      [
+       "Caixa Economica Federal",
+       4374495.93
+      ],
+      [
+       "Tieteense Ag. De Viagens E Turismo Ltda",
+       4012061.17
+      ],
+      [
+       "Auto Posto Imperial De Ces.Lange Ltda",
+       2073798.33
+      ],
+      [
+       "Mega Construções E Serviços De Limpeza Eireli-Epp",
+       1714340.9
+      ],
+      [
+       "Apae-A.Pais/Amigos Dos Exepcionais Cl",
+       1658521.58
+      ],
+      [
+       "Elektro Redes S.A.",
+       1441388.12
+      ],
+      [
+       "Mude Construtora E Incorporadora Ltda.",
+       1416719.28
+      ],
+      [
+       "Grantel Cesario Lange Materiais De Construcao Ltda",
+       1170387.73
+      ],
+      [
+       "Receita Federal",
+       930856.58
+      ],
+      [
+       "A J Soares Me",
+       896291.94
+      ],
+      [
+       "Associação Criança Feliz De Sorocaba",
+       809485.4
+      ],
+      [
+       "Proposta Engenharia Ambiental Ltda",
+       786848.8
+      ],
+      [
+       "Tribunal De Justiça De São Paulo",
+       769866.75
+      ],
+      [
+       "Inova Serviços E Empreendimentos Técnicos Ltda - Me",
+       713465.31
+      ],
+      [
+       "Chronos Construção E Manutenção Ltda",
+       623520.48
+      ],
+      [
+       "Ntb Comercial De Alimentos Ltda",
+       590165.58
+      ],
+      [
+       "B. F. Distribuidora De Alimentos Ltda",
+       589730.98
+      ],
+      [
+       "Jl Alves Gestão",
+       540717.04
+      ],
+      [
+       "Gente Seguradora S.A.",
+       424982.8
+      ],
+      [
+       "Sabesp - Comp. S.B.Est. S. Paulo",
+       423841.57
+      ],
+      [
+       "R.A.P.Aparecida Comércio De Medicamentos Ltda",
+       403861.05
+      ],
+      [
+       "Pfort Manutencao Geral Ltda",
+       372994.96
+      ],
+      [
+       "Digi Rax Repres. Com. E Serv. De Equip De Inform.",
+       366214.04
+      ],
+      [
+       "Itk Brasil Soluções Ltda",
+       356805.91
+      ],
+      [
+       "Telefônica Brasil S.A.",
+       315627.0
+      ],
+      [
+       "Dellazari E Borlina Construtora Ltda",
+       307375.98
+      ],
+      [
+       "Cta Serviços Medicos Ltda",
+       292200.0
+      ],
+      [
+       "Tribunal Regional Do Trabalho Da 15 Região",
+       259530.52
+      ],
+      [
+       "Cholmed Comercial Hospitalar Ltda",
+       252274.6
+      ],
+      [
+       "Nutricionale Comercio De Alimentos Ltda",
+       245194.45
+      ],
+      [
+       "Jose Vicente Ribeiro Cesario Lange Me",
+       244140.0
+      ],
+      [
+       "C  M Diagnosticos Medicos Tatui Ltda",
+       241838.77
+      ],
+      [
+       "Tatui-Imagem,Medicina E Diagnóstico Ltda.",
+       223515.03
+      ],
+      [
+       "Traia Véia Produções Ltda",
+       220000.0
+      ],
+      [
+       "Banco Do Brasil - Cesário Lange",
+       215959.66
+      ],
+      [
+       "Justa Construtora Ltda",
+       198090.31
+      ],
+      [
+       "Vivace Educação E Cultura Eireli",
+       188720.47
+      ],
+      [
+       "Ciee - Centro Integração Empresa Escola",
+       181800.19
+      ],
+      [
+       "Centro De Gestão De Meios De Pgto S/A",
+       174095.36
+      ],
+      [
+       "Imperial Pneus Ltda",
+       172887.08
+      ],
+      [
+       "Atri Comercial Ltda",
+       165200.0
+      ],
+      [
+       "Ana Valeria Tonelotto",
+       159846.75
+      ],
+      [
+       "Jaqueline I D Murosaki-Me",
+       137982.69
+      ],
+      [
+       "White Martins Gases Industriais Ltda",
+       133519.85
+      ],
+      [
+       "Cooperativa De Produção E Prestação De Seviços Dos Assentados E Pequenos Agricultores De Porto Feliz",
+       131153.76
+      ],
+      [
+       "Cássia Comércio E Distribuição Ltda",
+       129432.66
+      ],
+      [
+       "Laticinios Gege Ltda",
+       125008.8
+      ],
+      [
+       "Rancheiros Ltda",
+       125000.0
+      ],
+      [
+       "José Vicente Ribeiro Junior",
+       124220.01
+      ],
+      [
+       "Benedito Nelson Ramos",
+       120226.25
+      ],
+      [
+       "Us Agroboy Ltda",
+       120000.0
+      ],
+      [
+       "Mult Med Equipamentos Hospitalares Ltda",
+       119050.73
+      ],
+      [
+       "Interlab Farmacêutica Ltda",
+       114845.4
+      ],
+      [
+       "Eduardo Almeida Silva",
+       112909.6
+      ],
+      [
+       "Cirurgica União Ltda",
+       110742.36
+      ],
+      [
+       "2F Distribuidora Ltda",
+       108435.54
+      ]
+     ]
+    },
+    "2026": {
+     "total": 72460880.78,
+     "pagamentos": 6473,
+     "meses": {
+      "1": 4820074.69,
+      "2": 7549631.05,
+      "3": 8989181.67,
+      "4": 10016614.34,
+      "5": 9656101.84,
+      "6": 11219348.98,
+      "7": 9823081.42,
+      "8": 10386846.79
+     },
+     "fornecedores": [
+      [
+       "Município De Cesário Lange",
+       26353329.57
+      ],
+      [
+       "Beneficencia Hospitalar De C. Lange",
+       10090562.98
+      ],
+      [
+       "Inss-Inst. Nacional Do Seguro Social",
+       4886831.62
+      ],
+      [
+       "Alelo Instituição De Pagamento S.A.",
+       3553882.77
+      ],
+      [
+       "Caixa Economica Federal",
+       2633044.07
+      ],
+      [
+       "Auto Posto Imperial De Ces.Lange Ltda",
+       1435539.25
+      ],
+      [
+       "Mega Construções E Serviços De Limpeza Eireli-Epp",
+       1270701.69
+      ],
+      [
+       "Jade Az Comercial De Alimentos Eireli",
+       1253178.9
+      ],
+      [
+       "Scatena Agência De Viagens E Turismo Eirelli",
+       1212125.46
+      ],
+      [
+       "Tieteense Ag. De Viagens E Turismo Ltda",
+       1082372.92
+      ],
+      [
+       "Elektro Redes S.A.",
+       973740.58
+      ],
+      [
+       "Peso Caminhoes E Implementos Ltda",
+       799000.0
+      ],
+      [
+       "Grantel Comércio De Material Para Construção Ltda",
+       739205.18
+      ],
+      [
+       "Receita Federal",
+       727547.14
+      ],
+      [
+       "A J Soares Me",
+       685239.71
+      ],
+      [
+       "Associação Criança Feliz De Sorocaba",
+       658053.32
+      ],
+      [
+       "Volkswagen Truck  Bus Industria E Comercio De Veiculos Ltda",
+       644900.0
+      ],
+      [
+       "4 R Tecnologia Da Informação Ltda",
+       633991.0
+      ],
+      [
+       "2F Distribuidora Ltda",
+       594106.11
+      ],
+      [
+       "Proposta Engenharia Ambiental Ltda",
+       515128.63
+      ],
+      [
+       "Apae-A.Pais/Amigos Dos Exepcionais Cl",
+       472116.4
+      ],
+      [
+       "Nassim Eletricidades Ltda",
+       428284.46
+      ],
+      [
+       "Sabesp - Comp. S.B.Est. S. Paulo",
+       428205.08
+      ],
+      [
+       "Cta Serviços Medicos Ltda",
+       326087.75
+      ],
+      [
+       "Inova Serviços E Empreendimentos Técnicos Ltda - Me",
+       303636.47
+      ],
+      [
+       "José Vicente Ribeiro Junior",
+       294999.99
+      ],
+      [
+       "Cerezzo Comercial De Produtos E Servicos Ltda",
+       265136.24
+      ],
+      [
+       "Tatui-Imagem,Medicina E Diagnóstico Ltda.",
+       221399.07
+      ],
+      [
+       "Prime D.I.S.T Comercial Imp Exp",
+       221230.9
+      ],
+      [
+       "Dellazari E Borlina Soluções Ltda",
+       214216.4
+      ],
+      [
+       "Cholmed Comercial Hospitalar Ltda",
+       212446.02
+      ],
+      [
+       "Catto Seg Ltda",
+       200000.0
+      ],
+      [
+       "Sym Comercio De Descartaveis Ltda",
+       169452.17
+      ],
+      [
+       "Ntb Comercial De Alimentos Ltda",
+       162795.03
+      ],
+      [
+       "Assist Medicina E Saude Ltda",
+       159599.98
+      ],
+      [
+       "Telefônica Brasil S.A.",
+       154336.74
+      ],
+      [
+       "Centro De Gestão De Meios De Pgto S/A",
+       145877.83
+      ],
+      [
+       "C  M Diagnosticos Medicos Tatui Ltda",
+       136892.89
+      ],
+      [
+       "Tribunal Regional Do Trabalho Da 15 Região",
+       136847.35
+      ],
+      [
+       "Ml Da Silveira Epp",
+       124806.0
+      ],
+      [
+       "Imperial Pneus Ltda",
+       113480.28
+      ],
+      [
+       "Ciee - Centro Integração Empresa Escola",
+       111869.17
+      ],
+      [
+       "Pressao Producoes Artisticas Ltda",
+       110000.0
+      ],
+      [
+       "Gente Seguradora S.A.",
+       99061.86
+      ],
+      [
+       "Secretaria Da Segurança Pública - São Paulo",
+       75911.28
+      ],
+      [
+       "Frigorifico Bella Carne Ltda",
+       70938.0
+      ],
+      [
+       "Intercambio Pecas E Servicos Ltda",
+       69800.0
+      ],
+      [
+       "Digiplan Tecnologia Ltda",
+       69318.53
+      ],
+      [
+       "Vale Comercio De Motos Ltda",
+       68786.66
+      ],
+      [
+       "Rancheiros Ltda",
+       66333.33
+      ],
+      [
+       "Eixxo Empreendimentos Imobiliários Ltda",
+       63950.3
+      ],
+      [
+       "Eduardo Almeida Silva",
+       62358.4
+      ],
+      [
+       "Pronai Comercio De Livros Ltda",
+       62300.0
+      ],
+      [
+       "Tribunal De Justiça De São Paulo",
+       60607.29
+      ],
+      [
+       "Fakri Empreendimentos E Participações S/A",
+       60553.34
+      ],
+      [
+       "Max Hospitalar Importacao E Exportacao Ltda",
+       60433.61
+      ],
+      [
+       "Jl Alves Gestão",
+       60056.04
+      ],
+      [
+       "Banco Do Brasil - Cesário Lange",
+       59850.92
+      ],
+      [
+       "Comercial Silvestre Pçs P/ Tratores Ltda",
+       59037.0
+      ],
+      [
+       "Cooperativa De Produção E Prestação De Seviços Dos Assentados E Pequenos Agricultores De Porto Feliz",
+       58170.61
+      ]
+     ]
+    }
+   }
+  },
+  "camara": {
+   "nome": "Câmara Municipal De Cesário Lange",
+   "anos": {
+    "2025": {
+     "total": 2479564.03,
+     "pagamentos": 486,
+     "meses": {
+      "1": 156758.96,
+      "2": 177054.52,
+      "3": 185987.55,
+      "4": 183556.01,
+      "5": 174676.5,
+      "6": 193780.44,
+      "7": 185964.48,
+      "8": 253025.81,
+      "9": 203033.71,
+      "10": 212825.06,
+      "11": 212016.61,
+      "12": 340884.38
+     },
+     "fornecedores": [
+      [
+       "Folha De Pagamento",
+       1610187.44
+      ],
+      [
+       "Inst. Nac. Do Seguro Social - Inss.",
+       197786.14
+      ],
+      [
+       "Bernadete Ap. M. Silva Crosatti (pessoa física)",
+       121630.73
+      ],
+      [
+       "Caixa Econômica Federal - Cef",
+       73839.81
+      ],
+      [
+       "Planexcon Contabilidade, Assess E Consult S/S Ltd",
+       62409.18
+      ],
+      [
+       "Salmeron Issas Soluções Integradas Ltda",
+       54373.0
+      ],
+      [
+       "R2 Servicos Eletricos Ltda",
+       38900.0
+      ],
+      [
+       "Tecnopublica Tecnologia Em Adm Publica Ltda",
+       36000.0
+      ],
+      [
+       "Linetech Audio, Vídeo E Informática Ltda",
+       32391.0
+      ],
+      [
+       "Márcia Ribeiro Félix De Oliveira (pessoa física)",
+       17521.59
+      ],
+      [
+       "Ppl Eletro Do Brasil Ltda",
+       16532.15
+      ],
+      [
+       "Webline Software Ltda Epp",
+       16400.0
+      ],
+      [
+       "Digital Line Audio Video Informatica Ltda",
+       15255.0
+      ],
+      [
+       "Webline Consultoria Ltda",
+       14919.96
+      ],
+      [
+       "Supermercados Marcon Ltda",
+       13102.51
+      ],
+      [
+       "Prefeitura Municipal De Cesario Lange",
+       11282.28
+      ],
+      [
+       "Marcilio Aparecido Gomes (pessoa física)",
+       10591.94
+      ],
+      [
+       "Buysoft Do Brasil Ltda",
+       10560.0
+      ],
+      [
+       "Apo Comercio De Produtos Ltda",
+       9320.0
+      ],
+      [
+       "Elias Florentino Soares",
+       8735.0
+      ],
+      [
+       "Vilma Vaz Do Nascimento",
+       8300.0
+      ],
+      [
+       "Auto Posto Nova Cesário Ltda",
+       6239.73
+      ],
+      [
+       "Ednéia Antunes Tauhyl De Campos Me",
+       5575.0
+      ],
+      [
+       "Eder Batista De Almeida Laranjal Paulista",
+       5146.2
+      ],
+      [
+       "M. Garcia Duarte Braulio",
+       4650.0
+      ],
+      [
+       "Tiago José Prudente Da Silva (pessoa física)",
+       4600.0
+      ],
+      [
+       "A.M.L.De M. Camargo Me",
+       4046.3
+      ],
+      [
+       "45.527.287 Gabriel Limao Mariani",
+       4041.0
+      ],
+      [
+       "Otávio Rodrigues De Sant Ana (pessoa física)",
+       3898.12
+      ],
+      [
+       "Elektro - Eletricidade E Servicos S.A",
+       3430.3
+      ],
+      [
+       "Elisângela Paschoal (pessoa física)",
+       3290.53
+      ],
+      [
+       "Associacao Brasileira De Camaras Municipais (Abracam)",
+       2991.0
+      ],
+      [
+       "Aliança Artes Gráficas Ltda.",
+       2866.88
+      ],
+      [
+       "Hotel Phenicia Ltda",
+       2805.0
+      ],
+      [
+       "Suprema Sistemas De Higiene Ltda",
+       2804.67
+      ],
+      [
+       "Sem Parar Instituição De Pagamento Ltda",
+       2735.08
+      ],
+      [
+       "M  R Hotelaria Ltda",
+       2396.0
+      ],
+      [
+       "Zt Byte Informática Ltda",
+       2158.8
+      ],
+      [
+       "Andreia Aparecida Da Silva Rudi Comércio De Água E Gás",
+       2041.6
+      ],
+      [
+       "Sr Ortocenter Ltda",
+       2028.0
+      ],
+      [
+       "Clelia Cristina Miranda Tatui Me",
+       2014.1
+      ],
+      [
+       "Nassim Chaguri Filho Eletricidades",
+       2003.49
+      ],
+      [
+       "Filomena Clarete Motta Nunes Me",
+       1790.0
+      ],
+      [
+       "Banderplaca Indústria E Comércio De Placas Ltda Me",
+       1700.0
+      ],
+      [
+       "Eni Alves Moreira Da Silva (pessoa física)",
+       1614.07
+      ],
+      [
+       "Isabel Cristina Rosa De Miranda Me",
+       1560.0
+      ],
+      [
+       "Associação Brasileira Das Escolas Do Legislativo",
+       1500.0
+      ],
+      [
+       "Banco Do Brasil S/A",
+       1389.4
+      ],
+      [
+       "Plafon Engenharia E Consultoria Ltda",
+       1350.0
+      ],
+      [
+       "Cilnet Comunicação E Informática Ltda",
+       1339.18
+      ],
+      [
+       "L  A Comercio E Servicos Ltda",
+       1250.0
+      ],
+      [
+       "Porto Seguro Companhia De Seguros Gerais",
+       1144.54
+      ],
+      [
+       "J.M. Grandi",
+       1140.0
+      ],
+      [
+       "Locaweb Serviços De Internet Sa",
+       1096.83
+      ],
+      [
+       "Mgs Pimentel Comércio Epp",
+       980.0
+      ],
+      [
+       "Telefonica Brasil S/A",
+       949.44
+      ],
+      [
+       "Sabesp",
+       897.22
+      ],
+      [
+       "Silva  Leal Ltda",
+       881.0
+      ],
+      [
+       "Rosemara Faria",
+       849.0
+      ],
+      [
+       "Dixi Vext Comercio De Equipamentos Eletronicos E Sistemas Ltda",
+       847.72
+      ]
+     ]
+    },
+    "2026": {
+     "total": 1741431.47,
+     "pagamentos": 328,
+     "meses": {
+      "1": 170325.35,
+      "2": 204404.08,
+      "3": 228615.16,
+      "4": 205509.29,
+      "5": 206017.99,
+      "6": 258632.04,
+      "7": 243855.68,
+      "8": 224071.88
+     },
+     "fornecedores": [
+      [
+       "Folha De Pagamento",
+       1191289.73
+      ],
+      [
+       "Inst. Nac. Do Seguro Social - Inss.",
+       167449.7
+      ],
+      [
+       "Bernadete Ap. M. Silva Crosatti (pessoa física)",
+       78755.44
+      ],
+      [
+       "Caixa Econômica Federal - Cef",
+       50855.34
+      ],
+      [
+       "Planexcon Contabilidade, Assess E Consult S/S Ltd",
+       46430.4
+      ],
+      [
+       "Digital Line Audio Video Informatica Ltda",
+       40680.0
+      ],
+      [
+       "Tecnopublica Tecnologia Em Adm Publica Ltda",
+       22500.0
+      ],
+      [
+       "Telefonica Brasil S/A",
+       21791.11
+      ],
+      [
+       "Webline Software Ltda Epp",
+       18153.57
+      ],
+      [
+       "Jose Roberto Castanho",
+       10700.0
+      ],
+      [
+       "Márcia Ribeiro Félix De Oliveira (pessoa física)",
+       10331.14
+      ],
+      [
+       "Webline Consultoria Ltda",
+       10291.2
+      ],
+      [
+       "Hotelaria Brasil Ltda",
+       9423.4
+      ],
+      [
+       "Supermercados Marcon Ltda",
+       8010.05
+      ],
+      [
+       "45.527.287 Gabriel Limao Mariani",
+       7902.0
+      ],
+      [
+       "Ednéia Antunes Tauhyl De Campos Me",
+       3650.0
+      ],
+      [
+       "Valdelino Lopes De Lima",
+       3125.0
+      ],
+      [
+       "Associacao Brasileira De Camaras Municipais (Abracam)",
+       2991.0
+      ],
+      [
+       "Suprema Sistemas De Higiene Ltda",
+       2975.44
+      ],
+      [
+       "Eletronica Santana Ltda",
+       2577.0
+      ],
+      [
+       "Auto Posto Nova Cesário Ltda",
+       2535.31
+      ],
+      [
+       "Industria Torres Ltda",
+       2520.0
+      ],
+      [
+       "Elias Florentino Soares",
+       2097.0
+      ],
+      [
+       "Eni Alves Moreira Da Silva (pessoa física)",
+       2031.23
+      ],
+      [
+       "A.M.L.De M. Camargo Me",
+       1989.35
+      ],
+      [
+       "Sem Parar Instituição De Pagamento Ltda",
+       1716.89
+      ],
+      [
+       "45.473.280 Josiffer Amaro De Oliveira Pinto",
+       1710.0
+      ],
+      [
+       "Elektro - Eletricidade E Servicos S.A",
+       1702.14
+      ],
+      [
+       "Zt Byte Informática Ltda",
+       1259.3
+      ],
+      [
+       "Auto Posto Elisa Ltda",
+       1219.0
+      ],
+      [
+       "Silva  Leal Ltda",
+       1134.0
+      ],
+      [
+       "Nassim Chaguri Filho Eletricidades",
+       1109.19
+      ],
+      [
+       "Wallace Rafael Ferraz Me",
+       1100.0
+      ],
+      [
+       "Prefeitura Municipal De Cesario Lange",
+       980.38
+      ],
+      [
+       "Banco Do Brasil S/A",
+       951.81
+      ],
+      [
+       "Cilnet Comunicação E Informática Ltda",
+       921.52
+      ],
+      [
+       "Paula Carolina Alves Utilidades  Cia Ltda",
+       833.65
+      ],
+      [
+       "Andreia Aparecida Da Silva Rudi Comércio De Água E Gás",
+       823.7
+      ],
+      [
+       "Locaweb Serviços De Internet Sa",
+       676.0
+      ],
+      [
+       "Sabesp",
+       661.45
+      ],
+      [
+       "Cerqui-Extin Prevenção E Combate A Incêndios Ltda",
+       560.0
+      ],
+      [
+       "Innovare Assessoria De Comunicacao Ltda",
+       500.0
+      ],
+      [
+       "Clelia Cristina Miranda Tatui Me",
+       489.2
+      ],
+      [
+       "Stark Solucoes Em Tecnologia Ltda",
+       442.43
+      ],
+      [
+       "Ppl Eletro Do Brasil Ltda",
+       402.4
+      ],
+      [
+       "Apo Comercio De Produtos Ltda",
+       300.0
+      ],
+      [
+       "Mgs Pimentel Comércio Epp",
+       250.0
+      ],
+      [
+       "Secretaria Da Receita Federal Do Brasil",
+       250.0
+      ],
+      [
+       "Aliança Artes Gráficas Ltda.",
+       229.0
+      ],
+      [
+       "C. Rocha Camargo De Paula Lanchonete",
+       155.0
+      ]
+     ]
+    }
+   }
+  }
+ }
+}

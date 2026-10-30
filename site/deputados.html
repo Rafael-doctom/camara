@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deputados federais · Olho na Câmara</title>
+<title>Congresso · Olho na Câmara</title>
 <base target="_blank">
 <meta name="description" content="Deputados federais de São Paulo: quanto gastam da cota parlamentar, com quais empresas e como votaram em temas do Painel ideológico. Dados oficiais da Câmara dos Deputados.">
 <meta property="og:title" content="Deputados federais de SP · Olho na Câmara">
@@ -86,7 +86,10 @@
         <label>Partido<select id="f-p"><option value="">Todos</option>${partidos.map((p) => `<option${p === filtro.partido ? " selected" : ""}>${esc(p)}</option>`).join("")}</select></label>
         <label>Ordem<select id="f-o"><option value="gasto">Maior gasto em ${anoAnt}</option><option value="gasto-atual"${filtro.ordem === "gasto-atual" ? " selected" : ""}>Maior gasto em ${anoAtual}</option><option value="nome"${filtro.ordem === "nome" ? " selected" : ""}>Nome</option></select></label>
       </div>
-      <div class="dep-grade" id="grade"></div>`;
+      <div class="dep-grade" id="grade"></div>
+      ${(D.senadores || []).length ? `<h2>Senadores de ${esc(D.uf)}</h2><div class="dep-grade">${D.senadores.map((s) => `<a class="cartao esp-pol" href="${esc(s.pagina)}" rel="noopener">
+        <img class="esp-pol-foto" src="${esc(s.foto)}" alt="" loading="lazy"><span class="esp-pol-txt"><b>${esc(s.nome)}</b><span>${esc(s.partido)} · Senado</span>
+        <span class="suave">Página oficial ↗</span></span></a>`).join("")}</div>` : ""}`;
     const desenhar = () => {
       const q = filtro.q.toLowerCase();
       const ds = D.deputados.filter((d) => (!q || d.nome.toLowerCase().includes(q)) && (!filtro.partido || d.partido === filtro.partido))

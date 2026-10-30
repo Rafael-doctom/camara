@@ -1,0 +1,7772 @@
+{
+ "ano": 2026,
+ "cidade": "Iperó",
+ "fonte": "TSE, Portal de Dados Abertos",
+ "gerado_em": "2026-10-30T09:32+00:00",
+ "disputas": [
+  {
+   "cargo": "presidente",
+   "turno": 1,
+   "validos": 15206,
+   "abrangencia": "Brasil",
+   "candidatos": [
+    {
+     "sq": "280002551544",
+     "urna": "FLAVIO BOLSONARO",
+     "numero": "22",
+     "partido": "PL",
+     "votos": 7950,
+     "pct": 52.28,
+     "total": 56104503,
+     "situacao": "2º turno"
+    },
+    {
+     "sq": "280002542548",
+     "urna": "LULA",
+     "numero": "13",
+     "partido": "PT",
+     "votos": 5940,
+     "pct": 39.06,
+     "total": 53879538,
+     "situacao": "2º turno"
+    },
+    {
+     "sq": "280002551547",
+     "urna": "ESCRITOR AUGUSTO CURY",
+     "numero": "70",
+     "partido": "AVANTE",
+     "votos": 515,
+     "pct": 3.39,
+     "total": 3448569,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "280002540694",
+     "urna": "RENAN SANTOS",
+     "numero": "14",
+     "partido": "MISSÃO",
+     "votos": 446,
+     "pct": 2.93,
+     "total": 2675887,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "280002551932",
+     "urna": "RONALDO CAIADO",
+     "numero": "55",
+     "partido": "PSD",
+     "votos": 287,
+     "pct": 1.89,
+     "total": 2605148,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "280002538811",
+     "urna": "SAMARA",
+     "numero": "80",
+     "partido": "UP",
+     "votos": 28,
+     "pct": 0.18,
+     "total": 122911,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "280002539826",
+     "urna": "ZEMA",
+     "numero": "30",
+     "partido": "NOVO",
+     "votos": 19,
+     "pct": 0.12,
+     "total": 326488,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "280002541457",
+     "urna": "HERTZ DIAS",
+     "numero": "16",
+     "partido": "PSTU",
+     "votos": 9,
+     "pct": 0.06,
+     "total": 43103,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "280002552484",
+     "urna": "CLARIANA BARAO",
+     "numero": "27",
+     "partido": "DC",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 40043,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "280002552487",
+     "urna": "RUI COSTA PIMENTA",
+     "numero": "29",
+     "partido": "PCO",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 15024,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "280002548139",
+     "urna": "VETERINÁRIO WILSON GRASSI",
+     "numero": "35",
+     "partido": "DEMOCRATA",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 16881,
+     "situacao": "Não eleito"
+    }
+   ],
+   "comparecimento": {
+    "aptos": 21605,
+    "comparecimento": 16363,
+    "brancos": 498,
+    "nulos": 659
+   }
+  },
+  {
+   "cargo": "presidente",
+   "turno": 2,
+   "validos": 16344,
+   "abrangencia": "Brasil",
+   "candidatos": [
+    {
+     "sq": "280002551544",
+     "urna": "FLAVIO BOLSONARO",
+     "numero": "22",
+     "partido": "PL",
+     "votos": 8616,
+     "pct": 52.72,
+     "total": 59826041,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "280002542548",
+     "urna": "LULA",
+     "numero": "13",
+     "partido": "PT",
+     "votos": 7728,
+     "pct": 47.28,
+     "total": 64256232,
+     "situacao": "Eleito"
+    }
+   ],
+   "comparecimento": {
+    "aptos": 21605,
+    "comparecimento": 17149,
+    "brancos": 298,
+    "nulos": 507
+   }
+  },
+  {
+   "cargo": "governador",
+   "turno": 1,
+   "validos": 13919,
+   "abrangencia": "SP",
+   "candidatos": [
+    {
+     "sq": "250002541303",
+     "urna": "TARCÍSIO",
+     "numero": "10",
+     "partido": "REPUBLICANOS",
+     "votos": 8655,
+     "pct": 62.18,
+     "total": 14491874,
+     "situacao": "Eleito"
+    },
+    {
+     "sq": "250002549705",
+     "urna": "FERNANDO HADDAD",
+     "numero": "13",
+     "partido": "PT",
+     "votos": 5140,
+     "pct": 36.93,
+     "total": 8423656,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002544912",
+     "urna": "VIVIAN MENDES",
+     "numero": "80",
+     "partido": "UP",
+     "votos": 43,
+     "pct": 0.31,
+     "total": 80480,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002536915",
+     "urna": "VERA LÚCIA",
+     "numero": "16",
+     "partido": "PSTU",
+     "votos": 41,
+     "pct": 0.29,
+     "total": 75641,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002550913",
+     "urna": "CARLOS MACHADO",
+     "numero": "21",
+     "partido": "PCB",
+     "votos": 40,
+     "pct": 0.29,
+     "total": 58862,
+     "situacao": "Não eleito"
+    }
+   ],
+   "comparecimento": {
+    "aptos": 21605,
+    "comparecimento": 16363,
+    "brancos": 1040,
+    "nulos": 1404
+   }
+  },
+  {
+   "cargo": "senador",
+   "turno": 1,
+   "validos": 25927,
+   "abrangencia": "SP",
+   "candidatos": [
+    {
+     "sq": "250002541312",
+     "urna": "GUILHERME DERRITE",
+     "numero": "111",
+     "partido": "PP",
+     "votos": 8141,
+     "pct": 31.4,
+     "total": 13273880,
+     "situacao": "Eleito"
+    },
+    {
+     "sq": "250002541308",
+     "urna": "ANDRÉ DO PRADO",
+     "numero": "222",
+     "partido": "PL",
+     "votos": 7783,
+     "pct": 30.02,
+     "total": 12703089,
+     "situacao": "Eleito"
+    },
+    {
+     "sq": "250002551502",
+     "urna": "SIMONE TEBET",
+     "numero": "400",
+     "partido": "PSB",
+     "votos": 4822,
+     "pct": 18.6,
+     "total": 8342968,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002551501",
+     "urna": "MARINA SILVA",
+     "numero": "180",
+     "partido": "REDE",
+     "votos": 4565,
+     "pct": 17.61,
+     "total": 7862400,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002544673",
+     "urna": "GERALDO RUFINO",
+     "numero": "200",
+     "partido": "PODE",
+     "votos": 237,
+     "pct": 0.91,
+     "total": 386468,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002554075",
+     "urna": "GUTO SCHIAVETTO",
+     "numero": "144",
+     "partido": "MISSÃO",
+     "votos": 198,
+     "pct": 0.76,
+     "total": 392916,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002544516",
+     "urna": "MAÍRA DE SOUZA",
+     "numero": "808",
+     "partido": "UP",
+     "votos": 48,
+     "pct": 0.19,
+     "total": 91283,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002541362",
+     "urna": "DRA ELIANA FERREIRA",
+     "numero": "161",
+     "partido": "PSTU",
+     "votos": 47,
+     "pct": 0.18,
+     "total": 65200,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002552369",
+     "urna": "SONINHA FRANCINE",
+     "numero": "232",
+     "partido": "CIDADANIA",
+     "votos": 40,
+     "pct": 0.15,
+     "total": 165707,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002552153",
+     "urna": "PETTER MAAHS",
+     "numero": "211",
+     "partido": "PCB",
+     "votos": 21,
+     "pct": 0.08,
+     "total": 28311,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002544514",
+     "urna": "MARCIO ALVES",
+     "numero": "800",
+     "partido": "UP",
+     "votos": 15,
+     "pct": 0.06,
+     "total": 45178,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002541365",
+     "urna": "WELLER GONÇALVES",
+     "numero": "160",
+     "partido": "PSTU",
+     "votos": 10,
+     "pct": 0.04,
+     "total": 20503,
+     "situacao": "Não eleito"
+    }
+   ],
+   "comparecimento": {
+    "aptos": 21605,
+    "comparecimento": 16363,
+    "brancos": 3114,
+    "nulos": 3676
+   }
+  },
+  {
+   "cargo": "deputado_federal",
+   "turno": 1,
+   "validos": 14207,
+   "abrangencia": "SP",
+   "candidatos": [
+    {
+     "sq": "250002541145",
+     "urna": "VITOR LIPPI",
+     "numero": "5501",
+     "partido": "PSD",
+     "votos": 1681,
+     "pct": 11.83,
+     "total": 88462,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535995",
+     "urna": "LUCAS PAVANATO",
+     "numero": "2211",
+     "partido": "PL",
+     "votos": 1602,
+     "pct": 11.28,
+     "total": 3038438,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002544355",
+     "urna": "RODRIGO GAMBALE",
+     "numero": "2077",
+     "partido": "PODE",
+     "votos": 1156,
+     "pct": 8.14,
+     "total": 106901,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002537942",
+     "urna": "MARCOS PEREIRA",
+     "numero": "1010",
+     "partido": "REPUBLICANOS",
+     "votos": 879,
+     "pct": 6.19,
+     "total": 196681,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002532342",
+     "urna": "SARGENTO NANTES",
+     "numero": "1110",
+     "partido": "PP",
+     "votos": 731,
+     "pct": 5.15,
+     "total": 333401,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539612",
+     "urna": "ERIKA HILTON",
+     "numero": "5070",
+     "partido": "PSOL",
+     "votos": 633,
+     "pct": 4.46,
+     "total": 1596472,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536745",
+     "urna": "PAULO TEIXEIRA",
+     "numero": "1398",
+     "partido": "PT",
+     "votos": 577,
+     "pct": 4.06,
+     "total": 106062,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532322",
+     "urna": "PASTORA SANDRA ALVES",
+     "numero": "4400",
+     "partido": "UNIÃO",
+     "votos": 493,
+     "pct": 3.47,
+     "total": 63745,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532355",
+     "urna": "SIRLANGE MANGA",
+     "numero": "4410",
+     "partido": "UNIÃO",
+     "votos": 460,
+     "pct": 3.24,
+     "total": 87820,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002544340",
+     "urna": "RENATA ABREU",
+     "numero": "2020",
+     "partido": "PODE",
+     "votos": 389,
+     "pct": 2.74,
+     "total": 199100,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539399",
+     "urna": "JONAS DONIZETTE",
+     "numero": "4000",
+     "partido": "PSB",
+     "votos": 309,
+     "pct": 2.17,
+     "total": 97335,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539629",
+     "urna": "RAUL MARCELO",
+     "numero": "5055",
+     "partido": "PSOL",
+     "votos": 227,
+     "pct": 1.6,
+     "total": 30119,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002546642",
+     "urna": "KIM KATAGUIRI",
+     "numero": "1414",
+     "partido": "MISSÃO",
+     "votos": 200,
+     "pct": 1.41,
+     "total": 520071,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002535980",
+     "urna": "MARCIO ALVINO",
+     "numero": "2299",
+     "partido": "PL",
+     "votos": 181,
+     "pct": 1.27,
+     "total": 261325,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539604",
+     "urna": "SÂMIA BOMFIM",
+     "numero": "5000",
+     "partido": "PSOL",
+     "votos": 164,
+     "pct": 1.15,
+     "total": 583107,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002535947",
+     "urna": "RENATO BOLSONARO",
+     "numero": "2222",
+     "partido": "PL",
+     "votos": 163,
+     "pct": 1.15,
+     "total": 379312,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536722",
+     "urna": "KIKO CELEGUIM",
+     "numero": "1301",
+     "partido": "PT",
+     "votos": 143,
+     "pct": 1.01,
+     "total": 113158,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002535955",
+     "urna": "JEFFERSON CAMPOS",
+     "numero": "2274",
+     "partido": "PL",
+     "votos": 142,
+     "pct": 1.0,
+     "total": 92286,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002532353",
+     "urna": "CORONEL TELHADA",
+     "numero": "1100",
+     "partido": "PP",
+     "votos": 136,
+     "pct": 0.96,
+     "total": 104513,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536738",
+     "urna": "MOISES SELERGES",
+     "numero": "1355",
+     "partido": "PT",
+     "votos": 133,
+     "pct": 0.94,
+     "total": 89939,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532366",
+     "urna": "ALESSANDRA GONZAGA",
+     "numero": "1112",
+     "partido": "PP",
+     "votos": 122,
+     "pct": 0.86,
+     "total": 26271,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536721",
+     "urna": "MANU BARROS",
+     "numero": "1310",
+     "partido": "PT",
+     "votos": 115,
+     "pct": 0.81,
+     "total": 10694,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534948",
+     "urna": "GUIGA PEIXOTO",
+     "numero": "2500",
+     "partido": "PRD",
+     "votos": 113,
+     "pct": 0.8,
+     "total": 23035,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536719",
+     "urna": "ARLINDO CHINAGLIA",
+     "numero": "1322",
+     "partido": "PT",
+     "votos": 109,
+     "pct": 0.77,
+     "total": 124121,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539435",
+     "urna": "TABATA AMARAL",
+     "numero": "4040",
+     "partido": "PSB",
+     "votos": 107,
+     "pct": 0.75,
+     "total": 476383,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002537943",
+     "urna": "MARIA ROSAS",
+     "numero": "1022",
+     "partido": "REPUBLICANOS",
+     "votos": 106,
+     "pct": 0.75,
+     "total": 91690,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002533666",
+     "urna": "ENRICO MISASI",
+     "numero": "1536",
+     "partido": "MDB",
+     "votos": 104,
+     "pct": 0.73,
+     "total": 106225,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002536733",
+     "urna": "JOAO PAULO CUNHA",
+     "numero": "1325",
+     "partido": "PT",
+     "votos": 96,
+     "pct": 0.68,
+     "total": 109548,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002539622",
+     "urna": "PROFESSORA LUCIENE CAVALCANTE",
+     "numero": "5089",
+     "partido": "PSOL",
+     "votos": 89,
+     "pct": 0.63,
+     "total": 253778,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002544341",
+     "urna": "DELEGADO BRUNO LIMA",
+     "numero": "2011",
+     "partido": "PODE",
+     "votos": 87,
+     "pct": 0.61,
+     "total": 217952,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536752",
+     "urna": "THIAGO DOS REIS",
+     "numero": "1399",
+     "partido": "PT",
+     "votos": 86,
+     "pct": 0.61,
+     "total": 137240,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002544330",
+     "urna": "ANA CAROLINA OLIVEIRA",
+     "numero": "2026",
+     "partido": "PODE",
+     "votos": 86,
+     "pct": 0.61,
+     "total": 246741,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539620",
+     "urna": "GUILHERME CORTEZ",
+     "numero": "5005",
+     "partido": "PSOL",
+     "votos": 78,
+     "pct": 0.55,
+     "total": 275450,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002544357",
+     "urna": "DELEGADO PALUMBO",
+     "numero": "2000",
+     "partido": "PODE",
+     "votos": 68,
+     "pct": 0.48,
+     "total": 303271,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002530115",
+     "urna": "MARINA HELENA",
+     "numero": "3007",
+     "partido": "NOVO",
+     "votos": 67,
+     "pct": 0.47,
+     "total": 230866,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002544326",
+     "urna": "FELIPE BECARI",
+     "numero": "2007",
+     "partido": "PODE",
+     "votos": 63,
+     "pct": 0.44,
+     "total": 162957,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002532379",
+     "urna": "MAURICIO NEVES",
+     "numero": "1111",
+     "partido": "PP",
+     "votos": 62,
+     "pct": 0.44,
+     "total": 269996,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002535943",
+     "urna": "MISSIONÁRIO JOSÉ OLIMPIO",
+     "numero": "2241",
+     "partido": "PL",
+     "votos": 61,
+     "pct": 0.43,
+     "total": 52030,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537969",
+     "urna": "CELSO RUSSOMANNO",
+     "numero": "1000",
+     "partido": "REPUBLICANOS",
+     "votos": 60,
+     "pct": 0.42,
+     "total": 138827,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002544346",
+     "urna": "BRUNO GANEM",
+     "numero": "2010",
+     "partido": "PODE",
+     "votos": 58,
+     "pct": 0.41,
+     "total": 64221,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535958",
+     "urna": "LUIZ PHILIPPE DE O E BRAGANÇA",
+     "numero": "2225",
+     "partido": "PL",
+     "votos": 55,
+     "pct": 0.39,
+     "total": 187743,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002537984",
+     "urna": "MARCO VINHOLI",
+     "numero": "1002",
+     "partido": "REPUBLICANOS",
+     "votos": 51,
+     "pct": 0.36,
+     "total": 81445,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535951",
+     "urna": "PASTOR MARCO FELICIANO",
+     "numero": "2270",
+     "partido": "PL",
+     "votos": 44,
+     "pct": 0.31,
+     "total": 122119,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002535996",
+     "urna": "TATIANE COSTA",
+     "numero": "2290",
+     "partido": "PL",
+     "votos": 39,
+     "pct": 0.27,
+     "total": 16494,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541141",
+     "urna": "RODRIGO SPADA",
+     "numero": "5510",
+     "partido": "PSD",
+     "votos": 38,
+     "pct": 0.27,
+     "total": 45748,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536737",
+     "urna": "CARLOS ZARATTINI",
+     "numero": "1370",
+     "partido": "PT",
+     "votos": 37,
+     "pct": 0.26,
+     "total": 117608,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539431",
+     "urna": "DATENA",
+     "numero": "4010",
+     "partido": "PSB",
+     "votos": 35,
+     "pct": 0.25,
+     "total": 51078,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541127",
+     "urna": "ELIEL MIRANDA",
+     "numero": "5553",
+     "partido": "PSD",
+     "votos": 34,
+     "pct": 0.24,
+     "total": 48096,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532380",
+     "urna": "CAMILA CARDOSO",
+     "numero": "4424",
+     "partido": "UNIÃO",
+     "votos": 33,
+     "pct": 0.23,
+     "total": 51825,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532357",
+     "urna": "VITORIA SOUZA",
+     "numero": "1199",
+     "partido": "PP",
+     "votos": 33,
+     "pct": 0.23,
+     "total": 43643,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536763",
+     "urna": "RUI FALCÃO",
+     "numero": "1313",
+     "partido": "PT",
+     "votos": 31,
+     "pct": 0.22,
+     "total": 106443,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536762",
+     "urna": "ZÉ DIRCEU",
+     "numero": "1368",
+     "partido": "PT",
+     "votos": 31,
+     "pct": 0.22,
+     "total": 78450,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541102",
+     "urna": "MARCOS NEVES",
+     "numero": "5570",
+     "partido": "PSD",
+     "votos": 30,
+     "pct": 0.21,
+     "total": 98359,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002544361",
+     "urna": "DANDAN TELES",
+     "numero": "2055",
+     "partido": "PODE",
+     "votos": 30,
+     "pct": 0.21,
+     "total": 1804,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532378",
+     "urna": "MILTON LEITE FILHO",
+     "numero": "4425",
+     "partido": "UNIÃO",
+     "votos": 29,
+     "pct": 0.2,
+     "total": 71631,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002535938",
+     "urna": "ADILSON BARROSO BOLSONARISTA",
+     "numero": "2251",
+     "partido": "PL",
+     "votos": 29,
+     "pct": 0.2,
+     "total": 45953,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535954",
+     "urna": "CAPITÃO AUGUSTO",
+     "numero": "2200",
+     "partido": "PL",
+     "votos": 28,
+     "pct": 0.2,
+     "total": 153745,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536734",
+     "urna": "JULIANA CARDOSO",
+     "numero": "1333",
+     "partido": "PT",
+     "votos": 27,
+     "pct": 0.19,
+     "total": 111904,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002533638",
+     "urna": "FABIO TERUEL",
+     "numero": "1580",
+     "partido": "MDB",
+     "votos": 26,
+     "pct": 0.18,
+     "total": 75251,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002546619",
+     "urna": "ANA HERING",
+     "numero": "1400",
+     "partido": "MISSÃO",
+     "votos": 26,
+     "pct": 0.18,
+     "total": 51768,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535959",
+     "urna": "MARIO FRIAS",
+     "numero": "2208",
+     "partido": "PL",
+     "votos": 25,
+     "pct": 0.18,
+     "total": 91403,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533624",
+     "urna": "JOÃO CURY",
+     "numero": "1550",
+     "partido": "MDB",
+     "votos": 25,
+     "pct": 0.18,
+     "total": 130915,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536757",
+     "urna": "JILMAR TATTO",
+     "numero": "1380",
+     "partido": "PT",
+     "votos": 25,
+     "pct": 0.18,
+     "total": 152984,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539713",
+     "urna": "IGOR SOARES",
+     "numero": "5500",
+     "partido": "PSD",
+     "votos": 24,
+     "pct": 0.17,
+     "total": 181820,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533659",
+     "urna": "RICHARD SELVAGEM",
+     "numero": "1526",
+     "partido": "MDB",
+     "votos": 24,
+     "pct": 0.17,
+     "total": 50968,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536727",
+     "urna": "LUNA ZARATTINI",
+     "numero": "1302",
+     "partido": "PT",
+     "votos": 23,
+     "pct": 0.16,
+     "total": 233733,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002535966",
+     "urna": "SOPHIA BARCLAY",
+     "numero": "2275",
+     "partido": "PL",
+     "votos": 23,
+     "pct": 0.16,
+     "total": 24285,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535936",
+     "urna": "GIL DINIZ",
+     "numero": "2220",
+     "partido": "PL",
+     "votos": 23,
+     "pct": 0.16,
+     "total": 63398,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002537964",
+     "urna": "JUSSARA FERNANDES",
+     "numero": "1015",
+     "partido": "REPUBLICANOS",
+     "votos": 23,
+     "pct": 0.16,
+     "total": 6623,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536758",
+     "urna": "VICENTINHO",
+     "numero": "1390",
+     "partido": "PT",
+     "votos": 22,
+     "pct": 0.15,
+     "total": 68549,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535932",
+     "urna": "BABI MENDES",
+     "numero": "2206",
+     "partido": "PL",
+     "votos": 21,
+     "pct": 0.15,
+     "total": 58518,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535988",
+     "urna": "SARGENTO CAVALCANTI",
+     "numero": "2260",
+     "partido": "PL",
+     "votos": 20,
+     "pct": 0.14,
+     "total": 7415,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002546631",
+     "urna": "GUTO ZACARIAS",
+     "numero": "1477",
+     "partido": "MISSÃO",
+     "votos": 19,
+     "pct": 0.13,
+     "total": 41423,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536756",
+     "urna": "ALFREDINHO",
+     "numero": "1389",
+     "partido": "PT",
+     "votos": 19,
+     "pct": 0.13,
+     "total": 82334,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537971",
+     "urna": "ROBERTO LUCENA",
+     "numero": "1099",
+     "partido": "REPUBLICANOS",
+     "votos": 19,
+     "pct": 0.13,
+     "total": 54972,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533614",
+     "urna": "REGINA TOLENTINO",
+     "numero": "1525",
+     "partido": "MDB",
+     "votos": 18,
+     "pct": 0.13,
+     "total": 1808,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535985",
+     "urna": "RITA ZAMBELLI",
+     "numero": "2210",
+     "partido": "PL",
+     "votos": 17,
+     "pct": 0.12,
+     "total": 22720,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532370",
+     "urna": "RUBINHO NUNES",
+     "numero": "4455",
+     "partido": "UNIÃO",
+     "votos": 17,
+     "pct": 0.12,
+     "total": 41883,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539593",
+     "urna": "SÔNIA GUAJAJARA",
+     "numero": "5088",
+     "partido": "PSOL",
+     "votos": 17,
+     "pct": 0.12,
+     "total": 54207,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002541158",
+     "urna": "RACHEL SHEHERAZADE",
+     "numero": "5560",
+     "partido": "PSD",
+     "votos": 17,
+     "pct": 0.12,
+     "total": 22453,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535991",
+     "urna": "DELEGADO PAULO BILYNSKYJ",
+     "numero": "2247",
+     "partido": "PL",
+     "votos": 17,
+     "pct": 0.12,
+     "total": 90363,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536755",
+     "urna": "ORLANDO SILVA",
+     "numero": "6565",
+     "partido": "PCDOB",
+     "votos": 16,
+     "pct": 0.11,
+     "total": 78098,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539624",
+     "urna": "NATÁLIA BOULOS",
+     "numero": "5010",
+     "partido": "PSOL",
+     "votos": 16,
+     "pct": 0.11,
+     "total": 114552,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002535994",
+     "urna": "WESLEY CEZAR LELINHO",
+     "numero": "2278",
+     "partido": "PL",
+     "votos": 16,
+     "pct": 0.11,
+     "total": 66673,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002551075",
+     "urna": "PADRE SILVIO ANDREI",
+     "numero": "7070",
+     "partido": "AVANTE",
+     "votos": 15,
+     "pct": 0.11,
+     "total": 26409,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002535975",
+     "urna": "EDUARDO CURY",
+     "numero": "2212",
+     "partido": "PL",
+     "votos": 15,
+     "pct": 0.11,
+     "total": 66860,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002554105",
+     "urna": "TASSIO RENAM",
+     "numero": "4444",
+     "partido": "UNIÃO",
+     "votos": 14,
+     "pct": 0.1,
+     "total": 20439,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537973",
+     "urna": "ALTAIR MORAES",
+     "numero": "1033",
+     "partido": "REPUBLICANOS",
+     "votos": 14,
+     "pct": 0.1,
+     "total": 94770,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002539607",
+     "urna": "JULIANO MEDEIROS",
+     "numero": "5050",
+     "partido": "PSOL",
+     "votos": 14,
+     "pct": 0.1,
+     "total": 25908,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530167",
+     "urna": "ADRIANA VENTURA",
+     "numero": "3030",
+     "partido": "NOVO",
+     "votos": 13,
+     "pct": 0.09,
+     "total": 69083,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002548486",
+     "urna": "DR. RAPHAEL OLIVEIRA",
+     "numero": "1234",
+     "partido": "PDT",
+     "votos": 12,
+     "pct": 0.08,
+     "total": 24486,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002537979",
+     "urna": "GUILHERME PIAI",
+     "numero": "1011",
+     "partido": "REPUBLICANOS",
+     "votos": 12,
+     "pct": 0.08,
+     "total": 182328,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536736",
+     "urna": "ALENCAR SANTANA",
+     "numero": "1358",
+     "partido": "PT",
+     "votos": 12,
+     "pct": 0.08,
+     "total": 160264,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002535962",
+     "urna": "PEDRO SOTERO",
+     "numero": "2230",
+     "partido": "PL",
+     "votos": 12,
+     "pct": 0.08,
+     "total": 21973,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532343",
+     "urna": "VICTOR RUIZ",
+     "numero": "1133",
+     "partido": "PP",
+     "votos": 12,
+     "pct": 0.08,
+     "total": 46804,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536764",
+     "urna": "NILTO TATTO",
+     "numero": "1353",
+     "partido": "PT",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 114560,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536729",
+     "urna": "GREGORY FRANÇA",
+     "numero": "1300",
+     "partido": "PT",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 16991,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535978",
+     "urna": "DIOGO FORJAZ",
+     "numero": "2204",
+     "partido": "PL",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 14242,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535952",
+     "urna": "ROGÉRIO DE MADUREIRA",
+     "numero": "2209",
+     "partido": "PL",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 31558,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535933",
+     "urna": "FAROFA",
+     "numero": "2201",
+     "partido": "PL",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 34660,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541159",
+     "urna": "ANTONIO PEDROSO",
+     "numero": "5534",
+     "partido": "PSD",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 710,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537970",
+     "urna": "TOME ABDUCH",
+     "numero": "1001",
+     "partido": "REPUBLICANOS",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 71534,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537972",
+     "urna": "SIKERA JR",
+     "numero": "1070",
+     "partido": "REPUBLICANOS",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 37050,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541112",
+     "urna": "CARLOS BEZERRA JR.",
+     "numero": "5512",
+     "partido": "PSD",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 89414,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002534401",
+     "urna": "OZIEL PIRES",
+     "numero": "7707",
+     "partido": "SOLIDARIEDADE",
+     "votos": 10,
+     "pct": 0.07,
+     "total": 3964,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532363",
+     "urna": "BAIANINHO DE MAUÁ",
+     "numero": "4488",
+     "partido": "UNIÃO",
+     "votos": 10,
+     "pct": 0.07,
+     "total": 7452,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536743",
+     "urna": "EDINHO SILVA",
+     "numero": "1316",
+     "partido": "PT",
+     "votos": 10,
+     "pct": 0.07,
+     "total": 115341,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002530150",
+     "urna": "DOUTOR GEARHEAD",
+     "numero": "3012",
+     "partido": "NOVO",
+     "votos": 10,
+     "pct": 0.07,
+     "total": 17657,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532368",
+     "urna": "DELEGADO DA CUNHA",
+     "numero": "4422",
+     "partido": "UNIÃO",
+     "votos": 9,
+     "pct": 0.06,
+     "total": 26497,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550378",
+     "urna": "VANILDA BORDIERI",
+     "numero": "4522",
+     "partido": "PSDB",
+     "votos": 9,
+     "pct": 0.06,
+     "total": 4480,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544834",
+     "urna": "DAVID RR SOARES",
+     "numero": "2030",
+     "partido": "PODE",
+     "votos": 9,
+     "pct": 0.06,
+     "total": 61366,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532362",
+     "urna": "DAVI SACER",
+     "numero": "1122",
+     "partido": "PP",
+     "votos": 9,
+     "pct": 0.06,
+     "total": 40088,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535972",
+     "urna": "ROSANA VALLE",
+     "numero": "2227",
+     "partido": "PL",
+     "votos": 9,
+     "pct": 0.06,
+     "total": 213752,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002535982",
+     "urna": "PAULO FREIRE",
+     "numero": "2233",
+     "partido": "PL",
+     "votos": 9,
+     "pct": 0.06,
+     "total": 99388,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539385",
+     "urna": "ANDREA WERNER",
+     "numero": "4004",
+     "partido": "PSB",
+     "votos": 9,
+     "pct": 0.06,
+     "total": 45627,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530117",
+     "urna": "PEDRO PÔNCIO - EX MST",
+     "numero": "3022",
+     "partido": "NOVO",
+     "votos": 9,
+     "pct": 0.06,
+     "total": 25957,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536761",
+     "urna": "PEDRO TOURINHO",
+     "numero": "1319",
+     "partido": "PT",
+     "votos": 8,
+     "pct": 0.06,
+     "total": 73627,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535935",
+     "urna": "DRA. NISE YAMAGUCHI",
+     "numero": "2221",
+     "partido": "PL",
+     "votos": 8,
+     "pct": 0.06,
+     "total": 42758,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535957",
+     "urna": "CEZINHA DE MADUREIRA",
+     "numero": "2223",
+     "partido": "PL",
+     "votos": 8,
+     "pct": 0.06,
+     "total": 60596,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541151",
+     "urna": "SILVIA ABRAVANEL",
+     "numero": "5590",
+     "partido": "PSD",
+     "votos": 8,
+     "pct": 0.06,
+     "total": 22472,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532373",
+     "urna": "CRISTIANO BERALDO",
+     "numero": "1140",
+     "partido": "PP",
+     "votos": 8,
+     "pct": 0.06,
+     "total": 13858,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532344",
+     "urna": "ESNAR RIBEIRO",
+     "numero": "1117",
+     "partido": "PP",
+     "votos": 8,
+     "pct": 0.06,
+     "total": 8751,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532381",
+     "urna": "ADRILLES JORGE",
+     "numero": "4401",
+     "partido": "UNIÃO",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 26694,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539591",
+     "urna": "WILTINHO POETA",
+     "numero": "5022",
+     "partido": "PSOL",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 5923,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535999",
+     "urna": "ZOE MARTÍNEZ",
+     "numero": "2205",
+     "partido": "PL",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 25356,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544368",
+     "urna": "LECO SOARES",
+     "numero": "2027",
+     "partido": "PODE",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 8457,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544356",
+     "urna": "MARANGONI",
+     "numero": "2044",
+     "partido": "PODE",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 67111,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544327",
+     "urna": "RIBAMAR SILVA",
+     "numero": "2019",
+     "partido": "PODE",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 52909,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544837",
+     "urna": "CABO DEYCON SILVA",
+     "numero": "2004",
+     "partido": "PODE",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 11050,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541099",
+     "urna": "CAPITÃ KAROL",
+     "numero": "5530",
+     "partido": "PSD",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 5768,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540691",
+     "urna": "JANAINA PASCHOAL",
+     "numero": "1150",
+     "partido": "PP",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 46773,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536749",
+     "urna": "MARCIA LIA",
+     "numero": "1323",
+     "partido": "PT",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 39462,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536760",
+     "urna": "JEAN WYLLYS",
+     "numero": "1350",
+     "partido": "PT",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 18073,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544338",
+     "urna": "ABOU ANNI",
+     "numero": "2001",
+     "partido": "PODE",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 23562,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544836",
+     "urna": "FRANK AGUIAR",
+     "numero": "2070",
+     "partido": "PODE",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 7146,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002546651",
+     "urna": "PROF. GERALDO ALMEIDA",
+     "numero": "1419",
+     "partido": "MISSÃO",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 3503,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533647",
+     "urna": "BALEIA ROSSI",
+     "numero": "1515",
+     "partido": "MDB",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 239124,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533664",
+     "urna": "SIDNEY CRUZ",
+     "numero": "1502",
+     "partido": "MDB",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 130951,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002534410",
+     "urna": "PR. PAULO JUNIOR",
+     "numero": "7799",
+     "partido": "SOLIDARIEDADE",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 11278,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532338",
+     "urna": "FAUSTO PINATO",
+     "numero": "4411",
+     "partido": "UNIÃO",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 52720,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539592",
+     "urna": "THIAGO ÁVILA",
+     "numero": "1888",
+     "partido": "REDE",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 21423,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536753",
+     "urna": "REIS",
+     "numero": "1351",
+     "partido": "PT",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 90224,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541096",
+     "urna": "JULIE MILK",
+     "numero": "5511",
+     "partido": "PSD",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 15293,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539406",
+     "urna": "SAMUEL ENFERMEIRO",
+     "numero": "4001",
+     "partido": "PSB",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 8309,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541119",
+     "urna": "GUTI",
+     "numero": "5522",
+     "partido": "PSD",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 60938,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533631",
+     "urna": "FLAVINHO",
+     "numero": "1537",
+     "partido": "MDB",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 19221,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532365",
+     "urna": "MARCELO SILVA",
+     "numero": "1119",
+     "partido": "PP",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 10628,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536742",
+     "urna": "NANCY THAME",
+     "numero": "4343",
+     "partido": "PV",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 8932,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537965",
+     "urna": "PROFESSOR FLAVIO MARTINS",
+     "numero": "1050",
+     "partido": "REPUBLICANOS",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 16570,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537951",
+     "urna": "MARQUINHO SANTA CASA",
+     "numero": "1069",
+     "partido": "REPUBLICANOS",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 4623,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539452",
+     "urna": "VILAR",
+     "numero": "4043",
+     "partido": "PSB",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 6573,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539391",
+     "urna": "SHEYLLI",
+     "numero": "4007",
+     "partido": "PSB",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 23725,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550395",
+     "urna": "ALEX MANENTE",
+     "numero": "2323",
+     "partido": "CIDADANIA",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 102716,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548517",
+     "urna": "MARCOS LATINO BRIZOLA",
+     "numero": "1226",
+     "partido": "PDT",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 827,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002532333",
+     "urna": "SILVIO NAVARRO JORNALISTA",
+     "numero": "4404",
+     "partido": "UNIÃO",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 15399,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539631",
+     "urna": "RIBAMAR PASSOS",
+     "numero": "5001",
+     "partido": "PSOL",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 2124,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536725",
+     "urna": "ROSE FORATO",
+     "numero": "1388",
+     "partido": "PT",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 2707,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535997",
+     "urna": "DR. MARCELO CRUZ",
+     "numero": "2242",
+     "partido": "PL",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 4729,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535953",
+     "urna": "MAJOR MECCA",
+     "numero": "2288",
+     "partido": "PL",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 28941,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544360",
+     "urna": "GILBERTO NASCIMENTO",
+     "numero": "2022",
+     "partido": "PODE",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 43977,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535998",
+     "urna": "PADRE KELMON",
+     "numero": "2202",
+     "partido": "PL",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 21411,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533626",
+     "urna": "LUIS FABIANO",
+     "numero": "1509",
+     "partido": "MDB",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 9613,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535968",
+     "urna": "MOTTA",
+     "numero": "2244",
+     "partido": "PL",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 112854,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002537986",
+     "urna": "VAL MARCHIORI",
+     "numero": "1077",
+     "partido": "REPUBLICANOS",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 5025,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537978",
+     "urna": "RENATO TAROCO",
+     "numero": "1005",
+     "partido": "REPUBLICANOS",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 4643,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537962",
+     "urna": "VINICIUS SAUDINO",
+     "numero": "1007",
+     "partido": "REPUBLICANOS",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 6728,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530135",
+     "urna": "EDUARDO BORGO",
+     "numero": "3003",
+     "partido": "NOVO",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 48345,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532360",
+     "urna": "JOSIANE OLIVEIRA",
+     "numero": "4442",
+     "partido": "UNIÃO",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 1870,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550394",
+     "urna": "PAULO SERRA",
+     "numero": "4545",
+     "partido": "PSDB",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 132866,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002550385",
+     "urna": "JEFFERSON CHINA",
+     "numero": "4521",
+     "partido": "PSDB",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 1893,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539630",
+     "urna": "EDERLI BATISTA",
+     "numero": "1810",
+     "partido": "REDE",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 257,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536726",
+     "urna": "ROSAURA ALMEIDA",
+     "numero": "1331",
+     "partido": "PT",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 9351,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536746",
+     "urna": "ALEX MINDUIN",
+     "numero": "1312",
+     "partido": "PT",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 10733,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536720",
+     "urna": "DR. CASEIRO",
+     "numero": "1311",
+     "partido": "PT",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 23458,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535973",
+     "urna": "WATANABE",
+     "numero": "2226",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 14052,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536718",
+     "urna": "ANÍBAL MUNHOZ",
+     "numero": "1345",
+     "partido": "PT",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 4434,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535939",
+     "urna": "DR CÉLIO, LULA DO BEM",
+     "numero": "2207",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 5708,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544323",
+     "urna": "ELITON LEITE",
+     "numero": "2002",
+     "partido": "PODE",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 2362,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544337",
+     "urna": "DOUGLAS VIEGAS",
+     "numero": "2034",
+     "partido": "PODE",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 26579,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535981",
+     "urna": "ALESSANDRA DO VALLE",
+     "numero": "2218",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 2449,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541118",
+     "urna": "MC GUI",
+     "numero": "5544",
+     "partido": "PSD",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 7378,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541098",
+     "urna": "JOEL DO VÔLEI",
+     "numero": "5551",
+     "partido": "PSD",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 2186,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533612",
+     "urna": "NANINI",
+     "numero": "1520",
+     "partido": "MDB",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 15992,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533628",
+     "urna": "NETINHO DE PAULA",
+     "numero": "1501",
+     "partido": "MDB",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 19337,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002551068",
+     "urna": "GERALDO LUÍS",
+     "numero": "7077",
+     "partido": "AVANTE",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 10176,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002536728",
+     "urna": "PROF JEANGRAFIA",
+     "numero": "4344",
+     "partido": "PV",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 5717,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535965",
+     "urna": "DRA. SANDRA TADEU",
+     "numero": "2255",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 106471,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002537983",
+     "urna": "EDER B2",
+     "numero": "1032",
+     "partido": "REPUBLICANOS",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 10051,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539397",
+     "urna": "RICARDO GALVÃO",
+     "numero": "4077",
+     "partido": "PSB",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 11729,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002546647",
+     "urna": "GABRIEL PIAUHY LIMA DA SILVA",
+     "numero": "1422",
+     "partido": "MISSÃO",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 5169,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530123",
+     "urna": "SUBTENENTE AILTON",
+     "numero": "3090",
+     "partido": "NOVO",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 1118,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535940",
+     "urna": "LUIZ FERNANDO MACHADO",
+     "numero": "2234",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 129004,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002548464",
+     "urna": "DRA KENIA",
+     "numero": "1231",
+     "partido": "PDT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 3268,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548490",
+     "urna": "MARCIO BURGUINHA DA KOMBI",
+     "numero": "1255",
+     "partido": "PDT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 1503,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548508",
+     "urna": "BISPA DAMARES",
+     "numero": "1213",
+     "partido": "PDT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 4598,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548465",
+     "urna": "PROF WILSON CABRAL",
+     "numero": "1210",
+     "partido": "PDT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 2019,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548499",
+     "urna": "TIAGO LUZ",
+     "numero": "1208",
+     "partido": "PDT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 6555,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002534924",
+     "urna": "ALEXANDRE PEREIRA",
+     "numero": "7777",
+     "partido": "SOLIDARIEDADE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 43196,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548498",
+     "urna": "EDUARDO XAROPINHO",
+     "numero": "1211",
+     "partido": "PDT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 15382,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548484",
+     "urna": "ROBERTINHO MENDONÇA",
+     "numero": "1222",
+     "partido": "PDT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 5904,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548491",
+     "urna": "CLAUDIA DI BONITO",
+     "numero": "1200",
+     "partido": "PDT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 5308,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002534938",
+     "urna": "SERGIO DI NIZO",
+     "numero": "2520",
+     "partido": "PRD",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 11396,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532332",
+     "urna": "ELI CORRÊA FILHO",
+     "numero": "4477",
+     "partido": "UNIÃO",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 34722,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532358",
+     "urna": "NINA PASSADORE",
+     "numero": "4407",
+     "partido": "UNIÃO",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 26290,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537955",
+     "urna": "JOÃO GALASSI",
+     "numero": "1020",
+     "partido": "REPUBLICANOS",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 13123,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537953",
+     "urna": "NEY SANTOS",
+     "numero": "1023",
+     "partido": "REPUBLICANOS",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 118566,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539626",
+     "urna": "MARCO MARTINS",
+     "numero": "1800",
+     "partido": "REDE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 3905,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536740",
+     "urna": "PROFESSORA ADRIANA MARTINS",
+     "numero": "1314",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 4472,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536744",
+     "urna": "WILLIAM VIEIRA",
+     "numero": "1340",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 5636,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536713",
+     "urna": "PROFESSORA RUTH SILVA",
+     "numero": "1309",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 1829,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535976",
+     "urna": "POLICIAL KATIA SASTRE",
+     "numero": "2240",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 14201,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535964",
+     "urna": "DR. CARLOS GOMES",
+     "numero": "2235",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 5736,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536751",
+     "urna": "GUIDA CALIXTO",
+     "numero": "1320",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 21559,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536723",
+     "urna": "RUTH LOPES",
+     "numero": "1377",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 10427,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536759",
+     "urna": "EDSON DA PAZ",
+     "numero": "1327",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 270,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535937",
+     "urna": "FHRAN MARÇAL",
+     "numero": "2214",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 2384,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535977",
+     "urna": "KLEBER RIBEIRO",
+     "numero": "2228",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 24352,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535960",
+     "urna": "MAJOR VITOR SANTOS",
+     "numero": "2250",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 13843,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541143",
+     "urna": "ELEUSES PAIVA",
+     "numero": "5555",
+     "partido": "PSD",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 88195,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539418",
+     "urna": "ANTONIO ALVES VIGILANTE",
+     "numero": "4005",
+     "partido": "PSB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 1928,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539445",
+     "urna": "ELISEU GABRIEL",
+     "numero": "4012",
+     "partido": "PSB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 17203,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539437",
+     "urna": "MARINA HELOU",
+     "numero": "4044",
+     "partido": "PSB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 47154,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533670",
+     "urna": "CAPITÃO SOLANO",
+     "numero": "1505",
+     "partido": "MDB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 2319,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533640",
+     "urna": "ORLANDO MORANDO",
+     "numero": "1555",
+     "partido": "MDB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 102086,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533609",
+     "urna": "VALDIR DA SANTA CASA",
+     "numero": "1538",
+     "partido": "MDB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 3920,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002551085",
+     "urna": "MADALHANO",
+     "numero": "7090",
+     "partido": "AVANTE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 20007,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002546638",
+     "urna": "CRIS NAVARRO",
+     "numero": "1410",
+     "partido": "MISSÃO",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 673,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002546628",
+     "urna": "DR MARIANO SHIROMA",
+     "numero": "1442",
+     "partido": "MISSÃO",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 840,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002551050",
+     "urna": "SARÁ ZARÁ",
+     "numero": "7099",
+     "partido": "AVANTE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 4994,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002551049",
+     "urna": "CANETA AZUL - MANOEL GOMES",
+     "numero": "7030",
+     "partido": "AVANTE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 7239,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002532345",
+     "urna": "JULIANA RODRIGUES",
+     "numero": "1123",
+     "partido": "PP",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 2306,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532341",
+     "urna": "GORETE",
+     "numero": "1101",
+     "partido": "PP",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 2465,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532372",
+     "urna": "MAJOR PALUMBO",
+     "numero": "1177",
+     "partido": "PP",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 31270,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535986",
+     "urna": "THIAGO SURFISTA",
+     "numero": "2280",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 161971,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002535948",
+     "urna": "MIGUEL LOMBARDI",
+     "numero": "2277",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 96333,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002537976",
+     "urna": "MILTON VIEIRA",
+     "numero": "1055",
+     "partido": "REPUBLICANOS",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 68093,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537987",
+     "urna": "FIDELES",
+     "numero": "1060",
+     "partido": "REPUBLICANOS",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 9771,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539400",
+     "urna": "GILMAR ALMEIDA",
+     "numero": "4011",
+     "partido": "PSB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 2518,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530137",
+     "urna": "PEDRO CORDEIRO",
+     "numero": "3045",
+     "partido": "NOVO",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 1251,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550360",
+     "urna": "HÉLIO SILVA",
+     "numero": "2333",
+     "partido": "CIDADANIA",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1981,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534412",
+     "urna": "ÉRICA GORGA",
+     "numero": "2555",
+     "partido": "PRD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 6228,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548513",
+     "urna": "DANI RODRIGUEIRO",
+     "numero": "1201",
+     "partido": "PDT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1248,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548479",
+     "urna": "BONOME",
+     "numero": "1212",
+     "partido": "PDT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4061,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548494",
+     "urna": "NETE JARDIM",
+     "numero": "1256",
+     "partido": "PDT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 569,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548507",
+     "urna": "TAMIR FELIPE",
+     "numero": "1290",
+     "partido": "PDT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 9438,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548502",
+     "urna": "GLAUCE LIMA",
+     "numero": "1233",
+     "partido": "PDT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2752,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002534923",
+     "urna": "DR. NOEL AXCAR",
+     "numero": "2559",
+     "partido": "PRD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3665,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002546614",
+     "urna": "NATALIA MINZIO",
+     "numero": "1440",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 595,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530120",
+     "urna": "MILTON DANTUNES",
+     "numero": "3066",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3153,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002546620",
+     "urna": "ELIZABETE GONÇALVES",
+     "numero": "1423",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 473,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532336",
+     "urna": "ALINE TEIXEIRA",
+     "numero": "4456",
+     "partido": "UNIÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 40614,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532325",
+     "urna": "ANA PAULA GOFFI",
+     "numero": "4440",
+     "partido": "UNIÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 8770,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002554213",
+     "urna": "JAQUE PETROVIK",
+     "numero": "4405",
+     "partido": "UNIÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 347,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532324",
+     "urna": "DR. PACHECO",
+     "numero": "4415",
+     "partido": "UNIÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 12138,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539595",
+     "urna": "ENOC SANTANA",
+     "numero": "5056",
+     "partido": "PSOL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 333,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539602",
+     "urna": "THUANY FARIA",
+     "numero": "5012",
+     "partido": "PSOL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 755,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539623",
+     "urna": "FLÁVIO CASIMIRO",
+     "numero": "5007",
+     "partido": "PSOL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 963,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550396",
+     "urna": "LEONARDO ALVES",
+     "numero": "4567",
+     "partido": "PSDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 22072,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550369",
+     "urna": "ABEL FIEL",
+     "numero": "4507",
+     "partido": "PSDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1460,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550383",
+     "urna": "PEDRO DIAS",
+     "numero": "4514",
+     "partido": "PSDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 454,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550412",
+     "urna": "PEDRO HENRIQUE BARROSO",
+     "numero": "4565",
+     "partido": "PSDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 681,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550413",
+     "urna": "PATRÍCIA GOMES",
+     "numero": "4501",
+     "partido": "PSDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 323,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539627",
+     "urna": "RICARDO ANDRÉ DE MORAES",
+     "numero": "1811",
+     "partido": "REDE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 604,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541120",
+     "urna": "PAULO ALEXANDRE BARBOSA",
+     "numero": "5533",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 168207,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002541149",
+     "urna": "SAULO PEDROSO",
+     "numero": "5515",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 95096,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536732",
+     "urna": "MACARRÃO",
+     "numero": "1326",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2201,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535963",
+     "urna": "ROGÉRIO ZERAIK ABDALLA",
+     "numero": "2267",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2709,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535961",
+     "urna": "VINICIUS CARVALHO",
+     "numero": "2285",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 12773,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535945",
+     "urna": "JULIANA FABRE",
+     "numero": "2215",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 10511,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536717",
+     "urna": "MAYARA PROFESSORA",
+     "numero": "1330",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4896,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536741",
+     "urna": "MARCELO CARTEIRO",
+     "numero": "1305",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1671,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544331",
+     "urna": "RICARDO FABRÍZIO",
+     "numero": "2050",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2663,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544358",
+     "urna": "MOACIR COVA INVESTIGADOR",
+     "numero": "2066",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 11312,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544332",
+     "urna": "ANTONIO CARLOS RODRIGUES",
+     "numero": "2040",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 66494,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544335",
+     "urna": "PROFESSOR ANDERSON FIGUEIRA",
+     "numero": "2099",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1910,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535987",
+     "urna": "VITORIA REIS",
+     "numero": "2203",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 12455,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535944",
+     "urna": "LAIR MOURA",
+     "numero": "2256",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 5827,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535941",
+     "urna": "JANAINA BASTOS",
+     "numero": "2245",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3499,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535993",
+     "urna": "PRETO DE DIREITA",
+     "numero": "2217",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2053,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002535970",
+     "urna": "VANESSA BOTAM",
+     "numero": "2248",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 6077,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548339",
+     "urna": "ABENÇOADO DA BAHIA",
+     "numero": "2268",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1360,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002552614",
+     "urna": "DR GERALDO FORTE",
+     "numero": "2710",
+     "partido": "DC",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 66,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002552642",
+     "urna": "MARIO FELIPE",
+     "numero": "2700",
+     "partido": "DC",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 300,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002541161",
+     "urna": "ATEVALDO LEITÃO",
+     "numero": "5524",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4328,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541122",
+     "urna": "DRA. ANA VETERINÁRIA",
+     "numero": "5505",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 8332,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541133",
+     "urna": "DORA SANCHES",
+     "numero": "5504",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 438,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541146",
+     "urna": "VINICIUS MARCHESE",
+     "numero": "5588",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 80295,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541134",
+     "urna": "OLHAR SOB RODAS",
+     "numero": "5581",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 203,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541125",
+     "urna": "CASSIO NAVARRO",
+     "numero": "5550",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 28950,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541124",
+     "urna": "SARGENTO ALAN",
+     "numero": "5538",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4711,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539389",
+     "urna": "LUCIANO DA LUZ",
+     "numero": "4090",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 6601,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541113",
+     "urna": "CARLOS MOURA - MAGRÃO",
+     "numero": "5523",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4167,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541115",
+     "urna": "ELISANDRA SILVESTRE",
+     "numero": "5520",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1428,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541157",
+     "urna": "DR.TALMIR",
+     "numero": "5503",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4104,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541132",
+     "urna": "DEBORA RODRIGUES",
+     "numero": "5507",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 891,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002552680",
+     "urna": "MELARÉ",
+     "numero": "2733",
+     "partido": "DC",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1054,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002533622",
+     "urna": "ANDRÉ DA MASSA",
+     "numero": "1562",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1121,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533613",
+     "urna": "CASSIO GALLO",
+     "numero": "1551",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3356,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533620",
+     "urna": "DR RICARDO YOSHIO",
+     "numero": "1530",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 8531,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533645",
+     "urna": "ELIS REGINA",
+     "numero": "1506",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 630,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533668",
+     "urna": "GUIPA",
+     "numero": "1508",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 9916,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533621",
+     "urna": "ANDRE PIROVANI",
+     "numero": "1504",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 407,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533671",
+     "urna": "RENATA PAIVA",
+     "numero": "1510",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 28609,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533642",
+     "urna": "PROFESSOR MARCO ANTONIO VILLA",
+     "numero": "1566",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 31579,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002551118",
+     "urna": "MILTON ARRUDA JUNIOR",
+     "numero": "7014",
+     "partido": "AVANTE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 545,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002551096",
+     "urna": "ANDRÉ DO VIVA",
+     "numero": "7022",
+     "partido": "AVANTE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 10327,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002551109",
+     "urna": "DAVID CORRÊA DEFESA CONSUMIDOR",
+     "numero": "7060",
+     "partido": "AVANTE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2556,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002551103",
+     "urna": "TEN. TORRES PÇA DE CARREIRA",
+     "numero": "7001",
+     "partido": "AVANTE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3618,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002546655",
+     "urna": "COMANDANTE NAVAL",
+     "numero": "1453",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 526,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002551090",
+     "urna": "HAGARA DO PÃO DE QUEIJO",
+     "numero": "7000",
+     "partido": "AVANTE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 29028,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002532359",
+     "urna": "MEGA",
+     "numero": "1125",
+     "partido": "PP",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4504,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002532369",
+     "urna": "JULYVER MODESTO",
+     "numero": "1174",
+     "partido": "PP",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1726,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537975",
+     "urna": "BETINHO NEVES",
+     "numero": "1088",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 37970,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544285",
+     "urna": "LORENA FERNANDES",
+     "numero": "1660",
+     "partido": "PSTU",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 337,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002537946",
+     "urna": "DANI GALDINO",
+     "numero": "1040",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3277,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002537948",
+     "urna": "ANDRÉ ROSSI",
+     "numero": "1044",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1946,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002547835",
+     "urna": "DANY OLIVEIRA",
+     "numero": "8080",
+     "partido": "UP",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3322,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002539422",
+     "urna": "CÉZAR GREGÓRIO",
+     "numero": "4055",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1986,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539396",
+     "urna": "DR.YAGO TORRES",
+     "numero": "4060",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4819,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539427",
+     "urna": "RODRIGO AGOSTINHO",
+     "numero": "4015",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 18461,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539429",
+     "urna": "PROF. BETH",
+     "numero": "4057",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 569,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539394",
+     "urna": "MARIA AIRES",
+     "numero": "4088",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1777,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539416",
+     "urna": "ERIK TORQUATO",
+     "numero": "4042",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 5636,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002546627",
+     "urna": "DIEGO BENTIM",
+     "numero": "1401",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1684,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002546633",
+     "urna": "PYETRO MARTINS",
+     "numero": "1404",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1223,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530091",
+     "urna": "LU ANDREOLLI",
+     "numero": "3044",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 686,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530171",
+     "urna": "MARCOS CINTRA",
+     "numero": "3001",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4096,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539614",
+     "urna": "ADERITO DUTRA",
+     "numero": "5080",
+     "partido": "PSOL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1606,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530173",
+     "urna": "FABIO PAGNOZZI",
+     "numero": "3010",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2268,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530147",
+     "urna": "RAFAEL ZUCCO",
+     "numero": "3005",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 648,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530166",
+     "urna": "DOUGLAS MELO",
+     "numero": "3070",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1347,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530148",
+     "urna": "OLIVEIRA CAUSA ANIMAL",
+     "numero": "3077",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3258,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530132",
+     "urna": "MARI LUZ ADVOGADA",
+     "numero": "3027",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 244,
+     "situacao": "Suplente"
+    }
+   ],
+   "comparecimento": {
+    "aptos": 21605,
+    "comparecimento": 16363,
+    "brancos": 1032,
+    "nulos": 699
+   }
+  },
+  {
+   "cargo": "deputado_estadual",
+   "turno": 1,
+   "validos": 13504,
+   "abrangencia": "SP",
+   "candidatos": [
+    {
+     "sq": "250002540901",
+     "urna": "MARIA LÚCIA AMARY",
+     "numero": "55010",
+     "partido": "PSD",
+     "votos": 4150,
+     "pct": 30.73,
+     "total": 64839,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545221",
+     "urna": "VITÃO DO CACHORRÃO",
+     "numero": "20555",
+     "partido": "PODE",
+     "votos": 1593,
+     "pct": 11.8,
+     "total": 41383,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536384",
+     "urna": "EDUARDA CAMPOPIANO",
+     "numero": "22011",
+     "partido": "PL",
+     "votos": 989,
+     "pct": 7.32,
+     "total": 1956238,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536843",
+     "urna": "LEANDRO SOARES",
+     "numero": "13290",
+     "partido": "PT",
+     "votos": 526,
+     "pct": 3.9,
+     "total": 65559,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536262",
+     "urna": "SIMÃO PEDRO",
+     "numero": "13555",
+     "partido": "PT",
+     "votos": 340,
+     "pct": 2.52,
+     "total": 59185,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540569",
+     "urna": "RODOLFO FANGANIELLO",
+     "numero": "55345",
+     "partido": "PSD",
+     "votos": 297,
+     "pct": 2.2,
+     "total": 25397,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536429",
+     "urna": "DANILO BALAS",
+     "numero": "22007",
+     "partido": "PL",
+     "votos": 296,
+     "pct": 2.19,
+     "total": 96188,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536273",
+     "urna": "PAULO FIORILO",
+     "numero": "13613",
+     "partido": "PT",
+     "votos": 242,
+     "pct": 1.79,
+     "total": 96370,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002538926",
+     "urna": "SOFIA FAVERO",
+     "numero": "50700",
+     "partido": "PSOL",
+     "votos": 200,
+     "pct": 1.48,
+     "total": 407773,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533757",
+     "urna": "TELHADINHA - CAPITÃO TELHADA",
+     "numero": "11190",
+     "partido": "PP",
+     "votos": 199,
+     "pct": 1.47,
+     "total": 134006,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536352",
+     "urna": "RODRIGO MORAES",
+     "numero": "22411",
+     "partido": "PL",
+     "votos": 196,
+     "pct": 1.45,
+     "total": 73787,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545156",
+     "urna": "ROGERIO LINS",
+     "numero": "20200",
+     "partido": "PODE",
+     "votos": 174,
+     "pct": 1.29,
+     "total": 229928,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536851",
+     "urna": "EDUARDO SUPLICY",
+     "numero": "13133",
+     "partido": "PT",
+     "votos": 164,
+     "pct": 1.21,
+     "total": 654627,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536405",
+     "urna": "ROGÉRIO FRANCO",
+     "numero": "22999",
+     "partido": "PL",
+     "votos": 143,
+     "pct": 1.06,
+     "total": 89156,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536381",
+     "urna": "SUÉLEI GONÇALVES",
+     "numero": "22744",
+     "partido": "PL",
+     "votos": 141,
+     "pct": 1.04,
+     "total": 44848,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540909",
+     "urna": "RITA PASSOS",
+     "numero": "55510",
+     "partido": "PSD",
+     "votos": 141,
+     "pct": 1.04,
+     "total": 71917,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541873",
+     "urna": "SEBASTIÃO SANTOS",
+     "numero": "10321",
+     "partido": "REPUBLICANOS",
+     "votos": 102,
+     "pct": 0.76,
+     "total": 68118,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536270",
+     "urna": "LUIZ FERNANDO",
+     "numero": "13134",
+     "partido": "PT",
+     "votos": 100,
+     "pct": 0.74,
+     "total": 94901,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533778",
+     "urna": "SARGENTO CASTRO",
+     "numero": "11911",
+     "partido": "PP",
+     "votos": 84,
+     "pct": 0.62,
+     "total": 143422,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539947",
+     "urna": "CARLOS GIANNAZI",
+     "numero": "50789",
+     "partido": "PSOL",
+     "votos": 82,
+     "pct": 0.61,
+     "total": 367861,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002534269",
+     "urna": "REINALDO ALGUZ",
+     "numero": "15363",
+     "partido": "MDB",
+     "votos": 82,
+     "pct": 0.61,
+     "total": 101946,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539952",
+     "urna": "PAULA DA BANCADA FEMINISTA",
+     "numero": "50000",
+     "partido": "PSOL",
+     "votos": 75,
+     "pct": 0.56,
+     "total": 326190,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536406",
+     "urna": "MARCOS DAMASIO",
+     "numero": "22222",
+     "partido": "PL",
+     "votos": 75,
+     "pct": 0.56,
+     "total": 156691,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533746",
+     "urna": "DR. CÁSSIO",
+     "numero": "11200",
+     "partido": "PP",
+     "votos": 70,
+     "pct": 0.52,
+     "total": 28341,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536353",
+     "urna": "THOMAZ HENRIQUE",
+     "numero": "22111",
+     "partido": "PL",
+     "votos": 69,
+     "pct": 0.51,
+     "total": 178164,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536407",
+     "urna": "CONTE LOPES",
+     "numero": "22138",
+     "partido": "PL",
+     "votos": 65,
+     "pct": 0.48,
+     "total": 139225,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539954",
+     "urna": "FERNANDA GARCIA",
+     "numero": "50550",
+     "partido": "PSOL",
+     "votos": 64,
+     "pct": 0.47,
+     "total": 19696,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002538898",
+     "urna": "FERNANDA SOUTO",
+     "numero": "50123",
+     "partido": "PSOL",
+     "votos": 64,
+     "pct": 0.47,
+     "total": 21792,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536413",
+     "urna": "FELIPE SERTANEJO",
+     "numero": "22110",
+     "partido": "PL",
+     "votos": 63,
+     "pct": 0.47,
+     "total": 138277,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002540880",
+     "urna": "ROGERIO NOGUEIRA",
+     "numero": "55555",
+     "partido": "PSD",
+     "votos": 62,
+     "pct": 0.46,
+     "total": 137335,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545037",
+     "urna": "RAFA MINATO",
+     "numero": "14014",
+     "partido": "MISSÃO",
+     "votos": 61,
+     "pct": 0.45,
+     "total": 185582,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545016",
+     "urna": "ÍTALO MOREIRA",
+     "numero": "14190",
+     "partido": "MISSÃO",
+     "votos": 55,
+     "pct": 0.41,
+     "total": 19108,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536380",
+     "urna": "FABIANA BOLSONARO",
+     "numero": "22051",
+     "partido": "PL",
+     "votos": 49,
+     "pct": 0.36,
+     "total": 61183,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002541869",
+     "urna": "DRA CRISTIANY",
+     "numero": "10444",
+     "partido": "REPUBLICANOS",
+     "votos": 49,
+     "pct": 0.36,
+     "total": 30835,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533740",
+     "urna": "DANILO JOAN",
+     "numero": "11111",
+     "partido": "PP",
+     "votos": 47,
+     "pct": 0.35,
+     "total": 182839,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002538904",
+     "urna": "EDIANE MARIA",
+     "numero": "50110",
+     "partido": "PSOL",
+     "votos": 45,
+     "pct": 0.33,
+     "total": 170844,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545203",
+     "urna": "CLARICE GANEM",
+     "numero": "20101",
+     "partido": "PODE",
+     "votos": 44,
+     "pct": 0.33,
+     "total": 38302,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002538918",
+     "urna": "MONICA DAS PRETAS",
+     "numero": "50900",
+     "partido": "PSOL",
+     "votos": 44,
+     "pct": 0.33,
+     "total": 159100,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536841",
+     "urna": "LEONARDO GRANDINI",
+     "numero": "13633",
+     "partido": "PT",
+     "votos": 42,
+     "pct": 0.31,
+     "total": 122158,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002541870",
+     "urna": "BRUNA FURLAN",
+     "numero": "10010",
+     "partido": "REPUBLICANOS",
+     "votos": 41,
+     "pct": 0.3,
+     "total": 157381,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545047",
+     "urna": "RENATO BATTISTA",
+     "numero": "14000",
+     "partido": "MISSÃO",
+     "votos": 39,
+     "pct": 0.29,
+     "total": 89489,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540920",
+     "urna": "GOULART",
+     "numero": "55800",
+     "partido": "PSD",
+     "votos": 39,
+     "pct": 0.29,
+     "total": 61348,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536393",
+     "urna": "PAULO MANSUR",
+     "numero": "22422",
+     "partido": "PL",
+     "votos": 38,
+     "pct": 0.28,
+     "total": 107073,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536260",
+     "urna": "PROFESSORA BEBEL",
+     "numero": "13123",
+     "partido": "PT",
+     "votos": 35,
+     "pct": 0.26,
+     "total": 142001,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533809",
+     "urna": "DOUGLAS GARCIA",
+     "numero": "44555",
+     "partido": "UNIÃO",
+     "votos": 35,
+     "pct": 0.26,
+     "total": 97410,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533792",
+     "urna": "JOÃO DONIZETI LÍDER DO MANGA",
+     "numero": "44010",
+     "partido": "UNIÃO",
+     "votos": 35,
+     "pct": 0.26,
+     "total": 19015,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548862",
+     "urna": "DRA. DAMARIS MOURA",
+     "numero": "45777",
+     "partido": "PSDB",
+     "votos": 34,
+     "pct": 0.25,
+     "total": 47079,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545190",
+     "urna": "LUIZ ZACARIAS",
+     "numero": "20206",
+     "partido": "PODE",
+     "votos": 32,
+     "pct": 0.24,
+     "total": 12570,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002538929",
+     "urna": "MARIANA CONTI",
+     "numero": "50100",
+     "partido": "PSOL",
+     "votos": 32,
+     "pct": 0.24,
+     "total": 126344,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536395",
+     "urna": "TENENTE COIMBRA",
+     "numero": "22444",
+     "partido": "PL",
+     "votos": 32,
+     "pct": 0.24,
+     "total": 198342,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002540930",
+     "urna": "CLÁUDIO SOROCABA",
+     "numero": "55675",
+     "partido": "PSD",
+     "votos": 32,
+     "pct": 0.24,
+     "total": 9874,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536387",
+     "urna": "LISBOA",
+     "numero": "22300",
+     "partido": "PL",
+     "votos": 31,
+     "pct": 0.23,
+     "total": 67413,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545145",
+     "urna": "DR. EDSON DA PAIOL",
+     "numero": "20007",
+     "partido": "PODE",
+     "votos": 30,
+     "pct": 0.22,
+     "total": 124394,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536419",
+     "urna": "BRUNO ZAMBELLI",
+     "numero": "22100",
+     "partido": "PL",
+     "votos": 29,
+     "pct": 0.21,
+     "total": 82946,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539937",
+     "urna": "DÉBORA CAMILO",
+     "numero": "50500",
+     "partido": "PSOL",
+     "votos": 28,
+     "pct": 0.21,
+     "total": 94895,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533758",
+     "urna": "RAFAEL SARAIVA",
+     "numero": "44077",
+     "partido": "UNIÃO",
+     "votos": 25,
+     "pct": 0.19,
+     "total": 105174,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002530185",
+     "urna": "CICINHA NEVES",
+     "numero": "30025",
+     "partido": "NOVO",
+     "votos": 25,
+     "pct": 0.19,
+     "total": 973,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533776",
+     "urna": "DELEGADO OLIM",
+     "numero": "11777",
+     "partido": "PP",
+     "votos": 24,
+     "pct": 0.18,
+     "total": 163918,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002534232",
+     "urna": "ITAMAR BORGES",
+     "numero": "15300",
+     "partido": "MDB",
+     "votos": 24,
+     "pct": 0.18,
+     "total": 159058,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002541866",
+     "urna": "VINICIUS AITH",
+     "numero": "10555",
+     "partido": "REPUBLICANOS",
+     "votos": 24,
+     "pct": 0.18,
+     "total": 24834,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536831",
+     "urna": "EMÍDIO",
+     "numero": "13131",
+     "partido": "PT",
+     "votos": 23,
+     "pct": 0.17,
+     "total": 108275,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533761",
+     "urna": "ALEXANDRE LEITE",
+     "numero": "44250",
+     "partido": "UNIÃO",
+     "votos": 23,
+     "pct": 0.17,
+     "total": 72515,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002547966",
+     "urna": "ISADORA BRIZOLA",
+     "numero": "12345",
+     "partido": "PDT",
+     "votos": 23,
+     "pct": 0.17,
+     "total": 72280,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002540890",
+     "urna": "PARDINI",
+     "numero": "55014",
+     "partido": "PSD",
+     "votos": 22,
+     "pct": 0.16,
+     "total": 89558,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002540579",
+     "urna": "CAIO AOQUI",
+     "numero": "55300",
+     "partido": "PSD",
+     "votos": 22,
+     "pct": 0.16,
+     "total": 28791,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545171",
+     "urna": "GUTO JOSÉ",
+     "numero": "20620",
+     "partido": "PODE",
+     "votos": 21,
+     "pct": 0.16,
+     "total": 22328,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539934",
+     "urna": "LUIZA ERUNDINA",
+     "numero": "50555",
+     "partido": "PSOL",
+     "votos": 21,
+     "pct": 0.16,
+     "total": 169567,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536415",
+     "urna": "CORONEL PAGANOTTO",
+     "numero": "22190",
+     "partido": "PL",
+     "votos": 21,
+     "pct": 0.16,
+     "total": 77703,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536240",
+     "urna": "BARBA",
+     "numero": "13110",
+     "partido": "PT",
+     "votos": 20,
+     "pct": 0.15,
+     "total": 74115,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002538908",
+     "urna": "KEIT LIMA",
+     "numero": "50300",
+     "partido": "PSOL",
+     "votos": 20,
+     "pct": 0.15,
+     "total": 58984,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536264",
+     "urna": "LECI BRANDÃO",
+     "numero": "65035",
+     "partido": "PCDOB",
+     "votos": 20,
+     "pct": 0.15,
+     "total": 53149,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545147",
+     "urna": "LEANDRO BASSON",
+     "numero": "20000",
+     "partido": "PODE",
+     "votos": 18,
+     "pct": 0.13,
+     "total": 90934,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536378",
+     "urna": "PUGINA",
+     "numero": "22822",
+     "partido": "PL",
+     "votos": 18,
+     "pct": 0.13,
+     "total": 58337,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534242",
+     "urna": "CARUSO",
+     "numero": "15000",
+     "partido": "MDB",
+     "votos": 18,
+     "pct": 0.13,
+     "total": 74480,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002540911",
+     "urna": "THAMMY MIRANDA",
+     "numero": "55000",
+     "partido": "PSD",
+     "votos": 17,
+     "pct": 0.13,
+     "total": 85619,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533735",
+     "urna": "EDSON GIRIBONI",
+     "numero": "44001",
+     "partido": "UNIÃO",
+     "votos": 17,
+     "pct": 0.13,
+     "total": 73263,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533774",
+     "urna": "CANTOR ALISSON SANTOS",
+     "numero": "11222",
+     "partido": "PP",
+     "votos": 17,
+     "pct": 0.13,
+     "total": 26980,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536833",
+     "urna": "DUDA HIDALGO",
+     "numero": "13180",
+     "partido": "PT",
+     "votos": 16,
+     "pct": 0.12,
+     "total": 154953,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002540878",
+     "urna": "MARTA COSTA",
+     "numero": "55400",
+     "partido": "PSD",
+     "votos": 16,
+     "pct": 0.12,
+     "total": 100083,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536360",
+     "urna": "MALU FERNANDES",
+     "numero": "22010",
+     "partido": "PL",
+     "votos": 16,
+     "pct": 0.12,
+     "total": 14466,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541848",
+     "urna": "LUCAS CARDOSO",
+     "numero": "10153",
+     "partido": "REPUBLICANOS",
+     "votos": 16,
+     "pct": 0.12,
+     "total": 42246,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545204",
+     "urna": "RAPHAEL FERRIS",
+     "numero": "20700",
+     "partido": "PODE",
+     "votos": 15,
+     "pct": 0.11,
+     "total": 34901,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533755",
+     "urna": "ENFERMEIRO WAGNER BATISTA",
+     "numero": "44240",
+     "partido": "UNIÃO",
+     "votos": 15,
+     "pct": 0.11,
+     "total": 29440,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533744",
+     "urna": "DRA. CARLA BARONI",
+     "numero": "11199",
+     "partido": "PP",
+     "votos": 15,
+     "pct": 0.11,
+     "total": 1653,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536422",
+     "urna": "NANDO PINHEIRO",
+     "numero": "22321",
+     "partido": "PL",
+     "votos": 15,
+     "pct": 0.11,
+     "total": 39016,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536412",
+     "urna": "PAULO KOGOS",
+     "numero": "22038",
+     "partido": "PL",
+     "votos": 15,
+     "pct": 0.11,
+     "total": 59545,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541907",
+     "urna": "TENENTE CELSINHO RUSSOMANNO",
+     "numero": "10001",
+     "partido": "REPUBLICANOS",
+     "votos": 15,
+     "pct": 0.11,
+     "total": 28446,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536814",
+     "urna": "THAINARA FARIA",
+     "numero": "13016",
+     "partido": "PT",
+     "votos": 14,
+     "pct": 0.1,
+     "total": 81485,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533754",
+     "urna": "FUINHA ROBSON CALABIANQUI",
+     "numero": "44011",
+     "partido": "UNIÃO",
+     "votos": 14,
+     "pct": 0.1,
+     "total": 31075,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536424",
+     "urna": "MARCELO AGUIAR",
+     "numero": "22700",
+     "partido": "PL",
+     "votos": 14,
+     "pct": 0.1,
+     "total": 37585,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540590",
+     "urna": "DELEGADA JÚLIA NUNES",
+     "numero": "55789",
+     "partido": "PSD",
+     "votos": 14,
+     "pct": 0.1,
+     "total": 16915,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536389",
+     "urna": "RICARDO MADALENA",
+     "numero": "22123",
+     "partido": "PL",
+     "votos": 13,
+     "pct": 0.1,
+     "total": 94319,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536358",
+     "urna": "DANI ALONSO",
+     "numero": "22322",
+     "partido": "PL",
+     "votos": 13,
+     "pct": 0.1,
+     "total": 155574,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536425",
+     "urna": "FILIPE SABARÁ",
+     "numero": "22255",
+     "partido": "PL",
+     "votos": 13,
+     "pct": 0.1,
+     "total": 43583,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536396",
+     "urna": "SONAIRA FERNANDES",
+     "numero": "22220",
+     "partido": "PL",
+     "votos": 13,
+     "pct": 0.1,
+     "total": 39003,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534258",
+     "urna": "JULINHO CASARES",
+     "numero": "15050",
+     "partido": "MDB",
+     "votos": 13,
+     "pct": 0.1,
+     "total": 29728,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534188",
+     "urna": "GOLEIRO SERGIO",
+     "numero": "77012",
+     "partido": "SOLIDARIEDADE",
+     "votos": 13,
+     "pct": 0.1,
+     "total": 9565,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541851",
+     "urna": "PAULO CORREA JR",
+     "numero": "10699",
+     "partido": "REPUBLICANOS",
+     "votos": 13,
+     "pct": 0.1,
+     "total": 64402,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533748",
+     "urna": "CAMILA GODOI",
+     "numero": "44123",
+     "partido": "UNIÃO",
+     "votos": 12,
+     "pct": 0.09,
+     "total": 74733,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002530227",
+     "urna": "CARLO CAUTI",
+     "numero": "30007",
+     "partido": "NOVO",
+     "votos": 12,
+     "pct": 0.09,
+     "total": 61461,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536268",
+     "urna": "ENIO TATTO",
+     "numero": "13114",
+     "partido": "PT",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 102892,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545172",
+     "urna": "KAKA DO AUTISMO",
+     "numero": "20777",
+     "partido": "PODE",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 74365,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539244",
+     "urna": "LÉO ÁQUILLA",
+     "numero": "40700",
+     "partido": "PSB",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 21607,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539262",
+     "urna": "FÁBIO JABA",
+     "numero": "40111",
+     "partido": "PSB",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 16555,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536239",
+     "urna": "JORGE DO CARMO",
+     "numero": "13800",
+     "partido": "PT",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 60607,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533749",
+     "urna": "DR RAFU",
+     "numero": "11999",
+     "partido": "PP",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 56412,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536390",
+     "urna": "SARGENTO GIROTO",
+     "numero": "22823",
+     "partido": "PL",
+     "votos": 11,
+     "pct": 0.08,
+     "total": 9075,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539312",
+     "urna": "ABIDAN HENRIQUE",
+     "numero": "40000",
+     "partido": "PSB",
+     "votos": 10,
+     "pct": 0.07,
+     "total": 43620,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536368",
+     "urna": "RENAN PAES",
+     "numero": "22380",
+     "partido": "PL",
+     "votos": 10,
+     "pct": 0.07,
+     "total": 30943,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533949",
+     "urna": "PASTOR ROGERIO DA QUITANDA",
+     "numero": "15444",
+     "partido": "MDB",
+     "votos": 10,
+     "pct": 0.07,
+     "total": 5320,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540905",
+     "urna": "DELEGADA RAQUEL",
+     "numero": "55550",
+     "partido": "PSD",
+     "votos": 10,
+     "pct": 0.07,
+     "total": 34843,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539283",
+     "urna": "VANESSA ZIOTTI",
+     "numero": "40040",
+     "partido": "PSB",
+     "votos": 9,
+     "pct": 0.07,
+     "total": 33553,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536251",
+     "urna": "ALESSANDRO CULTURA VIVA",
+     "numero": "13000",
+     "partido": "PT",
+     "votos": 9,
+     "pct": 0.07,
+     "total": 13433,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536344",
+     "urna": "CAPITÃO MOSART",
+     "numero": "22022",
+     "partido": "PL",
+     "votos": 9,
+     "pct": 0.07,
+     "total": 70997,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536388",
+     "urna": "GIOVANNI SANCHES",
+     "numero": "22800",
+     "partido": "PL",
+     "votos": 9,
+     "pct": 0.07,
+     "total": 235363,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536372",
+     "urna": "ELIAS DE MADUREIRA",
+     "numero": "22577",
+     "partido": "PL",
+     "votos": 9,
+     "pct": 0.07,
+     "total": 32889,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539955",
+     "urna": "JR. FREITAS",
+     "numero": "50013",
+     "partido": "PSOL",
+     "votos": 9,
+     "pct": 0.07,
+     "total": 22589,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541847",
+     "urna": "JORGE WILSON XERIFE CONSUMIDOR",
+     "numero": "10000",
+     "partido": "REPUBLICANOS",
+     "votos": 9,
+     "pct": 0.07,
+     "total": 61708,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533756",
+     "urna": "DANIEL SOARES",
+     "numero": "44111",
+     "partido": "UNIÃO",
+     "votos": 8,
+     "pct": 0.06,
+     "total": 53812,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536272",
+     "urna": "MEIRE SILVA",
+     "numero": "13113",
+     "partido": "PT",
+     "votos": 8,
+     "pct": 0.06,
+     "total": 22358,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536392",
+     "urna": "VALERIA BOLSONARO",
+     "numero": "22922",
+     "partido": "PL",
+     "votos": 8,
+     "pct": 0.06,
+     "total": 51274,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536428",
+     "urna": "JÉ - JEFERSON MODESTO",
+     "numero": "22555",
+     "partido": "PL",
+     "votos": 8,
+     "pct": 0.06,
+     "total": 25923,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536846",
+     "urna": "DONATO",
+     "numero": "13700",
+     "partido": "PT",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 94779,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533768",
+     "urna": "DELEGADO MESQUITA",
+     "numero": "11000",
+     "partido": "PP",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 87918,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002553783",
+     "urna": "RAMIRO MEVES",
+     "numero": "27777",
+     "partido": "DC",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 7373,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002539288",
+     "urna": "DRA. GRAZI",
+     "numero": "40500",
+     "partido": "PSB",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 16100,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533759",
+     "urna": "FELIPE FRANCO",
+     "numero": "44007",
+     "partido": "UNIÃO",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 59518,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536269",
+     "urna": "JESSY DAYANE",
+     "numero": "13713",
+     "partido": "PT",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 21058,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002547984",
+     "urna": "HENRIQUE BARROS",
+     "numero": "12000",
+     "partido": "PDT",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 6904,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002536245",
+     "urna": "ANA PERUGINI",
+     "numero": "13121",
+     "partido": "PT",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 70737,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002545142",
+     "urna": "RICARDO FRANÇA",
+     "numero": "20100",
+     "partido": "PODE",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 53644,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002545035",
+     "urna": "RAFAEL MACRIS",
+     "numero": "14777",
+     "partido": "MISSÃO",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 23369,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536418",
+     "urna": "ROSANA RABELO",
+     "numero": "22102",
+     "partido": "PL",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 14118,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536374",
+     "urna": "THIAGUINHO SILVA",
+     "numero": "22055",
+     "partido": "PL",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 11501,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539299",
+     "urna": "MARINA BRAGANTE",
+     "numero": "40444",
+     "partido": "PSB",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 78957,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002530269",
+     "urna": "VETERANO GIMENES",
+     "numero": "30190",
+     "partido": "NOVO",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 8914,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534207",
+     "urna": "PR ANDRE BUENO",
+     "numero": "15777",
+     "partido": "MDB",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 71664,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002538892",
+     "urna": "GENIVAL CALIXTO",
+     "numero": "50010",
+     "partido": "PSOL",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 557,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540894",
+     "urna": "FAOUAZ TAHA",
+     "numero": "55011",
+     "partido": "PSD",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 12035,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540910",
+     "urna": "SILVIO OLIVEIRA",
+     "numero": "55100",
+     "partido": "PSD",
+     "votos": 7,
+     "pct": 0.05,
+     "total": 12333,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539327",
+     "urna": "RODRIGO DORADO MANDATO ANIMAL",
+     "numero": "40400",
+     "partido": "PSB",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 11468,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545143",
+     "urna": "AMANDA GANEM",
+     "numero": "20010",
+     "partido": "PODE",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 18915,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545210",
+     "urna": "DIEGO BOY",
+     "numero": "20202",
+     "partido": "PODE",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 19755,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539294",
+     "urna": "CAIO FRANÇA",
+     "numero": "40640",
+     "partido": "PSB",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 99840,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002530239",
+     "urna": "HENRIQUE KRIGNER",
+     "numero": "30123",
+     "partido": "NOVO",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 66512,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533743",
+     "urna": "DELEGADA MARIA CORSATO",
+     "numero": "44004",
+     "partido": "UNIÃO",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 12713,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550070",
+     "urna": "SALMERON",
+     "numero": "45555",
+     "partido": "PSDB",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 4562,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536410",
+     "urna": "LUCAS BOVE",
+     "numero": "22500",
+     "partido": "PL",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 71263,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536397",
+     "urna": "OSEIAS DE MADUREIRA",
+     "numero": "22223",
+     "partido": "PL",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 42223,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541888",
+     "urna": "FELIPE CARMONA",
+     "numero": "10122",
+     "partido": "REPUBLICANOS",
+     "votos": 6,
+     "pct": 0.04,
+     "total": 18512,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002553792",
+     "urna": "MEDINA",
+     "numero": "27033",
+     "partido": "DC",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 1457,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002545220",
+     "urna": "WILLIAM SANCHES",
+     "numero": "20260",
+     "partido": "PODE",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 34934,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536367",
+     "urna": "ALEX MADUREIRA",
+     "numero": "22777",
+     "partido": "PL",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 122704,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536821",
+     "urna": "GUSTAVO PETTA",
+     "numero": "65656",
+     "partido": "PCDOB",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 33311,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534251",
+     "urna": "REGINA NUNES",
+     "numero": "15115",
+     "partido": "MDB",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 154966,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002530268",
+     "urna": "GERSON PIRES",
+     "numero": "30111",
+     "partido": "NOVO",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 66049,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002538905",
+     "urna": "CHIRLEY PANKARÁ",
+     "numero": "50888",
+     "partido": "PSOL",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 15423,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540563",
+     "urna": "LÚCIA ROSIM",
+     "numero": "55001",
+     "partido": "PSD",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 16400,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534171",
+     "urna": "DOUTOR FRAN",
+     "numero": "77800",
+     "partido": "SOLIDARIEDADE",
+     "votos": 5,
+     "pct": 0.04,
+     "total": 9464,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539242",
+     "urna": "CARMEN SILVA",
+     "numero": "40300",
+     "partido": "PSB",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 11991,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539252",
+     "urna": "CÍCERO JOÃO",
+     "numero": "40888",
+     "partido": "PSB",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 6888,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545189",
+     "urna": "FRAN SILVA",
+     "numero": "20688",
+     "partido": "PODE",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 46367,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533808",
+     "urna": "MARLON LUZ",
+     "numero": "44567",
+     "partido": "UNIÃO",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 39722,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533812",
+     "urna": "GUILHERME PUGLIESE",
+     "numero": "44100",
+     "partido": "UNIÃO",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 4180,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536241",
+     "urna": "NEON CUNHA",
+     "numero": "13913",
+     "partido": "PT",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 24493,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536823",
+     "urna": "JAQUE MEDEIROS",
+     "numero": "13111",
+     "partido": "PT",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 8757,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002551224",
+     "urna": "DINEI DA FIEL COLETIVO RAÍZES",
+     "numero": "70999",
+     "partido": "AVANTE",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 6338,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002547985",
+     "urna": "GALLO",
+     "numero": "12001",
+     "partido": "PDT",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 5372,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002536830",
+     "urna": "FERNANDA CURTI",
+     "numero": "13813",
+     "partido": "PT",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 46626,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536253",
+     "urna": "ROSÂNGELA SANTOS",
+     "numero": "13400",
+     "partido": "PT",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 42521,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548920",
+     "urna": "CIDO ITAQUERA UNIDA",
+     "numero": "45010",
+     "partido": "PSDB",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 1663,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536375",
+     "urna": "ISAAC ANTUNES",
+     "numero": "22122",
+     "partido": "PL",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 61953,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536860",
+     "urna": "PROFESSORA NAJARA COSTA",
+     "numero": "65180",
+     "partido": "PCDOB",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 11825,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536361",
+     "urna": "RODRIGO ASHIUCHI",
+     "numero": "22000",
+     "partido": "PL",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 162562,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536840",
+     "urna": "JOÃO PAULO RILLO",
+     "numero": "13622",
+     "partido": "PT",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 72486,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002536408",
+     "urna": "DELEGADO ROMANI",
+     "numero": "22600",
+     "partido": "PL",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 41309,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536350",
+     "urna": "MAZINHO",
+     "numero": "22333",
+     "partido": "PL",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 13832,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534263",
+     "urna": "PRETUSCO",
+     "numero": "15013",
+     "partido": "MDB",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 650,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534218",
+     "urna": "MUSSA CALIL",
+     "numero": "15215",
+     "partido": "MDB",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 5460,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539949",
+     "urna": "PAULO JUVENTUDE",
+     "numero": "50005",
+     "partido": "PSOL",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 9995,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540888",
+     "urna": "MARQUITO DO RATINHO",
+     "numero": "55050",
+     "partido": "PSD",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 1596,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540898",
+     "urna": "SAMURAI CAÇADOR -DR MARDQUEU",
+     "numero": "55357",
+     "partido": "PSD",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 22081,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534153",
+     "urna": "LEO RODRIGUES",
+     "numero": "25777",
+     "partido": "PRD",
+     "votos": 4,
+     "pct": 0.03,
+     "total": 10339,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536263",
+     "urna": "MARCOLINO",
+     "numero": "13310",
+     "partido": "PT",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 72574,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545207",
+     "urna": "FABIO FARIA DE SÁ",
+     "numero": "20520",
+     "partido": "PODE",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 68055,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002540562",
+     "urna": "CARLA MORANDO",
+     "numero": "55155",
+     "partido": "PSD",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 94596,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539275",
+     "urna": "REBECA CRISTINA",
+     "numero": "40340",
+     "partido": "PSB",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 5497,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545138",
+     "urna": "PASTOR ANISTALDO",
+     "numero": "20147",
+     "partido": "PODE",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 13243,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533798",
+     "urna": "SOLANGE FREITAS",
+     "numero": "44044",
+     "partido": "UNIÃO",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 77524,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002533750",
+     "urna": "RAFA ZIMBALDI",
+     "numero": "44000",
+     "partido": "UNIÃO",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 66425,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533806",
+     "urna": "TONINHO MITTRAS",
+     "numero": "44888",
+     "partido": "UNIÃO",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 17547,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002551235",
+     "urna": "CAIO CURY",
+     "numero": "70123",
+     "partido": "AVANTE",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 8420,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002536259",
+     "urna": "CLAUDIO ITAVERÁ",
+     "numero": "13200",
+     "partido": "PT",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 6812,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536247",
+     "urna": "PROFESSOR JUSTINO",
+     "numero": "13611",
+     "partido": "PT",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 1505,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536822",
+     "urna": "RICARDO ALESSANDRO",
+     "numero": "13100",
+     "partido": "PT",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 6327,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002547993",
+     "urna": "LUH DE OYA",
+     "numero": "12002",
+     "partido": "PDT",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 176,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002536820",
+     "urna": "ISABELLY CARVALHO",
+     "numero": "13013",
+     "partido": "PT",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 12513,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548871",
+     "urna": "ROSANGELA PERECINI",
+     "numero": "45114",
+     "partido": "PSDB",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 1469,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533789",
+     "urna": "CABO MULLER",
+     "numero": "11010",
+     "partido": "PP",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 15616,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533781",
+     "urna": "POLACO MOURA",
+     "numero": "11555",
+     "partido": "PP",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 9827,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548919",
+     "urna": "RAUL VICENTINI",
+     "numero": "45450",
+     "partido": "PSDB",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 19043,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536889",
+     "urna": "JULIA CACHOS",
+     "numero": "80000",
+     "partido": "UP",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 10668,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002536377",
+     "urna": "FRANCO SARDELLI",
+     "numero": "22001",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 98375,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536404",
+     "urna": "LETICIA AGUIAR",
+     "numero": "22522",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 94832,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545053",
+     "urna": "CABO PINHEIRO",
+     "numero": "14444",
+     "partido": "MISSÃO",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 4513,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545002",
+     "urna": "NICOLY SANTOS",
+     "numero": "14144",
+     "partido": "MISSÃO",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 7873,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544992",
+     "urna": "ENGENHEIRO LEO",
+     "numero": "14123",
+     "partido": "MISSÃO",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 19844,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536365",
+     "urna": "LUCAS AMARAL",
+     "numero": "22120",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 4844,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536376",
+     "urna": "GUERLI HERZOG",
+     "numero": "22042",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 7352,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536409",
+     "urna": "TENENTE BAHIA",
+     "numero": "22900",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 24002,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536386",
+     "urna": "MARCIA DO PL",
+     "numero": "22211",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 16684,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536391",
+     "urna": "VAL DEMARCHI",
+     "numero": "22221",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 17843,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536399",
+     "urna": "DANILA AZEVEDO",
+     "numero": "22112",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 2998,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536342",
+     "urna": "ANTONIA DE JESUS",
+     "numero": "22456",
+     "partido": "PL",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 8416,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533947",
+     "urna": "DR. EDUARDO NOBREGA",
+     "numero": "15150",
+     "partido": "MDB",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 65318,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533953",
+     "urna": "IZAIAS SANTANA",
+     "numero": "15012",
+     "partido": "MDB",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 14765,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530265",
+     "urna": "ENG. CATHARINA DONATO",
+     "numero": "30777",
+     "partido": "NOVO",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 6785,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540575",
+     "urna": "EVERTON FERREIRA",
+     "numero": "55015",
+     "partido": "PSD",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 27957,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540566",
+     "urna": "DELEGADO ANDRÉ PEREIRA",
+     "numero": "55700",
+     "partido": "PSD",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 5372,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540593",
+     "urna": "GUSTAVO REIS",
+     "numero": "55955",
+     "partido": "PSD",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 30046,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541904",
+     "urna": "MOLINA",
+     "numero": "10999",
+     "partido": "REPUBLICANOS",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 41991,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541863",
+     "urna": "SÉRGIO ZAGARINO",
+     "numero": "10110",
+     "partido": "REPUBLICANOS",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 2116,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541846",
+     "urna": "RUI ALVES",
+     "numero": "10111",
+     "partido": "REPUBLICANOS",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 60544,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541885",
+     "urna": "EDNA MACEDO",
+     "numero": "10456",
+     "partido": "REPUBLICANOS",
+     "votos": 3,
+     "pct": 0.02,
+     "total": 55086,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534178",
+     "urna": "ATILA JACOMUSSI",
+     "numero": "25000",
+     "partido": "PRD",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 54065,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536835",
+     "urna": "ESTHER MORAES",
+     "numero": "43043",
+     "partido": "PV",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 23653,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540584",
+     "urna": "ANALICE FERNANDES",
+     "numero": "55455",
+     "partido": "PSD",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 88784,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002540897",
+     "urna": "RAFAEL SILVA JR",
+     "numero": "55055",
+     "partido": "PSD",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 74043,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002541861",
+     "urna": "DANILO CAMPETTI",
+     "numero": "10222",
+     "partido": "REPUBLICANOS",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 119904,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002541857",
+     "urna": "ELY SANTOS",
+     "numero": "10023",
+     "partido": "REPUBLICANOS",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 82559,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002536845",
+     "urna": "RODRIGO MAR",
+     "numero": "13644",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 104820,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002548910",
+     "urna": "ANA CAROLINA SERRA",
+     "numero": "45045",
+     "partido": "PSDB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 132881,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002539315",
+     "urna": "DR. FERNANDO GOMES",
+     "numero": "40004",
+     "partido": "PSB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 9482,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539314",
+     "urna": "RODRIGO DIGÃO",
+     "numero": "40910",
+     "partido": "PSB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 8107,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539249",
+     "urna": "VILAR",
+     "numero": "40433",
+     "partido": "PSB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 7177,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539271",
+     "urna": "DRA. THAIS VIOTTO",
+     "numero": "40018",
+     "partido": "PSB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 4298,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539309",
+     "urna": "LUIZINHO DO NHOCUNÉ",
+     "numero": "40013",
+     "partido": "PSB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 1013,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002554276",
+     "urna": "TATI DA MAIS AMOR",
+     "numero": "20153",
+     "partido": "PODE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 667,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545183",
+     "urna": "MADELEINE LACSKO",
+     "numero": "20800",
+     "partido": "PODE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 14071,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545167",
+     "urna": "LUIZ CIRILO",
+     "numero": "20020",
+     "partido": "PODE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 11358,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545188",
+     "urna": "IVAN SILVA",
+     "numero": "20650",
+     "partido": "PODE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 48389,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533788",
+     "urna": "ALTOBELI SILVA",
+     "numero": "44023",
+     "partido": "UNIÃO",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 5192,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536861",
+     "urna": "BETH SAHAO",
+     "numero": "13456",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 66572,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536853",
+     "urna": "CLAUDINHO OUVIDOR",
+     "numero": "13777",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 21130,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002547965",
+     "urna": "DR ANDRÉ",
+     "numero": "12033",
+     "partido": "PDT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 1861,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002552866",
+     "urna": "ADRIANO ORE",
+     "numero": "33011",
+     "partido": "MOBILIZA",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 4292,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002552905",
+     "urna": "PATROCINIO RAMOS CAUSA ANIMAL",
+     "numero": "33111",
+     "partido": "MOBILIZA",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 323,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002552864",
+     "urna": "BOCA NERVOSA",
+     "numero": "33000",
+     "partido": "MOBILIZA",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 567,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002536852",
+     "urna": "MARIA PAULA",
+     "numero": "13116",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 33209,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536817",
+     "urna": "ESTELA ALMAGRO",
+     "numero": "13258",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 31151,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536826",
+     "urna": "MAURICI",
+     "numero": "13011",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 64675,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536271",
+     "urna": "PROFESSORA JULIANA",
+     "numero": "13900",
+     "partido": "PT",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 15799,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533763",
+     "urna": "ALBERTINHO MALUF",
+     "numero": "11011",
+     "partido": "PP",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 11451,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536855",
+     "urna": "GUILHERME BIANCO",
+     "numero": "65000",
+     "partido": "PCDOB",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 11111,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536356",
+     "urna": "JOÃO PAULO",
+     "numero": "22345",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 76371,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545049",
+     "urna": "ADVOGADA PALOMA NADAL",
+     "numero": "14714",
+     "partido": "MISSÃO",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 3623,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536346",
+     "urna": "DELEGADO HUGO",
+     "numero": "22200",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 13197,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536417",
+     "urna": "DELEGADO HELIO BRESSAN",
+     "numero": "22580",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 10634,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536347",
+     "urna": "FLAVIO AMARAL",
+     "numero": "22695",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 2594,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536348",
+     "urna": "LÉO NOVAIS",
+     "numero": "22150",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 2081,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536345",
+     "urna": "NINA BRAGA",
+     "numero": "22090",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 17410,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536398",
+     "urna": "JULIO CESAR",
+     "numero": "22012",
+     "partido": "PL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 24219,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530217",
+     "urna": "SAULO DE FREITAS",
+     "numero": "30600",
+     "partido": "NOVO",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 919,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539953",
+     "urna": "MARCOS MS",
+     "numero": "50299",
+     "partido": "PSOL",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 420,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540564",
+     "urna": "MARA GABRILLI",
+     "numero": "55177",
+     "partido": "PSD",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 48372,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534179",
+     "urna": "MAURO DOS MATERIAIS",
+     "numero": "25014",
+     "partido": "PRD",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 5581,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534135",
+     "urna": "ALAN LEAL",
+     "numero": "25678",
+     "partido": "PRD",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 18212,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534177",
+     "urna": "DÉ ALVIM",
+     "numero": "77513",
+     "partido": "SOLIDARIEDADE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 5962,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534137",
+     "urna": "REINALDO MEIRA",
+     "numero": "77656",
+     "partido": "SOLIDARIEDADE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 3394,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002538917",
+     "urna": "PROF. FERNANDO OLIVEIRA",
+     "numero": "18000",
+     "partido": "REDE",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 4370,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541895",
+     "urna": "JULINHO FUZARI",
+     "numero": "10680",
+     "partido": "REPUBLICANOS",
+     "votos": 2,
+     "pct": 0.01,
+     "total": 47626,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540875",
+     "urna": "MAURO BRAGATO",
+     "numero": "55125",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 79157,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002541864",
+     "urna": "RENATA SENE",
+     "numero": "10100",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 73526,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002553829",
+     "urna": "OSMAR RODRIGUES",
+     "numero": "27112",
+     "partido": "DC",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 176,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002539287",
+     "urna": "DR. BONASSA",
+     "numero": "40015",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 112,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539272",
+     "urna": "LÍVIA MARIA",
+     "numero": "40774",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 767,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539300",
+     "urna": "JONAS WAGNER",
+     "numero": "40404",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 378,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539321",
+     "urna": "DRA. SANDRA MARQUES",
+     "numero": "40010",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1076,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539281",
+     "urna": "PROFESSOR ALEXANDRE PIMENTEL",
+     "numero": "40813",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1830,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539258",
+     "urna": "GARCIA DO SKATE",
+     "numero": "40411",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1687,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539328",
+     "urna": "ABDUL JAROUR",
+     "numero": "40999",
+     "partido": "PSB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1898,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545153",
+     "urna": "SÔNIA MODENA",
+     "numero": "20022",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 15294,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545139",
+     "urna": "CARLÃO DO SOCIAL",
+     "numero": "20030",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2246,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545146",
+     "urna": "FERNANDO FH",
+     "numero": "20190",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 10945,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545218",
+     "urna": "MARCINHO DO POVO",
+     "numero": "20910",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 849,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545181",
+     "urna": "DELEGADO DIÓGENES",
+     "numero": "20003",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 21336,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545158",
+     "urna": "CARLÃO COORDENADOR",
+     "numero": "20258",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1885,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548912",
+     "urna": "POLICIAL RODOLFO DONETTI",
+     "numero": "23022",
+     "partido": "CIDADANIA",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 11793,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548916",
+     "urna": "ANA PAULA HAUSSAUER",
+     "numero": "23230",
+     "partido": "CIDADANIA",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3339,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550066",
+     "urna": "RODRIGO FEITOSA",
+     "numero": "23555",
+     "partido": "CIDADANIA",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 967,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545154",
+     "urna": "ATAIDE TERUEL",
+     "numero": "20252",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2024,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545222",
+     "urna": "TIAGO PERETTO",
+     "numero": "20678",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 35219,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545193",
+     "urna": "KARIN CAMARGO",
+     "numero": "20026",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2091,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545134",
+     "urna": "ADRIANNY VERÇOSA",
+     "numero": "20331",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1162,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545140",
+     "urna": "MEIRIELI FREITAS TERAPEUTA",
+     "numero": "20345",
+     "partido": "PODE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 485,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002551240",
+     "urna": "FRANCISCO CEARÁ",
+     "numero": "70111",
+     "partido": "AVANTE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 561,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002554063",
+     "urna": "LUCKSON JOSEPH",
+     "numero": "35111",
+     "partido": "DEMOCRATA",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 81,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002554056",
+     "urna": "WOLLACE",
+     "numero": "35010",
+     "partido": "DEMOCRATA",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 18,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002533764",
+     "urna": "MÔNICA CURY",
+     "numero": "44220",
+     "partido": "UNIÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4450,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533782",
+     "urna": "EDICARLOS VIEIRA",
+     "numero": "44333",
+     "partido": "UNIÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 16969,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533787",
+     "urna": "PROFESSORA RÔ LOPES",
+     "numero": "44321",
+     "partido": "UNIÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 660,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533736",
+     "urna": "MÁRCIA REBESCHINI",
+     "numero": "44190",
+     "partido": "UNIÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1964,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533777",
+     "urna": "DIOGO FAIXA AZUL",
+     "numero": "44056",
+     "partido": "UNIÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 7802,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536237",
+     "urna": "CAMPOS",
+     "numero": "13130",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 24789,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550243",
+     "urna": "ELAINE",
+     "numero": "70090",
+     "partido": "AVANTE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 227,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002536250",
+     "urna": "PSICÓLOGO MARCOS VARGAS",
+     "numero": "13024",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1250,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536249",
+     "urna": "MARIA MOURA",
+     "numero": "13135",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1684,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002547970",
+     "urna": "ANDREIA ROLIM RIOS",
+     "numero": "12122",
+     "partido": "PDT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2314,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002552874",
+     "urna": "DR LUIZINHO",
+     "numero": "33022",
+     "partido": "MOBILIZA",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 491,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548006",
+     "urna": "VAQUEIRO PAIVA JÚNIOR",
+     "numero": "12444",
+     "partido": "PDT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 868,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002547967",
+     "urna": "ROBINHO OLIVEIRA",
+     "numero": "12123",
+     "partido": "PDT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1822,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002552894",
+     "urna": "ALESSANDRA ALVES",
+     "numero": "33290",
+     "partido": "MOBILIZA",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 241,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002536834",
+     "urna": "CHELL OLIVEIRA",
+     "numero": "13333",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 11479,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536858",
+     "urna": "TAGA",
+     "numero": "13580",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 11966,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536243",
+     "urna": "BISPA ZILDENE",
+     "numero": "13132",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1786,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536242",
+     "urna": "GIVANILDO GONÇALVES",
+     "numero": "13190",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1097,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536238",
+     "urna": "CARLOS AQUINO",
+     "numero": "13231",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1504,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536824",
+     "urna": "WILLIAN SOUZA",
+     "numero": "13101",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 65644,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536847",
+     "urna": "NEWTON LIMA",
+     "numero": "13050",
+     "partido": "PT",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 32544,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550065",
+     "urna": "NOEMI NONATO",
+     "numero": "45401",
+     "partido": "PSDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 6218,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548881",
+     "urna": "MATHEUS CARREIRO",
+     "numero": "45222",
+     "partido": "PSDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2012,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548884",
+     "urna": "CLAUDIA MARTINS",
+     "numero": "45005",
+     "partido": "PSDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2621,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533753",
+     "urna": "SOLDADO LETÍCIA ASSIS",
+     "numero": "11180",
+     "partido": "PP",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2389,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533767",
+     "urna": "SANTIAGO ANGELO",
+     "numero": "11123",
+     "partido": "PP",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 14221,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533773",
+     "urna": "DEBORA MARCONDES",
+     "numero": "11500",
+     "partido": "PP",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 8175,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533795",
+     "urna": "LUCIANO SILVA",
+     "numero": "11234",
+     "partido": "PP",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 5043,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533799",
+     "urna": "DRA TELMA RODOLPHO",
+     "numero": "11101",
+     "partido": "PP",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 485,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533769",
+     "urna": "JOSEF BORGES",
+     "numero": "11112",
+     "partido": "PP",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1346,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002550064",
+     "urna": "GIDEÃO DO AGRO",
+     "numero": "45021",
+     "partido": "PSDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1020,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002552506",
+     "urna": "LUCAS DA FRENTE OPERÁRIA",
+     "numero": "80123",
+     "partido": "UP",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3621,
+     "situacao": "Não eleito"
+    },
+    {
+     "sq": "250002548864",
+     "urna": "DOUGLAS PARAIBA",
+     "numero": "45678",
+     "partido": "PSDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1060,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536366",
+     "urna": "DELEGADA GRACIELA",
+     "numero": "22888",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 125624,
+     "situacao": "Eleito por qp"
+    },
+    {
+     "sq": "250002545021",
+     "urna": "FERNANDA SCHMITT",
+     "numero": "14044",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3209,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545045",
+     "urna": "ADVOGADO JOÃO",
+     "numero": "14771",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1228,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002544996",
+     "urna": "INGRID CARDOSO",
+     "numero": "14567",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 666,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545018",
+     "urna": "DR. ALEXANDRE MITSUO",
+     "numero": "14141",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2597,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545032",
+     "urna": "AFONSO SILVA",
+     "numero": "14001",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 808,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545009",
+     "urna": "CAIO SANTANA",
+     "numero": "14222",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1455,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545004",
+     "urna": "DIEGO MIRANDA",
+     "numero": "14577",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 353,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545052",
+     "urna": "SARGENTO SOUSA SP",
+     "numero": "14555",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 768,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545034",
+     "urna": "SOLDADO MACIEL",
+     "numero": "14400",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 5407,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545022",
+     "urna": "GIULIA LUNA",
+     "numero": "14443",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1159,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002545017",
+     "urna": "TAMIRIS GODOY",
+     "numero": "14441",
+     "partido": "MISSÃO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2081,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536385",
+     "urna": "MARCELO BOLSONARO",
+     "numero": "22202",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 8904,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536364",
+     "urna": "DRA. TACIANE TEJO DE AZEVEDO",
+     "numero": "22017",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1652,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536343",
+     "urna": "REIZINHO",
+     "numero": "22400",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3009,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536431",
+     "urna": "LUCAS FLORES",
+     "numero": "22747",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 52029,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536359",
+     "urna": "THIAGO COLPANI",
+     "numero": "22722",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 9594,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536383",
+     "urna": "DEBORA PALERMO",
+     "numero": "22002",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 16168,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536411",
+     "urna": "CORONEL AMÉRICO",
+     "numero": "22025",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 9584,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002536423",
+     "urna": "THIAGO AURICCHIO",
+     "numero": "22343",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 59942,
+     "situacao": "Eleito por média"
+    },
+    {
+     "sq": "250002536362",
+     "urna": "ZÉ CARNEIRO",
+     "numero": "22210",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3675,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530215",
+     "urna": "TON PROÊNCIO",
+     "numero": "30300",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3493,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002548137",
+     "urna": "SALOMÃO AUGUSTO",
+     "numero": "22225",
+     "partido": "PL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2737,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530235",
+     "urna": "CELINA RAMALHO",
+     "numero": "30501",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2289,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534225",
+     "urna": "ANDERSON HENRIQUE",
+     "numero": "15152",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4402,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534231",
+     "urna": "CAIO DO VOVÔ ANÉSIO",
+     "numero": "15017",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4236,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534194",
+     "urna": "LEÃO",
+     "numero": "15222",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2437,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530219",
+     "urna": "HIGMAR LOPES",
+     "numero": "30222",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2359,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534259",
+     "urna": "KAUÊ DA GENTE",
+     "numero": "15010",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3699,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534237",
+     "urna": "SORAIA MARTINS",
+     "numero": "15327",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1717,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534238",
+     "urna": "DELEGADA SATO",
+     "numero": "15515",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 16230,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002533952",
+     "urna": "NILTON MORAIS",
+     "numero": "15772",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1355,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534236",
+     "urna": "EDSON FERRAZ",
+     "numero": "15555",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 6036,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534222",
+     "urna": "JAILTON RAPOSO",
+     "numero": "15151",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1502,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541166",
+     "urna": "DIRETOR ELIAS JUNIOR",
+     "numero": "15190",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2838,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534202",
+     "urna": "EDUARDO ORTIZ",
+     "numero": "15111",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 11010,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534215",
+     "urna": "ALEXANDRA COHEN",
+     "numero": "15073",
+     "partido": "MDB",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 189,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530273",
+     "urna": "PROFESSORA ELISA",
+     "numero": "30012",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2825,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530209",
+     "urna": "INSPETOR MÁRCIO SILVA",
+     "numero": "30191",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1135,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530249",
+     "urna": "GI DA ENFERMAGEM",
+     "numero": "30180",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1186,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002538893",
+     "urna": "PROFESSORA NIDIA LIMA",
+     "numero": "50796",
+     "partido": "PSOL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2052,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002538910",
+     "urna": "AGRIPINO BANCADA LGBT+",
+     "numero": "50678",
+     "partido": "PSOL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2524,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002530238",
+     "urna": "MAJOR HOIO",
+     "numero": "30022",
+     "partido": "NOVO",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3116,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002538930",
+     "urna": "CLAUDINEY GENEROSO",
+     "numero": "50321",
+     "partido": "PSOL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 901,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002539940",
+     "urna": "CAROLINA SIMON",
+     "numero": "50180",
+     "partido": "PSOL",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 11919,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540902",
+     "urna": "LUCAS MOURÃO",
+     "numero": "55500",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 30816,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540876",
+     "urna": "ALESSANDRO FATTIOLI",
+     "numero": "55880",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 5291,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540874",
+     "urna": "MARLI MORETTI",
+     "numero": "55575",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1486,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540570",
+     "urna": "CAPITÃO BELARMINO",
+     "numero": "55040",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1870,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540887",
+     "urna": "DIRCEU DALBEN",
+     "numero": "55456",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 27937,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540883",
+     "urna": "CORONEL HELENA REIS",
+     "numero": "55190",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 10390,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540560",
+     "urna": "DR AGNALDO PISCOPO",
+     "numero": "55192",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 29968,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540592",
+     "urna": "LEVI DA HORA",
+     "numero": "55077",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 745,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540573",
+     "urna": "ANTONIO CARLOS DA SILVA",
+     "numero": "55556",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 23504,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540585",
+     "urna": "PROFESSORA FERNANDA GABRIELA",
+     "numero": "55021",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 650,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540889",
+     "urna": "KINHO",
+     "numero": "55099",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 3847,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540896",
+     "urna": "LUCAS POCAY",
+     "numero": "55755",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 32446,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540565",
+     "urna": "DR. ADRIANO SANTOS",
+     "numero": "55333",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 7243,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540891",
+     "urna": "MONICA ROSENBERG",
+     "numero": "55018",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 7789,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540908",
+     "urna": "JUNIOR RODRIGUES",
+     "numero": "55321",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 19561,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002540587",
+     "urna": "NELSON HOSSRI",
+     "numero": "55022",
+     "partido": "PSD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 13334,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534142",
+     "urna": "CLAUDIA DE GIULI",
+     "numero": "25125",
+     "partido": "PRD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1200,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534158",
+     "urna": "GERSON MAGDALENO",
+     "numero": "25444",
+     "partido": "PRD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4956,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534156",
+     "urna": "REPÓRTER TCHALIAN",
+     "numero": "25888",
+     "partido": "PRD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 930,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534138",
+     "urna": "JOÃO BRAZ",
+     "numero": "77604",
+     "partido": "SOLIDARIEDADE",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1240,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002534167",
+     "urna": "SÔNIA MOURA",
+     "numero": "25555",
+     "partido": "PRD",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 6404,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541867",
+     "urna": "VÂNIA DA PAIXÃO",
+     "numero": "10776",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 858,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541852",
+     "urna": "SARGENTO FERNANDES",
+     "numero": "10099",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 2527,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541855",
+     "urna": "ANDRÉA DA SAÚDE",
+     "numero": "10180",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 4355,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541868",
+     "urna": "DR. AMILTON",
+     "numero": "10777",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1658,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541900",
+     "urna": "MARCELLO BARBOSA",
+     "numero": "10522",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 66112,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541865",
+     "urna": "VANESSA GUARI",
+     "numero": "10101",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 6612,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541897",
+     "urna": "ELIZÂNGELA GONÇALVES",
+     "numero": "10520",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 1889,
+     "situacao": "Suplente"
+    },
+    {
+     "sq": "250002541905",
+     "urna": "ÍNDIO SILVA",
+     "numero": "10700",
+     "partido": "REPUBLICANOS",
+     "votos": 1,
+     "pct": 0.01,
+     "total": 5298,
+     "situacao": "Suplente"
+    }
+   ],
+   "comparecimento": {
+    "aptos": 21605,
+    "comparecimento": 16363,
+    "brancos": 1201,
+    "nulos": 699
+   }
+  }
+ ]
+}

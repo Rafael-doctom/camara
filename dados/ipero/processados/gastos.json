@@ -1,0 +1,1075 @@
+{
+ "cidade": "Iperó",
+ "fonte": "TCE-SP, transparência municipal",
+ "anos": [
+  "2025",
+  "2026"
+ ],
+ "gerado_em": "2026-10-30T09:34+00:00",
+ "meses_lidos": [
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
+ ],
+ "orgaos": {
+  "prefeitura": {
+   "nome": "Prefeitura Municipal De Iperó",
+   "anos": {
+    "2025": {
+     "total": 199697232.0,
+     "pagamentos": 17337,
+     "meses": {
+      "1": 10371072.55,
+      "2": 13052423.87,
+      "3": 17817510.2,
+      "4": 15856855.31,
+      "5": 16679659.53,
+      "6": 14252794.72,
+      "7": 20339356.48,
+      "8": 14808360.95,
+      "9": 19322763.86,
+      "10": 17796712.96,
+      "11": 17719623.47,
+      "12": 21680098.1
+     },
+     "fornecedores": [
+      [
+       "Prefeitura Municipal De Ipero",
+       81889132.32
+      ],
+      [
+       "Instituto Nacional Do Seguro Social",
+       11817046.37
+      ],
+      [
+       "Verocheque Refeicoes Ltda",
+       11259151.62
+      ],
+      [
+       "Beneficência Hospitalar De Cesário Lange",
+       8942575.93
+      ],
+      [
+       "Ipernutri Alimentação Ltda",
+       6742543.78
+      ],
+      [
+       "West Side Viagens E Turismo Ltda",
+       5910808.48
+      ],
+      [
+       "Hc Medical Ltda",
+       3862520.2
+      ],
+      [
+       "Ipermed Distribuidora De Medicamentos Ltda",
+       3715744.58
+      ],
+      [
+       "Absolluta Em Servicos Terceirizados Ltda",
+       3488052.87
+      ],
+      [
+       "Comercial Cirurgica Ipero Eireli - Me",
+       3278948.58
+      ],
+      [
+       "2F Distribuidora Ltda",
+       2622012.06
+      ],
+      [
+       "Maiza Aparecida Lopes Lourenco E Companhia Ltda",
+       2316221.75
+      ],
+      [
+       "Companhia Piratininga De Forca E Luz",
+       2304930.61
+      ],
+      [
+       "Ministerio Da Economia",
+       2088951.36
+      ],
+      [
+       "Centro De Integracao Empresa Escola Ciee",
+       1935409.01
+      ],
+      [
+       "Era Tecnica Engenharia Construções E Serviços Ltda",
+       1844836.3
+      ],
+      [
+       "Cia De Saneamento Basico Do Estado De São Paulo Sabesp",
+       1824736.54
+      ],
+      [
+       "Mathel Materiais Para Construção Ltda",
+       1408364.76
+      ],
+      [
+       "Dnp Terraplenagem E Pavimentadora Foresto Ltda",
+       1329671.55
+      ],
+      [
+       "Brasiliense Revendedora Retalhista Ltda",
+       1239249.85
+      ],
+      [
+       "S.F. Correia Locadora Ltda Me",
+       1199251.2
+      ],
+      [
+       "Rocha Construções Rc Ltda",
+       1119649.84
+      ],
+      [
+       "Sao Paulo Tribunal De Justiça",
+       1059262.07
+      ],
+      [
+       "Bazar Sao Judas Tadeu Ipero Ltda",
+       991118.68
+      ],
+      [
+       "Engez Construções E Participações Ltda",
+       933747.03
+      ],
+      [
+       "Ml Da Silveira Epp",
+       893251.47
+      ],
+      [
+       "Quali Inov Serviços Empresariais Ltda",
+       706534.19
+      ],
+      [
+       "Jl Alves Gestão",
+       680448.99
+      ],
+      [
+       "Boiadeira Music Ltda",
+       675000.0
+      ],
+      [
+       "Climep Clínica Médica Popular Araçoiaba Ltda",
+       659876.8
+      ],
+      [
+       "Serralheria São Jose Ltda",
+       616538.86
+      ],
+      [
+       "Locavargem Ltda",
+       599997.81
+      ],
+      [
+       "Jhd Construcoes E Comercio Ltda",
+       574668.32
+      ],
+      [
+       "Laboratorio De Analises Clinicas Cruzeiro Ltd",
+       572983.46
+      ],
+      [
+       "Associação De Pais E Amigos Dos Excepcionais De Iperó",
+       572000.0
+      ],
+      [
+       "Céu Azul Terraplanagem E Pavimentadora Ltda",
+       548964.17
+      ],
+      [
+       "Laboratorio De Analises Clinicas Foizer Ltda",
+       505102.29
+      ],
+      [
+       "Vitlab Laboratorio De Analises Clinicas Ltda",
+       501084.91
+      ],
+      [
+       "Cm Diagnósticos Médicos Boituva Ltda",
+       481351.17
+      ],
+      [
+       "Sts Comércio E Distribuição Ltda",
+       385318.66
+      ],
+      [
+       "Lca Infraestrutura E Mineração Ltda",
+       385000.0
+      ],
+      [
+       "Denphal Decor E Servicos Ltda",
+       381729.26
+      ],
+      [
+       "Pancho Centro Automotivo",
+       378294.32
+      ],
+      [
+       "Caso Marcado Shows E Eventos Ltda",
+       375000.0
+      ],
+      [
+       "Jose Ediniz Ribeiro Pinturas",
+       342272.14
+      ],
+      [
+       "Clinica De Endoscopia Sao Jose Ltda",
+       332750.99
+      ],
+      [
+       "Drogaria Ultrabarato Barbosa  Garcia Ltda",
+       328194.63
+      ],
+      [
+       "Raiox Diagnosticos Por Imagem Ltda",
+       317334.15
+      ],
+      [
+       "Dca Engenharia E Construcoes Eireli",
+       316212.25
+      ],
+      [
+       "Colegio Eloo De Ipero Ltda",
+       294507.23
+      ],
+      [
+       "Caixa Economica Federal",
+       288517.27
+      ],
+      [
+       "Vl Serviços Médicos Ltda",
+       281142.0
+      ],
+      [
+       "Titãs Empreendimentos Artísticos Ltda",
+       280000.0
+      ],
+      [
+       "Clodoaldo Barros Trindade",
+       279765.55
+      ],
+      [
+       "Rede Sol Fuel Distribuidora S/A",
+       275477.05
+      ],
+      [
+       "Policia Militar Do Estado De Sao Paulo",
+       274471.92
+      ],
+      [
+       "Agrodiesel Trr General Salgado Ltda",
+       272589.0
+      ],
+      [
+       "Viena Produções Musicais Ltda",
+       270000.0
+      ],
+      [
+       "B4 Produções Artísticas Ltda",
+       270000.0
+      ],
+      [
+       "Companhia De Processamento De Dados Do Estado De São Paulo - Prodesp",
+       253857.63
+      ]
+     ]
+    },
+    "2026": {
+     "total": 136794251.04,
+     "pagamentos": 9881,
+     "meses": {
+      "1": 13160630.43,
+      "2": 14678141.72,
+      "3": 18922184.97,
+      "4": 18082449.69,
+      "5": 12388523.65,
+      "6": 25538361.71,
+      "7": 18208552.4,
+      "8": 15815406.47
+     },
+     "fornecedores": [
+      [
+       "Prefeitura Municipal De Ipero",
+       57127095.03
+      ],
+      [
+       "Instituto Nacional Do Seguro Social",
+       9615552.39
+      ],
+      [
+       "Verocheque Refeicoes Ltda",
+       8575627.06
+      ],
+      [
+       "Beneficência Hospitalar De Cesário Lange",
+       5887322.52
+      ],
+      [
+       "Absolluta Em Servicos Terceirizados Ltda",
+       3527525.41
+      ],
+      [
+       "Vida Empreendimentos E Consultoria Empresarial Ltda",
+       3169542.03
+      ],
+      [
+       "Ipernutri Alimentação Ltda",
+       3093665.29
+      ],
+      [
+       "Comercial Cirurgica Ipero Eireli - Me",
+       2473408.17
+      ],
+      [
+       "West Side Viagens E Turismo Ltda",
+       2390000.0
+      ],
+      [
+       "Ipermed Distribuidora De Medicamentos Ltda",
+       2169863.61
+      ],
+      [
+       "Medicina Prime Ltda",
+       1971333.33
+      ],
+      [
+       "Maiza Aparecida Lopes Lourenco E Companhia Ltda",
+       1695383.31
+      ],
+      [
+       "Ministerio Da Economia",
+       1508029.41
+      ],
+      [
+       "Centro De Integracao Empresa Escola Ciee",
+       1505999.61
+      ],
+      [
+       "Small Distribuidora De Derivados De Petroleo",
+       1473619.5
+      ],
+      [
+       "Cia De Saneamento Basico Do Estado De São Paulo Sabesp",
+       1372824.18
+      ],
+      [
+       "Companhia Piratininga De Forca E Luz",
+       1368464.16
+      ],
+      [
+       "Vitlab Laboratorio De Analises Clinicas Ltda",
+       1128343.12
+      ],
+      [
+       "Attam Engenharia E Aerolevantamento Ltda.",
+       1069378.0
+      ],
+      [
+       "Rocha Construções Rc Ltda",
+       1066058.35
+      ],
+      [
+       "S. F. Correia Locadora Ltda",
+       975716.32
+      ],
+      [
+       "Urban Serviços E Urbanizacao Ltda",
+       950849.3
+      ],
+      [
+       "Mathel Materiais Para Construção Ltda",
+       847604.17
+      ],
+      [
+       "Hc Medical Ltda",
+       846000.0
+      ],
+      [
+       "Ws Shows Ltda.",
+       790000.0
+      ],
+      [
+       "2F Distribuidora Ltda",
+       765991.04
+      ],
+      [
+       "Bazar São Judas Tadeu Ipero Ltda",
+       710871.28
+      ],
+      [
+       "Gv Veterinaria Ltda",
+       563343.01
+      ],
+      [
+       "Locavargem Ltda",
+       545536.19
+      ],
+      [
+       "Associação De Pais E Amigos Dos Excepcionais De Iperó",
+       500000.0
+      ],
+      [
+       "A P N Servicos Ltda",
+       470000.0
+      ],
+      [
+       "Climep - Clinica Medica Popular Aracoiaba Ltda",
+       441325.6
+      ],
+      [
+       "Jl Alves Gestão",
+       428268.05
+      ],
+      [
+       "Ml Da Silveira Epp",
+       391180.96
+      ],
+      [
+       "Serviço Nacional De Diagnóstico Por Imagem Ltda",
+       364867.2
+      ],
+      [
+       "Quali Inov Serviços Empresariais Ltda",
+       360830.21
+      ],
+      [
+       "E  H Producoes Artisticas Ltda",
+       350000.0
+      ],
+      [
+       "Veros Serviços E Comércio Ltda",
+       346658.0
+      ],
+      [
+       "Serralheria São Jose Ltda",
+       322952.57
+      ],
+      [
+       "Mbr Comercio De Veiculos Ltda",
+       306375.0
+      ],
+      [
+       "Era Tecnica Engenharia Construções E Serviços Ltda",
+       295483.74
+      ],
+      [
+       "Raiox Diagnosticos Por Imagem Ltda",
+       259500.0
+      ],
+      [
+       "Desktop G8 Iperó Ltda",
+       246677.73
+      ],
+      [
+       "Centro Terapeutico Moriah",
+       232800.0
+      ],
+      [
+       "Dnp Terraplenagem E Pavimentadora Foresto Ltda",
+       228006.36
+      ],
+      [
+       "Maria Do Carmo Raciunas (pessoa física)",
+       205884.0
+      ],
+      [
+       "Cm Diagnósticos Médicos Boituva Ltda",
+       205187.32
+      ],
+      [
+       "Lar Doce Lar Sorocaba Ltda",
+       189579.93
+      ],
+      [
+       "Clodoaldo Barros Trindade",
+       187321.36
+      ],
+      [
+       "Hewllex Comércio De Produto Eletroeletrônicos Ltda",
+       183435.25
+      ],
+      [
+       "Clinica De Endoscopia Sao Jose Ltda",
+       182095.06
+      ],
+      [
+       "Cooperativa Raiz Verde.",
+       171623.87
+      ],
+      [
+       "Caixa Economica Federal",
+       157695.47
+      ],
+      [
+       "A. A. Ferreira Brinquedos",
+       150000.0
+      ],
+      [
+       "Qualylab Produtos Hospitalares E Laboratoriais Ltda Epp",
+       143280.0
+      ],
+      [
+       "Leticia Juliana Braiti Cardoso (pessoa física)",
+       140911.6
+      ],
+      [
+       "Companhia De Processamento De Dados Do Estado De São Paulo - Prodesp",
+       139307.69
+      ],
+      [
+       "Coprir Cooperativa De Produtores Rurais De Ipanema E Região",
+       130604.88
+      ],
+      [
+       "Kaplim Suprimentos Corporativos E Eventos Ltda",
+       129000.0
+      ],
+      [
+       "Engez Construções E Participações Ltda",
+       116999.14
+      ]
+     ]
+    }
+   }
+  },
+  "camara": {
+   "nome": "Câmara Municipal De Iperó",
+   "anos": {
+    "2025": {
+     "total": 4886557.43,
+     "pagamentos": 515,
+     "meses": {
+      "1": 293964.11,
+      "2": 356411.88,
+      "3": 378316.89,
+      "4": 411843.03,
+      "5": 356999.39,
+      "6": 394993.95,
+      "7": 376373.18,
+      "8": 399324.44,
+      "9": 432829.44,
+      "10": 442766.99,
+      "11": 424026.15,
+      "12": 618707.98
+     },
+     "fornecedores": [
+      [
+       "Ipero Camara Municipal",
+       2770483.29
+      ],
+      [
+       "Inss- Instituto Nacional De Seguridade Social",
+       617101.74
+      ],
+      [
+       "Prefeitura Municipal De Ipero",
+       153703.32
+      ],
+      [
+       "Sags Facilities Servicos Empresariais Eireli",
+       142495.29
+      ],
+      [
+       "L.F. Junior Tatui Me",
+       99622.13
+      ],
+      [
+       "Omasa Serviços Inteligente Ltda",
+       97952.15
+      ],
+      [
+       "Gm Company Service Ltda",
+       92957.16
+      ],
+      [
+       "Ag Soluçoes Ltda",
+       74655.57
+      ],
+      [
+       "Wksti Tecnologia Ltda",
+       59771.6
+      ],
+      [
+       "Audipam - Auditoria E Processamento Em Administracao Municipal Ltda",
+       58000.0
+      ],
+      [
+       "Helio Fiuza",
+       57222.3
+      ],
+      [
+       "Michel Aparecido Teles",
+       52720.38
+      ],
+      [
+       "Tecnoprint Eletroeletronica Ltda",
+       42621.92
+      ],
+      [
+       "Tais De Fatima Moises (pessoa física)",
+       37128.54
+      ],
+      [
+       "Companhia Piratininga De Força E Luz",
+       33599.29
+      ],
+      [
+       "Rosimeire Aleixo (pessoa física)",
+       29194.79
+      ],
+      [
+       "Ipero Comunicacao Ltda",
+       26334.0
+      ],
+      [
+       "Steno Do Brasil Importacao E Exportacao Com E Ass Ltda",
+       26315.9
+      ],
+      [
+       "Auto Posto Dona Cida Ltda",
+       26007.25
+      ],
+      [
+       "Romero Almeida Sociedade Individual De Advocacia",
+       24000.0
+      ],
+      [
+       "Basic Elevadores Ltda",
+       20380.0
+      ],
+      [
+       "Robson Soares Leonor (pessoa física)",
+       19552.99
+      ],
+      [
+       "Expresso Comunicacao Ltda",
+       18810.0
+      ],
+      [
+       "Dmg Comunicacao Visual Ltda",
+       16625.0
+      ],
+      [
+       "Mario Sergio Nicolau - Me",
+       16500.0
+      ],
+      [
+       "Marileia Rosa Garcia De Barros (pessoa física)",
+       15846.33
+      ],
+      [
+       "Lucas Aveiro Lima (pessoa física)",
+       15407.68
+      ],
+      [
+       "Alessandra Oliveira Lins Dos Santos",
+       15226.0
+      ],
+      [
+       "Thais Thame Tomaz (pessoa física)",
+       14660.84
+      ],
+      [
+       "Ma Bebidas E Comercio De Produtos Alimenticios Ltda",
+       14144.35
+      ],
+      [
+       "Ana Teresa De Moraes Andrade (pessoa física)",
+       13920.77
+      ],
+      [
+       "Rodrigo Tonelotto",
+       10716.54
+      ],
+      [
+       "Rd Papeis E Epi Ltda",
+       9108.48
+      ],
+      [
+       "Paulo Henrique De Araujo (pessoa física)",
+       8613.69
+      ],
+      [
+       "Humberlito Santos De Almeida (pessoa física)",
+       8497.24
+      ],
+      [
+       "Maria Livia Malzoni (pessoa física)",
+       8304.4
+      ],
+      [
+       "Aline Lidiana Fragozo (pessoa física)",
+       8239.61
+      ],
+      [
+       "Laerço Esteves Júnior (pessoa física)",
+       7948.85
+      ],
+      [
+       "Coffee Blent Ltda",
+       7824.57
+      ],
+      [
+       "Roberto Araujo Bispo",
+       7605.0
+      ],
+      [
+       "Jeday Audio Iluminacao E Instrumentos Musicais Ltda",
+       7455.0
+      ],
+      [
+       "Jaqueline Leandro Da Mota Medeiros (pessoa física)",
+       6251.97
+      ],
+      [
+       "Claudio José Ribeiro Lemos (pessoa física)",
+       6131.56
+      ],
+      [
+       "Telefonica S.A",
+       5876.11
+      ],
+      [
+       "Camargo Distribuidora De Gás Ipero Ltda Me",
+       5318.0
+      ],
+      [
+       "Hugo Nogi Teixeira (pessoa física)",
+       5135.24
+      ],
+      [
+       "Sino Consultoria E Informatica Ltda- Epp",
+       5000.0
+      ],
+      [
+       "Glicia Horrana Nunes Prates Gusmão (pessoa física)",
+       4979.37
+      ],
+      [
+       "Juliana De Moraes Andrade (pessoa física)",
+       4967.26
+      ],
+      [
+       "Paloma Giselebiller (pessoa física)",
+       4718.01
+      ],
+      [
+       "Cristina Duarte Silva De Barros (pessoa física)",
+       4522.43
+      ],
+      [
+       "Companhia De Saneamento Basico - Sabesp",
+       3884.57
+      ],
+      [
+       "Maria Selma Hempkel Alves (pessoa física)",
+       3869.19
+      ],
+      [
+       "Erika Santos Lima Paiva (pessoa física)",
+       3851.43
+      ],
+      [
+       "Sibele Do Nascimento Fagundes Barreto (pessoa física)",
+       3851.43
+      ],
+      [
+       "Claudia Do Carmo Teodoro Tonet (pessoa física)",
+       3851.43
+      ],
+      [
+       "Aldine Regina Silva Motta (pessoa física)",
+       3851.43
+      ],
+      [
+       "Sem Parar Instituicao De Pagamento Ltda",
+       3669.37
+      ],
+      [
+       "Silvana Valeria De Paula Lima Ipero Me",
+       3510.0
+      ],
+      [
+       "Cilnet Comunicacao E Informatica Ltda",
+       2990.0
+      ]
+     ]
+    },
+    "2026": {
+     "total": 3235084.49,
+     "pagamentos": 339,
+     "meses": {
+      "1": 294512.03,
+      "2": 380123.85,
+      "3": 407116.8,
+      "4": 441318.92,
+      "5": 440884.52,
+      "6": 407895.26,
+      "7": 434556.97,
+      "8": 428676.14
+     },
+     "fornecedores": [
+      [
+       "Ipero Camara Municipal",
+       1891159.8
+      ],
+      [
+       "Inss- Instituto Nacional De Seguridade Social",
+       360797.62
+      ],
+      [
+       "Prefeitura Municipal De Ipero",
+       107718.27
+      ],
+      [
+       "Audipam - Auditoria E Processamento Em Administracao Municipal Ltda",
+       101500.0
+      ],
+      [
+       "Romero Almeida Sociedade Individual De Advocacia",
+       84000.0
+      ],
+      [
+       "Tais De Fatima Moises (pessoa física)",
+       59287.17
+      ],
+      [
+       "Omasa Serviços Inteligente Ltda",
+       58670.85
+      ],
+      [
+       "L.F. Junior Tatui Me",
+       58411.71
+      ],
+      [
+       "Wksti Tecnologia Ltda",
+       39034.4
+      ],
+      [
+       "Michel Aparecido Teles",
+       36507.68
+      ],
+      [
+       "Expresso Comunicacao Ltda",
+       30096.0
+      ],
+      [
+       "Ipero Comunicacao Ltda",
+       30096.0
+      ],
+      [
+       "Tecnoprint Eletroeletronica Ltda",
+       28708.32
+      ],
+      [
+       "Steno Do Brasil Importacao E Exportacao Com E Ass Ltda",
+       26748.36
+      ],
+      [
+       "Quali Inov Servicos Empresariais Ltda",
+       24549.99
+      ],
+      [
+       "Auto Posto Dona Cida Ltda",
+       23470.8
+      ],
+      [
+       "Companhia Piratininga De Força E Luz",
+       21840.44
+      ],
+      [
+       "Ma Bebidas E Comercio De Produtos Alimenticios Ltda",
+       20672.75
+      ],
+      [
+       "Silva E Dumont Servicos E Manutencoes Ltda",
+       17649.99
+      ],
+      [
+       "Thais Thame Tomaz (pessoa física)",
+       17523.26
+      ],
+      [
+       "Helio Fiuza",
+       15972.3
+      ],
+      [
+       "55.854.575 Claudia Cunha De Lima Goncalves",
+       13758.88
+      ],
+      [
+       "Maria Livia Malzoni (pessoa física)",
+       11738.93
+      ],
+      [
+       "Claudia Do Carmo Teodoro Tonet (pessoa física)",
+       8673.9
+      ],
+      [
+       "Francine Cristina Guicho",
+       8330.0
+      ],
+      [
+       "Gm Company Service Ltda",
+       7746.43
+      ],
+      [
+       "Rodrigo Tonelotto",
+       7537.64
+      ],
+      [
+       "Jaqueline Leandro Da Mota Medeiros (pessoa física)",
+       7308.14
+      ],
+      [
+       "Juliana De Moraes Andrade (pessoa física)",
+       6251.35
+      ],
+      [
+       "Rosimeire Aleixo (pessoa física)",
+       6170.33
+      ],
+      [
+       "Paulo Henrique De Araujo (pessoa física)",
+       6028.96
+      ],
+      [
+       "Sibele Do Nascimento Fagundes Barreto (pessoa física)",
+       5579.94
+      ],
+      [
+       "Coffee Blent Ltda",
+       5326.96
+      ],
+      [
+       "Sem Parar Instituicao De Pagamento Ltda",
+       4400.67
+      ],
+      [
+       "Maria Selma Hempkel Alves (pessoa física)",
+       4287.76
+      ],
+      [
+       "Aldine Regina Silva Motta (pessoa física)",
+       4286.63
+      ],
+      [
+       "Ana Teresa De Moraes Andrade (pessoa física)",
+       4231.38
+      ],
+      [
+       "Carlos Pereira Vieira Iperó Me",
+       4222.53
+      ],
+      [
+       "Antônia Nilda Segundo Gomes (pessoa física)",
+       4082.51
+      ],
+      [
+       "Marileia Rosa Garcia De Barros (pessoa física)",
+       4057.36
+      ],
+      [
+       "Telefonica S.A",
+       3978.3
+      ],
+      [
+       "Tiago Eduardo Militão Dos Santos (pessoa física)",
+       3851.43
+      ],
+      [
+       "Aline Lidiana Fragozo (pessoa física)",
+       3851.43
+      ],
+      [
+       "Maria Aparecida Alves De Almeida (pessoa física)",
+       3755.47
+      ],
+      [
+       "Basic Elevadores Ltda",
+       3600.0
+      ],
+      [
+       "Desktop S.A.",
+       3599.94
+      ],
+      [
+       "Lojas Cem S.A.",
+       3574.0
+      ],
+      [
+       "Ncom Locadora De Sistemas Ltda",
+       3100.0
+      ],
+      [
+       "Humberlito Santos De Almeida (pessoa física)",
+       2857.76
+      ],
+      [
+       "Bruno Lopes Machado Camargo (pessoa física)",
+       2721.68
+      ],
+      [
+       "Cristina Duarte Silva De Barros (pessoa física)",
+       2604.02
+      ],
+      [
+       "Marcio Mendes (pessoa física)",
+       2567.62
+      ],
+      [
+       "Companhia De Saneamento Basico - Sabesp",
+       2149.09
+      ],
+      [
+       "Erika Santos Lima Paiva (pessoa física)",
+       2041.26
+      ],
+      [
+       "Camargo Distribuidora De Gás Ipero Ltda Me",
+       1494.0
+      ],
+      [
+       "Paloma Giselebiller (pessoa física)",
+       1428.88
+      ],
+      [
+       "Hugo Nogi Teixeira (pessoa física)",
+       1360.84
+      ],
+      [
+       "Alianca Do Brasil Seguros S/A",
+       1330.77
+      ],
+      [
+       "Roberto Araujo Bispo",
+       1281.0
+      ],
+      [
+       "Locaweb Serviços De Internet S.A",
+       1039.44
+      ]
+     ]
+    }
+   }
+  }
+ }
+}

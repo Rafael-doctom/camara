@@ -163,11 +163,22 @@ def main():
     pasta = os.path.join(RAIZ, "dados", "_politicos")
     gravar(os.path.join(pasta, f"deputados_federais_{uf.lower()}.json"),
            json.dumps({"votacoes": votacoes, "politicos": politicos}, ensure_ascii=False, indent=1) + "\n")
+    senadores = []
+    try:  # API do Senado: senadores em exercício pela UF (foto e página oficiais, como a API devolve)
+        lista = json.loads(baixar("https://legis.senado.leg.br/dadosabertos/senador/lista/atual.json"))
+        for p in lista["ListaParlamentarEmExercicio"]["Parlamentares"]["Parlamentar"]:
+            i = p["IdentificacaoParlamentar"]
+            if i.get("UfParlamentar") == uf:
+                senadores.append({"id": i["CodigoParlamentar"], "nome": i["NomeParlamentar"], "partido": i.get("SiglaPartidoParlamentar", ""),
+                                  "foto": i["UrlFotoParlamentar"].replace("http://", "https://"),
+                                  "pagina": i["UrlPaginaParlamentar"].replace("http://", "https://"), "email": i.get("EmailParlamentar", "")})
+    except Exception as e:  # noqa: BLE001
+        log(f"AVISO: senadores não lidos ({e})")
     site = {"gerado_em": datetime.now().astimezone().isoformat(timespec="minutes"), "uf": uf, "anos": anos,
-            "votacoes": votacoes, "deputados": perfis}
+            "votacoes": votacoes, "deputados": perfis, "senadores": senadores}
     gravar(os.path.join(RAIZ, "site", "deputados.js"),
            "window.DEPUTADOS=" + json.dumps(site, ensure_ascii=False, separators=(",", ":")) + ";\n")
-    log(f"OK: {len(perfis)} deputados, {len(politicos)} com posição em {len(votacoes)} votações; "
+    log(f"OK: {len(perfis)} deputados e {len(senadores)} senadores, {len(politicos)} deputados com posição em {len(votacoes)} votações; "
         f"gastos de {', '.join(str(a) for a in anos)}")
 
 
