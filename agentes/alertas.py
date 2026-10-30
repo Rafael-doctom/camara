@@ -104,7 +104,7 @@ def resumo_whatsapp(resumo, sessoes, itens, desde):
     destaques = [x for x in itens if x["tipo"] in ("votacao", "caso")][:3] + [x for x in itens if x["tipo"] == "gasto"][:2]
     if destaques:
         linhas += ["", "*Destaques*"] + [f"• {x['titulo']}" for x in destaques]
-    linhas += ["", "Veja tudo: rafaelpintodasilva.com/camara/alertas.html"]
+    linhas += ["", "Veja tudo: rafaelpintodasilva.com/de-olho-na-camara/alertas.html"]
     return "\n".join(linhas)
 
 

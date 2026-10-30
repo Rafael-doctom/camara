@@ -440,7 +440,7 @@
         rotulo: "Meu resultado no Painel ideológico", titulo: top.nome, subtitulo: top.txt,
         linhas: [[`${top.prox}%`, "de proximidade com essa ideologia"], ...fortes.map((x) => [lado(x, v[x.id]), x.nome]),
           ...(par ? [[`${par.prox}%`, `parecido com ${nomeP(par.p.nome)} (${par.p.cargo.replace("(a)", "")})`]] : [])].slice(0, 4),
-        rodape: "Faça o seu: rafaelpintodasilva.com/camara/espectro.html", arquivo: "meu-resultado-politico", texto });
+        rodape: "Faça o seu: rafaelpintodasilva.com/de-olho-na-camara/espectro.html", arquivo: "meu-resultado-politico", texto });
     });
     app.querySelectorAll(".esp-cargo").forEach((b) => b.addEventListener("click", () => { est.cargo = b.dataset.cargo; salvar(); resultado(); }));
     app.querySelector("#esp-refazer").addEventListener("click", () => { est.resp = {}; salvar(); location.hash = "#comecar"; });

@@ -57,6 +57,8 @@
 </footer>
 
 <script src="deputados.js"></script>
+<script src="politicos.js"></script>
+<script src="cartao.js"></script>
 <script>
 /* Deputados federais: lista (#lista) e perfil (#<id>). Dados em deputados.js, gerado por
    agentes/coletor_deputados.py. */
@@ -125,6 +127,16 @@
     </div>`;
   }
 
+  // Botão "Eu apoio…": posição nos eixos vem de politicos.js (agentes/analista.py), chave dep-<id> ou sen-<id>.
+  const botaoApoio = () => (window.OlhoCartao ? `<p class="acoes"><button type="button" id="b-apoio">Eu apoio…</button></p>` : "");
+  function ligarApoio(d, chave, cargo) {
+    const b = app.querySelector("#b-apoio");
+    if (!b) return;
+    const pol = ((window.POLITICOS || {}).politicos || []).find((x) => x.chave === chave);
+    b.addEventListener("click", () => window.OlhoCartao.apoio({ nome: d.nome, cargo, partido: d.partido, foto: d.foto,
+      eixos: pol ? pol.eixos : {}, arquivo: `apoio-${chave}` }));
+  }
+
   function perfil(id) {
     const d = D.deputados.find((x) => String(x.id) === id);
     if (!d) return lista();
@@ -132,7 +144,7 @@
     app.innerHTML = `<p class="esp-migalha"><a href="#lista" target="_self">← Todos os deputados</a></p>
       <div class="cartao dep-topo"><img src="${esc(d.foto)}" alt="Foto de ${esc(d.nome)}">
         <div><h1>${esc(d.nome)}</h1><p><span class="etq etq-pr">${esc(d.partido)}</span><span class="etq">Deputado(a) federal · ${esc(d.uf)}</span></p>
-          <p>${d.email ? `${esc(d.email)} · ` : ""}<a href="${esc(d.pagina)}" rel="noopener">Página oficial na Câmara ↗</a></p></div></div>
+          <p>${d.email ? `${esc(d.email)} · ` : ""}<a href="${esc(d.pagina)}" rel="noopener">Página oficial na Câmara ↗</a></p>${botaoApoio()}</div></div>
       <div class="grade grade-kpi">
         <div class="cartao kpi"><div class="valor">${real(total(d, anoAnt))}</div><div class="rotulo">Cota parlamentar em ${anoAnt}</div></div>
         <div class="cartao kpi"><div class="valor">${real(total(d, anoAtual))}</div><div class="rotulo">Cota parlamentar em ${anoAtual}</div><div class="kpi-exp">até o último mês publicado</div></div>
@@ -146,6 +158,7 @@
         <p><a class="botao botao-pr" href="espectro.html#comecar" target="_self">Faça o teste e compare-se com ${esc(d.nome)} →</a></p>`
         : `<p class="suave">Não votou (ou não era deputado) nas votações classificadas.</p>`}
       <p class="suave">Atualizado em ${dataBR(D.gerado_em)}. Fonte: Câmara dos Deputados.</p>`;
+    ligarApoio(d, `dep-${d.id}`, `Deputado(a) federal · ${d.uf}`);
   }
 
   const VOTO_SEN = { MIS: "Em missão oficial", AP: "Em atividade parlamentar", LS: "Licença de saúde", LP: "Licença particular",
@@ -157,7 +170,7 @@
     app.innerHTML = `<p class="esp-migalha"><a href="#lista" target="_self">← Deputados e senadores</a></p>
       <div class="cartao dep-topo"><img src="${esc(d.foto)}" alt="Foto de ${esc(d.nome)}">
         <div><h1>${esc(d.nome)}</h1><p><span class="etq etq-pr">${esc(d.partido)}</span><span class="etq">Senador(a) · ${esc(D.uf)}</span></p>
-          <p>${d.email ? `${esc(d.email)} · ` : ""}<a href="${esc(d.pagina)}" rel="noopener">Página oficial no Senado ↗</a></p></div></div>
+          <p>${d.email ? `${esc(d.email)} · ` : ""}<a href="${esc(d.pagina)}" rel="noopener">Página oficial no Senado ↗</a></p>${botaoApoio()}</div></div>
       <div class="grade grade-kpi">
         <div class="cartao kpi"><div class="valor">${real((g[anoAnt] || {}).total)}</div><div class="rotulo">Cota do Senado (CEAPS) em ${anoAnt}</div></div>
         <div class="cartao kpi"><div class="valor">${real((g[anoAtual] || {}).total)}</div><div class="rotulo">CEAPS em ${anoAtual}</div><div class="kpi-exp">até o último mês publicado</div></div>
@@ -171,6 +184,7 @@
         <p><a class="botao botao-pr" href="espectro.html#comecar" target="_self">Faça o teste e compare-se com ${esc(d.nome)} →</a></p>`
         : `<p class="suave">Sem voto registrado nas votações classificadas (ausente, licenciado ou não era senador na época).</p>`}
       <p class="suave">Fonte: Senado Federal (dados abertos legislativos e administrativos).</p>`;
+    ligarApoio(d, `sen-${d.id}`, `Senador(a) · ${D.uf}`);
   }
 
   function rota() {

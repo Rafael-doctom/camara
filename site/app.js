@@ -565,7 +565,7 @@
             <button type="button" id="b-meu" aria-pressed="${ehMeu}">${ehMeu ? "Deixar de acompanhar" : "Acompanhar na página inicial"}</button>
             ${botaoZap(textoZap, `${PASTA}vereador/${encodeURIComponent(v.slug)}.html`)}
             <a class="botao" href="#comparar/${encodeURIComponent(v.chave + "|")}">Comparar com…</a>
-            ${window.OlhoCartao ? `<button type="button" id="b-img">Imagem para compartilhar</button>` : ""}
+            ${window.OlhoCartao ? `<button type="button" id="b-img">Imagem para compartilhar</button><button type="button" id="b-apoio">Eu apoio…</button>` : ""}
           </p>
         </div></div>
       ${kpis([["Presença em sessões", pct(pres.pct), `${pres.presente} presente · ${pres.ausente} ausente`],
@@ -600,6 +600,11 @@
       linhas: [[pct(pres.pct), "de presença nas sessões"], [fmt(v.pl_total), `projetos de lei (${v.pl_aprovados} aprovados)`],
         [fmt(v.proposituras["Requerimento"] || 0), "requerimentos ao Executivo"], [pct(v.alinhamento_maioria), "votou com a maioria nas divididas"]],
       arquivo: `vereador-${v.slug}`, texto: textoZap }));
+    const bApoio = app.querySelector("#b-apoio");
+    if (bApoio) bApoio.addEventListener("click", () => window.OlhoCartao.apoio({
+      nome: nomeV(v), cargo: `Vereador(a) de ${C.nome}`, partido: v.partido || "",
+      foto: /^fotos\/\d+\.jpg$/.test(v.foto || "") ? v.foto : "", eixos: (D.espectro && D.espectro.pos[v.chave]) || {},
+      arquivo: `apoio-${v.slug}` }));
     const bMeu = app.querySelector("#b-meu");
     bMeu.addEventListener("click", () => {
       const agora = bMeu.getAttribute("aria-pressed") !== "true";
