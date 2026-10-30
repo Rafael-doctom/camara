@@ -290,7 +290,7 @@ def espectro_cidade(lista_vot, saida_ver):
                           "perfil": f"{SLUG_CIDADE}/index.html#vereador/{ver['chave'].replace(' ', '%20')}",
                           "eixos": {e: sn for e, sn in pos[ver["chave"]].items()}})
     salvar_json("espectro.json", {"cidade": CIDADE["nome"], "votacoes": votacoes, "politicos": politicos})
-    return len(votacoes), len(politicos)
+    return votacoes, politicos
 
 
 def gravar_politicos():
@@ -770,6 +770,8 @@ def main():
         "periodo": [min(datas, default=""), max(datas, default="")],
     }
 
+    eixo_vot, eixo_pol = espectro_cidade(lista_vot, saida_ver)
+
     # --- arquivos do site
     arq_vot = js([("votacoes", lista_vot), ("sessoes", lista_sessoes)])
     arq_props = js([("proposituras", lista_props)])
@@ -779,6 +781,9 @@ def main():
             "siscam": {"base": BASE, "tipos": TIPOS_DOCUMENTO},
             "cidade": {k: CIDADE[k] for k in ("slug", "nome", "camara", "links", "nota_registro") if k in CIDADE}
                       | {"legislatura": CIDADE["legislatura_atual"]},
+            # posição nos eixos do Painel ideológico, para o perfil do vereador
+            "espectro": {"pos": {p["chave"]: p["eixos"] for p in eixo_pol},
+                         "votacoes": [{k: t[k] for k in ("id", "eixo", "favor", "m")} for t in eixo_vot]},
             "versoes": {"votacoes": hash_curto(arq_vot), "proposituras": hash_curto(arq_props),
                         "historico": hash_curto(arq_hist)}}
     arq_base = js([(k, v) for k, v in base.items()])
@@ -795,7 +800,6 @@ def main():
 
     salvar_json("indicadores.json", {k: base[k] for k in ("geral", "vereadores", "afinidade", "casos", "apelidos")})
     n_cidades = gravar_entrada(estaticos)
-    n_eixo_vot, n_eixo_pol = espectro_cidade(lista_vot, saida_ver)
     gravar_politicos()
     gravar_historico(saida_ver, geral)
 
@@ -809,7 +813,7 @@ def main():
         log(AGENTE, f"AVISO: nomes sem perfil (conferir casos/apelidos.json): {dict(desconhecidos.most_common(15))}")
     log(AGENTE, f"OK: {len(saida_ver)} vereadores ({em_ex} em exercício), {len(lista_props)} proposituras, "
                 f"{total_votacoes} votações ({divididas} divididas, {len(lista_vot)} listadas no site), "
-                f"{paginas} páginas de vereador, entrada com {n_cidades} cidade(s), painel ideológico com {n_eixo_pol} vereadores em {n_eixo_vot} votações; historico.js com {len(vot_hist)} votações "
+                f"{paginas} páginas de vereador, entrada com {n_cidades} cidade(s), painel ideológico com {len(eixo_pol)} vereadores em {len(eixo_vot)} votações; historico.js com {len(vot_hist)} votações "
                 f"({len(arq_hist.encode('utf-8')) // 1024} KB)")
 
 

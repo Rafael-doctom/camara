@@ -496,6 +496,29 @@
       <dt>Moção</dt><dd>Manifestação da Câmara: aplauso, apoio, protesto ou repúdio. Não cria lei nem obriga ninguém.</dd>
     </dl></details>`;
 
+  // Eixos do Painel ideológico (mesmos ids e polos de site/espectro.js).
+  const EIXOS_ESP = [["economia", "Economia", "Estatista", "Liberal"], ["costumes", "Costumes", "Progressista", "Conservador"],
+    ["seguranca", "Segurança", "Garantista", "Rigor penal"], ["ambiente", "Meio ambiente", "Ambientalista", "Desenvolvimentista"],
+    ["religiao", "Religião", "Laico", "Religioso"], ["servicos", "Serviços públicos", "Gestão pública", "Concessão privada"],
+    ["participacao", "Participação", "Participativo", "Autoridade"], ["impostos", "Impostos", "Mais serviços", "Menos impostos"]];
+
+  // Posição do vereador nos eixos, pelos votos nas votações classificadas (casos/<cidade>/eixos.json).
+  function eixosVereador(v) {
+    const pos = D.espectro && D.espectro.pos[v.chave];
+    if (!pos) return "";
+    const linhas = EIXOS_ESP.filter(([id]) => pos[id]).map(([id, nome, a, b]) => {
+      const [soma, n] = pos[id], val = soma / n, forca = Math.round(Math.abs(val) * 100);
+      const txt = forca < 20 ? "Centro" : `${val < 0 ? a : b} ${forca}%`;
+      return `<a class="eixo-v" href="../espectro.html#eixo/${id}">
+        <span class="eixo-v-topo"><b>${esc(nome)}</b><span>${esc(txt)} · ${n} ${n === 1 ? "voto" : "votos"}</span></span>
+        <span class="eixo-v-trilho"><i style="left:${50 + val * 50}%"></i></span>
+        <span class="eixo-v-pontas"><span>${esc(a)}</span><span>${esc(b)}</span></span></a>`;
+    });
+    return `<h2>Posição nos eixos do Painel ideológico</h2>
+      <p class="suave">Calculada só com votações nominais classificadas por tema (${D.espectro.votacoes.length} na legislatura). Poucos votos por eixo: é uma pista, não um retrato. <a href="../espectro.html">Faça o teste e veja com quem você mais se parece →</a></p>
+      <div class="eixos-v">${linhas.join("")}</div>`;
+  }
+
   function vereador(arg) {
     const v = acharVereador(arg);
     if (!v && acharAntigo(arg)) { vereadorAntigo(acharAntigo(arg)); return; }
@@ -531,6 +554,7 @@
               ["Requerimentos", v.proposituras["Requerimento"] || 0, "pedidos de informação ou providência"],
               ["Votou com a maioria", pct(v.alinhamento_maioria), `em ${v.divididas_total} votações divididas`]])}
       ${GLOSSARIO}
+      ${eixosVereador(v)}
       <h2 id="divididas">Como votou nas votações divididas</h2>
       <p class="suave">Votações em que houve votos a favor e contra, da mais recente para a mais antiga. É aqui que aparecem as diferenças entre os vereadores.</p>
       <div id="divididas-lista"></div>

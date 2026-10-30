@@ -225,3 +225,14 @@ table.comparar td { font-size: 1rem; }
 table.mandatos th[scope=row] { white-space: nowrap; }
 .mandato-cargo, table.mandatos td .suave { font-size: .76rem; font-weight: 400; white-space: nowrap; }
 .leg-nums { margin: 4px 0 8px; line-height: 1.7; }
+
+/* Perfil do vereador: posição nos eixos do Painel ideológico */
+.eixos-v { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 10px; margin: 10px 0 8px; }
+.eixo-v { display: block; padding: 12px 14px; border: 1px solid var(--linha); border-radius: var(--raio); background: var(--cartao); color: inherit; text-decoration: none; }
+.eixo-v:hover { border-color: var(--texto); }
+.eixo-v-topo { display: flex; justify-content: space-between; gap: 8px; font-size: .88rem; }
+.eixo-v-topo span { color: var(--texto-2); }
+.eixo-v-trilho { display: block; position: relative; height: 8px; margin: 10px 0 4px; border-radius: 999px; background: var(--fundo-2); }
+.eixo-v-trilho::after { content: ""; position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--suave); }
+.eixo-v-trilho i { position: absolute; top: 50%; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; background: var(--acento); border: 2px solid var(--cartao); z-index: 1; }
+.eixo-v-pontas { display: flex; justify-content: space-between; font-size: .74rem; color: var(--suave); }

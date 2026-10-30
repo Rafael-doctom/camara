@@ -22,7 +22,7 @@ Pedidos do dono do projeto e as referências enviadas (Hub Político), com o que
 2. **Painel ideológico com fotos dos políticos parecidos com o usuário.** Feito para os vereadores de Tatuí: resultado com "Políticos que votaram parecido com você" e régua de fotos em cada eixo. Base: votações classificadas em `casos/<cidade>/eixos.json` (ver `docs/METODOLOGIA.md`). Falta:
    - classificar mais votações (hoje: Costumes 4, Religião 1, Impostos 1, Participação 1; Economia, Segurança, Meio ambiente e Serviços públicos sem nenhuma);
    - deputados federais e estaduais e senadores: votos nominais nos dados abertos da Câmara dos Deputados (https://dadosabertos.camara.leg.br), da Alesp e do Senado, gravados em `dados/_politicos/<fonte>.json` no mesmo formato de `espectro.json`. O analista já junta esses arquivos em `site/politicos.js`;
-   - seção "Posição nos eixos" no perfil de cada vereador.
+   - ~~seção "Posição nos eixos" no perfil de cada vereador~~ (feito).
 3. **Dados eleitorais (mapa por bairro, votos por cidade, apuração, quociente).** Fonte: repositório de dados eleitorais do TSE (https://dadosabertos.tse.jus.br): candidatos, votação por seção ou zona e locais de votação com coordenadas.
 
 ## Bloqueio atual
