@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deputados federais · Olho na Câmara</title>
+<base target="_blank">
+<meta name="description" content="Deputados federais de São Paulo: quanto gastam da cota parlamentar, com quais empresas e como votaram em temas do Painel ideológico. Dados oficiais da Câmara dos Deputados.">
+<meta property="og:title" content="Deputados federais de SP · Olho na Câmara">
+<meta property="og:description" content="Gastos da cota parlamentar e votos dos deputados federais de São Paulo, com dados oficiais.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tema.css">
+<link rel="stylesheet" href="controles.css">
+<link rel="stylesheet" href="rodape.css">
+<link rel="stylesheet" href="espectro.css">
+<style>
+  .dep-filtros { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; margin: 14px 0; }
+  .dep-filtros label { display: grid; gap: 4px; font-size: .82rem; color: var(--texto-2); }
+  .dep-filtros input, .dep-filtros select { min-height: 42px; }
+  .dep-grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+  .dep-topo { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+  .dep-topo img { width: 120px; height: 150px; object-fit: cover; border-radius: var(--raio); background: var(--fundo-2); }
+  .dep-topo h1 { margin: 0 0 6px; }
+  .dep-forn { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  .dep-forn td { padding: 6px 4px; border-bottom: 1px solid var(--linha); vertical-align: top; }
+  .dep-forn td:last-child { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .dep-forn small { color: var(--suave); font-family: var(--f-mono); }
+  .dep-meses { display: flex; align-items: end; gap: 4px; height: 120px; margin: 10px 0 2px; }
+  .dep-meses span { flex: 1; background: var(--acento); border-radius: 3px 3px 0 0; min-height: 2px; }
+  .dep-meses-rot { display: flex; gap: 4px; font-size: .7rem; color: var(--suave); }
+  .dep-meses-rot span { flex: 1; text-align: center; }
+  .dep-votos li { margin-bottom: 10px; }
+</style>
+<script>try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
+</head>
+<body>
+<a class="pular" href="#app" target="_self">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="#lista" target="_self"><span class="marca-olho">●</span> Olho na Câmara <small>Deputados federais</small></a>
+    <nav class="esp-nav" aria-label="Deputados">
+      <a href="#lista" target="_self">Todos</a>
+      <a class="botao botao-pr" href="espectro.html" target="_self">Painel ideológico</a>
+      <a class="esp-voltar" href="index.html" target="_self">Cidades</a>
+    </nav>
+  </div>
+</header>
+
+<main class="conteudo" id="app" tabindex="-1"><p class="carregando">Carregando…</p></main>
+
+<footer class="rodape ft2" id="rodape">
+  <div class="ft-bot"><span>© 2026 Olho na Câmara · criado por <a href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></span><span>Fonte: Câmara dos Deputados (dados abertos e cota parlamentar). Sem vínculo com partidos.</span></div>
+</footer>
+
+<script src="deputados.js"></script>
+<script>
+/* Deputados federais: lista (#lista) e perfil (#<id>). Dados em deputados.js, gerado por
+   agentes/coletor_deputados.py. */
+(function () {
+  "use strict";
+  const D = window.DEPUTADOS, app = document.getElementById("app");
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const real = (v) => (v || 0).toLocaleString("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 });
+  const cnpj = (d) => d.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, "$1.$2.$3/$4-$5");
+  const dataBR = (d) => d.slice(0, 10).split("-").reverse().join("/");
+  const MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+  const EIXO = { economia: "Economia", costumes: "Costumes", seguranca: "Segurança", ambiente: "Meio ambiente", religiao: "Religião",
+    servicos: "Serviços públicos", participacao: "Participação", impostos: "Impostos" };
+  if (!D) { app.innerHTML = "<h1>Dados indisponíveis</h1><p>Rode agentes/coletor_deputados.py.</p>"; return; }
+  const anoAtual = String(D.anos[D.anos.length - 1]), anoAnt = String(D.anos[0]);
+  const total = (d, a) => (d.gastos[a] ? d.gastos[a].total : 0);
+  let filtro = { q: "", partido: "", ordem: "gasto" };
+
+  function lista() {
+    const partidos = [...new Set(D.deputados.map((d) => d.partido))].sort();
+    const soma = D.deputados.reduce((s, d) => s + total(d, anoAnt), 0);
+    app.innerHTML = `<p class="esp-rot">Câmara dos Deputados · ${esc(D.uf)}</p>
+      <h1>Deputados federais de ${esc(D.uf === "SP" ? "São Paulo" : D.uf)}</h1>
+      <p class="esp-lead">Quanto cada um gastou da cota parlamentar (o dinheiro público para despesas do mandato, como passagens, divulgação e escritório), com quais empresas, e como votou nos temas do Painel ideológico.</p>
+      <div class="aviso">Em ${anoAnt}, os ${D.deputados.length} deputados de ${esc(D.uf)} gastaram ${real(soma)} da cota. ${anoAtual} ainda está em andamento.</div>
+      <div class="dep-filtros">
+        <label>Buscar<input type="search" id="f-q" placeholder="Nome do deputado" value="${esc(filtro.q)}"></label>
+        <label>Partido<select id="f-p"><option value="">Todos</option>${partidos.map((p) => `<option${p === filtro.partido ? " selected" : ""}>${esc(p)}</option>`).join("")}</select></label>
+        <label>Ordem<select id="f-o"><option value="gasto">Maior gasto em ${anoAnt}</option><option value="gasto-atual"${filtro.ordem === "gasto-atual" ? " selected" : ""}>Maior gasto em ${anoAtual}</option><option value="nome"${filtro.ordem === "nome" ? " selected" : ""}>Nome</option></select></label>
+      </div>
+      <div class="dep-grade" id="grade"></div>`;
+    const desenhar = () => {
+      const q = filtro.q.toLowerCase();
+      const ds = D.deputados.filter((d) => (!q || d.nome.toLowerCase().includes(q)) && (!filtro.partido || d.partido === filtro.partido))
+        .sort((a, b) => filtro.ordem === "nome" ? a.nome.localeCompare(b.nome)
+          : total(b, filtro.ordem === "gasto" ? anoAnt : anoAtual) - total(a, filtro.ordem === "gasto" ? anoAnt : anoAtual));
+      app.querySelector("#grade").innerHTML = ds.map((d) => `<a class="cartao esp-pol" href="#${d.id}" target="_self">
+        <img class="esp-pol-foto" src="${esc(d.foto)}" alt="" loading="lazy">
+        <span class="esp-pol-txt"><b>${esc(d.nome)}</b><span>${esc(d.partido)}</span>
+          <span class="suave">${anoAnt}: ${real(total(d, anoAnt))} · ${anoAtual}: ${real(total(d, anoAtual))}</span></span></a>`).join("")
+        || `<p class="suave">Nenhum deputado com esse filtro.</p>`;
+    };
+    app.querySelector("#f-q").addEventListener("input", (e) => { filtro.q = e.target.value; desenhar(); });
+    app.querySelector("#f-p").addEventListener("change", (e) => { filtro.partido = e.target.value; desenhar(); });
+    app.querySelector("#f-o").addEventListener("change", (e) => { filtro.ordem = e.target.value; desenhar(); });
+    desenhar();
+  }
+
+  function barras(obj) {
+    const max = Math.max(...Object.values(obj), 1);
+    return `<div class="barras">${Object.entries(obj).map(([k, v]) => `<div class="barra"><span class="barra-rot">${esc(k)}</span>
+      <span class="barra-trilho"><span class="barra-cheia" style="width:${(100 * v) / max}%"></span></span><span class="n">${real(v)}</span></div>`).join("")}</div>`;
+  }
+
+  function blocoAno(a, g) {
+    if (!g) return `<div class="cartao"><h3>${a}</h3><p class="suave">Sem gastos registrados.</p></div>`;
+    const max = Math.max(...Object.values(g.meses), 1);
+    return `<div class="cartao"><h3>${a}: ${real(g.total)} em ${g.notas} notas</h3>
+      <div class="dep-meses" aria-label="Gasto por mês">${MESES.map((m, i) => `<span title="${m}: ${real(g.meses[i + 1])}" style="height:${(100 * (g.meses[i + 1] || 0)) / max}%"></span>`).join("")}</div>
+      <div class="dep-meses-rot">${MESES.map((m) => `<span>${m}</span>`).join("")}</div>
+      <h4>Por tipo de despesa</h4>${barras(g.categorias)}
+      ${g.fornecedores.length ? `<h4>Empresas que mais receberam</h4><table class="dep-forn">${g.fornecedores.map((f) => `<tr><td>${esc(f.nome)}<br><small>${cnpj(f.cnpj)}</small></td><td>${real(f.valor)}</td></tr>`).join("")}</table>` : ""}
+    </div>`;
+  }
+
+  function perfil(id) {
+    const d = D.deputados.find((x) => String(x.id) === id);
+    if (!d) return lista();
+    const vots = D.votacoes.map((v) => ({ v, voto: d.votos[v.id] })).filter((x) => x.voto);
+    app.innerHTML = `<p class="esp-migalha"><a href="#lista" target="_self">← Todos os deputados</a></p>
+      <div class="cartao dep-topo"><img src="${esc(d.foto)}" alt="Foto de ${esc(d.nome)}">
+        <div><h1>${esc(d.nome)}</h1><p><span class="etq etq-pr">${esc(d.partido)}</span><span class="etq">Deputado(a) federal · ${esc(d.uf)}</span></p>
+          <p>${d.email ? `${esc(d.email)} · ` : ""}<a href="${esc(d.pagina)}" rel="noopener">Página oficial na Câmara ↗</a></p></div></div>
+      <div class="grade grade-kpi">
+        <div class="cartao kpi"><div class="valor">${real(total(d, anoAnt))}</div><div class="rotulo">Cota parlamentar em ${anoAnt}</div></div>
+        <div class="cartao kpi"><div class="valor">${real(total(d, anoAtual))}</div><div class="rotulo">Cota parlamentar em ${anoAtual}</div><div class="kpi-exp">até o último mês publicado</div></div>
+      </div>
+      <h2>Gastos da cota parlamentar</h2>
+      <p class="suave">Valores líquidos reembolsados pela Câmara. Fornecedores pessoa física não são listados.</p>
+      <div class="duas">${blocoAno(anoAnt, d.gastos[anoAnt])}${blocoAno(anoAtual, d.gastos[anoAtual])}</div>
+      <h2>Votos nos temas do Painel ideológico</h2>
+      ${vots.length ? `<ol class="dep-votos">${vots.map(({ v, voto }) => `<li><b>${esc(v.m)}</b> · ${dataBR(v.d)} · ${esc(EIXO[v.eixo] || v.eixo)}
+        <br><span class="etq ${voto === "Sim" ? "etq-favor" : voto === "Não" ? "etq-contra" : ""}">${esc(voto)}</span> ${esc(v.nota)} <a href="${esc(v.url)}" rel="noopener">tramitação ↗</a></li>`).join("")}</ol>
+        <p><a class="botao botao-pr" href="espectro.html#comecar" target="_self">Faça o teste e compare-se com ${esc(d.nome)} →</a></p>`
+        : `<p class="suave">Não votou (ou não era deputado) nas votações classificadas.</p>`}
+      <p class="suave">Atualizado em ${dataBR(D.gerado_em)}. Fonte: Câmara dos Deputados.</p>`;
+  }
+
+  function rota() {
+    const h = decodeURIComponent(location.hash.slice(1));
+    /^\d+$/.test(h) ? perfil(h) : lista();
+    const h1 = app.querySelector("h1");
+    document.title = `${h1 ? h1.textContent : "Deputados"} · Olho na Câmara`;
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener("hashchange", rota);
+  rota();
+})();
+</script>
+</body>
+</html>

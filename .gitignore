@@ -29,3 +29,6 @@ site/*/historico.js
 
 __pycache__/
 *.pyc
+
+# Arquivos anuais da cota parlamentar (regeneráveis com agentes/coletor_deputados.py)
+dados/_federal/brutos/

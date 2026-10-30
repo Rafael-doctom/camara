@@ -1,0 +1,45 @@
+{
+ "slug": "itapetininga",
+ "nome": "Itapetininga",
+ "camara": "Câmara Municipal de Itapetininga",
+ "site_camara": "",
+ "siscam": "https://itapetininga.siscam.com.br",
+ "modulo_documentos": 78,
+ "modulo": 8,
+ "cadeiras": 19,
+ "folga_lista_exercicio": 2,
+ "legislatura_atual": {
+  "id": 19,
+  "nome": "19ª legislatura",
+  "inicio": "2025-01-01",
+  "fim": "2028-12-31"
+ },
+ "legislaturas_anteriores": [
+  {
+   "ano": 2021,
+   "id": 18,
+   "nome": "18ª legislatura",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31"
+  },
+  {
+   "ano": 2017,
+   "id": 17,
+   "nome": "17ª legislatura",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31"
+  }
+ ],
+ "coletar_anteriores": true,
+ "tipos_documento": {
+  "Indicação": 135,
+  "Moção": 136,
+  "Projeto de Decreto Legislativo": 131,
+  "Projeto de Emenda à Lei Orgânica": 133,
+  "Projeto de Lei": 129,
+  "Projeto de Lei Complementar": 130,
+  "Projeto de Resolução": 132,
+  "Requerimento": 134
+ },
+ "links": []
+}

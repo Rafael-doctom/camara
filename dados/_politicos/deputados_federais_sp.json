@@ -1,0 +1,1188 @@
+{
+ "votacoes": [
+  {
+   "id": "345311-270",
+   "fonte": "Câmara dos Deputados",
+   "eixo": "ambiente",
+   "favor": "b",
+   "nota": "Texto-base do marco temporal: só seriam terras indígenas as ocupadas em 5/10/1988.",
+   "m": "PL 490/2007 (marco temporal das terras indígenas)",
+   "d": "2023-05-30",
+   "r": "Aprovado",
+   "n": {
+    "favor": 283,
+    "contra": 155
+   },
+   "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=345311"
+  },
+  {
+   "id": "257161-483",
+   "fonte": "Câmara dos Deputados",
+   "eixo": "ambiente",
+   "favor": "b",
+   "nota": "Texto final da lei geral do licenciamento ambiental, que cria a licença por autodeclaração e dispensa licença para várias atividades.",
+   "m": "PL 2159/2021 (licenciamento ambiental)",
+   "d": "2025-07-16",
+   "r": "Aprovado",
+   "n": {
+    "favor": 231,
+    "contra": 87
+   },
+   "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=257161"
+  },
+  {
+   "id": "2383287-43",
+   "fonte": "Câmara dos Deputados",
+   "eixo": "impostos",
+   "favor": "a",
+   "nota": "Texto-base que passou a cobrar imposto de renda periódico sobre fundos exclusivos e aplicações no exterior.",
+   "m": "PL 4173/2023 (taxação de fundos exclusivos e offshores)",
+   "d": "2023-10-25",
+   "r": "Aprovado",
+   "n": {
+    "favor": 323,
+    "contra": 119
+   },
+   "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2383287"
+  }
+ ],
+ "politicos": [
+  {
+   "chave": "dep-221328",
+   "nome": "Adilson Barroso",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/221328.jpg",
+   "perfil": "deputados.html#221328",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204528",
+   "nome": "Adriana Ventura",
+   "partido": "NOVO",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204528.jpg",
+   "perfil": "deputados.html#204528",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204501",
+   "nome": "Alencar Santana",
+   "partido": "PT",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204501.jpg",
+   "perfil": "deputados.html#204501",
+   "eixos": {
+    "ambiente": [
+     -1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-160545",
+   "nome": "Alexandre Leite",
+   "partido": "UNIÃO",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/160545.jpg",
+   "perfil": "deputados.html#160545",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-221148",
+   "nome": "Alfredinho",
+   "partido": "PT",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/221148.jpg",
+   "perfil": "deputados.html#221148",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220638",
+   "nome": "Antonio Carlos Rodrigues",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220638.jpg",
+   "perfil": "deputados.html#220638",
+   "eixos": {
+    "ambiente": [
+     0,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-73433",
+   "nome": "Arlindo Chinaglia",
+   "partido": "PT",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/73433.jpg",
+   "perfil": "deputados.html#73433",
+   "eixos": {
+    "ambiente": [
+     -1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-141391",
+   "nome": "Arnaldo Jardim",
+   "partido": "CIDADANIA",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/141391.jpg",
+   "perfil": "deputados.html#141391",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-178975",
+   "nome": "Baleia Rossi",
+   "partido": "MDB",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/178975.jpg",
+   "perfil": "deputados.html#178975",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220635",
+   "nome": "Bruno Ganem",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220635.jpg",
+   "perfil": "deputados.html#220635",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-178829",
+   "nome": "Capitão Augusto",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/178829.jpg",
+   "perfil": "deputados.html#178829",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-74262",
+   "nome": "Carlos Sampaio",
+   "partido": "PSD",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/74262.jpg",
+   "perfil": "deputados.html#74262",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-141398",
+   "nome": "Carlos Zarattini",
+   "partido": "PT",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/141398.jpg",
+   "perfil": "deputados.html#141398",
+   "eixos": {
+    "ambiente": [
+     -1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-73441",
+   "nome": "Celso Russomanno",
+   "partido": "REPUBLICANOS",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/73441.jpg",
+   "perfil": "deputados.html#73441",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204504",
+   "nome": "Cezinha de Madureira",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204504.jpg",
+   "perfil": "deputados.html#204504",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204511",
+   "nome": "David Soares",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204511.jpg",
+   "perfil": "deputados.html#204511",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220642",
+   "nome": "Delegado Bruno Lima",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220642.jpg",
+   "perfil": "deputados.html#220642",
+   "eixos": {
+    "ambiente": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220649",
+   "nome": "Delegado da Cunha",
+   "partido": "UNIÃO",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220649.jpg",
+   "perfil": "deputados.html#220649",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220652",
+   "nome": "Delegado Palumbo",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220652.jpg",
+   "perfil": "deputados.html#220652",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220654",
+   "nome": "Delegado Paulo Bilynskyj",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220654.jpg",
+   "perfil": "deputados.html#220654",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220645",
+   "nome": "Erika Hilton",
+   "partido": "PSOL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220645.jpg",
+   "perfil": "deputados.html#220645",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220653",
+   "nome": "Fábio Teruel",
+   "partido": "MDB",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220653.jpg",
+   "perfil": "deputados.html#220653",
+   "eixos": {
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-66828",
+   "nome": "Fausto Pinato",
+   "partido": "UNIÃO",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/66828.jpg",
+   "perfil": "deputados.html#66828",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220646",
+   "nome": "Felipe Becari",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220646.jpg",
+   "perfil": "deputados.html#220646",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-74270",
+   "nome": "Gilberto Nascimento",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/74270.jpg",
+   "perfil": "deputados.html#74270",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-74273",
+   "nome": "Jefferson Campos",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/74273.jpg",
+   "perfil": "deputados.html#74273",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-141456",
+   "nome": "Jilmar Tatto",
+   "partido": "PT",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/141456.jpg",
+   "perfil": "deputados.html#141456",
+   "eixos": {
+    "ambiente": [
+     -1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-230957",
+   "nome": "João Cury",
+   "partido": "MDB",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/230957.jpg",
+   "perfil": "deputados.html#230957",
+   "eixos": {
+    "ambiente": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-160548",
+   "nome": "Jonas Donizette",
+   "partido": "PSB",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/160548.jpg",
+   "perfil": "deputados.html#160548",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220640",
+   "nome": "Juliana Cardoso",
+   "partido": "PT",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220640.jpg",
+   "perfil": "deputados.html#220640",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-162067",
+   "nome": "Kiko Celeguim",
+   "partido": "PT",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/162067.jpg",
+   "perfil": "deputados.html#162067",
+   "eixos": {
+    "ambiente": [
+     -1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204536",
+   "nome": "Kim Kataguiri",
+   "partido": "MISSÃO",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204536.jpg",
+   "perfil": "deputados.html#204536",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204485",
+   "nome": "Luiz Carlos Motta",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204485.jpg",
+   "perfil": "deputados.html#204485",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204526",
+   "nome": "Luiz Philippe de Orleans e Bragança",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204526.jpg",
+   "perfil": "deputados.html#204526",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-74784",
+   "nome": "Luiza Erundina",
+   "partido": "PSOL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/74784.jpg",
+   "perfil": "deputados.html#74784",
+   "eixos": {
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220648",
+   "nome": "Marangoni",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220648.jpg",
+   "perfil": "deputados.html#220648",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-178983",
+   "nome": "Marcio Alvino",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/178983.jpg",
+   "perfil": "deputados.html#178983",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204506",
+   "nome": "Marcos Pereira",
+   "partido": "REPUBLICANOS",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204506.jpg",
+   "perfil": "deputados.html#204506",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204540",
+   "nome": "Maria Rosas",
+   "partido": "REPUBLICANOS",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204540.jpg",
+   "perfil": "deputados.html#204540",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220655",
+   "nome": "Mario Frias",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220655.jpg",
+   "perfil": "deputados.html#220655",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220647",
+   "nome": "Mauricio Neves",
+   "partido": "PP",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220647.jpg",
+   "perfil": "deputados.html#220647",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-178985",
+   "nome": "Miguel Lombardi",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/178985.jpg",
+   "perfil": "deputados.html#178985",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-160561",
+   "nome": "Missionário José Olimpio",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/160561.jpg",
+   "perfil": "deputados.html#160561",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-178986",
+   "nome": "Nilto Tatto",
+   "partido": "PT",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/178986.jpg",
+   "perfil": "deputados.html#178986",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-178987",
+   "nome": "Orlando Silva",
+   "partido": "PCdoB",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/178987.jpg",
+   "perfil": "deputados.html#178987",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220650",
+   "nome": "Paulo Alexandre Barbosa",
+   "partido": "PSD",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220650.jpg",
+   "perfil": "deputados.html#220650",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-160558",
+   "nome": "Paulo Freire Costa",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/160558.jpg",
+   "perfil": "deputados.html#160558",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-160601",
+   "nome": "Pr. Marco Feliciano",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/160601.jpg",
+   "perfil": "deputados.html#160601",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-221338",
+   "nome": "Professora Luciene Cavalcante",
+   "partido": "PSOL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/221338.jpg",
+   "perfil": "deputados.html#221338",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-178989",
+   "nome": "Renata Abreu",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/178989.jpg",
+   "perfil": "deputados.html#178989",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-175765",
+   "nome": "Ribamar Silva",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/175765.jpg",
+   "perfil": "deputados.html#175765",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220633",
+   "nome": "Ricardo Salles",
+   "partido": "NOVO",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220633.jpg",
+   "perfil": "deputados.html#220633",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220641",
+   "nome": "Rodrigo Gambale",
+   "partido": "PODE",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220641.jpg",
+   "perfil": "deputados.html#220641",
+   "eixos": {
+    "ambiente": [
+     -1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204525",
+   "nome": "Rosana Valle",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204525.jpg",
+   "perfil": "deputados.html#204525",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220644",
+   "nome": "Rosangela Moro",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220644.jpg",
+   "perfil": "deputados.html#220644",
+   "eixos": {
+    "ambiente": [
+     2,
+     2
+    ],
+    "impostos": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-73604",
+   "nome": "Rui Falcão",
+   "partido": "PT",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/73604.jpg",
+   "perfil": "deputados.html#73604",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204535",
+   "nome": "Sâmia Bomfim",
+   "partido": "PSOL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204535.jpg",
+   "perfil": "deputados.html#204535",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ]
+   }
+  },
+  {
+   "chave": "dep-226837",
+   "nome": "Saulo Pedroso",
+   "partido": "PSD",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/226837.jpg",
+   "perfil": "deputados.html#226837",
+   "eixos": {
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-220651",
+   "nome": "Simone Marquetto",
+   "partido": "PP",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/220651.jpg",
+   "perfil": "deputados.html#220651",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-204534",
+   "nome": "Tabata Amaral",
+   "partido": "PSB",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/204534.jpg",
+   "perfil": "deputados.html#204534",
+   "eixos": {
+    "ambiente": [
+     -2,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-160976",
+   "nome": "Tiririca",
+   "partido": "PSD",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/160976.jpg",
+   "perfil": "deputados.html#160976",
+   "eixos": {
+    "ambiente": [
+     1,
+     1
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-141555",
+   "nome": "Vinicius Carvalho",
+   "partido": "PL",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/141555.jpg",
+   "perfil": "deputados.html#141555",
+   "eixos": {
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  },
+  {
+   "chave": "dep-178992",
+   "nome": "Vitor Lippi",
+   "partido": "PSD",
+   "cargo": "Deputado(a) federal (SP)",
+   "cidade": "",
+   "foto": "https://www.camara.leg.br/internet/deputado/bandep/178992.jpg",
+   "perfil": "deputados.html#178992",
+   "eixos": {
+    "ambiente": [
+     0,
+     2
+    ],
+    "impostos": [
+     -1,
+     1
+    ]
+   }
+  }
+ ]
+}

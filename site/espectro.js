@@ -252,6 +252,8 @@
       <h2>Outros eixos</h2>${gradeEixos()}`;
   }
 
+  const linkVotacao = (t) => t.url || `${t.cidade}/index.html#votacao/${t.id}`;
+
   // Régua com a foto de cada político na posição que os votos dele indicam, e as votações usadas.
   function politicosNoEixo(x, voce) {
     const vot = POL.votacoes.filter((t) => t.eixo === x.id);
@@ -269,12 +271,12 @@
     }).join("");
     return `<section class="cartao esp-pols-eixo" style="--cor:${x.cor}">
       <h2>Políticos neste eixo</h2>
-      <p class="suave">Posição de cada vereador pelos votos em ${vot.length} ${vot.length === 1 ? "votação" : "votações"} sobre o tema. Votar a favor ou contra puxa para um dos polos; abstenção e falta não contam.</p>
+      <p class="suave">Posição de cada político pelos votos em ${vot.length} ${vot.length === 1 ? "votação" : "votações"} sobre o tema. Votar a favor ou contra puxa para um dos polos; abstenção e falta não contam.</p>
       <div class="esp-regua">${marcas}${voce !== null && voce !== undefined ? `<span class="esp-regua-voce" style="left:${50 + voce * 50}%">Você</span>` : ""}</div>
       <p class="esp-pontas"><span>${x.a}</span><span>${x.b}</span></p>
-      <ul class="esp-pols-lista">${pols.slice().reverse().map((r) => `<li><a href="${esc(r.p.perfil)}" target="_self">${foto(r.p, "esp-mini-foto")}<b>${esc(nomeP(r.p.nome))}</b></a><span>${esc(r.p.partido || "")}</span><span>${esc(lado(x, r.v))}</span><span class="suave">${r.p.eixos[x.id][1]} votos</span></li>`).join("")}</ul>
+      <ul class="esp-pols-lista">${pols.slice().reverse().map((r) => `<li><a href="${esc(r.p.perfil)}" target="_self">${foto(r.p, "esp-mini-foto")}<b>${esc(nomeP(r.p.nome))}</b></a><span>${esc(r.p.partido || "")} · ${esc(r.p.cargo.replace(/\(a\)/, ""))}</span><span>${esc(lado(x, r.v))}</span><span class="suave">${r.p.eixos[x.id][1]} votos</span></li>`).join("")}</ul>
       <h3>Votações usadas</h3>
-      <ol class="esp-vots">${vot.map((t) => `<li><a href="${esc(t.cidade)}/index.html#votacao/${esc(t.id)}" target="_self"><b>${esc(t.m)}</b></a> · ${esc(t.d.split("-").reverse().join("/"))} · ${esc(t.r)} (${t.n.favor || 0} a ${t.n.contra || 0})
+      <ol class="esp-vots">${vot.map((t) => `<li><a href="${esc(linkVotacao(t))}" ${t.url ? 'rel="noopener"' : 'target="_self"'}><b>${esc(t.m)}</b></a> · ${esc(t.fonte || "Câmara Municipal")} · ${esc(t.d.slice(0, 10).split("-").reverse().join("/"))} · ${esc(t.r)} (${t.n.favor || 0} a ${t.n.contra || 0})
         <p>${esc(t.nota)}</p><span class="suave">Votar a favor puxa para ${t.favor === "b" ? esc(x.b.toLowerCase()) : esc(x.a.toLowerCase())}.</span></li>`).join("")}</ol>
     </section>`;
   }
@@ -382,17 +384,20 @@
         <button type="button" id="esp-refazer">Refazer o teste</button>
       </div>
       <p class="aviso">A comparação com políticos usa poucas votações por eixo e não resume a atuação de ninguém. Este resultado não diz em quem votar. Para comparar votação por votação, use o quiz de votações reais.</p>`;
+    app.querySelectorAll(".esp-cargo").forEach((b) => b.addEventListener("click", () => { est.cargo = b.dataset.cargo; salvar(); resultado(); }));
     app.querySelector("#esp-refazer").addEventListener("click", () => { est.resp = {}; salvar(); location.hash = "#comecar"; });
   }
 
   function blocoParecidos(v) {
     // Destaque só para quem tem base mínima (3 votos em 2 eixos); os demais ficam em "Ver todos".
-    const todos = parecidos(v), base = (r) => r.votos >= 3 && r.eixosC >= 2;
+    const cargos = [...new Set(POL.politicos.map((p) => p.cargo))];
+    const todos = parecidos(v).filter((r) => !est.cargo || r.p.cargo === est.cargo), base = (r) => r.votos >= 3 && r.eixosC >= 2;
     const rk = [...todos.filter(base), ...todos.filter((r) => !base(r))];
-    if (!rk.length) return "";
+    if (!rk.length && !est.cargo) return "";
     const eixosComVotos = EIXOS.filter((x) => POL.votacoes.some((t) => t.eixo === x.id)).map((x) => x.nome);
     return `<h2>Políticos que votaram parecido com você</h2>
       <p class="suave">Comparação das suas respostas com votos reais, em ${eixosComVotos.join(", ")}. Nos outros eixos ainda não há votações classificadas. Toque num nome para ver o perfil e todos os votos.</p>
+      ${cargos.length > 1 ? `<div class="chips" role="group" aria-label="Cargo">${["", ...cargos].map((c) => `<button type="button" class="chip esp-cargo" data-cargo="${esc(c)}" aria-pressed="${(est.cargo || "") === c}">${esc(c ? c.replace(/\(a\)/, "s").replace("Vereadors", "Vereadores").replace("Deputados federal", "Deputados federais") : "Todos")}</button>`).join("")}</div>` : ""}
       <div class="esp-pols">${rk.slice(0, 6).map(cartaoPol).join("")}</div>
       ${rk.length > 6 ? `<details class="esp-mais-pols"><summary>Ver todos (${rk.length})</summary><div class="esp-pols">${rk.slice(6).map(cartaoPol).join("")}</div></details>` : ""}
       <p class="suave">Poucas votações por eixo: trate a porcentagem como pista, não como veredito. <a href="#eixos" target="_self">Ver as votações de cada eixo →</a></p>`;

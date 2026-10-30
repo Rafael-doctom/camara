@@ -1,0 +1,8 @@
+{
+ "_leia": "Votações nominais do plenário da Câmara dos Deputados que posicionam os deputados nos eixos do Painel ideológico. Mesmo formato de casos/<cidade>/eixos.json: 'favor' é o polo para onde o voto SIM puxa ('a' ou 'b'); NÃO puxa para o oposto; abstenção, obstrução e ausência não contam. 'votacao' é o id da votação na API (dadosabertos.camara.leg.br/api/v2/votacoes/{id}). Só votações de mérito (texto principal ou final), não requerimentos.",
+ "votacoes": [
+  {"votacao": "345311-270", "proposicao": 345311, "titulo": "PL 490/2007 (marco temporal das terras indígenas)", "eixo": "ambiente", "favor": "b", "nota": "Texto-base do marco temporal: só seriam terras indígenas as ocupadas em 5/10/1988."},
+  {"votacao": "257161-483", "proposicao": 257161, "titulo": "PL 2159/2021 (licenciamento ambiental)", "eixo": "ambiente", "favor": "b", "nota": "Texto final da lei geral do licenciamento ambiental, que cria a licença por autodeclaração e dispensa licença para várias atividades."},
+  {"votacao": "2383287-43", "proposicao": 2383287, "titulo": "PL 4173/2023 (taxação de fundos exclusivos e offshores)", "eixo": "impostos", "favor": "a", "nota": "Texto-base que passou a cobrar imposto de renda periódico sobre fundos exclusivos e aplicações no exterior."}
+ ]
+}

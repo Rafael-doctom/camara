@@ -35,7 +35,11 @@ def limpar(texto):
 
 
 def modulo_documentos(texto):
-    """(id, Modulo) da pesquisa de documentos, a partir de qualquer página com o menu do SisCam."""
+    """(id, Modulo) da pesquisa de documentos, a partir de qualquer página com o menu do SisCam.
+    A página inicial tem o menu com links /index/{id}/{Modulo}; o de "Proposituras" é o que interessa."""
+    for lid, mod, rotulo in re.findall(r'href="/index/(\d+)/(\d+)"[^>]*>(.*?)</a>', texto, re.S):
+        if limpar(rotulo).lower() == "proposituras":
+            return int(lid), int(mod)
     m = re.search(r"Documentos/Pesquisa\?[^\"']*?\bid=(\d+)[^\"']*?Modulo=(\d+)", html.unescape(texto))
     if m:
         return int(m.group(1)), int(m.group(2))
@@ -60,6 +64,8 @@ def singular(nome):
     primeira, _, resto = nome.partition(" ")
     if primeira.endswith("ções"):
         primeira = primeira[:-4] + "ção"
+    elif primeira.endswith(("res", "zes")):  # Pareceres -> Parecer
+        primeira = primeira[:-2]
     elif primeira.endswith("s"):
         primeira = primeira[:-1]
     return f"{primeira} {resto}".strip()
@@ -71,16 +77,16 @@ def nome_camara(texto):
 
 
 def legislaturas(texto):
-    """[(id, ano_inicio, ano_fim, nome)] da página /Legislaturas, da mais recente para a mais antiga."""
+    """[(id, ano_inicio, ano_fim, nome)] da página /Legislaturas, da mais recente para a mais antiga.
+    Cada item tem o link da legislatura seguido de "Posse: dd/mm/aaaa" e "Encerramento: dd/mm/aaaa"."""
+    links = list(re.finditer(r'href="/Legislaturas/Legislatura/(\d+)"[^>]*>(.*?)</a>', texto, re.S))
     saida = {}
-    for m in re.finditer(r'href="/Legislaturas/Legislatura/(\d+)"[^>]*>(.*?)</a>', texto, re.S):
-        lid = int(m.group(1))
-        trecho = limpar(texto[max(0, m.start() - 300):m.end() + 400])
-        anos = [int(a) for a in re.findall(r"\b(19\d\d|20\d\d)\b", limpar(m.group(2)) + " " + trecho)]
-        pares = [(a, b) for a, b in zip(anos, anos[1:]) if b - a == 3]
-        nome = re.search(r"\d+\s*[ªº]\s*Legislatura", limpar(m.group(2)) + " " + trecho, re.I)
-        if pares and lid not in saida:
-            saida[lid] = (lid, pares[0][0], pares[0][1], nome.group(0) if nome else "")
+    for n, m in enumerate(links):
+        bloco = limpar(texto[m.end():links[n + 1].start() if n + 1 < len(links) else m.end() + 2000])
+        posse = re.search(r"Posse:\s*\d{2}/\d{2}/(\d{4})", bloco)
+        fim = re.search(r"Encerramento:\s*\d{2}/\d{2}/(\d{4})", bloco)
+        if posse and fim and int(m.group(1)) not in saida:
+            saida[int(m.group(1))] = (int(m.group(1)), int(posse.group(1)), int(fim.group(1)), limpar(m.group(2)).lower())
     return sorted(saida.values(), key=lambda x: -x[1])
 
 
@@ -114,13 +120,33 @@ def main():
     camara = nome_camara(inicio) or f"Câmara Municipal de {slug.title()}"
     nome = opc("--nome") or re.sub(r"^.*\bde\s+", "", camara) or slug.title()
 
-    if not legs:
-        print("AVISO: não achei as legislaturas em /Legislaturas; preencha legislatura_atual à mão.")
-    atual = legs[0] if legs else (None, 2025, 2028, "")
-    anteriores = [l for l in legs[1:] if l[1] >= 2017][:2]
+    # Mandatos municipais começam em 2001, 2005, ..., 2025. Se o SisCam ainda não cadastrou a
+    # legislatura em curso (aconteceu em Cerquilho), ela fica sem página (id None).
+    ano = time.localtime().tm_year
+    ini_atual = ano - (ano - 2001) % 4
+    por_ano = {}
+    for l in legs:  # mais de uma página para o mesmo período (Iperó): fica a que tem mais vereadores
+        if l[1] in por_ano:
+            n_l = lambda lid: len(set(re.findall(r"/Vereadores/Vereador/(\d+)", baixar(f"{base}/Legislaturas/Legislatura/{lid}"))))
+            if n_l(l[0]) > n_l(por_ano[l[1]][0]):
+                por_ano[l[1]] = l
+        else:
+            por_ano[l[1]] = l
+    atual = por_ano.get(ini_atual)
+    if not atual:
+        print(f"AVISO: o SisCam não tem a página da legislatura {ini_atual}-{ini_atual + 3}; a coleta usa só /Vereadores.")
+        atual = (None, ini_atual, ini_atual + 3, "")
+    anteriores = [por_ano[a] for a in (ini_atual - 4, ini_atual - 8) if a in por_ano and a >= 2017]
+    # /Vereadores pode listar, além dos titulares, suplentes ou afastados (Itapetininga: 21 para 19
+    # cadeiras). A página da legislatura atual tem um nome por cadeira ocupada: vira o número de cadeiras.
+    folga = 0
+    if atual[0] is not None:
+        n_leg = len(set(re.findall(r'<a href="/Vereadores/Vereador/(\d+)">', baixar(f"{base}/Legislaturas/Legislatura/{atual[0]}"))))
+        if 0 < n_leg < n:
+            n, folga = n_leg, n - n_leg
     cfg = {
         "slug": slug, "nome": nome, "camara": camara, "site_camara": "", "siscam": base,
-        "modulo_documentos": mid, "modulo": modulo, "cadeiras": n, "folga_lista_exercicio": 0,
+        "modulo_documentos": mid, "modulo": modulo, "cadeiras": n, "folga_lista_exercicio": folga,
         "legislatura_atual": {"id": atual[0], "nome": atual[3], "inicio": f"{atual[1]}-01-01", "fim": f"{atual[2]}-12-31"},
         "legislaturas_anteriores": [{"ano": a, "id": i, "nome": nm, "inicio": f"{a}-01-01", "fim": f"{b}-12-31"}
                                     for i, a, b, nm in anteriores],
@@ -140,7 +166,7 @@ def main():
                 json.dump(vazio, f)
                 f.write("\n")
     print(f"Gravado {destino}: {camara}, {n} vereadores em exercício, {len(tipos)} tipos de documento, "
-          f"legislaturas {[l[1] for l in legs]}.")
+          f"legislatura atual {atual[1]}-{atual[2]} (página {atual[0]}), anteriores {[l[1] for l in anteriores]}.")
     if n == 0 or not tipos:
         print("AVISO: algo não foi encontrado (cadeiras ou tipos). Confira o arquivo antes de coletar.")
     print(f"Próximo passo: python agentes/orquestrador.py --cidade {slug}")
