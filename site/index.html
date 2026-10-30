@@ -29,6 +29,67 @@ if (location.hash.length > 1) location.replace("tatui/index.html" + location.has
   .cidade-nums { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 4px 0 2px; font-size: .9rem; color: var(--texto-2); }
   .cidade-nums b { font-family: var(--f-serif); font-size: 1.15rem; font-weight: 600; color: var(--texto); }
   .entrada-extra { margin-top: clamp(28px, 4vw, 44px); }
+  .ent-hero h1 span { max-width: 22ch; margin-left: auto; margin-right: auto; }
+  .ent-acoes { justify-content: center; margin-top: 22px; flex-wrap: wrap; }
+  .ent-nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 12px; margin: 0 0 clamp(32px, 5vw, 56px); }
+  .ent-num { background: var(--fundo-2); border-radius: var(--raio); padding: 18px 16px; text-align: center; display: grid; gap: 4px; }
+  .ent-num b { font-family: var(--f-serif); font-size: clamp(1.7rem, 3.4vw, 2.3rem); font-weight: 600; line-height: 1.05; }
+  .ent-num span { font-size: .86rem; color: var(--texto-2); }
+  .ent-secao { margin: clamp(36px, 6vw, 64px) 0; }
+  .ent-secao h2 { margin-top: 4px; }
+  .ent-intro { color: var(--texto-2); max-width: 70ch; margin: 0 0 16px; }
+  .ent-grupo { margin: 26px 0 10px; font-size: 1.05rem; }
+  .ent-alertas { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 12px; margin-bottom: 14px; }
+  .ent-alerta { display: grid; gap: 6px; padding: 14px 16px; color: inherit; text-decoration: none; }
+  .ent-alerta:hover { border-color: var(--texto); }
+  .ent-alerta small { font-family: var(--f-mono); font-size: .74rem; color: var(--suave); }
+  .ent-alerta p { margin: 0; font-size: .88rem; color: var(--texto-2); }
+  .ent-tabela { width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 760px; }
+  .ent-tabela th, .ent-tabela td { padding: 9px 8px; border-bottom: 1px solid var(--linha); text-align: left; vertical-align: top; }
+  .ent-tabela thead th { font-size: .78rem; color: var(--texto-2); font-weight: 600; }
+  .ent-tabela .n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .ent-tabela a { color: inherit; }
+  .ent-tabela small { color: var(--suave); }
+  .ent-passos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; margin: 12px 0 18px; }
+  .ent-passos p { margin: 6px 0 0; font-size: .9rem; color: var(--texto-2); }
+  .ent-fontes { margin: 0; padding-left: 20px; display: grid; gap: 6px; color: var(--texto-2); }
+  .ent-faq { display: grid; gap: 8px; max-width: 820px; }
+  .ent-faq details { background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); padding: 12px 16px; }
+  .ent-faq summary { cursor: pointer; font-weight: 600; }
+  .ent-faq p { margin: 8px 0 0; color: var(--texto-2); }
+  .ent-frase { margin: clamp(30px, 5vw, 56px) auto; max-width: 760px; text-align: center; border: 0; padding: 0 8px; }
+  .ent-frase p { font-family: var(--f-serif); font-style: italic; font-size: clamp(1.35rem, 3vw, 2rem); line-height: 1.25; margin: 0; }
+  .ent-frase p::before, .ent-frase p::after { content: "“"; color: var(--acento); } .ent-frase p::after { content: "”"; }
+  .ent-desafios { max-width: 820px; margin: clamp(26px, 4vw, 44px) auto; }
+  .ent-desafio { background: var(--fundo-2); border: 1px dashed var(--acento); border-radius: var(--raio); padding: 16px 18px; }
+  .ent-desafio summary { cursor: pointer; list-style: none; display: grid; gap: 4px; }
+  .ent-desafio summary::-webkit-details-marker { display: none; }
+  .ent-desafio summary b { font-size: 1.1rem; }
+  .ent-desafio summary small { color: var(--texto-2); }
+  .ent-desafio p { margin: 12px 0 0; padding-top: 12px; border-top: 1px solid var(--linha); }
+  .ent-duas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px; }
+  .ent-vers { display: grid; gap: 8px; }
+  .ent-ver { display: grid; grid-template-columns: 44px 1fr auto; gap: 10px; align-items: center; padding: 10px 12px; color: inherit; text-decoration: none; }
+  .ent-ver img, .ent-ver > span:first-child { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: top; background: var(--fundo-2); }
+  .ent-ver small { display: block; color: var(--suave); font-size: .78rem; }
+  .ent-ver-n { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .ent-caso { display: grid; gap: 6px; padding: 14px 16px; color: inherit; text-decoration: none; }
+  .ent-caso small { font-family: var(--f-mono); font-size: .74rem; color: var(--suave); }
+  .ent-caso p { margin: 0; font-size: .88rem; color: var(--texto-2); }
+  .ent-autores { padding-left: 22px; display: grid; gap: 8px; margin: 10px 0; }
+  .ent-autores li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(60px, 30%) auto; gap: 10px; align-items: center; font-size: .9rem; }
+  .ent-barra, .ent-pres-barra { display: flex; height: 10px; border-radius: 5px; background: var(--fundo-2); overflow: hidden; }
+  .ent-barra i { background: var(--acento); }
+  .ent-press { display: grid; gap: 12px; margin: 10px 0; }
+  .ent-pres { display: grid; gap: 4px; color: inherit; text-decoration: none; }
+  .ent-pres-barra i:first-child { background: var(--acento); } .ent-pres-barra i:nth-child(2) { background: var(--texto-2); }
+  .ent-pres small { color: var(--texto-2); }
+  .ent-glossario { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 12px; margin: 12px 0 0; }
+  .ent-glossario div { background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); padding: 14px 16px; }
+  .ent-glossario dt { font-weight: 700; } .ent-glossario dd { margin: 6px 0 0; color: var(--texto-2); font-size: .9rem; }
+  .revela { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+  .revela.visto { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .revela { opacity: 1; transform: none; transition: none; } }
 </style>
 </head>
 <body>
@@ -43,13 +104,23 @@ if (location.hash.length > 1) location.replace("tatui/index.html" + location.has
 </header>
 
 <main id="app" class="conteudo">
-  <section class="hero" data-selo="Dados oficiais · SisCam das Câmaras Municipais">
-    <h1>Olho na Câmara <span>Escolha a sua cidade</span></h1>
-    <p>O que cada vereador propõe, como vota e quanto comparece às sessões. Tudo vem de dados públicos oficiais de cada Câmara Municipal, atualizados por agentes automáticos.</p>
+  <section class="hero ent-hero" data-selo="Dados oficiais · Câmaras, TCE-SP, TSE, Congresso e CGU">
+    <h1>Olho na Câmara <span>quem decide a sua cidade, à vista</span></h1>
+    <p>O que cada vereador propõe e vota, quanto a Câmara e a Prefeitura gastam, quanto dinheiro federal chega por emendas e como a cidade votou nas eleições. Tudo com dados públicos oficiais, atualizados por agentes automáticos.</p>
+    <div class="acoes ent-acoes"><a class="botao botao-pr" href="#cidades">Escolher a minha cidade ↓</a><a class="botao" href="espectro.html">Fazer o teste político</a></div>
   </section>
-  <section aria-labelledby="t-cidades" class="cidades">
-    <h2 id="t-cidades" class="sr">Cidades</h2>
-    <div class="grade-explore">
+
+  <section aria-label="A região em números" class="ent-nums">
+<div class="ent-num"><b>5</b><span>cidades acompanhadas</span></div><div class="ent-num"><b>73</b><span>vereadores</span></div><div class="ent-num"><b>13.748</b><span>votações registradas</span></div><div class="ent-num"><b>17.111</b><span>proposituras</span></div><div class="ent-num"><b>R$ 103,2 mi</b><span>em emendas recebidas</span></div>
+  </section>
+
+
+  <blockquote class="ent-frase revela"><p>Vereador não é cargo de homenagem. É quem decide o imposto, o orçamento e a obra da sua rua.</p></blockquote>
+  <section aria-labelledby="cidades" class="ent-secao">
+    <p class="rotulo">Comece por aqui</p>
+    <h2 id="cidades">Escolha a sua cidade</h2>
+    <p class="ent-intro">Cada cidade tem a página da Câmara: vereadores, presença, votações, projetos, casos documentados e o quiz "com qual vereador você vota igual?".</p>
+    <div class="grade-explore cidades">
       <a class="explore cidade" href="tatui/index.html"><span class="rotulo">Câmara Municipal de Tatuí</span><span class="explore-t">Tatuí</span><span class="cidade-nums"><span><b>17</b> vereadores</span><span><b>10.689</b> votações</span><span><b>10.588</b> proposituras</span></span><span class="caso-ler" aria-hidden="true">Ver a Câmara →</span></a>
       <a class="explore cidade" href="itapetininga/index.html"><span class="rotulo">Câmara Municipal de Itapetininga</span><span class="explore-t">Itapetininga</span><span class="cidade-nums"><span><b>19</b> vereadores</span><span><b>2.174</b> votações</span><span><b>3.506</b> proposituras</span></span><span class="caso-ler" aria-hidden="true">Ver a Câmara →</span></a>
       <a class="explore cidade" href="cerquilho/index.html"><span class="rotulo">Câmara Municipal de Cerquilho</span><span class="explore-t">Cerquilho</span><span class="cidade-nums"><span><b>13</b> vereadores</span><span><b>677</b> votações</span><span><b>1.364</b> proposituras</span></span><span class="caso-ler" aria-hidden="true">Ver a Câmara →</span></a>
@@ -57,16 +128,129 @@ if (location.hash.length > 1) location.replace("tatui/index.html" + location.has
       <a class="explore cidade" href="eleicao.html#cesario-lange"><span class="rotulo">Câmara Municipal de Cesário Lange</span><span class="explore-t">Cesário Lange</span><span class="cidade-nums"><span><b>11</b> vereadores</span><span>Prefeito: <b>Ramiro</b></span></span><span class="explore-d">Votações e presença da Câmara em preparação. Já disponível: eleição de 2024.</span><span class="caso-ler" aria-hidden="true">Ver a eleição →</span></a>
     </div>
   </section>
-  <section aria-labelledby="t-mais" class="entrada-extra">
-    <h2 id="t-mais">Também no site</h2>
+
+  <div class="ent-desafios revela"><details class="ent-desafio"><summary><span class="rotulo">Desafio</span><b>Em quantas votações das Câmaras alguém votou contra?</b><small>Chute uma porcentagem antes de abrir. Toque para ver a resposta.</small></summary><p>Tatuí: 133 de 10.689 (1,2%) · Itapetininga: 17 de 2.174 (0,8%) · Cerquilho: 18 de 677 (2,7%) · Iperó: 13 de 208 (6,2%). A imensa maioria passa sem nenhum voto contra; é nas divididas que os vereadores se diferenciam.</p></details></div>
+
+  <section aria-labelledby="t-semana" class="ent-secao">
+    <p class="rotulo">Atualizado a cada coleta</p>
+    <h2 id="t-semana">Esta semana</h2>
+    <p class="ent-intro">Votações divididas, projetos novos e pagamentos fora do padrão nas cidades acompanhadas.</p>
+    <div class="ent-alertas" id="ent-alertas"><p class="suave">Carregando os alertas…</p></div>
+    <p><a class="botao" href="alertas.html">Ver todos os alertas →</a></p>
+  </section>
+
+  <div class="ent-desafios revela"><details class="ent-desafio"><summary><span class="rotulo">Desafio</span><b>Quanto a Câmara da sua cidade custou por eleitor em 2025?</b><small>Pense num valor por pessoa, por ano. Toque para ver a resposta.</small></summary><p>Iperó: R$ 227 · Cesário Lange: R$ 177 · Tatuí: R$ 157 · Itapetininga: R$ 139 · Cerquilho: R$ 86. Valor pago pela Câmara no ano dividido pelos eleitores aptos em 2024.</p></details></div>
+
+  <section aria-labelledby="t-comparar" class="ent-secao">
+    <p class="rotulo">Lado a lado</p>
+    <h2 id="t-comparar">Compare as cidades</h2>
+    <p class="ent-intro">Toque num número para ver o detalhe. "Divididas" são votações com votos a favor e contra, onde aparecem as diferenças entre os vereadores.</p>
+    <div class="tabela-wrap"><table class="ent-tabela"><thead><tr><th>Cidade</th><th class="n">Vereadores</th><th class="n">Votações</th><th class="n">Divididas</th><th class="n">Proposituras</th><th class="n">Câmara pagou em 2025</th><th class="n">Emendas recebidas</th><th>Prefeito eleito (2024)</th><th>Presidente na cidade (2026)</th></tr></thead><tbody><tr><th scope="row"><a href="tatui/index.html">Tatuí</a></th><td class="n">17</td><td class="n">10.689</td><td class="n">133</td><td class="n">10.588</td><td class="n"><a href="gastos.html#tatui">R$ 14,0 mi</a></td><td class="n"><a href="emendas.html#tatui">R$ 30,2 mi</a></td><td><a href="eleicao.html#tatui">Professor Miguel</a> <small>PSD</small></td><td><a href="eleicao-geral.html#tatui/presidente">Flavio Bolsonaro 66%</a></td></tr><tr><th scope="row"><a href="itapetininga/index.html">Itapetininga</a></th><td class="n">19</td><td class="n">2.174</td><td class="n">17</td><td class="n">3.506</td><td class="n"><a href="gastos.html#itapetininga">R$ 15,7 mi</a></td><td class="n"><a href="emendas.html#itapetininga">R$ 32,4 mi</a></td><td><a href="eleicao.html#itapetininga">Jeferson Brun</a> <small>REPUBLICANOS</small></td><td><a href="eleicao-geral.html#itapetininga/presidente">Flavio Bolsonaro 67%</a></td></tr><tr><th scope="row"><a href="cerquilho/index.html">Cerquilho</a></th><td class="n">13</td><td class="n">677</td><td class="n">18</td><td class="n">1.364</td><td class="n"><a href="gastos.html#cerquilho">R$ 3,1 mi</a></td><td class="n"><a href="emendas.html#cerquilho">R$ 12,1 mi</a></td><td><a href="eleicao.html#cerquilho">Du Pilon</a> <small>MDB</small></td><td><a href="eleicao-geral.html#cerquilho/presidente">Flavio Bolsonaro 71%</a></td></tr><tr><th scope="row"><a href="ipero/index.html">Iperó</a></th><td class="n">13</td><td class="n">208</td><td class="n">13</td><td class="n">1.653</td><td class="n"><a href="gastos.html#ipero">R$ 4,9 mi</a></td><td class="n"><a href="emendas.html#ipero">R$ 20,2 mi</a></td><td><a href="eleicao.html#ipero">Léo Folim</a> <small>PSD</small></td><td><a href="eleicao-geral.html#ipero/presidente">Flavio Bolsonaro 53%</a></td></tr><tr><th scope="row"><a href="eleicao.html#cesario-lange">Cesário Lange</a></th><td class="n">11</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n"><a href="gastos.html#cesario-lange">R$ 2,5 mi</a></td><td class="n"><a href="emendas.html#cesario-lange">R$ 8,3 mi</a></td><td><a href="eleicao.html#cesario-lange">Ramiro</a> <small>REPUBLICANOS</small></td><td><a href="eleicao-geral.html#cesario-lange/presidente">Flavio Bolsonaro 70%</a></td></tr></tbody></table></div>
+  </section>
+
+
+  <blockquote class="ent-frase revela"><p>Quase tudo passa por unanimidade. É nas votações divididas que você descobre quem é quem.</p></blockquote>
+
+  <section aria-labelledby="t-presenca" class="ent-secao revela">
+    <p class="rotulo">Presença nas sessões</p>
+    <h2 id="t-presenca">Quem mais e quem menos compareceu</h2>
+    <p class="ent-intro">Vereadores em exercício das quatro Câmaras com SisCam, na legislatura atual. Toque para ver o perfil, com faltas justificadas e votos.</p>
+    <div class="ent-duas">
+      <div><h3>Mais presentes</h3><div class="ent-vers"><a class="cartao ent-ver" href="tatui/index.html#vereador/BOSSOLAN%20DA%20RADIO"><img src="tatui/fotos/26.jpg" alt="" loading="lazy"><span><b>Bossolan Da Rádio</b><small>PL · Tatuí</small></span><span class="ent-ver-n">100,0%<small>0 faltas</small></span></a><a class="cartao ent-ver" href="tatui/index.html#vereador/ELAINE%20MIRANDA"><img src="tatui/fotos/2790.jpg" alt="" loading="lazy"><span><b>Elaine Miranda</b><small>PL · Tatuí</small></span><span class="ent-ver-n">100,0%<small>0 faltas</small></span></a><a class="cartao ent-ver" href="tatui/index.html#vereador/RENAN%20CORTEZ"><img src="tatui/fotos/2155.jpg" alt="" loading="lazy"><span><b>Renan Cortez</b><small>MDB · Tatuí</small></span><span class="ent-ver-n">100,0%<small>0 faltas</small></span></a><a class="cartao ent-ver" href="itapetininga/index.html#vereador/FRANCISCO%20ROBERTO%20FERREIRA"><img src="itapetininga/fotos/7580.jpg" alt="" loading="lazy"><span><b>Francisco Roberto Ferreira</b><small>MDB · Itapetininga</small></span><span class="ent-ver-n">100,0%<small>0 faltas</small></span></a><a class="cartao ent-ver" href="itapetininga/index.html#vereador/ITAMAR%20JOSE%20MARTINS"><img src="itapetininga/fotos/213.jpg" alt="" loading="lazy"><span><b>Itamar José Martins</b><small>PL · Itapetininga</small></span><span class="ent-ver-n">100,0%<small>0 faltas</small></span></a></div></div>
+      <div><h3>Menos presentes</h3><div class="ent-vers"><a class="cartao ent-ver" href="ipero/index.html#vereador/LUIS%20RODRIGUES%20MOREIRA"><img src="ipero/fotos/16.jpg" alt="" loading="lazy"><span><b>Luis Rodrigues Moreira</b><small>PSD · Iperó</small></span><span class="ent-ver-n">86,8%<small>5 faltas</small></span></a><a class="cartao ent-ver" href="ipero/index.html#vereador/ALYSSON%20ALESSANDRO%20DE%20BARROS"><img src="ipero/fotos/12.jpg" alt="" loading="lazy"><span><b>Alysson Alessandro De Barros</b><small>PODEMOS · Iperó</small></span><span class="ent-ver-n">89,5%<small>4 faltas</small></span></a><a class="cartao ent-ver" href="ipero/index.html#vereador/VALERIA%20REGINA%20MATHEUS%20DE%20SOUZA"><img src="ipero/fotos/20.jpg" alt="" loading="lazy"><span><b>Valéria Regina Matheus De Souza</b><small>REPUBLICAN · Iperó</small></span><span class="ent-ver-n">89,5%<small>4 faltas</small></span></a><a class="cartao ent-ver" href="ipero/index.html#vereador/WALDIR%20LUIZ%20PAULA%20LEITE"><img src="ipero/fotos/23.jpg" alt="" loading="lazy"><span><b>Waldir Luiz Paula Leite</b><small>REPUBLICAN · Iperó</small></span><span class="ent-ver-n">92,1%<small>3 faltas</small></span></a><a class="cartao ent-ver" href="cerquilho/index.html#vereador/VINICIOS%20ALEXANDRE%20MORAS/PROFESSOR%20VINICIOS%20MORAS"><img src="cerquilho/fotos/1718.jpg" alt="" loading="lazy"><span><b>Vinícios Alexandre Morás/Professor Vinícios Morás</b><small>REP · Cerquilho</small></span><span class="ent-ver-n">92,5%<small>5 faltas</small></span></a></div></div>
+    </div>
+  </section>
+
+  <div class="ent-desafios revela"><details class="ent-desafio"><summary><span class="rotulo">Desafio</span><b>Qual vereador da região mais faltou às sessões?</b><small>Tente adivinhar a cidade antes de abrir. Toque para ver a resposta.</small></summary><p>Luis Rodrigues Moreira (Iperó), com 86,8% de presença e 5 faltas na legislatura atual. Falta pode ter justificativa: veja o perfil.</p></details></div>
+
+  <section aria-labelledby="t-casos" class="ent-secao revela">
+    <p class="rotulo">Verificados com documentos oficiais</p>
+    <h2 id="t-casos">Casos documentados recentes</h2>
+    <div class="ent-alertas"><a class="cartao ent-caso" href="tatui/index.html#caso/cei-base-governo-2026"><small>Tatuí · 22/05/2026 · Investigação do Executivo</small><b>Quatro dias após rejeitar a CEI, oito vereadores da maioria protocolam pedido de CEI com o mesmo texto</b><p>Quatro dias após rejeitar a CEI, oito vereadores da maioria protocolam pedido idêntico.</p></a><a class="cartao ent-caso" href="tatui/index.html#caso/cei-morte-servidor-2026"><small>Tatuí · 18/05/2026 · Investigação do Executivo</small><b>Câmara rejeita CEI após morte do servidor Flávio Donizete Rodrigues</b><p>Plenário nega por 9 a 7 a CEI pedida após a morte de um servidor soterrado em obra; a Justiça manda instalar.</p></a><a class="cartao ent-caso" href="tatui/index.html#caso/mocao-reajuste-servidores-2026"><small>Tatuí · 01/04/2026 · Servidores</small><b>Moção pede ao prefeito nova proposta de reajuste dos servidores; três vereadores não assinam</b><p>Moção pede nova proposta de reajuste aos servidores; três vereadores não assinam e apresentam a sua.</p></a><a class="cartao ent-caso" href="tatui/index.html#caso/nfse-iss-2025"><small>Tatuí · 23/10/2025 · Impostos e taxas</small><b>Câmara aprova por 9 a 7 projeto do Executivo sobre nota fiscal de serviço (ISS)</b><p>Projeto do prefeito sobre nota fiscal de serviço (ISS) passa por 9 a 7; emenda da oposição é negada.</p></a></div>
+  </section>
+
+  <section aria-labelledby="t-dinheiro" class="ent-secao revela">
+    <div class="ent-duas">
+      <div>
+        <p class="rotulo">Emendas parlamentares</p>
+        <h2 id="t-dinheiro">Quem mais mandou dinheiro para a região</h2>
+        <ol class="ent-autores"><li><span>Simone Marquetto</span><span class="ent-barra"><i style="width:100%"></i></span><b>R$ 11,0 mi</b></li><li><span>Com. Da Saude</span><span class="ent-barra"><i style="width:98%"></i></span><b>R$ 10,8 mi</b></li><li><span>Samuel Moreira</span><span class="ent-barra"><i style="width:82%"></i></span><b>R$ 9,0 mi</b></li><li><span>Vitor Lippi</span><span class="ent-barra"><i style="width:80%"></i></span><b>R$ 8,9 mi</b></li><li><span>Relator Geral</span><span class="ent-barra"><i style="width:49%"></i></span><b>R$ 5,4 mi</b></li><li><span>Sem Informação</span><span class="ent-barra"><i style="width:49%"></i></span><b>R$ 5,4 mi</b></li></ol>
+        <p><a href="emendas.html">Ver por cidade →</a></p>
+      </div>
+      <div>
+        <p class="rotulo">Eleição 2026</p>
+        <h2>Como a região votou para presidente</h2>
+        <div class="ent-press"><a class="ent-pres" href="eleicao-geral.html#tatui/presidente/2"><b>Tatuí</b><span class="ent-pres-barra"><i style="width:66.5%" title="Flavio Bolsonaro 66.5%"></i><i style="width:33.5%" title="Lula 33.5%"></i></span><small>Flavio Bolsonaro 66% · Lula 34%</small></a><a class="ent-pres" href="eleicao-geral.html#itapetininga/presidente/2"><b>Itapetininga</b><span class="ent-pres-barra"><i style="width:66.8%" title="Flavio Bolsonaro 66.8%"></i><i style="width:33.2%" title="Lula 33.2%"></i></span><small>Flavio Bolsonaro 67% · Lula 33%</small></a><a class="ent-pres" href="eleicao-geral.html#cerquilho/presidente/2"><b>Cerquilho</b><span class="ent-pres-barra"><i style="width:71.3%" title="Flavio Bolsonaro 71.3%"></i><i style="width:28.7%" title="Lula 28.7%"></i></span><small>Flavio Bolsonaro 71% · Lula 29%</small></a><a class="ent-pres" href="eleicao-geral.html#ipero/presidente/2"><b>Iperó</b><span class="ent-pres-barra"><i style="width:52.7%" title="Flavio Bolsonaro 52.7%"></i><i style="width:47.3%" title="Lula 47.3%"></i></span><small>Flavio Bolsonaro 53% · Lula 47%</small></a><a class="ent-pres" href="eleicao-geral.html#cesario-lange/presidente/2"><b>Cesário Lange</b><span class="ent-pres-barra"><i style="width:69.7%" title="Flavio Bolsonaro 69.7%"></i><i style="width:30.3%" title="Lula 30.3%"></i></span><small>Flavio Bolsonaro 70% · Lula 30%</small></a></div>
+        <p><a href="eleicao-geral.html">Ver todos os cargos →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ent-desafios revela"><details class="ent-desafio"><summary><span class="rotulo">Desafio</span><b>Quanto da receita da Prefeitura vem de impostos da própria cidade?</b><small>IPTU, ISS e taxas. Mais ou menos que um quarto? Toque para ver a resposta.</small></summary><p>Tatuí: 24% · Iperó: 24% · Itapetininga: 23% · Cerquilho: 21% · Cesário Lange: 16%. O resto vem de repasses do Estado (ICMS, IPVA), da União (FPM, SUS) e do FUNDEB.</p></details></div>
+  <section aria-labelledby="t-temas" class="ent-secao">
+    <p class="rotulo">Explore por tema</p>
+    <h2 id="t-temas">O que mais tem no site</h2>
+
+    <h3 class="ent-grupo">Dinheiro público</h3>
     <div class="grade-explore">
-      <a class="explore" href="alertas.html"><span class="rotulo">Toda semana</span><span class="explore-t">Alertas</span><span class="explore-d">O que mudou: votações divididas, projetos novos, gastos fora do padrão e casos.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-      <a class="explore" href="eleicao-geral.html"><span class="rotulo">TSE · 2026</span><span class="explore-t">Eleição 2026</span><span class="explore-d">Como cada cidade votou para presidente, governador, senador e deputados.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-      <a class="explore" href="emendas.html"><span class="rotulo">Portal da Transparência</span><span class="explore-t">Emendas parlamentares</span><span class="explore-d">Quanto cada deputado e senador mandou para cada cidade, e quem recebeu.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
       <a class="explore" href="gastos.html"><span class="rotulo">TCE-SP</span><span class="explore-t">Gastos e receitas</span><span class="explore-d">Quanto a Câmara e a Prefeitura de cada cidade pagaram, para quem, e de onde vem o dinheiro.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-      <a class="explore" href="eleicao.html"><span class="rotulo">TSE · 2024</span><span class="explore-t">Eleição municipal</span><span class="explore-d">Votos de cada candidato a prefeito e vereador, quociente eleitoral e mapa de votos por local de votação.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-      <a class="explore" href="deputados.html"><span class="rotulo">Câmara dos Deputados</span><span class="explore-t">Deputados e senadores de SP</span><span class="explore-d">Quanto cada um gasta da cota parlamentar, com quais empresas, e como votou em temas como meio ambiente e impostos.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-      <a class="explore" href="espectro.html"><span class="rotulo">Teste</span><span class="explore-t">Painel ideológico</span><span class="explore-d">Responda perguntas sobre temas políticos e veja onde você fica no espectro. Não depende de cidade.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
+      <a class="explore" href="emendas.html"><span class="rotulo">Portal da Transparência</span><span class="explore-t">Emendas parlamentares</span><span class="explore-d">Quanto cada deputado e senador mandou para cada cidade, e quem recebeu.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
+    </div>
+
+    <h3 class="ent-grupo">Eleições</h3>
+    <div class="grade-explore">
+      <a class="explore" href="eleicao.html"><span class="rotulo">TSE · 2024</span><span class="explore-t">Eleição municipal</span><span class="explore-d">Votos de cada candidato a prefeito e vereador, quociente eleitoral, gastos de campanha e mapa de votos por local de votação.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
+      <a class="explore" href="eleicao-geral.html"><span class="rotulo">TSE · 2026</span><span class="explore-t">Eleição 2026</span><span class="explore-d">Como cada cidade votou para presidente, governador, senador e deputados, com mapa por local de votação.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
+    </div>
+
+    <h3 class="ent-grupo">Congresso e ideologia</h3>
+    <div class="grade-explore">
+      <a class="explore" href="deputados.html"><span class="rotulo">Câmara dos Deputados · Senado</span><span class="explore-t">Deputados e senadores de SP</span><span class="explore-d">Quanto cada um gasta da cota parlamentar, com quais empresas, e como votou em temas como meio ambiente e impostos.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
+      <a class="explore" href="espectro.html"><span class="rotulo">Teste</span><span class="explore-t">Painel ideológico</span><span class="explore-d">Responda frases sobre 8 temas, veja onde você fica no espectro e quais políticos votaram parecido com você.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
+      <a class="explore" href="alertas.html"><span class="rotulo">Toda semana</span><span class="explore-t">Alertas</span><span class="explore-d">O que mudou: votações divididas, projetos novos, gastos fora do padrão e casos.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
+    </div>
+  </section>
+
+
+  <blockquote class="ent-frase revela"><p>Dinheiro público tem dono: você. Acompanhar para onde ele vai é o mínimo.</p></blockquote>
+
+  <section aria-labelledby="t-glossario" class="ent-secao revela">
+    <p class="rotulo">Sem juridiquês</p>
+    <h2 id="t-glossario">Glossário rápido</h2>
+    <dl class="ent-glossario">
+      <div><dt>Propositura</dt><dd>Tudo o que um vereador apresenta: projeto de lei, requerimento (pedido de informação), indicação (sugestão ao prefeito) e moção (aplauso ou repúdio).</dd></div>
+      <div><dt>Votação dividida</dt><dd>Votação com votos a favor e contra. É onde aparecem as diferenças reais entre os vereadores.</dd></div>
+      <div><dt>Emenda parlamentar</dt><dd>Parte do Orçamento da União que deputados e senadores mandam para uma cidade ou entidade.</dd></div>
+      <div><dt>Quociente eleitoral</dt><dd>Votos válidos divididos pelo número de vagas. Cada partido ganha uma vaga para cada quociente que atinge.</dd></div>
+      <div><dt>Repasse</dt><dd>Dinheiro que o Estado (ICMS, IPVA) e a União (FPM, SUS) mandam para a Prefeitura. Em geral é a maior parte da receita.</dd></div>
+      <div><dt>Valor pago</dt><dd>Dinheiro que de fato saiu do caixa público, depois de empenhado (reservado) e liquidado (serviço entregue).</dd></div>
+    </dl>
+  </section>
+  <section aria-labelledby="t-fontes" class="ent-secao">
+    <p class="rotulo">Transparência sobre a transparência</p>
+    <h2 id="t-fontes">De onde vêm os dados</h2>
+    <div class="ent-passos">
+      <div class="cartao"><b>1. Coleta automática</b><p>Programas leem as fontes oficiais todos os dias: as APIs da Câmara dos Deputados, do Senado e do TCE-SP, os arquivos abertos do TSE e da CGU e as páginas do SisCam de cada Câmara.</p></div>
+      <div class="cartao"><b>2. Conferência</b><p>Cada coleta passa por checagens: total de vereadores, quedas bruscas nos números, soma dos votos por local igual ao total da cidade. Se algo não bate, os dados anteriores são mantidos.</p></div>
+      <div class="cartao"><b>3. Casos verificados</b><p>Denúncias e postagens só entram como "caso" depois de conferidas com documentos oficiais, com link para cada fonte.</p></div>
+    </div>
+    <ul class="ent-fontes">
+      <li><a href="https://tatui.siscam.com.br" rel="noopener">SisCam</a> das Câmaras Municipais (proposituras, sessões, votos e presença)</li>
+      <li><a href="https://transparencia.tce.sp.gov.br" rel="noopener">TCE-SP</a>, transparência municipal (despesas e receitas)</li>
+      <li><a href="https://dadosabertos.tse.jus.br" rel="noopener">TSE</a>, Portal de Dados Abertos (candidatos, votos por seção, prestação de contas)</li>
+      <li><a href="https://portaldatransparencia.gov.br" rel="noopener">Portal da Transparência</a> (emendas parlamentares)</li>
+      <li><a href="https://dadosabertos.camara.leg.br" rel="noopener">Câmara dos Deputados</a> e <a href="https://www12.senado.leg.br/dados-abertos" rel="noopener">Senado Federal</a> (parlamentares, votos e gastos)</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="t-faq" class="ent-secao">
+    <h2 id="t-faq">Perguntas frequentes</h2>
+    <div class="ent-faq">
+      <details><summary>Este site é oficial?</summary><p>Não. É um projeto independente, sem vínculo com partidos, Câmaras ou Prefeituras. Os dados vêm de fontes oficiais, e cada página indica de onde.</p></details>
+      <details><summary>Com que frequência os dados são atualizados?</summary><p>As votações, os gastos e as emendas são coletados todos os dias. Os dados de eleição mudam só quando há eleição nova.</p></details>
+      <details><summary>Um número ruim quer dizer que o político fez algo errado?</summary><p>Não necessariamente. Faltas podem ter justificativa, gastos altos podem ser obras ou 13º salário e votar contra pode ser coerente com o que o vereador defende. O site mostra os fatos; a interpretação é de quem lê.</p></details>
+      <details><summary>Encontrei um erro. Como aviso?</summary><p>Escreva para o criador do projeto pelo site <a href="https://rafaelpintodasilva.com/" rel="noopener">rafaelpintodasilva.com</a>, com o link da página e o que está errado.</p></details>
+      <details><summary>Minha cidade pode entrar?</summary><p>Sim, se a Câmara publica as sessões no SisCam. A configuração é automática; cidades sem SisCam entram com os dados de eleição, gastos e emendas.</p></details>
     </div>
   </section>
 </main>
@@ -126,6 +310,34 @@ if (location.hash.length > 1) location.replace("tatui/index.html" + location.has
     (navigator.clipboard ? navigator.clipboard.writeText(aqui()) : Promise.reject())
       .then(function () { ok.textContent = "Link copiado."; }, function () { ok.textContent = "Copie da barra de endereço."; });
   });
+})();
+</script>
+<script src="alertas.js"></script>
+<script>
+/* "Esta semana": os 4 alertas mais recentes, de tipos variados (alertas.js, gerado por agentes/alertas.py). */
+(function () {
+  var A = window.ALERTAS, alvo = document.getElementById("ent-alertas");
+  if (!alvo) return;
+  if (!A || !A.itens.length) { alvo.innerHTML = '<p class="suave">Sem alertas nesta semana.</p>'; return; }
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  var tipos = { votacao: "Votação dividida", propositura: "Projeto ou moção", gasto: "Gasto fora do padrão", caso: "Caso documentado" };
+  var escolhidos = [], vistos = {};
+  A.itens.forEach(function (x) { if (escolhidos.length < 4 && !vistos[x.tipo]) { vistos[x.tipo] = 1; escolhidos.push(x); } });
+  A.itens.forEach(function (x) { if (escolhidos.length < 4 && escolhidos.indexOf(x) < 0) escolhidos.push(x); });
+  alvo.innerHTML = escolhidos.map(function (x) {
+    var cidade = A.resumo[x.cidade] ? A.resumo[x.cidade].cidade : x.cidade;
+    return '<a class="cartao ent-alerta" href="' + esc(x.link) + '"><small>' + esc(tipos[x.tipo] || x.tipo) + " · " + esc(cidade) + " · " +
+      esc(x.data.slice(0, 10).split("-").reverse().join("/")) + "</small><b>" + esc(x.titulo) + "</b><p>" + esc(x.detalhe) + "</p></a>";
+  }).join("");
+})();
+</script>
+<script>
+/* Revela seções, frases e desafios ao rolar. Sem suporte ou com movimento reduzido, tudo já aparece. */
+(function () {
+  var els = document.querySelectorAll(".revela");
+  if (!("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("visto"); }); return; }
+  var io = new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add("visto"); io.unobserve(x.target); } }); }, { rootMargin: "0px 0px -8% 0px" });
+  els.forEach(function (e) { io.observe(e); });
 })();
 </script>
 <script src="topo.js"></script>

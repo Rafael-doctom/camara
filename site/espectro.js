@@ -72,22 +72,65 @@
         [+1, "A prefeitura deveria cortar cargos e gastos antes de pensar em aumentar qualquer tributo."]] },
   ];
 
-  // Posição típica de cada ideologia nos 8 eixos (ordem de EIXOS), de -1 a +1.
-  // São aproximações didáticas para comparar respostas, não definições oficiais.
+  // Posição típica de cada ideologia nos 8 eixos (ordem de EIXOS: economia, costumes, segurança,
+  // ambiente, religião, serviços, participação, impostos), de -1 a +1, e a família para a página de
+  // ideologias. São aproximações didáticas para comparar respostas, não definições oficiais: dentro de
+  // cada corrente há muita variação, e várias delas não cabem bem em eixos de política municipal.
   const IDEOLOGIAS = [
-    ["Socialismo democrático", "Economia planejada pelo Estado, serviços públicos amplos e participação popular nas decisões.", [-.9, -.6, -.6, -.5, -.6, -.9, -.8, -.8]],
-    ["Social-democracia", "Mercado com forte Estado de bem-estar: saúde, educação e proteção social financiadas por impostos progressivos.", [-.5, -.4, -.3, -.3, -.3, -.5, -.4, -.5]],
-    ["Progressismo", "Prioridade para direitos individuais, diversidade e mudança de costumes, com Estado ativo nas políticas sociais.", [-.4, -.9, -.6, -.6, -.7, -.4, -.6, -.3]],
-    ["Ambientalismo", "A proteção da natureza e do clima orienta a economia, as cidades e as obras públicas.", [-.4, -.5, -.3, -1, -.4, -.4, -.6, -.3]],
-    ["Trabalhismo", "Defesa do emprego, dos direitos trabalhistas e de estatais, com posições moderadas nos costumes.", [-.7, .1, 0, .3, 0, -.7, -.2, -.5]],
-    ["Centrismo", "Busca equilíbrio entre os polos e decide caso a caso, sem adesão forte a nenhum lado.", [0, 0, 0, 0, 0, 0, 0, 0]],
-    ["Social-liberalismo", "Mercado livre com rede de proteção social e abertura nos costumes.", [.3, -.5, -.2, -.2, -.4, .2, -.3, .2]],
-    ["Liberalismo econômico", "Estado enxuto, impostos baixos, concessões e menos regulação da economia.", [.9, -.1, .1, .5, -.2, .8, .1, .9]],
-    ["Libertarianismo", "Mínima interferência do Estado tanto na economia quanto na vida pessoal.", [1, -.5, -.3, .6, -.5, 1, -.5, 1]],
-    ["Liberal-conservadorismo", "Mercado livre e Estado enxuto na economia, com valores tradicionais nos costumes.", [.7, .6, .6, .4, .4, .6, .3, .7]],
-    ["Conservadorismo cristão", "Valores religiosos e família tradicional no centro da vida pública.", [.3, .9, .6, .2, .9, .2, .4, .4]],
-    ["Direita linha-dura", "Ordem e segurança em primeiro lugar, com governo forte e penas mais duras.", [.4, .8, 1, .6, .5, .2, .9, .4]],
+    // Esquerda
+    ["Marxismo-leninismo", "Partido único de vanguarda, economia estatal planejada e fim da propriedade privada dos meios de produção.", [-1, -.3, .5, .4, -.8, -1, .9, -.6], "Esquerda"],
+    ["Trotskismo", "Marxismo com revolução permanente e internacional, democracia operária e crítica à burocracia de Estado.", [-1, -.6, -.3, 0, -.8, -1, 0, -.8], "Esquerda"],
+    ["Maoísmo", "Revolução a partir do campo e dos camponeses, mobilização de massas e economia coletivizada.", [-1, .2, .7, .6, -.8, -1, .9, -.6], "Esquerda"],
+    ["Comunismo", "Sociedade sem classes e sem propriedade privada dos meios de produção, com bens repartidos segundo a necessidade.", [-1, -.5, -.2, 0, -.7, -1, -.4, -.9], "Esquerda"],
+    ["Socialismo de mercado", "Empresas de propriedade coletiva ou cooperativa competindo num mercado, com Estado forte nos serviços.", [-.6, -.5, -.3, -.2, -.5, -.6, -.6, -.6], "Esquerda"],
+    ["Socialismo democrático", "Economia planejada pelo Estado, serviços públicos amplos e participação popular nas decisões.", [-.9, -.6, -.6, -.5, -.6, -.9, -.8, -.8], "Esquerda"],
+    ["Ecossocialismo", "Socialismo com a crise climática no centro: economia planejada para respeitar os limites da natureza.", [-.9, -.7, -.5, -1, -.6, -.8, -.8, -.8], "Esquerda"],
+    ["Teologia da libertação", "Corrente cristã que lê o Evangelho a partir dos pobres e defende reformas sociais profundas.", [-.7, .1, -.5, -.4, .6, -.7, -.8, -.7], "Esquerda"],
+    ["Socialismo cristão", "Valores cristãos de solidariedade aplicados à economia: proteção social ampla e Estado atuante.", [-.6, .3, -.2, -.2, .7, -.5, -.4, -.5], "Esquerda"],
+    ["Feminismo socialista", "Liga a desigualdade entre homens e mulheres à economia: trabalho doméstico, cuidado e renda.", [-.8, -.9, -.6, -.4, -.8, -.7, -.7, -.7], "Esquerda"],
+    ["Trabalhismo", "Defesa do emprego, dos direitos trabalhistas e de estatais, com posições moderadas nos costumes.", [-.7, .1, 0, .3, 0, -.7, -.2, -.5], "Esquerda"],
+    ["Populismo de esquerda", "O \"povo\" contra as elites econômicas, com líder forte, programas sociais e Estado indutor.", [-.7, -.2, 0, .3, -.1, -.6, .6, -.4], "Esquerda"],
+    // Anarquismos
+    ["Anarcocomunismo", "Fim do Estado e da propriedade privada, com comunas autogeridas e bens comuns.", [-1, -.8, -1, -.5, -.9, -.4, -1, -.6], "Anarquismos"],
+    ["Anarcossindicalismo", "Sindicatos autogeridos substituem patrões e Estado; greve geral como caminho.", [-.9, -.6, -.9, -.3, -.8, -.5, -1, -.5], "Anarquismos"],
+    ["Municipalismo libertário", "Assembleias de bairro e cidades federadas no lugar do Estado central, com foco ecológico.", [-.7, -.6, -.8, -.8, -.7, -.6, -1, -.4], "Anarquismos"],
+    ["Anarquismo individualista", "Soberania do indivíduo sobre a própria vida e trabalho, sem Estado nem grandes instituições.", [.2, -.8, -.9, 0, -.8, .4, -.9, .7], "Anarquismos"],
+    ["Anarcocapitalismo", "Fim do Estado: segurança, justiça e todos os serviços prestados por empresas no mercado.", [1, -.4, -.4, .7, -.5, 1, -.6, 1], "Anarquismos"],
+    ["Anarcoprimitivismo", "Crítica à civilização industrial e defesa de modos de vida simples e próximos da natureza.", [-.4, -.6, -.8, -1, -.6, -.3, -1, -.2], "Anarquismos"],
+    // Centro
+    ["Social-democracia", "Mercado com forte Estado de bem-estar: saúde, educação e proteção social financiadas por impostos progressivos.", [-.5, -.4, -.3, -.3, -.3, -.5, -.4, -.5], "Centro"],
+    ["Terceira via", "Mercado e responsabilidade fiscal com políticas sociais focalizadas e parcerias com o setor privado.", [.2, -.3, .2, 0, -.2, .3, -.1, 0], "Centro"],
+    ["Centrismo", "Busca equilíbrio entre os polos e decide caso a caso, sem adesão forte a nenhum lado.", [0, 0, 0, 0, 0, 0, 0, 0], "Centro"],
+    ["Democracia cristã", "Economia social de mercado, família e comunidades fortes, com inspiração cristã moderada.", [.1, .5, .3, .1, .6, 0, 0, 0], "Centro"],
+    ["Distributismo", "Propriedade espalhada entre muitos pequenos donos, como agricultores, artesãos e cooperativas.", [-.2, .6, .2, -.3, .7, -.2, -.4, -.1], "Centro"],
+    ["Tecnocracia", "Decisões tomadas por especialistas com base em dados, mais do que por disputa política.", [0, -.2, .3, .2, -.6, .2, .7, 0], "Centro"],
+    ["Georgismo", "Imposto único sobre o valor da terra e liberdade econômica no resto.", [.4, -.2, 0, -.2, -.3, .3, -.2, -.3], "Centro"],
+    ["Ambientalismo", "A proteção da natureza e do clima orienta a economia, as cidades e as obras públicas.", [-.4, -.5, -.3, -1, -.4, -.4, -.6, -.3], "Centro"],
+    ["Progressismo", "Prioridade para direitos individuais, diversidade e mudança de costumes, com Estado ativo nas políticas sociais.", [-.4, -.9, -.6, -.6, -.7, -.4, -.6, -.3], "Centro"],
+    // Liberais
+    ["Social-liberalismo", "Mercado livre com rede de proteção social e abertura nos costumes.", [.3, -.5, -.2, -.2, -.4, .2, -.3, .2], "Liberais"],
+    ["Liberalismo clássico", "Liberdades individuais, Estado limitado, livre comércio e império da lei.", [.7, -.3, 0, .3, -.4, .6, -.2, .7], "Liberais"],
+    ["Liberalismo econômico", "Estado enxuto, impostos baixos, concessões e menos regulação da economia.", [.9, -.1, .1, .5, -.2, .8, .1, .9], "Liberais"],
+    ["Neoliberalismo", "Privatizações, abertura comercial, equilíbrio fiscal e agências reguladoras independentes.", [.8, 0, .3, .5, -.1, .9, .2, .7], "Liberais"],
+    ["Minarquismo", "Estado mínimo, só com polícia, justiça e defesa; o resto fica com o mercado.", [.95, -.3, .2, .6, -.4, .95, -.2, 1], "Liberais"],
+    ["Libertarianismo", "Mínima interferência do Estado tanto na economia quanto na vida pessoal.", [1, -.5, -.3, .6, -.5, 1, -.5, 1], "Liberais"],
+    // Direita
+    ["Liberal-conservadorismo", "Mercado livre e Estado enxuto na economia, com valores tradicionais nos costumes.", [.7, .6, .6, .4, .4, .6, .3, .7], "Direita"],
+    ["Conservadorismo cristão", "Valores religiosos e família tradicional no centro da vida pública.", [.3, .9, .6, .2, .9, .2, .4, .4], "Direita"],
+    ["Paleoconservadorismo", "Tradição, soberania nacional, protecionismo econômico e desconfiança de mudanças rápidas.", [-.1, .9, .7, .4, .7, 0, .5, .4], "Direita"],
+    ["Nacional-conservadorismo", "Nação, família e fé como pilares, com controle de fronteiras e Estado forte na segurança.", [.3, .9, .9, .5, .7, .3, .7, .4], "Direita"],
+    ["Tradicionalismo", "Ordem social baseada na religião, na hierarquia e nos costumes herdados.", [0, 1, .8, .2, 1, 0, .9, .2], "Direita"],
+    ["Monarquismo", "Defesa da monarquia como forma de governo, com o rei como símbolo de continuidade.", [.2, .8, .6, .2, .6, .2, .9, .3], "Direita"],
+    ["Direita linha-dura", "Ordem e segurança em primeiro lugar, com governo forte e penas mais duras.", [.4, .8, 1, .6, .5, .2, .9, .4], "Direita"],
+    ["Populismo de direita", "O \"povo\" contra as elites culturais e políticas, com líder forte, ordem e valores tradicionais.", [.3, .8, .9, .7, .6, .3, .8, .5], "Direita"],
+    // Nacionalismos e autoritarismos
+    ["Nacional-desenvolvimentismo", "Estado indutor da indústria nacional, obras de infraestrutura e proteção à economia do país.", [-.6, .2, .4, .9, 0, -.5, .5, -.2], "Nacionalismos e autoritarismos"],
+    ["Nacionalismo", "A nação em primeiro lugar: soberania, símbolos nacionais e desconfiança de influência estrangeira.", [-.2, .6, .7, .6, .3, -.3, .6, .1], "Nacionalismos e autoritarismos"],
+    ["Integralismo", "Movimento brasileiro dos anos 1930, inspirado no fascismo: nação, Deus, família e Estado corporativo.", [-.5, .9, .9, .5, .9, -.5, 1, -.2], "Nacionalismos e autoritarismos"],
+    ["Fascismo", "Estado totalitário, nacionalismo extremo, culto ao líder e supressão da oposição.", [-.4, .8, 1, .7, .3, -.4, 1, -.1], "Nacionalismos e autoritarismos"],
+    ["Teocracia", "Governo exercido segundo a lei religiosa, com líderes religiosos à frente do Estado.", [0, 1, .9, .3, 1, 0, 1, .2], "Nacionalismos e autoritarismos"],
   ];
+  const FAMILIAS = [...new Set(IDEOLOGIAS.map((x) => x[3]))];
 
   const OPCOES = [[2, "Concordo totalmente"], [1, "Concordo"], [0, "Neutro"], [-1, "Discordo"], [-2, "Discordo totalmente"]];
   const MODOS = { curto: { nome: "Curto", n: 3, min: 4 }, completo: { nome: "Completo", n: 5, min: 7 } };
@@ -176,7 +219,7 @@
         <div>
           <p class="esp-rot">Teste político</p>
           <h1>Onde você fica <span>no mapa político?</span></h1>
-          <p class="esp-lead">Responda frases sobre economia, costumes, segurança, meio ambiente, religião, serviços públicos, participação e impostos. Veja sua posição em 8 eixos e a ideologia mais próxima das suas respostas.</p>
+          <p class="esp-lead">Responda frases sobre economia, costumes, segurança, meio ambiente, religião, serviços públicos, participação e impostos. Veja sua posição em 8 eixos e qual das ${IDEOLOGIAS.length} ideologias fica mais perto das suas respostas.</p>
           <div class="acoes"><a class="botao botao-pr" href="#comecar" target="_self">Começar o teste →</a><a class="botao" href="#eixos" target="_self">Conhecer os eixos</a></div>
           <p class="esp-meta">Grátis · sem cadastro · de 4 a 7 minutos</p>
         </div>
@@ -281,14 +324,18 @@
     </section>`;
   }
 
+  let familia = "";
   function ideologias() {
-    app.innerHTML = `<p class="esp-rot">Teste político</p><h1>As ideologias do teste</h1>
-      <p class="esp-lead">No fim do teste, suas respostas são comparadas com a posição típica de cada ideologia nos 8 eixos. As posições são aproximações didáticas, para orientar a conversa.</p>
-      <div class="esp-ideos">${IDEOLOGIAS.map(([n, t, alvo]) => `
+    const lista = IDEOLOGIAS.filter((x) => !familia || x[3] === familia);
+    app.innerHTML = `<p class="esp-rot">Teste político</p><h1>As ${IDEOLOGIAS.length} ideologias do teste</h1>
+      <p class="esp-lead">No fim do teste, suas respostas são comparadas com a posição típica de cada ideologia nos 8 eixos. As posições são aproximações didáticas, para orientar a conversa: dentro de cada corrente há muita variação.</p>
+      <div class="chips" role="group" aria-label="Família">${["", ...FAMILIAS].map((f) => `<button type="button" class="chip esp-fam" data-f="${f}" aria-pressed="${f === familia}">${f || "Todas"}</button>`).join("")}</div>
+      ${(familia ? [familia] : FAMILIAS).map((f) => `<h2>${f}</h2><div class="esp-ideos">${lista.filter((x) => x[3] === f).map(([n, t, alvo]) => `
         <article class="cartao"><h3>${n}</h3><p>${t}</p>
           <div class="esp-mini">${EIXOS.map((x, i) => `<span title="${x.nome}: ${lado(x, alvo[i])}" style="--v:${alvo[i]}"><i></i></span>`).join("")}</div>
           <p class="esp-mini-leg">${EIXOS.map((x) => x.nome).join(" · ")}</p>
-        </article>`).join("")}</div>`;
+        </article>`).join("")}</div>`).join("")}`;
+    app.querySelectorAll(".esp-fam").forEach((b) => b.addEventListener("click", () => { familia = b.dataset.f; ideologias(); }));
   }
 
   function comecar() {

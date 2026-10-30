@@ -18,7 +18,7 @@ import os
 import re
 import urllib.parse
 from collections import Counter, defaultdict
-from datetime import datetime
+from datetime import date, datetime
 
 from comum import (BASE, CASOS, CIDADE, HISTORICO, LEGISLATURAS_FECHADAS, PROCESSADOS, RAIZ, SITE, SITE_RAIZ,
                    SLUG_CIDADE, TIPOS_DOCUMENTO, URL_BASE, URL_SITE, VEREADORES_EM_EXERCICIO, chave, config_site,
@@ -198,7 +198,7 @@ def versoes_estaticos():
 def preencher(modelo, campos, versoes):
     """Troca {{campo}} e {{v:arquivo}} do modelo. Campos desconhecidos ficam como estão."""
     texto = re.sub(r"\{\{v:([^}]+)\}\}", lambda m: versoes.get(m.group(1), "0"), modelo)
-    return re.sub(r"\{\{([a-z_]+)\}\}", lambda m: str(campos.get(m.group(1), m.group(0))), texto)
+    return re.sub(r"\{\{([a-z_0-9]+)\}\}", lambda m: str(campos.get(m.group(1), m.group(0))), texto)
 
 
 def zap(texto):
@@ -256,6 +256,7 @@ def gravar_entrada(estaticos):
             f'<span class="caso-ler" aria-hidden="true">Ver a Câmara →</span></a>')
         itens.append(f'   <li><a href="{e(slug_c)}/index.html">{e(cfg["nome"])}</a></li>')
         nomes.append(cfg["nome"])
+    numeros, tabela, blocos = resumo_regiao(e)
     site = config_site()
     nome_site = site.get("nome", "Olho na Câmara")
     descricao = ("Observatório independente das Câmaras Municipais de " + ", ".join(nomes[:-1])
@@ -269,10 +270,141 @@ def gravar_entrada(estaticos):
     campos = {"titulo": e(nome_site), "descricao": e(descricao), "og_extra": og, "n_cidades": f"{len(cartoes)} cidade" + ("s" if len(cartoes) != 1 else ""),
               "cartoes": "\n".join(cartoes), "lista_cidades": "\n".join(itens), "faixa": faixa,
               "atualizado": dia, "cidade_padrao": e(listar_cidades()[0]),
-              "zap_href": e(zap(texto_zap)), "zap_texto": e(texto_zap)}
+              "zap_href": e(zap(texto_zap)), "zap_texto": e(texto_zap), "numeros": numeros, "tabela": tabela, **blocos}
     with open(os.path.join(SITE_RAIZ, "_entrada.html"), encoding="utf-8") as f:
         gravar(os.path.join(SITE_RAIZ, "index.html"), preencher(f.read(), campos, estaticos))
     return len(cartoes)
+
+
+def resumo_regiao(e):
+    """Números da região (faixa de destaque) e tabela de comparação das cidades da página de entrada,
+    a partir do que cada coletor já gravou em dados/<cidade>/processados/."""
+    num = lambda n: f"{n:,.0f}".replace(",", ".")
+    reais = lambda v: (f"R$ {v / 1e6:,.1f} mi".replace(",", "X").replace(".", ",").replace("X", ".") if v >= 1e6
+                       else f"R$ {num(v)}")
+    tot = Counter()
+    linhas = []
+    for slug_c in listar_cidades():
+        cfg = ler_arquivo_json(os.path.join(RAIZ, "cidades", f"{slug_c}.json"))
+        proc = lambda nome: ler_arquivo_json(os.path.join(RAIZ, "dados", slug_c, "processados", nome), {})
+        ind, el, gas, em, g26 = proc("indicadores.json"), proc("eleicao_2024.json"), proc("gastos.json"), proc("emendas.json"), proc("eleicao_2026.json")
+        tem_camara = bool(ind) and os.path.exists(os.path.join(SITE_RAIZ, slug_c, "index.html"))
+        g = ind.get("geral", {}) if tem_camara else {}
+        vereadores = sum(v["em_exercicio"] for v in ind.get("vereadores", [])) if tem_camara else cfg.get("cadeiras", 0)
+        ano_g = str(date.today().year - 1)
+        camara = gas.get("orgaos", {}).get("camara", {}).get("anos", {}).get(ano_g, {}).get("total", 0)
+        emendas = sum(a["total"] for a in em.get("autores", []))
+        pref = next((c for c in el.get("prefeito", []) if c["situacao"].startswith("Eleito")), None)
+        pres = [d for d in g26.get("disputas", []) if d["cargo"] == "presidente"]
+        pres = max(pres, key=lambda d: d["turno"]) if pres else None
+        top = pres["candidatos"][0] if pres and pres["candidatos"] else None
+        tot.update({"cidades": 1, "vereadores": vereadores, "votacoes": g.get("total_votacoes", 0),
+                    "proposituras": g.get("total_proposituras", 0), "emendas": emendas, "camara": camara})
+        link = f"{slug_c}/index.html" if tem_camara else f"eleicao.html#{slug_c}"
+        linhas.append(
+            f'<tr><th scope="row"><a href="{e(link)}">{e(cfg["nome"])}</a></th><td class="n">{vereadores}</td>'
+            f'<td class="n">{num(g["total_votacoes"]) if g else "–"}</td><td class="n">{num(g["votacoes_divididas"]) if g else "–"}</td>'
+            f'<td class="n">{num(g["total_proposituras"]) if g else "–"}</td>'
+            f'<td class="n"><a href="gastos.html#{e(slug_c)}">{reais(camara) if camara else "–"}</a></td>'
+            f'<td class="n"><a href="emendas.html#{e(slug_c)}">{reais(emendas) if emendas else "–"}</a></td>'
+            f'<td><a href="eleicao.html#{e(slug_c)}">{e(pref["urna"].title()) if pref else "–"}</a>'
+            + (f' <small>{e(pref["partido"])}</small>' if pref else "") + "</td>"
+            f'<td><a href="eleicao-geral.html#{e(slug_c)}/presidente">{e(top["urna"].title()) + " " + str(round(top["pct"])) + "%" if top else "–"}</a></td></tr>')
+    cab = ("<thead><tr><th>Cidade</th><th class=\"n\">Vereadores</th><th class=\"n\">Votações</th><th class=\"n\">Divididas</th>"
+           "<th class=\"n\">Proposituras</th><th class=\"n\">Câmara pagou em " + str(date.today().year - 1) + "</th>"
+           "<th class=\"n\">Emendas recebidas</th><th>Prefeito eleito (2024)</th><th>Presidente na cidade (2026)</th></tr></thead>")
+    tabela = f'<table class="ent-tabela">{cab}<tbody>{"".join(linhas)}</tbody></table>'
+    numeros = "".join(f'<div class="ent-num"><b>{v}</b><span>{r}</span></div>' for v, r in (
+        (tot["cidades"], "cidades acompanhadas"), (tot["vereadores"], "vereadores"), (num(tot["votacoes"]), "votações registradas"),
+        (num(tot["proposituras"]), "proposituras"), (reais(tot["emendas"]), "em emendas recebidas")))
+    return numeros, tabela, blocos_regiao(e, num, reais)
+
+
+def blocos_regiao(e, num, reais):
+    """Seções extras e desafios da entrada: vereadores que mais e menos compareceram, casos recentes,
+    maiores autores de emendas, presidente 2026 por cidade e os desafios com respostas dos dados."""
+    ano_g = str(date.today().year - 1)
+    vereadores, casos, autores, presid, custo, impostos, divid = [], [], Counter(), [], [], [], []
+    for slug_c in listar_cidades():
+        cfg = ler_arquivo_json(os.path.join(RAIZ, "cidades", f"{slug_c}.json"))
+        proc = lambda nome: ler_arquivo_json(os.path.join(RAIZ, "dados", slug_c, "processados", nome), {})
+        ind, el, gas, em, g26 = proc("indicadores.json"), proc("eleicao_2024.json"), proc("gastos.json"), proc("emendas.json"), proc("eleicao_2026.json")
+        tem_camara = bool(ind) and os.path.exists(os.path.join(SITE_RAIZ, slug_c, "index.html"))
+        if tem_camara:
+            for v in ind["vereadores"]:
+                pr = v.get("presenca") or {}
+                if v["em_exercicio"] and pr.get("pct") is not None and pr.get("presente", 0) + pr.get("ausente", 0) >= 20:
+                    vereadores.append((pr["pct"], pr["ausente"], v, slug_c, cfg["nome"]))
+            g = ind["geral"]
+            if g.get("total_votacoes"):
+                divid.append((cfg["nome"], g["votacoes_divididas"], g["total_votacoes"]))
+        for c in ler_arquivo_json(os.path.join(RAIZ, "casos", slug_c, "casos.json"), []):
+            casos.append((c.get("data", ""), c, slug_c, cfg["nome"]))
+        for a in em.get("autores", []):
+            autores[a["autor"]] += a["total"]
+        p = [d for d in g26.get("disputas", []) if d["cargo"] == "presidente"]
+        if p:
+            d = max(p, key=lambda x: x["turno"])
+            presid.append((cfg["nome"], slug_c, d["candidatos"][:2], d["turno"]))
+        aptos = (el.get("comparecimento", {}).get("prefeito", {}) or {}).get("aptos", 0)
+        cam = gas.get("orgaos", {}).get("camara", {}).get("anos", {}).get(ano_g, {}).get("total", 0)
+        if aptos and cam:
+            custo.append((cam / aptos, cfg["nome"], slug_c))
+        rec = gas.get("receitas", {}).get(ano_g, {})
+        if rec.get("total"):
+            impostos.append((100 * rec["grupos"].get("Impostos e taxas do município", 0) / rec["total"], cfg["nome"], slug_c))
+
+    cartao_v = lambda t: (f'<a class="cartao ent-ver" href="{e(t[3])}/index.html#vereador/{e(t[2]["chave"].replace(" ", "%20"))}">'
+                          + (f'<img src="{e(t[3])}/{e(t[2]["foto"])}" alt="" loading="lazy">' if t[2].get("foto") else "<span></span>")
+                          + f'<span><b>{e(t[2]["nome"].title())}</b><small>{e(t[2].get("partido", ""))} · {e(t[4])}</small></span>'
+                          f'<span class="ent-ver-n">{str(t[0]).replace(".", ",")}%<small>{t[1]} faltas</small></span></a>')
+    vereadores.sort(key=lambda t: (-t[0], t[1]))
+    mais = "".join(cartao_v(t) for t in vereadores[:5])
+    menos = "".join(cartao_v(t) for t in sorted(vereadores, key=lambda t: (t[0], -t[1]))[:5])
+    casos.sort(key=lambda t: t[0], reverse=True)
+    casos_html = "".join(
+        f'<a class="cartao ent-caso" href="{e(sl)}/index.html#caso/{e(c["id"])}"><small>{e(nome)} · {e(d[8:10] + "/" + d[5:7] + "/" + d[:4]) if d else ""}'
+        f' · {e(c.get("tema", ""))}</small><b>{e(c["titulo"])}</b><p>{e(c.get("curto", ""))}</p></a>' for d, c, sl, nome in casos[:4])
+    maior = max(autores.values()) if autores else 1
+    autores_html = "".join(
+        f'<li><span>{e(a)}</span><span class="ent-barra"><i style="width:{100 * v / maior:.0f}%"></i></span><b>{reais(v)}</b></li>'
+        for a, v in autores.most_common(6))
+    presid_html = "".join(
+        f'<a class="ent-pres" href="eleicao-geral.html#{e(sl)}/presidente/{t}"><b>{e(nome)}</b>'
+        f'<span class="ent-pres-barra">' + "".join(f'<i style="width:{c["pct"]:.1f}%" title="{e(c["urna"].title())} {c["pct"]:.1f}%"></i>' for c in cs) + '</span>'
+        f'<small>{" · ".join(e(c["urna"].title()) + " " + str(round(c["pct"])) + "%" for c in cs)}</small></a>'
+        for nome, sl, cs, t in presid)
+
+    # Desafios: chute antes de abrir; respostas calculadas com os dados de hoje.
+    desafios = []
+    if divid:
+        desafios.append(("Em quantas votações das Câmaras alguém votou contra?",
+                         "Chute uma porcentagem antes de abrir.",
+                         " · ".join(f"{e(n)}: {num(d)} de {num(t)} ({f'{100 * d / t:.1f}'.replace('.', ',')}%)" for n, d, t in divid)
+                         + ". A imensa maioria passa sem nenhum voto contra; é nas divididas que os vereadores se diferenciam."))
+    if custo:
+        custo.sort(reverse=True)
+        desafios.append((f"Quanto a Câmara da sua cidade custou por eleitor em {ano_g}?",
+                         "Pense num valor por pessoa, por ano.",
+                         " · ".join(f'{e(n)}: R$ {v:,.0f}'.replace(",", ".") for v, n, _ in custo)
+                         + ". Valor pago pela Câmara no ano dividido pelos eleitores aptos em 2024."))
+    if vereadores:
+        pior = sorted(vereadores, key=lambda t: (t[0], -t[1]))[0]
+        desafios.append(("Qual vereador da região mais faltou às sessões?",
+                         "Tente adivinhar a cidade antes de abrir.",
+                         f'{e(pior[2]["nome"].title())} ({e(pior[4])}), com {str(pior[0]).replace(".", ",")}% de presença e {pior[1]} faltas na legislatura atual. '
+                         "Falta pode ter justificativa: veja o perfil."))
+    if impostos:
+        impostos.sort(reverse=True)
+        desafios.append((f"Quanto da receita da Prefeitura vem de impostos da própria cidade?",
+                         "IPTU, ISS e taxas. Mais ou menos que um quarto?",
+                         " · ".join(f"{e(n)}: {v:.0f}%" for v, n, _ in impostos)
+                         + ". O resto vem de repasses do Estado (ICMS, IPVA), da União (FPM, SUS) e do FUNDEB."))
+    desafio = lambda d: (f'<details class="ent-desafio"><summary><span class="rotulo">Desafio</span><b>{d[0]}</b>'
+                         f'<small>{d[1]} Toque para ver a resposta.</small></summary><p>{d[2]}</p></details>')
+    return {"mais_presentes": mais, "menos_presentes": menos, "casos_recentes": casos_html, "emendas_top": autores_html,
+            "presidente_regiao": presid_html, **{f"desafio_{i + 1}": desafio(d) for i, d in enumerate(desafios)},
+            **{f"desafio_{i + 1}": "" for i in range(len(desafios), 4)}}
 
 
 def espectro_cidade(lista_vot, saida_ver):
