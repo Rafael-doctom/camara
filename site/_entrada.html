@@ -30,28 +30,64 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
   .entrada-extra { margin-top: clamp(28px, 4vw, 44px); }
   .ent-hero h1 span { max-width: 22ch; margin-left: auto; margin-right: auto; }
   .ent-acoes { justify-content: center; margin-top: 22px; flex-wrap: wrap; }
-  .ent-nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 12px; margin: 0 0 clamp(32px, 5vw, 56px); }
-  .ent-num { background: var(--fundo-2); border-radius: var(--raio); padding: 18px 16px; text-align: center; display: grid; gap: 4px; }
-  .ent-num b { font-family: var(--f-serif); font-size: clamp(1.7rem, 3.4vw, 2.3rem); font-weight: 600; line-height: 1.05; }
-  .ent-num span { font-size: .86rem; color: var(--texto-2); }
+  /* Faixa de números: régua editorial, sem caixas */
+  .ent-nums { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 2px solid var(--texto); border-bottom: 1px solid var(--linha); margin: 0 0 clamp(32px, 5vw, 56px); }
+  .ent-num { padding: 18px 16px 16px; display: grid; gap: 6px; align-content: start; border-left: 1px solid var(--linha); }
+  .ent-num:first-child { border-left: 0; }
+  .ent-num b { font-family: var(--f-serif); font-size: clamp(1.7rem, 3.4vw, 2.5rem); font-weight: 600; line-height: 1; }
+  .ent-num span { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--texto-2); }
+  @media (max-width: 760px) { .ent-nums { grid-template-columns: 1fr 1fr; } .ent-num { border-left: 0; border-top: 1px solid var(--linha); } .ent-num:nth-child(even) { border-left: 1px solid var(--linha); } .ent-num:nth-child(-n+2) { border-top: 0; } .ent-num:last-child:nth-child(odd) { grid-column: 1 / -1; } }
+  /* Cidades: lista em linhas, com régua de atividade */
+  .cid-lista { border-top: 2px solid var(--texto); }
+  .cid-linha { display: grid; grid-template-columns: minmax(170px, 1.1fr) 3fr auto; gap: 8px 24px; align-items: center; padding: 18px 8px; border-bottom: 1px solid var(--linha); color: inherit; text-decoration: none; transition: background .15s; }
+  .cid-linha:hover { background: var(--fundo-2); }
+  .cid-nome { display: grid; gap: 2px; }
+  .cid-nome small { font-family: var(--f-mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; color: var(--acento); }
+  .cid-nome b { font-family: var(--f-serif); font-size: clamp(1.45rem, 2.6vw, 1.9rem); font-weight: 600; line-height: 1.1; }
+  .cid-stats { display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: baseline; font-size: .88rem; color: var(--texto-2); }
+  .cid-stats b { font-family: var(--f-serif); font-size: 1.15rem; font-weight: 600; color: var(--texto); }
+  .cid-barra { flex-basis: 100%; height: 4px; border-radius: 2px; background: var(--fundo-2); overflow: hidden; margin-top: 4px; }
+  .cid-barra i { display: block; height: 100%; background: var(--acento); }
+  .cid-aviso { font-size: .82rem; color: var(--suave); flex-basis: 100%; }
+  .cid-ir { font-family: var(--f-mono); font-size: .8rem; white-space: nowrap; }
+  .cid-linha:hover .cid-ir { color: var(--acento); }
+  @media (max-width: 700px) { .cid-linha { grid-template-columns: 1fr auto; } .cid-stats { grid-column: 1 / -1; grid-row: 2; } .cid-ir { grid-row: 1; grid-column: 2; } }
   .ent-secao { margin: clamp(36px, 6vw, 64px) 0; }
   .ent-secao h2 { margin-top: 4px; }
   .ent-intro { color: var(--texto-2); max-width: 70ch; margin: 0 0 16px; }
   .ent-grupo { margin: 26px 0 10px; font-size: 1.05rem; }
-  .ent-alertas { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 12px; margin-bottom: 14px; }
-  .ent-alerta { display: grid; gap: 6px; padding: 14px 16px; color: inherit; text-decoration: none; }
-  .ent-alerta:hover { border-color: var(--texto); }
-  .ent-alerta small { font-family: var(--f-mono); font-size: .74rem; color: var(--suave); }
-  .ent-alerta p { margin: 0; font-size: .88rem; color: var(--texto-2); }
+  /* Esta semana: linha do tempo agrupada por dia */
+  .ent-tl { display: grid; gap: 0; margin: 4px 0 18px; }
+  .ent-tl-dia { display: grid; grid-template-columns: 92px 1fr; gap: 16px; }
+  .ent-tl-data { font-family: var(--f-mono); font-size: .78rem; color: var(--texto-2); padding-top: 14px; text-align: right; }
+  .ent-tl-data b { display: block; font-family: var(--f-serif); font-size: 1.7rem; color: var(--texto); line-height: 1; }
+  .ent-tl-itens { border-left: 2px solid var(--linha); padding: 6px 0 14px 22px; display: grid; gap: 4px; }
+  .ent-alerta { position: relative; display: grid; gap: 3px; padding: 10px 12px; border-radius: var(--raio); color: inherit; text-decoration: none; }
+  .ent-alerta:hover { background: var(--fundo-2); }
+  .ent-alerta::before { content: attr(data-ico); position: absolute; left: -38px; top: 10px; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-size: .72rem; font-weight: 700; background: var(--fundo); border: 2px solid var(--acento); color: var(--acento); }
+  .ent-alerta small { font-family: var(--f-mono); font-size: .72rem; color: var(--suave); }
+  .ent-alerta b { font-size: 1rem; }
+  .ent-alerta p { margin: 0; font-size: .88rem; color: var(--texto-2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  @media (max-width: 560px) { .ent-tl-dia { grid-template-columns: 1fr; gap: 0; } .ent-tl-data { text-align: left; padding: 10px 0 4px; } .ent-tl-data b { display: inline; font-size: 1.2rem; margin-right: 6px; } .ent-tl-itens { margin-left: 13px; } }
   .ent-tabela { width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 760px; }
   .ent-tabela th, .ent-tabela td { padding: 9px 8px; border-bottom: 1px solid var(--linha); text-align: left; vertical-align: top; }
   .ent-tabela thead th { font-size: .78rem; color: var(--texto-2); font-weight: 600; }
   .ent-tabela .n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .ent-tabela a { color: inherit; }
   .ent-tabela small { color: var(--suave); }
-  .ent-passos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; margin: 12px 0 18px; }
+  /* De onde vêm os dados: etapas ligadas por uma linha + tabela de fontes */
+  .ent-passos { list-style: none; padding: 0; margin: 18px 0 26px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: passo; position: relative; }
+  .ent-passos::before { content: ""; position: absolute; top: 21px; left: 22px; right: 22px; height: 2px; background: var(--linha); }
+  .ent-passos li { position: relative; counter-increment: passo; }
+  .ent-passos li::before { content: counter(passo); display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--texto); color: var(--fundo); font-family: var(--f-serif); font-size: 1.3rem; font-weight: 600; position: relative; margin-bottom: 12px; }
+  .ent-passos b { font-size: 1.05rem; }
   .ent-passos p { margin: 6px 0 0; font-size: .9rem; color: var(--texto-2); }
-  .ent-fontes { margin: 0; padding-left: 20px; display: grid; gap: 6px; color: var(--texto-2); }
+  @media (max-width: 700px) { .ent-passos { grid-template-columns: 1fr; gap: 0; } .ent-passos::before { top: 22px; bottom: 22px; left: 21px; right: auto; width: 2px; height: auto; } .ent-passos li { padding: 0 0 18px 62px; } .ent-passos li::before { position: absolute; left: 0; top: 0; } }
+  .ent-fontes { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  .ent-fontes th, .ent-fontes td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--linha); vertical-align: top; }
+  .ent-fontes thead th { font-family: var(--f-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--texto-2); font-weight: 500; border-bottom: 2px solid var(--texto); }
+  .ent-fontes td { color: var(--texto-2); } .ent-fontes td:last-child { white-space: nowrap; font-family: var(--f-mono); font-size: .8rem; }
+  @media (max-width: 600px) { .ent-fontes thead { display: none; } .ent-fontes tr { display: grid; padding: 10px 0; border-bottom: 1px solid var(--linha); } .ent-fontes th, .ent-fontes td { border: 0; padding: 2px 0; } }
   .ent-faq { display: grid; gap: 8px; max-width: 820px; }
   .ent-faq details { background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); padding: 12px 16px; }
   .ent-faq summary { cursor: pointer; font-weight: 600; }
@@ -74,9 +110,38 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
   .ent-ver img, .ent-ver > span:first-child { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: top; background: var(--fundo-2); }
   .ent-ver small { display: block; color: var(--suave); font-size: .78rem; }
   .ent-ver-n { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
-  .ent-caso { display: grid; gap: 6px; padding: 14px 16px; color: inherit; text-decoration: none; }
-  .ent-caso small { font-family: var(--f-mono); font-size: .74rem; color: var(--suave); }
+  .ent-ver-barra { grid-column: 2 / -1; height: 4px; border-radius: 2px; background: var(--fundo-2); overflow: hidden; }
+  .ent-ver-barra i { display: block; height: 100%; background: var(--acento); }
+  /* Casos: o mais recente em destaque, os outros em lista com data */
+  .ent-casos { display: grid; grid-template-columns: 1.25fr 1fr; gap: 0 32px; border-top: 2px solid var(--texto); }
+  .ent-caso { display: grid; grid-template-columns: 64px 1fr; gap: 14px; padding: 14px 4px; border-bottom: 1px solid var(--linha); color: inherit; text-decoration: none; }
+  .ent-caso:hover b { text-decoration: underline; text-decoration-color: var(--acento); }
+  .ent-caso time { font-family: var(--f-mono); font-size: .72rem; color: var(--texto-2); text-transform: uppercase; }
+  .ent-caso time b { display: block; font-family: var(--f-serif); font-size: 1.8rem; color: var(--texto); line-height: 1; text-decoration: none !important; }
+  .ent-caso > span { display: grid; gap: 4px; }
+  .ent-caso small { font-family: var(--f-mono); font-size: .72rem; color: var(--acento); }
   .ent-caso p { margin: 0; font-size: .88rem; color: var(--texto-2); }
+  .ent-caso-1 { grid-row: span 4; grid-template-columns: 1fr; align-content: start; padding: 22px 4px; border-bottom: 0; }
+  .ent-caso-1 time { display: flex; gap: 8px; align-items: baseline; }
+  .ent-caso-1 time b { font-size: 3rem; }
+  .ent-caso-1 > span > b { font-family: var(--f-serif); font-size: clamp(1.4rem, 2.8vw, 2rem); line-height: 1.15; font-weight: 600; }
+  .ent-caso-1 p { font-size: 1rem; }
+  @media (max-width: 760px) { .ent-casos { grid-template-columns: 1fr; } .ent-caso-1 { grid-row: auto; border-bottom: 1px solid var(--linha); } }
+  /* Explore por tema: índice numerado */
+  .ent-indice { display: grid; grid-template-columns: 200px 1fr; gap: 0 28px; border-top: 2px solid var(--texto); }
+  .ent-indice > h3 { margin: 0; padding: 18px 0 0; font-family: var(--f-mono); font-size: .76rem; text-transform: uppercase; letter-spacing: .05em; color: var(--acento); font-weight: 600; }
+  .ent-indice > div { display: grid; }
+  .ent-indice > h3, .ent-indice > div { border-bottom: 1px solid var(--linha); }
+  .ent-indice > :nth-last-child(-n+2) { border-bottom: 0; }
+  .ent-item { display: grid; grid-template-columns: 52px 1fr auto; gap: 4px 16px; align-items: baseline; padding: 16px 8px; color: inherit; text-decoration: none; border-top: 1px dashed var(--linha); }
+  .ent-item:first-child { border-top: 0; }
+  .ent-item:hover { background: var(--fundo-2); }
+  .ent-item > i { font-style: normal; font-family: var(--f-serif); font-size: 1.6rem; color: var(--suave); grid-row: span 2; }
+  .ent-item b { font-family: var(--f-serif); font-size: 1.3rem; font-weight: 600; }
+  .ent-item small { font-family: var(--f-mono); font-size: .72rem; color: var(--texto-2); text-align: right; }
+  .ent-item span { grid-column: 2 / -1; color: var(--texto-2); font-size: .9rem; }
+  .ent-item:hover > i { color: var(--acento); }
+  @media (max-width: 700px) { .ent-indice { grid-template-columns: 1fr; } .ent-indice > h3 { border-bottom: 0; } .ent-item { grid-template-columns: 40px 1fr; } .ent-item small { grid-column: 2; text-align: left; } }
   .ent-autores { padding-left: 22px; display: grid; gap: 8px; margin: 10px 0; }
   .ent-autores li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(60px, 30%) auto; gap: 10px; align-items: center; font-size: .9rem; }
   .ent-barra, .ent-pres-barra { display: flex; height: 10px; border-radius: 5px; background: var(--fundo-2); overflow: hidden; }
@@ -91,9 +156,38 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
   .ent-meu { display: grid; gap: 8px; }
   .ent-escolher { display: grid; gap: 10px; max-width: 420px; }
   .ent-escolher label { display: grid; gap: 4px; font-size: .82rem; color: var(--texto-2); }
-  .ent-glossario { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 12px; margin: 12px 0 0; }
-  .ent-glossario div { background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); padding: 14px 16px; }
-  .ent-glossario dt { font-weight: 700; } .ent-glossario dd { margin: 6px 0 0; color: var(--texto-2); font-size: .9rem; }
+  /* Glossário: verbete à esquerda, definição à direita, como num dicionário */
+  .ent-glossario { margin: 12px 0 0; border-top: 2px solid var(--texto); columns: 2 380px; column-gap: 40px; }
+  .ent-glossario div { display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--linha); break-inside: avoid; }
+  .ent-glossario dt { font-family: var(--f-serif); font-size: 1.15rem; font-weight: 600; }
+  .ent-glossario dd { margin: 0; color: var(--texto-2); font-size: .9rem; }
+  @media (max-width: 520px) { .ent-glossario div { grid-template-columns: 1fr; gap: 4px; } }
+  /* Carrossel de vereadores */
+  .car-topo { display: flex; justify-content: space-between; align-items: end; gap: 12px; flex-wrap: wrap; }
+  .car-ctrl { display: flex; gap: 6px; }
+  .car-btn { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--linha); background: var(--cartao); color: var(--texto); font-size: 1rem; cursor: pointer; }
+  .car-btn:hover { border-color: var(--texto); }
+  #car-pausa { font-size: .7rem; letter-spacing: -1px; }
+  .car { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 170px); gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 14px 2px 16px; scrollbar-width: thin; mask-image: linear-gradient(90deg, #000 92%, transparent); }
+  .car-v { scroll-snap-align: start; display: grid; gap: 6px; color: inherit; text-decoration: none; }
+  .car-foto { aspect-ratio: 4 / 5; border-radius: var(--raio); overflow: hidden; background: var(--fundo-2); position: relative; }
+  .car-foto img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .5s ease, filter .5s ease; filter: grayscale(.35); }
+  .car-v:hover .car-foto img, .car-v:focus-visible .car-foto img { transform: scale(1.06); filter: none; }
+  .car-foto span { position: absolute; left: 8px; bottom: 8px; background: var(--texto); color: var(--fundo); font-family: var(--f-mono); font-size: .68rem; padding: 3px 7px; border-radius: 99px; }
+  .car-v b { font-size: .92rem; line-height: 1.2; }
+  .car-v small { color: var(--texto-2); font-size: .78rem; }
+  .car-pres { height: 4px; border-radius: 2px; background: var(--fundo-2); overflow: hidden; }
+  .car-pres i { display: block; height: 100%; background: var(--acento); }
+  /* Barras crescem quando aparecem na tela */
+  .anima-barras .cid-barra i, .anima-barras .ent-ver-barra i, .anima-barras .ent-barra i, .anima-barras .ent-pres-barra i { transition: width 1.1s cubic-bezier(.2,.7,.2,1); }
+  .barras-zeradas .cid-barra i, .barras-zeradas .ent-ver-barra i, .barras-zeradas .ent-barra i, .barras-zeradas .ent-pres-barra i { width: 0 !important; }
+  /* Itens que entram em sequência */
+  .revela-filho { opacity: 0; transform: translateY(10px); transition: opacity .45s ease, transform .45s ease; }
+  .revela-filho.visto { opacity: 1; transform: none; }
+  .ent-num b { font-variant-numeric: tabular-nums; }
+  .ent-hero h1 { animation: ent-sobe .8s ease both; } .ent-hero h1 span { animation: ent-sobe .8s .15s ease both; } .ent-hero > p, .ent-acoes { animation: ent-sobe .8s .3s ease both; }
+  @keyframes ent-sobe { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .revela-filho { opacity: 1; transform: none; transition: none; } .ent-hero h1, .ent-hero h1 span, .ent-hero > p, .ent-acoes { animation: none; } .car { scroll-behavior: auto; } .barras-zeradas .cid-barra i, .barras-zeradas .ent-ver-barra i, .barras-zeradas .ent-barra i, .barras-zeradas .ent-pres-barra i { width: auto !important; } }
   .revela { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
   .revela.visto { opacity: 1; transform: none; }
   @media (prefers-reduced-motion: reduce) { .revela { opacity: 1; transform: none; transition: none; } }
@@ -103,7 +197,7 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
 <a class="pular" href="#app" target="_self">Pular para o conteúdo</a>
 <header class="topo">
   <div class="topo-in">
-    <a class="marca" href="index.html"><span class="marca-olho">●</span> Olho na Câmara <small>{{n_cidades}}</small></a>
+    <a class="marca" href="index.html" target="_self"><span class="marca-olho">●</span> Olho na Câmara <small>{{n_cidades}}</small></a>
     <div class="topo-acoes">
       <button type="button" class="tema-btn" aria-label="Ativar modo escuro" aria-pressed="false"><span class="tema-ico" aria-hidden="true"></span></button>
     </div>
@@ -127,11 +221,19 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
     <p class="rotulo">Comece por aqui</p>
     <h2 id="cidades">Escolha a sua cidade</h2>
     <p class="ent-intro">Cada cidade tem a página da Câmara: vereadores, presença, votações, projetos, casos documentados e o quiz "com qual vereador você vota igual?".</p>
-    <div class="grade-explore cidades">
+    <div class="cid-lista">
 {{cartoes}}
     </div>
   </section>
 
+
+  <section aria-labelledby="t-carrossel" class="ent-secao">
+    <div class="car-topo">
+      <div><p class="rotulo">Quem são</p><h2 id="t-carrossel">Os vereadores da região</h2></div>
+      <div class="car-ctrl"><button type="button" class="car-btn" data-car="-1" aria-label="Anteriores">←</button><button type="button" class="car-btn" data-car="1" aria-label="Próximos">→</button><button type="button" class="car-btn" id="car-pausa" aria-label="Pausar a passagem automática" aria-pressed="false">❚❚</button></div>
+    </div>
+    <div class="car" id="car-vereadores" role="region" aria-label="Vereadores em exercício" tabindex="0"></div>
+  </section>
 
   <section aria-labelledby="t-meu" class="ent-secao revela">
     <div class="ent-duas">
@@ -160,7 +262,7 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
     <p class="rotulo">Atualizado a cada coleta</p>
     <h2 id="t-semana">Esta semana</h2>
     <p class="ent-intro">Votações divididas, projetos novos e pagamentos fora do padrão nas cidades acompanhadas.</p>
-    <div class="ent-alertas" id="ent-alertas"><p class="suave">Carregando os alertas…</p></div>
+    <div class="ent-tl" id="ent-alertas"><p class="suave">Carregando os alertas…</p></div>
     <p><a class="botao" href="alertas.html">Ver todos os alertas →</a></p>
   </section>
 
@@ -191,7 +293,7 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
   <section aria-labelledby="t-casos" class="ent-secao revela">
     <p class="rotulo">Verificados com documentos oficiais</p>
     <h2 id="t-casos">Casos documentados recentes</h2>
-    <div class="ent-alertas">{{casos_recentes}}</div>
+    <div class="ent-casos">{{casos_recentes}}</div>
   </section>
 
   <section aria-labelledby="t-dinheiro" class="ent-secao revela">
@@ -216,23 +318,23 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
     <p class="rotulo">Explore por tema</p>
     <h2 id="t-temas">O que mais tem no site</h2>
 
-    <h3 class="ent-grupo">Dinheiro público</h3>
-    <div class="grade-explore">
-      <a class="explore" href="gastos.html"><span class="rotulo">TCE-SP</span><span class="explore-t">Gastos e receitas</span><span class="explore-d">Quanto a Câmara e a Prefeitura de cada cidade pagaram, para quem, e de onde vem o dinheiro.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-      <a class="explore" href="emendas.html"><span class="rotulo">Portal da Transparência</span><span class="explore-t">Emendas parlamentares</span><span class="explore-d">Quanto cada deputado e senador mandou para cada cidade, e quem recebeu.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-    </div>
-
-    <h3 class="ent-grupo">Eleições</h3>
-    <div class="grade-explore">
-      <a class="explore" href="eleicao.html"><span class="rotulo">TSE · 2024</span><span class="explore-t">Eleição municipal</span><span class="explore-d">Votos de cada candidato a prefeito e vereador, quociente eleitoral, gastos de campanha e mapa de votos por local de votação.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-      <a class="explore" href="eleicao-geral.html"><span class="rotulo">TSE · 2026</span><span class="explore-t">Eleição 2026</span><span class="explore-d">Como cada cidade votou para presidente, governador, senador e deputados, com mapa por local de votação.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-    </div>
-
-    <h3 class="ent-grupo">Congresso e ideologia</h3>
-    <div class="grade-explore">
-      <a class="explore" href="deputados.html"><span class="rotulo">Câmara dos Deputados · Senado</span><span class="explore-t">Deputados e senadores de SP</span><span class="explore-d">Quanto cada um gasta da cota parlamentar, com quais empresas, e como votou em temas como meio ambiente e impostos.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-      <a class="explore" href="espectro.html"><span class="rotulo">Teste</span><span class="explore-t">Painel ideológico</span><span class="explore-d">Responda frases sobre 8 temas, veja onde você fica no espectro e quais políticos votaram parecido com você.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
-      <a class="explore" href="alertas.html"><span class="rotulo">Toda semana</span><span class="explore-t">Alertas</span><span class="explore-d">O que mudou: votações divididas, projetos novos, gastos fora do padrão e casos.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
+    <div class="ent-indice">
+      <h3>Dinheiro público</h3>
+      <div>
+        <a class="ent-item" href="gastos.html"><i>01</i><b>Gastos e receitas</b><small>TCE-SP</small><span>Quanto a Câmara e a Prefeitura de cada cidade pagaram, para quem, e de onde vem o dinheiro.</span></a>
+        <a class="ent-item" href="emendas.html"><i>02</i><b>Emendas parlamentares</b><small>Portal da Transparência</small><span>Quanto cada deputado e senador mandou para cada cidade, e quem recebeu.</span></a>
+      </div>
+      <h3>Eleições</h3>
+      <div>
+        <a class="ent-item" href="eleicao.html"><i>03</i><b>Eleição municipal</b><small>TSE · 2024</small><span>Votos de cada candidato a prefeito e vereador, quociente eleitoral, gastos de campanha e mapa de votos por local de votação.</span></a>
+        <a class="ent-item" href="eleicao-geral.html"><i>04</i><b>Eleição 2026</b><small>TSE · 2026</small><span>Como cada cidade votou para presidente, governador, senador e deputados, com mapa por local de votação.</span></a>
+      </div>
+      <h3>Congresso e ideologia</h3>
+      <div>
+        <a class="ent-item" href="deputados.html"><i>05</i><b>Deputados e senadores de SP</b><small>Câmara · Senado</small><span>Quanto cada um gasta da cota parlamentar, com quais empresas, e como votou em temas como meio ambiente e impostos.</span></a>
+        <a class="ent-item" href="espectro.html"><i>06</i><b>Painel ideológico</b><small>Teste</small><span>Responda frases sobre 8 temas, veja onde você fica no espectro e quais políticos votaram parecido com você.</span></a>
+        <a class="ent-item" href="alertas.html"><i>07</i><b>Alertas da semana</b><small>Toda semana</small><span>O que mudou: votações divididas, projetos novos, gastos fora do padrão e casos. Também por WhatsApp e RSS.</span></a>
+      </div>
     </div>
   </section>
 
@@ -254,18 +356,21 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
   <section aria-labelledby="t-fontes" class="ent-secao">
     <p class="rotulo">Transparência sobre a transparência</p>
     <h2 id="t-fontes">De onde vêm os dados</h2>
-    <div class="ent-passos">
-      <div class="cartao"><b>1. Coleta automática</b><p>Programas leem as fontes oficiais todos os dias: as APIs da Câmara dos Deputados, do Senado e do TCE-SP, os arquivos abertos do TSE e da CGU e as páginas do SisCam de cada Câmara.</p></div>
-      <div class="cartao"><b>2. Conferência</b><p>Cada coleta passa por checagens: total de vereadores, quedas bruscas nos números, soma dos votos por local igual ao total da cidade. Se algo não bate, os dados anteriores são mantidos.</p></div>
-      <div class="cartao"><b>3. Casos verificados</b><p>Denúncias e postagens só entram como "caso" depois de conferidas com documentos oficiais, com link para cada fonte.</p></div>
-    </div>
-    <ul class="ent-fontes">
-      <li><a href="https://tatui.siscam.com.br" rel="noopener">SisCam</a> das Câmaras Municipais (proposituras, sessões, votos e presença)</li>
-      <li><a href="https://transparencia.tce.sp.gov.br" rel="noopener">TCE-SP</a>, transparência municipal (despesas e receitas)</li>
-      <li><a href="https://dadosabertos.tse.jus.br" rel="noopener">TSE</a>, Portal de Dados Abertos (candidatos, votos por seção, prestação de contas)</li>
-      <li><a href="https://portaldatransparencia.gov.br" rel="noopener">Portal da Transparência</a> (emendas parlamentares)</li>
-      <li><a href="https://dadosabertos.camara.leg.br" rel="noopener">Câmara dos Deputados</a> e <a href="https://www12.senado.leg.br/dados-abertos" rel="noopener">Senado Federal</a> (parlamentares, votos e gastos)</li>
-    </ul>
+    <ol class="ent-passos">
+      <li><b>Coleta automática</b><p>Programas leem as fontes oficiais todos os dias: APIs da Câmara dos Deputados, do Senado e do TCE-SP, arquivos abertos do TSE e da CGU e as páginas do SisCam de cada Câmara.</p></li>
+      <li><b>Conferência</b><p>Cada coleta passa por checagens: total de vereadores, quedas bruscas nos números, soma dos votos por local igual ao total da cidade. Se algo não bate, os dados anteriores são mantidos.</p></li>
+      <li><b>Casos verificados</b><p>Denúncias e postagens só entram como "caso" depois de conferidas com documentos oficiais, com link para cada fonte.</p></li>
+    </ol>
+    <table class="ent-fontes">
+      <thead><tr><th>Fonte</th><th>O que traz</th><th>Atualização</th></tr></thead>
+      <tbody>
+        <tr><th><a href="https://tatui.siscam.com.br" rel="noopener">SisCam</a> das Câmaras</th><td>Proposituras, sessões, votos nominais e presença</td><td>Diária</td></tr>
+        <tr><th><a href="https://transparencia.tce.sp.gov.br" rel="noopener">TCE-SP</a></th><td>Despesas pagas e receitas da Câmara e da Prefeitura</td><td>Mensal</td></tr>
+        <tr><th><a href="https://portaldatransparencia.gov.br" rel="noopener">Portal da Transparência</a></th><td>Emendas parlamentares por cidade e favorecido</td><td>Diária</td></tr>
+        <tr><th><a href="https://dadosabertos.camara.leg.br" rel="noopener">Câmara dos Deputados</a> e <a href="https://www12.senado.leg.br/dados-abertos" rel="noopener">Senado</a></th><td>Parlamentares de SP, votos e gastos da cota</td><td>Diária</td></tr>
+        <tr><th><a href="https://dadosabertos.tse.jus.br" rel="noopener">TSE</a></th><td>Candidatos, votos por seção, locais de votação e prestação de contas</td><td>A cada eleição</td></tr>
+      </tbody>
+    </table>
   </section>
 
   <section aria-labelledby="t-faq" class="ent-secao">
@@ -342,23 +447,23 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
   if (!A || !A.itens.length) { alvo.innerHTML = '<p class="suave">Sem alertas nesta semana.</p>'; return; }
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
   var tipos = { votacao: "Votação dividida", propositura: "Projeto ou moção", gasto: "Gasto fora do padrão", caso: "Caso documentado" };
+  var icones = { votacao: "⚖", propositura: "✎", gasto: "R$", caso: "!" };
+  var meses = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
   var escolhidos = [], vistos = {};
-  A.itens.forEach(function (x) { if (escolhidos.length < 4 && !vistos[x.tipo]) { vistos[x.tipo] = 1; escolhidos.push(x); } });
-  A.itens.forEach(function (x) { if (escolhidos.length < 4 && escolhidos.indexOf(x) < 0) escolhidos.push(x); });
-  alvo.innerHTML = escolhidos.map(function (x) {
-    var cidade = A.resumo[x.cidade] ? A.resumo[x.cidade].cidade : x.cidade;
-    return '<a class="cartao ent-alerta" href="' + esc(x.link) + '"><small>' + esc(tipos[x.tipo] || x.tipo) + " · " + esc(cidade) + " · " +
-      esc(x.data.slice(0, 10).split("-").reverse().join("/")) + "</small><b>" + esc(x.titulo) + "</b><p>" + esc(x.detalhe) + "</p></a>";
+  A.itens.forEach(function (x) { if (escolhidos.length < 6 && !vistos[x.tipo]) { vistos[x.tipo] = 1; escolhidos.push(x); } });
+  A.itens.forEach(function (x) { if (escolhidos.length < 6 && escolhidos.indexOf(x) < 0) escolhidos.push(x); });
+  // Linha do tempo: agrupa por dia, do mais recente para o mais antigo.
+  escolhidos.sort(function (a, b) { return a.data < b.data ? 1 : -1; });
+  var dias = [];
+  escolhidos.forEach(function (x) { var d = x.data.slice(0, 10); if (!dias.length || dias[dias.length - 1].d !== d) dias.push({ d: d, itens: [] }); dias[dias.length - 1].itens.push(x); });
+  alvo.innerHTML = dias.map(function (g) {
+    return '<div class="ent-tl-dia revela-filho"><div class="ent-tl-data"><b>' + g.d.slice(8, 10) + "</b>" + meses[+g.d.slice(5, 7) - 1] + " " + g.d.slice(0, 4) +
+      '</div><div class="ent-tl-itens">' + g.itens.map(function (x) {
+        var cidade = A.resumo[x.cidade] ? A.resumo[x.cidade].cidade : x.cidade;
+        return '<a class="ent-alerta" data-ico="' + esc(icones[x.tipo] || "•") + '" href="' + esc(x.link) + '"><small>' + esc(tipos[x.tipo] || x.tipo) + " · " + esc(cidade) +
+          "</small><b>" + esc(x.titulo) + "</b><p>" + esc(x.detalhe) + "</p></a>";
+      }).join("") + "</div></div>";
   }).join("");
-})();
-</script>
-<script>
-/* Revela seções, frases e desafios ao rolar. Sem suporte ou com movimento reduzido, tudo já aparece. */
-(function () {
-  var els = document.querySelectorAll(".revela");
-  if (!("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("visto"); }); return; }
-  var io = new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add("visto"); io.unobserve(x.target); } }); }, { rootMargin: "0px 0px -8% 0px" });
-  els.forEach(function (e) { io.observe(e); });
 })();
 </script>
 <script>window.VEREADORES_REGIAO = {{vereadores_json}};</script>
@@ -402,6 +507,78 @@ if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + 
     cc.addEventListener("change", enche); enche();
     fc.addEventListener("submit", function (e) { e.preventDefault(); if (ca.value && cb.value && ca.value !== cb.value) location.href = cc.value + "/index.html#comparar/" + encodeURIComponent(ca.value + "|" + cb.value); });
   }
+})();
+</script>
+<script>
+/* Carrossel dos vereadores da região: rola sozinho a cada 4 s (pausa ao passar o mouse, ao focar,
+   no botão de pausa ou com movimento reduzido), com setas e rolagem por toque. */
+(function () {
+  var R = window.VEREADORES_REGIAO || {}, car = document.getElementById("car-vereadores");
+  if (!car) return;
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  var titulo = function (s) { return String(s).toLowerCase().replace(/(^|\s)\S/g, function (c) { return c.toUpperCase(); }); };
+  var todos = [];
+  Object.keys(R).forEach(function (s) { R[s].vereadores.forEach(function (v) { if (v.f) todos.push([s, v]); }); });
+  // Embaralha para cada visita mostrar outra ordem, sem favorecer cidade ou partido.
+  for (var i = todos.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = todos[i]; todos[i] = todos[j]; todos[j] = t; }
+  car.innerHTML = todos.map(function (a) {
+    var s = a[0], v = a[1];
+    return '<a class="car-v" href="' + s + "/index.html#vereador/" + encodeURIComponent(v.c) + '"><span class="car-foto"><img src="' + s + "/" + esc(v.f) + '" alt="" loading="lazy"><span>' + esc(R[s].nome) + "</span></span>" +
+      "<b>" + esc(titulo(v.n)) + "</b><small>" + esc(v.p || "sem partido") + " · " + String(v.pr).replace(".", ",") + "% de presença</small>" +
+      '<span class="car-pres"><i style="width:' + v.pr + '%"></i></span></a>';
+  }).join("");
+  var passo = function (d) { var w = car.firstElementChild ? car.firstElementChild.getBoundingClientRect().width + 14 : 180;
+    var fim = car.scrollLeft + car.clientWidth >= car.scrollWidth - 4;
+    if (d > 0 && fim) car.scrollTo({ left: 0 }); else car.scrollBy({ left: d * w * Math.max(1, Math.floor(car.clientWidth / w) - 1) }); };
+  document.querySelectorAll("[data-car]").forEach(function (b) { b.addEventListener("click", function () { passo(+b.dataset.car); }); });
+  car.addEventListener("keydown", function (e) { if (e.key === "ArrowRight") { e.preventDefault(); passo(1); } if (e.key === "ArrowLeft") { e.preventDefault(); passo(-1); } });
+  var reduzido = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var pausado = reduzido, sobre = false, visivel = false, bp = document.getElementById("car-pausa");
+  var marcar = function () { bp.setAttribute("aria-pressed", String(pausado)); bp.textContent = pausado ? "▶" : "❚❚"; bp.setAttribute("aria-label", pausado ? "Retomar a passagem automática" : "Pausar a passagem automática"); };
+  bp.addEventListener("click", function () { pausado = !pausado; marcar(); }); marcar();
+  ["mouseenter", "focusin", "touchstart"].forEach(function (ev) { car.addEventListener(ev, function () { sobre = true; }, { passive: true }); });
+  ["mouseleave", "focusout"].forEach(function (ev) { car.addEventListener(ev, function () { sobre = false; }); });
+  if ("IntersectionObserver" in window) new IntersectionObserver(function (es) { visivel = es[0].isIntersecting; }).observe(car); else visivel = true;
+  setInterval(function () { if (!pausado && !sobre && visivel && !document.hidden) passo(1); }, 4000);
+})();
+</script>
+<script>
+/* Efeitos ao rolar: seções aparecem, itens entram em sequência, números contam até o valor e
+   barras crescem. Sem suporte ou com movimento reduzido, tudo já aparece pronto. */
+(function () {
+  var reduzido = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var secoes = document.querySelectorAll(".revela");
+  var filhos = document.querySelectorAll(".revela-filho, .cid-linha, .ent-item, .ent-caso, .ent-ver, .ent-glossario > div, .ent-passos li");
+  var grupos = document.querySelectorAll(".cid-lista, .ent-vers, .ent-autores, .ent-press, .ent-tl, .ent-meu");
+  var nums = document.querySelectorAll(".ent-num b");
+  if (reduzido || !("IntersectionObserver" in window)) { secoes.forEach(function (e) { e.classList.add("visto"); }); return; }
+  filhos.forEach(function (e) { e.classList.add("revela-filho"); });
+  grupos.forEach(function (g) { g.classList.add("anima-barras", "barras-zeradas"); });
+  function contar(el) {
+    var txt = el.textContent, m = txt.match(/[\d.,]+/);
+    if (!m) return;
+    var bruto = m[0], dec = bruto.indexOf(",") >= 0 ? bruto.split(",")[1].length : 0;
+    var alvo = parseFloat(bruto.replace(/\./g, "").replace(",", ".")), t0 = null, dur = 1200;
+    var fmt = function (v) { return v.toLocaleString("pt-BR", { minimumFractionDigits: dec, maximumFractionDigits: dec }); };
+    function quadro(t) { if (!t0) t0 = t; var p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = txt.replace(bruto, fmt(alvo * e)); if (p < 1) requestAnimationFrame(quadro); else el.textContent = txt; }
+    requestAnimationFrame(quadro);
+  }
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (x) {
+      if (!x.isIntersecting) return;
+      var el = x.target;
+      if (el.classList.contains("revela-filho")) {
+        var irmaos = Array.prototype.filter.call(el.parentNode.children, function (c) { return c.classList.contains("revela-filho"); });
+        el.style.transitionDelay = Math.min(irmaos.indexOf(el), 8) * 70 + "ms";
+      }
+      if (el.tagName === "B" && el.closest(".ent-num")) contar(el);
+      else if (el.classList.contains("barras-zeradas")) setTimeout(function () { el.classList.remove("barras-zeradas"); }, 150);
+      else el.classList.add("visto");
+      io.unobserve(el);
+    });
+  }, { rootMargin: "0px 0px -8% 0px" });
+  [secoes, filhos, grupos, nums].forEach(function (l) { l.forEach(function (e) { io.observe(e); }); });
 })();
 </script>
 <script src="topo.js"></script>

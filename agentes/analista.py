@@ -234,13 +234,13 @@ def gravar_entrada(estaticos):
             if not el:
                 continue
             pref = next((c for c in el["prefeito"] if c["situacao"].startswith("Eleito")), None)
-            cartoes.append(
-                f'      <a class="explore cidade" href="eleicao.html#{e(slug_c)}"><span class="rotulo">{e(cfg["camara"])}</span>'
-                f'<span class="explore-t">{e(cfg["nome"])}</span><span class="cidade-nums">'
+            cartoes.append((0,
+                f'      <a class="cid-linha" href="eleicao.html#{e(slug_c)}"><span class="cid-nome"><small>{e(cfg["camara"])}</small>'
+                f'<b>{e(cfg["nome"])}</b></span><span class="cid-stats">'
                 f'<span><b>{el["quociente"]["cadeiras"]}</b> vereadores</span>'
-                + (f'<span>Prefeito: <b>{e(pref["urna"].title())}</b></span>' if pref else "")
-                + '</span><span class="explore-d">Votações e presença da Câmara em preparação. Já disponível: eleição de 2024.</span>'
-                f'<span class="caso-ler" aria-hidden="true">Ver a eleição →</span></a>')
+                + (f'<span>Prefeito <b>{e(pref["urna"].title())}</b></span>' if pref else "")
+                + '<span class="cid-aviso">Votações em preparação · eleição 2024 disponível</span></span>'
+                f'<span class="cid-ir" aria-hidden="true">Ver a eleição →</span></a>'))
             itens.append(f'   <li><a href="eleicao.html#{e(slug_c)}">{e(cfg["nome"])}</a></li>')
             nomes.append(cfg["nome"])
             continue
@@ -248,12 +248,16 @@ def gravar_entrada(estaticos):
         em_ex = sum(v["em_exercicio"] for v in ind["vereadores"])
         atualizado = max(atualizado, g["gerado_em"][:10])
         num = lambda n: f"{n:,}".replace(",", ".")
-        cartoes.append(
-            f'      <a class="explore cidade" href="{e(slug_c)}/index.html"><span class="rotulo">{e(cfg["camara"])}</span>'
-            f'<span class="explore-t">{e(cfg["nome"])}</span><span class="cidade-nums">'
+        pres = [v["presenca"]["pct"] for v in ind["vereadores"] if v["em_exercicio"] and (v.get("presenca") or {}).get("pct") is not None]
+        media = sum(pres) / len(pres) if pres else 0
+        cartoes.append((g["total_votacoes"],
+            f'      <a class="cid-linha" href="{e(slug_c)}/index.html"><span class="cid-nome"><small>{e(cfg["camara"])}</small>'
+            f'<b>{e(cfg["nome"])}</b></span><span class="cid-stats">'
             f'<span><b>{em_ex}</b> vereadores</span><span><b>{num(g["total_votacoes"])}</b> votações</span>'
-            f'<span><b>{num(g["total_proposituras"])}</b> proposituras</span></span>'
-            f'<span class="caso-ler" aria-hidden="true">Ver a Câmara →</span></a>')
+            f'<span><b>{num(g["total_proposituras"])}</b> proposituras</span>'
+            + (f'<span><b>{f"{media:.0f}"}%</b> presença média</span>' if pres else "")
+            + '<span class="cid-barra" title="Votações registradas, comparadas à cidade com mais"><i style="width:{BARRA}%"></i></span></span>'
+            f'<span class="cid-ir" aria-hidden="true">Ver a Câmara →</span></a>'))
         itens.append(f'   <li><a href="{e(slug_c)}/index.html">{e(cfg["nome"])}</a></li>')
         nomes.append(cfg["nome"])
     numeros, tabela, blocos = resumo_regiao(e)
@@ -268,7 +272,7 @@ def gravar_entrada(estaticos):
     faixa = "".join(f'<span>{e(n)}</span><i aria-hidden="true">✱</i>' for n in nomes * 2)
     dia = atualizado[8:10] + "/" + atualizado[5:7] + "/" + atualizado[:4] if atualizado else ""
     campos = {"titulo": e(nome_site), "descricao": e(descricao), "og_extra": og, "n_cidades": f"{len(cartoes)} cidade" + ("s" if len(cartoes) != 1 else ""),
-              "cartoes": "\n".join(cartoes), "lista_cidades": "\n".join(itens), "faixa": faixa,
+              "cartoes": "\n".join(h.replace("{BARRA}", f"{100 * n / max(1, max(x for x, _ in cartoes)):.0f}") for n, h in cartoes), "lista_cidades": "\n".join(itens), "faixa": faixa,
               "atualizado": dia, "cidade_padrao": e(listar_cidades()[0]),
               "zap_href": e(zap(texto_zap)), "zap_texto": e(texto_zap), "numeros": numeros, "tabela": tabela, **blocos}
     with open(os.path.join(SITE_RAIZ, "_entrada.html"), encoding="utf-8") as f:
@@ -320,6 +324,9 @@ def resumo_regiao(e):
     return numeros, tabela, blocos_regiao(e, num, reais)
 
 
+MESES_CURTOS = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
+
+
 def blocos_regiao(e, num, reais):
     """Seções extras e desafios da entrada: vereadores que mais e menos compareceram, casos recentes,
     maiores autores de emendas, presidente 2026 por cidade e os desafios com respostas dos dados."""
@@ -362,14 +369,17 @@ def blocos_regiao(e, num, reais):
     cartao_v = lambda t: (f'<a class="cartao ent-ver" href="{e(t[3])}/index.html#vereador/{e(t[2]["chave"].replace(" ", "%20"))}">'
                           + (f'<img src="{e(t[3])}/{e(t[2]["foto"])}" alt="" loading="lazy">' if t[2].get("foto") else "<span></span>")
                           + f'<span><b>{e(t[2]["nome"].title())}</b><small>{e(t[2].get("partido", ""))} · {e(t[4])}</small></span>'
-                          f'<span class="ent-ver-n">{str(t[0]).replace(".", ",")}%<small>{t[1]} faltas</small></span></a>')
+                          f'<span class="ent-ver-n">{str(t[0]).replace(".", ",")}%<small>{t[1]} faltas</small></span>'
+                          f'<span class="ent-ver-barra"><i style="width:{t[0]}%"></i></span></a>')
     vereadores.sort(key=lambda t: (-t[0], t[1]))
     mais = "".join(cartao_v(t) for t in vereadores[:5])
     menos = "".join(cartao_v(t) for t in sorted(vereadores, key=lambda t: (t[0], -t[1]))[:5])
     casos.sort(key=lambda t: t[0], reverse=True)
     casos_html = "".join(
-        f'<a class="cartao ent-caso" href="{e(sl)}/index.html#caso/{e(c["id"])}"><small>{e(nome)} · {e(d[8:10] + "/" + d[5:7] + "/" + d[:4]) if d else ""}'
-        f' · {e(c.get("tema", ""))}</small><b>{e(c["titulo"])}</b><p>{e(c.get("curto", ""))}</p></a>' for d, c, sl, nome in casos[:4])
+        f'<a class="ent-caso{" ent-caso-1" if i == 0 else ""}" href="{e(sl)}/index.html#caso/{e(c["id"])}">'
+        f'<time datetime="{e(d)}"><b>{e(d[8:10])}</b>{e(MESES_CURTOS[int(d[5:7]) - 1] + " " + d[:4]) if d else ""}</time>'
+        f'<span><small>{e(nome)} · {e(c.get("tema", ""))}</small><b>{e(c["titulo"])}</b><p>{e(c.get("curto", ""))}</p></span></a>'
+        for i, (d, c, sl, nome) in enumerate(casos[:5]))
     maior = max(autores.values()) if autores else 1
     autores_html = "".join(
         f'<li><span>{e(a)}</span><span class="ent-barra"><i style="width:{100 * v / maior:.0f}%"></i></span><b>{reais(v)}</b></li>'
