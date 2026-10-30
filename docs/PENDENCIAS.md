@@ -18,7 +18,7 @@ Pedidos do dono do projeto e as referências enviadas (Hub Político), com o que
 
 ## Pedidos
 
-1. **Várias cidades, começando por Itapetininga, Cerquilho e Iperó.** Estrutura pronta (`cidades/`, `--cidade`, página de entrada). Falta criar `cidades/<slug>.json` de cada uma e coletar. Passo a passo em `docs/AGENTES.md` ("Adicionar uma cidade").
+1. **Várias cidades, começando por Itapetininga, Cerquilho e Iperó.** Estrutura pronta (`cidades/`, `--cidade`, página de entrada). Falta criar `cidades/<slug>.json` de cada uma e coletar: `adicionar_cidades.bat` (Windows) ou `python agentes/descobrir_cidade.py <slug>` faz isso. Passo a passo em `docs/AGENTES.md` ("Adicionar uma cidade").
 2. **Painel ideológico com fotos dos políticos parecidos com o usuário.** Feito para os vereadores de Tatuí: resultado com "Políticos que votaram parecido com você" e régua de fotos em cada eixo. Base: votações classificadas em `casos/<cidade>/eixos.json` (ver `docs/METODOLOGIA.md`). Falta:
    - classificar mais votações (hoje: Costumes 4, Religião 1, Impostos 1, Participação 1; Economia, Segurança, Meio ambiente e Serviços públicos sem nenhuma);
    - deputados federais e estaduais e senadores: votos nominais nos dados abertos da Câmara dos Deputados (https://dadosabertos.camara.leg.br), da Alesp e do Senado, gravados em `dados/_politicos/<fonte>.json` no mesmo formato de `espectro.json`. O analista já junta esses arquivos em `site/politicos.js`;

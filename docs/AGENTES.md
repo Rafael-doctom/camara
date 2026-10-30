@@ -106,6 +106,10 @@ schtasks /Create /TN "OlhoNaCamaraTatui" /SC DAILY /ST 07:00 /TR "\"E:\DOCUMENTO
 
 Qualquer Câmara que publique no SisCam entra no site sem mudar código. Itapetininga, Cerquilho e Iperó já estão em `cidades/_site.json` (campo `ordem`) e entram assim que tiverem o arquivo de configuração.
 
+Atalho: `python agentes/descobrir_cidade.py <slug>` lê o SisCam da cidade e grava `cidades/<slug>.json` e a pasta `casos/<slug>/` (passos 1 a 3). No Windows, `adicionar_cidades.bat` faz isso e a coleta de Itapetininga, Cerquilho e Iperó com dois cliques. Confira o arquivo gerado (principalmente `cadeiras` e as legislaturas) antes de publicar.
+
+Passo a passo manual:
+
 1. Crie `cidades/<slug>.json` copiando `cidades/tatui.json`. O slug usa só letras minúsculas, números e hífen (ex.: `itapetininga`).
 2. Preencha os campos conferindo no SisCam da cidade (`https://<cidade>.siscam.com.br`):
    - `nome`, `camara`, `site_camara`, `siscam` (endereço do SisCam, sem barra no fim) e `cadeiras` (vereadores em exercício).
