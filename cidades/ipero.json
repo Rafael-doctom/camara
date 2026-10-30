@@ -1,0 +1,46 @@
+{
+ "slug": "ipero",
+ "nome": "Iperó",
+ "camara": "Câmara Municipal de Iperó",
+ "site_camara": "",
+ "siscam": "https://ipero.siscam.com.br",
+ "modulo_documentos": 80,
+ "modulo": 8,
+ "cadeiras": 13,
+ "folga_lista_exercicio": 0,
+ "legislatura_atual": {
+  "id": 1,
+  "nome": "15ª legislatura",
+  "inicio": "2025-01-01",
+  "fim": "2028-12-31"
+ },
+ "legislaturas_anteriores": [
+  {
+   "ano": 2021,
+   "id": 5,
+   "nome": "14ª legislatura",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31"
+  },
+  {
+   "ano": 2017,
+   "id": 4,
+   "nome": "13ª legislatura",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31"
+  }
+ ],
+ "coletar_anteriores": true,
+ "tipos_documento": {
+  "Emenda Impositivas": 310,
+  "Indicação": 141,
+  "Moção": 142,
+  "Projeto de Decreto Legislativo": 137,
+  "Projeto de Emenda à Lei Orgânica": 139,
+  "Projeto de Lei": 135,
+  "Projeto de Lei Complementar": 136,
+  "Projeto de Resolução": 138,
+  "Requerimento": 140
+ },
+ "links": []
+}

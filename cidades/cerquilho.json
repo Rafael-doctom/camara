@@ -1,0 +1,50 @@
+{
+ "slug": "cerquilho",
+ "nome": "Cerquilho",
+ "camara": "Câmara Municipal de Cerquilho",
+ "site_camara": "",
+ "siscam": "https://cerquilho.siscam.com.br",
+ "modulo_documentos": 74,
+ "modulo": 8,
+ "cadeiras": 13,
+ "folga_lista_exercicio": 0,
+ "legislatura_atual": {
+  "id": null,
+  "nome": "",
+  "inicio": "2025-01-01",
+  "fim": "2028-12-31"
+ },
+ "legislaturas_anteriores": [
+  {
+   "ano": 2021,
+   "id": 18,
+   "nome": "18ª legislatura",
+   "inicio": "2021-01-01",
+   "fim": "2024-12-31"
+  },
+  {
+   "ano": 2017,
+   "id": 17,
+   "nome": "17ª legislatura",
+   "inicio": "2017-01-01",
+   "fim": "2020-12-31"
+  }
+ ],
+ "coletar_anteriores": true,
+ "tipos_documento": {
+  "Indicação": 129,
+  "Moção": 130,
+  "Parecer Contábil": 561,
+  "Parecer das Comissões": 560,
+  "Parecer Jurídico": 557,
+  "Projeto de Decreto Legislativo": 125,
+  "Proposta de Emenda à Lei Orgânica": 127,
+  "Projeto de Lei": 123,
+  "Projeto de Lei Complementar": 124,
+  "Projeto de Resolução": 126,
+  "Requerimento": 128,
+  "Resposta": 120,
+  "Parecer": 115
+ },
+ "links": []
+}
