@@ -4,11 +4,7 @@ Observatório independente das Câmaras Municipais de Tatuí, Itapetininga, Cerq
 
 ## Atualização automática
 
-O GitHub atualiza tudo sozinho todo dia às 6h17 (Brasília), pelo workflow `.github/workflows/atualizar.yml`: roda `agentes/orquestrador.py`, grava os dados novos na `main` e publica `site/` no GitHub Pages. Não depende de nenhum computador ligado.
-
-- Ativar a publicação (uma vez): Settings > Pages > Build and deployment > Source: **GitHub Actions**.
-- Rodar na hora: aba **Actions** > "Atualizar dados e publicar" > **Run workflow** (marque "eleicoes" para baixar de novo os dados do TSE).
-- Endereço: https://rafael-doctom.github.io/camara/ (para usar outro domínio, configure em Settings > Pages e troque `OLHO_URL_SITE` no workflow).
+Os coletores são programas em Python que rodam no seu computador ou no servidor do seu site: não usam o Claude nem gastam tokens. Para atualizar sozinho todo dia, agende `atualizar.bat` no Windows (passo a passo em [docs/AGENTES.md](docs/AGENTES.md#agendamento-no-windows)) ou `python agentes/orquestrador.py` no cron do servidor. Depois de cada execução, copie a pasta `site/` para o seu site (ou rode no próprio servidor, com `site/` dentro da pasta pública).
 
 ## Fontes e coletores
 

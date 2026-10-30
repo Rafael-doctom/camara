@@ -10,8 +10,8 @@ Uso:
 
 Sem --cidade e sem --so-site, antes das Câmaras rodam as fontes que valem para todas as cidades:
 deputados e senadores (API da Câmara e do Senado), gastos e receitas (API do TCE-SP) e emendas
-(arquivo da CGU). No fim, os alertas da semana. É o que o robô do GitHub (.github/workflows/
-atualizar.yml) roda todo dia.
+(arquivo da CGU). No fim, os alertas da semana. Para rodar sozinho todo dia, agende este comando (atualizar.bat no
+Windows ou cron no servidor; ver docs/AGENTES.md).
 
 Legislaturas encerradas (2017-2020, 2021-2024) não mudam: os coletores delas só rodam quando o
 arquivo processado (ex.: dados/processados/sessoes_2021.json) não existe, ou com --historico.
