@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="controles.css">
 <link rel="stylesheet" href="rodape.css">
 <link rel="stylesheet" href="espectro.css">
+<link rel="alternate" type="application/rss+xml" title="Olho na Câmara: alertas" href="alertas.xml">
 <style>
   .chip[aria-pressed="true"] { background: var(--texto); color: var(--fundo); border-color: var(--texto); }
   .al-filtros { display: grid; gap: 10px; margin: 14px 0 18px; }
@@ -24,6 +25,12 @@
   .al-ico { grid-row: span 3; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; background: var(--fundo-2); }
   .al-meta { font-size: .78rem; color: var(--suave); font-family: var(--f-mono); }
   .al-item p { margin: 0; color: var(--texto-2); font-size: .9rem; }
+  .al-tempo { list-style: none; padding: 0 0 0 18px; margin: 12px 0; border-left: 2px solid var(--linha); display: grid; gap: 12px; }
+  .al-tempo li { position: relative; }
+  .al-tempo li::before { content: ""; position: absolute; left: -25px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--acento); }
+  .al-tempo a { color: inherit; }
+  .al-tempo small { display: block; color: var(--texto-2); }
+  .al-assinar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 10px 0; }
 </style>
 <script>try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
 </head>
@@ -65,6 +72,14 @@
       <p class="esp-lead">Votações divididas e projetos novos desde ${dataBR(A.desde)}, gastos fora do padrão no último mês fechado do Tribunal de Contas e casos documentados recentes.</p>
       <div class="grade grade-kpi">${cidades.map(([s, r]) => `<div class="cartao kpi"><div class="valor">${r.votacoes + r.proposituras}</div><div class="rotulo">${esc(r.cidade)}</div>
         <div class="kpi-exp">${r.votacoes} votações · ${r.proposituras} proposituras · ${r.gastos} gastos atípicos</div></div>`).join("")}</div>
+      ${A.sessoes && A.sessoes.length ? `<h2>Sessões da semana</h2>
+      <ol class="al-tempo">${A.sessoes.filter((x) => !f.cidade || x.cidade === f.cidade).map((x) => `<li><a href="${esc(x.link)}" target="_self"><b>${dataBR(x.data)} · ${esc(x.nome_cidade)}</b> · ${esc(x.titulo)}</a>
+        <small>${x.presentes} presentes${x.ausentes ? `, ${x.ausentes} ausente${x.ausentes > 1 ? "s" : ""}` : ""} · ${x.votacoes} votações${x.divididas ? `, ${x.divididas} dividida${x.divididas > 1 ? "s" : ""}` : ", nenhuma com voto contra"}</small></li>`).join("")}</ol>` : ""}
+      <h2>Receba toda semana</h2>
+      <div class="cartao"><p>O resumo da semana pronto para mandar no WhatsApp ou num grupo. Para receber por e-mail ou num leitor de notícias, assine o feed RSS (serviços gratuitos como Feedrabbit ou Blogtrottr mandam o feed por e-mail).</p>
+        <div class="al-assinar"><a class="botao botao-pr" href="https://wa.me/?text=${encodeURIComponent(A.texto || "")}" rel="noopener">Mandar o resumo no WhatsApp</a>
+          <button type="button" id="al-copiar">Copiar o resumo</button><a class="botao" href="alertas.xml">Feed RSS</a><span class="suave" id="al-ok" role="status"></span></div></div>
+      <h2>Alertas</h2>
       <div class="al-filtros">
         <div class="chips" role="group" aria-label="Cidade">${chip("cidade", "", "Todas")}${cidades.map(([s, r]) => chip("cidade", s, r.cidade)).join("")}</div>
         <div class="chips" role="group" aria-label="Tipo">${chip("tipo", "", "Tudo")}${Object.entries(TIPOS).map(([k, [, r]]) => chip("tipo", k, r)).join("")}</div>
@@ -74,6 +89,12 @@
         <span class="al-meta">${esc(TIPOS[x.tipo][1])} · ${esc(A.resumo[x.cidade] ? A.resumo[x.cidade].cidade : x.cidade)} · ${dataBR(x.data)}</span>
         <b>${esc(x.titulo)}</b><p>${esc(x.detalhe)}</p></a>`).join("") || `<p class="suave">Nada com esse filtro nesta semana.</p>`}</div>
       <p class="suave">Gasto fora do padrão: o órgão pagou mais de 50% acima da sua média dos 6 meses anteriores, ou um fornecedor recebeu mais de R$ 50 mil e mais de 3 vezes a sua média. Não indica irregularidade: pode ser 13º salário, obra ou compra anual. Gerado em ${dataBR(A.gerado_em)}.</p>`;
+    const bc = app.querySelector("#al-copiar");
+    if (bc) bc.addEventListener("click", () => {
+      const ok = app.querySelector("#al-ok");
+      (navigator.clipboard ? navigator.clipboard.writeText(A.texto || "") : Promise.reject())
+        .then(() => { ok.textContent = "Resumo copiado."; }, () => { ok.textContent = "Não foi possível copiar neste navegador."; });
+    });
     app.querySelectorAll("[data-cidade]").forEach((b) => b.addEventListener("click", () => { f.cidade = b.dataset.cidade; desenhar(); }));
     app.querySelectorAll("[data-tipo]").forEach((b) => b.addEventListener("click", () => { f.tipo = b.dataset.tipo; desenhar(); }));
   }

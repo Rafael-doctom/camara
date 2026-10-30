@@ -428,9 +428,20 @@
       <div class="acoes">
         <a class="botao botao-pr" href="https://wa.me/?text=${encodeURIComponent(texto)}" rel="noopener">Compartilhar no WhatsApp</a>
         <a class="botao" href="index.html#quiz" target="_self">Com qual vereador você vota igual? →</a>
+        ${window.OlhoCartao ? `<button type="button" id="esp-img">Imagem para compartilhar</button>` : ""}
         <button type="button" id="esp-refazer">Refazer o teste</button>
       </div>
       <p class="aviso">A comparação com políticos usa poucas votações por eixo e não resume a atuação de ninguém. Este resultado não diz em quem votar. Para comparar votação por votação, use o quiz de votações reais.</p>`;
+    const bImg = app.querySelector("#esp-img");
+    if (bImg) bImg.addEventListener("click", () => {
+      const fortes = EIXOS.filter((x) => v[x.id] !== null).sort((a, b) => Math.abs(v[b.id]) - Math.abs(v[a.id])).slice(0, 3);
+      const par = parecidos(v)[0];
+      window.OlhoCartao.compartilhar({
+        rotulo: "Meu resultado no Painel ideológico", titulo: top.nome, subtitulo: top.txt,
+        linhas: [[`${top.prox}%`, "de proximidade com essa ideologia"], ...fortes.map((x) => [lado(x, v[x.id]), x.nome]),
+          ...(par ? [[`${par.prox}%`, `parecido com ${nomeP(par.p.nome)} (${par.p.cargo.replace("(a)", "")})`]] : [])].slice(0, 4),
+        rodape: "Faça o seu: rafaelpintodasilva.com/camara/espectro.html", arquivo: "meu-resultado-politico", texto });
+    });
     app.querySelectorAll(".esp-cargo").forEach((b) => b.addEventListener("click", () => { est.cargo = b.dataset.cargo; salvar(); resultado(); }));
     app.querySelector("#esp-refazer").addEventListener("click", () => { est.resp = {}; salvar(); location.hash = "#comecar"; });
   }

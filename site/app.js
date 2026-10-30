@@ -519,6 +519,25 @@
       <div class="eixos-v">${linhas.join("")}</div>`;
   }
 
+  // Selos do perfil: só destaques com critério objetivo, explicado no próprio selo. Comparação entre
+  // os vereadores em exercício da mesma Câmara.
+  function selos(v) {
+    if (!v.em_exercicio) return "";
+    const pares = D.vereadores.filter((x) => x.em_exercicio);
+    const top3 = (f) => { const ord = pares.map(f).filter((n) => n > 0).sort((a, b) => b - a); return ord.length ? ord[Math.min(2, ord.length - 1)] : Infinity; };
+    const lista = [];
+    const pr = v.presenca || {};
+    if (pr.pct >= 98 && pr.presente + pr.ausente >= 20) lista.push(["Presença exemplar", `Esteve em ${pct(pr.pct)} das sessões (98% ou mais).`]);
+    const fisc = (x) => x.pedido_temas["Fiscalização/transparência"] || 0;
+    if (fisc(v) && fisc(v) >= top3(fisc)) lista.push(["Fiscalizador", `Entre os 3 com mais requerimentos de fiscalização (${fisc(v)}): pedidos de contratos, gastos e documentos.`]);
+    if (v.pl_aprovados && v.pl_aprovados >= top3((x) => x.pl_aprovados)) lista.push(["Legislador", `Entre os 3 com mais projetos de lei aprovados (${v.pl_aprovados}).`]);
+    const pp = (x) => x.pl_categorias["Política pública/norma"] || 0;
+    if (pp(v) && pp(v) >= top3(pp)) lista.push(["Propositivo", `Entre os 3 com mais projetos de política pública (${pp(v)}), sem contar nomes de rua e homenagens.`]);
+    const contra = (x) => x.votos.contra || 0;
+    if (contra(v) && contra(v) >= top3(contra)) lista.push(["Voz divergente", `Entre os 3 que mais votaram contra (${contra(v)}). Indica oposição ou divergência, não é bom nem ruim por si.`]);
+    return lista.length ? `<div class="selos" aria-label="Selos">${lista.map(([n, t]) => `<span class="selo" title="${esc(t)}">★ ${esc(n)}<small>${esc(t)}</small></span>`).join("")}</div>` : "";
+  }
+
   function vereador(arg) {
     const v = acharVereador(arg);
     if (!v && acharAntigo(arg)) { vereadorAntigo(acharAntigo(arg)); return; }
@@ -539,12 +558,14 @@
       <div class="cartao perfil-topo">${foto(v, true)}
         <div><h1>${esc(nomeV(v))}</h1>
           <div>${v.partido ? `<span class="etq etq-pr">${esc(v.partido)}</span>` : ""}${v.em_exercicio ? `<span class="etq etq-am">em exercício</span>` : `<span class="etq">fora do exercício</span>`}</div>
+          ${selos(v)}
           ${civil || v.email ? `<div class="suave">${civil ? "Nome civil: " + esc(civil) : ""}${civil && v.email ? " · " : ""}${esc(v.email || "")}</div>` : ""}
           ${v.id ? ext(urlPerfil(v.id), "Perfil oficial na Câmara") : ""}
           <p class="acoes">
             <button type="button" id="b-meu" aria-pressed="${ehMeu}">${ehMeu ? "Deixar de acompanhar" : "Acompanhar na página inicial"}</button>
             ${botaoZap(textoZap, `${PASTA}vereador/${encodeURIComponent(v.slug)}.html`)}
             <a class="botao" href="#comparar/${encodeURIComponent(v.chave + "|")}">Comparar com…</a>
+            ${window.OlhoCartao ? `<button type="button" id="b-img">Imagem para compartilhar</button>` : ""}
           </p>
         </div></div>
       ${kpis([["Presença em sessões", pct(pres.pct), `${pres.presente} presente · ${pres.ausente} ausente`],
@@ -573,6 +594,12 @@
       <div id="pl-pp"></div>
       <p><a class="botao botao-pr" href="#proposituras/autor=${encodeURIComponent(v.chave)}">Ver todas as ${fmt(soma(v.proposituras))} proposituras</a></p>`;
 
+    const bImg = app.querySelector("#b-img");
+    if (bImg) bImg.addEventListener("click", () => window.OlhoCartao.compartilhar({
+      rotulo: `Vereador(a) de ${C.nome}`, titulo: nomeV(v), subtitulo: `${v.partido || ""} · legislatura ${C.legislatura ? periodoLeg(C.legislatura) : ""}`,
+      linhas: [[pct(pres.pct), "de presença nas sessões"], [fmt(v.pl_total), `projetos de lei (${v.pl_aprovados} aprovados)`],
+        [fmt(v.proposituras["Requerimento"] || 0), "requerimentos ao Executivo"], [pct(v.alinhamento_maioria), "votou com a maioria nas divididas"]],
+      arquivo: `vereador-${v.slug}`, texto: textoZap }));
     const bMeu = app.querySelector("#b-meu");
     bMeu.addEventListener("click", () => {
       const agora = bMeu.getAttribute("aria-pressed") !== "true";

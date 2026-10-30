@@ -325,6 +325,7 @@ def blocos_regiao(e, num, reais):
     maiores autores de emendas, presidente 2026 por cidade e os desafios com respostas dos dados."""
     ano_g = str(date.today().year - 1)
     vereadores, casos, autores, presid, custo, impostos, divid = [], [], Counter(), [], [], [], []
+    regiao = {}  # vereadores em exercício por cidade, para "Meu vereador" e o comparador da entrada
     for slug_c in listar_cidades():
         cfg = ler_arquivo_json(os.path.join(RAIZ, "cidades", f"{slug_c}.json"))
         proc = lambda nome: ler_arquivo_json(os.path.join(RAIZ, "dados", slug_c, "processados", nome), {})
@@ -335,6 +336,10 @@ def blocos_regiao(e, num, reais):
                 pr = v.get("presenca") or {}
                 if v["em_exercicio"] and pr.get("pct") is not None and pr.get("presente", 0) + pr.get("ausente", 0) >= 20:
                     vereadores.append((pr["pct"], pr["ausente"], v, slug_c, cfg["nome"]))
+            regiao[slug_c] = {"nome": cfg["nome"], "vereadores": [
+                {"c": v["chave"], "n": v["nome"], "f": v.get("foto", ""), "p": v.get("partido", ""),
+                 "pr": (v.get("presenca") or {}).get("pct") or 0, "pl": v.get("pl_aprovados", 0), "ct": v["votos"].get("contra", 0)}
+                for v in sorted(ind["vereadores"], key=lambda x: x["nome"]) if v["em_exercicio"]]}
             g = ind["geral"]
             if g.get("total_votacoes"):
                 divid.append((cfg["nome"], g["votacoes_divididas"], g["total_votacoes"]))
@@ -402,7 +407,8 @@ def blocos_regiao(e, num, reais):
                          + ". O resto vem de repasses do Estado (ICMS, IPVA), da União (FPM, SUS) e do FUNDEB."))
     desafio = lambda d: (f'<details class="ent-desafio"><summary><span class="rotulo">Desafio</span><b>{d[0]}</b>'
                          f'<small>{d[1]} Toque para ver a resposta.</small></summary><p>{d[2]}</p></details>')
-    return {"mais_presentes": mais, "menos_presentes": menos, "casos_recentes": casos_html, "emendas_top": autores_html,
+    return {"vereadores_json": json.dumps(regiao, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"),
+            "mais_presentes": mais, "menos_presentes": menos, "casos_recentes": casos_html, "emendas_top": autores_html,
             "presidente_regiao": presid_html, **{f"desafio_{i + 1}": desafio(d) for i, d in enumerate(desafios)},
             **{f"desafio_{i + 1}": "" for i in range(len(desafios), 4)}}
 

@@ -675,3 +675,8 @@ html[data-tema="escuro"] .vot-card:hover { border-color: var(--linha-forte); }
 .casos-vazio { text-align: center; padding: clamp(32px, 6vw, 56px) clamp(18px, 4vw, 40px); max-width: 640px; margin: 8px auto 0; }
 .casos-vazio-t { font-family: var(--f-serif); font-size: clamp(1.3rem, 3vw, 1.7rem); font-weight: 600; letter-spacing: -.01em; margin: 0 0 10px; color: var(--texto); }
 .casos-vazio .suave { margin: 0 auto; max-width: 48ch; }
+
+/* Selos do perfil do vereador (app.js, selos()) */
+.selos { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.selo { display: inline-grid; gap: 2px; padding: 6px 12px; border-radius: 12px; background: var(--fundo-2); border: 1px solid var(--linha); font-weight: 700; font-size: .86rem; max-width: 280px; }
+.selo small { font-weight: 400; font-size: .74rem; color: var(--texto-2); }
