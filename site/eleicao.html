@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eleição 2024 · Olho na Câmara</title>
+<base target="_blank">
+<meta name="description" content="Eleição municipal de 2024: votos de cada candidato a prefeito e vereador, quociente eleitoral e mapa de votos por local de votação. Dados oficiais do TSE.">
+<meta property="og:title" content="Eleição 2024 · Olho na Câmara">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tema.css">
+<link rel="stylesheet" href="controles.css">
+<link rel="stylesheet" href="rodape.css">
+<link rel="stylesheet" href="espectro.css">
+<style>
+  .el-tabela { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  .el-tabela th, .el-tabela td { padding: 7px 6px; border-bottom: 1px solid var(--linha); text-align: left; }
+  .el-tabela td.n, .el-tabela th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .el-tabela tr.eleito td:first-child { font-weight: 600; }
+  .el-tabela a { color: inherit; }
+  .el-pref { display: grid; gap: 10px; }
+  .el-pref-l { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; align-items: center; }
+  .el-pref-l .barra-trilho { grid-column: 1 / -1; height: 14px; }
+  .el-filtros { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; margin: 12px 0; }
+  .el-filtros label { display: grid; gap: 4px; font-size: .82rem; color: var(--texto-2); }
+  .el-filtros input, .el-filtros select { min-height: 42px; }
+  #mapa { height: 460px; border-radius: var(--raio); border: 1px solid var(--linha); margin: 12px 0; z-index: 0; }
+  .el-ficha { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: .9rem; color: var(--texto-2); }
+  .el-ficha b { color: var(--texto); }
+  .el-num { font-family: var(--f-mono); font-weight: 600; background: var(--fundo-2); border-radius: 8px; padding: 2px 10px; }
+  .el-cidades { margin: 6px 0 18px; }
+  .el-cidades .chip[aria-current] { background: var(--texto); color: var(--fundo); border-color: var(--texto); }
+</style>
+<script>try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
+</head>
+<body>
+<a class="pular" href="#app" target="_self">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="index.html" target="_self"><span class="marca-olho">●</span> Olho na Câmara <small>Eleição 2024</small></a>
+    <nav class="esp-nav" aria-label="Eleição">
+      <a class="botao botao-pr" href="espectro.html" target="_self">Painel ideológico</a>
+      <a class="esp-voltar" href="index.html" target="_self">Cidades</a>
+    </nav>
+  </div>
+</header>
+
+<main class="conteudo" id="app" tabindex="-1"><p class="carregando">Carregando…</p></main>
+
+<footer class="rodape ft2" id="rodape">
+  <div class="ft-bot"><span>© 2026 Olho na Câmara · criado por <a href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></span><span>Fonte: TSE, Portal de Dados Abertos. Sem vínculo com partidos.</span></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+/* Eleição municipal: #<cidade> (resumo, quociente e candidatos) e #<cidade>/<sq> (candidato com mapa
+   de votos por local de votação). Dados em <cidade>/eleicao.js, gerado por agentes/coletor_tse.py. */
+(function () {
+  "use strict";
+  const CIDADES = [["tatui", "Tatuí"], ["itapetininga", "Itapetininga"], ["cerquilho", "Cerquilho"], ["ipero", "Iperó"]];
+  const app = document.getElementById("app"), cache = {};
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const fmt = (n) => (n || 0).toLocaleString("pt-BR");
+  const pct = (a, b) => (b ? `${(100 * a / b).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%` : "–");
+  const titulo = (s) => String(s || "").trim().toLowerCase().replace(/(^|\s)\S/g, (c) => c.toUpperCase()).replace(/ (D[aeo]s?|E) /g, (m) => m.toLowerCase());
+  let mapa = null, filtro = { q: "", partido: "", so: "" };
+
+  function carregar(slug, feito) {
+    if (cache[slug]) return feito(cache[slug]);
+    window.ELEICAO = null;
+    const s = document.createElement("script");
+    s.src = `${slug}/eleicao.js`;
+    s.onload = () => { cache[slug] = window.ELEICAO; feito(cache[slug]); };
+    s.onerror = () => { app.innerHTML = `<h1>Sem dados de ${esc(slug)}</h1><p>Rode agentes/coletor_tse.py.</p>`; };
+    document.head.appendChild(s);
+  }
+
+  const seletor = (slug) => `<div class="chips el-cidades" role="group" aria-label="Cidade">${CIDADES.map(([s, n]) =>
+    `<a class="chip" href="#${s}" target="_self"${s === slug ? ' aria-current="page"' : ""}>${n}</a>`).join("")}</div>`;
+  const situacao = (c) => `<span class="etq ${c.situacao.startsWith("Eleito") ? "etq-ok" : ""}">${esc(c.situacao.replace("#nulo", "–"))}</span>${c.anulados ? ` <span class="etq etq-contra" title="A Justiça Eleitoral anulou os votos">votos anulados</span>` : ""}`;
+
+  function resumo(slug, E) {
+    const pref = E.prefeito, totalP = pref.reduce((s, c) => s + c.votos, 0), cmp = E.comparecimento.prefeito || {};
+    const Q = E.quociente, partidos = [...new Set(E.vereador.map((c) => c.partido))].sort();
+    app.innerHTML = `<p class="esp-rot">Eleição municipal de ${E.ano} · 1º turno</p><h1>${esc(E.cidade)}</h1>${seletor(slug)}
+      ${cmp.aptos ? `<div class="grade grade-kpi">
+        <div class="cartao kpi"><div class="valor">${fmt(cmp.aptos)}</div><div class="rotulo">eleitores aptos</div></div>
+        <div class="cartao kpi"><div class="valor">${pct(cmp.comparecimento, cmp.aptos)}</div><div class="rotulo">compareceram</div><div class="kpi-exp">${fmt(cmp.abstencoes)} abstenções</div></div>
+        <div class="cartao kpi"><div class="valor">${fmt(cmp.brancos + cmp.nulos)}</div><div class="rotulo">brancos e nulos (prefeito)</div></div>
+        <div class="cartao kpi"><div class="valor">${fmt(Q.qe)}</div><div class="rotulo">quociente eleitoral</div><div class="kpi-exp">votos para cada vaga de vereador</div></div></div>` : ""}
+      <h2>Prefeito</h2>
+      <div class="cartao el-pref">${pref.map((c) => `<a class="el-pref-l" href="#${slug}/${c.sq}" target="_self">
+        <span><b>${esc(titulo(c.urna))}</b> · ${esc(c.partido)} ${situacao(c)}</span><span>${fmt(c.votos)} · ${pct(c.votos, totalP)}</span>
+        <span class="barra-trilho"><span class="barra-cheia" style="width:${(100 * c.votos) / (pref[0].votos || 1)}%"></span></span></a>`).join("")}
+        ${pref.length === 1 ? `<p class="suave">Candidato único.</p>` : ""}</div>
+      <h2>Como as ${Q.cadeiras} vagas de vereador foram distribuídas</h2>
+      <p class="suave">Votos válidos para vereador (nominais + legenda): ${fmt(Q.validos)}. Divididos pelas ${Q.cadeiras} cadeiras, dão o quociente eleitoral de ${fmt(Q.qe)}. Cada partido ou federação ganha uma vaga para cada quociente que atinge (quociente partidário); as vagas que sobram vão para as maiores médias. Federações contam como um partido só.</p>
+      <div class="tabela-wrap"><table class="el-tabela"><thead><tr><th>Partido ou federação</th><th class="n">Nominais</th><th class="n">Legenda</th><th class="n">Total</th><th class="n">QP</th><th class="n">Vagas</th></tr></thead>
+        <tbody>${Q.partidos.map((p) => `<tr${p.cadeiras ? ' class="eleito"' : ""}><td>${esc(p.agremiacao)}${p.partidos.length > 1 ? ` <small class="suave">(${esc(p.partidos.join(", "))})</small>` : ""}</td><td class="n">${fmt(p.nominais)}</td><td class="n">${fmt(p.legenda)}</td><td class="n">${fmt(p.total)}</td><td class="n">${p.qp}</td><td class="n"><b>${p.cadeiras}</b></td></tr>`).join("")}</tbody></table></div>
+      <h2>Candidatos a vereador (${E.vereador.length})</h2>
+      <div class="el-filtros">
+        <label>Buscar<input type="search" id="f-q" placeholder="Nome ou número" value="${esc(filtro.q)}"></label>
+        <label>Partido<select id="f-p"><option value="">Todos</option>${partidos.map((p) => `<option${p === filtro.partido ? " selected" : ""}>${esc(p)}</option>`).join("")}</select></label>
+        <label>Mostrar<select id="f-s"><option value="">Todos</option><option value="eleito"${filtro.so === "eleito" ? " selected" : ""}>Só eleitos</option></select></label>
+      </div>
+      <div class="tabela-wrap"><table class="el-tabela"><thead><tr><th>Candidato</th><th>Partido</th><th class="n">Votos</th><th>Resultado</th></tr></thead><tbody id="lista"></tbody></table></div>
+      <p><button type="button" id="mais" hidden></button></p>
+      <p class="suave">Votos válidos no 1º turno. Fonte: TSE, gerado em ${esc(E.gerado_em.slice(0, 10).split("-").reverse().join("/"))}.</p>`;
+    let limite = 50;
+    const desenhar = () => {
+      const q = filtro.q.toLowerCase();
+      const cs = E.vereador.filter((c) => (!q || c.urna.toLowerCase().includes(q) || c.nome.toLowerCase().includes(q) || c.numero.includes(q))
+        && (!filtro.partido || c.partido === filtro.partido) && (!filtro.so || c.situacao.startsWith("Eleito")));
+      const mais = app.querySelector("#mais");
+      mais.hidden = cs.length <= limite;
+      mais.textContent = `Mostrar mais (${cs.length - limite} restantes)`;
+      app.querySelector("#lista").innerHTML = cs.slice(0, limite).map((c) => `<tr${c.situacao.startsWith("Eleito") ? ' class="eleito"' : ""}>
+        <td><a href="#${slug}/${c.sq}" target="_self">${esc(titulo(c.urna))}</a> <small class="suave">${esc(c.numero)}</small></td><td>${esc(c.partido)}</td>
+        <td class="n">${fmt(c.anulados ? c.votos_urna : c.votos)}</td><td>${situacao(c)}</td></tr>`).join("") || `<tr><td colspan="4" class="suave">Ninguém com esse filtro.</td></tr>`;
+    };
+    app.querySelector("#mais").addEventListener("click", () => { limite += 100; desenhar(); });
+    app.querySelector("#f-q").addEventListener("input", (e) => { filtro.q = e.target.value; desenhar(); });
+    app.querySelector("#f-p").addEventListener("change", (e) => { filtro.partido = e.target.value; desenhar(); });
+    app.querySelector("#f-s").addEventListener("change", (e) => { filtro.so = e.target.value; desenhar(); });
+    desenhar();
+  }
+
+  function candidato(slug, E, sq) {
+    const c = [...E.prefeito, ...E.vereador, ...E.vice].find((x) => x.sq === sq);
+    if (!c) return resumo(slug, E);
+    const lista = c.cargo === "prefeito" ? E.prefeito : E.vereador, pos = lista.indexOf(c) + 1;
+    const vl = E.votos_local[sq] || {}, totalUrna = Object.values(vl).reduce((s, v) => s + v, 0);
+    const locais = E.locais.filter((l) => vl[l.id]).map((l) => ({ ...l, v: vl[l.id] })).sort((a, b) => b.v - a.v);
+    const bairros = {};
+    locais.forEach((l) => { const b = (bairros[l.bairro] ||= { v: 0, eleitores: 0 }); b.v += l.v; b.eleitores += l.eleitores; });
+    const tb = Object.entries(bairros).sort((a, b) => b[1].v - a[1].v);
+    app.innerHTML = `<p class="esp-migalha"><a href="#${slug}" target="_self">← Eleição em ${esc(E.cidade)}</a></p>
+      <p class="esp-rot">${c.cargo === "prefeito" ? "Prefeito" : "Vereador"} · ${E.ano}</p>
+      <h1>${esc(titulo(c.urna))} <span class="el-num">${esc(c.numero)}</span></h1>
+      <p>${esc(c.partido)} ${situacao(c)}</p>
+      <div class="el-ficha"><span>Nome: <b>${esc(titulo(c.nome))}</b></span>${c.idade ? `<span>Idade na eleição: <b>${c.idade}</b></span>` : ""}
+        <span>Ocupação: <b>${esc(c.ocupacao)}</b></span><span>Instrução: <b>${esc(c.instrucao)}</b></span><span>Gênero: <b>${esc(c.genero)}</b></span>
+        ${c.coligacao ? `<span>Coligação: <b>${esc(c.coligacao)}</b></span>` : ""}</div>
+      <div class="grade grade-kpi">
+        <div class="cartao kpi"><div class="valor">${fmt(c.votos)}</div><div class="rotulo">votos válidos</div>${c.anulados ? `<div class="kpi-exp">${fmt(c.votos_urna)} na urna, anulados pela Justiça Eleitoral</div>` : ""}</div>
+        <div class="cartao kpi"><div class="valor">${pos}º</div><div class="rotulo">entre ${lista.length} candidatos</div></div>
+        <div class="cartao kpi"><div class="valor">${locais.length}</div><div class="rotulo">locais com voto</div><div class="kpi-exp">de ${E.locais.length} na cidade</div></div>
+      </div>
+      <h2>Onde recebeu votos</h2>
+      <p class="suave">Cada círculo é um local de votação; o tamanho é o número de votos${c.anulados ? " (votos dados na urna, depois anulados)" : ""}. Toque num círculo para ver os números.</p>
+      <div id="mapa" role="img" aria-label="Mapa de votos por local de votação"></div>
+      <div class="duas">
+        <div><h3>Por bairro</h3><div class="tabela-wrap"><table class="el-tabela"><thead><tr><th>Bairro</th><th class="n">Votos</th><th class="n">% do candidato</th></tr></thead>
+          <tbody>${tb.map(([b, x]) => `<tr><td>${esc(b)}</td><td class="n">${fmt(x.v)}</td><td class="n">${pct(x.v, totalUrna)}</td></tr>`).join("")}</tbody></table></div></div>
+        <div><h3>Por local de votação</h3><div class="tabela-wrap"><table class="el-tabela"><thead><tr><th>Local</th><th class="n">Votos</th><th class="n">Eleitores</th></tr></thead>
+          <tbody>${locais.map((l) => `<tr><td>${esc(l.nome)}<br><small class="suave">${esc(l.bairro)}</small></td><td class="n">${fmt(l.v)}</td><td class="n">${fmt(l.eleitores)}</td></tr>`).join("")}</tbody></table></div></div>
+      </div>
+      <p class="suave">Fonte: TSE (votação por seção e locais de votação). Eleitores do local = aptos nas seções daquele local.</p>`;
+    desenharMapa(E, locais);
+  }
+
+  function desenharMapa(E, locais) {
+    if (mapa) { mapa.remove(); mapa = null; }
+    const el = document.getElementById("mapa"), comCoord = E.locais.filter((l) => l.lat && l.lng);
+    if (!window.L || !comCoord.length) { el.outerHTML = `<p class="aviso">Mapa indisponível (sem coordenadas ou sem conexão). Veja as tabelas abaixo.</p>`; return; }
+    mapa = L.map(el, { scrollWheelZoom: false });
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: "© OpenStreetMap" }).addTo(mapa);
+    const max = Math.max(1, ...locais.map((l) => l.v)), cor = getComputedStyle(document.documentElement).getPropertyValue("--acento").trim() || "#b5532d";
+    comCoord.forEach((l) => {
+      const v = (locais.find((x) => x.id === l.id) || {}).v || 0;
+      L.circleMarker([l.lat, l.lng], { radius: v ? 5 + 22 * Math.sqrt(v / max) : 3, color: v ? cor : "#999", weight: 1, fillColor: v ? cor : "#999", fillOpacity: v ? 0.55 : 0.25 })
+        .bindPopup(`<b>${esc(l.nome)}</b><br>${esc(l.bairro)}<br>${fmt(v)} votos · ${fmt(l.eleitores)} eleitores`).addTo(mapa);
+    });
+    mapa.fitBounds(L.latLngBounds(comCoord.map((l) => [l.lat, l.lng])).pad(0.08));
+  }
+
+  function rota() {
+    const [slug, sq] = decodeURIComponent(location.hash.slice(1) || "tatui").split("/");
+    const s = CIDADES.some(([c]) => c === slug) ? slug : "tatui";
+    carregar(s, (E) => {
+      sq ? candidato(s, E, sq) : resumo(s, E);
+      const h1 = app.querySelector("h1");
+      document.title = `${h1 ? h1.textContent : "Eleição"} · Eleição ${E.ano} · Olho na Câmara`;
+    });
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener("hashchange", rota);
+  rota();
+})();
+</script>
+</body>
+</html>

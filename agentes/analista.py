@@ -212,7 +212,7 @@ def gravar_index_cidade(versao_base, estaticos):
     og = (f'<link rel="canonical" href="{e(URL_SITE)}/">\n<meta property="og:url" content="{e(URL_SITE)}/">'
           if URL_SITE else "")
     texto_zap = f"Veja como vota cada vereador de {CIDADE['nome']}:"
-    campos = {"titulo": e(titulo), "cidade": e(CIDADE["nome"]), "camara": e(CIDADE["camara"]),
+    campos = {"titulo": e(titulo), "cidade": e(CIDADE["nome"]), "slug": e(SLUG_CIDADE), "camara": e(CIDADE["camara"]),
               "camara_url": e(CIDADE.get("site_camara") or BASE), "og_extra": og,
               "zap_href": e(zap(texto_zap)), "zap_texto": e(texto_zap)}
     versoes = {"dados-base.js": versao_base, **{f"../{k}": v for k, v in estaticos.items()}}

@@ -32,3 +32,6 @@ __pycache__/
 
 # Arquivos anuais da cota parlamentar (regeneráveis com agentes/coletor_deputados.py)
 dados/_federal/brutos/
+
+# Arquivos do TSE (regeneráveis com agentes/coletor_tse.py)
+dados/_tse/brutos/

@@ -132,10 +132,27 @@ def reduzir_fotos(pares):
         for (_, t), (_, d) in zip(tmp, pares):
             os.replace(t, d)
     except (OSError, subprocess.SubprocessError) as e:
+        if reduzir_com_pillow(pares):  # Linux/Mac: Pillow, se estiver instalado (opcional)
+            return
         log(AGENTE, f"AVISO: não reduziu as fotos ({e}); usando o original")
         for o, d in pares:
             shutil.copyfile(o, d + ".tmp")
             os.replace(d + ".tmp", d)
+
+
+def reduzir_com_pillow(pares):
+    try:
+        from PIL import Image
+    except ImportError:
+        return False
+    for o, d in pares:
+        with Image.open(o) as img:
+            img = img.convert("RGB")
+            if img.width > LARGURA_FOTO:
+                img = img.resize((LARGURA_FOTO, round(img.height * LARGURA_FOTO / img.width)), Image.LANCZOS)
+            img.save(d + ".tmp", "JPEG", quality=82)
+        os.replace(d + ".tmp", d)
+    return True
 
 
 def baixar_fotos(ids):
