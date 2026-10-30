@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alertas da semana · Olho na Câmara</title>
+<base target="_blank">
+<meta name="description" content="O que mudou esta semana nas Câmaras e Prefeituras: votações divididas, projetos novos, gastos fora do padrão e casos documentados.">
+<meta property="og:title" content="Alertas da semana · Olho na Câmara">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tema.css">
+<link rel="stylesheet" href="controles.css">
+<link rel="stylesheet" href="rodape.css">
+<link rel="stylesheet" href="espectro.css">
+<style>
+  .chip[aria-pressed="true"] { background: var(--texto); color: var(--fundo); border-color: var(--texto); }
+  .al-filtros { display: grid; gap: 10px; margin: 14px 0 18px; }
+  .al-lista { display: grid; gap: 10px; }
+  .al-item { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; padding: 14px 16px; color: inherit; text-decoration: none; }
+  .al-item:hover { border-color: var(--texto); }
+  .al-ico { grid-row: span 3; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; background: var(--fundo-2); }
+  .al-meta { font-size: .78rem; color: var(--suave); font-family: var(--f-mono); }
+  .al-item p { margin: 0; color: var(--texto-2); font-size: .9rem; }
+</style>
+<script>try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
+</head>
+<body>
+<a class="pular" href="#app" target="_self">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="index.html" target="_self"><span class="marca-olho">●</span> Olho na Câmara <small>Alertas</small></a>
+    <nav class="esp-nav" aria-label="Alertas">
+      <a class="botao botao-pr" href="gastos.html" target="_self">Gastos</a>
+      <a class="esp-voltar" href="index.html" target="_self">Cidades</a>
+    </nav>
+  </div>
+</header>
+
+<main class="conteudo" id="app" tabindex="-1"><p class="carregando">Carregando…</p></main>
+
+<footer class="rodape ft2" id="rodape">
+  <div class="ft-bot"><span>© 2026 Olho na Câmara · criado por <a href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></span><span>Gerado a cada atualização dos dados (SisCam, TCE-SP). Sem vínculo com partidos.</span></div>
+</footer>
+
+<script src="alertas.js"></script>
+<script>
+/* Alertas da semana (agentes/alertas.py): filtros por cidade e por tipo. */
+(function () {
+  "use strict";
+  const A = window.ALERTAS, app = document.getElementById("app");
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const TIPOS = { votacao: ["⚖", "Votação dividida"], propositura: ["✎", "Projeto ou moção nova"], gasto: ["R$", "Gasto fora do padrão"], caso: ["!", "Caso documentado"] };
+  const dataBR = (d) => d.slice(0, 10).split("-").reverse().join("/");
+  if (!A) { app.innerHTML = "<h1>Sem alertas</h1><p>Rode agentes/alertas.py.</p>"; return; }
+  const f = { cidade: "", tipo: "" };
+  const cidades = Object.entries(A.resumo);
+
+  function desenhar() {
+    const itens = A.itens.filter((x) => (!f.cidade || x.cidade === f.cidade) && (!f.tipo || x.tipo === f.tipo));
+    const chip = (k, v, r) => `<button type="button" class="chip" data-${k}="${esc(v)}" aria-pressed="${f[k] === v}">${esc(r)}</button>`;
+    app.innerHTML = `<p class="esp-rot">O que mudou</p><h1>Alertas da semana</h1>
+      <p class="esp-lead">Votações divididas e projetos novos desde ${dataBR(A.desde)}, gastos fora do padrão no último mês fechado do Tribunal de Contas e casos documentados recentes.</p>
+      <div class="grade grade-kpi">${cidades.map(([s, r]) => `<div class="cartao kpi"><div class="valor">${r.votacoes + r.proposituras}</div><div class="rotulo">${esc(r.cidade)}</div>
+        <div class="kpi-exp">${r.votacoes} votações · ${r.proposituras} proposituras · ${r.gastos} gastos atípicos</div></div>`).join("")}</div>
+      <div class="al-filtros">
+        <div class="chips" role="group" aria-label="Cidade">${chip("cidade", "", "Todas")}${cidades.map(([s, r]) => chip("cidade", s, r.cidade)).join("")}</div>
+        <div class="chips" role="group" aria-label="Tipo">${chip("tipo", "", "Tudo")}${Object.entries(TIPOS).map(([k, [, r]]) => chip("tipo", k, r)).join("")}</div>
+      </div>
+      <div class="al-lista">${itens.map((x) => `<a class="cartao al-item" href="${esc(x.link)}" target="_self">
+        <span class="al-ico" aria-hidden="true">${TIPOS[x.tipo][0]}</span>
+        <span class="al-meta">${esc(TIPOS[x.tipo][1])} · ${esc(A.resumo[x.cidade] ? A.resumo[x.cidade].cidade : x.cidade)} · ${dataBR(x.data)}</span>
+        <b>${esc(x.titulo)}</b><p>${esc(x.detalhe)}</p></a>`).join("") || `<p class="suave">Nada com esse filtro nesta semana.</p>`}</div>
+      <p class="suave">Gasto fora do padrão: o órgão pagou mais de 50% acima da sua média dos 6 meses anteriores, ou um fornecedor recebeu mais de R$ 50 mil e mais de 3 vezes a sua média. Não indica irregularidade: pode ser 13º salário, obra ou compra anual. Gerado em ${dataBR(A.gerado_em)}.</p>`;
+    app.querySelectorAll("[data-cidade]").forEach((b) => b.addEventListener("click", () => { f.cidade = b.dataset.cidade; desenhar(); }));
+    app.querySelectorAll("[data-tipo]").forEach((b) => b.addEventListener("click", () => { f.tipo = b.dataset.tipo; desenhar(); }));
+  }
+  desenhar();
+})();
+</script>
+<script src="topo.js"></script>
+</body>
+</html>

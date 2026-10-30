@@ -68,6 +68,10 @@ def main():
                 falhas.append(f"{etapa} (código {r.returncode})")
                 codigo = max(codigo, r.returncode)
                 log("orquestrador", f"FALHOU: {etapa}, código {r.returncode} (ver {arquivo_log})")
+    # Alertas da semana: juntam todas as cidades, então rodam uma vez no fim.
+    r = subprocess.run([sys.executable, os.path.join(AQUI, "alertas.py")], cwd=AQUI, capture_output=True, text=True,
+                       env={**os.environ, "PYTHONIOENCODING": "utf-8"})
+    log("orquestrador", (r.stdout or r.stderr).strip()[-300:])
     log("orquestrador", "concluído" + (f" com falhas: {falhas}" if falhas else " sem falhas") + f". Log: {arquivo_log}")
     sys.exit(codigo)
 

@@ -804,7 +804,7 @@ def main():
         "periodo": [min(datas, default=""), max(datas, default="")],
     }
 
-    eixo_vot, eixo_pol = espectro_cidade(lista_vot, saida_ver)
+    eixo_vot, eixo_pol = espectro_cidade(lista_vot + vot_hist, saida_ver)
 
     # --- arquivos do site
     arq_vot = js([("votacoes", lista_vot), ("sessoes", lista_sessoes)])

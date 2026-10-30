@@ -79,7 +79,7 @@
     const partidos = [...new Set(D.deputados.map((d) => d.partido))].sort();
     const soma = D.deputados.reduce((s, d) => s + total(d, anoAnt), 0);
     app.innerHTML = `<p class="esp-rot">Câmara dos Deputados · ${esc(D.uf)}</p>
-      <h1>Deputados federais de ${esc(D.uf === "SP" ? "São Paulo" : D.uf)}</h1>
+      <h1>Deputados e senadores de ${esc(D.uf === "SP" ? "São Paulo" : D.uf)}</h1>
       <p class="esp-lead">Quanto cada um gastou da cota parlamentar (o dinheiro público para despesas do mandato, como passagens, divulgação e escritório), com quais empresas, e como votou nos temas do Painel ideológico.</p>
       <div class="aviso">Em ${anoAnt}, os ${D.deputados.length} deputados de ${esc(D.uf)} gastaram ${real(soma)} da cota. ${anoAtual} ainda está em andamento.</div>
       <div class="dep-filtros">
@@ -88,9 +88,9 @@
         <label>Ordem<select id="f-o"><option value="gasto">Maior gasto em ${anoAnt}</option><option value="gasto-atual"${filtro.ordem === "gasto-atual" ? " selected" : ""}>Maior gasto em ${anoAtual}</option><option value="nome"${filtro.ordem === "nome" ? " selected" : ""}>Nome</option></select></label>
       </div>
       <div class="dep-grade" id="grade"></div>
-      ${(D.senadores || []).length ? `<h2>Senadores de ${esc(D.uf)}</h2><div class="dep-grade">${D.senadores.map((s) => `<a class="cartao esp-pol" href="${esc(s.pagina)}" rel="noopener">
+      ${(D.senadores || []).length ? `<h2>Senadores de ${esc(D.uf)}</h2><div class="dep-grade">${D.senadores.map((s) => `<a class="cartao esp-pol" href="#sen-${esc(s.id)}" target="_self">
         <img class="esp-pol-foto" src="${esc(s.foto)}" alt="" loading="lazy"><span class="esp-pol-txt"><b>${esc(s.nome)}</b><span>${esc(s.partido)} · Senado</span>
-        <span class="suave">Página oficial ↗</span></span></a>`).join("")}</div>` : ""}`;
+        <span class="suave">${s.gastos && s.gastos[anoAnt] ? `${anoAnt}: ${real(s.gastos[anoAnt].total)}` : "Ver perfil"}</span></span></a>`).join("")}</div>` : ""}`;
     const desenhar = () => {
       const q = filtro.q.toLowerCase();
       const ds = D.deputados.filter((d) => (!q || d.nome.toLowerCase().includes(q)) && (!filtro.partido || d.partido === filtro.partido))
@@ -148,9 +148,32 @@
       <p class="suave">Atualizado em ${dataBR(D.gerado_em)}. Fonte: Câmara dos Deputados.</p>`;
   }
 
+  function perfilSenador(id) {
+    const d = (D.senadores || []).find((x) => String(x.id) === id);
+    if (!d) return lista();
+    const g = d.gastos || {}, vs = (D.votacoes_senado || []).map((v) => ({ v, voto: (d.votos || {})[v.id] })).filter((x) => x.voto);
+    app.innerHTML = `<p class="esp-migalha"><a href="#lista" target="_self">← Deputados e senadores</a></p>
+      <div class="cartao dep-topo"><img src="${esc(d.foto)}" alt="Foto de ${esc(d.nome)}">
+        <div><h1>${esc(d.nome)}</h1><p><span class="etq etq-pr">${esc(d.partido)}</span><span class="etq">Senador(a) · ${esc(D.uf)}</span></p>
+          <p>${d.email ? `${esc(d.email)} · ` : ""}<a href="${esc(d.pagina)}" rel="noopener">Página oficial no Senado ↗</a></p></div></div>
+      <div class="grade grade-kpi">
+        <div class="cartao kpi"><div class="valor">${real((g[anoAnt] || {}).total)}</div><div class="rotulo">Cota do Senado (CEAPS) em ${anoAnt}</div></div>
+        <div class="cartao kpi"><div class="valor">${real((g[anoAtual] || {}).total)}</div><div class="rotulo">CEAPS em ${anoAtual}</div><div class="kpi-exp">até o último mês publicado</div></div>
+      </div>
+      <h2>Gastos de gabinete (CEAPS)</h2>
+      <p class="suave">Cota para o Exercício da Atividade Parlamentar dos Senadores: aluguel de escritório, passagens, divulgação e outras despesas reembolsadas.</p>
+      <div class="duas">${blocoAno(anoAnt, g[anoAnt])}${blocoAno(anoAtual, g[anoAtual])}</div>
+      <h2>Votos nos temas do Painel ideológico</h2>
+      ${vs.length ? `<ol class="dep-votos">${vs.map(({ v, voto }) => `<li><b>${esc(v.m)}</b> · ${v.d ? dataBR(v.d) : ""} · ${esc(EIXO[v.eixo] || v.eixo)}
+        <br><span class="etq ${voto === "Sim" ? "etq-favor" : voto === "Não" ? "etq-contra" : ""}">${esc(voto)}</span> ${esc(v.nota)} <a href="${esc(v.url)}" rel="noopener">matéria ↗</a></li>`).join("")}</ol>
+        <p><a class="botao botao-pr" href="espectro.html#comecar" target="_self">Faça o teste e compare-se com ${esc(d.nome)} →</a></p>`
+        : `<p class="suave">Sem voto registrado nas votações classificadas (ausente, licenciado ou não era senador na época).</p>`}
+      <p class="suave">Fonte: Senado Federal (dados abertos legislativos e administrativos).</p>`;
+  }
+
   function rota() {
     const h = decodeURIComponent(location.hash.slice(1));
-    /^\d+$/.test(h) ? perfil(h) : lista();
+    /^sen-\d+$/.test(h) ? perfilSenador(h.slice(4)) : /^\d+$/.test(h) ? perfil(h) : lista();
     const h1 = app.querySelector("h1");
     document.title = `${h1 ? h1.textContent : "Deputados"} · Olho na Câmara`;
     window.scrollTo(0, 0);

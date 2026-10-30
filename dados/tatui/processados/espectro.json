@@ -108,6 +108,96 @@
     "contra": 9,
     "ausente": 1
    }
+  },
+  {
+   "id": "776-60937",
+   "cidade": "tatui",
+   "eixo": "impostos",
+   "favor": "a",
+   "nota": "Criação da taxa de coleta de lixo (PLC 2/2021), aprovada por 10 a 3.",
+   "m": "Projeto de Lei Complementar Nº 2/2021 - Executivo",
+   "d": "2021-12-06",
+   "r": "Aprovado",
+   "n": {
+    "favor": 10,
+    "nao_vota": 1,
+    "contra": 3
+   }
+  },
+  {
+   "id": "749-58329",
+   "cidade": "tatui",
+   "eixo": "servicos",
+   "favor": "b",
+   "nota": "Moção de apoio ao projeto federal de privatização dos Correios (2021).",
+   "m": "Moção Nº 444/2021",
+   "d": "2021-08-16",
+   "r": "Aprovado",
+   "n": {
+    "nao_vota": 1,
+    "favor": 15,
+    "contra": 1
+   }
+  },
+  {
+   "id": "712-46114",
+   "cidade": "tatui",
+   "eixo": "servicos",
+   "favor": "b",
+   "nota": "Concessão da administração e exploração do Mercado Municipal à iniciativa privada (2021).",
+   "m": "Projeto de Lei Nº 2/2020 - Executivo",
+   "d": "2021-02-15",
+   "r": "Aprovado",
+   "n": {
+    "favor": 16,
+    "contra": 1
+   }
+  },
+  {
+   "id": "936-78850-2",
+   "cidade": "tatui",
+   "eixo": "participacao",
+   "favor": "a",
+   "nota": "Projeto que obrigaria transmitir ao vivo as licitações da Prefeitura, rejeitado por 9 a 6 (2023).",
+   "m": "Projeto de Lei Nº 8/2023 - Legislativo",
+   "d": "2023-10-02",
+   "r": "NEGADO",
+   "n": {
+    "contra": 9,
+    "favor": 6,
+    "nao_vota": 1,
+    "ausente": 1
+   }
+  },
+  {
+   "id": "1038-82599",
+   "cidade": "tatui",
+   "eixo": "religiao",
+   "favor": "a",
+   "nota": "Manutenção do veto à lei do cartaz sobre assistência religiosa a pacientes internados (2024): votar a favor do veto puxa para laico.",
+   "m": "Veto Nº 1/2023 ao Projeto de Lei Nº 93/2022 - Total",
+   "d": "2024-11-25",
+   "r": "Aprovado",
+   "n": {
+    "favor": 9,
+    "contra": 6,
+    "nao_vota": 1,
+    "ausente": 1
+   }
+  },
+  {
+   "id": "687-50503",
+   "cidade": "tatui",
+   "eixo": "ambiente",
+   "favor": "a",
+   "nota": "Repúdio às medidas do ministro do Meio Ambiente Ricardo Salles no CONAMA (2020).",
+   "m": "Moção Nº 417/2020",
+   "d": "2020-10-05",
+   "r": "Aprovado",
+   "n": {
+    "favor": 13,
+    "contra": 3
+   }
   }
  ],
  "politicos": [
@@ -162,6 +252,10 @@
     "participacao": [
      -1,
      1
+    ],
+    "ambiente": [
+     -1,
+     1
     ]
    }
   },
@@ -179,16 +273,20 @@
      4
     ],
     "religiao": [
-     1,
-     1
+     2,
+     2
     ],
     "impostos": [
-     1,
-     1
+     0,
+     2
     ],
     "participacao": [
-     -1,
-     1
+     -2,
+     2
+    ],
+    "servicos": [
+     2,
+     2
     ]
    }
   },
@@ -206,8 +304,8 @@
      4
     ],
     "religiao": [
-     1,
-     1
+     2,
+     2
     ],
     "impostos": [
      -1,
@@ -216,6 +314,10 @@
     "participacao": [
      1,
      1
+    ],
+    "servicos": [
+     2,
+     2
     ]
    }
   },
@@ -260,16 +362,20 @@
      4
     ],
     "religiao": [
-     1,
-     1
+     0,
+     2
     ],
     "impostos": [
-     -1,
-     1
+     -2,
+     2
     ],
     "participacao": [
-     1,
-     1
+     2,
+     2
+    ],
+    "servicos": [
+     2,
+     2
     ]
    }
   },
@@ -322,8 +428,8 @@
      1
     ],
     "participacao": [
-     1,
-     1
+     2,
+     2
     ]
    }
   },
@@ -368,16 +474,20 @@
      4
     ],
     "religiao": [
-     1,
-     1
+     2,
+     2
     ],
     "impostos": [
-     1,
-     1
+     0,
+     2
     ],
     "participacao": [
-     -1,
-     1
+     -2,
+     2
+    ],
+    "servicos": [
+     2,
+     2
     ]
    }
   },
@@ -395,16 +505,20 @@
      4
     ],
     "religiao": [
-     1,
-     1
+     2,
+     2
     ],
     "impostos": [
-     1,
-     1
+     0,
+     2
     ],
     "participacao": [
-     -1,
-     1
+     -2,
+     2
+    ],
+    "servicos": [
+     2,
+     2
     ]
    }
   },
@@ -422,11 +536,19 @@
      3
     ],
     "religiao": [
-     1,
-     1
+     0,
+     2
     ],
     "impostos": [
-     -1,
+     0,
+     2
+    ],
+    "servicos": [
+     2,
+     2
+    ],
+    "participacao": [
+     1,
      1
     ]
    }
@@ -445,16 +567,20 @@
      4
     ],
     "religiao": [
-     1,
-     1
+     0,
+     2
     ],
     "impostos": [
-     -1,
-     1
+     -2,
+     2
     ],
     "participacao": [
-     1,
-     1
+     2,
+     2
+    ],
+    "servicos": [
+     2,
+     2
     ]
    }
   },
@@ -468,6 +594,18 @@
    "perfil": "tatui/index.html#vereador/RENAN%20CORTEZ",
    "eixos": {
     "impostos": [
+     -2,
+     2
+    ],
+    "servicos": [
+     2,
+     2
+    ],
+    "participacao": [
+     1,
+     1
+    ],
+    "religiao": [
      -1,
      1
     ]

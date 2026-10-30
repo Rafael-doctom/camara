@@ -1,0 +1,10 @@
+{
+ "_leia": "Votações nominais do plenário do Senado que posicionam os senadores nos eixos do Painel ideológico. 'votacao' é o CodigoSessaoVotacao da API do Senado (legis.senado.leg.br/dadosabertos). 'favor' é o polo para onde o voto SIM puxa; NÃO puxa para o oposto; ausência, obstrução e 'não votou' não contam.",
+ "votacoes": [
+  {"votacao": "6756", "titulo": "PL 2903/2023 (marco temporal das terras indígenas)", "eixo": "ambiente", "favor": "b", "nota": "Texto principal do marco temporal no Senado (2023)."},
+  {"votacao": "7032", "titulo": "PEC 48/2023 (marco temporal na Constituição)", "eixo": "ambiente", "favor": "b", "nota": "1º turno da PEC que põe o marco temporal na Constituição (2025)."},
+  {"votacao": "6935", "titulo": "PL 2159/2021 (licenciamento ambiental)", "eixo": "ambiente", "favor": "b", "nota": "Texto da lei geral do licenciamento ambiental aprovado no Senado (2025)."},
+  {"votacao": "6818", "titulo": "PL 2253/2022 (fim da saída temporária de presos)", "eixo": "seguranca", "favor": "b", "nota": "Texto principal que restringe a saída temporária de presos (2024)."},
+  {"votacao": "6824", "titulo": "PEC 45/2023 (criminalização do porte de drogas)", "eixo": "costumes", "favor": "b", "nota": "1º turno da PEC que torna crime a posse e o porte de qualquer quantidade de droga (2024)."}
+ ]
+}

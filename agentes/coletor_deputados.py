@@ -109,6 +109,74 @@ def cota(ano, ids):
     return saida
 
 
+def senado(senadores, anos, uf):
+    """Votos dos senadores nas votações de casos/_federal/eixos_senado.json e gastos da CEAPS
+    (cota do Senado). Preenche cada senador e devolve (votações, políticos para o painel)."""
+    curadas = json.load(open(os.path.join(RAIZ, "casos", "_federal", "eixos_senado.json"), encoding="utf-8"))["votacoes"]
+    por_cod = {c["votacao"]: c for c in curadas}
+    votacoes, politicos, info = [], [], {}
+    for s in senadores:
+        pos = defaultdict(lambda: [0, 0])
+        s["votos"] = {}
+        try:
+            lista = json.loads(baixar(f"https://legis.senado.leg.br/dadosabertos/senador/{s['id']}/votacoes.json"))
+            vs = lista["VotacaoParlamentar"]["Parlamentar"]["Votacoes"]["Votacao"]
+        except Exception as e:  # noqa: BLE001
+            log(f"AVISO: votos de {s['nome']} não lidos ({e})")
+            continue
+        for v in vs:
+            c = por_cod.get(str(v.get("CodigoSessaoVotacao")))
+            if not c:
+                continue
+            voto = v.get("SiglaDescricaoVoto", "")
+            s["votos"][c["votacao"]] = voto
+            info[c["votacao"]] = v
+            if voto in ("Sim", "Não"):
+                sinal = 1 if c["favor"] == "b" else -1
+                pos[c["eixo"]][0] += sinal if voto == "Sim" else -sinal
+                pos[c["eixo"]][1] += 1
+        if pos:
+            politicos.append({"chave": f"sen-{s['id']}", "nome": s["nome"], "partido": s["partido"], "cargo": f"Senador(a) ({uf})",
+                              "cidade": "", "foto": s["foto"], "perfil": f"deputados.html#sen-{s['id']}",
+                              "eixos": {e: sn for e, sn in pos.items()}})
+    for c in curadas:
+        v = info.get(c["votacao"], {})
+        votacoes.append({"id": c["votacao"], "fonte": "Senado Federal", "eixo": c["eixo"], "favor": c["favor"], "nota": c["nota"],
+                         "m": c["titulo"], "d": v.get("SessaoPlenaria", {}).get("DataSessao", ""), "r": v.get("DescricaoResultado", "") or "",
+                         "n": {}, "url": f"https://www25.senado.leg.br/web/atividade/materias/-/materia/{v.get('Materia', {}).get('Codigo', '')}"})
+    ids = {int(s["id"]) for s in senadores}
+    for s in senadores:
+        s["gastos"] = {}
+    for ano in anos:
+        try:
+            linhas = json.loads(baixar(f"https://adm.senado.gov.br/adm-dadosabertos/api/v1/senadores/despesas_ceaps/{ano}"))
+        except Exception as e:  # noqa: BLE001
+            log(f"AVISO: CEAPS {ano} não lida ({e})")
+            continue
+        g = defaultdict(lambda: {"total": 0.0, "notas": 0, "categorias": Counter(), "meses": Counter(), "forn": Counter()})
+        for l in linhas:
+            if l["codSenador"] not in ids:
+                continue
+            x = g[l["codSenador"]]
+            v = float(l["valorReembolsado"] or 0)
+            x["total"] += v
+            x["notas"] += 1
+            x["categorias"][l["tipoDespesa"].strip().capitalize()] += v
+            x["meses"][l["mes"]] += v
+            doc = "".join(ch for ch in (l["cpfCnpj"] or "") if ch.isdigit())
+            nome = re.sub(r"\s*\b\d{3}\.?\d{3}\.?\d{3}-?\d{2}\b", "", l["fornecedor"] or "").strip()
+            x["forn"][(nome, doc if len(doc) == 14 else "")] += v
+        for s in senadores:
+            x = g.get(int(s["id"]))
+            if x:
+                s["gastos"][str(ano)] = {"total": round(x["total"], 2), "notas": x["notas"],
+                                         "categorias": {k: round(v, 2) for k, v in x["categorias"].most_common()},
+                                         "meses": {str(m): round(v, 2) for m, v in sorted(x["meses"].items())},
+                                         "fornecedores": [{"nome": n, "cnpj": d, "valor": round(v, 2)} for (n, d), v in x["forn"].most_common(8)]}
+    log(f"senado: {len(politicos)} senadores com posição em {len(votacoes)} votações")
+    return votacoes, politicos
+
+
 def main():
     uf = (sys.argv[sys.argv.index("--uf") + 1] if "--uf" in sys.argv else "SP").upper()
     hoje = date.today()
@@ -174,8 +242,11 @@ def main():
                                   "pagina": i["UrlPaginaParlamentar"].replace("http://", "https://"), "email": i.get("EmailParlamentar", "")})
     except Exception as e:  # noqa: BLE001
         log(f"AVISO: senadores não lidos ({e})")
+    sen_vot, sen_pol = senado(senadores, anos, uf)
+    gravar(os.path.join(pasta, f"senadores_{uf.lower()}.json"),
+           json.dumps({"votacoes": sen_vot, "politicos": sen_pol}, ensure_ascii=False, indent=1) + "\n")
     site = {"gerado_em": datetime.now().astimezone().isoformat(timespec="minutes"), "uf": uf, "anos": anos,
-            "votacoes": votacoes, "deputados": perfis, "senadores": senadores}
+            "votacoes": votacoes, "deputados": perfis, "senadores": senadores, "votacoes_senado": sen_vot}
     gravar(os.path.join(RAIZ, "site", "deputados.js"),
            "window.DEPUTADOS=" + json.dumps(site, ensure_ascii=False, separators=(",", ":")) + ";\n")
     log(f"OK: {len(perfis)} deputados e {len(senadores)} senadores, {len(politicos)} deputados com posição em {len(votacoes)} votações; "
