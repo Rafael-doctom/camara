@@ -1,0 +1,250 @@
+/* controles.css: visual único para selects e campos de formulário do site.
+   Carregado depois de tema.css. Usa os tokens de cor do tema, então funciona no modo escuro. */
+
+:root {
+  --seta: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23a94f30' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+html[data-tema="escuro"] {
+  --seta: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23e0805c' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* ---------- select */
+select,
+.filtros select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: inherit;
+  font-size: .95rem;
+  font-weight: 500;
+  color: var(--texto);
+  background-color: var(--cartao);
+  background-image: var(--seta);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px 8px;
+  border: 1px solid var(--linha);
+  border-radius: 14px;
+  padding: 10px 44px 10px 16px;
+  min-height: 48px;
+  min-width: 180px;
+  max-width: 100%;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(20, 17, 15, .04);
+  transition: border-color .15s, box-shadow .15s, background-color .15s;
+  text-overflow: ellipsis;
+}
+select:hover:not(:disabled) {
+  border-color: #d3c9ba;
+  background-color: var(--fundo);
+}
+select:focus,
+select:focus-visible {
+  outline: none;
+  border-color: var(--acento-2);
+  box-shadow: 0 0 0 4px rgba(192, 98, 63, .16);
+}
+select:disabled {
+  cursor: not-allowed;
+  color: var(--suave);
+  background-color: var(--fundo-2);
+  opacity: .75;
+  box-shadow: none;
+}
+/* opção vazia ("Todos", "Escolha…") um pouco mais discreta quando selecionada */
+select:has(option[value=""]:checked) { color: var(--texto-2); }
+select option { color: var(--texto); background: var(--cartao); font-weight: 400; }
+select::-ms-expand { display: none; }
+
+/* rótulo acima do select: mono, como os rótulos do Raízes */
+.filtros label {
+  font-family: var(--f-mono);
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--suave);
+  gap: 6px;
+}
+
+/* ---------- campo de busca no mesmo padrão */
+input[type="search"],
+.filtros input[type="search"] {
+  -webkit-appearance: none;
+  appearance: none;
+  font: inherit;
+  font-size: .95rem;
+  color: var(--texto);
+  background-color: var(--cartao);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236f6a61' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.5-3.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 14px center;
+  background-size: 16px;
+  border: 1px solid var(--linha);
+  border-radius: 14px;
+  padding: 10px 16px 10px 40px;
+  min-height: 48px;
+  box-shadow: 0 1px 2px rgba(20, 17, 15, .04);
+  transition: border-color .15s, box-shadow .15s;
+}
+input[type="search"]:hover { border-color: #d3c9ba; }
+input[type="search"]:focus {
+  outline: none;
+  border-color: var(--acento-2);
+  box-shadow: 0 0 0 4px rgba(192, 98, 63, .16);
+}
+input[type="search"]::placeholder { color: var(--suave); opacity: .8; }
+input[type="search"]::-webkit-search-cancel-button { cursor: pointer; }
+
+/* ---------- caixa de seleção */
+.filtros .check input,
+input[type="checkbox"] {
+  accent-color: var(--acento-2);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.filtros .check { font-family: var(--f-sans); text-transform: none; letter-spacing: 0; font-size: .9rem; font-weight: 500; color: var(--texto); }
+
+@media (max-width: 600px) {
+  select, input[type="search"] { min-width: 0; width: 100%; }
+  .filtros label { flex: 1 1 100%; }
+}
+
+/* o rótulo é mono e maiúsculo; o valor dentro do campo volta para o texto normal */
+select, input[type="search"], .filtros select, .filtros input[type="search"] {
+  font-family: var(--f-sans);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* ---------- lista de opções personalizada (select customizável, Chrome/Edge 135+)
+   Onde o navegador não suporta, o select nativo continua funcionando normalmente. */
+@supports (appearance: base-select) {
+  select,
+  .filtros select,
+  ::picker(select) {
+    appearance: base-select;
+  }
+
+  select,
+  .filtros select {
+    display: inline-flex;
+    align-items: center;
+    background-image: none;            /* a seta passa a ser o ::picker-icon */
+    padding-right: 16px;
+  }
+  select::picker-icon {
+    content: "";
+    width: 12px;
+    height: 8px;
+    margin-left: auto;
+    padding-left: 14px;
+    background: var(--seta) no-repeat right center / 12px 8px;
+    transition: transform .2s ease;
+  }
+  select:open::picker-icon { transform: rotate(180deg); }
+  select:open {
+    border-color: var(--acento-2);
+    box-shadow: 0 0 0 4px rgba(192, 98, 63, .16);
+  }
+
+  /* a caixa que abre */
+  ::picker(select) {
+    border: 1px solid var(--linha);
+    border-radius: 16px;
+    background: var(--cartao);
+    box-shadow: 0 2px 4px rgba(20, 17, 15, .05), 0 18px 44px rgba(20, 17, 15, .14);
+    padding: 6px;
+    margin-block: 6px;
+    min-width: anchor-size(width);
+    max-height: min(360px, 60vh);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--linha) transparent;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .16s ease, transform .16s ease, overlay .16s allow-discrete, display .16s allow-discrete;
+  }
+  ::picker(select):popover-open { opacity: 1; transform: translateY(0); }
+  @starting-style {
+    ::picker(select):popover-open { opacity: 0; transform: translateY(-6px); }
+  }
+
+  /* cada opção */
+  select option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 42px;
+    padding: 9px 12px;
+    border-radius: 10px;
+    font-family: var(--f-sans);
+    font-size: .92rem;
+    font-weight: 400;
+    color: var(--texto);
+    background: transparent;
+    cursor: pointer;
+    transition: background-color .12s, color .12s;
+  }
+  select option:hover,
+  select option:focus-visible {
+    background: var(--fundo-2);
+    outline: none;
+  }
+  select option:checked {
+    background: color-mix(in srgb, var(--acento-2) 12%, var(--cartao));
+    color: var(--acento);
+    font-weight: 600;
+  }
+  /* marca de selecionado à direita */
+  select option::checkmark {
+    order: 1;
+    margin-left: auto;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--acento-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4l2.8 2.8L9 1.2' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / 10px 8px;
+  }
+  /* a primeira opção ("Todos", "Escolha…") fica separada das demais */
+  select option[value=""] {
+    color: var(--suave);
+    font-family: var(--f-mono);
+    font-size: .74rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    position: relative;
+  }
+  select option[value=""]::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: -3px;
+    height: 1px;
+    background: var(--linha);
+  }
+  select option[value=""]:checked { color: var(--acento); background: transparent; }
+  select option:disabled { color: var(--suave); opacity: .6; cursor: not-allowed; }
+
+  /* grupos de opções */
+  select optgroup { padding: 4px 0; }
+  select optgroup legend {
+    font-family: var(--f-mono);
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--acento);
+    padding: 8px 12px 4px;
+  }
+
+  /* o valor mostrado no botão fechado */
+  select selectedcontent {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

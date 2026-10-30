@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Três modelos para a página de Votações · Olho na Câmara de Tatuí</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../tema.css">
+<link rel="stylesheet" href="../controles.css">
+<link rel="stylesheet" href="modelos.css">
+<script>try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
+<style>
+.comp { display: grid; gap: 22px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 10px 0 28px; }
+@media (max-width: 980px) { .comp { grid-template-columns: minmax(0, 1fr); } }
+.modelo { display: flex; flex-direction: column; gap: 10px; background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); padding: 22px 20px 20px; position: relative; overflow: hidden; }
+.modelo::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 5px; background: var(--tema); }
+.modelo h2 { margin: 0; padding: 0; font-size: 1.5rem; }
+.modelo h2::before { display: none; }
+.modelo h2 a { text-decoration: none; }
+.modelo h2 a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.modelo:hover { box-shadow: var(--sombra); border-color: var(--linha-forte); }
+.forte { font-family: var(--f-serif); font-style: italic; font-size: 1.08rem; line-height: 1.4; color: var(--texto); margin: 0; font-variation-settings: "opsz" 36; }
+.modelo ul { margin: 0; padding-left: 18px; font-size: .88rem; }
+.modelo li { color: var(--texto-2); margin: 2px 0; }
+.modelo li.contra-p { color: var(--suave); }
+.telas { display: grid; grid-template-columns: minmax(0, 2.3fr) minmax(0, 1fr); gap: 10px; align-items: start; margin-top: 4px; }
+.tela { border: 1px solid var(--linha); border-radius: 10px; overflow: hidden; background: var(--fundo); aspect-ratio: 3 / 4; }
+.tela-m { aspect-ratio: 1 / 3; }
+.tela img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.tela-leg { font-family: var(--f-mono); font-size: .68rem; color: var(--suave); margin-top: 4px; }
+.abrir { margin-top: auto; font-family: var(--f-mono); font-size: .8rem; font-weight: 600; color: var(--acento); }
+.mais-telas { position: relative; z-index: 2; font-size: .82rem; }
+.mais-telas a { display: inline-flex; align-items: center; min-height: 44px; margin-right: 12px; color: var(--acento); }
+.ma { --tema: #a94f30; } .mb { --tema: #3f6a5b; } .mc { --tema: #4d5d80; }
+table.quadro { width: 100%; font-size: .88rem; }
+table.quadro th[scope=row] { text-align: left; font-weight: 600; color: var(--texto); white-space: nowrap; }
+</style>
+</head>
+<body>
+<main id="app" class="conteudo">
+  <header class="cab-pagina"><span class="rotulo">Página de Votações · comparação</span>
+    <h1>Três modelos para escolher</h1>
+    <p class="lede">Os três usam os dados reais da Câmara e o visual das páginas de Casos. Abra cada um no computador e no celular; escolhido o modelo, ele entra no site no lugar da página atual. Todos levam à página própria de cada votação, com o voto de cada vereador em foto.</p></header>
+
+  <div class="comp">
+    <article class="modelo ma">
+      <span class="rotulo">Modelo A</span>
+      <h2><a href="votacoes-a.html">Cartões com placar</a></h2>
+      <p class="forte">Melhor para quem chega sem saber o que procurar: as votações que mais importam aparecem primeiro, e o placar se lê de longe.</p>
+      <ul><li>Faixa "Votações que mais importam" no topo</li><li>Fotos de quem ficou do lado menor em cada cartão</li><li>Filtros em pílulas, como em Casos</li><li class="contra-p">Mostra menos votações por tela</li></ul>
+      <div class="telas"><div><div class="tela"><img src="capturas/votacoes-a-1280.png" alt="Captura do modelo A no computador: contadores, faixa de destaques e grade de cartões" loading="lazy"></div><div class="tela-leg">computador</div></div>
+        <div><div class="tela tela-m"><img src="capturas/votacoes-a-500.png" alt="Captura do modelo A no celular, com os cartões em uma coluna" loading="lazy"></div><div class="tela-leg">celular</div></div></div>
+      <p class="mais-telas"><a href="capturas/votacoes-a-escuro.png">modo escuro</a></p>
+      <span class="abrir">Abrir o modelo A →</span>
+    </article>
+
+    <article class="modelo mb">
+      <span class="rotulo">Modelo B</span>
+      <h2><a href="votacoes-b.html">Diário das sessões</a></h2>
+      <p class="forte">Melhor para acompanhar a Câmara semana a semana: conta o que aconteceu em cada sessão, na ordem.</p>
+      <ul><li>Linha do tempo por sessão, com presença e quantas foram divididas</li><li>Linhas compactas; ao tocar, abrem com os votos em foto</li><li>1ª e 2ª discussão com o mesmo placar viram uma linha só</li><li class="contra-p">Achar um assunto antigo depende da busca</li></ul>
+      <div class="telas"><div><div class="tela"><img src="capturas/votacoes-b-1280.png" alt="Captura do modelo B no computador: sessões em linha do tempo, uma votação aberta com as fotos" loading="lazy"></div><div class="tela-leg">computador</div></div>
+        <div><div class="tela tela-m"><img src="capturas/votacoes-b-500.png" alt="Captura do modelo B no celular" loading="lazy"></div><div class="tela-leg">celular</div></div></div>
+      <p class="mais-telas"><a href="capturas/votacoes-b-escuro.png">modo escuro</a></p>
+      <span class="abrir">Abrir o modelo B →</span>
+    </article>
+
+    <article class="modelo mc">
+      <span class="rotulo">Modelo C</span>
+      <h2><a href="votacoes-c.html">Painel com filtros</a></h2>
+      <p class="forte">Melhor para pesquisar e cobrar: escolha um vereador pela foto e veja o voto dele em cada linha.</p>
+      <ul><li>Filtros fixos ao lado (no celular, numa gaveta)</li><li>Contadores do filtro: total, negadas e divididas</li><li>Coluna "voto dele" e resumo dos votos do vereador</li><li class="contra-p">Mais denso; pede um pouco mais de quem lê</li></ul>
+      <div class="telas"><div><div class="tela"><img src="capturas/votacoes-c-1280.png" alt="Captura do modelo C no computador, com filtros à esquerda e a coluna do voto de Alex Mota" loading="lazy"></div><div class="tela-leg">computador, com vereador</div></div>
+        <div><div class="tela tela-m"><img src="capturas/votacoes-c-500.png" alt="Captura do modelo C no celular" loading="lazy"></div><div class="tela-leg">celular</div></div></div>
+      <p class="mais-telas"><a href="capturas/votacoes-c-500-gaveta.png">gaveta de filtros</a><a href="capturas/votacoes-c-escuro.png">modo escuro</a></p>
+      <span class="abrir">Abrir o modelo C →</span>
+    </article>
+  </div>
+
+  <h2>Lado a lado</h2>
+  <div class="tabela-wrap"><table class="quadro">
+    <thead><tr><th scope="col">Pergunta do morador</th><th scope="col">A · Cartões</th><th scope="col">B · Diário</th><th scope="col">C · Painel</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">O que foi importante?</th><td>Responde logo no topo</td><td>Por sessão</td><td>Com filtros</td></tr>
+      <tr><th scope="row">O que aconteceu na última sessão?</th><td>Pela data do cartão</td><td>Responde logo no topo</td><td>Pela data na linha</td></tr>
+      <tr><th scope="row">Como meu vereador votou?</th><td>Na página da votação</td><td>Ao abrir a linha</td><td>Responde em uma coluna</td></tr>
+      <tr><th scope="row">Votações vistas por tela</th><td>4 a 6</td><td>8 a 12</td><td>10 a 14</td></tr>
+    </tbody></table></div>
+  <p class="aviso">Os três mantêm a mesma regra: vermelho só para "contra" e "negado", sempre com a palavra escrita; votar contra é tratado como parte normal do trabalho do vereador. É possível misturar: por exemplo, a faixa de destaques do A no topo do C.</p>
+</main>
+<script src="../dados-base.js"></script>
+<script src="modelos.js"></script>
+<script>window.M && window.M.casca("", "Comparação dos três modelos");</script>
+</body>
+</html>

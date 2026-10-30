@@ -1,0 +1,24 @@
+/* modelos.css: faixa que identifica o protótipo e peças comuns aos três modelos. */
+.modelo-faixa { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 16px; max-width: var(--larg); margin: 0 auto; padding: 8px var(--gut); font-size: .84rem; color: var(--texto-2); border-bottom: 1px dashed var(--linha-forte); }
+.modelo-faixa b { font-family: var(--f-mono); font-size: .76rem; letter-spacing: .06em; text-transform: uppercase; color: var(--acento); }
+.modelo-faixa-s { color: var(--suave); }
+.modelo-faixa nav { display: flex; gap: 4px; }
+.modelo-faixa nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding: 0 12px; border-radius: 999px; text-decoration: none; color: var(--texto-2); }
+.modelo-faixa nav a:hover { background: var(--fundo-2); color: var(--texto); }
+.modelo-faixa nav a[aria-current] { background: var(--preto); color: var(--sobre-preto); font-weight: 600; }
+@media (max-width: 600px) { .modelo-faixa-s { display: none; } }
+
+/* fotos pequenas em fileira, sobrepostas */
+.fileira { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.fileira-fotos { display: flex; flex: none; }
+.fileira-fotos .foto { width: 30px; height: 30px; font-size: .62rem; box-shadow: 0 0 0 2px var(--cartao); }
+.fileira-fotos .foto + .foto { margin-left: -8px; }
+.fileira-txt { font-size: .8rem; color: var(--suave); line-height: 1.35; min-width: 0; }
+.fileira-txt b { color: var(--texto-2); font-weight: 600; }
+.mais-n { display: inline-grid; place-items: center; width: 30px; height: 30px; margin-left: -8px; border-radius: 50%; background: var(--fundo-2); color: var(--texto-2); font-size: .66rem; font-weight: 600; box-shadow: 0 0 0 2px var(--cartao); }
+
+.etq-sens { background: var(--parcial-bg); color: var(--parcial); font-weight: 600; }
+.etq-div { background: transparent; border: 1px solid var(--linha-forte); color: var(--texto-2); }
+.etq { margin: 0; }
+.vazio .chip { margin-top: 10px; }
+.botao-mais { display: flex; margin: 22px auto 0; }

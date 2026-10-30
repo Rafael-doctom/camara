@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Votações · Modelo A, cartões com placar · Olho na Câmara de Tatuí</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../tema.css">
+<link rel="stylesheet" href="../controles.css">
+<link rel="stylesheet" href="modelos.css">
+<script>try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
+<style>
+/* ---------- Modelo A: cartões com placar */
+.grade-vot { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 8px 0 8px; }
+@media (max-width: 760px) { .grade-vot { grid-template-columns: minmax(0, 1fr); } }
+.vot-card { position: relative; display: flex; flex-direction: column; gap: 8px; background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); padding: 24px 22px 18px; text-decoration: none; color: var(--texto); overflow: hidden; transition: transform .15s, box-shadow .15s, border-color .15s; min-width: 0; }
+.vot-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 5px; background: var(--tema, var(--linha-forte)); }
+.vot-card:hover { transform: translateY(-3px); box-shadow: var(--sombra); border-color: var(--linha-forte); color: var(--texto); }
+.vot-topo { display: flex; justify-content: space-between; gap: 8px 12px; align-items: baseline; flex-wrap: wrap; }
+.vot-topo .rotulo { color: var(--tema-txt, var(--tema, var(--acento))); }
+.vot-data { font-family: var(--f-mono); font-size: .74rem; color: var(--suave); }
+.vot-card h3 { font-size: 1.22rem; line-height: 1.22; margin: 2px 0 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.vot-meta { font-size: .8rem; color: var(--suave); margin: 0; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.vot-card .placar-v { margin: 8px 0 2px; }
+.vot-card .placar-trilho { height: 10px; }
+.vot-card .placar-leg b { font-size: 1.55rem; }
+.vot-card .fileira { margin-top: 4px; }
+.vot-pe { margin-top: auto; padding-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; border-top: 1px solid var(--linha); }
+.vot-ver { margin-left: auto; font-family: var(--f-mono); font-size: .76rem; font-weight: 600; color: var(--acento); white-space: nowrap; }
+.vot-card:hover .vot-ver { text-decoration: underline; text-underline-offset: 3px; }
+.so-placar { font-size: .8rem; color: var(--suave); margin: 2px 0 0; }
+
+/* destaque: faixa "Votações que mais importam" */
+.destaques { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 6px 0 8px; }
+.destaques .vot-card:first-child { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 8px 36px; padding: 30px 28px 22px; }
+.destaques .vot-card:first-child .d-esq, .destaques .vot-card:first-child .d-dir { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.destaques .vot-card:first-child h3 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); -webkit-line-clamp: 4; }
+.destaques .vot-card:first-child .placar-trilho { height: 16px; }
+.destaques .vot-card:first-child .placar-leg b { font-size: 2.1rem; }
+.destaques .vot-card:first-child .vot-pe { grid-column: 1 / -1; }
+.d-esq, .d-dir { display: contents; }
+@media (max-width: 760px) {
+  .destaques { grid-template-columns: minmax(0, 1fr); }
+  .destaques .vot-card:first-child { grid-template-columns: minmax(0, 1fr); padding: 24px 20px 18px; }
+}
+.por-que { font-size: .84rem; color: var(--texto-2); margin: 0; }
+.por-que b { font-weight: 600; color: var(--texto); }
+
+.t-lei { --tema: #a94f30; }
+.t-mocao { --tema: #8a6a1f; }
+.t-req { --tema: #3f6a5b; }
+.t-outro { --tema: #4d5d80; }
+.t-parecer { --tema: #7a4a73; }
+html[data-tema="escuro"] .vot-topo .rotulo { color: color-mix(in srgb, var(--tema) 45%, #fff); }
+
+.busca-linha { display: flex; gap: 12px; align-items: end; flex-wrap: wrap; margin: 4px 0 14px; }
+.busca-linha label { display: flex; flex-direction: column; gap: 4px; font-size: .78rem; font-weight: 500; color: var(--suave); flex: 1 1 280px; max-width: 520px; }
+.busca-linha input { font: inherit; font-size: .98rem; padding: 9px 14px; min-height: 46px; border: 1px solid var(--linha-forte); border-radius: 12px; background: var(--cartao); color: var(--texto); }
+.busca-linha input:focus { border-color: var(--acento-2); box-shadow: 0 0 0 3px rgba(192,98,63,.15); outline: none; }
+.chips-rot { min-width: 64px; }
+.legenda-tipos { font-size: .82rem; color: var(--suave); margin: 0 0 14px; }
+.legenda-tipos b { color: var(--texto-2); font-weight: 600; }
+</style>
+</head>
+<body>
+<main id="app" class="conteudo"><p class="carregando" role="status">Carregando dados da Câmara…</p></main>
+<script src="../dados-base.js"></script>
+<script src="../votacoes.js"></script>
+<script src="modelos.js"></script>
+<script>
+(function () {
+  "use strict";
+  const M = window.M, D = M.D, esc = M.esc;
+  M.casca("A", "Cartões com placar");
+  const app = document.getElementById("app");
+  if (!D.votacoes) { app.innerHTML = `<p class="vazio">Não foi possível carregar os dados. Recarregue a página.</p>`; return; }
+
+  const CLS = { "Projeto de Lei": "t-lei", "Projeto de Lei Complementar": "t-lei", "Veto": "t-lei", "Moção": "t-mocao", "Requerimento": "t-req", "Parecer": "t-parecer" };
+  const clsTipo = (v) => CLS[M.tipoMat(v)] || "t-outro";
+
+  function fileira(v) {
+    const m = M.minoria(v);
+    if (!m) return `<p class="so-placar">${(v.n || {}).contra ? "O SisCam registrou só o placar, sem os nomes." : "Ninguém votou contra."}</p>`;
+    const max = 6, mostra = m.nomes.slice(0, max), resto = m.nomes.length - mostra.length;
+    const nomes = m.nomes.map(M.nomeDe);
+    const txt = nomes.length <= 3 ? nomes.join(", ") : `${nomes.slice(0, 2).join(", ")} e mais ${nomes.length - 2}`;
+    return `<div class="fileira"><span class="fileira-fotos">${mostra.map((k) => M.foto(k)).join("")}${resto > 0 ? `<span class="mais-n" aria-hidden="true">+${resto}</span>` : ""}</span>
+      <span class="fileira-txt"><b>${m.rot}:</b> ${esc(txt)}</span></div>`;
+  }
+  function porQue(v) {
+    const r = [];
+    if (M.ehLei(v)) r.push(M.tipoMat(v) === "Veto" ? "veto do prefeito" : "muda uma lei da cidade");
+    if (v.sens.length) r.push("tema sensível: " + v.sens.map((s) => (M.SENS_CURTO[s] || s).toLowerCase()).join(", "));
+    if (M.negado(v)) r.push("a Câmara negou");
+    if (v.div) r.push("houve votos contra");
+    return r.length ? `<p class="por-que"><b>Por que importa:</b> ${esc(r.join("; "))}.</p>` : "";
+  }
+  function cartao(v, destaque) {
+    const pe = `<div class="vot-pe">${M.etqResultado(v)}${v.sens.map((s) => `<span class="etq etq-sens">${esc(M.SENS_CURTO[s] || s)}</span>`).join("")}
+      ${v.div ? `<span class="etq etq-div">dividida</span>` : ""}<span class="vot-ver">Ver os votos <span aria-hidden="true">→</span></span></div>`;
+    const meta = `<p class="vot-meta">${esc(M.tipoNome(v))} nº ${esc(M.numero(v))}${v.f ? " · " + esc(v.f.toLowerCase()) : ""}${M.autoria(v) ? " · autoria: " + esc(M.autoria(v)) : ""}</p>`;
+    const topo = `<div class="vot-topo"><span class="rotulo">${esc(M.tipoNome(v))}</span><span class="vot-data">${M.dataBR(v.d)}</span></div>`;
+    return `<a class="vot-card ${clsTipo(v)}" href="${M.hrefVotacao(v)}">
+      <div class="d-esq">${topo}<h3>${esc(M.curto(v, destaque ? 160 : 110))}</h3>${meta}${destaque ? porQue(v) : ""}</div>
+      <div class="d-dir">${M.placar(v.n)}${fileira(v)}</div>${pe}</a>`;
+  }
+
+  const base = M.ordenadas;
+  // Destaques: uma votação por matéria (sem pareceres nem emendas), as mais recentes.
+  const vistas = new Set();
+  const destaques = base.filter((v) => M.importante(v) && !/^(Parecer|Emenda)/.test(v.m)).filter((v) => {
+    const k = M.materiaBase(v); if (vistas.has(k)) return false; vistas.add(k); return true; }).slice(0, 3);
+  const nDiv = base.filter((v) => v.div).length, nNeg = base.filter(M.negado).length;
+  const TIPOS_F = [["", "Todos"], ["lei", "Projetos de lei"], ["mocao", "Moções"], ["req", "Requerimentos"], ["outro", "Outros"]];
+  const grupoTipo = (v) => ({ "t-lei": "lei", "t-mocao": "mocao", "t-req": "req" }[clsTipo(v)] || "outro");
+  const MOSTRAR = [["rel", "Principais"], ["div", "Divididas"], ["neg", "Negadas"], ["tudo", "Todas"]];
+  const temas = [...new Set(base.flatMap((v) => v.sens))].sort();
+  const chip = (f, v, t) => `<button type="button" class="chip" data-f="${f}" data-v="${esc(v)}" aria-pressed="false">${esc(t)}</button>`;
+
+  app.innerHTML = `<header class="cab-pagina"><span class="rotulo">Votações · 2025 a 2028</span>
+      <h1>Quem votou em quê</h1>
+      <p class="lede">Cada cartão é uma votação no plenário: o placar, o resultado e quem ficou do lado menor. Toque para ver o voto de cada vereador, com foto.</p></header>
+    <div class="contadores">
+      <div class="contador"><div class="contador-n">${M.fmt(base.filter(M.relevante).length)}</div><div class="contador-r">votações principais</div><div class="contador-s">fora as de rotina, como nome de rua</div></div>
+      <div class="contador"><div class="contador-n">${M.fmt(nDiv)}</div><div class="contador-r">divididas</div><div class="contador-s">teve voto a favor e contra</div></div>
+      <div class="contador"><div class="contador-n">${M.fmt(nNeg)}</div><div class="contador-r">negadas</div><div class="contador-s">a maioria disse não</div></div>
+      <div class="contador"><div class="contador-n">${M.fmt(new Set(base.map((v) => v.s)).size)}</div><div class="contador-r">sessões</div><div class="contador-s">com votação listada</div></div>
+    </div>
+    <section aria-labelledby="t-dest"><h2 id="t-dest">Votações que mais importam</h2>
+      <p class="suave" style="margin-top:-6px">As mais recentes que mudam leis, tocam em temas sensíveis ou foram negadas, e em que houve divergência.</p>
+      <div class="destaques">${destaques.map((v) => cartao(v, true)).join("")}</div></section>
+    <section aria-labelledby="t-todas"><h2 id="t-todas">Todas as votações</h2>
+      <div class="busca-linha"><label>Buscar pelo assunto ou número<input type="search" id="busca" placeholder="ex.: lixo, CEI, 604/2026"></label></div>
+      <div class="chips-bloco">
+        <div class="chips" role="group" aria-label="Quais votações"><span class="chips-rot">Mostrar</span>${MOSTRAR.map(([v, t]) => chip("mostrar", v, t)).join("")}</div>
+        <div class="chips" role="group" aria-label="Tipo de matéria"><span class="chips-rot">Tipo</span>${TIPOS_F.map(([v, t]) => chip("tipo", v, t)).join("")}</div>
+        <div class="chips" role="group" aria-label="Tema sensível"><span class="chips-rot">Tema</span>${chip("tema", "", "Todos")}${temas.map((t) => chip("tema", t, M.SENS_CURTO[t] || t)).join("")}</div>
+      </div>
+      <p class="legenda-tipos"><b>Projeto de lei</b>: proposta de nova lei. <b>Lei complementar (PLC)</b>: muda leis básicas, como impostos. <b>Moção</b>: aplauso, apoio ou repúdio, não vira lei. <b>Requerimento</b>: pedido de informação ou de investigação (CEI).</p>
+      <p class="contagem" id="contagem" role="status"></p>
+      <div class="grade-vot" id="lista"></div>
+      <div id="mais"></div></section>
+    <p class="aviso">"Dividida" quer dizer que houve votos a favor e contra. As fotos mostram quem ficou do lado menor só para facilitar a leitura: votar contra é parte normal do trabalho do vereador.</p>`;
+
+  const filtro = { mostrar: "rel", tipo: "", tema: "" };
+  let pagina = 1;
+  const POR = 20;
+  const busca = app.querySelector("#busca");
+  function lista() {
+    const b = M.norm(busca.value.trim());
+    return base.filter((v) => (filtro.mostrar === "tudo" || (filtro.mostrar === "rel" && M.relevante(v)) || (filtro.mostrar === "div" && v.div) || (filtro.mostrar === "neg" && M.negado(v)))
+      && (!filtro.tipo || grupoTipo(v) === filtro.tipo) && (!filtro.tema || v.sens.includes(filtro.tema))
+      && (!b || M.norm(v.m + " " + v.a).includes(b)));
+  }
+  function desenhar() {
+    app.querySelectorAll(".chips .chip").forEach((c) => c.setAttribute("aria-pressed", String(filtro[c.dataset.f] === c.dataset.v)));
+    const l = lista();
+    app.querySelector("#contagem").textContent = `${M.fmt(l.length)} ${l.length === 1 ? "votação" : "votações"}`;
+    app.querySelector("#lista").innerHTML = l.slice(0, pagina * POR).map((v) => cartao(v)).join("")
+      || `<p class="vazio" style="grid-column:1/-1">Nada encontrado com esses filtros.<br><button type="button" class="chip" id="limpar">Limpar filtros</button></p>`;
+    const resta = l.length - pagina * POR;
+    app.querySelector("#mais").innerHTML = resta > 0 ? `<button type="button" class="botao-mais" id="b-mais">Mostrar mais ${Math.min(resta, POR)} (faltam ${M.fmt(resta)})</button>` : "";
+    const bm = app.querySelector("#b-mais");
+    if (bm) bm.addEventListener("click", () => { pagina++; desenhar(); });
+    const lp = app.querySelector("#limpar");
+    if (lp) lp.addEventListener("click", () => { filtro.mostrar = "tudo"; filtro.tipo = ""; filtro.tema = ""; busca.value = ""; pagina = 1; desenhar(); });
+  }
+  app.querySelectorAll(".chips .chip").forEach((c) => c.addEventListener("click", () => { filtro[c.dataset.f] = c.dataset.v; pagina = 1; desenhar(); }));
+  busca.addEventListener("input", () => { pagina = 1; desenhar(); });
+  desenhar();
+})();
+</script>
+</body>
+</html>

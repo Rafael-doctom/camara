@@ -1,0 +1,33 @@
+{
+ "slug": "tatui",
+ "nome": "Tatuí",
+ "camara": "Câmara Municipal de Tatuí",
+ "site_camara": "https://camaratatui.sp.gov.br/",
+ "siscam": "https://tatui.siscam.com.br",
+ "modulo_documentos": 80,
+ "modulo": 8,
+ "cadeiras": 17,
+ "folga_lista_exercicio": 0,
+ "legislatura_atual": {"id": 4, "nome": "19ª legislatura", "inicio": "2025-01-01", "fim": "2028-12-31"},
+ "legislaturas_anteriores": [
+  {"ano": 2017, "id": 2, "nome": "17ª legislatura", "inicio": "2017-01-01", "fim": "2020-12-31"},
+  {"ano": 2021, "id": 3, "nome": "18ª legislatura", "inicio": "2021-01-01", "fim": "2024-12-31"}
+ ],
+ "coletar_anteriores": true,
+ "tipos_documento": {
+  "Projeto de Lei": 134,
+  "Projeto de Lei Complementar": 135,
+  "Projeto de Decreto Legislativo": 136,
+  "Projeto de Resolução": 137,
+  "Projeto de Emenda à Lei Orgânica": 138,
+  "Requerimento": 139,
+  "Indicação": 140,
+  "Moção": 141,
+  "Despacho Interlocutório": 1003
+ },
+ "links": [
+  ["Portal da Transparência da Câmara", "https://transparencia.camaratatui.sp.gov.br", "Salários, diárias, contratos e despesas da Câmara."],
+  ["Sessões em vídeo", "https://www.youtube.com/@camaratatui", "Discursos e debates de cada sessão."]
+ ],
+ "nota_registro": "Em 2017 e 2018 o SisCam registrou poucos votos nominais além de requerimentos, por isso há poucas votações divididas nesse período."
+}

@@ -1,0 +1,66 @@
+[
+ {
+  "recebido_em": "2026-10-28",
+  "fonte": "Facebook (Tatuí Mil Graus, 23/05/2026)",
+  "url": "https://www.facebook.com/share/p/19dvcW2Bpg/",
+  "alegacao": "Micheli Vaz apresentou, cinco dias depois, o mesmo requerimento de CEI que a base rejeitou, para tirar a presidência da comissão do vereador Kelvin; acusações sobre o marido da vereadora (secretário municipal).",
+  "status": "parcialmente verificado",
+  "nota": "Confirmado: Requerimento 1710/2026 (22/05/2026), mesmo texto, 8 signatários da base, tramitação suspensa por liminar. Virou o caso cei-base-governo-2026. A motivação e as acusações pessoais não constam em documento oficial e não entram no site."
+ },
+ {
+  "recebido_em": "2026-10-28",
+  "fonte": "Facebook (Tatuí Mil Graus, 09/04/2026)",
+  "url": "https://www.facebook.com/share/p/1LwhAevath/",
+  "alegacao": "Três vereadores (Gabriela, Micheli, Eduardinho) não assinaram a moção de apelo pelos servidores; reajuste de 58,3% no salário de um secretário.",
+  "status": "parcialmente verificado",
+  "nota": "Confirmado: Moção 163/2026 com 14 signatários, sem os três; eles protocolaram a Moção 174/2026. Virou o caso mocao-reajuste-servidores-2026. O salário do secretário não foi conferido (fonte: Portal da Transparência da Prefeitura)."
+ },
+ {
+  "recebido_em": "2026-10-28",
+  "fonte": "Facebook (Tatuí Mil Graus, 23/10/2025)",
+  "url": "https://www.facebook.com/Tatuimilgraus/posts/pfbid02F8HFSNK3bWBMMmeoApeRr2LoxRRMMHgLz1dkVAzYpWazRxgUAbvrZFEjRSZCZtjFl",
+  "alegacao": "Aumento do ISS aprovado (de 2,5% para 4%); 7 vereadores votaram contra.",
+  "status": "parcialmente verificado",
+  "nota": "Confirmado: PLC 3/2025 aprovado 9x7 em 23/10/2025, contra exatamente os 7 citados. Virou o caso nfse-iss-2025. Falta conferir a alíquota no texto da LC 58/2025; o site da Prefeitura estava com certificado inválido em 28/10/2026."
+ },
+ {
+  "recebido_em": "2026-10-28",
+  "fonte": "Facebook (Somos por Tatuí, 28/02/2024)",
+  "url": "https://www.facebook.com/share/p/19axBNCenT/",
+  "alegacao": "Vereadores da base do prefeito anterior (Gonzaga) se abstiveram na moção ao laboratório de análises clínicas da Santa Casa (27/02/2024). Painel: abstenção de Eduardo Sallum, Fábio Menezes, João Éder, Pepinho, Marcio do Santa Rita e Mauricio Enfermeiro.",
+  "status": "parcialmente verdadeiro",
+  "nota": "Moção 34/2024 (27/02/2024): 10 votos a favor e 6 abstenções. Cinco nomes conferem; Sallum consta como 'Não vota' e Cintia Yamamoto também se absteve. Virou o caso mocao-laboratorio-santa-casa-2024."
+ },
+ {
+  "recebido_em": "2026-10-28",
+  "fonte": "Facebook (Eduardo Sallum, 07/12/2021)",
+  "url": "https://www.facebook.com/share/p/1EUCwDrVFq/",
+  "alegacao": "Câmara aprovou a taxa do lixo. Contra: Sallum, Micheli Vaz, Valdir Proença. A favor: Cintia Yamamoto, Claudião, Débora Camargo, Fábio Villa Nova, Gabriela Xavier, João JJ, Márcio do Santa Rita, Maurício Enfermeiro, Paulinho Motos, Renan Cortez.",
+  "status": "verificado",
+  "nota": "PLC 2/2021 aprovado por 10 a 3 em 06/12/2021, com os nomes exatos do post. Virou o caso taxa-lixo-2021."
+ },
+ {
+  "recebido_em": "2026-10-28",
+  "fonte": "Facebook (Wfis Irene Santos, 08/11/2022)",
+  "url": "https://www.facebook.com/share/p/19m5ZDEfUB/",
+  "alegacao": "Moção de aplausos ao presidente eleito Lula aprovada com 9 votos (Sallum, Débora Camargo, Gabriela Xavier, Pepinho, João Éder, João JJ, Maurício Enfermeiro, Renan Cortez, Valdir Proença).",
+  "status": "verificado",
+  "nota": "Moção 463/2022 aprovada por 9 a 6 em 07/11/2022, com os 9 nomes do post. Virou o caso mocao-lula-2022."
+ },
+ {
+  "recebido_em": "2026-10-28",
+  "fonte": "Facebook (Rodnei Rocha, 09/09/2020)",
+  "url": "https://www.facebook.com/share/p/19Z58p9em2/",
+  "alegacao": "Aprovada em 1º turno a emenda à Lei Orgânica que reduz vereadores de 17 para 9, válida só a partir de 2025.",
+  "status": "parcialmente verdadeiro",
+  "nota": "PELO 2/2019 e Emenda 4 (9 vereadores) aprovados em 08/09/2020; o SisCam registra 17 a 0, mas o Requerimento 1350/2020 fala em 9 votos sim. Sem 2º turno; a redução não vigorou. Ver relatorios/2026-10-28-verificacao-pautas-antigas.md."
+ },
+ {
+  "recebido_em": "2026-10-28",
+  "fonte": "Facebook (Somos por Tatuí, 07/11/2018)",
+  "url": "https://www.facebook.com/share/p/19mjMZm81a/",
+  "alegacao": "Ficha Limpa municipal: no 1º turno 7 vereadores votaram contra; no 2º turno mudaram de lado.",
+  "status": "não confirmado",
+  "nota": "PL 56/2018 (Ficha Limpa, protocolado em 05/11/2018) não tem votação registrada no SisCam e foi arquivado em 2021. Consultar atas de nov/2018 para encerrar."
+ }
+]

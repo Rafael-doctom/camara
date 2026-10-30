@@ -1,0 +1,583 @@
+{
+ "data": "2026-10-30",
+ "gerado_em": "2026-10-30T04:02-03:00",
+ "geral": {
+  "total_proposituras": 10588,
+  "por_tipo": {
+   "Requerimento": 7513,
+   "Moção": 1597,
+   "Indicação": 873,
+   "Projeto de Lei": 437,
+   "Projeto de Decreto Legislativo": 113,
+   "Projeto de Resolução": 25,
+   "Projeto de Lei Complementar": 17,
+   "Despacho Interlocutório": 12,
+   "Projeto de Emenda à Lei Orgânica": 1
+  },
+  "total_sessoes": 135,
+  "total_votacoes": 10689,
+  "votacoes_divididas": 133
+ },
+ "vereadores": {
+  "ALEX MOTA": {
+   "nome": "ALEX MOTA",
+   "em_exercicio": true,
+   "proposituras": 556,
+   "por_tipo": {
+    "Requerimento": 310,
+    "Moção": 184,
+    "Indicação": 16,
+    "Projeto de Lei": 27,
+    "Projeto de Decreto Legislativo": 11,
+    "Projeto de Resolução": 7,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 130,
+    "ausente": 2,
+    "pct": 98.5
+   },
+   "pl_total": 27,
+   "pl_aprovados": 14,
+   "votos": {
+    "favor": 10437,
+    "contra": 40,
+    "ausente": 115,
+    "abstencao": 4
+   },
+   "alinhamento_maioria": 97.5,
+   "divididas_total": 120
+  },
+  "BOSSOLAN DA RADIO": {
+   "nome": "BOSSOLAN DA RÁDIO",
+   "em_exercicio": true,
+   "proposituras": 879,
+   "por_tipo": {
+    "Requerimento": 703,
+    "Moção": 87,
+    "Indicação": 61,
+    "Projeto de Lei": 15,
+    "Projeto de Resolução": 5,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Lei Complementar": 2,
+    "Despacho Interlocutório": 1,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 132,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 15,
+   "pl_aprovados": 7,
+   "votos": {
+    "favor": 10317,
+    "ausente": 226,
+    "contra": 53
+   },
+   "alinhamento_maioria": 39.8,
+   "divididas_total": 133
+  },
+  "CINTIA YAMAMOTO": {
+   "nome": "CINTIA YAMAMOTO",
+   "em_exercicio": true,
+   "proposituras": 1393,
+   "por_tipo": {
+    "Requerimento": 1199,
+    "Moção": 147,
+    "Indicação": 16,
+    "Projeto de Lei": 17,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Resolução": 6,
+    "Projeto de Lei Complementar": 2,
+    "Despacho Interlocutório": 1,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 128,
+    "ausente": 4,
+    "pct": 97.0
+   },
+   "pl_total": 17,
+   "pl_aprovados": 7,
+   "votos": {
+    "favor": 10086,
+    "ausente": 449,
+    "contra": 60,
+    "abstencao": 1
+   },
+   "alinhamento_maioria": 32.8,
+   "divididas_total": 131
+  },
+  "EDUARDINHO PERBELINI": {
+   "nome": "EDUARDINHO PERBELINI",
+   "em_exercicio": true,
+   "proposituras": 556,
+   "por_tipo": {
+    "Requerimento": 323,
+    "Moção": 166,
+    "Projeto de Lei": 52,
+    "Projeto de Decreto Legislativo": 10,
+    "Projeto de Resolução": 3,
+    "Projeto de Lei Complementar": 2
+   },
+   "presenca": {
+    "presente": 127,
+    "ausente": 5,
+    "pct": 96.2
+   },
+   "pl_total": 52,
+   "pl_aprovados": 12,
+   "votos": {
+    "ausente": 764,
+    "favor": 9783,
+    "contra": 49
+   },
+   "alinhamento_maioria": 98.4,
+   "divididas_total": 124
+  },
+  "ELAINE MIRANDA": {
+   "nome": "ELAINE MIRANDA",
+   "em_exercicio": true,
+   "proposituras": 740,
+   "por_tipo": {
+    "Requerimento": 487,
+    "Moção": 174,
+    "Projeto de Lei": 54,
+    "Projeto de Decreto Legislativo": 9,
+    "Projeto de Resolução": 10,
+    "Projeto de Lei Complementar": 2,
+    "Indicação": 3,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 132,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 54,
+   "pl_aprovados": 16,
+   "votos": {
+    "favor": 10532,
+    "contra": 54,
+    "ausente": 10
+   },
+   "alinhamento_maioria": 83.5,
+   "divididas_total": 133
+  },
+  "GABRIELA XAVIER": {
+   "nome": "GABRIELA XAVIER",
+   "em_exercicio": true,
+   "proposituras": 483,
+   "por_tipo": {
+    "Requerimento": 321,
+    "Moção": 111,
+    "Indicação": 4,
+    "Projeto de Lei": 30,
+    "Projeto de Resolução": 13,
+    "Projeto de Decreto Legislativo": 2,
+    "Projeto de Lei Complementar": 2
+   },
+   "presenca": {
+    "presente": 127,
+    "ausente": 5,
+    "pct": 96.2
+   },
+   "pl_total": 30,
+   "pl_aprovados": 15,
+   "votos": {
+    "ausente": 838,
+    "favor": 9709,
+    "contra": 49
+   },
+   "alinhamento_maioria": 98.4,
+   "divididas_total": 128
+  },
+  "KELVIN JOELMIR DE MORAIS": {
+   "nome": "KELVIN JOELMIR DE MORAIS",
+   "em_exercicio": true,
+   "proposituras": 1146,
+   "por_tipo": {
+    "Requerimento": 882,
+    "Moção": 124,
+    "Indicação": 107,
+    "Projeto de Lei": 12,
+    "Projeto de Decreto Legislativo": 8,
+    "Projeto de Resolução": 5,
+    "Projeto de Lei Complementar": 2,
+    "Despacho Interlocutório": 5,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 126,
+    "ausente": 6,
+    "pct": 95.5
+   },
+   "pl_total": 12,
+   "pl_aprovados": 6,
+   "votos": {
+    "favor": 9498,
+    "ausente": 1007,
+    "contra": 88,
+    "abstencao": 3
+   },
+   "alinhamento_maioria": 12.2,
+   "divididas_total": 131
+  },
+  "LEANDRO MAGRAO": {
+   "nome": "LEANDRO MAGRÃO",
+   "em_exercicio": true,
+   "proposituras": 1130,
+   "por_tipo": {
+    "Requerimento": 767,
+    "Moção": 275,
+    "Indicação": 23,
+    "Projeto de Lei": 51,
+    "Projeto de Decreto Legislativo": 7,
+    "Projeto de Resolução": 6,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 130,
+    "ausente": 2,
+    "pct": 98.5
+   },
+   "pl_total": 51,
+   "pl_aprovados": 16,
+   "votos": {
+    "ausente": 959,
+    "favor": 9584,
+    "nao_vota": 3,
+    "contra": 48,
+    "abstencao": 2
+   },
+   "alinhamento_maioria": 93.2,
+   "divididas_total": 118
+  },
+  "LUIZ RICARDO TREVISANO": {
+   "nome": "LUIZ RICARDO TREVISANO",
+   "em_exercicio": true,
+   "proposituras": 309,
+   "por_tipo": {
+    "Requerimento": 153,
+    "Moção": 122,
+    "Indicação": 6,
+    "Projeto de Lei": 16,
+    "Projeto de Decreto Legislativo": 4,
+    "Projeto de Resolução": 7,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 120,
+    "ausente": 7,
+    "pct": 94.5
+   },
+   "pl_total": 16,
+   "pl_aprovados": 7,
+   "votos": {
+    "ausente": 1051,
+    "favor": 9021,
+    "contra": 50
+   },
+   "alinhamento_maioria": 96.8,
+   "divididas_total": 125
+  },
+  "LUZIA APARECIDA FERMINO": {
+   "nome": "LUZIA APARECIDA FERMINO",
+   "em_exercicio": true,
+   "proposituras": 15,
+   "por_tipo": {
+    "Requerimento": 14,
+    "Moção": 1
+   },
+   "presenca": {
+    "presente": 5,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 0,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 338,
+    "ausente": 34
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 2
+  },
+  "MARCIO DO SANTA RITA": {
+   "nome": "MARCIO DO SANTA RITA",
+   "em_exercicio": true,
+   "proposituras": 1910,
+   "por_tipo": {
+    "Requerimento": 1677,
+    "Moção": 65,
+    "Indicação": 151,
+    "Projeto de Lei": 12,
+    "Projeto de Resolução": 2,
+    "Despacho Interlocutório": 1,
+    "Projeto de Lei Complementar": 1,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 129,
+    "ausente": 3,
+    "pct": 97.7
+   },
+   "pl_total": 12,
+   "pl_aprovados": 7,
+   "votos": {
+    "ausente": 612,
+    "favor": 9920,
+    "contra": 63,
+    "abstencao": 1
+   },
+   "alinhamento_maioria": 25.0,
+   "divididas_total": 124
+  },
+  "MAURICIO ENFERMEIRO": {
+   "nome": "MAURICIO ENFERMEIRO",
+   "em_exercicio": true,
+   "proposituras": 1040,
+   "por_tipo": {
+    "Requerimento": 854,
+    "Moção": 82,
+    "Indicação": 81,
+    "Projeto de Lei": 14,
+    "Projeto de Resolução": 4,
+    "Projeto de Lei Complementar": 2,
+    "Projeto de Decreto Legislativo": 2,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 130,
+    "ausente": 2,
+    "pct": 98.5
+   },
+   "pl_total": 14,
+   "pl_aprovados": 5,
+   "votos": {
+    "ausente": 312,
+    "favor": 10232,
+    "contra": 52
+   },
+   "alinhamento_maioria": 38.1,
+   "divididas_total": 126
+  },
+  "MICHELI VAZ": {
+   "nome": "MICHELI VAZ",
+   "em_exercicio": true,
+   "proposituras": 714,
+   "por_tipo": {
+    "Requerimento": 412,
+    "Moção": 189,
+    "Indicação": 49,
+    "Projeto de Lei": 43,
+    "Projeto de Decreto Legislativo": 9,
+    "Projeto de Resolução": 10,
+    "Projeto de Lei Complementar": 2
+   },
+   "presenca": {
+    "presente": 123,
+    "ausente": 9,
+    "pct": 93.2
+   },
+   "pl_total": 43,
+   "pl_aprovados": 24,
+   "votos": {
+    "favor": 9882,
+    "ausente": 667,
+    "contra": 44,
+    "nao_vota": 3
+   },
+   "alinhamento_maioria": 97.6,
+   "divididas_total": 126
+  },
+  "PAULINHO MOTOS": {
+   "nome": "PAULINHO MOTOS",
+   "em_exercicio": true,
+   "proposituras": 332,
+   "por_tipo": {
+    "Requerimento": 95,
+    "Moção": 165,
+    "Indicação": 47,
+    "Projeto de Lei": 11,
+    "Projeto de Decreto Legislativo": 6,
+    "Projeto de Resolução": 6,
+    "Despacho Interlocutório": 1,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 129,
+    "ausente": 3,
+    "pct": 97.7
+   },
+   "pl_total": 11,
+   "pl_aprovados": 7,
+   "votos": {
+    "ausente": 632,
+    "favor": 9914,
+    "contra": 50
+   },
+   "alinhamento_maioria": 98.5,
+   "divididas_total": 130
+  },
+  "RENAN CORTEZ": {
+   "nome": "RENAN CORTEZ",
+   "em_exercicio": true,
+   "proposituras": 635,
+   "por_tipo": {
+    "Requerimento": 178,
+    "Moção": 257,
+    "Indicação": 95,
+    "Projeto de Lei": 68,
+    "Projeto de Decreto Legislativo": 15,
+    "Projeto de Resolução": 20,
+    "Projeto de Lei Complementar": 2
+   },
+   "presenca": {
+    "presente": 132,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 68,
+   "pl_aprovados": 30,
+   "votos": {
+    "nao_vota": 10034,
+    "favor": 384,
+    "ausente": 178
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 4
+  },
+  "ROSANA DO SUPERMERCADO": {
+   "nome": "ROSANA DO SUPERMERCADO",
+   "em_exercicio": true,
+   "proposituras": 847,
+   "por_tipo": {
+    "Requerimento": 563,
+    "Moção": 189,
+    "Indicação": 23,
+    "Projeto de Lei": 50,
+    "Projeto de Decreto Legislativo": 8,
+    "Projeto de Resolução": 11,
+    "Projeto de Lei Complementar": 2,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 130,
+    "ausente": 2,
+    "pct": 98.5
+   },
+   "pl_total": 50,
+   "pl_aprovados": 20,
+   "votos": {
+    "favor": 9695,
+    "ausente": 314,
+    "contra": 49,
+    "nao_vota": 538
+   },
+   "alinhamento_maioria": 99.2,
+   "divididas_total": 125
+  },
+  "VADE MANOEL": {
+   "nome": "VADE MANOEL",
+   "em_exercicio": true,
+   "proposituras": 1110,
+   "por_tipo": {
+    "Requerimento": 751,
+    "Moção": 221,
+    "Indicação": 78,
+    "Projeto de Lei": 39,
+    "Projeto de Decreto Legislativo": 12,
+    "Projeto de Resolução": 8,
+    "Projeto de Lei Complementar": 1
+   },
+   "presenca": {
+    "presente": 131,
+    "ausente": 1,
+    "pct": 99.2
+   },
+   "pl_total": 39,
+   "pl_aprovados": 12,
+   "votos": {
+    "favor": 10390,
+    "ausente": 157,
+    "contra": 49
+   },
+   "alinhamento_maioria": 99.2,
+   "divididas_total": 133
+  },
+  "JOAO JJ": {
+   "nome": "JOÃO JJ",
+   "em_exercicio": false,
+   "proposituras": 0,
+   "por_tipo": {},
+   "presenca": {
+    "presente": 1,
+    "ausente": 0,
+    "pct": 100.0
+   },
+   "pl_total": 0,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 5
+   },
+   "alinhamento_maioria": 100.0,
+   "divididas_total": 5
+  },
+  "JOAO EDER": {
+   "nome": "JOÃO ÉDER",
+   "em_exercicio": false,
+   "proposituras": 1892,
+   "por_tipo": {
+    "Requerimento": 1563,
+    "Moção": 126,
+    "Indicação": 179,
+    "Projeto de Lei": 11,
+    "Projeto de Decreto Legislativo": 6,
+    "Projeto de Resolução": 3,
+    "Projeto de Lei Complementar": 2,
+    "Despacho Interlocutório": 1,
+    "Projeto de Emenda à Lei Orgânica": 1
+   },
+   "presenca": {
+    "presente": 119,
+    "ausente": 8,
+    "pct": 93.7
+   },
+   "pl_total": 11,
+   "pl_aprovados": 4,
+   "votos": {
+    "ausente": 988,
+    "favor": 9182,
+    "contra": 53,
+    "abstencao": 1
+   },
+   "alinhamento_maioria": 34.2,
+   "divididas_total": 120
+  },
+  "PROFESSOR DUZA": {
+   "nome": "PROFESSOR DUZA",
+   "em_exercicio": false,
+   "proposituras": 51,
+   "por_tipo": {
+    "Requerimento": 43,
+    "Indicação": 1,
+    "Moção": 6,
+    "Projeto de Lei": 1
+   },
+   "presenca": {
+    "presente": 0,
+    "ausente": 0,
+    "pct": null
+   },
+   "pl_total": 1,
+   "pl_aprovados": 0,
+   "votos": {
+    "favor": 1
+   },
+   "alinhamento_maioria": null,
+   "divididas_total": 0
+  }
+ }
+}

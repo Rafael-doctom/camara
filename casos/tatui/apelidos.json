@@ -1,0 +1,19 @@
+{
+ "_sobre": "Nome alternativo (como aparece em proposituras ou votações do SisCam) -> nome parlamentar. Só para quem NÃO tem nome civil na página /Vereadores (ex-vereadores e suplentes). Os nomes civis dos vereadores em exercício entram sozinhos. Conferir no SisCam antes de incluir e registrar a evidência em _evidencias. 'apelidos' vale para a legislatura atual; 'apelidos_anteriores' só para 2017-2024 (o analista liga nomes antigos pelo ID do SisCam e usa esta lista só para o que não casar sozinho).",
+ "apelidos": {
+  "JOÃO EDER ALVES MIGUEL": "JOÃO ÉDER"
+ },
+ "apelidos_anteriores": {
+  "CLAUDIO DOS SANTOS": "CLAUDIAO OKLAHOMA",
+  "DÉBORA CRISTINA MACHADO DE CAMARGO": "DEBORA CAMARGO",
+  "FÁBIO ANTONIO VILLA NOVA": "FÁBIO VILLA NOVA",
+  "JOÃO FRANCISCO DE LIMA FILHO": "JOÃO JJ",
+  "HIAGO DAROS ALVES": "HIAGO DAROS"
+ },
+ "_evidencias": {
+  "JOÃO EDER ALVES MIGUEL": "Cadastro de autores do SisCam (ID 1561, sem página de perfil). Assina 142 proposituras entre 09/06/2025 e 12/10/2025, período em que JOÃO ÉDER (ID 1240) estava em exercício; os perfis do SisCam não publicam o nome civil de ex-vereadores.",
+  "PROFESSOR DUZA": "Não é apelido: é outro vereador. Suplente do SOLIDARIEDADE (ID 2808), exerceu de 10/01/2025 a 23/02/2025 segundo /Legislaturas/Legislatura/4. Entre JOÃO JJ (titular até 07/02/2025) e LUIZ RICARDO TREVISANO (a partir de 24/02/2025). Nas chamadas de 03/02 a 19/02/2025 o SisCam lista 'COMISSÃO DE CONSTITUIÇÃO, JUSTIÇA E REDAÇÃO 2021 - 2022' no lugar de um vereador; o site ignora esse registro.",
+  "CLAUDIO DOS SANTOS, DÉBORA CRISTINA MACHADO DE CAMARGO, FÁBIO ANTONIO VILLA NOVA, JOÃO FRANCISCO DE LIMA FILHO": "15 sessões entre a 709 (01/02/2021) e a 729 (12/04/2021): a chamada lista os 17 vereadores pelo nome civil e as votações da mesma sessão, pelo nome parlamentar. Os outros 13 casam pelo ID do SisCam (página /Legislaturas/Legislatura/3 e nomes civis da página /Vereadores); estes 4 sobram e casam com CLAUDIAO OKLAHOMA (ID 2147), DEBORA CAMARGO (2148), FÁBIO VILLA NOVA (2157) e JOÃO JJ (2150). No cadastro de autores, FÁBIO ANTONIO VILLA NOVA é o ID 2142 e CLAUDIO DOS SANTOS o 2143, perto dos IDs desses vereadores.",
+  "HIAGO DAROS ALVES": "Suplente HIAGO DAROS (ID 2488 em /Vereadores/Anteriores). Nas votações de jan.-fev. de 2023 (sessões 865 a 868, de 30/01 a 13/02/2023) aparece como HIAGO DAROS ALVES, na mesma cadeira em que, de 23/02/2023 (sessão 869) a 04/09/2023, aparece HIAGO DAROS."
+ }
+}

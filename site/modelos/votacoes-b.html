@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Votações · Modelo B, diário das sessões · Olho na Câmara de Tatuí</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../tema.css">
+<link rel="stylesheet" href="../controles.css">
+<link rel="stylesheet" href="modelos.css">
+<script>try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
+<style>
+/* ---------- Modelo B: diário das sessões, em linha do tempo */
+.diario { list-style: none; margin: 8px 0 0; padding: 0; position: relative; max-width: 980px; }
+.diario::before { content: ""; position: absolute; left: 9px; top: 12px; bottom: 12px; width: 2px; background: var(--linha); }
+.sessao { position: relative; padding: 0 0 36px 40px; }
+.sessao::before { content: ""; position: absolute; left: 0; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--cartao); border: 3px solid var(--acento-2); }
+.ses-data { font-family: var(--f-mono); font-size: .76rem; font-weight: 600; color: var(--acento); letter-spacing: .04em; }
+.ses-dia { color: var(--suave); font-weight: 500; }
+.sessao h2 { font-size: clamp(1.3rem, 2.4vw, 1.6rem); margin: 4px 0 6px; padding-top: 0; }
+.sessao h2::before { display: none; }
+.ses-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .84rem; color: var(--suave); margin: 0 0 14px; }
+.ses-meta b { font-family: var(--f-serif); font-size: 1.05rem; color: var(--texto); font-weight: 600; margin-right: 2px; }
+.ses-meta a { color: var(--acento); }
+
+.linhas { list-style: none; margin: 0; padding: 0; background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); overflow: hidden; }
+.linhas > li + li { border-top: 1px solid var(--linha); }
+.linha { width: 100%; display: grid; grid-template-columns: 92px minmax(0, 1fr) 170px 28px; gap: 6px 18px; align-items: center; text-align: left; padding: 12px 18px; min-height: 60px; border: 0; border-radius: 0; background: transparent; font: inherit; color: var(--texto); cursor: pointer; }
+.linha:hover { background: var(--fundo); }
+html[data-tema="escuro"] .linha:hover { background: var(--fundo-2); }
+.linha:focus-visible { outline-offset: -3px; }
+.linha .etq { justify-self: start; }
+.l-tit { display: flex; flex-direction: column; min-width: 0; line-height: 1.35; }
+.l-tit strong { font-family: var(--f-serif); font-weight: 600; font-size: 1.02rem; letter-spacing: -.005em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.l-tit small { font-size: .78rem; color: var(--suave); }
+.l-placar { display: flex; flex-direction: column; gap: 5px; }
+.l-placar .placar-trilho { height: 7px; }
+.l-num { font-size: .78rem; color: var(--suave); white-space: nowrap; }
+.l-num .c { color: var(--contra); font-weight: 600; }
+.l-num .f { color: var(--favor); font-weight: 600; }
+.l-seta { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; background: var(--fundo-2); color: var(--texto); font-size: 1.05rem; line-height: 1; transition: transform .15s; }
+.linha[aria-expanded="true"] .l-seta { transform: rotate(180deg); }
+.linha[aria-expanded="true"] { background: var(--fundo); }
+html[data-tema="escuro"] .linha[aria-expanded="true"] { background: var(--fundo-2); }
+.aberta { padding: 4px 18px 20px; background: var(--fundo); border-top: 1px dashed var(--linha); }
+html[data-tema="escuro"] .aberta { background: var(--fundo-2); }
+.aberta .votos-grade { margin-top: 12px; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+.aberta .vg { background: var(--cartao); padding: 10px 12px 10px; }
+.aberta .vg h3 { margin-bottom: 6px; }
+.aberta .vg-n { margin-left: 4px; font-size: 1.1rem; }
+.aberta .vg ul { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.aberta .pessoa { min-height: 44px; padding: 4px 12px 4px 4px; border: 1px solid var(--linha); border-radius: 999px; background: var(--fundo); }
+html[data-tema="escuro"] .aberta .pessoa { background: var(--fundo-2); }
+.aberta .pessoa .foto { width: 34px; height: 34px; }
+.aberta .pessoa-nome { font-size: .86rem; }
+.aberta-assunto { font-size: .92rem; color: var(--texto-2); margin: 12px 0 0; max-width: 75ch; }
+.aberta-pe { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin-top: 14px; font-size: .86rem; }
+.aberta-pe a { display: inline-flex; align-items: center; min-height: 44px; }
+.ses-vazia { font-size: .88rem; color: var(--suave); padding: 14px 18px; margin: 0; }
+.ses-escondidas { font-size: .82rem; color: var(--suave); margin: 8px 0 0; }
+
+.busca-linha { display: flex; gap: 12px; align-items: end; flex-wrap: wrap; margin: 4px 0 14px; }
+.busca-linha label { display: flex; flex-direction: column; gap: 4px; font-size: .78rem; font-weight: 500; color: var(--suave); flex: 1 1 280px; max-width: 520px; }
+.busca-linha input { font: inherit; font-size: .98rem; padding: 9px 14px; min-height: 46px; border: 1px solid var(--linha-forte); border-radius: 12px; background: var(--cartao); color: var(--texto); }
+.busca-linha input:focus { border-color: var(--acento-2); box-shadow: 0 0 0 3px rgba(192,98,63,.15); outline: none; }
+.chips-rot { min-width: 64px; }
+
+@media (max-width: 700px) {
+  .diario::before { left: 6px; }
+  .sessao { padding-left: 26px; }
+  .sessao::before { width: 10px; height: 10px; border-width: 2px; left: 0; }
+  .linha { grid-template-columns: minmax(0, 1fr) 28px; gap: 8px 10px; padding: 12px 14px; }
+  .linha .etq { grid-column: 1; grid-row: 1; }
+  .l-tit { grid-column: 1 / -1; grid-row: 2; }
+  .l-placar { grid-column: 1 / -1; grid-row: 3; }
+  .l-seta { grid-column: 2; grid-row: 1; justify-self: end; }
+  .aberta { padding: 4px 12px 16px; }
+}
+</style>
+</head>
+<body>
+<main id="app" class="conteudo"><p class="carregando" role="status">Carregando dados da Câmara…</p></main>
+<script src="../dados-base.js"></script>
+<script src="../votacoes.js"></script>
+<script src="modelos.js"></script>
+<script>
+(function () {
+  "use strict";
+  const M = window.M, D = M.D, esc = M.esc;
+  M.casca("B", "Diário das sessões");
+  const app = document.getElementById("app");
+  if (!D.votacoes) { app.innerHTML = `<p class="vazio">Não foi possível carregar os dados. Recarregue a página.</p>`; return; }
+
+  const diaSemana = (iso) => { const d = new Date(iso + "T12:00:00"); return isNaN(d) ? "" : d.toLocaleDateString("pt-BR", { weekday: "long" }); };
+  const SIS = D.siscam.base;
+  // Sessões da mais recente para a mais antiga; votações de cada uma, na ordem em que aparecem.
+  const sessoes = [...D.sessoes].sort((a, b) => b[2].localeCompare(a[2]) || b[0] - a[0]);
+  const porSessao = {};
+  D.votacoes.forEach((v) => { (porSessao[v.s] = porSessao[v.s] || []).push(v); });
+
+  // Mesma matéria votada de novo na sessão (1ª e 2ª discussão) com o mesmo placar vira uma linha só.
+  function juntar(vs) {
+    const out = [], idx = {};
+    vs.forEach((v) => {
+      const k = M.materiaBase(v) + "|" + v.m.split(" ao ")[0] + "|" + JSON.stringify(v.n) + "|" + v.r;
+      if (idx[k] != null) out[idx[k]].fases.push(v.f); else { idx[k] = out.length; out.push(Object.assign({}, v, { fases: [v.f] })); }
+    });
+    return out;
+  }
+  function linha(v) {
+    const n = v.n || {}, c = n.contra || 0, f = n.favor || 0;
+    const fase = v.fases.length > 1 ? `${v.fases.map((x) => (x || "").toLowerCase()).join(" e ")}, mesmo placar` : (v.f || "").toLowerCase();
+    const id = "v-" + v.id.replace(/[^\w-]/g, "");
+    return `<li><button type="button" class="linha" aria-expanded="false" aria-controls="${id}" data-id="${esc(v.id)}">
+        ${M.etqResultado(v)}
+        <span class="l-tit"><strong>${esc(M.curto(v, 120))}</strong><small>${esc(M.tipoNome(v))} nº ${esc(M.numero(v))}${fase ? " · " + esc(fase) : ""}${v.sens.length ? " · tema sensível: " + esc(v.sens.map((s) => M.SENS_CURTO[s] || s).join(", ").toLowerCase()) : ""}</small></span>
+        <span class="l-placar">${M.trilho(n)}<span class="l-num"><span class="f">${f}</span> a favor · ${c ? `<span class="c">contra: ${c}</span>` : "contra: 0"}</span></span>
+        <span class="l-seta" aria-hidden="true">▾</span></button>
+      <div class="aberta" id="${id}" hidden></div></li>`;
+  }
+  function abrir(v) {
+    return `<p class="aberta-assunto">${esc(v.a)}</p>
+      ${M.placar(v.n, true)}
+      ${M.gradeVotos(v)}
+      <div class="aberta-pe"><a href="${M.hrefVotacao(v)}">Abrir a página desta votação <span aria-hidden="true">→</span></a>
+        <a href="${SIS}/Documentos/Documento/${encodeURIComponent(v.doc)}" target="_blank" rel="noopener">Documento oficial no SisCam <span aria-hidden="true">↗</span></a></div>`;
+  }
+  function sessao(s, vs) {
+    const [id, tit, data, pres, aus, nvot] = s;
+    const todas = porSessao[id] || [];
+    const div = todas.filter((v) => v.div).length;
+    const fora = (nvot || 0) - vs.length;
+    return `<li class="sessao">
+      <span class="ses-data">${M.dataBR(data)} <span class="ses-dia">· ${esc(diaSemana(data))}</span></span>
+      <h2>${esc(tit)}</h2>
+      <p class="ses-meta"><span><b>${div}</b> ${div === 1 ? "votação dividida" : "votações divididas"}</span><span><b>${pres}</b> presentes${aus ? `, ${aus} ${aus === 1 ? "ausente" : "ausentes"}` : ""}</span>
+        <a href="../index.html#semana/${id}">resumo da sessão</a></p>
+      <ul class="linhas">${juntar(vs).map(linha).join("")}</ul>
+      ${fora > 0 ? `<p class="ses-escondidas">Mais ${M.fmt(fora)} ${fora === 1 ? "votação" : "votações"} nesta sessão ficam fora deste filtro (pareceres e aprovações de rotina por unanimidade).</p>` : ""}</li>`;
+  }
+
+  const chip = (f, v, t) => `<button type="button" class="chip" data-f="${f}" data-v="${esc(v)}" aria-pressed="false">${esc(t)}</button>`;
+  app.innerHTML = `<header class="cab-pagina"><span class="rotulo">Votações · diário das sessões</span>
+      <h1>Sessão por sessão</h1>
+      <p class="lede">O que o plenário decidiu em cada sessão, da mais recente para a mais antiga. Toque numa votação para ver como cada vereador votou.</p></header>
+    <div class="busca-linha"><label>Buscar pelo assunto ou número<input type="search" id="busca" placeholder="ex.: lixo, CEI, 604/2026"></label></div>
+    <div class="chips-bloco"><div class="chips" role="group" aria-label="Quais votações"><span class="chips-rot">Mostrar</span>
+      ${chip("mostrar", "rel", "Principais")}${chip("mostrar", "div", "Só divididas")}${chip("mostrar", "neg", "Só negadas")}${chip("mostrar", "tudo", "Todas")}</div></div>
+    <p class="contagem" id="contagem" role="status"></p>
+    <ol class="diario" id="lista"></ol>
+    <div id="mais"></div>
+    <p class="aviso">"Dividida" quer dizer que houve votos a favor e contra. "Não vota", em geral, é quem preside a sessão. Votar contra é parte normal do trabalho do vereador; o placar mostra o que foi decidido, não faz juízo sobre as pessoas.</p>`;
+
+  const filtro = { mostrar: "rel" };
+  const busca = app.querySelector("#busca");
+  const POR = 6;
+  let quantas = POR;
+  const passa = (v, b) => (filtro.mostrar === "tudo" || (filtro.mostrar === "rel" && M.relevante(v)) || (filtro.mostrar === "div" && v.div) || (filtro.mostrar === "neg" && M.negado(v)))
+    && (!b || M.norm(v.m + " " + v.a).includes(b));
+  function desenhar(abrirPrimeira) {
+    app.querySelectorAll(".chips .chip").forEach((c) => c.setAttribute("aria-pressed", String(filtro[c.dataset.f] === c.dataset.v)));
+    const b = M.norm(busca.value.trim());
+    const grupos = sessoes.map((s) => [s, (porSessao[s[0]] || []).filter((v) => passa(v, b))]).filter(([, vs]) => vs.length);
+    const total = grupos.reduce((t, [, vs]) => t + vs.length, 0);
+    app.querySelector("#contagem").textContent = `${M.fmt(total)} ${total === 1 ? "votação" : "votações"} em ${M.fmt(grupos.length)} ${grupos.length === 1 ? "sessão" : "sessões"}`;
+    app.querySelector("#lista").innerHTML = grupos.slice(0, quantas).map(([s, vs]) => sessao(s, vs)).join("")
+      || `<li class="vazio">Nada encontrado com esses filtros.<br><button type="button" class="chip" id="limpar">Limpar filtros</button></li>`;
+    const resta = grupos.length - quantas;
+    app.querySelector("#mais").innerHTML = resta > 0 ? `<button type="button" class="botao-mais" id="b-mais">Carregar sessões anteriores <span class="suave">(${M.fmt(resta)})</span></button>` : "";
+    const bm = app.querySelector("#b-mais");
+    if (bm) bm.addEventListener("click", () => {
+      const antes = quantas; quantas += POR; desenhar();
+      const alvo = app.querySelectorAll(".sessao")[antes];
+      if (alvo) { const h = alvo.querySelector("h2"); h.tabIndex = -1; h.focus(); }
+    });
+    const lp = app.querySelector("#limpar");
+    if (lp) lp.addEventListener("click", () => { filtro.mostrar = "tudo"; busca.value = ""; quantas = POR; desenhar(); });
+    if (abrirPrimeira) { const linhas = [...app.querySelectorAll(".linha")]; const primeira = linhas.find((l) => porId[l.dataset.id].div) || linhas[0]; if (primeira) alternar(primeira); }
+  }
+  const porId = Object.fromEntries(D.votacoes.map((v) => [v.id, v]));
+  function alternar(btn) {
+    const painel = document.getElementById(btn.getAttribute("aria-controls"));
+    const abrirAgora = btn.getAttribute("aria-expanded") !== "true";
+    if (abrirAgora && !painel.innerHTML) painel.innerHTML = abrir(porId[btn.dataset.id]);
+    painel.hidden = !abrirAgora;
+    btn.setAttribute("aria-expanded", String(abrirAgora));
+  }
+  app.querySelector("#lista").addEventListener("click", (e) => { const b = e.target.closest(".linha"); if (b) alternar(b); });
+  app.querySelectorAll(".chips .chip").forEach((c) => c.addEventListener("click", () => { filtro[c.dataset.f] = c.dataset.v; quantas = POR; desenhar(); }));
+  busca.addEventListener("input", () => { quantas = POR; desenhar(); });
+  desenhar(true);
+})();
+</script>
+</body>
+</html>

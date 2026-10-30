@@ -1,0 +1,117 @@
+/* rodape.css: rodapé no padrão do site Raízes (rafaelpintodasilva.com/raizes).
+   Carregado depois de tema.css. Fundo creme, título grande em caixa alta, colunas de links,
+   faixa de palavras correndo e linha de crédito. */
+
+.rodape.ft2 {
+  background: var(--fundo-2);
+  color: var(--texto-2);
+  text-align: left;
+  font-size: .95rem;
+  border: 0;
+  border-radius: 0;
+  margin-top: clamp(56px, 8vw, 110px);
+  padding: clamp(56px, 7vw, 96px) 0 28px;
+  overflow: hidden;
+}
+html[data-tema="escuro"] .rodape.ft2 { background: #0f0e0d; }
+.rodape.ft2 p { max-width: none; margin: 0; color: var(--texto-2); }
+.rodape.ft2 a { color: var(--texto-2); }
+.rodape.ft2 a:hover { color: var(--texto); }
+
+.ft-top {
+  max-width: var(--larg);
+  margin: 0 auto;
+  padding: 0 var(--gut);
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+.rodape .ft-h {
+  font-family: var(--f-sans);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -.02em;
+  font-size: clamp(1.9rem, 3.3vw, 2.9rem);
+  line-height: 1;
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+}
+.rodape .ft-h::before { content: none; }
+.rodape .ft-t { font: 600 .95rem var(--f-sans); color: var(--texto); margin: 6px 0 12px; }
+.rodape .ft-t2 { margin-top: 22px; }
+.ft-col ul { list-style: none; margin: 0; padding: 0; }
+.ft-col li a, .ft-col a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0;
+  text-decoration: none;
+  font-size: .95rem;
+}
+.ft-col li a:hover, .ft-col a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.rodape .ft-mail { border-bottom: 1px solid var(--texto-2); min-height: 0; padding-bottom: 2px; font-weight: 600; color: var(--texto); }
+
+/* botões de compartilhar em pílula; no hover viram amarelo, como no Raízes */
+.rodape .share { display: flex; flex-wrap: wrap; gap: 8px; }
+.rodape .sh {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--cartao);
+  color: var(--texto);
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font: 600 .85rem var(--f-sans);
+  text-decoration: none;
+  min-height: 44px;
+  cursor: pointer;
+}
+.rodape .sh:hover { background: var(--amarelo); color: #111; border-color: #111; text-decoration: none; }
+.rodape .sh-ok { font-size: .8rem; color: var(--texto-2); align-self: center; }
+
+/* faixa de palavras correndo */
+.ft-faixa {
+  margin: clamp(40px, 6vw, 72px) 0 clamp(24px, 4vw, 40px);
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.ft-trilho {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(18px, 3vw, 40px);
+  animation: ftcorre 55s linear infinite;
+  padding-left: 20px;
+}
+.ft-trilho span { font: 800 clamp(3rem, 9vw, 7.5rem)/1 var(--f-sans); letter-spacing: -.03em; color: var(--texto); }
+.ft-trilho i { font-style: normal; font: 700 clamp(3rem, 9vw, 7.5rem)/1 var(--f-sans); color: var(--amarelo); -webkit-text-stroke: 2px #e6cf00; }
+.rodape:hover .ft-trilho { animation-play-state: paused; }
+@keyframes ftcorre { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ft-trilho { animation: none; } }
+
+.ft-cite { max-width: var(--larg); margin: 0 auto 18px; padding: 0 var(--gut); font-size: .82rem; color: var(--suave); }
+.rodape .ft-cite a { color: var(--texto-2); text-decoration: underline; }
+.ft-bot {
+  max-width: var(--larg);
+  margin: 0 auto;
+  padding: 18px var(--gut) 0;
+  border-top: 1px solid var(--linha);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: .85rem;
+  color: var(--suave);
+}
+.ft-bot a { font-weight: 600; color: var(--texto) !important; text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 900px) { .ft-top { grid-template-columns: 1fr 1fr; } .rodape .ft-h { grid-column: 1 / -1; } }
+@media (max-width: 520px) { .ft-top { grid-template-columns: 1fr; } .ft-bot { flex-direction: column; } }
+@media print { .ft-faixa { display: none; } }
+/* o reset de parágrafo acima é mais específico: reaplica os espaçamentos dos títulos das colunas */
+.rodape.ft2 .ft-t { margin: 6px 0 12px; }
+.rodape.ft2 .ft-t2 { margin-top: 22px; }

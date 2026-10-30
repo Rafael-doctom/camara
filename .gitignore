@@ -1,0 +1,23 @@
+# Cache de páginas, CSVs e fotos originais baixados do SisCam (regenerável com atualizar.bat)
+dados/brutos/
+dados/logs/
+
+# JSON grandes regeneráveis pelos coletores
+dados/processados/proposituras.json
+dados/processados/sessoes.json
+dados/processados/proposituras_*.json
+dados/processados/sessoes_*.json
+
+# Dados grandes do site, regeneráveis com: python agentes/orquestrador.py --so-site
+# (dados-base.js, fotos/ e vereador/ são pequenos e ficam versionados)
+site/votacoes.js
+site/proposituras.js
+site/historico.js
+
+# dados/historico/ NÃO é ignorado: os instantâneos diários não podem ser regenerados.
+
+# Gravação atômica deixa .tmp se o processo for interrompido
+*.tmp
+
+__pycache__/
+*.pyc

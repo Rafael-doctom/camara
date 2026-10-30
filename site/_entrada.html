@@ -1,0 +1,117 @@
+<!doctype html>
+<!-- Modelo da página de entrada (seletor de cidades). O agentes/analista.py preenche os {{campos}}
+     e grava site/index.html depois de cada cidade. Não edite site/index.html: edite este arquivo. -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<script>/* Endereço antigo (site de Tatuí na raiz): index.html#vereador/... vai para tatui/index.html#vereador/... */
+if (location.hash.length > 1) location.replace("{{cidade_padrao}}/index.html" + location.hash);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{titulo}}</title>
+<meta name="description" content="{{descricao}}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="{{titulo}}">
+<meta property="og:title" content="{{titulo}}: como vota cada vereador">
+<meta property="og:description" content="{{descricao}}">
+{{og_extra}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,0..100;1,9..144,500,40&family=JetBrains+Mono:wght@500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v={{v:style.css}}">
+<link rel="stylesheet" href="tema.css?v={{v:tema.css}}">
+<link rel="stylesheet" href="controles.css?v={{v:controles.css}}">
+<link rel="stylesheet" href="rodape.css?v={{v:rodape.css}}">
+<script>/* modo escuro antes de desenhar, para não piscar */try{var t=localStorage.getItem("olho-tatui-tema");if(t==="escuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-tema","escuro")}catch(e){}</script>
+<style>
+  .cidades { margin-top: clamp(8px, 2vw, 20px); }
+  .cidade .explore-t { font-size: clamp(1.5rem, 3vw, 1.9rem); }
+  .cidade-nums { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 4px 0 2px; font-size: .9rem; color: var(--texto-2); }
+  .cidade-nums b { font-family: var(--f-serif); font-size: 1.15rem; font-weight: 600; color: var(--texto); }
+  .entrada-extra { margin-top: clamp(28px, 4vw, 44px); }
+</style>
+</head>
+<body>
+<a class="pular" href="#app" target="_self">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="index.html"><span class="marca-olho">●</span> Olho na Câmara <small>{{n_cidades}} cidades</small></a>
+    <div class="topo-acoes">
+      <button type="button" class="tema-btn" aria-label="Ativar modo escuro" aria-pressed="false"><span class="tema-ico" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="conteudo">
+  <section class="hero" data-selo="Dados oficiais · SisCam das Câmaras Municipais">
+    <h1>Olho na Câmara <span>Escolha a sua cidade</span></h1>
+    <p>O que cada vereador propõe, como vota e quanto comparece às sessões. Tudo vem de dados públicos oficiais de cada Câmara Municipal, atualizados por agentes automáticos.</p>
+  </section>
+  <section aria-labelledby="t-cidades" class="cidades">
+    <h2 id="t-cidades" class="sr">Cidades</h2>
+    <div class="grade-explore">
+{{cartoes}}
+    </div>
+  </section>
+  <section aria-labelledby="t-mais" class="entrada-extra">
+    <h2 id="t-mais">Também no site</h2>
+    <div class="grade-explore">
+      <a class="explore" href="espectro.html"><span class="rotulo">Teste</span><span class="explore-t">Painel ideológico</span><span class="explore-d">Responda perguntas sobre temas políticos e veja onde você fica no espectro. Não depende de cidade.</span><span class="caso-ler" aria-hidden="true">Abrir →</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape ft2" id="rodape">
+ <div class="ft-top">
+  <h2 class="ft-h">Quem vota por você<br>precisa ser visto.</h2>
+  <div class="ft-col"><p class="ft-t">Cidades</p><ul>
+{{lista_cidades}}
+  </ul></div>
+  <div class="ft-col"><p class="ft-t">Mais</p><ul>
+   <li><a href="espectro.html">Painel ideológico</a></li></ul></div>
+  <div class="ft-col"><p class="ft-t">Compartilhe</p>
+   <div class="share" aria-label="Compartilhar este site">
+    <a class="sh" data-sh="wa" href="{{zap_href}}" data-texto="{{zap_texto}}" rel="noopener">WhatsApp</a>
+    <a class="sh" data-sh="fb" href="https://www.facebook.com/sharer/sharer.php" rel="noopener">Facebook</a>
+    <button type="button" class="sh" data-sh="copy">Copiar link</button>
+    <span class="sh-ok" role="status" aria-live="polite"></span></div>
+   <p class="ft-t ft-t2">Criado por</p>
+   <p><a class="ft-mail" href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></p></div>
+ </div>
+ <div class="ft-faixa" aria-hidden="true"><div class="ft-trilho">{{faixa}}{{faixa}}</div></div>
+ <div class="ft-cite"><strong>Fonte dos dados:</strong> sistema SisCam de cada Câmara Municipal, coletados automaticamente. Projeto independente, sem vínculo com partidos ou com as Câmaras.</div>
+ <div class="ft-bot"><span>© 2026 Olho na Câmara · criado por <a href="https://rafaelpintodasilva.com/" rel="noopener">Rafael Pinto da Silva</a></span><span>Atualizado em {{atualizado}}.</span></div>
+</footer>
+<script>
+(function () {
+  /* Modo escuro: mesma chave do site de cada cidade. */
+  var raiz = document.documentElement, btn = document.querySelector(".tema-btn");
+  function marcar() {
+    var escuro = raiz.getAttribute("data-tema") === "escuro";
+    btn.setAttribute("aria-pressed", String(escuro));
+    btn.setAttribute("aria-label", escuro ? "Voltar ao modo claro" : "Ativar modo escuro");
+  }
+  btn.addEventListener("click", function () {
+    var escuro = raiz.getAttribute("data-tema") !== "escuro";
+    if (escuro) raiz.setAttribute("data-tema", "escuro"); else raiz.removeAttribute("data-tema");
+    try { localStorage.setItem("olho-tatui-tema", escuro ? "escuro" : "claro"); } catch (e) {}
+    marcar();
+  });
+  marcar();
+  /* Rodapé: compartilhar com o endereço atual. */
+  var r = document.getElementById("rodape");
+  var aqui = function () { return location.href.split("#")[0]; };
+  r.querySelector('[data-sh="wa"]').addEventListener("click", function () {
+    this.href = "https://wa.me/?text=" + encodeURIComponent(this.getAttribute("data-texto") + " " + aqui());
+  });
+  r.querySelector('[data-sh="fb"]').addEventListener("click", function () {
+    this.href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(aqui());
+  });
+  r.querySelector('[data-sh="copy"]').addEventListener("click", function () {
+    var ok = r.querySelector(".sh-ok");
+    (navigator.clipboard ? navigator.clipboard.writeText(aqui()) : Promise.reject())
+      .then(function () { ok.textContent = "Link copiado."; }, function () { ok.textContent = "Copie da barra de endereço."; });
+  });
+})();
+</script>
+</body>
+</html>
